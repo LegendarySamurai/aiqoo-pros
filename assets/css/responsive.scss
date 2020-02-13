@@ -1257,10 +1257,6 @@ $break-large-screen: "1600px";
     }
 }
 
-@media(max-width:1000px) {
-}
-
-
 @media(max-width:1350px) {
     .filter-panel-wrap {
         width: 50px;
@@ -1320,9 +1316,30 @@ $break-large-screen: "1600px";
     .custom-control-input:checked ~ .custom-control-label:after {
         top: 10px;
     }
+
+    .main-wrapper-inner {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .content-container {
+        flex-direction: column;
+
+        .content {
+            width: 100% !important;
+        }
+    }
 }
 
-@media(min-width:$break-tablet) {
+@media(max-width:$break-tablet) {
+    .content-container {
+        .content {
+            width: 100% !important;
+        }
+    }
+}
+
+@media(min-width: 769px) {
     .sign-in-and-sign-up,
     .account-verification {
         width: 420px;
@@ -1342,27 +1359,49 @@ $break-large-screen: "1600px";
     }
 }
 
-.header {
-    @media(max-width: 1569px) {
-        .more-btn {
-            //position: absolute !important;
-            //right: 0;
-            display: inline-block !important;
-            font-size: 1rem;
-            -webkit-transition: all .2s ease;
-            transition: all .2s ease;
-            padding: 0 20px 0 0;
-            color: #585077;
+@media(max-width: 1024px) {
+    .main-wrapper-inner {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .side-menu {
+        width: 28%;
+    }
+
+    .content-container {
+        width: 100%;
+        align-items: flex-start;
+
+        .content {
+            padding: 5% 5% 5% 5%;
+            width: 78%;
+        }
+
+        .banner {
+            width: 80%;
         }
     }
 }
 
-@media(min-width:$break-pc) {
-    .sign-in-and-sign-up,
-    .account-verification {
-        width: 550px;
+@media(min-width: 1025px) {
+    .content-container {
+        flex-grow: 1;
+        padding: 60px 20px 0;
+
+        .content {
+            flex-grow: 1;
+            width: 46%;
+            //padding: 6% 20% 2% 5%;
+        }
     }
 
+    .side-menu {
+        width: 20%;
+    }
+}
+
+@media(min-width:$break-pc) {
     .sign-in,
     .sign-up {
         min-height: 420px;
@@ -1375,44 +1414,69 @@ $break-large-screen: "1600px";
     .custom-control-input:checked ~ .custom-control-label:after {
         top: 10px;
     }
+    .content-container {
+
+        .content {
+            padding: 6% 5% 2% 5%;
+        }
+    }
 }
 
 @media(max-width: 1366px) {
     .custom-control-input:checked ~ .custom-control-label:after {
         top: 9px;
     }
-}
 
-@media(min-width: 1366px) {
-    .custom-control-input:checked ~ .custom-control-label:after {
-        top: 9px;
+    form {
+        .input-group {
+            .form-control {
+                font-size: 1.25rem !important;
+
+                &::-webkit-input-placeholder {
+                    font-size: 1.25rem;
+                }
+
+                .input-group-text {
+                    .far {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
     }
 }
 
-//@media(max-width: 1500px) {
-//    .header {
-//        & .wrapper-c {
-//            & .nav-menu {
-//                & > li > a {
-//                    padding: 0 15px;
-//                    font-size: .875rem;
-//                }
-//
-//                & > li > a i {
-//                    font-size: 1.25rem;
-//                }
-//            }
-//            & .nav-sub-menu {
-//                & > li > a {
-//                    padding: 0 15px;
-//                    font-size: .875rem;
-//                }
-//            }
-//        }
-//    }
-//}
+@media(min-width: 1367px) {
+    .custom-control-input:checked ~ .custom-control-label:after {
+        top: 9px;
+    }
+
+    .content-container {
+        .content {
+            padding: 6% 25% 2% 5%;
+        }
+    }
+}
+
+@media(max-width: 1569px) {
+    .header {
+        .more-btn {
+            display: inline-block !important;
+            font-size: 1rem;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            padding: 0 20px 0 0;
+            color: #585077;
+        }
+    }
+}
 
 @media(min-width:$break-large-screen) {
+    .sign-in-and-sign-up,
+    .account-verification {
+        width: 550px;
+    }
+
     .sign-in-and-sign-up,
     .account-verification {
         .custom-control-input:checked ~ .custom-control-label:after {
@@ -1431,6 +1495,23 @@ $break-large-screen: "1600px";
     .verification {
         min-height: 550px;
     }
+
+    .side-menu {
+        .side-menu-inner {
+            & > li > a {
+                @media(min-width: 1600px) {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    form {
+        .input-group-title {
+            font-size: 1.25rem;
+        }
+    }
+
 }
 
 @media(min-width: 1920px) {

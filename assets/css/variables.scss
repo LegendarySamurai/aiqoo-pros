@@ -60,3 +60,14 @@ $max_font: 24px;
         transform: translateX(-50%);
     }
 }
+
+
+
+@mixin inputStyles {
+    height: 100%;
+    color: $purple;
+}
+
+@mixin placeholderFontSize {
+    font-size: 1.4rem;
+}
