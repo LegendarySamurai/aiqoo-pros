@@ -1307,6 +1307,10 @@ $break-large-screen: "1600px";
         height: 50px;
     }
 
+    .content-container {
+        padding: 90px 10px 0 !important;
+    }
+
     .code {
         span {
             height: 50px;
@@ -1362,24 +1366,66 @@ $break-large-screen: "1600px";
 @media(max-width: 1024px) {
     .main-wrapper-inner {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .side-menu {
         width: 28%;
     }
 
+    .side-menu-inner {
+        & > li {
+            padding: 0 10px;
+        }
+
+        & > li > a {
+            padding: 16px 0;
+            font-size: 0.75rem;
+        }
+
+        & > li:not(:last-child) > a {
+            border-bottom: 1px solid #dcdcdc;
+        }
+
+        & > li > a > i {
+            font-size: 1.25rem;
+        }
+    }
+
     .content-container {
+        flex-grow: 1;
+        padding: 38px 20px 0;
         width: 100%;
         align-items: flex-start;
 
         .content {
-            padding: 5% 5% 5% 5%;
-            width: 78%;
+            padding: 0 5% 5% 5%;
+            width: 100%;
         }
 
         .banner {
-            width: 80%;
+            display: none;
+        }
+
+        .content-inner {
+            padding-top: 74px;
+        }
+
+        .upload-photo {
+
+            span {
+                position: absolute;
+                top: 25%;
+                left: 115%;
+                width: 100%;
+                font-size: 1rem !important;
+            }
+
+            i {
+                font-size: 4.5rem;
+                width: 90px;
+                height: 90px;
+            }
         }
     }
 }
@@ -1387,17 +1433,47 @@ $break-large-screen: "1600px";
 @media(min-width: 1025px) {
     .content-container {
         flex-grow: 1;
-        padding: 60px 20px 0;
+        padding: 74px 20px 0;
 
         .content {
             flex-grow: 1;
             width: 46%;
-            //padding: 6% 20% 2% 5%;
+        }
+
+        .upload-photo {
+
+            span {
+                position: absolute;
+                top: 25%;
+                left: 115%;
+                width: 100%;
+                font-size: 1.125rem !important;
+            }
+
+            i {
+                font-size: 5.5rem;
+                width: 110px;
+                height: 110px;
+            }
         }
     }
 
     .side-menu {
         width: 20%;
+    }
+
+    .side-menu-inner {
+        & > li {
+            padding: 0 32px;
+        }
+
+        & > li > a {
+            padding: 20px 0;
+        }
+
+        & > li:not(:last-child) > a {
+            border-bottom: 1px solid #dcdcdc;
+        }
     }
 }
 
@@ -1414,10 +1490,36 @@ $break-large-screen: "1600px";
     .custom-control-input:checked ~ .custom-control-label:after {
         top: 10px;
     }
+
+    .side-menu-inner {
+        & > li {
+            padding: 0 32px;
+        }
+
+        & > li > a {
+            padding: 20px 0;
+        }
+
+        & > li:not(:last-child) > a {
+            border-bottom: 1px solid #dcdcdc;
+        }
+    }
+
     .content-container {
+        .content-inner {
+            padding-top: 74px;
+        }
 
         .content {
-            padding: 6% 5% 2% 5%;
+            padding: 0 5% 2% 5%;
+        }
+
+        .upload-photo {
+            i {
+                font-size: 5.5rem;
+                width: 110px;
+                height: 110px;
+            }
         }
     }
 }
@@ -1453,7 +1555,21 @@ $break-large-screen: "1600px";
 
     .content-container {
         .content {
-            padding: 6% 25% 2% 5%;
+            padding: 0 25% 2% 5%;
+        }
+
+        .content-inner {
+            padding-top: 80px;
+        }
+
+        .upload-photo {
+            span {
+                font-size: 1.25rem !important;
+            }
+            i {
+                width: 125px;
+                height: 125px;
+            }
         }
     }
 }
@@ -1472,6 +1588,17 @@ $break-large-screen: "1600px";
 }
 
 @media(min-width:$break-large-screen) {
+    .content-container {
+
+        .upload-photo {
+
+            i {
+                font-size: 6.5rem;
+                width: 138px;
+                height: 138px;
+            }
+        }
+    }
     .sign-in-and-sign-up,
     .account-verification {
         width: 550px;
@@ -1496,13 +1623,9 @@ $break-large-screen: "1600px";
         min-height: 550px;
     }
 
-    .side-menu {
-        .side-menu-inner {
-            & > li > a {
-                @media(min-width: 1600px) {
-                    font-size: 1.25rem;
-                }
-            }
+    .side-menu-inner {
+        & > li > a {
+            font-size: 1.25rem;
         }
     }
 
