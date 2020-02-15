@@ -5427,14 +5427,11 @@ $hSizes: (1, 2, 3, 4, 5, 6);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
-    //background-color: #f1f1f1;
     background-color: #ffffff;
-    font-size: "Raleway", sans-serif;
-    // need HelveticaNeue-Bold
 
     .tabs {
         width: 100%;
-        height: 66px;
+        //height: 66px;
         background-color: #eaeaea;
 
         .tabs-inner {
@@ -5451,19 +5448,23 @@ $hSizes: (1, 2, 3, 4, 5, 6);
         .tab {
             display: flex;
             align-items: center;
-            height: 62px;
-            padding: 0 20px;
+            //height: 60px;
+            //padding: 0 24px;
             font-size: 12px;
             font-weight: 500;
             color: $purple;
             border-radius: 1px;
-            box-shadow: 0 2.5px 12.5px 0 rgba(88, 80, 119, 0.28);
             background-color: #ffffff;
-            border-bottom: 3px solid #eaeaea;
+            border-bottom: 7px solid #eaeaea;
+            cursor: pointer;
 
             &.active {
                 font-weight: 700;
                 border-color: $purple;
+            }
+
+            i {
+
             }
         }
 
@@ -5480,8 +5481,28 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 
     .details {
         width: 45%;
-        padding-top: 80px;
-        padding-bottom: 40px;
+        //padding-top: 80px;
+        //padding-bottom: 40px;
+
+        .text-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .submit-button {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+
+        button {
+            width: 124px;
+            //height: 50px;
+            background-color: $purple;
+            color: #fff;
+
+        }
     }
 }
 
@@ -5494,8 +5515,12 @@ form {
         justify-content: space-between;
         align-items: center;
 
+        .input-group {
+            width: 56%;
+        }
+
         h5 {
-            font-size: 1rem;
+            //font-size: 1rem;
         }
     }
 
@@ -5507,7 +5532,7 @@ form {
 
         .custom-select {
             height: 100%;
-            font-size: 19px;
+            //font-size: 19px;
 
             option {
                 font-size: 1rem;
@@ -5551,7 +5576,7 @@ form {
                 min-width: initial;
             }
 
-            .far {
+            i, .far {
                 font-size: 1.5rem;
             }
 

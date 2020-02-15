@@ -1645,3 +1645,135 @@ $break-large-screen: "1600px";
         }
     }
 }
+
+
+.details-services-location {
+    @media(max-width: $break-mobile) { // to 600
+        .tabs {}
+    }
+    @media(min-width: $break-mobile) { // from 600
+        .tabs {}
+
+    }
+    @media(min-width: $break-tablet) { // from 768
+        .tabs {}
+
+    }
+    @media(min-width: $break-pc) { // from 1200px
+        & {
+            top: 50%;
+        }
+
+        .tabs {
+            height: 50px;
+
+            .tab {
+                height: 50px;
+                padding: 0 14px;
+            }
+        }
+
+        .details {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .text-block {
+                padding-top: 20px;
+
+                h2 {
+                    margin-top: .75rem;
+                    margin-bottom: .75rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .submit-button {
+            button {
+                height: 45px;
+
+            }
+        }
+
+        form {
+            .input-group {
+                height: 50px;
+                margin-bottom: 1rem;
+
+                .custom-select {
+                    font-size: 17px;
+                }
+            }
+
+
+            .input-group-select {
+
+                .input-group {
+                    width: 56%;
+                }
+
+                h5 {
+                    font-size: 17px;
+                }
+            }
+        }
+
+    }
+    @media(min-width: 1366px) { // from 1366
+        .tabs {}
+
+    }
+    @media(min-width: $break-large-screen) { // from 1600
+        .tabs {}
+
+        .details {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        form {
+
+            .input-group-select {
+                .input-group {
+                    .custom-select {
+                        font-size: 19px;
+                    }
+                }
+                h5 {
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+    @media(min-width: 1920px) { // from 1920
+        .tabs {
+            height: 66px;
+
+            .tab {
+                height: 60px;
+                padding: 0 24px;
+            }
+        }
+
+        .details {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
+
+        .submit-button {
+            button {
+                height: 50px;
+
+            }
+        }
+
+        form {
+            .input-group {
+                height: 68px;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+    }
+
+}
