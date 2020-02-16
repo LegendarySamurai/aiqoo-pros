@@ -1,0 +1,86 @@
+@import 'variables.scss';
+
+// pop-up styles
+.details-services-location {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+  background-color: #ffffff;
+
+  .tabs {
+    width: 100%;
+    background-color: #eaeaea;
+
+    .tabs-inner {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .tab {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: $purple;
+      border-radius: 1px;
+      background-color: #ffffff;
+      border-bottom: 7px solid #eaeaea;
+      cursor: pointer;
+
+      &.active {
+        font-weight: 700;
+        border-color: $purple;
+      }
+
+      i {
+
+      }
+    }
+
+    .divider {
+      height: 4px;
+      background-color: #b3b3b3;
+
+      &.active {
+        background-color: $purple;
+      }
+    }
+  }
+
+  .details {
+    width: 45%;
+
+    .text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .submit-button {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+
+    button {
+      width: 124px;
+      background-color: $purple;
+      color: #fff;
+
+    }
+  }
+}

@@ -160,7 +160,7 @@ function closeNav() {
     $(".main-wrapper").css("z-index", "");
 }
 
-// onClick opens .sidebar-menu-outer
+// onClick opens .sidebar-menu-outer. Created by Igor 14.02.2020
 
 function openSideBar() {
     console.log('added');
@@ -174,6 +174,8 @@ function closeSideBar() {
     $(".main-wrapper-inner").removeClass("active");
     $(".sidebar-overlay").attr("navIsOpen", "false");
 }
+
+// EOL: Igor
 
 window.openInFixedPostion = function (element) {
 
