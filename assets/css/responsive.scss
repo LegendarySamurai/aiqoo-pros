@@ -1285,6 +1285,8 @@ $break-large-screen: "1600px";
     }
 }
 
+
+// Created by Igor 14.02.2020
 @media(max-width:$break-mobile) {
     .sign-in-and-sign-up,
     .account-verification {
@@ -1658,7 +1660,7 @@ $break-large-screen: "1600px";
     }
 }
 
-.details-services-location {
+.wizard-dialog {
     @media(min-width: 300px) { // from 300
         & {
             top: 54%;
