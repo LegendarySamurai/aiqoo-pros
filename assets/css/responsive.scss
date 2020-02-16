@@ -1647,21 +1647,94 @@ $break-large-screen: "1600px";
 }
 
 
-.details-services-location {
-    @media(max-width: $break-mobile) { // to 600
-        .tabs {}
-    }
-    @media(min-width: $break-mobile) { // from 600
-        .tabs {}
+.logo2 {
+
+    @media(min-width: 300px) {
+        width: 138px;
 
     }
+    @media(min-width: $break-mobile) {
+        width: 168px;
+    }
+}
+
+.details-services-location {
+    @media(min-width: 300px) { // from 300
+        & {
+            top: 54%;
+            width: 98%;
+        }
+
+        .tabs {
+            height: 40px;
+
+            .tab {
+                height: 40px;
+                padding: 0 10px;
+            }
+        }
+
+        form {
+            .input-group-select {
+                .input-group {
+                    width: 64%;
+                }
+            }
+
+            .input-group {
+                height: 50px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .details {
+            padding: 40px 0 20px;
+            width: 55%;
+        }
+    }
+
+    @media(max-width: $break-tablet) { // to 768
+        .tabs {
+
+            .tab > span {
+                margin-right: .5rem !important;
+            }
+
+            .divider {
+                width: 15px;
+            }
+        }
+
+        .details {
+            width: 80%;
+            padding: 40px 0 20px;
+
+            h2 {
+                font-size: 1.25rem;
+                margin: 15px 0;
+            }
+            h5 {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
     @media(min-width: $break-tablet) { // from 768
-        .tabs {}
+        & {
+            width: 60%;
+        }
+
+        .tabs {
+            .divider {
+                width: 27px;
+            }
+        }
 
     }
     @media(min-width: $break-pc) { // from 1200px
         & {
             top: 50%;
+            width: 56%;
         }
 
         .tabs {
@@ -1691,7 +1764,6 @@ $break-large-screen: "1600px";
         .submit-button {
             button {
                 height: 45px;
-
             }
         }
 
@@ -1699,50 +1771,24 @@ $break-large-screen: "1600px";
             .input-group {
                 height: 50px;
                 margin-bottom: 1rem;
-
-                .custom-select {
-                    font-size: 17px;
-                }
             }
 
-
             .input-group-select {
-
                 .input-group {
                     width: 56%;
                 }
-
-                h5 {
-                    font-size: 17px;
-                }
             }
         }
-
     }
     @media(min-width: 1366px) { // from 1366
-        .tabs {}
 
     }
     @media(min-width: $break-large-screen) { // from 1600
-        .tabs {}
 
         .details {
+            width: 45%;
             padding-top: 50px;
             padding-bottom: 20px;
-        }
-
-        form {
-
-            .input-group-select {
-                .input-group {
-                    .custom-select {
-                        font-size: 19px;
-                    }
-                }
-                h5 {
-                    font-size: 19px;
-                }
-            }
         }
     }
     @media(min-width: 1920px) { // from 1920
@@ -1761,10 +1807,7 @@ $break-large-screen: "1600px";
         }
 
         .submit-button {
-            button {
-                height: 50px;
-
-            }
+            button { height: 50px; }
         }
 
         form {
@@ -1773,7 +1816,5 @@ $break-large-screen: "1600px";
                 margin-bottom: 1.5rem;
             }
         }
-
     }
-
 }
