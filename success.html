@@ -248,106 +248,29 @@
 
   <!-- Modal -->
   <div class="modal fade show wizard-modal" id="wizard-modal" tabindex="-1" role="dialog" aria-labelledby="wizard-modal-title" aria-hidden="true">
-    <div class="modal-dialog wizard-dialog wizard-dialog-locations" role="document">
+    <div class="modal-dialog wizard-dialog wizard-dialog-success" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <div class="tabs pos-r">
-            <div class="tabs-inner">
-              <span class="tab font-r-14"><span class="mr-3 font-weight-bold">1</span> Details</span>
-              <span class="divider active"></span>
-              <span class="tab font-r-14"><span class="mr-3 font-weight-bold">2</span> Services</span>
-              <span class="divider active"></span>
-              <span class="tab font-r-14 active"><span class="mr-3 font-weight-bold">3</span> Locations</span>
-            </div>
-          </div>
-          <div class="locations wizard-content pos-r">
+          <div class="success wizard-content pos-r">
             <div class="text-block">
               <a href="#">
                 <img src="assets/images/nlogo2.png" alt="logo" class="logo2">
               </a>
+              <span class="font-weight-black font-r-24 mt-5">Success!</span>
               <h5 class="font-weight-500 mt-3 mb-5">
-
-                Please Select the Locations you provide from the list
+                Congratulations! You are now a
                 <br class="d-none d-lg-block">
-                below and add them to “Selected Location”
+                member of AIQ
               </h5>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-md-6 px-2">
-                  <div class="wizard-content-outer">
-                    <span class="wizard-content-title font-r-12 font-weight-bold">Please select location</span>
-
-                    <div class="input-group pr-3">
-                      <select class="custom-select font-r-14 mt-3 mb-2" id="inputGroupSelect01">
-                        <option class="font-r-14" selected>New York</option>
-                        <option class="font-r-14" value="1">Los Angeles</option>
-                        <option class="font-r-14" value="2">Chicago</option>
-                        <option class="font-r-14" value="3">Philadelphia</option>
-                      </select>
-                    </div>
-                    <div class="wizard-content-inner pt-3 pb-1">
-                      <div class="custom-control custom-checkbox w-100 my-2">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label pl-3" for="customCheck2">New York</label>
-                      </div>
-                      <div class="custom-control custom-checkbox w-100 my-2">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label pl-3" for="customCheck3">Los Angeles</label>
-                      </div>
-                      <div class="custom-control custom-checkbox w-100 my-2">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label pl-3" for="customCheck4">Location 2</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 mt-4 mt-md-0 px-2">
-                  <div class="wizard-content-outer">
-                    <span class="wizard-content-title font-r-12 font-weight-bold pl-3">Selected Locations</span>
-
-                    <div class="wizard-content-inner mt-3">
-
-                      <div class="locations-list">
-                        <div class="w-100 my-2 flex-left">
-                          <i class="fal fa-times"></i>
-                          <span class="pl-3">New York</span>
-                        </div>
-                        <div class="w-100 my-2 flex-left">
-                          <i class="fal fa-times"></i>
-                          <span class="pl-3">New York</span>
-                        </div>
-                        <div class="w-100 my-2 flex-left">
-                          <i class="fal fa-times"></i>
-                          <span class="pl-3">New York</span>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <span class="summary font-r-12">
-                      <span class="font-weight-bold">3 </span>
-                      locations were selected
-                    </span>
-                  </div>
-                </div>
+              <div class="success-icon">
+                <img src="assets/images/success.png" alt="success">
               </div>
             </div>
 
-            <div class="buttons-container">
-              <div class="submit-button pos-r">
-                <button type="submit" id="back" class="btn mt-auto font-r-14 pos-r">
-                  Back
-                  <i class="fas fa-long-arrow-right mr-3"></i>
-                </button>
-              </div>
-              <div class="submit-button pos-r">
-                <button type="submit" id="next" class="btn active mt-auto font-r-14 pos-r">
-                  Next
-                  <i class="fas fa-long-arrow-right ml-3"></i>
-                </button>
-              </div>
+            <div class="submit-button pos-r">
+              <button type="submit" id="finish" class="btn active mt-auto font-r-14 pos-r">
+                Finish
+              </button>
             </div>
           </div>
         </div>
