@@ -61,8 +61,9 @@
 }
 
 .side-menu-mobile {
-  position: absolute;
-  top: 10px;
+  position: fixed;
+  z-index: 9000;
+  top: 85px;
   left: 0;
 
   .open-dropdown-menu-btn {
@@ -87,10 +88,15 @@
   }
 
   .sidebar-menu-outer {
-    position: relative;
-    top: -35px;
+    //position: relative;
+    //top: -35px;
+    //top: auto;
+    position: absolute;
+    bottom: 50px;
     left: -210px;
+    transform: translate(0, 100%);
     width: 200px;
+    padding-top: 12px;
     z-index: 1;
     background-color: #fff;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
@@ -142,6 +148,7 @@
     }
 
     .form-control {
+      height: 100%;
       font-family: "Raleway", sans-serif;
 
       &::-webkit-input-placeholder {
@@ -183,6 +190,7 @@
 
     img {
       max-width: 100%;
+      margin-top: auto;
     }
   }
 }

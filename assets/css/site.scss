@@ -125,6 +125,7 @@
     box-shadow: 0 0 0 0.2rem $greenColor !important;
 }
 
+
 .hide-in-1570 {
     display: inline-block;
 
@@ -133,6 +134,8 @@
     }
 }
 
+
+// Created by Igor Feb 13th, 2020
 .hide-in-1500 {
     display: inline-block;
 
@@ -148,6 +151,8 @@
         display: none !important;
     }
 }
+// EOL Created by Igor Feb 13th, 2020
+
 
 .hide-in-1440 {
     display: inline-block;
@@ -221,6 +226,8 @@
     }
 }
 
+
+// Created by Igor Feb 13th, 2020
 .hide-in-1024 {
     display: inline-block;
 
@@ -228,6 +235,8 @@
         display: none !important;
     }
 }
+// EOL Created by Igor Feb 13th, 2020
+
 
 .hide-in-1000 {
     display: inline-block;
@@ -293,6 +302,7 @@
     }
 }
 
+// Created by Igor Feb 13th, 2020
 .show-in-1024 {
     display: none !important;
 
@@ -340,6 +350,8 @@
         display: inline-block !important;
     }
 }
+
+// EOL Created by Igor Feb 13th, 2020
 
 html, body {
     font-family: "Poppins", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -448,7 +460,7 @@ app {
     position: relative;
     flex-direction: column;
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 100vh; // Created by Igor Feb 13th, 2020
 }
 
 .text-shadow {
@@ -598,11 +610,11 @@ app {
 
     & .wrapper-c {
         position: absolute;
-        bottom: 0;
+        bottom: 0; // Updated by Igor Feb 13th, 2020
         left: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%); // Updated by Igor Feb 13th, 2020
         width: 90%;
-        height: 82px;
+        height: 82px; // Updated by Igor Feb 13th, 2020
         background-color: #fff;
         border-radius: 2.5px;
         -webkit-box-shadow: 0 -1px 21px 0 rgba(0,0,0,.05), 0 6px 20px 0 rgba(0,0,0,.02);
@@ -610,8 +622,8 @@ app {
         z-index: 501;
 
         & .extra-items-menu {
-            display: flex;
-            align-items: center;
+            display: flex; // Created by Igor Feb 13th, 2020
+            align-items: center; // Created by Igor Feb 13th, 2020
 
             & a {
                 color: $primaryOpacityColor !important;
@@ -624,36 +636,48 @@ app {
 
 
         & .nav-menu {
-            display: flex;
-            align-items: center;
+            display: flex; // Created by Igor Feb 13th, 2020
+            align-items: center; // Created by Igor Feb 13th, 2020
             list-style: none;
             margin: 0;
-            padding: 0 20px;
+            padding: 0 20px; // Updated by Igor Feb 13th, 2020
 
             & > li {
                 display: inline-block;
                 position: relative;
             }
 
-            & > li:not(:first-child) {
+            & > li:not(:first-child) { // Created by Igor Feb 13th, 2020
                 border-left: 2px solid #d7d7d7;
+
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    border-left: none;
+                }
             }
 
-            & > li:first-child a {
+            & > li:last-child { // Created by Igor Feb 13th, 2020
+                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    & > .more-btn-inner > span {
+                        display: none;
+                    }
+                }
+            }
+
+            & > li:first-child a { // Created by Igor Feb 13th, 2020
                 padding-left: 0;
             }
 
             & > li > a {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
+                display: flex; // Updated by Igor Feb 13th, 2020
+                flex-direction: row; // Updated by Igor Feb 13th, 2020
+                align-items: center; // Updated by Igor Feb 13th, 2020
                 font-size: 1rem;
                 -webkit-transition: all .2s ease;
                 transition: all .2s ease;
-                padding: 0 15px;
-                color: $purple;
+                padding: 0 15px; // Updated by Igor Feb 13th, 2020
+                color: $purple; // Updated by Igor Feb 13th, 2020
 
-                @media(min-width: 1600px) {
+                @media(min-width: 1600px) { // Created by Igor Feb 13th, 2020
                     font-size: 1.25rem;
                 }
             }
@@ -674,16 +698,16 @@ app {
                 @include menuItemActive;
             }
 
-            & a .active {
+            & a .active { // Updated by Igor Feb 13th, 2020
                 position: relative;
                 color: $purple;
             }
 
-            & > li > a:hover {
+            & > li > a:hover { // Updated by Igor Feb 13th, 2020
                 @include menuItemActive;
             }
 
-            & > li > a i {
+            & > li > a i { // Updated by Igor Feb 13th, 2020
                 display: block;
                 font-size: 1.5rem;
                 margin-right: 14px;
@@ -699,7 +723,7 @@ app {
                 background-color: transparent;
             }
 
-            & .active {
+            & .active { // Updated by Igor Feb 13th, 2020
                 @include menuItemActive;
 
                 span {
@@ -709,7 +733,7 @@ app {
                 }
             }
         }
-
+        // Created by Igor Feb 13th, 2020
         & .nav-sub-menu {
             display: none; // appears on hover
             //display: flex;
@@ -749,6 +773,7 @@ app {
                 color: $purple;
             }
         }
+        // EOL Created by Igor Feb 13th, 2020
     }
 }
 
@@ -875,6 +900,7 @@ app {
     min-height: 500px;
 }
 
+// Created by Igor Feb 13th, 2020
 .main-wrapper-inner {
     width: 100%;
     display: flex;
@@ -903,6 +929,7 @@ app {
     min-height: 100vh;
     padding-bottom: 40px;
 }
+// EOL Created by Igor Feb 13th, 2020
 
 
 footer {
@@ -2940,15 +2967,15 @@ button .spinner-border-sm {
 .font-weight-600 {
     font-weight: 600 !important
 }
-
+// Created by Igor Feb 13th, 2020
 .font-weight-bold {
     font-weight: 700;
 }
-
+// Created by Igor Feb 13th, 2020
 .font-weight-semi-bold {
     font-weight: 800;
 }
-
+// Created by Igor Feb 13th, 2020
 .font-weight-black {
     font-weight: 900;
 }

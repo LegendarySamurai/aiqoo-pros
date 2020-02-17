@@ -1,39 +1,46 @@
 @import 'variables.scss';
 
+// Utils
+
+.flex-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 // pop-up styles
 
-.wizard-modal {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9000;
-  width: 100%;
-  height: 100%;
+.modal {
+  &.fade {
+    &.show {
+      opacity: 1
+    }
+  }
+}
 
-  .backdrop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparentize(#000, .5);
+.wizard-modal {
+  display: block;
+
+  .modal-content {
+    border-radius: 0;
   }
 }
 
 
 .wizard-dialog {
-  position: absolute;
-  top: 48%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1000;
+  max-width: inherit;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
   background-color: #ffffff;
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
 
   .tabs {
     width: 100%;
@@ -81,14 +88,16 @@
     }
   }
 
-  .details {
-    width: 45%;
+  .wizard-content {
 
-    .text-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  }
+
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .submit-button {
@@ -98,9 +107,44 @@
 
     button {
       width: 124px;
-      background-color: $purple;
       color: #fff;
 
+      &.btn {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: $pinkish-grey;
+
+        .fa-long-arrow-right {
+          transform: rotate(180deg);
+        }
+
+        &.active {
+          flex-direction: row;
+          background-color: $purple;
+
+          .fa-long-arrow-right {
+            transform: rotate(0);
+          }
+        }
+      }
     }
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // details
+  .details {
+    width: 45%;
+  }
+
+  // services
+  .services {
+
   }
 }

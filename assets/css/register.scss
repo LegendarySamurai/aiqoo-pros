@@ -26,6 +26,10 @@
 
     .form-control {
       border: none;
+
+      &:focus {
+        background-color: transparent;
+      }
     }
 
     .verification-code {
