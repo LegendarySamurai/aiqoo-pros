@@ -248,173 +248,88 @@
 
   <!-- Modal -->
   <div class="modal fade show wizard-modal" id="wizard-modal" tabindex="-1" role="dialog" aria-labelledby="wizard-modal-title" aria-hidden="true">
-    <div class="modal-dialog wizard-dialog wizard-dialog-services" role="document">
+    <div class="modal-dialog wizard-dialog wizard-dialog-locations" role="document">
       <div class="modal-content">
         <div class="modal-body">
           <div class="tabs pos-r">
             <div class="tabs-inner">
               <span class="tab font-r-14"><span class="mr-3 font-weight-bold">1</span> Details</span>
-              <span class="divider"></span>
-              <span class="tab font-r-14 active"><span class="mr-3 font-weight-bold">2</span> Services</span>
               <span class="divider active"></span>
-              <span class="tab font-r-14"><span class="mr-3 font-weight-bold">3</span> Locations</span>
+              <span class="tab font-r-14"><span class="mr-3 font-weight-bold">2</span> Services</span>
+              <span class="divider active"></span>
+              <span class="tab font-r-14 active"><span class="mr-3 font-weight-bold">3</span> Locations</span>
             </div>
           </div>
-          <div class="services wizard-content pos-r">
+          <div class="locations wizard-content pos-r">
             <div class="text-block">
               <a href="#">
                 <img src="assets/images/nlogo2.png" alt="logo" class="logo2">
               </a>
-              <h5 class="font-weight-500 my-3">
-                Please Select the services you provide from the list below
+              <h5 class="font-weight-500 mt-3 mb-5">
+
+                Please Select the Locations you provide from the list
                 <br class="d-none d-lg-block">
-                and add them to “My Services”
+                below and add them to “Selected Location”
               </h5>
             </div>
             <div class="container">
               <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 px-2">
                   <div class="wizard-content-outer">
-                    <span class="wizard-content-title font-r-12 font-weight-bold pl-3">Please select services</span>
+                    <span class="wizard-content-title font-r-12 font-weight-bold">Please select location</span>
 
-                    <div class="wizard-content-inner mt-3">
-
-                      <div id="accordionOne" class="accordion-item">
-                        <div class="card">
-                          <div class="card-header pl-2" id="headingOne">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck1">
-                              <label class="custom-control-label" for="customCheck1"></label>
-                            </div>
-                            <button class="btn font-weight-bold pl-3 py-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              <span class="">Roofing</span>
-                              <i class="far fa-chevron-up"></i>
-                            </button>
-                          </div>
-
-                          <div id="collapseOne" class="collapse show pl-2" aria-labelledby="headingOne" data-parent="#accordionOne">
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck2">
-                              <label class="custom-control-label pl-3" for="customCheck2">Roof Replacment</label>
-                            </div>
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck3">
-                              <label class="custom-control-label pl-3" for="customCheck3">Roof Replacment</label>
-                            </div>
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck4">
-                              <label class="custom-control-label pl-3" for="customCheck4">Roof Replacment</label>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="input-group pr-3">
+                      <select class="custom-select font-r-14 mt-3 mb-2" id="inputGroupSelect01">
+                        <option class="font-r-14" selected>New York</option>
+                        <option class="font-r-14" value="1">Los Angeles</option>
+                        <option class="font-r-14" value="2">Chicago</option>
+                        <option class="font-r-14" value="3">Philadelphia</option>
+                      </select>
+                    </div>
+                    <div class="wizard-content-inner">
+                      <div class="custom-control custom-checkbox w-100 my-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label pl-3" for="customCheck2">New York</label>
                       </div>
-                      <!---->
-
-                      <div id="accordionTwo" class="accordion-item">
-                        <div class="card">
-                          <div class="card-header pl-2" id="headingTwo">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck5">
-                              <label class="custom-control-label" for="customCheck5"></label>
-                            </div>
-                            <button class="btn font-weight-bold pl-3 py-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                              <span class="">Roofing</span>
-                              <i class="far fa-chevron-up"></i>
-                            </button>
-                          </div>
-
-                          <div id="collapseTwo" class="collapse show pl-2" aria-labelledby="headingTwo" data-parent="#accordionTwo">
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck6">
-                              <label class="custom-control-label pl-3" for="customCheck6">Roof Replacment</label>
-                            </div>
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck7">
-                              <label class="custom-control-label pl-3" for="customCheck7">Roof Replacment</label>
-                            </div>
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck8">
-                              <label class="custom-control-label pl-3" for="customCheck8">Roof Replacment</label>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="custom-control custom-checkbox w-100 my-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label pl-3" for="customCheck3">Los Angeles</label>
                       </div>
-                      <!---->
-
-                      <div id="accordionThree" class="accordion-item">
-                        <div class="card">
-                          <div class="card-header pl-2" id="headingThree">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck9">
-                              <label class="custom-control-label" for="customCheck9"></label>
-                            </div>
-                            <button class="btn font-weight-bold pl-3 py-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                              <span class="">Roofing</span>
-                              <i class="far fa-chevron-up"></i>
-                            </button>
-                          </div>
-
-                          <div id="collapseThree" class="collapse show pl-2" aria-labelledby="headingOne" data-parent="#accordionThree">
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck10">
-                              <label class="custom-control-label pl-3" for="customCheck10">Roof Replacment</label>
-                            </div>
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck11">
-                              <label class="custom-control-label pl-3" for="customCheck11">Roof Replacment</label>
-                            </div>
-                            <div class="custom-control custom-checkbox w-100 my-2">
-                              <input type="checkbox" class="custom-control-input" id="customCheck12">
-                              <label class="custom-control-label pl-3" for="customCheck12">Roof Replacment</label>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="custom-control custom-checkbox w-100 my-2">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label pl-3" for="customCheck4">Location 2</label>
                       </div>
 
                     </div>
                   </div>
                 </div>
 
-                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <div class="col-12 col-md-6 mt-4 mt-md-0 px-2">
                   <div class="wizard-content-outer">
-                    <span class="wizard-content-title font-r-12 font-weight-bold pl-3">Selected services</span>
+                    <span class="wizard-content-title font-r-12 font-weight-bold pl-3">Selected Locations</span>
 
                     <div class="wizard-content-inner mt-3">
 
-                      <div id="accordionFour" class="accordion-item">
-                        <div class="card">
-                          <div class="card-header p-0" id="headingFour">
-                            <button class="btn font-weight-bold w-100 px-2" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                              <div class="w-100 flex-left">
-                                <i class="fal fa-times"></i>
-                                <span class="pl-3">Roofing</span>
-                              </div>
-                              <i class="far fa-chevron-up"></i>
-                            </button>
-                          </div>
-
-                          <div id="collapseFour" class="collapse show pl-2" aria-labelledby="headingFour" data-parent="#accordionFour">
-                            <div class="w-100 my-2 flex-left">
-                              <i class="fal fa-times"></i>
-                              <span class="pl-3">Roof Replacment</span>
-                            </div>
-                            <div class="w-100 my-2 flex-left">
-                              <i class="fal fa-times"></i>
-                              <span class="pl-3">Roof Replacment</span>
-                            </div>
-                            <div class="w-100 my-2 flex-left">
-                              <i class="fal fa-times"></i>
-                              <span class="pl-3">Roof Replacment</span>
-                            </div>
-                          </div>
+                      <div class="">
+                        <div class="w-100 my-2 flex-left">
+                          <i class="fal fa-times"></i>
+                          <span class="pl-3">New York</span>
+                        </div>
+                        <div class="w-100 my-2 flex-left">
+                          <i class="fal fa-times"></i>
+                          <span class="pl-3">New York</span>
+                        </div>
+                        <div class="w-100 my-2 flex-left">
+                          <i class="fal fa-times"></i>
+                          <span class="pl-3">New York</span>
                         </div>
                       </div>
 
                     </div>
 
                     <span class="summary font-r-12">
-                      <span class="font-weight-bold">17 </span>
-                      services were selected
+                      <span class="font-weight-bold">3 </span>
+                      locations were selected
                     </span>
                   </div>
                 </div>
