@@ -686,6 +686,20 @@
     .wizard-content {
       padding-top: 50px;
       padding-bottom: 20px;
+
+      &.locations {
+        .wizard-content-outer {
+          height: inherit;
+        }
+
+        .wizard-content-inner {
+          height: 174px;
+        }
+
+        .buttons-container {
+          margin-top: 40px;
+        }
+      }
     }
 
     .details {
