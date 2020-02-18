@@ -148,3 +148,126 @@ form {
     padding-top: 8px;
   }
 }
+
+.custom-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .custom-control-label {
+    padding-top: .025em;
+
+    &:before { top: 0; }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: transparent !important;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url("../images/confirm-7.svg");
+    top: 0;
+  }
+}
+
+// Add company profile Created by Igor 18.02.20
+.add-company-profile {
+  form {
+    .form-control-container {
+      position: relative;
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        width: 18px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    @media(min-width: 300px) { // from 300
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        label {
+          width: 100%;
+        }
+
+        .form-control-container {
+          width: 100%;
+
+          .form-control {
+            padding-left: 34px;
+
+            &:focus {
+              border: 1px solid #ced4da;
+            }
+          }
+        }
+      }
+    }
+
+    @media(min-width: $break-pc) { // from 1200
+      .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        label {
+          width: 40%;
+          margin-bottom: 0;
+        }
+
+        .form-control-container {
+          position: relative;
+          width: 60%;
+
+          .form-control {
+            padding-left: 30px;
+          }
+
+          i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 18px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    @media(min-width: 1366px) { // from 1366
+      label {
+        width: 50%;
+      }
+
+      .form-control-container {
+        width: 50%;
+      }
+    }
+  }
+
+  //.custom-checkbox {
+  //  .custom-control-label {
+  //    padding-top: .025em;
+  //
+  //    &::before {
+  //      top: 50%;
+  //      transform: translate(0, -50%);
+  //    }
+  //  }
+  //}
+  //
+  //.custom-control-input:checked ~ .custom-control-label:after {
+  //  top: 50%;
+  //  transform: translateY(-50%);
+  //}
+}

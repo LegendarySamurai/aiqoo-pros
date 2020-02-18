@@ -735,8 +735,8 @@ app {
         }
         // Created by Igor Feb 13th, 2020
         & .nav-sub-menu {
-            //display: none; // appears on hover
-            display: flex;
+            display: none; // appears on hover
+            //display: flex;
             flex-direction: row;
             align-items: center;
             position: absolute;

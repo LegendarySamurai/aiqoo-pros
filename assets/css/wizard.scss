@@ -72,10 +72,6 @@
         font-weight: 700;
         border-color: $purple;
       }
-
-      i {
-
-      }
     }
 
     .divider {
@@ -84,50 +80,6 @@
 
       &.active {
         background-color: $purple;
-      }
-    }
-  }
-
-  .wizard-content {
-
-  }
-
-  .buttons-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .submit-button {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-
-    button {
-      width: 124px;
-      color: #fff;
-
-      &.btn {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-        background-color: $pinkish-grey;
-
-        .fa-long-arrow-right {
-          transform: rotate(180deg);
-        }
-
-        &.active {
-          flex-direction: row;
-          background-color: $purple;
-
-          .fa-long-arrow-right {
-            transform: rotate(0);
-          }
-        }
       }
     }
   }
