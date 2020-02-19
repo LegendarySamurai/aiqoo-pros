@@ -3,14 +3,6 @@
 // Dashboard
 .dashboard-outer {
   padding-bottom: 80px;
-}
-
-// Add company profile
-.add-company-profile {
-  width: 100%;
-  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  font-family: "Raleway",sans-serif;
 
   .tabs {
     display: flex;
@@ -27,6 +19,9 @@
         border-right: 1px solid #b1adbb;
       }
 
+      &:first-child {
+        border-right: 0;
+      }
 
       &.active {
         height: 100%;
@@ -35,7 +30,7 @@
       }
 
       .index {
-        padding-bottom: 6px;
+        padding-bottom: 2px;
         border-radius: 2px;
         background-color: #b3b3b3;
         color: #d6d6d6;
@@ -50,67 +45,116 @@
     }
   }
 
-  .add-company-profile-content {
-    .text {
-      height: 100%;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-      color: #342e49;
-    }
+  .text {
+    height: 100%;
+    color: #342e49;
+  }
 
-    .title {
-      margin-bottom: 16px;
-      color: #342e49;
-    }
+  .title {
+    margin-bottom: 16px;
+    color: #342e49;
+  }
 
-    .finances {
-      .working-hours,
-      .payment-method {
-        padding-bottom: 26px;
-        border-bottom: 1px solid #eeeeee;
-      }
-    }
+  @mixin contentContainerStyles {
+    width: 100%;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    font-family: "Raleway",sans-serif;
+  }
 
-    .activity-hours-group {
-      .input-group {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        color: $purple;
+  // Add company profile
+  .add-company-profile {
+    @include contentContainerStyles;
+
+    .content {
+      .text {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
       }
 
-      .day-of-the-week {
-        //margin-right: 40px;
+      .finances {
+        .working-hours,
+        .payment-method {
+          padding-bottom: 26px;
+          border-bottom: 1px solid #eeeeee;
+        }
       }
 
-      .select-group-outer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-
-      .select-group {
-        position: relative;
-
-        i {
-          position: absolute;
-          top: 50%;
-          left: 10px;
-          transform: translateY(-50%);
+      .activity-hours-group {
+        .input-group {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          color: $purple;
         }
 
-        .custom-select {
-          padding: .375rem .75rem .375rem 2.125rem;
-          background-color: transparent;
-          border: 0;
-          border-bottom: 2px solid $purple;
+        .select-group-outer {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
 
-          &:focus {
-            box-shadow: none;
+        .select-group {
+          position: relative;
+
+          i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+          }
+
+          .custom-select {
+            padding: .375rem .75rem .375rem 2.125rem;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid $purple;
+
+            &:focus {
+              box-shadow: none;
+            }
           }
         }
       }
     }
   }
+
+  // Services and location
+  .services-and-location {
+    @include contentContainerStyles;
+
+    .content {
+      .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .input-group {
+          position: relative;
+
+          .input-group-prepend {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            z-index: 6;
+          }
+
+          input {
+            padding-left: 40px;
+            background-color: #ebebeb;
+            border-radius: 2px;
+            border: none;
+          }
+        }
+      }
+
+      .services {
+
+      }
+    }
+  }
 }
+
+

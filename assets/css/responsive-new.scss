@@ -539,25 +539,6 @@
             color: #c10404;
           }
         }
-
-        //.custom-control {
-        //  display: flex;
-        //  flex-direction: row;
-        //  align-items: center;
-        //
-        //  .custom-control-label {
-        //    &:before { top: 0; }
-        //  }
-        //
-        //  .custom-control-input:checked ~ .custom-control-label::before {
-        //    background-color: transparent !important;
-        //  }
-        //
-        //  .custom-control-input:checked ~ .custom-control-label::after {
-        //    background-image: url("../images/confirm-7.svg");
-        //    top: 0;
-        //  }
-        //}
       }
 
       &.success {
@@ -794,20 +775,34 @@
   }
 }
 
-// Dashboard
-.dashboard-outer {
-  @media(min-width: 300px) { // from 300
-    padding-bottom: 40px;
-  }
-  @media(min-width: $break-pc) { // from 1200
-    padding-bottom: 80px;
-  }
-}
 
-.add-company-profile {
+
+// Dashboard !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.dashboard-outer {
+  @mixin contentStyles {
+    @media(min-width: 300px) {
+      width: 100%;
+      padding: 20px 20px;
+    }
+
+    @media(min-width: $break-pc) {
+      width: 100%;
+      padding: 20px 0 0 45px;
+    }
+  }
+
+  @mixin truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
   @media(min-width: 300px) { // from 300
     & {
       margin-top: 50px;
+      padding-bottom: 40px;
     }
 
     .tabs {
@@ -817,6 +812,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        line-height: 1;
         padding: 0 10px;
         font-size: 1rem;
 
@@ -830,10 +826,183 @@
       }
     }
 
-    .add-company-profile-content {
-      width: 100%;
-      padding: 0 20px;
-      //background-color: coral; // temp
+    // Add company profile
+    .add-company-profile {
+      .content {
+        @include contentStyles;
+
+        .text {
+          margin-bottom: 20px;
+        }
+      }
+
+      .company-info,
+      .contact-info {
+        height: 100%;
+      }
+    }
+
+    // Services and location
+    .services-and-location {
+      padding-bottom: 50px;
+      font-family: "Raleway", sans-serif;
+      font-size: 12px; // All the fonts will start from here 1em
+      color: $purple;
+
+      .content {
+        @include contentStyles;
+
+        .text {
+          margin-bottom: 20px;
+        }
+
+        .search {
+          .search-title {
+            font-size: 1.125em;
+          }
+
+          .input-group {
+            width: 100%;
+          }
+
+          input {
+            width: 100%;
+            font-size: 1.125em;
+
+            &:focus {
+
+            }
+
+            &::-webkit-input-placeholder {
+              font-size: 1.125em;
+
+            }
+            &::-moz-placeholder {
+              font-size: 1.125em;
+
+            }
+            &:-ms-input-placeholder {
+              font-size: 1.125em;
+
+            }
+            &:-moz-placeholder {
+              font-size: 1.125em;
+
+            }
+          }
+        }
+
+        .services {
+          background-color: #f5f5f5;
+          padding: 10px 24px;
+
+          .select-tabs {
+            .input-group-prepend {
+              .input-group-text {
+                background-color: #fff;
+                border-right: 0;
+              }
+            }
+
+            button {
+              color: #fff;
+              &.active {
+                background-color: $purple;
+              }
+            }
+          }
+
+          .tools {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+
+            span {
+              font-weight: 500;
+              font-size: .75em;
+              color: $purple;
+
+              &.divider {
+                width: 1px;
+                height: 50%;
+                margin: 0 8px;
+                background-color: $purple;
+              }
+            }
+
+            .active {
+              color: #c30a0a;
+            }
+          }
+
+          .services-list {
+            .table-cell {
+              font-size: .75em;
+              margin: 8px 0;
+
+              & > span {
+                padding-right: 5px;
+              }
+            }
+
+            .table-cell-1 {
+              width: 10%;
+              order: 1;
+              margin: 4px 0;
+
+              .custom-control {
+                min-height: initial;
+              }
+            }
+
+            .table-cell-2 {
+              @include truncate;
+              width: 50%;
+              order: 2;
+            }
+
+            .table-cell-3 {
+              @include truncate;
+              width: 100%;
+              order: 5;
+            }
+
+            .table-cell-4 {
+              @include truncate;
+              width: 100%;
+              order: 6;
+            }
+
+            .table-cell-5 {
+              width: 20%;
+              order: 3;
+            }
+
+            .table-cell-6 {
+              width: 20%;
+              order: 4;
+            }
+
+            .table-item {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              padding: 10px;
+              background-color: #ededed;
+              border-radius: 3px;
+              box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
+            }
+          }
+        }
+      }
+
+      .selected-services {
+        padding-left: 34px;
+        font-size: .75em;
+        color: #342e49;
+      }
     }
 
     .custom-control {
@@ -841,17 +1010,9 @@
       flex-direction: row;
       align-items: center;
     }
-
-    .company-info,
-    .contact-info {
-      height: 100%;
-    }
   }
-  @media(max-width: $break-tablet) { // to 768
 
-  }
   @media(min-width: $break-tablet) { // from 768
-
     .tabs {
       .tab {
         font-size: 1.25rem;
@@ -862,26 +1023,136 @@
       }
     }
 
+    .services-list {
+      .table-cell {
+        margin: 8px 0 !important;
+      }
+    }
+
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) { // from 768 to 1024
 
   }
   @media(min-width: $break-pc) { // from 1200
+    & {
+      padding-bottom: 80px;
+    }
+
     .tabs {
       .tab {
+        line-height: inherit;
         font-size: 1.375rem;
         cursor: pointer;
       }
     }
 
-    .company-info,
-    .contact-info {
-      border-right: 1px solid #d6d6d6;
+    // Add company profile
+    .add-company-profile {
+      .content {
+        @include contentStyles;
+
+        .text {
+          margin-bottom: 32px;
+        }
+      }
+
+      .company-info,
+      .contact-info {
+        border-right: 1px solid #d6d6d6;
+      }
     }
 
-    .add-company-profile-content {
-      width: 100%;
-      padding: 0 0 0 45px;
+    // Services and location
+    .services-and-location {
+      font-size: 16px;
+
+      .selected-services {
+        padding-left: 60px;
+        padding-top: 24px;
+        font-size: .9375em;
+        color: #342e49;
+      }
+
+      .content {
+        .text {
+          margin-bottom: 32px;
+        }
+
+        .search {
+          .input-group {
+            width: 312px;
+
+            input {
+              font-size: .875em;
+
+              &::-webkit-input-placeholder {
+                font-size: .875em;
+
+              }
+
+              &::-moz-placeholder {
+                font-size: .875em;
+
+              }
+
+              &:-ms-input-placeholder {
+                font-size: .875em;
+
+              }
+
+              &:-moz-placeholder {
+                font-size: .875em;
+
+              }
+
+            }
+          }
+        }
+
+        .services {
+          padding: 10px 16px 30px 16px;
+
+          .services-list {
+
+            .table-cell-1 {
+              width: 4%;
+              order: 1;
+              margin: 8px 0;
+            }
+
+            .table-cell-2 {
+              width: 14%;
+              order: 2;
+            }
+
+            .table-cell-3 {
+              width: 24%;
+              order: 3;
+            }
+
+            .table-cell-4 {
+              width: 42%;
+              order: 4;
+            }
+
+            .table-cell-5 {
+              width: 9%;
+              order: 5;
+            }
+
+            .table-cell-6 {
+              width: 7%;
+              order: 6;
+            }
+
+            .table-item {
+              padding: 0 10px;
+              border-radius: 0;
+              box-shadow: none;
+            }
+          }
+        }
+      }
     }
   }
   @media(min-width: 1366px) { // from 1366
@@ -900,14 +1171,72 @@
       }
     }
 
-  }
-  @media(min-width: 1920px) { // from 1920
-    & {
-      margin-top: 80px;
+    .services {
+      .tools {
+        span {
+          font-size: .9375em;
+        }
+      }
+
+      .services-list {
+        .table-cell {
+          font-size: .9375em;
+        }
+        .table-cell-1 {
+          width: 4%;
+        }
+
+        .table-cell-2 {
+          width: 12%;
+        }
+
+        .table-cell-3 {
+          width: 19%;
+        }
+
+        .table-cell-4 {
+          width: 47%;
+        }
+
+        .table-cell-5 {
+          width: 9%;
+        }
+
+        .table-cell-6 {
+          width: 9%;
+        }
+
+        .table-items-list {
+          @mixin divider {
+            &:after {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translate(0, -50%);
+              display: block;
+              content: '';
+              width: 1px;
+              height: 80%;
+              background-color: #ccc;
+              margin: 0 16px;
+            }
+          }
+
+          .table-cell-2,
+          .table-cell-3 {
+            @include divider;
+          }
+        }
+      }
     }
 
-    .tabs {
-      height: 60px;
-    }
+
+
+  }
+  @media(min-width: 1920px) { // from 1920
+    & { margin-top: 80px; }
+
+
+    .tabs { height: 60px; }
   }
 }
