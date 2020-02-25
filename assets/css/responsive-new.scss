@@ -1367,19 +1367,6 @@
         .collapse-header {
           padding: 0 10px;
         }
-
-        .collapse-item {
-          .collapse-col-1 {
-
-          }
-          .collapse-col-2 {
-
-          }
-          .collapse-col-3 {
-
-          }
-
-        }
       }
     }
 
@@ -1399,7 +1386,13 @@
     .collapse-body {
       padding: 12px 8px 30px;
 
+      .collapse-btn {
+        padding: 10px;
+      }
+
       .collapse-item {
+        padding: 10px;
+
         .collapse-col-1 {
 
         }

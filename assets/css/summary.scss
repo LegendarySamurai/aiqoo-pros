@@ -34,9 +34,20 @@
           @include flex-row;
           justify-content: space-between;
           align-items: center;
+          //padding: 10px;
+          background-color: #ebebeb;
+
+          .collapse-col-1 {
+            //background-color: coral;
+          }
+
+          .collapse-col-2 {
+            //background-color: lightgreen;
+          }
 
           .collapse-col-3 {
             @include flex-row;
+            //background-color: grey;
           }
 
           &.collapsed {
@@ -49,19 +60,29 @@
         .collapse-item {
           @include flex-row;
           align-items: center;
+          //padding: 10px;
 
           .collapse-col-1 {
             @include flex-row;
+            align-items: center;
+            //background-color: coral;
           }
           .collapse-col-2 {
+            //background-color: lightgreen;
 
           }
           .collapse-col-3 {
             @include flex-row;
             justify-content: space-between;
+            //background-color: grey;
 
             .edit {
               @include flex-row;
+              align-items: center;
+
+              i {
+                padding-right: 5px;
+              }
             }
           }
         }
