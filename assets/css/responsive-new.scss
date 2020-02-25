@@ -3,9 +3,8 @@
 // Created by Igor 14.02.2020
 @media(min-width: 300px) {
   .buttons-container {
+    @include flex-row;
     width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -531,9 +530,8 @@
               }
 
               .btn {
+                @include flex-row;
                 flex-grow: 1;
-                display: flex;
-                flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 border-radius: 0;
@@ -825,8 +823,7 @@
       height: 40px;
 
       .tab {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-items: center;
         line-height: 1;
         padding: 0 10px;
@@ -929,8 +926,7 @@
           }
 
           .tools {
-            display: flex;
-            flex-direction: row;
+            @include flex-row;
             justify-content: flex-end;
             align-items: center;
             height: 100%;
@@ -1003,8 +999,7 @@
             }
 
             .table-item {
-              display: flex;
-              flex-direction: row;
+              @include flex-row;
               flex-wrap: wrap;
               padding: 10px;
               background-color: #ededed;
@@ -1049,8 +1044,7 @@
     }
 
     .custom-control {
-      display: flex;
-      flex-direction: row;
+      @include flex-row;
       align-items: center;
 
       .custom-control-label {
@@ -1345,29 +1339,166 @@
 
 
 //////////////////////////// Summary ////////////////////////////
-@media(min-width: 300px) {
+.summary-page {
+  @media(min-width: 300px) {
 
-}
+  }
 
-@media(min-width: 600px) {
+  @media(min-width: 600px) {
 
-}
+  }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-}
+  }
 
-@media(min-width: 1200px) {
+  @media(min-width: 1200px) {
+    .content-container {
+      max-width: 100%;
+      flex-grow: 0;
+      padding: 0 0 60px ;
+    }
 
-}
+    .content-col-left {
+      padding-left: 45px;
+      padding-right: 32px;
 
-@media(min-width: 1400px) {
+      .collapse-container {
+        .collapse-header {
+          padding: 0 10px;
+        }
 
-}
+        .collapse-item {
+          .collapse-col-1 {
 
-@media(min-width: 1600px) {
+          }
+          .collapse-col-2 {
 
-}
+          }
+          .collapse-col-3 {
 
-@media(min-width: 1800px) {
+          }
+
+        }
+      }
+    }
+
+    .content-col-right {
+      padding-left: 32px;
+      padding-right: 45px;
+    }
+
+    .content-col-header {
+      padding: 22px 0 20px;
+    }
+
+    .content-col-heading {
+      margin-bottom: 0;
+    }
+
+    .collapse-body {
+      padding: 12px 8px 30px;
+
+      .collapse-item {
+        .collapse-col-1 {
+
+        }
+        .collapse-col-2 {
+
+        }
+        .collapse-col-3 {
+
+        }
+
+      }
+    }
+
+    // Dates
+    .dates-container {
+      .dates {
+        height: 80px;
+      }
+    }
+
+    // Graps container
+    .graphs-container {
+      //margin: 20px 0;
+
+      .graph-card {
+        height: 130px;
+      }
+    }
+
+    // Profile
+    .profile-container {
+      .profile-card {
+        padding: 0 15px 15px;
+      }
+      .profile-card-header {
+        padding: 10px 0;
+        margin-bottom: 10px;
+      }
+
+      .profile-card-body {
+        .profile-data-unit {
+          margin-bottom: 15px;
+
+          .data {
+            i {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: 1400px) {
+
+  }
+
+  @media(min-width: 1600px) {    // Profile
+    .profile-container {
+      .profile-card {
+        padding: 0 20px 20px;
+      }
+      .profile-card-header {
+        padding: 15px 0;
+        margin-bottom: 20px;
+      }
+
+      .profile-card-body {
+        .profile-data-unit {
+          margin-bottom: 15px;
+
+          .data {
+            i {
+              padding-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: 1800px) {
+    // Dates
+    .dates-container {
+      .dates {
+        height: 100px;
+      }
+    }
+
+    // Graps container
+    .graphs-container {
+      margin: 30px 0;
+
+      .graph-card {
+        height: 262px;
+      }
+    }
+
+    // Profile
+    .profile-container {}
+  }
 }

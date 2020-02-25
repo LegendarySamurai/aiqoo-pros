@@ -30,6 +30,35 @@ $min_width: 320px;
 $max_width: 1200px;
 $min_font: 16px;
 $max_font: 24px;
+
+.cursor-p {
+    @media(min-width: 1200px) {
+        cursor: pointer;
+    }
+}
+
+.icon-red {
+    color: #c30a0a;
+}
+
+.font-w-300 {
+    font-weight: 300;
+}
+
+.font-w-500 {
+    font-weight: 500;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin titleColor {
     color: $primaryTextColor;
     font-family: "Poppins", 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
@@ -61,8 +90,6 @@ $max_font: 24px;
         transform: translateX(-50%);
     }
 }
-
-
 
 @mixin inputStyles {
     height: 100%;

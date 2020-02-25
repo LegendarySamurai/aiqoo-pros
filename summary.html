@@ -270,14 +270,63 @@
             <div class="row">
               <div class="col-6 content-col content-col-left">
                 <header class="content-col-header">
-                  <h3 class="content-col-heading font-r-18">List of services</h3>
+                  <h3 class="content-col-heading font-r-13 font-weight-700">List of services</h3>
                 </header>
 
                 <div class="content-col-main">
                   <div class="collapse-container">
-                    <div class="collapse-header"></div>
+                    <div class="collapse-header my-lg-2">
+                      <div class="collapse-col-1">
+                        <span class="font-r-10 font-w-300">Services</span>
+                      </div>
+                      <div class="collapse-col-2">
+                        <span class="font-r-10 font-w-300">Cities</span>
+                      </div>
+                      <div class="collapse-col-3">
+                        <span class="font-r-10 font-w-300">Reach</span>
+                      </div>
+                    </div>
                     <div class="collapse-body">
-                      <!--  insert collapse here-->
+                      <div id="accordionOne" class="accordion-item">
+                        <div class="card-accordion-item">
+                          <div class="card-header" id="headingOne">
+                            <!-- this is collapse grey header -->
+                            <div class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <div class="collapse-col-1">
+                                <span class="pl-3 font-w-500">Roof repair</span>
+                              </div>
+                              <div class="collapse-col-2">
+                                <span class="cities-quantity">2</span>
+                              </div>
+                              <div class="collapse-col-3 justify-content-lg-between">
+                                <span class="reach">6,900</span>
+                                <i class="far fa-chevron-up pt-lg-1"></i>
+                              </div>
+                            </div>
+                            <!-- EOL: collapse grey header -->
+                          </div>
+
+                          <div id="collapseOne" class="collapse show pl-2" aria-labelledby="headingOne" data-parent="#accordionOne">
+                            <div class="w-100 my-2 collapse-item">
+                              <div class="collapse-col-1">
+                                <i class="fal fa-times icon-red"></i>
+                                <span class="pl-3">Los ángeles</span>
+                              </div>
+                              <div class="collapse-col-2">
+                                <span class="cities-quantity">2</span>
+                              </div>
+                              <div class="collapse-col-3">
+                                <span class="reach">6,900</span>
+                                <div class="edit cursor-p">
+                                  <i class="fal fa-map-marker-edit"></i>
+                                  <span class="font-r-11 font-w-300">Edit</span>
+                                </div>
+                                <i class="fad fa-chart-pie"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -285,31 +334,33 @@
 
               <div class="col-6 content-col content-col-right">
                 <header class="content-col-header">
-                  <h3 class="content-col-heading font-r-18">Engagement</h3>
+                  <h3 class="content-col-heading font-r-13 font-weight-700">Engagement</h3>
                 </header>
 
                 <div class="content-col-main">
                   <!-- dates -->
-                  <div class="row dates-container">
-                    <div class="col-12"></div>
+                  <div class="row dates-container my-lg-4">
+                    <div class="col-12">
+                      <div class="dates"></div>
+                    </div>
                   </div>
 
                   <!-- graph cards -->
-                  <div class="row graphs-container">
+                  <div class="row graphs-container my-lg-4">
                     <div class="col-12 col-lg-4">
-                      <div class="card graph-card">
+                      <div class="graph-card">
                         <h4 class="graph-card-title"></h4>
                         <div class="graph-card-body"></div>
                       </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                      <div class="card graph-card">
+                      <div class="graph-card">
                         <h4 class="graph-card-title"></h4>
                         <div class="graph-card-body"></div>
                       </div>
                     </div>
                     <div class="col-12 col-lg-4">
-                      <div class="card graph-card">
+                      <div class="graph-card">
                         <h4 class="graph-card-title"></h4>
                         <div class="graph-card-body"></div>
                       </div>
@@ -317,54 +368,53 @@
                   </div>
 
                   <!-- profile -->
-                  <div class="row profile-container">
+                  <div class="row profile-container my-lg-4">
                     <div class="col-12">
-                      <div class="card">
-                        <header class="card-header">
-                          <h4>My profile</h4>
-
-                          <div class="edit">
-                            <i></i>
-                            <span>Edit</span>
+                      <div class="profile-card">
+                        <header class="profile-card-header">
+                          <span class="font-r-10 font-w-500">My profile</span>
+                          <div class="edit cursor-p">
+                            <i class="fas fa-pencil pr-lg-2"></i>
+                            <span class="font-r-11 font-w-300">Edit</span>
                           </div>
                         </header>
-                        <div class="card-body">
+                        <div class="row profile-card-body">
                           <!-- profile picture -->
-                          <div class="col-12 col-lg-auto">
-                            <img src="" alt="">
+                          <div class="col-12 col-lg-4">
+                            <img src="assets/images/profile-img.png" alt="profile img">
                           </div>
 
                           <!-- profile-data -->
-                          <div class="col-12 col-lg">
+                          <div class="col-12 col-lg-8">
                             <div class="row">
                               <!-- profile data (left side) -->
                               <div class="col-12 col-lg-6">
                                 <div class="profile-data-unit">
-                                  <div class="title">Company name</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>Name 123</span>
+                                  <div class="title font-r-10 font-w-300">Company name</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-flag font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">Name 123</span>
                                   </div>
                                 </div>
                                 <div class="profile-data-unit">
-                                  <div class="title">Company address</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>LA PA 2433</span>
+                                  <div class="title font-r-10 font-w-300">Company address</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-map-marker-alt font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">LA PA 2433</span>
                                   </div>
                                 </div>
                                 <div class="profile-data-unit">
-                                  <div class="title">Company phone</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>+1453 234345</span>
+                                  <div class="title font-r-10 font-w-300">Company phone</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-phone-alt font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">+1453 234345</span>
                                   </div>
                                 </div>
                                 <div class="profile-data-unit">
-                                  <div class="title">Company website</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>WWW.DDA.COM</span>
+                                  <div class="title font-r-10 font-w-300">Company website</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-globe font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">WWW.DDA.COM</span>
                                   </div>
                                 </div>
                               </div>
@@ -372,31 +422,31 @@
                               <!-- profile data (right side) -->
                               <div class="col-12 col-lg-6">
                                 <div class="profile-data-unit">
-                                  <div class="title">Years of Experience</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>3 Years</span>
+                                  <div class="title font-r-10 font-w-300">Years of Experience</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-calendar font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">3 Years</span>
                                   </div>
                                 </div>
                                 <div class="profile-data-unit">
-                                  <div class="title">License number</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>2345356924534</span>
+                                  <div class="title font-r-10 font-w-300">License number</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-clipboard-user font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">2345356924534</span>
                                   </div>
                                 </div>
                                 <div class="profile-data-unit">
-                                  <div class="title">Contact phone</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>+1 4354 245555</span>
+                                  <div class="title font-r-10 font-w-300">Contact phone</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-user font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">+1 4354 245555</span>
                                   </div>
                                 </div>
                                 <div class="profile-data-unit">
-                                  <div class="title">Contact E-mail</div>
-                                  <div class="data">
-                                    <i></i>
-                                    <span>Dave@repair.com</span>
+                                  <div class="title font-r-10 font-w-300">Contact E-mail</div>
+                                  <div class="data mt-lg-2">
+                                    <i class="fal fa-envelope font-r-10"></i>
+                                    <span class="font-r-10 font-w-500">Dave@repair.com</span>
                                   </div>
                                 </div>
                               </div>
