@@ -271,3 +271,22 @@ form {
   //  transform: translateY(-50%);
   //}
 }
+
+// Services and location
+.services-and-location {
+  .county-list {
+    .custom-control {
+      .custom-control-label {
+        @media(min-width: 300px) {
+          top: -2px;
+        }
+        @media(min-width: $break-pc) {
+          top: 6px;
+        }
+        @media(min-width: 1920px) {
+          top: -2px;
+        }
+      }
+    }
+  }
+}

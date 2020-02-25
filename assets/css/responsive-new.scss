@@ -17,7 +17,9 @@
 
     button {
       width: 124px;
+      height: 40px;
       color: #fff;
+      border-radius: 0;
 
       &.btn {
         display: flex;
@@ -282,6 +284,14 @@
       }
     }
   }
+
+  .submit-button {
+    .btn {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }
 
 @media(max-width: 1365px) {
@@ -336,6 +346,12 @@
   .sign-in-and-sign-up,
   .account-verification {
     width: 550px;
+  }
+
+  .submit-button {
+    .btn {
+      height: 50px;
+    }
   }
 }
 
@@ -846,7 +862,6 @@
     .services-and-location {
       padding-bottom: 50px;
       font-family: "Raleway", sans-serif;
-      font-size: 12px; // All the fonts will start from here 1em
       color: $purple;
 
       .content {
@@ -899,6 +914,7 @@
           .select-tabs {
             .input-group-prepend {
               .input-group-text {
+                width: 68px;
                 background-color: #fff;
                 border-right: 0;
               }
@@ -926,7 +942,7 @@
 
               &.divider {
                 width: 1px;
-                height: 50%;
+                height: 15px;
                 margin: 0 8px;
                 background-color: $purple;
               }
@@ -937,15 +953,16 @@
             }
           }
 
-          .services-list {
-            .table-cell {
-              font-size: .75em;
-              margin: 8px 0;
+          .table-cell {
+            margin: 8px 0;
 
-              & > span {
-                padding-right: 5px;
-              }
+            & > span {
+              padding-right: 5px;
             }
+          }
+
+          // Services-list
+          .services-list {
 
             .table-cell-1 {
               width: 10%;
@@ -995,12 +1012,38 @@
               box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.16);
             }
           }
+
+          // County-list
+          .county-list {
+            padding: 20px 0 0;
+            background-color: #fff;
+
+            .tools {
+              justify-content: flex-start;
+              padding: 0 20px;
+
+              .divider {
+                height: 15px;
+              }
+            }
+
+            .table-items-list {
+              display: flex;
+              flex-direction: column;
+              padding-bottom: 20px;
+
+              .table-item {
+                width: 100%;
+                margin: 8px 0;
+                padding: 0 20px;
+              }
+            }
+          }
         }
       }
 
       .selected-services {
         padding-left: 34px;
-        font-size: .75em;
         color: #342e49;
       }
     }
@@ -1009,13 +1052,18 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      .custom-control-label {
+        line-height: 1.25;
+        padding: 0 10px;
+      }
     }
   }
 
   @media(min-width: $break-tablet) { // from 768
     .tabs {
       .tab {
-        font-size: 1.25rem;
+        //font-size: 1.25rem;
 
         &:first-child {
           padding-left: 45px;
@@ -1023,15 +1071,27 @@
       }
     }
 
-    .services-list {
-      .table-cell {
-        margin: 8px 0 !important;
-      }
+    .table-cell {
+      margin: 8px 0 !important;
     }
 
+    // County-list
+    .county-list {
+      .table-items-list {
+        .table-item {
+          width: 50%;
+        }
+      }
+    }
   }
   @media only screen and (min-width: 768px) and (max-width: 1024px) { // from 768 to 1024
-
+    .services-list {
+      .table-items-list {
+        .table-item {
+          padding: 0 10px;
+        }
+      }
+    }
   }
   @media(min-width: $break-pc) { // from 1200
     & {
@@ -1041,7 +1101,6 @@
     .tabs {
       .tab {
         line-height: inherit;
-        font-size: 1.375rem;
         cursor: pointer;
       }
     }
@@ -1064,12 +1123,12 @@
 
     // Services and location
     .services-and-location {
-      font-size: 16px;
+      //font-size: 16px;
 
       .selected-services {
         padding-left: 60px;
         padding-top: 24px;
-        font-size: .9375em;
+        //font-size: .9375em;
         color: #342e49;
       }
 
@@ -1112,8 +1171,18 @@
         .services {
           padding: 10px 16px 30px 16px;
 
-          .services-list {
+          .select-tabs {
+            .tab {
+              padding: 10px;
 
+              &.selected {
+                background-color: #fff;
+              }
+            }
+          }
+
+          // Services-list
+          .services-list {
             .table-cell-1 {
               width: 4%;
               order: 1;
@@ -1151,6 +1220,21 @@
               box-shadow: none;
             }
           }
+
+          // County-list
+          .county-list {
+            .table-items-list {
+              flex-direction: row;
+
+              .table-item {
+                width: 17.5%;
+
+                &:not(:last-child) {
+                  border-right: 1px solid #ededed;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -1178,10 +1262,12 @@
         }
       }
 
+      .table-cell {
+        font-size: .9375em;
+      }
+
+      // Services-list
       .services-list {
-        .table-cell {
-          font-size: .9375em;
-        }
         .table-cell-1 {
           width: 4%;
         }
@@ -1228,6 +1314,21 @@
           }
         }
       }
+
+      // County-list
+      .county-list {
+        .table-items-list {
+
+        }
+      }
+
+      .custom-control {
+
+        .custom-control-label {
+          padding: 0 20px;
+        }
+      }
+
     }
 
 
