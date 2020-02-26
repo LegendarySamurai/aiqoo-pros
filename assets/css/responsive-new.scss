@@ -812,7 +812,6 @@
     text-overflow: ellipsis;
   }
 
-
   @media(min-width: 300px) { // from 300
     & {
       margin-top: 50px;
@@ -1043,6 +1042,11 @@
       }
     }
 
+    // Add portfolio
+    .add-portfolio {
+
+    }
+
     .custom-control {
       @include flex-row;
       align-items: center;
@@ -1232,6 +1236,17 @@
         }
       }
     }
+
+    // Add portfolio
+    .add-portfolio {
+      .collapse-item {
+        .collapse-col-1 {
+          .collapse-row {
+
+          }
+        }
+      }
+    }
   }
   @media(min-width: 1366px) { // from 1366
 
@@ -1325,12 +1340,9 @@
 
     }
 
-
-
   }
   @media(min-width: 1920px) { // from 1920
     & { margin-top: 80px; }
-
 
     .tabs { height: 60px; }
   }

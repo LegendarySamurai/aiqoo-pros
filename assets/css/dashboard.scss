@@ -155,6 +155,59 @@
       }
     }
   }
+
+  // Add portfolio
+  .add-portfolio {
+    // right
+    .content-col-right {
+      .content-col-main {
+        background-color: #f5f5f5;
+      }
+
+      .collapse-container {
+        padding: 8px;
+
+        .accordion-item {
+
+        }
+
+        // header
+        .card-accordion-header {
+          background-color: #ebebeb;
+        }
+
+        .collapse-btn {
+          @include flex-row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 8px;
+        }
+
+        .collapse-item {
+          // data
+          .collapse-col-1 {
+            .collapse-row {
+              i {
+
+              }
+              span {
+
+              }
+            }
+          }
+          // images
+          .collapse-col-2 {
+            .collapse-row {
+
+            }
+          }
+        }
+      }
+
+    }
+
+
+  }
 }
 
 
