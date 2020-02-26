@@ -1495,12 +1495,6 @@
       .accordion-items {
         max-height: 680px;
       }
-
-      .collapse-container {
-        .collapse-body {
-
-        }
-      }
     }
     // Dates
     .dates-container {
@@ -1517,8 +1511,71 @@
         height: 262px;
       }
     }
+  }
+}
 
-    // Profile
-    .profile-container {}
+////////////////// Empty //////////////////
+.summary-page-empty {
+  @media(min-width: 300px) {
+    .content-container {
+      max-width: 100%;
+      flex-grow: 0;
+      padding: 0;
+    }
+
+    .content-col-left {
+
+    }
+
+  }
+  @media(min-width: 600px) {
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  }
+  @media(min-width: 1200px) {
+    .content-container {
+      //max-width: 100%;
+      flex-grow: 0;
+      padding: 0 25px 60px 0;
+    }
+
+    .content-col-left {
+      .content-col-main {
+        padding-top: 80px;
+      }
+
+      .img-container {
+        margin-top: 50px;
+
+        &:before {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 200px;
+          height: 200px;
+        }
+
+        i {
+          top: -5%;
+          right: 0;
+          transform: translate(100%, 0) rotate(90deg);
+        }
+      }
+    }
+  }
+  @media(min-width: 1400px) {
+
+  }
+  @media(min-width: 1600px) {
+
+  }
+  @media(min-width: 1800px) {
+    .content-col-left {
+      .content-col-main {
+        padding-top: 80px;
+      }
+    }
   }
 }
