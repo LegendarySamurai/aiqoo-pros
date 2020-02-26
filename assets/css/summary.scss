@@ -7,11 +7,17 @@
   }
 
   .content-col-left {
+    .accordion-items {
+      overflow-y: scroll;
+    }
+
     .accordion-item {
       width: 100%;
     }
 
     .collapse-container {
+      //padding-right: 10px;
+
       .collapse-col-1 {
         width: 30%;
       }
@@ -34,7 +40,6 @@
           @include flex-row;
           justify-content: space-between;
           align-items: center;
-          //padding: 10px;
           background-color: #ebebeb;
 
           .collapse-col-1 {
@@ -92,6 +97,70 @@
 
   .content-col-right {
 
+    // Dates
+    .dates-container {
+      .dates {
+        border-radius: 8px;
+        background-color: #f5f5f5;
+      }
+    }
+
+    // Graps container
+    .graphs-container {
+      .graph-card {
+        border-radius: 10px;
+        box-shadow: 0 1px 8px 0 rgba(20, 46, 110, 0.1);
+        background-color: #ffffff;
+      }
+    }
+
+    // Profile
+    .profile-container {
+      .profile-card {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 1px 8px 0 rgba(20, 46, 110, 0.1);
+        background-color: #ffffff;
+      }
+
+      .profile-card-header {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        border-bottom: 1px solid #d6d6d6;
+
+        span, i {
+          color: $purple;
+        }
+      }
+
+      .profile-card-body {
+        @include flex-row;
+
+        img {
+          max-width: 100%;
+        }
+
+        .profile-data-unit {
+          font-family: "Raleway", sans-serif;
+
+          .title {
+            color: #b3b3b3;
+          }
+
+          .data {
+            i {
+              color: $purple;
+            }
+
+            span {
+              color: $purple;
+            }
+          }
+        }
+      }
+    }
   }
 
   // Common styles
@@ -110,70 +179,5 @@
 
   .collapse-body {
     background-color: #f5f5f5;
-  }
-
-  // Dates
-  .dates-container {
-    .dates {
-      border-radius: 8px;
-      background-color: #f5f5f5;
-    }
-  }
-
-  // Graps container
-  .graphs-container {
-    .graph-card {
-      border-radius: 10px;
-      box-shadow: 0 1px 8px 0 rgba(20, 46, 110, 0.1);
-      background-color: #ffffff;
-    }
-  }
-
-  // Profile
-  .profile-container {
-    .profile-card {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 1px 8px 0 rgba(20, 46, 110, 0.1);
-      background-color: #ffffff;
-    }
-
-    .profile-card-header {
-      @include flex-row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: transparent;
-      border-bottom: 1px solid #d6d6d6;
-
-      span, i {
-        color: $purple;
-      }
-    }
-
-    .profile-card-body {
-      @include flex-row;
-
-      img {
-        max-width: 100%;
-      }
-
-      .profile-data-unit {
-        font-family: "Raleway", sans-serif;
-
-        .title {
-          color: #b3b3b3;
-        }
-
-        .data {
-          i {
-            color: $purple;
-          }
-
-          span {
-            color: $purple;
-          }
-        }
-      }
-    }
   }
 }

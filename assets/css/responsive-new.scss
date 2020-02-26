@@ -433,7 +433,7 @@
 }
 
 
-// Wizard
+//////////////////////////// Wizard ////////////////////////////
 .wizard-dialog {
   @media(min-width: 300px) { // from 300
     & { width: 98%; }
@@ -1356,16 +1356,40 @@
     .content-container {
       max-width: 100%;
       flex-grow: 0;
-      padding: 0 0 60px ;
+      padding: 0 10px 60px 0;
     }
 
     .content-col-left {
       padding-left: 45px;
       padding-right: 32px;
 
+      .accordion-items {
+        padding-right: 10px;
+        max-height: 500px;
+      }
+
       .collapse-container {
         .collapse-header {
           padding: 0 10px;
+        }
+
+        .collapse-body {
+          padding: 12px 10px 30px 8px;
+          //padding-right: 10px;
+
+          .collapse-btn {
+            padding: 10px;
+          }
+
+          .collapse-item {
+            padding: 10px;
+          }
+        }
+
+        .accordion-item {
+          &:not(:first-child) {
+            margin-top: 6px;
+          }
         }
       }
     }
@@ -1384,26 +1408,7 @@
     }
 
     .collapse-body {
-      padding: 12px 8px 30px;
 
-      .collapse-btn {
-        padding: 10px;
-      }
-
-      .collapse-item {
-        padding: 10px;
-
-        .collapse-col-1 {
-
-        }
-        .collapse-col-2 {
-
-        }
-        .collapse-col-3 {
-
-        }
-
-      }
     }
 
     // Dates
@@ -1472,9 +1477,31 @@
         }
       }
     }
+
+    .content-col-left {
+      .accordion-items {
+        max-height: 530px;
+      }
+      .collapse-container {
+        .collapse-body {
+
+        }
+      }
+    }
   }
 
   @media(min-width: 1800px) {
+    .content-col-left {
+      .accordion-items {
+        max-height: 680px;
+      }
+
+      .collapse-container {
+        .collapse-body {
+
+        }
+      }
+    }
     // Dates
     .dates-container {
       .dates {
