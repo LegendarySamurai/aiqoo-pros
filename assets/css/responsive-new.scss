@@ -1103,16 +1103,16 @@
       }
     }
 
+    .content {
+      @include contentStyles;
+
+      .text {
+        margin-bottom: 32px;
+      }
+    }
+
     // Add company profile
     .add-company-profile {
-      .content {
-        @include contentStyles;
-
-        .text {
-          margin-bottom: 32px;
-        }
-      }
-
       .company-info,
       .contact-info {
         border-right: 1px solid #d6d6d6;
@@ -1240,11 +1240,19 @@
     // Add portfolio
     .add-portfolio {
       .collapse-item {
-        .collapse-col-1 {
-          .collapse-row {
 
-          }
+      }
+
+      .collapse-col-1 {
+        width: 48%;
+
+        .collapse-row {
+
         }
+      }
+
+      .collapse-col-2 {
+        width: 48%;
       }
     }
   }

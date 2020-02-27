@@ -57,9 +57,16 @@
 
   @mixin contentContainerStyles {
     width: 100%;
+    padding-bottom: 30px;
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     font-family: "Raleway",sans-serif;
+  }
+
+  .content {
+    .text {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    }
   }
 
   // Add company profile
@@ -67,10 +74,6 @@
     @include contentContainerStyles;
 
     .content {
-      .text {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-      }
-
       .finances {
         .working-hours,
         .payment-method {
@@ -158,6 +161,19 @@
 
   // Add portfolio
   .add-portfolio {
+    @include contentContainerStyles;
+
+    .content-col-header {
+      margin-bottom: 20px;
+    }
+
+    // left
+    .content-col-left {
+      height: 100%;
+      padding: 0 15px;
+      border-right: 1px solid #d6d6d6;
+    }
+
     // right
     .content-col-right {
       .content-col-main {
@@ -167,46 +183,76 @@
       .collapse-container {
         padding: 8px;
 
-        .accordion-item {
-
-        }
-
         // header
-        .card-accordion-header {
-          background-color: #ebebeb;
-        }
+        .card-accordion-header {  }
 
         .collapse-btn {
           @include flex-row;
           justify-content: space-between;
           align-items: center;
           padding: 12px 8px;
+          background-color: #ebebeb;
+
+          .collapse-col-2 {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          &.collapsed {
+            .fa-chevron-up {
+              transform: rotate(180deg);
+            }
+          }
         }
 
         .collapse-item {
-          // data
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-family: "Raleway", sans-serif;
+
           .collapse-col-1 {
-            .collapse-row {
-              i {
+            border-right: 1px solid #ccc;
+          }
 
-              }
-              span {
+          // only for collapse item
+          .collapse-row {
+            margin: 10px;
+          }
+        }
 
-              }
+        .collapse-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        // data
+        .collapse-col-1 {
+          .collapse-row {
+            margin: 15px 10px;
+
+            i {
+              margin-right: 10px;
+            }
+            span {
+
             }
           }
-          // images
-          .collapse-col-2 {
-            .collapse-row {
-
+        }
+        // images
+        .collapse-col-2 {
+          .collapse-row {
+            i {
+              margin-right: 10px;
+            }
+            img {
+              margin-right: 10px;
             }
           }
         }
       }
-
     }
-
-
   }
 }
 
