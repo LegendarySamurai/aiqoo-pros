@@ -8,7 +8,6 @@
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ej2.min.js"></script>
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ejs.interop.min.js"></script>
   <!--<script src="assets/js/nav-menu.js"></script>-->
-  <script src="assets/js/js.es5.min.js"></script>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -247,20 +246,22 @@
   <div class="main-wrapper">
     <div class="dashboard-outer">
       <div class="add-portfolio">
+
         <div class="tabs">
-          <div class="tab font-weight-600">
-            <span class="index font-r-14 font-weight-bold mr-3">1</span>
+          <div class="tab font-weight-600 font-r-13">
+            <span class="index font-weight-bold mr-3 font-r-13">1</span>
             Company Profile
           </div>
-          <div class="tab font-weight-600">
-            <span class="index font-r-14 font-weight-bold mr-3">2</span>
+          <div class="tab font-weight-600 font-r-13">
+            <span class="index font-weight-bold mr-3 font-r-13">2</span>
             Services & Location
           </div>
-          <div class="tab font-weight-600 active">
-            <span class="index font-r-14 font-weight-bold mr-3">3</span>
+          <div class="tab font-weight-600 font-r-13 active">
+            <span class="index font-weight-bold mr-3 font-r-13 pb-2">3</span>
             Portfolio
           </div>
         </div>
+
         <div class="content">
           <div class="container-fluid">
             <div class="row">
@@ -269,75 +270,175 @@
                   <span class="font-r-12 font-weight-500">Customize your company Identity and media</span>
                 </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col-12 col-lg-6 my-4">
-                <div class="content-col content-col-left">
-                  <header class="content-col-header">
-                    <span class="title font-r-13 font-weight-bold">
+              <div class="col-12 px-0">
+                <div class="content-col-container">
+                  <div class="content-col content-col-left pl-0">
+                    <header class="content-col-header">
+                    <span class="title font-r-13">
                       Company Identity
-                      <i class="fal fa-info-circle icon-dark"></i>
+                      <span class="popover-one" id="popover-one" >
+                        <i class="fal fa-info-circle icon-dark"></i>
+                      </span>
                     </span>
-                  </header>
-                  <div class="content-col-main">
-                    <div class="form-group pos-r">
-                      <label class="content-col-heading font-r-13 font-weight-700" for="company-description">Company description</label>
-                      <textarea class="form-control" id="company-description" rows="3"></textarea>
-                      <i class="fal fa-flag icon-dark"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    </header>
+                    <div class="content-col-main">
 
-              <div class="col-12 col-lg-6 my-4">
-                <div class="content-col content-col-right">
-                  <header class="content-col-header">
-                    <span class="title font-r-13 font-weight-bold">My Projects</span>
-                  </header>
+                      <div class="form-group pos-r">
+                        <label class="content-col-heading  font-r-13 font-weight-700" for="company-description">Company description</label>
+                        <textarea class="form-control" id="company-description" rows="3"></textarea>
+                        <i class="fal fa-flag icon-dark font-r-11"></i>
+                        <span class="notification font-r-7">*Up to 1,000 characters</span>
+                      </div>
 
-                  <div class="content-col-main">
-                    <div class="collapse-container">
-                      <div class="accordion-items">
-                        <div id="accordionOne" class="accordion-item">
-                          <div class="card-accordion-item">
-                            <div class="card-accordion-header" id="headingOne">
-                              <!-- this is collapse grey header -->
-                              <div class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <div class="collapse-col-1">
-                                  <i class="fal fa-times icon-red ma-r-10 cursor-p"></i>
-                                  <i class="fal fa-briefcase ma-r-15"></i>
-                                  <span class="font-weight-black">Northside Roofing project</span>
-                                </div>
-                                <div class="collapse-col-2">
-                                  <i class="far fa-chevron-up pt-lg-1 cursor-p"></i>
+                      <div class="upload-container">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <div class="row">
+                              <div class="col-12 col-md-6 col-lg-12">
+                                <div class="upload-header">
+                                  <i class="fal fa-flag icon-dark font-r-9 mr-2 mr-md-0"></i>
+                                  <span class="font-r-8 pl-lg-2">Company Logo</span>
+                                  <label class="pos-r">
+                                    <input class="font-r-8 cursor-p" type="file">
+                                    <i class="fal fa-upload icon-dark font-r-9"></i>
+                                    <span class="text font-r-8 mb-0 pt-1 pt-md-0">Choose file</span>
+                                  </label>
                                 </div>
                               </div>
-                              <!-- EOL: collapse grey header -->
+                              <div class="col-12 col-md-6 col-lg-12 mt-2 mt-lg-0">
+                                <div class="upload-body mt-lg-4 ml-auto cursor-p">
+                                  <label class="pos-r">
+                                    <input class="" type="file">
+                                    <i class="fal fa-image font-r-50"></i>
+                                    <span class="text font-r-10 mb-0">Upload Photo</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6 uploaded mt-2 mt-lg-0">
+                            <div class="row">
+                              <div class="col-12 col-md-6 col-lg-12">
+                                <div class="upload-header">
+                                  <i class="fal fa-flag icon-dark font-r-9 mr-2 mr-md-0"></i>
+                                  <span class="font-r-8 pl-lg-2">Company Main Image</span>
+                                  <label class="pos-r">
+                                    <input class="font-r-8 cursor-p" type="file">
+                                    <i class="fal fa-upload icon-dark font-r-9"></i>
+                                    <span class="text font-r-8 mb-0 pt-1 pt-md-0">Choose file</span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-6 col-lg-12 mt-2 mt-lg-0">
+                                <div class="upload-body mt-lg-4">
+                                  <i class="fal fa-times ma-r-10 cursor-p font-r-11 ml-auto"></i>
+                                  <img class="ml-auto" src="assets/images/Image.png" alt="Image">
+                                </div>
+                              </div>
                             </div>
 
-                            <div id="collapseOne" class="card-accordion-body collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
-                              <div class="collapse-item">
-                                <div class="collapse-col-1">
-                                  <div class="collapse-row row-1">
-                                    <i class="fal fa-info-circle font-r-10"></i>
-                                    <span class="font-w-300 font-r-10">Roof Restoration and insulation</span>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div class="content-col content-col-right">
+                    <header class="content-col-header">
+                      <span class="title font-r-13 font-weight-bold">My Projects</span>
+                    </header>
+
+                    <div class="content-col-main">
+                      <div class="collapse-container">
+                        <div class="accordion-items">
+                          <div id="accordionOne" class="accordion-item">
+                            <div class="card-accordion-item">
+                              <div class="card-accordion-header" id="headingOne">
+                                <!-- this is collapse grey header -->
+                                <div class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  <div class="collapse-col-1">
+                                    <i class="fal fa-times icon-red ma-r-10 cursor-p font-r-11"></i>
+                                    <i class="fal fa-briefcase ma-r-15 font-r-11"></i>
+                                    <span class="font-weight-black font-r-13">Northside Roofing project</span>
                                   </div>
-                                  <div class="collapse-row row-2">
-                                    <i class="fal fa-map-marker-alt font-r-10"></i>
-                                    <span class="font-w-300 font-r-10">20145 George hill, Brooklyn, NY</span>
+                                  <div class="collapse-col-2">
+                                    <i class="far fa-chevron-up pt-lg-1 cursor-p"></i>
                                   </div>
                                 </div>
-                                <div class="collapse-col-2">
-                                  <div class="collapse-row">
-                                    <i class="fal fa-times icon-red font-r-10 cursor-p"></i>
-                                    <img src="assets/images/portfolio-img.png" alt="portfolio-img">
-                                    <span class="font-w-300 font-r-10">Image01.jpg</span>
+                                <!-- EOL: collapse grey header -->
+                              </div>
+
+                              <div id="collapseOne" class="card-accordion-body collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                                <div class="collapse-item">
+                                  <div class="collapse-col-1 pos-r">
+                                    <div class="collapse-row row-1">
+                                      <i class="fal fa-info-circle font-r-11"></i>
+                                      <span class="font-w-300 font-r-11">Roof Restoration and insulation</span>
+                                    </div>
+                                    <div class="collapse-row row-2">
+                                      <i class="fal fa-map-marker-alt font-r-11"></i>
+                                      <span class="font-w-300 font-r-11">20145 George hill, Brooklyn, NY</span>
+                                    </div>
                                   </div>
-                                  <div class="collapse-row">
-                                    <i class="fal fa-times icon-red font-r-10 cursor-p"></i>
-                                    <img src="assets/images/portfolio-img.png" alt="portfolio-img">
-                                    <span class="font-w-300 font-r-10">Image01.jpg</span>
+                                  <div class="collapse-col-2">
+                                    <div class="collapse-row">
+                                      <i class="fal fa-times icon-red font-r-11 cursor-p"></i>
+                                      <img src="assets/images/portfolio-img.png" alt="portfolio-img">
+                                      <span class="font-w-300 font-r-11">Image01.jpg</span>
+                                    </div>
+                                    <div class="collapse-row">
+                                      <i class="fal fa-times icon-red font-r-11 cursor-p"></i>
+                                      <img src="assets/images/portfolio-img.png" alt="portfolio-img">
+                                      <span class="font-w-300 font-r-11">Image01.jpg</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div id="accordionTwo" class="accordion-item">
+                            <div class="card-accordion-item">
+                              <div class="card-accordion-header" id="headingTwo">
+                                <!-- this is collapse grey header -->
+                                <div class="collapse-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                  <div class="collapse-col-1">
+                                    <i class="fal fa-times icon-red ma-r-10 cursor-p font-r-11"></i>
+                                    <i class="fal fa-briefcase ma-r-15 font-r-11"></i>
+                                    <span class="font-weight-black font-r-13">Northside Roofing project</span>
+                                  </div>
+                                  <div class="collapse-col-2">
+                                    <i class="far fa-chevron-up pt-lg-1 cursor-p"></i>
+                                  </div>
+                                </div>
+                                <!-- EOL: collapse grey header -->
+                              </div>
+
+                              <div id="collapseTwo" class="card-accordion-body collapse show" aria-labelledby="headingTwo" data-parent="#accordionTwo">
+                                <div class="collapse-item">
+                                  <div class="collapse-col-1 pos-r">
+                                    <div class="collapse-row row-1">
+                                      <i class="fal fa-info-circle font-r-11"></i>
+                                      <span class="font-w-300 font-r-11">Roof Restoration and insulation</span>
+                                    </div>
+                                    <div class="collapse-row row-2">
+                                      <i class="fal fa-map-marker-alt font-r-11"></i>
+                                      <span class="font-w-300 font-r-11">20145 George hill, Brooklyn, NY</span>
+                                    </div>
+                                  </div>
+                                  <div class="collapse-col-2">
+                                    <div class="collapse-row">
+                                      <i class="fal fa-times icon-red font-r-11 cursor-p"></i>
+                                      <img src="assets/images/portfolio-img.png" alt="portfolio-img">
+                                      <span class="font-w-300 font-r-11">Image01.jpg</span>
+                                    </div>
+                                    <div class="collapse-row">
+                                      <i class="fal fa-times icon-red font-r-11 cursor-p"></i>
+                                      <img src="assets/images/portfolio-img.png" alt="portfolio-img">
+                                      <span class="font-w-300 font-r-11">Image01.jpg</span>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -364,5 +465,8 @@
   </div>
 </app>
 
+
+<script src="assets/js/js.es5.min.js"></script>
+<script src="assets/js/custom-popover.js"></script>
 </body>
 </html>

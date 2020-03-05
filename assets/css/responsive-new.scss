@@ -812,6 +812,12 @@
     text-overflow: ellipsis;
   }
 
+  .content {
+    @include contentStyles;
+  }
+
+  // Here starts media
+
   @media(min-width: 300px) { // from 300
     & {
       margin-top: 50px;
@@ -838,16 +844,14 @@
       }
     }
 
+    .content {
+      .text {
+        margin-bottom: 10px;
+      }
+    }
+
     // Add company profile
     .add-company-profile {
-      .content {
-        @include contentStyles;
-
-        .text {
-          margin-bottom: 20px;
-        }
-      }
-
       .company-info,
       .contact-info {
         height: 100%;
@@ -1045,6 +1049,37 @@
     // Add portfolio
     .add-portfolio {
 
+      .content-col-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 30px;
+      }
+
+      // left
+      .content-col-left {
+        width: 100%;
+
+        .form-group {
+          i {
+            position: absolute;
+            bottom: calc(50% - 3px);
+            left: 10px;
+          }
+
+          textarea {
+            border: solid 1px #585077;
+            background-color: #ffffff;
+            padding: 10px 30px;
+          }
+        }
+      }
+
+      // right
+      .content-col-right {
+        width: 100%;
+      }
     }
 
     .custom-control {
@@ -1057,6 +1092,7 @@
       }
     }
   }
+  // EOL: 300px
 
   @media(min-width: $break-tablet) { // from 768
     .tabs {
@@ -1082,6 +1118,8 @@
       }
     }
   }
+  // EOL: 768px
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) { // from 768 to 1024
     .services-list {
       .table-items-list {
@@ -1091,6 +1129,66 @@
       }
     }
   }
+  // EOL: 768px - 1024px
+
+  @media(min-width: $small-pc) { // from 992px
+    // add-portfolio
+    .add-portfolio {
+      .popover-one {
+        cursor: pointer;
+      }
+
+      .content-col-container {
+        flex-direction: row;
+        //align-items: center;
+        //justify-content: flex-start;
+        padding-top: 15px;
+      }
+
+      .content-col {
+        padding: 0 10px;
+      }
+
+      // left
+      .content-col-left {
+        width: 50%;
+      }
+
+      // right
+      .content-col-right {
+        width: 50%;
+      }
+
+      // Collapse
+      .card-accordion-body {
+        .collapse-col-1 {
+          width: 60%;
+
+          &:after {
+            display: block;
+            content: '';
+            width: 1px;
+            height: 60%;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: #ccc;
+          }
+        }
+
+        .collapse-row {
+
+        }
+
+        .collapse-col-2 {
+          width: 40%;
+        }
+      }
+    }
+  }
+  // EOL: 992px
+
   @media(min-width: $break-pc) { // from 1200
     & {
       padding-bottom: 80px;
@@ -1104,10 +1202,8 @@
     }
 
     .content {
-      @include contentStyles;
-
       .text {
-        margin-bottom: 32px;
+        //margin-bottom: 32px;
       }
     }
 
@@ -1243,22 +1339,11 @@
 
       }
 
-      .collapse-col-1 {
-        width: 48%;
 
-        .collapse-row {
-
-        }
-      }
-
-      .collapse-col-2 {
-        width: 48%;
-      }
     }
   }
-  @media(min-width: 1366px) { // from 1366
+  // EOL: 1200px
 
-  }
   @media(min-width: $break-large-screen) { // from 1600
     & {
       margin-top: 60px;
@@ -1349,11 +1434,14 @@
     }
 
   }
+  // EOL: 1600px
+
   @media(min-width: 1920px) { // from 1920
     & { margin-top: 80px; }
 
     .tabs { height: 60px; }
   }
+  // EOL: 1920px
 }
 
 
