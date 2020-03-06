@@ -1,0 +1,97 @@
+@import 'variables';
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #e0e0e0;
+
+  .tab {
+    color: $purple;
+
+    &:not(:first-child) {
+      border-left: 1px solid #b1adbb;
+    }
+
+    &.active {
+      height: 100%;
+      background-color: #fff;
+      border-left: none;
+    }
+
+    .index {
+      padding-bottom: 2px;
+      border-radius: 2px;
+      background-color: #b3b3b3;
+      color: #d6d6d6;
+    }
+
+    &.active {
+      .index {
+        background-color: $purple;
+        color: #fff;
+      }
+    }
+  }
+
+  @media(min-width: 300px) { // from 300
+    & {
+      height: 40px;
+
+      .tab {
+        @include flex-row;
+        align-items: center;
+        line-height: 1;
+        padding: 0 10px;
+        font-size: 1rem;
+
+        .index {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  }
+  // EOL: 300px
+
+  @media(min-width: $break-tablet) { // from 768
+    & {
+      .tab {
+        //font-size: 1.25rem;
+
+        &:first-child {
+          padding-left: 45px;
+        }
+      }
+    }
+  }
+
+  @media(min-width: $break-pc) { // from 1200
+    & {
+      .tab {
+        line-height: inherit;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media(min-width: $break-large-screen) { // from 1600
+    & {
+      height: 50px;
+
+      .tab {
+        padding: 0 28px;
+      }
+    }
+  }
+
+  @media(min-width: 1920px) { // from 1920
+
+    & { height: 60px; }
+  }
+}

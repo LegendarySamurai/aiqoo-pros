@@ -742,8 +742,8 @@ app {
         }
         // Created by Igor Feb 13th, 2020
         & .nav-sub-menu {
-            display: none; // appears on hover
-            //display: flex;
+            //display: none;
+            display: flex;
             flex-direction: row;
             align-items: center;
             position: absolute;
@@ -755,10 +755,9 @@ app {
             margin: 0;
             padding: 0 20px;
             border-radius: 2.5px;
-            -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.07);
             box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.07);
+            background-color: #e6e6e6;
             z-index: 500;
-            background-color: transparentize(#e6e6e6, .64);
             list-style: none;
 
             & > li:not(:last-child) {
@@ -5671,4 +5670,16 @@ $hSizes: (1, 2, 3, 4, 5, 6);
             }
         }
     }
+}
+
+
+// Created by Igor March 6th 2020
+// Helpers
+
+.p-t-60 {
+    padding-top: 60px;
+}
+
+.p-t-80 {
+    padding-top: 80px;
 }

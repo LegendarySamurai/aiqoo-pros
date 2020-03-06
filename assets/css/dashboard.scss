@@ -1,45 +1,9 @@
 @import 'variables';
+@import 'tabs';
 
 // Dashboard
 .dashboard-outer {
   padding-bottom: 80px;
-
-  .tabs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    background-color: #e0e0e0;
-
-    .tab {
-      color: $purple;
-
-      &:not(:first-child) {
-        border-left: 1px solid #b1adbb;
-      }
-
-      &.active {
-        height: 100%;
-        background-color: #fff;
-        border-left: none;
-      }
-
-      .index {
-        padding-bottom: 2px;
-        border-radius: 2px;
-        background-color: #b3b3b3;
-        color: #d6d6d6;
-      }
-
-      &.active {
-        .index {
-          background-color: $purple;
-          color: #fff;
-        }
-      }
-    }
-  }
 
   .text {
     color: #342e49;
