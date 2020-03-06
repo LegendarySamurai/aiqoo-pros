@@ -1,5 +1,210 @@
 @import 'tabs';
 
+
+//////// Commons reusable styles ////////
+
 .system-campaign-outer {
   font-family: "Raleway",sans-serif;
+}
+
+.system-campaign-services {
+  width: 100%;
+  padding-bottom: 30px;
+  box-shadow: 0 3px 30px 0 rgba(0,0,0,0.16);
+  background-color: #ffffff;
+  font-family: "Raleway",sans-serif;
+}
+
+.content {
+  .text {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    color: #342e49;
+  }
+
+  .sub-text {
+    color: #342e49;
+    margin: 10px 0;
+
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .input-group {
+      position: relative;
+
+      .input-group-prepend {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        z-index: 6;
+      }
+
+      input {
+        padding-left: 40px;
+        background-color: #ebebeb;
+        border-radius: 2px;
+        border: none;
+      }
+    }
+  }
+}
+
+.page-content-tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.tools-container {
+  margin-left: auto;
+}
+
+//////// Unique styles only for this page ///////////
+
+
+
+
+
+
+
+
+/////// Responsive /////////////////
+// Here starts media
+
+@media(min-width: 300px) { // from 300
+  //////// Commons reusable styles ////////
+
+  .search {
+    .search-title {
+      font-size: 1.125em;
+    }
+
+    .input-group {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      font-size: 1.125em;
+
+      &:focus {
+
+      }
+
+      &::-webkit-input-placeholder {
+        font-size: 1.125em;
+
+      }
+      &::-moz-placeholder {
+        font-size: 1.125em;
+
+      }
+      &:-ms-input-placeholder {
+        font-size: 1.125em;
+
+      }
+      &:-moz-placeholder {
+        font-size: 1.125em;
+
+      }
+    }
+  }
+
+  .tools {
+    @include flex-row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+    span {
+      font-weight: 500;
+      font-size: .75em;
+      color: $purple;
+
+      &.divider {
+        width: 1px;
+        height: 15px;
+        margin: 0 8px;
+        background-color: $purple;
+      }
+    }
+
+    .active {
+      color: #c30a0a;
+    }
+  }
+
+  .page-content-tools {
+    height: 56px;
+    padding: 10px 0;
+  }
+
+  //////// Unique styles only for this page ///////////
+  .system-campaign-services {
+    .page-content {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .page-content-outer {
+      padding: 0 6px 0 10px;
+    }
+
+    .form-control {
+      max-width: 315px;
+    }
+  }
+}
+
+@media(min-width: 992px) { // from 992
+  //////// Commons reusable styles ////////
+
+  .search {
+    .input-group {
+      width: 312px;
+
+      input {
+        font-size: .875em;
+
+        &::-webkit-input-placeholder {
+          font-size: .875em;
+
+        }
+
+        &::-moz-placeholder {
+          font-size: .875em;
+
+        }
+
+        &:-ms-input-placeholder {
+          font-size: .875em;
+
+        }
+
+        &:-moz-placeholder {
+          font-size: .875em;
+
+        }
+
+      }
+    }
+  }
+
+  //////// Unique styles only for this page ///////////
+
+}
+
+@media(min-width: 1200px) { // from 1200
+  //////// Commons reusable styles ////////
+
+
+
+  //////// Unique styles only for this page ///////////
+
 }

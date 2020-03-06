@@ -5684,3 +5684,10 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 .p-t-80 {
     padding-top: 80px;
 }
+
+.flex-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}

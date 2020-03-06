@@ -68,10 +68,10 @@
 
   // Wizard content
 
-  .wizard-content {
+  .page-content {
     padding: 40px 0 20px;
 
-    .wizard-content-outer {
+    .page-content-outer {
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -91,7 +91,7 @@
       }
     }
 
-    .wizard-content-inner {
+    .page-content-inner {
       padding-right: 20px;
       max-height: 290px;
       overflow-y: scroll;
@@ -194,10 +194,6 @@
       width: 100% !important;
     }
   }
-
-
-
-  /// Wizard content ///
 }
 
 @media(max-width:$break-tablet) {
@@ -206,9 +202,6 @@
       width: 100% !important;
     }
   }
-
-
-  /// Wizard content ///
 }
 
 @media(min-width: $break-tablet) {
@@ -226,9 +219,6 @@
   .verification {
     min-height: 520px;
   }
-
-
-  /// Wizard content ///
 }
 
 @media(max-width: 1024px) {
@@ -296,9 +286,6 @@
       }
     }
   }
-
-
-  /// Wizard content ///
 }
 
 @media(min-width: 1025px) {
@@ -400,11 +387,12 @@
 
 
   /// Wizard content ///
-  .wizard-content {
+  .page-content {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    .wizard-content-outer {
+    .page-content-outer {
+      height: initial;
 
       .card {
         i {
@@ -466,9 +454,6 @@
   .account-verification {
     width: 550px;
   }
-
-
-  /// Wizard content ///
 }
 
 @media(max-width: 1569px) {
@@ -486,16 +471,16 @@
 
 @media(min-width: $break-large-screen) {// from 1600
   /// Wizard content ///
-  .wizard-content {
+  .page-content {
     padding-top: 50px;
     padding-bottom: 20px;
 
     &.locations {
-      .wizard-content-outer {
+      .page-content-outer {
         height: inherit;
       }
 
-      .wizard-content-inner {
+      .page-content-inner {
         height: 174px;
       }
 
@@ -594,7 +579,7 @@
       h5 { text-align: center; }
     }
 
-    .wizard-content {
+    .page-content {
       padding: 40px 0 20px;
 
       .aiqoo-collapse-checkbox-outer {
@@ -664,7 +649,7 @@
     & {
       margin: 1rem auto;
 
-      .wizard-content {
+      .page-content {
         padding: 40px 0 20px;
       }
     }
@@ -766,7 +751,7 @@
       }
     }
 
-    .wizard-content {
+    .page-content {
       padding-top: 20px;
       padding-bottom: 20px;
 
@@ -808,7 +793,7 @@
 
   @media(min-width: $break-large-screen) { // from 1600
 
-    .wizard-content {
+    .page-content {
       padding-top: 50px;
       padding-bottom: 20px;
 
@@ -1180,8 +1165,6 @@
     .add-portfolio {
       .content-col-container {
         flex-direction: row;
-        //align-items: center;
-        //justify-content: flex-start;
         padding-top: 15px;
       }
 
@@ -1217,10 +1200,6 @@
           }
         }
 
-        .collapse-row {
-
-        }
-
         .collapse-col-2 {
           width: 40%;
         }
@@ -1247,7 +1226,6 @@
       .selected-services {
         padding-left: 60px;
         padding-top: 24px;
-        //font-size: .9375em;
         color: #342e49;
       }
 
@@ -1442,18 +1420,6 @@
 
 ////// Summary ///////
 .summary-page {
-  @media(min-width: 300px) {
-
-  }
-
-  @media(min-width: 600px) {
-
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  }
-
   @media(min-width: 1200px) {
     .content-container {
       max-width: 100%;
@@ -1477,7 +1443,6 @@
 
         .collapse-body {
           padding: 12px 10px 30px 8px;
-          //padding-right: 10px;
 
           .collapse-btn {
             padding: 10px;
@@ -1501,10 +1466,6 @@
 
     .content-col-heading {
       margin-bottom: 0;
-    }
-
-    .collapse-body {
-
     }
 
     // Dates
@@ -1547,10 +1508,6 @@
     }
   }
 
-  @media(min-width: 1400px) {
-
-  }
-
   @media(min-width: 1600px) {    // Profile
     .profile-container {
       .profile-card {
@@ -1577,11 +1534,6 @@
     .content-col-left {
       .accordion-items {
         max-height: 530px;
-      }
-      .collapse-container {
-        .collapse-body {
-
-        }
       }
     }
   }
@@ -1618,18 +1570,8 @@
       flex-grow: 0;
       padding: 0;
     }
-
-    .content-col-left {
-
-    }
-
   }
-  @media(min-width: 600px) {
 
-  }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  }
   @media(min-width: 1200px) {
     .content-container {
       //max-width: 100%;
@@ -1661,12 +1603,7 @@
       }
     }
   }
-  @media(min-width: 1400px) {
 
-  }
-  @media(min-width: 1600px) {
-
-  }
   @media(min-width: 1800px) {
     .content-col-left {
       .content-col-main {
