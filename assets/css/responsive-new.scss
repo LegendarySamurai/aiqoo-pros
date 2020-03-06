@@ -597,7 +597,7 @@
     .wizard-content {
       padding: 40px 0 20px;
 
-      .wizard-content-outer {
+      .aiqoo-collapse-checkbox-outer {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -617,51 +617,10 @@
         }
       }
 
-      .wizard-content-inner {
+      .aiqoo-collapse-inner {
         padding-right: 20px;
         max-height: 290px;
         overflow-y: scroll;
-
-        .accordion-item {
-          .card {
-            background-color: transparent;
-            box-shadow: none;
-
-            .card-header {
-              display: flex;
-              padding: 6px 0;
-              border-radius: 0;
-              border-bottom: 0;
-              background-color: #ebebeb;
-
-              .custom-control {
-                position: relative;
-                align-self: center;
-
-                .custom-control-label {
-                  position: absolute;
-                  top: 0;
-                }
-              }
-
-              .btn {
-                @include flex-row;
-                flex-grow: 1;
-                justify-content: space-between;
-                align-items: center;
-                border-radius: 0;
-
-                i { transform: rotate(180deg); }
-
-                &.collapsed {
-                  i { transform: rotate(0deg); }
-                }
-
-                &:focus { box-shadow: none; }
-              }
-            }
-          }
-        }
 
         i {
           &.fa-times {
@@ -758,7 +717,7 @@
       width: 620px;
       margin-top: 2rem;
 
-      .wizard-content-inner {
+      .aiqoo-collapse-inner {
         max-height: 530px;
       }
     }
@@ -811,7 +770,7 @@
       padding-top: 20px;
       padding-bottom: 20px;
 
-      .wizard-content-outer {
+      .aiqoo-collapse-checkbox-outer {
 
         .card {
           i {
@@ -854,11 +813,11 @@
       padding-bottom: 20px;
 
       &.locations {
-        .wizard-content-outer {
+        .aiqoo-collapse-checkbox-outer {
           height: inherit;
         }
 
-        .wizard-content-inner {
+        .aiqoo-collapse-inner {
           height: 174px;
         }
 
@@ -1526,12 +1485,6 @@
 
           .collapse-item {
             padding: 10px;
-          }
-        }
-
-        .accordion-item {
-          &:not(:first-child) {
-            margin-top: 6px;
           }
         }
       }

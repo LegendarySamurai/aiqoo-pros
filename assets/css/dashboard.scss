@@ -124,12 +124,6 @@
       overflow-y: scroll;
     }
 
-    .accordion-item {
-      &:not(:first-child) {
-        margin-top: 6px;
-      }
-    }
-
     .content-col-container {
       width: 100%;
     }
