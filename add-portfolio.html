@@ -276,7 +276,7 @@
                     <header class="content-col-header">
                     <span class="title font-r-13">
                       Company Identity
-                      <span class="popover-one" id="popover-one" >
+                      <span class="popover-one cursor-p" id="popover-one" data-content="test info one">
                         <i class="fal fa-info-circle icon-dark"></i>
                       </span>
                     </span>
@@ -298,8 +298,8 @@
                                 <div class="upload-header">
                                   <i class="fal fa-flag icon-dark font-r-9 mr-2 mr-md-0"></i>
                                   <span class="font-r-8 pl-lg-2">Company Logo</span>
-                                  <label class="pos-r">
-                                    <input class="font-r-8 cursor-p" type="file">
+                                  <label class="file-input-label pos-r">
+                                    <input class="file-input font-r-8 cursor-p" type="file">
                                     <i class="fal fa-upload icon-dark font-r-9"></i>
                                     <span class="text font-r-8 mb-0 pt-1 pt-md-0">Choose file</span>
                                   </label>
@@ -307,8 +307,8 @@
                               </div>
                               <div class="col-12 col-md-6 col-lg-12 mt-2 mt-lg-0">
                                 <div class="upload-body mt-lg-4 ml-auto cursor-p">
-                                  <label class="pos-r">
-                                    <input class="" type="file">
+                                  <label class="file-input-label pos-r">
+                                    <input class="file-input " type="file">
                                     <i class="fal fa-image font-r-50"></i>
                                     <span class="text font-r-10 mb-0">Upload Photo</span>
                                   </label>
@@ -322,8 +322,8 @@
                                 <div class="upload-header">
                                   <i class="fal fa-flag icon-dark font-r-9 mr-2 mr-md-0"></i>
                                   <span class="font-r-8 pl-lg-2">Company Main Image</span>
-                                  <label class="pos-r">
-                                    <input class="font-r-8 cursor-p" type="file">
+                                  <label class="file-input-label pos-r">
+                                    <input class="file-input font-r-8 cursor-p" type="file">
                                     <i class="fal fa-upload icon-dark font-r-9"></i>
                                     <span class="text font-r-8 mb-0 pt-1 pt-md-0">Choose file</span>
                                   </label>
@@ -461,8 +461,96 @@
         </button>
       </div>
     </div>
-
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade add-portfolio-modal" id="add-portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="add-portfolio-title" aria-hidden="true">
+    <div class="modal-dialog add-portfolio-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="font-weight-semi-bold ma-t-5 ma-b-5" id="add-portfolio-title">Add Projects</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fad fa-times-square"></i></span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="upload-header">
+                  <span class="font-r-8 pl-lg-2">Project Image</span>
+                  <label class="file-input-label pos-r">
+                    <input class="file-input font-r-8 cursor-p" type="file">
+                    <i class="fal fa-upload icon-dark font-r-9"></i>
+                    <span class="text font-r-8 mb-0 pt-1 pt-md-0">Choose file</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 mt-2 mt-lg-0">
+                <div class="upload-body">
+                  <div class="upload-body-image">
+                    <img src="assets/images/portfolio-img.png" alt="portfolio-img">
+                    <span class="font-w-300 font-r-13 pl-2">Image01.jpg</span>
+                  </div>
+                  <div class="upload-body-image mt-2">
+                    <img src="assets/images/portfolio-img.png" alt="portfolio-img">
+                    <span class="font-w-300 font-r-13 pl-2">Image01.jpg</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mt-2 mt-lg-0">
+                <div class="upload-form-group">
+                  <div class="form-group font-r-13">
+                    <label for="formGroupExampleInput">Project name</label>
+                    <div class="form-control-container pos-r">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                      <span class="popover-two cursor-p" id="popover-two" data-content="test info one">
+                        <i class="fal fa-info-circle icon-dark"></i>
+                      </span>
+                    </div>
+
+                  </div>
+                  <div class="form-group font-r-13">
+                    <label for="formGroupExampleInput2">Project location</label>
+                    <div class="form-control-container pos-r">
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                      <i class="fal fa-map-marker-alt"></i>
+                    </div>
+
+                  </div>
+                  <div class="form-group font-r-13">
+                    <label for="formGroupExampleInput3">Services provided</label>
+                    <div class="form-control-container pos-r">
+                      <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="">
+                      <span class="popover-three cursor-p" id="popover-three" data-content="test info one">
+                        <i class="fal fa-info-circle icon-dark"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-12">
+                <span class="add-btn cursor-p">
+                  <i class="fad fa-plus-square font-r-14"></i>
+                  <span class="btn-name font-r-14">Add Project</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn" data-toggle="modal" data-target="#add-portfolio-modal">
+    Modal Add Project
+  </button>
+
+  <!--<div class="modal-backdrop fade show"></div>-->
 </app>
 
 

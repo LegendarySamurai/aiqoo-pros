@@ -112,7 +112,7 @@
 
   .options {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     display: flex;
 
     .form-check {
@@ -139,7 +139,7 @@
   .btn {
     top: -6px;
     width: 100%;
-    height: 60px;
+    height: 74px;
     padding-top: 14px;
     background-color: #585077;
     border-radius: 5px;

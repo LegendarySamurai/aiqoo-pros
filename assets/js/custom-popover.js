@@ -3,8 +3,17 @@
 // popover-one
 $('#popover-one').popover({
 	trigger: 'hover',
-	placement: 'top',
-	content: 'test info'
+	placement: 'top'
+});
+
+$('#popover-two').popover({
+	trigger: 'hover',
+	placement: 'left'
+});
+
+$('#popover-three').popover({
+	trigger: 'hover',
+	placement: 'left'
 });
 
 

@@ -1,6 +1,12 @@
 @import "variables.scss";
 
 // Created by Igor 14.02.2020
+.logo2,
+.success-icon {
+  @media(min-width: 300px) { width: 138px; }
+  @media(min-width: $break-mobile) { width: 168px; }
+}
+
 @media(min-width: 300px) {
   .buttons-container {
     @include flex-row;
@@ -25,7 +31,7 @@
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        background-color: $pinkish-grey;
+        //background-color: $pinkish-grey;
 
         .fa-long-arrow-right {
           transform: rotate(180deg);
@@ -56,9 +62,11 @@
   }
   .sign-in-and-sign-up,
   .account-verification {
-    width: 98%;
+    width: 96%;
+    max-width: 450px;
   }
 }
+
 @media(max-width:$break-mobile) {
   .main-wrapper {
     width: 100%;
@@ -79,7 +87,7 @@
   }
 
   .custom-control-input:checked ~ .custom-control-label:after {
-    top: 10px;
+    //top: 10px;
   }
 
   .main-wrapper-inner {
@@ -108,6 +116,7 @@
   .sign-in-and-sign-up,
   .account-verification {
     width: 420px;
+    max-width: 450px;
   }
 
   .sign-in,
@@ -120,7 +129,7 @@
   }
 
   .custom-control-input:checked ~ .custom-control-label:after {
-    top: 9px;
+    //top: 9px;
   }
 }
 
@@ -249,7 +258,7 @@
   }
 
   .custom-control-input:checked ~ .custom-control-label:after {
-    top: 10px;
+    //top: 10px;
   }
 
   .side-menu-inner {
@@ -295,7 +304,7 @@
 
 @media(max-width: 1365px) {
   .custom-control-input:checked ~ .custom-control-label:after {
-    top: 9px;
+    //top: 9px;
   }
 
   form {
@@ -319,7 +328,7 @@
 
 @media(min-width: 1366px) {
   .custom-control-input:checked ~ .custom-control-label:after {
-    top: 9px;
+    //top: 9px;
   }
 
   .content-container {
@@ -345,12 +354,6 @@
   .sign-in-and-sign-up,
   .account-verification {
     width: 550px;
-  }
-
-  .submit-button {
-    .btn {
-      height: 50px;
-    }
   }
 }
 
@@ -386,7 +389,7 @@
   .sign-in-and-sign-up,
   .account-verification {
     .custom-control-input:checked ~ .custom-control-label:after {
-      top: 10px;
+      //top: 10px;
     }
   }
 
@@ -420,20 +423,12 @@
   .sign-in-and-sign-up,
   .account-verification {
     .custom-control-input:checked ~ .custom-control-label:after {
-      top: 9px;
+      //top: 9px;
     }
   }
 }
 
-
-.logo2,
-.success-icon {
-  @media(min-width: 300px) { width: 138px; }
-  @media(min-width: $break-mobile) { width: 168px; }
-}
-
-
-//////////////////////////// Wizard ////////////////////////////
+////// Wizard ///////
 .wizard-dialog {
   @media(min-width: 300px) { // from 300
     & { width: 98%; }
@@ -638,6 +633,8 @@
       }
     }
   }
+  // EOL: 768
+
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     &.wizard-dialog-services {
       width: 620px;
@@ -648,6 +645,8 @@
       }
     }
   }
+  // EOL: 768-1024
+
   @media(min-width: $break-pc) { // from 1200px
     & {
       width: 56%;
@@ -728,10 +727,8 @@
         }
       }
     }
-  }
-  @media(min-width: 1366px) { // from 1366
+  } // EOL: 1200
 
-  }
   @media(min-width: $break-large-screen) { // from 1600
 
     .wizard-content {
@@ -761,6 +758,8 @@
       margin-top: 80px;
     }
   }
+  // EOL: 1600
+
   @media(min-width: 1920px) { // from 1920
     .tabs {
       height: 66px;
@@ -788,11 +787,9 @@
     }
   }
 }
+// EOL: 1920
 
-
-
-//////////////////////////// Dashboard ////////////////////////////
-
+////// Dashboard ///////
 .dashboard-outer {
   @mixin contentStyles {
     @media(min-width: 300px) {
@@ -1134,10 +1131,6 @@
   @media(min-width: $small-pc) { // from 992px
     // add-portfolio
     .add-portfolio {
-      .popover-one {
-        cursor: pointer;
-      }
-
       .content-col-container {
         flex-direction: row;
         //align-items: center;
@@ -1444,9 +1437,7 @@
   // EOL: 1920px
 }
 
-
-
-//////////////////////////// Summary ////////////////////////////
+////// Summary ///////
 .summary-page {
   @media(min-width: 300px) {
 
@@ -1622,7 +1613,7 @@
   }
 }
 
-////////////////// Empty //////////////////
+////// Empty Summary ///////
 .summary-page-empty {
   @media(min-width: 300px) {
     .content-container {

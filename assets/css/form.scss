@@ -145,6 +145,7 @@ form {
   }
 
   .forgot-password {
+    margin-left: auto;
     padding-top: 8px;
   }
 }
@@ -166,7 +167,7 @@ form {
 
   .custom-control-input:checked ~ .custom-control-label::after {
     background-image: url("../images/confirm-7.svg");
-    top: 0;
+    //top: 0;
   }
 }
 
