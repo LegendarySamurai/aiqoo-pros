@@ -255,22 +255,6 @@ form {
       }
     }
   }
-
-  //.custom-checkbox {
-  //  .custom-control-label {
-  //    padding-top: .025em;
-  //
-  //    &::before {
-  //      top: 50%;
-  //      transform: translate(0, -50%);
-  //    }
-  //  }
-  //}
-  //
-  //.custom-control-input:checked ~ .custom-control-label:after {
-  //  top: 50%;
-  //  transform: translateY(-50%);
-  //}
 }
 
 // Services and location
@@ -278,16 +262,34 @@ form {
   .county-list {
     .custom-control {
       .custom-control-label {
-        @media(min-width: 300px) {
-          top: -2px;
-        }
-        @media(min-width: $break-pc) {
-          top: 6px;
-        }
-        @media(min-width: 1920px) {
-          top: -2px;
-        }
+        //@media(min-width: 300px) {
+        //  top: -2px;
+        //}
+        //@media(min-width: $break-pc) {
+        //  top: 6px;
+        //}
+        //@media(min-width: 1920px) {
+        //  top: -2px;
+        //}
       }
     }
+  }
+}
+
+// services-to-chose
+
+.services-to-chose {
+  .custom-control-input:checked ~ .custom-control-label:before {
+    //border-color: red;
+    //background-color: green;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label:after {
+    //left: -16px;
+    //width: 24px;
+    //height: 24px;
+    //border-radius: 1px;
+    //background-color: #585077;
+    //background-image: none;
   }
 }
