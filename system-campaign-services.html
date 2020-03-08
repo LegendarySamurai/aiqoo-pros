@@ -8,7 +8,6 @@
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ej2.min.js"></script>
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ejs.interop.min.js"></script>
   <script src="assets/js/js.es5.min.js"></script>
-  <script src="assets/js/nav-menu.js"></script>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -176,37 +175,37 @@
 
         <div class="wrapper-c paimary-menu">
           <ul class="nav-menu">
-            <li class="hide-in-1024">
+            <li class="nav-menu-item hide-in-1024">
               <a href="Dashboard" class="pl-o"><i class="fal fa-chart-pie-alt"></i><span>Dashboard</span></a>
             </li>
-            <li class="hide-in-1024">
+            <li class="nav-menu-item hide-in-1024">
               <a href="Leads"><i class="fal fa-bullseye-pointer"></i><span>Marketing</span></a>
             </li>
-            <li class="hide-in-1024">
+            <li class="nav-menu-item hide-in-1024">
               <a href="Aiqoo-index"><i class="fal fa-indent"></i><span>Aiqoo index</span></a>
             </li>
-            <li class="hide-in-1024">
+            <li class="nav-menu-item hide-in-1024">
               <a href="Sales" class="active"><i class="fal fa-money-bill-wave"></i><span>Sales</span></a>
             </li>
-            <li class="hide-in-1024">
+            <li class="nav-menu-item hide-in-1024">
               <a href="Projects"><i class="fal fa-tasks"></i><span class="">Projects</span></a>
             </li>
-            <li class="hide-in-1120">
+            <li class="nav-menu-item hide-in-1120">
               <a href="Network"><i class="fal fa-chart-network"></i><span>Network</span></a>
             </li>
-            <li class="hide-in-1200">
+            <li class="nav-menu-item hide-in-1200">
               <a href="Suppliers"><i class="fal fa-ballot-check"></i><span>Suppliers</span></a>
             </li>
-            <li class="hide-in-1220">
+            <li class="nav-menu-item hide-in-1220">
               <a href="Calendar"><i class="fal fa-calendar-alt"></i><span>Calendar</span></a>
             </li>
-            <li class="hide-in-1500">
+            <li class="nav-menu-item hide-in-1500">
               <a href="Address Book"><i class="fal fa-address-card"></i><span>Address Book</span></a>
             </li>
-            <li class="hide-in-1570">
+            <li class="nav-menu-item hide-in-1570">
               <a href="Support"><i class="fal fa-comment-exclamation"></i><span>Support</span></a>
             </li>
-            <li class="show-in-1570 cursor-p more-btn pos-r">
+            <li class="nav-menu-item show-in-1570 cursor-p more-btn pos-r">
               <a href="#" class="more-btn-inner">
                 <i class="fal fa-ellipsis-h-alt"></i>
                 <span>More</span>
@@ -248,7 +247,7 @@
               </div>
             </li>
           </ul>
-          <ul class="nav-sub-menu d-none">
+          <ul class="nav-sub-menu ">
             <li><a href="Summary">Summary</a></li>
             <li><a href="Leads">Leads</a></li>
             <li><a href="Transaction">Transaction</a></li>
@@ -262,7 +261,7 @@
       </div>
     </section>
   </div>
-  <div class="main-wrapper p-t-60">
+  <div class="main-wrapper p-x-60">
     <div class="system-campaign-outer">
       <div class="system-campaign-services">
         <div class="tabs">
@@ -283,7 +282,7 @@
         <div class="page-content content pos-r">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12 px-0">
+              <div class="col-12">
                 <div class="text">
                   <span class="font-r-12 font-weight-500">Select a zip code in the places you service</span>
                 </div>
@@ -296,7 +295,7 @@
 
               <div class="col-12">
                 <div class="row">
-                  <div class="col-12 col-md-6 pl-0">
+                  <div class="col-12 col-lg-6">
                     <div class="page-content-tools">
                       <div class="search mb-3 mb-lg-0">
                         <span class="search-title font-weight-bold pr-3">List of services</span>
@@ -308,11 +307,11 @@
 
                       <div class="tools-container">
                         <div class="tools">
-                          <span class="cursor-p font-r-11">Move all</span>
+                          <span class="cursor-p font-r-9">Move all</span>
                           <span class="divider"></span>
-                          <span class="cursor-p font-r-11">Check all</span>
+                          <span class="cursor-p font-r-9">Check all</span>
                           <span class="divider"></span>
-                          <span class="cursor-p font-r-11 active">Clear</span>
+                          <span class="cursor-p font-r-9 active">Clear</span>
                         </div>
                       </div>
                     </div>
@@ -432,12 +431,12 @@
                     <span class="summary font-r-12 mt-3 ml-3"><span class="font-weight-bold">17 </span>services were selected</span>
                   </div>
 
-                  <div class="col-12 col-md-6 mt-4 mt-md-0 pr-0">
+                  <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                     <div class="page-content-tools">
-                      <span class="page-content-title font-r-12 font-weight-bold pl-3">My services</span>
+                      <span class="page-content-title font-r-12 font-weight-bold pl-lg-3">My services</span>
                       <div class="tools-container">
                         <div class="tools">
-                          <span class="cursor-p font-r-11 active">Remove all</span>
+                          <span class="cursor-p font-r-9 active">Remove all</span>
                         </div>
                       </div>
                     </div>
@@ -491,13 +490,13 @@
       </div>
 
       <div class="buttons-container">
-        <div class="submit-button pos-r">
-          <button type="button" id="back" class="btn mt-auto font-r-14 pos-r">
-            Back
-            <i class="fas fa-long-arrow-right mr-3"></i>
-          </button>
-        </div>
-        <div class="submit-button pos-r">
+        <!--<div class="submit-button pos-r">-->
+          <!--<button type="button" id="back" class="btn mt-auto font-r-14 pos-r">-->
+            <!--Back-->
+            <!--<i class="fas fa-long-arrow-right mr-3"></i>-->
+          <!--</button>-->
+        <!--</div>-->
+        <div class="submit-button pos-r ml-auto">
           <button type="button" id="next" class="btn active mt-auto font-r-14 pos-r">
             Next
             <i class="fas fa-long-arrow-right ml-3"></i>
@@ -508,5 +507,8 @@
   </div>
 
 </app>
+
+
+<script src="assets/js/nav-menu.js"></script>
 </body>
 </html>

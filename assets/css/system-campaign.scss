@@ -8,7 +8,6 @@
 }
 
 .system-campaign-services {
-  width: 100%;
   padding-bottom: 30px;
   box-shadow: 0 3px 30px 0 rgba(0,0,0,0.16);
   background-color: #ffffff;
@@ -75,10 +74,14 @@
 
 
 /////// Responsive /////////////////
-// Here starts media
+// MEDIA starts here
 
 @media(min-width: 300px) { // from 300
   //////// Commons reusable styles ////////
+  .system-campaign-services {
+    width: 96%;
+    margin: 0 auto;
+  }
 
   .search {
     .search-title {
@@ -162,43 +165,47 @@
   }
 }
 
-@media(min-width: 992px) { // from 992
+@media(min-width: 768px) { // from 768
+  .system-campaign-services {
+    width: 100%;
+  }
+}
   //////// Commons reusable styles ////////
 
-  .search {
-    .input-group {
-      width: 312px;
+.search {
+  .input-group {
+    width: 312px;
 
-      input {
+    input {
+      font-size: .875em;
+
+      &::-webkit-input-placeholder {
         font-size: .875em;
 
-        &::-webkit-input-placeholder {
-          font-size: .875em;
+      }
 
-        }
-
-        &::-moz-placeholder {
-          font-size: .875em;
-
-        }
-
-        &:-ms-input-placeholder {
-          font-size: .875em;
-
-        }
-
-        &:-moz-placeholder {
-          font-size: .875em;
-
-        }
+      &::-moz-placeholder {
+        font-size: .875em;
 
       }
+
+      &:-ms-input-placeholder {
+        font-size: .875em;
+
+      }
+
+      &:-moz-placeholder {
+        font-size: .875em;
+
+      }
+
     }
   }
+}
 
   //////// Unique styles only for this page ///////////
 
-}
+
 
 @media(min-width: 1200px) { // from 1200
   //////// Commons reusable styles ////////

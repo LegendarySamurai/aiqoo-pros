@@ -7,10 +7,10 @@
   @media(min-width: $break-mobile) { width: 168px; }
 }
 
-@media(min-width: 300px) {
+@media(min-width: 300px) { // from 300
   .buttons-container {
     @include flex-row;
-    width: 100%;
+    width: 98%;
     justify-content: space-between;
     align-items: center;
   }
@@ -66,15 +66,14 @@
     max-width: 450px;
   }
 
-  // Wizard content
-
+  // Wizard and system campaign pages common styles for content
   .page-content {
     padding: 40px 0 20px;
 
     .page-content-outer {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      //height: 100%;
       padding: 20px 6px 20px 20px;
       background-color: #f5f5f5;
 
@@ -157,9 +156,13 @@
       }
     }
   }
+
+  .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    top: 0 !important;
+  }
 }
 
-@media(max-width:$break-mobile) {
+@media(max-width: $break-mobile) { // to 600
   .main-wrapper {
     width: 100%;
   }
@@ -178,10 +181,6 @@
     }
   }
 
-  .custom-control-input:checked ~ .custom-control-label:after {
-    //top: 10px;
-  }
-
   .main-wrapper-inner {
     flex-direction: column;
     padding-top: 0;
@@ -196,7 +195,7 @@
   }
 }
 
-@media(max-width:$break-tablet) {
+@media(max-width: $break-tablet) {
   .content-container {
     .content {
       width: 100% !important;
@@ -205,6 +204,10 @@
 }
 
 @media(min-width: $break-tablet) {
+  .buttons-container {
+    width: 100%;
+  }
+
   .sign-in-and-sign-up,
   .account-verification {
     width: 420px;
@@ -335,7 +338,7 @@
   }
 }
 
-@media(min-width:$break-pc) { // from 1200px
+@media(min-width: $break-pc) { // from 1200px
   .sign-in,
   .sign-up {
     min-height: 420px;
@@ -405,36 +408,28 @@
   }
 }
 
-@media(max-width: 1365px) {
-  .custom-control-input:checked ~ .custom-control-label:after {
-    //top: 9px;
-  }
-
-  form {
-    .input-group {
-      .form-control {
-        font-size: 1.25rem !important;
-
-        &::-webkit-input-placeholder {
-          font-size: 1.25rem;
-        }
-
-        .input-group-text {
-          .far {
-            font-size: 1.25rem;
-          }
-        }
-      }
-    }
-  }
-}
+//@media(max-width: 1365px) {
+//  form {
+//    .input-group {
+//      .form-control {
+//        font-size: 1.25rem !important;
+//
+//        &::-webkit-input-placeholder {
+//          font-size: 1.25rem;
+//        }
+//
+//        .input-group-text {
+//          .far {
+//            font-size: 1.25rem;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
 
 @media(min-width: 1366px) {
   .content-container {
-    .content {
-      //padding: 0 25% 2% 5%;
-    }
-
     .content-inner {
       padding-top: 80px;
     }
@@ -469,10 +464,10 @@
   }
 }
 
-@media(min-width: $break-large-screen) {// from 1600
+@media(min-width: $break-large-screen) { // from 1600
   /// Wizard content ///
   .page-content {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
 
     &.locations {
@@ -489,8 +484,6 @@
       }
     }
   }
-
-
 
   .content-container {
     .content {

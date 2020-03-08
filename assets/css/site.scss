@@ -649,6 +649,15 @@ app {
             list-style: none;
             margin: 0;
             padding: 0 20px; // Updated by Igor Feb 13th, 2020
+            // Added by Igor March 8th 2020
+            z-index: 502;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #fff;
+            height: 100%;
+            width: 100%;
 
             & > li {
                 display: inline-block;
@@ -744,13 +753,14 @@ app {
         // Created by Igor Feb 13th, 2020
         & .nav-sub-menu {
             //display: none;
+            //transform: translateX(-100%);
             display: flex;
             flex-direction: row;
             align-items: center;
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translate(-50%, 100%);
+            transform: translate(-50%, 0%);
             width: 99%;
             height: 64px;
             margin: 0;
@@ -760,6 +770,14 @@ app {
             background-color: #e6e6e6;
             z-index: 500;
             list-style: none;
+
+            &.is-hidden {
+                transform: translate(-50%, 00%);
+            }
+
+            &.is-active {
+                transform: translate(-50%, 100%);
+            }
 
             & > li:not(:last-child) {
                 border-right: 2px solid #d7d7d7;
@@ -5679,6 +5697,15 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 
 .p-t-60 {
     padding-top: 60px;
+}
+
+.p-b-60 {
+    padding-bottom: 60px;
+}
+
+.p-x-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .p-t-80 {
