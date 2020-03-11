@@ -7,11 +7,12 @@
   font-family: "Raleway",sans-serif;
 }
 
-.system-campaign-services {
+.system-campaign-inner {
   padding-bottom: 30px;
   box-shadow: 0 3px 30px 0 rgba(0,0,0,0.16);
   background-color: #ffffff;
   font-family: "Raleway",sans-serif;
+  color: $purple;
 }
 
 .content {
@@ -34,6 +35,7 @@
 
     .input-group {
       position: relative;
+      width: 312px;
 
       .input-group-prepend {
         position: absolute;
@@ -48,6 +50,27 @@
         background-color: #ebebeb;
         border-radius: 2px;
         border: none;
+        font-size: .875em;
+
+        &::-webkit-input-placeholder {
+          font-size: .875em;
+
+        }
+
+        &::-moz-placeholder {
+          font-size: .875em;
+
+        }
+
+        &:-ms-input-placeholder {
+          font-size: .875em;
+
+        }
+
+        &:-moz-placeholder {
+          font-size: .875em;
+
+        }
       }
     }
   }
@@ -64,8 +87,159 @@
   margin-left: auto;
 }
 
-//////// Unique styles only for this page ///////////
+.warning {
+  margin-right: 32px;
+  font-family: "Raleway", sans-serif;    font-weight: 500;
+  color: #cb2a2a;
+  text-align: right;
+}
 
+
+// system-campaign-zip-code //
+.system-campaign-zip-code {
+  font-family: "Raleway", sans-serif;
+
+  .services-to-chose {
+    background-color: #fff;
+  }
+
+  .county-list-wrapper {
+    padding: 20px 20px 20px 0;
+    background-color: #f5f5f5;
+  }
+
+  .county-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-height: 330px;
+    overflow-y: scroll;
+  }
+
+  .county-item {
+    width: 16.5%;
+    margin-bottom: 10px;
+  }
+
+  .input-group-text {
+    color: $purple;
+  }
+
+  .load-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 76px; //
+    border: 1px solid $purple;
+    color: $purple;
+    box-shadow: none;
+    background-color: transparent;
+    font-weight: 300;
+  }
+
+  // Checkbox
+  .custom-checkbox {
+
+  }
+
+  .custom-control-label {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .custom-checkbox-ui {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    //border: 1px solid #fff;
+    //border-radius: 5px;
+  }
+
+  .custom-control-input:checked ~ .custom-checkbox-ui::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../images/confirm-7.svg) no-repeat center;
+    background-size: 50% auto;
+  }
+
+  .input-label {
+    padding-left: 10px;
+  }
+
+  // Selected services
+  .selected-services {
+    margin-top: 15px;
+  }
+
+  .selected-service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px 32px;
+    background-color: #ededed;
+
+    .selected-service-item-col {
+      padding: 6px 10px;
+    }
+  }
+
+  .location {
+    width: 20%;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .zip-code {
+    width: 20%;
+  }
+
+  .location,
+  .zip-code {
+    border-right: 1px solid #bdbbc7;
+  }
+
+  .population {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .edit {
+    width: 10%;
+  }
+}
+// EOL: system-campaign-zip-code
+
+
+// system-campaign-services //
+.system-campaign-services {
+  width: 100%;
+}
+// EOL: system-campaign-services
 
 
 
@@ -76,9 +250,114 @@
 /////// Responsive /////////////////
 // MEDIA starts here
 
-@media(min-width: 300px) { // from 300
+
+@media(max-width: 1599px) {
+  // Commons reusable styles //
+  .warning {
+    text-align: right;
+  }
+
+  // zip-code //
+  .system-campaign-zip-code {
+    .content {
+
+    }
+
+    .county-list {
+
+    }
+
+    .county-item {
+      width: 20%;
+    }
+  }
+  // EOL: system-campaign-zip-code
+
+
+  // Unique styles only for this page //
+}
+
+
+@media(max-width: 1399px) {
+  // Commons reusable styles //
+
+  // zip-code //
+  .system-campaign-zip-code {
+    .content {
+
+    }
+
+    .county-list {
+
+    }
+
+    .county-item {
+      width: 25%;
+    }
+  }
+  // EOL: system-campaign-zip-code
+
+
+
+  // Unique styles only for this page //
+}
+
+
+@media(max-width: 1199px) {
+  // Commons reusable styles //
+  // zip-code //
+  .system-campaign-zip-code {
+    .content {
+
+    }
+
+    .county-list {
+
+    }
+
+    .county-item {
+      width: 33.33%;
+    }
+
+    .warning {
+      text-align: left;
+    }
+
+    .selected-service-item {
+      //flex-direction: column;
+    }
+  }
+  // EOL: system-campaign-zip-code
+
+  // Unique styles only for this page //
+}
+
+@media(max-width: 768px) {
+  // zip-code //
+  .system-campaign-zip-code {
+    .content {
+
+    }
+
+    .county-list {
+
+    }
+
+    .county-item {
+      width: 50%;
+    }
+
+    .selected-service-item {
+      flex-direction: column;
+    }
+  }
+  // EOL: system-campaign-zip-code
+
+}
+
+@media(max-width: 599px) {
   //////// Commons reusable styles ////////
-  .system-campaign-services {
+  .system-campaign-inner {
     width: 96%;
     margin: 0 auto;
   }
@@ -148,7 +427,9 @@
     padding: 10px 0;
   }
 
-  //////// Unique styles only for this page ///////////
+  //////// EOL: Commons reusable styles ////////
+
+  // system-campaign-services //
   .system-campaign-services {
     .page-content {
       padding-right: 20px;
@@ -163,55 +444,39 @@
       max-width: 315px;
     }
   }
-}
+  // EOL: system-campaign-services //
 
-@media(min-width: 768px) { // from 768
-  .system-campaign-services {
-    width: 100%;
-  }
-}
-  //////// Commons reusable styles ////////
-
-.search {
-  .input-group {
-    width: 312px;
-
-    input {
-      font-size: .875em;
-
-      &::-webkit-input-placeholder {
-        font-size: .875em;
-
-      }
-
-      &::-moz-placeholder {
-        font-size: .875em;
-
-      }
-
-      &:-ms-input-placeholder {
-        font-size: .875em;
-
-      }
-
-      &:-moz-placeholder {
-        font-size: .875em;
-
-      }
+  // zip-code //
+  .system-campaign-zip-code {
+    .content {
 
     }
+
+    .county-list {
+
+    }
+
+    .county-item {
+      //width: 50%;
+    }
   }
+  // EOL: system-campaign-zip-code
 }
 
-  //////// Unique styles only for this page ///////////
+@media(max-width: 499px) {
+  // zip-code //
+  .system-campaign-zip-code {
+    .content {
 
+    }
 
+    .county-list {
 
-@media(min-width: 1200px) { // from 1200
-  //////// Commons reusable styles ////////
+    }
 
-
-
-  //////// Unique styles only for this page ///////////
-
+    .county-item {
+      width: 100%;
+    }
+  }
+  // EOL: system-campaign-zip-code
 }
