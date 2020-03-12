@@ -34,6 +34,11 @@
     width: 25%; } }
 
 @media (max-width: 1199px) {
+  .system-campaign-services .tools-container .tools {
+    display: flex;
+    flex-direction: column; }
+    .system-campaign-services .tools-container .tools .divider {
+      display: none; }
   .system-campaign-zip-code .county-item {
     width: 33.33%; }
   .system-campaign-zip-code .warning {
@@ -72,6 +77,20 @@
     height: 100%; } }
 
 @media (max-width: 768px) {
+  .system-campaign-services .page-content-tools {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto; }
+  .system-campaign-services .tools-container {
+    margin-left: 0;
+    margin-bottom: 10px; }
+    .system-campaign-services .tools-container .tools {
+      flex-direction: row; }
+      .system-campaign-services .tools-container .tools span:not(:first-of-type) {
+        padding: 0 5px; }
+  .system-campaign-services .search .input-group {
+    width: auto; }
   .system-campaign-zip-code .county-item {
     width: 50%; }
   .system-campaign-summary .list-item .table-item .table-cell {

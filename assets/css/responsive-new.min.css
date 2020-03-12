@@ -9,8 +9,8 @@
 .red {
   color: #c30a0a; }
 
-.icon-purple {
-  color: #342e49; }
+.purple {
+  color: #585077; }
 
 .dark {
   color: #342e49; }
@@ -38,9 +38,6 @@
   border-left: none;
   outline: none;
   box-shadow: none; }
-
-.btn:active, .btn:hover {
-  color: #fff; }
 
 .btn:focus {
   outline: none;

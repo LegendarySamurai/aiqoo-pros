@@ -82,10 +82,17 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
+  height: 36px;
 }
 
 .tools-container {
   margin-left: auto;
+
+  .tools {
+    .active {
+      color: #cb2a2a;
+    }
+  }
 }
 
 .warning {
@@ -234,6 +241,30 @@
 // system-campaign-services //
 .system-campaign-services {
   width: 100%;
+
+  .tools {
+    @include flex-row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+    span {
+      font-weight: 500;
+      font-size: .75em;
+      color: $purple;
+
+      &.divider {
+        width: 1px;
+        height: 15px;
+        margin: 0 8px;
+        background-color: $purple;
+      }
+    }
+
+    .active {
+      color: #c30a0a;
+    }
+  }
 }
 // EOL: system-campaign-services
 
