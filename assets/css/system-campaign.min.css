@@ -49,7 +49,7 @@
         flex-direction: row;
         align-items: center;
         line-height: 1;
-        padding: 0 10px;
+        padding: 0 5px;
         font-size: 1rem; }
         .tabs .tab .index {
           display: flex;
@@ -215,10 +215,9 @@
     text-overflow: ellipsis;
     overflow: hidden; }
   .system-campaign-zip-code .zip-code {
-    width: 20%; }
-  .system-campaign-zip-code .location,
-  .system-campaign-zip-code .zip-code {
-    border-right: 1px solid #bdbbc7; }
+    width: 20%;
+    border-right: 1px solid #bdbbc7;
+    border-left: 1px solid #bdbbc7; }
   .system-campaign-zip-code .population {
     flex-grow: 1;
     width: auto; }
@@ -244,11 +243,13 @@
   .system-campaign-zip-code .warning {
     text-align: left; } }
 
+@media (max-width: 991px) {
+  .zip-code {
+    border: none; } }
+
 @media (max-width: 768px) {
   .system-campaign-zip-code .county-item {
-    width: 50%; }
-  .system-campaign-zip-code .selected-service-item {
-    flex-direction: column; } }
+    width: 50%; } }
 
 @media (max-width: 599px) {
   .system-campaign-inner {

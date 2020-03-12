@@ -143,10 +143,6 @@
   }
 
   // Checkbox
-  .custom-checkbox {
-
-  }
-
   .custom-control-label {
     position: relative;
     display: flex;
@@ -216,11 +212,8 @@
 
   .zip-code {
     width: 20%;
-  }
-
-  .location,
-  .zip-code {
     border-right: 1px solid #bdbbc7;
+    border-left: 1px solid #bdbbc7;
   }
 
   .population {
@@ -332,6 +325,12 @@
   // Unique styles only for this page //
 }
 
+@media(max-width: 991px) {
+  .zip-code {
+    border: none;
+  }
+}
+
 @media(max-width: 768px) {
   // zip-code //
   .system-campaign-zip-code {
@@ -348,7 +347,7 @@
     }
 
     .selected-service-item {
-      flex-direction: column;
+      //flex-direction: column;
     }
   }
   // EOL: system-campaign-zip-code

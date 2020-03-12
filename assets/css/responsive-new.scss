@@ -7,6 +7,25 @@
   @media(min-width: $break-mobile) { width: 168px; }
 }
 
+.custom-select:focus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ced4da;
+  border-left: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn:active, .btn:hover {
+  color: #fff;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: initial;
+}
+
 @media(min-width: 300px) { // from 300
   .buttons-container {
     @include flex-row;

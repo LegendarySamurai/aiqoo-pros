@@ -27,6 +27,7 @@
   <link href="assets/css/form.min.css" rel="stylesheet"/>
   <link href="assets/css/site.min.css" rel="stylesheet"/>
   <link href="assets/css/responsive-new.min.css" rel="stylesheet"/>
+  <link href="assets/css/system-campaign-responsive.min.css" rel="stylesheet"/>
 </head>
 <body>
 <app>
@@ -313,8 +314,8 @@
                                   <div class="input-group mb-3 mb-xl-0">
                                     <div class="input-group-prepend">
                                       <label class="input-group-text font-weight-bold font-r-11" for="service-select">
-                                        <i class="fal fa-map-marker-alt pr-2"></i>
-                                        <span>State</span>
+                                        <i class="far fa-map-marker-alt pr-2"></i>
+                                        <span class="font-weight-bold">State</span>
                                       </label>
                                     </div>
                                     <select class="custom-select font-r-11" id="service-select">
@@ -332,8 +333,8 @@
                                   <div class="input-group mb-3 mb-lg-0">
                                     <div class="input-group-prepend">
                                       <label class="input-group-text font-weight-bold font-r-11" for="county-select">
-                                        <i class="fal fa-location-circle pr-2"></i>
-                                        <span>County</span>
+                                        <i class="far fa-location-circle pr-2"></i>
+                                        <span class="font-weight-bold">County</span>
                                       </label>
                                     </div>
                                     <select class="custom-select font-r-11" id="county-select">
@@ -347,7 +348,7 @@
                               </div>
 
                               <div class="col-12 col-xl-6 my-3 my-xl-0">
-                                <div class="warning font-r-12 font-weight-600">
+                                <div class="warning font-r-12 font-weight-bold">
                                   <i class="fad fa-exclamation-triangle mr-lg-2"></i>
                                   In order to continue, at least 80% of the district must be selected
                                 </div>
@@ -1200,7 +1201,25 @@
                       </button>
 
                       <div class="selected-services">
-                        <div class="selected-service-item">
+                        <div class="selected-service-item mb-2">
+                          <div class="selected-service-item-col location">
+                            <i class="fal fa-location-circle pr-2"></i>
+                            <span class="font-r-11">Louisiana </span>
+                          </div>
+                          <div class="selected-service-item-col zip-code">
+                            <i class="fal fa-globe pr-2"></i>
+                            <span class="font-r-11">Total zip code <span class="font-weight-500">321</span></span>
+                          </div>
+                          <div class="selected-service-item-col population">
+                            <i class="fad fa-user pr-2"></i>
+                            <span class="font-r-11">Total population <span class="font-weight-500">1,208,200</span></span>
+                          </div>
+                          <div class="selected-service-item-col ml-auto edit">
+                            <i class="fas fa-pencil"></i>
+                            <span class="font-r-11">Edit</span>
+                          </div>
+                        </div>
+                        <div class="selected-service-item mb-2">
                           <div class="selected-service-item-col location">
                             <i class="fal fa-location-circle pr-2"></i>
                             <span class="font-r-11">Louisiana </span>
