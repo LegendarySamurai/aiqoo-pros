@@ -6,10 +6,13 @@
   .cursor-p {
     cursor: pointer; } }
 
-.icon-red {
+.red {
   color: #c30a0a; }
 
-.icon-dark {
+.icon-purple {
+  color: #342e49; }
+
+.dark {
   color: #342e49; }
 
 .font-w-300 {

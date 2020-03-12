@@ -6,10 +6,13 @@
   .cursor-p {
     cursor: pointer; } }
 
-.icon-red {
+.red {
   color: #c30a0a; }
 
-.icon-dark {
+.purple {
+  color: #585077; }
+
+.dark {
   color: #342e49; }
 
 .font-w-300 {
@@ -45,11 +48,41 @@
   .system-campaign-zip-code .edit {
     text-align: right; }
   .system-campaign-zip-code .zip-code {
-    border: none !important; } }
+    border: none !important; }
+  .system-campaign-summary .table-title-list {
+    display: none; }
+  .system-campaign-summary .table-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px; }
+  .system-campaign-summary .list-item .table-cell-4 {
+    padding-left: 10px; }
+  .system-campaign-summary .table-item .table-cell {
+    width: 50%; }
+  .system-campaign-summary .table-item.head-item .table-cell {
+    width: 33.3%; }
+  .system-campaign-summary .table-item.head-item .table-cell-1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .system-campaign-summary .table-item.head-item .table-cell-6 {
+    justify-content: flex-start; }
+  .system-campaign-summary .table-cell {
+    height: 100%; } }
 
 @media (max-width: 768px) {
   .system-campaign-zip-code .county-item {
-    width: 50%; } }
+    width: 50%; }
+  .system-campaign-summary .list-item .table-item .table-cell {
+    width: 100%; }
+  .system-campaign-summary .list-item .table-item .table-cell-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .system-campaign-summary .list-item .table-item .table-cell-4 {
+    padding-left: 0; } }
 
 @media (max-width: 599px) {
   .system-campaign-inner {
