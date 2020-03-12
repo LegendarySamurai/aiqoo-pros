@@ -1,11 +1,19 @@
 @import 'variables';
 
 @media(max-width: 1799px) {
+  // zip-code //
   .system-campaign-zip-code {
     .county-item {
       width: 20%;
     }
   }
+  // EOL: system-campaign-zip-code
+
+  // system-campaign-summary //
+  .system-campaign-summary {
+
+  }
+  // EOL: system-campaign-summary
 
 }
 
@@ -25,6 +33,12 @@
     }
   }
   // EOL: system-campaign-zip-code
+
+  // system-campaign-summary //
+  .system-campaign-summary {
+
+  }
+  // EOL: system-campaign-summary
 }
 
 
@@ -40,6 +54,12 @@
     }
   }
   // EOL: system-campaign-zip-code
+
+  // system-campaign-summary //
+  .system-campaign-summary {
+
+  }
+  // EOL: system-campaign-summary
 }
 
 @media(max-width: 991px) {
@@ -63,6 +83,12 @@
     }
   }
   // EOL: system-campaign-zip-code
+
+  // system-campaign-summary //
+  .system-campaign-summary {
+
+  }
+  // EOL: system-campaign-summary
 }
 
 @media(max-width: 768px) {
@@ -73,6 +99,12 @@
     }
   }
   // EOL: system-campaign-zip-code
+
+  // system-campaign-summary //
+  .system-campaign-summary {
+
+  }
+  // EOL: system-campaign-summary
 
 }
 
@@ -163,6 +195,12 @@
     }
   }
   // EOL: system-campaign-services //
+
+  // system-campaign-summary //
+  .system-campaign-summary {
+
+  }
+  // EOL: system-campaign-summary
 }
 
 @media(max-width: 499px) {
@@ -173,4 +211,10 @@
     }
   }
   // EOL: system-campaign-zip-code
+
+  // system-campaign-summary //
+  .system-campaign-summary {
+
+  }
+  // EOL: system-campaign-summary
 }

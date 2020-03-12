@@ -58,8 +58,10 @@
           width: 26px;
           height: 26px; } }
   @media (min-width: 768px) {
-    .tabs .tab:first-child {
-      padding-left: 45px; } }
+    .tabs .tab {
+      padding: 0 10px; }
+      .tabs .tab:first-child {
+        padding-left: 45px; } }
   @media (min-width: 1200px) {
     .tabs .tab {
       line-height: inherit;
@@ -229,77 +231,5 @@
 .system-campaign-services {
   width: 100%; }
 
-@media (max-width: 1599px) {
-  .warning {
-    text-align: right; }
-  .system-campaign-zip-code .county-item {
-    width: 20%; } }
-
-@media (max-width: 1399px) {
-  .system-campaign-zip-code .county-item {
-    width: 25%; } }
-
-@media (max-width: 1199px) {
-  .system-campaign-zip-code .county-item {
-    width: 33.33%; }
-  .system-campaign-zip-code .warning {
-    text-align: left; } }
-
-@media (max-width: 991px) {
-  .zip-code {
-    border: none; } }
-
-@media (max-width: 768px) {
-  .system-campaign-zip-code .county-item {
-    width: 50%; } }
-
-@media (max-width: 599px) {
-  .system-campaign-inner {
-    width: 96%;
-    margin: 0 auto; }
-  .search .search-title {
-    font-size: 1.125em; }
-  .search .input-group {
-    width: 100%; }
-  .search input {
-    width: 100%;
-    font-size: 1.125em; }
-    .search input::-webkit-input-placeholder {
-      font-size: 1.125em; }
-    .search input::-moz-placeholder {
-      font-size: 1.125em; }
-    .search input:-ms-input-placeholder {
-      font-size: 1.125em; }
-    .search input:-moz-placeholder {
-      font-size: 1.125em; }
-  .tools {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%; }
-    .tools span {
-      font-weight: 500;
-      font-size: .75em;
-      color: #585077; }
-      .tools span.divider {
-        width: 1px;
-        height: 15px;
-        margin: 0 8px;
-        background-color: #585077; }
-    .tools .active {
-      color: #c30a0a; }
-  .page-content-tools {
-    height: 56px;
-    padding: 10px 0; }
-  .system-campaign-services .page-content {
-    padding-right: 20px;
-    padding-left: 20px; }
-  .system-campaign-services .page-content-outer {
-    padding: 0 6px 0 10px; }
-  .system-campaign-services .form-control {
-    max-width: 315px; } }
-
-@media (max-width: 499px) {
-  .system-campaign-zip-code .county-item {
-    width: 100%; } }
+.system-campaign-summary {
+  width: 100%; }

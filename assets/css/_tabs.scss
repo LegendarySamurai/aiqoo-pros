@@ -62,7 +62,7 @@
   @media(min-width: $break-tablet) { // from 768
     & {
       .tab {
-        //font-size: 1.25rem;
+        padding: 0 10px;
 
         &:first-child {
           padding-left: 45px;
