@@ -1,0 +1,385 @@
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  @keyframes tonext {
+    75% {
+      left: 0; }
+    95% {
+      left: 100%; }
+    98% {
+      left: 100%; }
+    99% {
+      left: 0; } }
+  @keyframes tostart {
+    75% {
+      left: 0; }
+    95% {
+      left: -300%; }
+    98% {
+      left: -300%; }
+    99% {
+      left: 0; } }
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center; }
+    97% {
+      scroll-snap-align: none; }
+    99% {
+      scroll-snap-align: none; }
+    100% {
+      scroll-snap-align: center; } }
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent !important;
+    /* thumb and track color */
+    scrollbar-width: 0px !important; }
+  *::-webkit-scrollbar {
+    width: 0 !important; }
+  *::-webkit-scrollbar-track {
+    background: transparent !important; }
+  *::-webkit-scrollbar-thumb {
+    background: transparent !important;
+    border: none !important; }
+  * {
+    -ms-overflow-style: none !important; }
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .carousel {
+    position: relative;
+    padding-top: 250px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    perspective: 100px; }
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; }
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item; }
+  .carousel__slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -40%, 70px);
+    color: #fff;
+    font-size: 2em; }
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center; } }
+
+@media only screen and (min-width: 300px) and (max-width: 991px) and (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; }
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap; } }
+
+@media only screen and (min-width: 300px) and (max-width: 991px) and (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none; } }
+
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none; }
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center; }
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block; }
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #d8cdba;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s; }
+    .carousel__navigation-button.is-clicked {
+      width: 1.75rem;
+      height: 1.75rem;
+      background-color: #585077; } }
+
+@media (max-width: 1899px) {
+  .landing-sign-up .container.container-lg {
+    max-width: 1400px; }
+  .landing-sign-up .head-section-container {
+    max-width: 1400px !important; }
+  .landing-sign-up .quality-cards {
+    display: flex;
+    align-items: center; }
+  .landing-sign-up .quality-card-text {
+    font-size: 14.75pt; } }
+
+@media (max-width: 1599px) {
+  .landing-sign-up .container.container-lg {
+    max-width: 1340px; } }
+
+@media (max-width: 1399px) {
+  .landing-sign-up .container.container-lg {
+    max-width: 1140px; }
+  .landing-sign-up .head-section-body {
+    width: 650px;
+    padding: 30px 0 70px;
+    margin-top: -20px; }
+    .landing-sign-up .head-section-body:before {
+      top: 40%;
+      max-width: 650px;
+      height: 120px; }
+  .landing-sign-up .brand-logo {
+    width: 200px;
+    margin-top: -30px; }
+    .landing-sign-up .brand-logo img {
+      width: 100%;
+      padding: 30px 30px 30px 20px; }
+  .landing-sign-up .pro-img {
+    left: 70px;
+    width: 120px; }
+  .landing-sign-up .btn-wrapper {
+    width: 420px;
+    padding: 50px 0 0 20px; }
+    .landing-sign-up .btn-wrapper h1 {
+      line-height: 1;
+      padding: 0px 20px 10px 0;
+      font-size: 19pt; }
+    .landing-sign-up .btn-wrapper button {
+      margin-top: 20px; }
+  .landing-sign-up .form-outer {
+    min-width: 450px; }
+  .landing-sign-up .back-layer {
+    max-width: 450px; }
+  .landing-sign-up .form-container {
+    min-width: 420px; }
+  .landing-sign-up .special-offers .offer {
+    height: 80px;
+    padding-left: 25px; }
+    .landing-sign-up .special-offers .offer span {
+      font-size: 19pt; }
+    .landing-sign-up .special-offers .offer .number {
+      font-size: 22pt; }
+  .landing-sign-up .special-offers .text {
+    font-size: 14pt; }
+  .landing-sign-up .section-bottom h1 {
+    font-size: 24pt; }
+  .landing-sign-up .section-bottom .text {
+    font-size: 12pt; }
+  .landing-sign-up .section-bottom .bottom-text {
+    font-size: 14pt; }
+  .landing-sign-up .quality-card {
+    height: 210px;
+    margin: 0 10px; }
+  .landing-sign-up .quality-card-content {
+    padding: 15px; }
+  .landing-sign-up .quality-card-image {
+    height: 30px; }
+  .landing-sign-up .quality-card-text {
+    font-size: 10.5pt; }
+  .landing-sign-up .read-more {
+    font-size: 11pt;
+    padding-left: 0; } }
+
+@media (max-width: 1199px) {
+  .landing-sign-up .container-lg {
+    max-width: 960px; }
+  .landing-sign-up .head-section-body:before {
+    top: 39%;
+    max-width: 510px;
+    height: 110px; }
+  .landing-sign-up .brand-logo img {
+    width: 100%;
+    padding: 20px 20px 20px 20px; }
+  .landing-sign-up h1 {
+    font-size: 18.75pt; }
+  .landing-sign-up .btn-wrapper {
+    width: 430px;
+    padding: 50px 0 0 0; }
+    .landing-sign-up .btn-wrapper h1 {
+      padding: 0 0 10px 0;
+      font-size: 16.5pt !important;
+      line-height: 1.35; }
+  .landing-sign-up .quality-card {
+    margin: 0 5px; }
+    .landing-sign-up .quality-card .quality-card-content {
+      padding: 20px 10px 10px 10px; }
+  .landing-sign-up .quality-card-image {
+    margin-bottom: 20px; }
+  .landing-sign-up .quality-card-text {
+    font-size: 9pt; }
+  .landing-sign-up .form-outer {
+    min-width: 400px; }
+  .landing-sign-up .back-layer {
+    max-width: 400px; }
+  .landing-sign-up .form-container {
+    min-width: initial; } }
+
+@media (max-width: 991px) {
+  .landing-sign-up .head-section-body {
+    justify-content: center;
+    width: 520px;
+    max-width: 96%;
+    margin: 0 auto;
+    padding: 60px 0; }
+    .landing-sign-up .head-section-body:before {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 520px;
+      height: 100px;
+      border-radius: 5px; }
+  .landing-sign-up .back-layer {
+    position: static;
+    transform: none;
+    width: 96%;
+    max-width: 500px;
+    margin: 0 auto; }
+    .landing-sign-up .back-layer.is-active {
+      z-index: 9000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 60px;
+      background-color: rgba(0, 0, 0, 0.7); }
+      .landing-sign-up .back-layer.is-active .special-offers {
+        display: none; }
+      .landing-sign-up .back-layer.is-active .form-container {
+        width: 96%;
+        padding-top: 20px;
+        background-color: #fff;
+        border-radius: 5px; }
+      .landing-sign-up .back-layer.is-active .submit-button .btn {
+        padding: 0; }
+      .landing-sign-up .back-layer.is-active .custom-control-label {
+        padding-top: 8px; }
+  .landing-sign-up .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
+  .landing-sign-up .form-container {
+    width: 100%; }
+    .landing-sign-up .form-container .sign-up-form {
+      margin: 25px 0 35px;
+      padding: 0 30px; }
+    .landing-sign-up .form-container .submit-button .btn {
+      padding-top: 8px; }
+  .landing-sign-up .brand-logo {
+    width: 130px; }
+    .landing-sign-up .brand-logo img {
+      width: 100%; }
+  .landing-sign-up .btn-wrapper {
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    max-width: 96%;
+    padding: 70px 0 0 0; }
+    .landing-sign-up .btn-wrapper h1 {
+      white-space: nowrap; }
+    .landing-sign-up .btn-wrapper button {
+      margin-top: 40px; }
+  .landing-sign-up .section-bottom {
+    margin-top: 30px; }
+  .landing-sign-up .quality-cards {
+    display: flex;
+    align-items: initial;
+    flex-direction: initial;
+    margin-top: 0; }
+  .landing-sign-up .quality-card {
+    width: 96%;
+    height: 200px;
+    margin-bottom: 10px; }
+    .landing-sign-up .quality-card .quality-card-content {
+      padding: 20px 20px 10px; }
+      .landing-sign-up .quality-card .quality-card-content:before {
+        top: 0; }
+  .landing-sign-up .quality-card-image {
+    margin-bottom: 10px; }
+  .landing-sign-up .quality-card-text {
+    font-size: 12.25pt; }
+  .landing-sign-up .section-bottom .top-text {
+    font-size: 11.25pt; }
+    .landing-sign-up .section-bottom .top-text span {
+      font-size: 11.25pt; }
+  .landing-sign-up .section-bottom .cards-container {
+    max-width: 380px;
+    margin: 30px auto; }
+  .landing-sign-up .section-bottom .bottom-text {
+    margin: 20px 0;
+    font-size: 10.5pt; }
+  .landing-sign-up .about-aiq {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 767px) {
+  .landing-sign-up .head-section-body:before {
+    top: 33%; }
+  .landing-sign-up .btn-wrapper {
+    padding: 0 0 0 0; }
+    .landing-sign-up .btn-wrapper h1 {
+      text-align: center;
+      white-space: normal; }
+  .landing-sign-up .back-layer {
+    max-width: initial; }
+  .landing-sign-up .sign-up-form .custom-control-label {
+    padding-top: 0; }
+  .landing-sign-up .form-outer {
+    min-width: initial; }
+  .landing-sign-up .label {
+    padding-left: 20px; }
+    .landing-sign-up .label img {
+      width: 80%; }
+  .landing-sign-up .form-container {
+    margin-left: auto;
+    margin-right: auto; }
+  .landing-sign-up .offers .offer {
+    padding-left: 16px; }
+    .landing-sign-up .offers .offer:after {
+      right: -14px;
+      border-top: 18px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-right: 27px solid #fff; }
+    .landing-sign-up .offers .offer .fa-check {
+      margin-right: 14px; }
+    .landing-sign-up .offers .offer span {
+      line-height: 1.5;
+      font-size: 13pt; }
+    .landing-sign-up .offers .offer .number {
+      font-size: 16pt; } }
+
+@media (min-width: 992px) {
+  .landing-sign-up .quality-card.scaled-up {
+    z-index: 9; }
+    .landing-sign-up .quality-card.scaled-up .quality-card-content {
+      transform: scale(1.15); }
+  .landing-sign-up .quality-card:hover {
+    z-index: 10; }
+    .landing-sign-up .quality-card:hover .quality-card-content {
+      transform: scale(1.15); } }
