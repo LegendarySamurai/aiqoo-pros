@@ -1,0 +1,88 @@
+@import 'site.scss'; // This stylesheet for Ovadia updates and changes !!!
+@import 'helpers';
+@import 'reset-styles';
+@import 'variables.scss';
+@import 'accordion';
+@import 'form';
+
+//************* My profile page (Dashboard) *************//
+.my-profile-page {
+  @import 'my-profile.scss';
+}
+
+//************* Add company profile page (Dashboard) *************//
+.add-company-profile-page {
+  @import 'my-profile.scss';
+  @import 'dashboard.scss';
+}
+
+//************* Summary, Summary-empty pages (Dashboard)  *************//
+.summary-page-container {
+  @import 'summary.scss';
+}
+
+.summary-page-empty-container {
+  @import 'summary.scss';
+}
+
+//************* Add portfolio page (Dashboard)  *************//
+.add-portfolio-page {
+  @import 'my-profile.scss';
+  @import 'dashboard.scss';
+}
+
+//*************  My-profile page (Wizard) *************//
+
+
+//*************  Details, Locations, Services, Success (Wizard modals) *************//
+@import 'wizard.scss';
+
+
+//************* Landing sign up page  *************//
+.landing-sign-up {
+  @import 'landing-sig-up-new.scss';
+}
+
+//*************  System campaign: Services, summary, zip-code pages *************//
+.system-campaign {
+  @import 'tabs';
+  @import 'county-list.scss';
+  @import 'system-campaign.scss';
+
+  &.system-campaign-zip-code {
+    @import 'services-to-chose.scss';
+  }
+}
+
+//************* Services and Locations page (Dashboard) *************//
+
+.services-and-location-page {
+  @import 'my-profile.scss';
+  @import 'dashboard.scss';
+  @import 'services-to-chose.scss';
+  @import 'county-list.scss';
+}
+
+//************* Sign-in, Sign-up *************//
+.sign-in-and-sign-up-page {
+  @import 'register.scss';
+}
+
+//************* Account verification page *************//
+.account-verification-page {
+  @import 'register.scss';
+}
+
+//*************  *************//
+
+//*************  *************//
+
+//*************  *************//
+
+//*************  *************//
+
+//*************  *************//
+
+
+
+

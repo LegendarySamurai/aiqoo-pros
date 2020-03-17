@@ -91,9 +91,6 @@
   }
 
   .sidebar-menu-outer {
-    //position: relative;
-    //top: -35px;
-    //top: auto;
     position: absolute;
     bottom: 50px;
     left: -210px;
@@ -187,10 +184,6 @@
   }
 
   .banner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
     img {
       max-width: 100%;
       margin-top: auto;

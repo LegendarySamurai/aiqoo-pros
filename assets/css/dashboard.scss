@@ -89,6 +89,18 @@
   .services-and-location {
     @include contentContainerStyles;
 
+    .county-list-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: #fff;
+
+      .county-item {
+        width: 20%;
+      }
+    }
+
     .content {
       .search {
         display: flex;
@@ -114,6 +126,10 @@
           }
         }
       }
+    }
+
+    .tools {
+      padding: 20px 30px 20px 40px;
     }
   }
 
