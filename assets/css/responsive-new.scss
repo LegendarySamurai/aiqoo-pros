@@ -1131,6 +1131,25 @@
   // EOL: 1920px
 }
 
+//************* My tasks page (Dashboard)  *************//
+.my-tasks-page {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
+}
+
 //************* Summary  Wizard *************//
 .summary-page {
   @media(min-width: 300px) {

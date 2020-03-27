@@ -63,6 +63,13 @@
   @import 'county-list.scss';
 }
 
+//************* My tasks page (Dashboard) *************//
+.my-tasks-page {
+  @import 'dashboard.scss';
+  @import 'tasks.scss';
+  @import 'status-bar';
+}
+
 //************* Sign-in, Sign-up *************//
 .sign-in-and-sign-up-page {
   @import 'register.scss';

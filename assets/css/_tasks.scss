@@ -1,0 +1,424 @@
+.content {
+  margin-top: 70px;
+}
+
+// sort-by-date
+.sort-by-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #dadada;
+
+  .image-container {
+    width: 44px;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .date-container-outer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+
+  .date-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .date-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 300;
+    color: #342e49;
+  }
+}
+
+// EOL: sort-by-date
+
+// user
+.user {
+  padding: 30px 0;
+  border-bottom: 1px solid #dadada;
+
+  .user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .user-name {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+}
+
+// EOL: user
+
+// task-type
+.task-type {
+  padding: 30px 0;
+}
+
+.task-type-list {
+  margin-top: 20px;
+  padding: 16px 30px;
+  background-color: #f4f4f4;
+
+  .custom-control {
+    position: relative;
+    margin-bottom: 20px;
+
+    &.orange {
+      &:before {
+        background-color: #fdc25d;
+      }
+    }
+
+    &.dark-grey {
+      &:before {
+        background-color: #5d5d5d;
+      }
+    }
+
+    &.pink {
+      &:before {
+        background-color: #fd5d5d;
+      }
+    }
+
+    &.light-purple {
+      &:before {
+        background-color: #474e83;
+      }
+    }
+
+    &.dark-red {
+      &:before {
+        background-color: #881030;
+      }
+    }
+
+    &.very-light-purple {
+      &:before {
+        background-color: #c65dfd;
+      }
+    }
+
+    &.light-blue {
+      &:before {
+        background-color: #635dfd;
+      }
+    }
+
+    &.light-green {
+      &:before {
+        background-color: #12b7aa;
+      }
+    }
+
+    &.dark-orange {
+      &:before {
+        background-color: #ff8000;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: -2px;
+      left: -15px;
+      display: block;
+      content: '';
+      width: 8px;
+      height: 26px;
+    }
+  }
+
+  .custom-control-label {
+    padding-left: 10px;
+    font-weight: 300;
+    color: #585077;
+
+    &:before {
+      border-color: #585077;
+    }
+  }
+}
+
+//EOL: task-type
+
+// Search
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #707070;
+
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 380px;
+    height: 46px;
+  }
+
+  .input-group-prepend {
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+  }
+
+  .form-control {
+    height: 100%;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 20px;
+    border: none;
+    background-color: #e8e8e8;
+    font-weight: 300;
+    color: #342e49;
+    font-size: 1rem;
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      font-weight: 300;
+      color: #342e49;
+      font-size: 1rem;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      font-weight: 300;
+      color: #342e49;
+      font-size: 1rem;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      font-weight: 300;
+      color: #342e49;
+      font-size: 1rem;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      font-weight: 300;
+      color: #342e49;
+      font-size: 1rem;
+    }
+  }
+}
+
+// EOL: Search
+
+// list-heading
+.list-heading {
+  margin-top: 34px;
+
+  .list-heading-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #f9f9f9;
+  }
+
+  .fa-clipboard-list-check {
+    width: 14px;
+    margin-right: 10px;
+  }
+}
+
+// EOL: list-heading
+
+// list-body
+.list-body {
+  margin-top: 34px;
+
+  .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    color: #fff;
+
+    &.confirm {
+      background-color: #881030;
+    }
+
+    &.send-company-info {
+      background-color: #fd5d5d;
+    }
+
+    &.call-back {
+      background-color: #fdc25d;
+    }
+
+    &.setup {
+      background-color: #12b7aa;
+    }
+  }
+}
+
+// EOL: list-body
+
+// task-card
+.task-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
+  background-color: #fff;
+  color: #585077;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+
+  .task-card-inner {
+    padding: 10px;
+  }
+
+  .user {
+    padding: 0 0 10px 0;
+    border-bottom: none;
+    border-bottom: solid 1px #f9f9f9;
+  }
+
+  .gray-title {
+    font-weight: 300;
+    color: #b3b3b3;
+  }
+}
+
+// todo-time
+.todo-time {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: solid 1px #f9f9f9;
+
+  .time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10px;
+    padding: 10px 0;
+  }
+
+  .fa-calendar {
+    width: 14px;
+    margin-right: 10px;
+  }
+}
+
+// EOL: todo-time
+
+// client-info-container
+.client-info-container {
+  margin-left: -10px;
+  margin-right: -10px;
+
+  .client-info-heading {
+    padding: 0 10px;
+  }
+
+  .client-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: transparentize(#ededed, .62);
+  }
+
+  .fa-user,
+  .fa-phone-alt,
+  .fa-map-marker-alt {
+    width: 14px;
+    margin: 6px 20px 6px 0;
+  }
+}
+
+// EOL: client-info-container
+
+// notes
+.notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 14px;
+
+  .fa-edit {
+    margin-right: 20px;
+  }
+
+  .text {
+    padding: 10px 0;
+  }
+}
+
+// EOL: notes
+
+
+// buttons container
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 30px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+}
+
+.red-button {
+  border: 1px solid #a00303;
+  color: #a00303;
+}
+
+.green-button {
+  border: 1px solid #00aa1a;
+  color: #00aa1a
+}
+
+// EOL: task-card
