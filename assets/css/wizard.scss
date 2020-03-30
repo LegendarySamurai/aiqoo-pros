@@ -6,6 +6,9 @@
 // pop-up styles
 
 .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+
   &.fade {
     &.show {
       opacity: 1

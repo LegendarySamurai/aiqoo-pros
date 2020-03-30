@@ -11464,8 +11464,11 @@ form {
   .add-company-profile form .form-control-container {
     width: 50%; } }
 
-.modal.fade.show {
-  opacity: 1; }
+.modal {
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .modal.fade.show {
+    opacity: 1; }
 
 .wizard-modal {
   display: block; }
@@ -16671,13 +16674,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .my-tasks-page .task-card.setup .label,
     .my-tasks-page .task-card.setup .colored-circle {
       background-color: #12b7aa; }
-    .my-tasks-page .task-card .colored-circle {
-      position: absolute;
-      top: 17px;
-      left: -23px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%; }
     .my-tasks-page .task-card:before {
       position: absolute;
       top: 0;
@@ -16703,6 +16699,13 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: 10%;
       height: 10%;
       z-index: 1; }
+    .my-tasks-page .task-card .colored-circle {
+      position: absolute;
+      top: 17px;
+      left: -23px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%; }
     .my-tasks-page .task-card .task-card-inner {
       padding: 10px; }
     .my-tasks-page .task-card .user {

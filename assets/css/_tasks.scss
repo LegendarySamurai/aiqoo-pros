@@ -320,15 +320,6 @@
     }
   }
 
-  .colored-circle {
-    position: absolute;
-    top: 17px;
-    left: -23px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-
   &:before {
     position: absolute;
     top: 0;
@@ -356,6 +347,15 @@
     width: 10%;
     height: 10%;
     z-index: 1;
+  }
+
+  .colored-circle {
+    position: absolute;
+    top: 17px;
+    left: -23px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
   }
 
   .task-card-inner {
