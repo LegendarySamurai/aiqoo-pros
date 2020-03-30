@@ -6465,7 +6465,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       color: #585077; }
-    .my-profile-page .side-menu-inner > li:hover:after {
+    .my-profile-page .side-menu-inner > li:hover:after, .my-profile-page .side-menu-inner > li.active:after {
       display: block;
       content: '';
       position: absolute;
@@ -7293,7 +7293,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       color: #585077; }
-    .add-company-profile-page .side-menu-inner > li:hover:after {
+    .add-company-profile-page .side-menu-inner > li:hover:after, .add-company-profile-page .side-menu-inner > li.active:after {
       display: block;
       content: '';
       position: absolute;
@@ -9447,7 +9447,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       color: #585077; }
-    .add-portfolio-page .side-menu-inner > li:hover:after {
+    .add-portfolio-page .side-menu-inner > li:hover:after, .add-portfolio-page .side-menu-inner > li.active:after {
       display: block;
       content: '';
       position: absolute;
@@ -13962,7 +13962,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       -webkit-transition: all .2s ease;
       transition: all .2s ease;
       color: #585077; }
-    .services-and-location-page .side-menu-inner > li:hover:after {
+    .services-and-location-page .side-menu-inner > li:hover:after, .services-and-location-page .side-menu-inner > li.active:after {
       display: block;
       content: '';
       position: absolute;
@@ -16640,20 +16640,15 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .my-tasks-page .list-body {
     margin-top: 34px; }
     .my-tasks-page .list-body .label {
+      position: relative;
+      z-index: 2;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 38px;
       color: #fff; }
-      .my-tasks-page .list-body .label.confirm {
-        background-color: #881030; }
-      .my-tasks-page .list-body .label.send-company-info {
-        background-color: #fd5d5d; }
-      .my-tasks-page .list-body .label.call-back {
-        background-color: #fdc25d; }
-      .my-tasks-page .list-body .label.setup {
-        background-color: #12b7aa; }
   .my-tasks-page .task-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
@@ -16662,7 +16657,52 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #fff;
     color: #585077;
     font-family: "Raleway", sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    z-index: 2; }
+    .my-tasks-page .task-card.confirm .label,
+    .my-tasks-page .task-card.confirm .colored-circle {
+      background-color: #881030; }
+    .my-tasks-page .task-card.send-company-info .label,
+    .my-tasks-page .task-card.send-company-info .colored-circle {
+      background-color: #fd5d5d; }
+    .my-tasks-page .task-card.call-back .label,
+    .my-tasks-page .task-card.call-back .colored-circle {
+      background-color: #fdc25d; }
+    .my-tasks-page .task-card.setup .label,
+    .my-tasks-page .task-card.setup .colored-circle {
+      background-color: #12b7aa; }
+    .my-tasks-page .task-card .colored-circle {
+      position: absolute;
+      top: 17px;
+      left: -23px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%; }
+    .my-tasks-page .task-card:before {
+      position: absolute;
+      top: 0;
+      left: -20px;
+      display: block;
+      content: '';
+      background: url("../images/dashed-line.png") no-repeat;
+      background-size: 10% auto;
+      background-position: 0 0;
+      width: 10%;
+      height: 105%;
+      z-index: 1; }
+    .my-tasks-page .task-card:after {
+      position: absolute;
+      top: 16px;
+      left: -10px;
+      transform: rotate(90deg);
+      display: block;
+      content: '';
+      background: url("../images/dashed-line.png") no-repeat;
+      background-size: 10% auto;
+      background-position: 0 0;
+      width: 10%;
+      height: 10%;
+      z-index: 1; }
     .my-tasks-page .task-card .task-card-inner {
       padding: 10px; }
     .my-tasks-page .task-card .user {
@@ -16736,6 +16776,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     border: 1px solid #00aa1a;
     color: #00aa1a; }
   .my-tasks-page .status-bar {
+    display: flex;
+    flex-direction: column;
     margin-top: 70px;
     padding: 20px 20px 20px 40px;
     font-family: "Raleway", sans-serif;
@@ -16743,6 +16785,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
     background-color: #ffffff; }
     .my-tasks-page .status-bar .title {
+      margin-bottom: 25px;
       font-weight: bold; }
     .my-tasks-page .status-bar .status-panel {
       padding-bottom: 10px;

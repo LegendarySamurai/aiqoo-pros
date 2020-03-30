@@ -1,4 +1,6 @@
 .status-bar {
+  display: flex;
+  flex-direction: column;
   margin-top: 70px;
   padding: 20px 20px 20px 40px;
   font-family: "Raleway", sans-serif;
@@ -7,6 +9,7 @@
   background-color: #ffffff;
 
   .title {
+    margin-bottom: 25px;
     font-weight: bold;
   }
 

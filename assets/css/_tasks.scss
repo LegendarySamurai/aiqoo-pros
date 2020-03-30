@@ -265,27 +265,13 @@
   margin-top: 34px;
 
   .label {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 38px;
     color: #fff;
-
-    &.confirm {
-      background-color: #881030;
-    }
-
-    &.send-company-info {
-      background-color: #fd5d5d;
-    }
-
-    &.call-back {
-      background-color: #fdc25d;
-    }
-
-    &.setup {
-      background-color: #12b7aa;
-    }
   }
 }
 
@@ -293,6 +279,7 @@
 
 // task-card
 .task-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
@@ -302,6 +289,74 @@
   color: #585077;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
+  z-index: 2;
+
+
+  &.confirm {
+    .label,
+    .colored-circle {
+      background-color: #881030;
+    }
+  }
+
+  &.send-company-info {
+    .label,
+    .colored-circle {
+      background-color: #fd5d5d;
+    }
+  }
+
+  &.call-back {
+    .label,
+    .colored-circle {
+      background-color: #fdc25d;
+    }
+  }
+
+  &.setup {
+    .label,
+    .colored-circle {
+      background-color: #12b7aa;
+    }
+  }
+
+  .colored-circle {
+    position: absolute;
+    top: 17px;
+    left: -23px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    display: block;
+    content: '';
+    background: url('../images/dashed-line.png') no-repeat;
+    background-size: 10% auto;
+    background-position: 0 0;
+    width: 10%;
+    height: 105%;
+    z-index: 1;
+  }
+
+  &:after {
+    position: absolute;
+    top: 16px;
+    left: -10px;
+    transform: rotate(90deg);
+    display: block;
+    content: '';
+    background: url('../images/dashed-line.png') no-repeat;
+    background-size: 10% auto;
+    background-position: 0 0;
+    width: 10%;
+    height: 10%;
+    z-index: 1;
+  }
 
   .task-card-inner {
     padding: 10px;
