@@ -16646,9 +16646,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       position: relative;
       z-index: 2;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       height: 38px;
+      padding: 0 20px;
       color: #fff; }
   .my-tasks-page .task-card {
     position: relative;

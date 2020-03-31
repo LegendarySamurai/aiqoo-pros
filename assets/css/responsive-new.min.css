@@ -1376,6 +1376,10 @@
   .dashboard-outer {
     margin-top: 80px; } }
 
+@media (max-width: 1899px) {
+  .my-tasks-page .task-card .colored-circle {
+    top: 19px; } }
+
 @media (max-width: 1399px) {
   .my-tasks-page .status-bar {
     padding: 20px 15px 20px 15px; }

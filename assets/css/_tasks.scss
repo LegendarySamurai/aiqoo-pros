@@ -75,7 +75,6 @@
     border-radius: 5px;
   }
 }
-
 // EOL: user
 
 // task-type
@@ -268,9 +267,10 @@
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 38px;
+    padding: 0 20px;
     color: #fff;
   }
 }

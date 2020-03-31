@@ -1133,7 +1133,13 @@
 
 //************* My tasks page (Dashboard)  *************//
 .my-tasks-page {
-  @media(max-width: 1899px) {}
+  @media(max-width: 1899px) {
+    .task-card {
+      .colored-circle {
+        top: 19px;
+      }
+    }
+  }
 
   @media(max-width: 1599px) {}
 
