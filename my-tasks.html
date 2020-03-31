@@ -248,11 +248,11 @@
       <div class="container-fluid">
         <div class="row">
           <!-- Status bar left -->
-          <div class="status-bar-col col-12 col-lg-3">
+          <div class="status-bar-col col-auto">
             <div class="status-bar">
               <!-- For mobile devices -->
 
-              <div class="status-bar-heading d-md-none">
+              <div class="status-bar-heading">
                 <span class="title font-weight-bold font-r-18">My Tasks</span>
                 <button type="button" class="filter-btn">
                   <i class="fad fa-filter"></i>
@@ -261,114 +261,119 @@
               </div>
 
               <div class="status-bar-inner">
-                <div class="status-bar-inner-header d-md-none">
-                  <span class="font-r-18 font-weight-bold">Filter</span>
-                  <i class="fad fa-times-circle font-r-16 close-filter-btn"></i>
+                <div class="status-bar-inner-backlayer">
+                  <span class="close-filter"></span>
+                </div>
+                <div class="status-bar-inner-container">
+                  <div class="status-bar-inner-header">
+                    <span class="font-r-18 font-weight-bold">Filter</span>
+                    <i class="fad fa-times-circle font-r-16 close-filter-btn"></i>
+                  </div>
+                  <div class="status-bar-inner-body">
+                    <!-- Search mobile -->
+                    <div class="search mb-3 mb-lg-0 d-md-none">
+                      <div class="input-group">
+                        <div class="input-group-prepend"><i class="far fa-search font-r-13"></i></div>
+                        <input type="text" class="form-control font-r-13" placeholder="Search">
+                      </div>
+                    </div>
+                    <!-- EOL: Search mobile -->
+
+                    <!-- EOL: For mobile devices -->
+
+                    <!-- status-panel -->
+                    <div class="status-panel">
+                      <div class="title font-r-13">Task Status</div>
+                      <div class="status-panel-inner">
+                        <div class="status-item font-r-13">
+                          All
+                        </div>
+                        <div class="status-item font-r-13">
+                          Active
+                        </div>
+                        <div class="status-item font-r-13 active">
+                          Inactive
+                        </div>
+                      </div>
+                    </div>
+                    <!-- EOL: status-panel -->
+
+                    <!-- date -->
+                    <div class="sort-by-date">
+                      <div class="image-container">
+                        <img src="assets/images/calendar.svg" alt="calendar">
+                      </div>
+                      <div class="date-container-outer">
+                        <div class="date-heading">
+                          <span class="title font-r-13">All time</span>
+                          <span><i class="far fa-chevron-down"></i></span>
+                        </div>
+                        <div class="date-container">
+                          <span class="font-r-13">Jan 1/2019</span>
+                          <span>-</span>
+                          <span class="font-r-13">Mar 20/2020</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- EOL: date -->
+                    <!-- user -->
+                    <div class="user">
+                      <div class="title font-r-13">User</div>
+                      <div class="user-info">
+                        <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                        <span class="user-name font-r-13">George Ezra<i class="far fa-chevron-down"></i></span>
+                      </div>
+                    </div>
+                    <!-- EOL: user -->
+
+                    <!-- Task Type -->
+                    <div class="task-type">
+                      <span class="title font-r-13">Task Type</span>
+                      <div class="task-type-list">
+                        <!-- color classes :
+                        orange,
+                        dark-grey,
+                        pink,
+                        light-purple,
+                        dark-red,
+                        very-light-purple,
+                        light-blue,
+                        light-green,
+                        dark-orange
+                        -->
+                        <div class="custom-control custom-checkbox orange">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
+                        </div>
+                        <div class="custom-control custom-checkbox dark-grey">
+                          <input type="checkbox" class="custom-control-input" id="customCheck2">
+                          <label class="custom-control-label font-r-13" for="customCheck2">Follow up</label>
+                        </div>
+                        <div class="custom-control custom-checkbox pink">
+                          <input type="checkbox" class="custom-control-input" id="customCheck3">
+                          <label class="custom-control-label font-r-13" for="customCheck3">Send company info</label>
+                        </div>
+                        <div class="custom-control custom-checkbox light-purple">
+                          <input type="checkbox" class="custom-control-input" id="customCheck4">
+                          <label class="custom-control-label font-r-13" for="customCheck4">Schedule meeting</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- EOL: Task Type -->
+
+                    <div class="done-btn-container d-md-none">
+                      <button class="font-r-18 font-weight-bold" type="button">Done</button>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="status-bar-inner-body">
-                  <!-- Search mobile -->
-                  <div class="search mb-3 mb-lg-0 d-md-none">
-                    <div class="input-group">
-                      <div class="input-group-prepend"><i class="far fa-search font-r-13"></i></div>
-                      <input type="text" class="form-control font-r-13" placeholder="Search">
-                    </div>
-                  </div>
-                  <!-- EOL: Search mobile -->
-
-                  <!-- EOL: For mobile devices -->
-
-                  <!-- status-panel -->
-                  <div class="status-panel">
-                    <div class="title font-r-13">Task Status</div>
-                    <div class="status-panel-inner">
-                      <div class="status-item font-r-13">
-                        All
-                      </div>
-                      <div class="status-item font-r-13">
-                        Active
-                      </div>
-                      <div class="status-item font-r-13 active">
-                        Inactive
-                      </div>
-                    </div>
-                  </div>
-                  <!-- EOL: status-panel -->
-
-                  <!-- date -->
-                  <div class="sort-by-date">
-                    <div class="image-container">
-                      <img src="assets/images/calendar.svg" alt="calendar">
-                    </div>
-                    <div class="date-container-outer">
-                      <div class="date-heading">
-                        <span class="title font-r-13">All time</span>
-                        <span><i class="far fa-chevron-down"></i></span>
-                      </div>
-                      <div class="date-container">
-                        <span class="font-r-13">Jan 1/2019</span>
-                        <span>-</span>
-                        <span class="font-r-13">Mar 20/2020</span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- EOL: date -->
-                  <!-- user -->
-                  <div class="user">
-                    <div class="title font-r-13">User</div>
-                    <div class="user-info">
-                      <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
-                      <span class="user-name">George Ezra<i class="far fa-chevron-down"></i></span>
-                    </div>
-                  </div>
-                  <!-- EOL: user -->
-
-                  <!-- Task Type -->
-                  <div class="task-type">
-                    <span class="title font-r-13">Task Type</span>
-                    <div class="task-type-list">
-                      <!-- color classes :
-                      orange,
-                      dark-grey,
-                      pink,
-                      light-purple,
-                      dark-red,
-                      very-light-purple,
-                      light-blue,
-                      light-green,
-                      dark-orange
-                      -->
-                      <div class="custom-control custom-checkbox orange">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                      </div>
-                      <div class="custom-control custom-checkbox dark-grey">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label font-r-13" for="customCheck2">Follow up</label>
-                      </div>
-                      <div class="custom-control custom-checkbox pink">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label font-r-13" for="customCheck3">Send company info</label>
-                      </div>
-                      <div class="custom-control custom-checkbox light-purple">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label font-r-13" for="customCheck4">Schedule meeting</label>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- EOL: Task Type -->
-
-                  <div class="done-btn-container d-md-none">
-                    <button class="font-r-18 font-weight-bold" type="button">Done</button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
           <!-- EOL: Status bar left -->
 
           <!-- Content right -->
-          <div class="col-12 col-lg-9">
+          <div class="content-col col">
             <div class="content">
 
               <!-- Search desktop -->
@@ -401,14 +406,14 @@
                     call-back - orange,
                     setup - green
                     -->
-                    <div class="task-col col-12 col-md-6 col-lg-3">
+                    <div class="task-col col-auto col-lg-3">
                       <div class="task-card confirm">
                         <span class="colored-circle "></span>
                         <div class="label font-weight-500 font-r-10">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner detailed hide">
+                        <div class="task-card-inner">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
@@ -434,15 +439,18 @@
                               <span class="gray-title font-r-8">Client</span>
                             </div>
                             <div class="client-info">
-                              <span>
+                              <span class="client-name">
                                 <i class="fal fa-user"></i>
                                 <span class="font-weight-bold font-r-10">Tony Starkinson</span>
                               </span>
-                              <span>
+                              <span class="client-phone">
                                 <i class="fal fa-phone-alt"></i>
                                 <span class="font-r-9">+972 542 992 069</span>
                               </span>
-                              <span>
+                              <span class="client-location">
+                                <div class="client-info-heading">
+                                  <span class="gray-title font-r-8">Location</span>
+                                </div>
                                 <i class="fal fa-map-marker-alt"></i>
                                 <span class="font-r-9">Herzel 113, Tel - Aviv, Israel</span>
                               </span>
@@ -466,28 +474,34 @@
                           </div>
                           <!-- EOL: Notes -->
                         </div>
-
-                        <div class="task-card-inner short show d-md-none">
-                          <div class="w-100-container">
-                            <!-- user -->
-                            <div class="user">
-                              <div class="user-info">
-                                <span class="gray-title font-r-8">Manager</span>
-                                <span class="user-name font-weight-bold font-r-9">George Ezra</span>
-                              </div>
+                      </div>
+                    </div>
+                    <div class="task-col col-auto col-lg-3">
+                      <div class="task-card confirm">
+                        <span class="colored-circle "></span>
+                        <div class="label font-weight-500 font-r-10">
+                          <span>Confirm meeting</span>
+                          <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
+                        </div>
+                        <div class="task-card-inner">
+                          <!-- user -->
+                          <div class="user">
+                            <div class="user-info">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                              <span class="user-name font-weight-bold font-r-9">George Ezra</span>
                             </div>
-                            <!-- EOL: user -->
+                          </div>
+                          <!-- EOL: user -->
 
-                            <!-- todo time -->
-                            <div class="todo-time">
-                              <span class="gray-title font-r-8">Time to do</span>
-                              <span class="time">
+                          <!-- todo time -->
+                          <div class="todo-time">
+                            <span class="gray-title font-r-8">Time to do</span>
+                            <span class="time">
                             <i class="fal fa-calendar"></i>
                             <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
                           </span>
-                            </div>
-                            <!-- EOL: todo time -->
                           </div>
+                          <!-- EOL: todo time -->
 
                           <!-- Client info -->
                           <div class="client-info-container">
@@ -495,23 +509,390 @@
                               <span class="gray-title font-r-8">Client</span>
                             </div>
                             <div class="client-info">
-                              <span>
+                              <span class="client-name">
                                 <i class="fal fa-user"></i>
                                 <span class="font-weight-bold font-r-10">Tony Starkinson</span>
+                              </span>
+                              <span class="client-phone">
+                                <i class="fal fa-phone-alt"></i>
+                                <span class="font-r-9">+972 542 992 069</span>
+                              </span>
+                              <span class="client-location">
+                                <div class="client-info-heading">
+                                  <span class="gray-title font-r-8">Location</span>
+                                </div>
+                                <i class="fal fa-map-marker-alt"></i>
+                                <span class="font-r-9">Herzel 113, Tel - Aviv, Israel</span>
                               </span>
                             </div>
                           </div>
                           <!-- EOL: Client info -->
 
-                          <!-- Client Location -->
-                          <div class="client-location">
-                            <span class="gray-title font-r-8">Location</span>
-                            <span>
+                          <!-- Notes -->
+                          <div class="notes">
+                          <span>
+                            <i class="fal fa-edit"></i>
+                            <span class="font-weight-bold font-r-10">Internal notes</span>
+                          </span>
+                            <span class="text font-r-8">
+                            Prepare quote prior to meeting scheduling
+                          </span>
+                            <div class="buttons-container">
+                              <button class="red-button font-r-8" type="button">cancel</button>
+                              <button class="green-button font-r-8" type="button">done</button>
+                            </div>
+                          </div>
+                          <!-- EOL: Notes -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="task-col col-auto col-lg-3">
+                      <div class="task-card confirm">
+                        <span class="colored-circle "></span>
+                        <div class="label font-weight-500 font-r-10">
+                          <span>Confirm meeting</span>
+                          <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
+                        </div>
+                        <div class="task-card-inner">
+                          <!-- user -->
+                          <div class="user">
+                            <div class="user-info">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                              <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                            </div>
+                          </div>
+                          <!-- EOL: user -->
+
+                          <!-- todo time -->
+                          <div class="todo-time">
+                            <span class="gray-title font-r-8">Time to do</span>
+                            <span class="time">
+                            <i class="fal fa-calendar"></i>
+                            <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
+                          </span>
+                          </div>
+                          <!-- EOL: todo time -->
+
+                          <!-- Client info -->
+                          <div class="client-info-container">
+                            <div class="client-info-heading">
+                              <span class="gray-title font-r-8">Client</span>
+                            </div>
+                            <div class="client-info">
+                              <span class="client-name">
+                                <i class="fal fa-user"></i>
+                                <span class="font-weight-bold font-r-10">Tony Starkinson</span>
+                              </span>
+                              <span class="client-phone">
+                                <i class="fal fa-phone-alt"></i>
+                                <span class="font-r-9">+972 542 992 069</span>
+                              </span>
+                              <span class="client-location">
+                                <div class="client-info-heading">
+                                  <span class="gray-title font-r-8">Location</span>
+                                </div>
                                 <i class="fal fa-map-marker-alt"></i>
                                 <span class="font-r-9">Herzel 113, Tel - Aviv, Israel</span>
                               </span>
+                            </div>
                           </div>
-                          <!-- EOL: Client Location -->
+                          <!-- EOL: Client info -->
+
+                          <!-- Notes -->
+                          <div class="notes">
+                          <span>
+                            <i class="fal fa-edit"></i>
+                            <span class="font-weight-bold font-r-10">Internal notes</span>
+                          </span>
+                            <span class="text font-r-8">
+                            Prepare quote prior to meeting scheduling
+                          </span>
+                            <div class="buttons-container">
+                              <button class="red-button font-r-8" type="button">cancel</button>
+                              <button class="green-button font-r-8" type="button">done</button>
+                            </div>
+                          </div>
+                          <!-- EOL: Notes -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="task-col col-auto col-lg-3">
+                      <div class="task-card confirm">
+                        <span class="colored-circle "></span>
+                        <div class="label font-weight-500 font-r-10">
+                          <span>Confirm meeting</span>
+                          <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
+                        </div>
+                        <div class="task-card-inner">
+                          <!-- user -->
+                          <div class="user">
+                            <div class="user-info">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                              <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                            </div>
+                          </div>
+                          <!-- EOL: user -->
+
+                          <!-- todo time -->
+                          <div class="todo-time">
+                            <span class="gray-title font-r-8">Time to do</span>
+                            <span class="time">
+                            <i class="fal fa-calendar"></i>
+                            <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
+                          </span>
+                          </div>
+                          <!-- EOL: todo time -->
+
+                          <!-- Client info -->
+                          <div class="client-info-container">
+                            <div class="client-info-heading">
+                              <span class="gray-title font-r-8">Client</span>
+                            </div>
+                            <div class="client-info">
+                              <span class="client-name">
+                                <i class="fal fa-user"></i>
+                                <span class="font-weight-bold font-r-10">Tony Starkinson</span>
+                              </span>
+                              <span class="client-phone">
+                                <i class="fal fa-phone-alt"></i>
+                                <span class="font-r-9">+972 542 992 069</span>
+                              </span>
+                              <span class="client-location">
+                                <div class="client-info-heading">
+                                  <span class="gray-title font-r-8">Location</span>
+                                </div>
+                                <i class="fal fa-map-marker-alt"></i>
+                                <span class="font-r-9">Herzel 113, Tel - Aviv, Israel</span>
+                              </span>
+                            </div>
+                          </div>
+                          <!-- EOL: Client info -->
+
+                          <!-- Notes -->
+                          <div class="notes">
+                          <span>
+                            <i class="fal fa-edit"></i>
+                            <span class="font-weight-bold font-r-10">Internal notes</span>
+                          </span>
+                            <span class="text font-r-8">
+                            Prepare quote prior to meeting scheduling
+                          </span>
+                            <div class="buttons-container">
+                              <button class="red-button font-r-8" type="button">cancel</button>
+                              <button class="green-button font-r-8" type="button">done</button>
+                            </div>
+                          </div>
+                          <!-- EOL: Notes -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="task-col col-auto col-lg-3">
+                      <div class="task-card confirm">
+                        <span class="colored-circle "></span>
+                        <div class="label font-weight-500 font-r-10">
+                          <span>Confirm meeting</span>
+                          <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
+                        </div>
+                        <div class="task-card-inner">
+                          <!-- user -->
+                          <div class="user">
+                            <div class="user-info">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                              <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                            </div>
+                          </div>
+                          <!-- EOL: user -->
+
+                          <!-- todo time -->
+                          <div class="todo-time">
+                            <span class="gray-title font-r-8">Time to do</span>
+                            <span class="time">
+                            <i class="fal fa-calendar"></i>
+                            <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
+                          </span>
+                          </div>
+                          <!-- EOL: todo time -->
+
+                          <!-- Client info -->
+                          <div class="client-info-container">
+                            <div class="client-info-heading">
+                              <span class="gray-title font-r-8">Client</span>
+                            </div>
+                            <div class="client-info">
+                              <span class="client-name">
+                                <i class="fal fa-user"></i>
+                                <span class="font-weight-bold font-r-10">Tony Starkinson</span>
+                              </span>
+                              <span class="client-phone">
+                                <i class="fal fa-phone-alt"></i>
+                                <span class="font-r-9">+972 542 992 069</span>
+                              </span>
+                              <span class="client-location">
+                                <div class="client-info-heading">
+                                  <span class="gray-title font-r-8">Location</span>
+                                </div>
+                                <i class="fal fa-map-marker-alt"></i>
+                                <span class="font-r-9">Herzel 113, Tel - Aviv, Israel</span>
+                              </span>
+                            </div>
+                          </div>
+                          <!-- EOL: Client info -->
+
+                          <!-- Notes -->
+                          <div class="notes">
+                          <span>
+                            <i class="fal fa-edit"></i>
+                            <span class="font-weight-bold font-r-10">Internal notes</span>
+                          </span>
+                            <span class="text font-r-8">
+                            Prepare quote prior to meeting scheduling
+                          </span>
+                            <div class="buttons-container">
+                              <button class="red-button font-r-8" type="button">cancel</button>
+                              <button class="green-button font-r-8" type="button">done</button>
+                            </div>
+                          </div>
+                          <!-- EOL: Notes -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="task-col col-auto col-lg-3">
+                      <div class="task-card confirm">
+                        <span class="colored-circle "></span>
+                        <div class="label font-weight-500 font-r-10">
+                          <span>Confirm meeting</span>
+                          <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
+                        </div>
+                        <div class="task-card-inner">
+                          <!-- user -->
+                          <div class="user">
+                            <div class="user-info">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                              <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                            </div>
+                          </div>
+                          <!-- EOL: user -->
+
+                          <!-- todo time -->
+                          <div class="todo-time">
+                            <span class="gray-title font-r-8">Time to do</span>
+                            <span class="time">
+                            <i class="fal fa-calendar"></i>
+                            <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
+                          </span>
+                          </div>
+                          <!-- EOL: todo time -->
+
+                          <!-- Client info -->
+                          <div class="client-info-container">
+                            <div class="client-info-heading">
+                              <span class="gray-title font-r-8">Client</span>
+                            </div>
+                            <div class="client-info">
+                              <span class="client-name">
+                                <i class="fal fa-user"></i>
+                                <span class="font-weight-bold font-r-10">Tony Starkinson</span>
+                              </span>
+                              <span class="client-phone">
+                                <i class="fal fa-phone-alt"></i>
+                                <span class="font-r-9">+972 542 992 069</span>
+                              </span>
+                              <span class="client-location">
+                                <div class="client-info-heading">
+                                  <span class="gray-title font-r-8">Location</span>
+                                </div>
+                                <i class="fal fa-map-marker-alt"></i>
+                                <span class="font-r-9">Herzel 113, Tel - Aviv, Israel</span>
+                              </span>
+                            </div>
+                          </div>
+                          <!-- EOL: Client info -->
+
+                          <!-- Notes -->
+                          <div class="notes">
+                          <span>
+                            <i class="fal fa-edit"></i>
+                            <span class="font-weight-bold font-r-10">Internal notes</span>
+                          </span>
+                            <span class="text font-r-8">
+                            Prepare quote prior to meeting scheduling
+                          </span>
+                            <div class="buttons-container">
+                              <button class="red-button font-r-8" type="button">cancel</button>
+                              <button class="green-button font-r-8" type="button">done</button>
+                            </div>
+                          </div>
+                          <!-- EOL: Notes -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="task-col col-auto col-lg-3">
+                      <div class="task-card confirm">
+                        <span class="colored-circle "></span>
+                        <div class="label font-weight-500 font-r-10">
+                          <span>Confirm meeting</span>
+                          <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
+                        </div>
+                        <div class="task-card-inner">
+                          <!-- user -->
+                          <div class="user">
+                            <div class="user-info">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                              <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                            </div>
+                          </div>
+                          <!-- EOL: user -->
+
+                          <!-- todo time -->
+                          <div class="todo-time">
+                            <span class="gray-title font-r-8">Time to do</span>
+                            <span class="time">
+                            <i class="fal fa-calendar"></i>
+                            <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
+                          </span>
+                          </div>
+                          <!-- EOL: todo time -->
+
+                          <!-- Client info -->
+                          <div class="client-info-container">
+                            <div class="client-info-heading">
+                              <span class="gray-title font-r-8">Client</span>
+                            </div>
+                            <div class="client-info">
+                              <span class="client-name">
+                                <i class="fal fa-user"></i>
+                                <span class="font-weight-bold font-r-10">Tony Starkinson</span>
+                              </span>
+                              <span class="client-phone">
+                                <i class="fal fa-phone-alt"></i>
+                                <span class="font-r-9">+972 542 992 069</span>
+                              </span>
+                              <span class="client-location">
+                                <div class="client-info-heading">
+                                  <span class="gray-title font-r-8">Location</span>
+                                </div>
+                                <i class="fal fa-map-marker-alt"></i>
+                                <span class="font-r-9">Herzel 113, Tel - Aviv, Israel</span>
+                              </span>
+                            </div>
+                          </div>
+                          <!-- EOL: Client info -->
+
+                          <!-- Notes -->
+                          <div class="notes">
+                          <span>
+                            <i class="fal fa-edit"></i>
+                            <span class="font-weight-bold font-r-10">Internal notes</span>
+                          </span>
+                            <span class="text font-r-8">
+                            Prepare quote prior to meeting scheduling
+                          </span>
+                            <div class="buttons-container">
+                              <button class="red-button font-r-8" type="button">cancel</button>
+                              <button class="green-button font-r-8" type="button">done</button>
+                            </div>
+                          </div>
+                          <!-- EOL: Notes -->
                         </div>
                       </div>
                     </div>
@@ -529,6 +910,7 @@
 </app>
 
 <script src="assets/js/my-tasks.js"></script>
+<script src="assets/js/status-bar.js"></script>
 
 </body>
 </html>

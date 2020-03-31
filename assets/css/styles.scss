@@ -66,8 +66,17 @@
 //************* My tasks page (Dashboard) *************//
 .my-tasks-page {
   @import 'dashboard.scss';
-  @import 'tasks.scss';
   @import 'status-bar';
+  @import 'search';
+  @import 'tasks.scss';
+}
+
+//************* Support page (Dashboard) *************//
+.support-page {
+  @import 'dashboard.scss';
+  @import 'status-bar';
+  @import 'search';
+  @import 'support';
 }
 
 //************* Sign-in, Sign-up *************//
