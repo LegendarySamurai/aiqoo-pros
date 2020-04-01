@@ -471,6 +471,7 @@ body {
             background-color: #e6e6e6;
             z-index: 500;
             list-style: none;
+            overflow-x: hidden;
 
             &.is-hidden {
                 transform: translate(-50%, 00%);

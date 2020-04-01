@@ -1399,30 +1399,33 @@
   .my-tasks-page .task-card:before, .my-tasks-page .task-card:after, .my-tasks-page .task-card .colored-circle {
     display: none; }
   .my-tasks-page .task-col {
-    flex: 0 0 97% !important;
-    max-width: 97% !important;
-    padding-right: 0; }
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    min-width: 290px; }
   .my-tasks-page .task-list {
-    margin-top: 60px; }
-  .my-tasks-page .list-heading {
-    margin-top: 24px; }
-  .my-tasks-page .list-body {
-    margin-top: 14px; } }
+    margin-top: 20px; } }
 
 @media (max-width: 991px) {
   .my-tasks-page .content {
-    margin-top: 30px; }
-  .my-tasks-page .content-col {
-    padding-right: 15px; }
+    margin-top: 50px; }
+    .my-tasks-page .content .search .title {
+      width: 100px; }
+    .my-tasks-page .content .search .input-group {
+      flex-grow: 1;
+      width: auto; }
   .my-tasks-page .task-col {
     flex: 0 0 50% !important;
     max-width: 50% !important; } }
 
 @media (max-width: 767px) {
-  .my-tasks-page .content {
-    margin-top: 90px; }
-  .my-tasks-page .content-col {
-    padding-right: 15px; }
+  .my-tasks-page .status-bar-col {
+    margin-top: 56px; }
+  .my-tasks-page .task-col {
+    flex: 0 0 97% !important;
+    max-width: 290px !important;
+    margin: 0 auto;
+    padding-right: 0;
+    min-width: inherit; }
   .my-tasks-page .list-heading .list-heading-inner {
     border-bottom: 0; }
   .my-tasks-page .task-card .label {
@@ -1450,20 +1453,28 @@
     display: block;
     padding: 0; }
   .my-tasks-page .task-card-inner.is-active .notes {
-    display: none; }
-  .my-tasks-page .task-list {
-    width: 97%;
-    margin: 0 auto; } }
+    display: none; } }
 
 @media (max-width: 599px) {
+  .my-tasks-page .status-bar-col {
+    margin-top: 0; }
   .my-tasks-page .content {
     margin-top: 90px; }
+    .my-tasks-page .content .search {
+      display: none; }
+    .my-tasks-page .content .task-list {
+      height: 100%;
+      padding-top: 0;
+      margin: 0 auto; }
   .my-tasks-page .task-col {
     flex: 0 0 80% !important;
     max-width: 80% !important;
     padding-right: 15px;
     margin: 0 auto; }
   .my-tasks-page .content-col {
+    flex-grow: unset;
+    flex-basis: auto;
+    width: 100%;
     padding-right: 15px; } }
 
 @media (max-width: 374px) {
