@@ -1,40 +1,27 @@
 .content-col {
-  //position: fixed;
-  //width: calc(100vw - 290px - 71px);
-  //right: 35px;
-}
-
-.content {
-  //background-color: coral;
-  position: relative;
+  margin-top: 20px;
+  padding-right: 0;
+  background-color: #fff;
 
   .search {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: sticky;
+    top: 180px;
     z-index: 200;
-    width: 100%;
+    align-items: flex-end;
+    width: calc(100% + 17px);
+    height: 100px;
+    margin-left: -15px;
+    padding-left: 15px;
     background-color: #fff;
-    //background-color: green;
+
+    .title {
+      white-space: nowrap;
+    }
+
+    .input-group {
+      padding-left: 10px;
+    }
   }
-
-  .task-list {
-    width: 100%;
-    height: calc(100vh - 100px);
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin: 50px auto 0;
-    padding-top: 50px;
-    padding-right: 10px;
-  }
-}
-
-.content-col {
-  padding-right: 0;
-}
-
-.content {
-  margin-top: 80px;
 }
 
 // list-heading
@@ -46,8 +33,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    //padding-bottom: 10px;
-    //border-bottom: solid 1px #f9f9f9;
   }
 
   .fa-clipboard-list-check {

@@ -4,13 +4,13 @@ let taskCardInnerDetailedShown = false;
 
 
 cardLabel.addEventListener('click', () => {
-	if (!taskCardInnerDetailedShown) {
-		cardLabel.classList.add('is-active');
-		taskCardInner.classList.add('is-active');
-		taskCardInnerDetailedShown = true;
-	} else {
+	if (cardLabel.classList.contains('is-active')) {
 		cardLabel.classList.remove('is-active');
 		taskCardInner.classList.remove('is-active');
+		taskCardInnerDetailedShown = true;
+	} else {
+		cardLabel.classList.add('is-active');
+		taskCardInner.classList.add('is-active');
 		taskCardInnerDetailedShown = false;
 	}
 });

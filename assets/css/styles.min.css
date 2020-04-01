@@ -1331,7 +1331,7 @@ body ::-webkit-scrollbar-thumb:hover {
       transform: translateY(-50%);
       background-color: #fff;
       height: 100%;
-      width: 100%; }
+      width: 101%; }
       .header .wrapper-c .nav-menu > li {
         display: inline-block;
         position: relative; }
@@ -16495,15 +16495,15 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     height: 100%;
     opacity: 0; }
   .my-tasks-page .status-bar-col {
-    width: 290px;
+    width: 300px;
     padding-left: 0; }
   .my-tasks-page .done-btn-container {
     display: none; }
   .my-tasks-page .status-bar {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
-    padding: 20px;
+    margin-top: 50px;
+    padding: 20px 15px;
     font-family: "Raleway", sans-serif;
     color: #585077;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
@@ -16640,7 +16640,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       border-radius: 5px; }
   @media (max-width: 1399px) {
     .my-tasks-page .status-bar {
-      margin-top: 50px;
       padding: 20px 15px 20px 15px; } }
   @media (max-width: 1199px) {
     .my-tasks-page .sort-by-date {
@@ -16659,16 +16658,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .my-tasks-page .task-type {
       padding: 15px 0; }
       .my-tasks-page .task-type .task-type-list {
-        overflow-x: hidden;
-        overflow-y: auto;
         margin-top: 10px;
         padding: 16px 10px 10px 20px; }
     .my-tasks-page .status-panel .status-item {
       width: auto;
       padding: 10px 6px; } }
   @media (max-width: 991px) {
-    .my-tasks-page .status-bar-col {
-      padding: 0; }
     .my-tasks-page .status-panel .status-item {
       width: 33.3%;
       padding: 0; }
@@ -16679,37 +16674,62 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .my-tasks-page .sort-by-date .date-container-outer {
       margin-left: 30px; } }
   @media (max-width: 767px) {
+    .my-tasks-page .content-col {
+      margin-left: 15px;
+      background-color: coral; }
+      .my-tasks-page .content-col .content {
+        padding-left: 0;
+        margin-left: -15px; }
+      .my-tasks-page .content-col .search .title {
+        height: 46px;
+        display: flex;
+        align-items: center; }
     .my-tasks-page .status-bar-col {
+      margin-top: 10px;
       padding-left: 0;
       padding-right: 0; }
-    .my-tasks-page .status-bar {
-      margin-top: 0;
-      padding: 0;
-      background-color: transparent;
-      box-shadow: none; }
-      .my-tasks-page .status-bar .title {
-        margin-bottom: 0; }
-      .my-tasks-page .status-bar .user {
-        width: 100%; }
-      .my-tasks-page .status-bar .sort-by-date {
-        width: 100%; }
-      .my-tasks-page .status-bar .status-panel {
-        width: 100%; }
-        .my-tasks-page .status-bar .status-panel .title {
-          margin: 5px 0 20px; }
-      .my-tasks-page .status-bar .task-type {
-        width: 100%; }
+    .my-tasks-page .status-bar .title {
+      margin-bottom: 0; }
+    .my-tasks-page .status-bar .user {
+      width: 100%; }
+    .my-tasks-page .status-bar .sort-by-date {
+      width: 100%; }
+    .my-tasks-page .status-bar .status-panel {
+      width: 100%; }
+      .my-tasks-page .status-bar .status-panel .title {
+        margin: 20px 0 20px; }
+    .my-tasks-page .status-bar .task-type {
+      width: 100%; }
     .my-tasks-page .task-type-list {
-      overflow-x: hidden;
-      overflow-y: auto;
-      height: 38vh;
       margin-bottom: 20px;
       padding-bottom: 36px !important; } }
   @media (max-width: 599px) {
-    .my-tasks-page .status-bar .task-type-list {
-      height: 430px;
-      margin-bottom: 20px;
-      padding-bottom: 36px !important; }
+    .my-tasks-page .content-col .search {
+      display: none;
+      margin-left: 0px !important;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      border-bottom-color: #d3d3d3; }
+      .my-tasks-page .content-col .search .input-group {
+        width: 100%; }
+      .my-tasks-page .content-col .search .title {
+        height: 46px;
+        display: flex;
+        align-items: center; }
+    .my-tasks-page .content-col .content {
+      width: 100%;
+      margin-top: 80px; }
+    .my-tasks-page .status-bar-col {
+      margin-top: 10px; }
+    .my-tasks-page .status-bar {
+      margin-top: 0;
+      padding: 0;
+      background-color: red; }
+      .my-tasks-page .status-bar .task-type-list {
+        margin-bottom: 20px;
+        padding-bottom: 36px !important; }
     .my-tasks-page .status-bar-heading {
       position: fixed;
       z-index: 3;
@@ -16801,25 +16821,20 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        padding: 0 10px;
-        overflow-y: scroll; }
-      .my-tasks-page .status-bar-inner .search {
-        width: 100%;
-        margin-top: 20px;
-        padding-bottom: 20px;
-        border-bottom-color: #d3d3d3; }
-        .my-tasks-page .status-bar-inner .search .input-group {
-          width: 100%; }
+        height: calc(100vh - 80px);
+        padding: 0 20px;
+        overflow-y: auto;
+        overflow-x: hidden; }
     .my-tasks-page .done-btn-container {
       position: fixed;
       bottom: 0;
-      left: 0;
+      left: 8px;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: calc(100% - 16px);
       height: 76px;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), #fff); }
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), red); }
       .my-tasks-page .done-btn-container button {
         display: flex;
         justify-content: center;
@@ -16883,27 +16898,24 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         font-weight: 300;
         color: #342e49;
         font-size: 1rem; }
-  .my-tasks-page .content {
-    position: relative; }
-    .my-tasks-page .content .search {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 200;
-      width: 100%;
-      background-color: #fff; }
-    .my-tasks-page .content .task-list {
-      width: 100%;
-      height: calc(100vh - 100px);
-      overflow-x: hidden;
-      overflow-y: auto;
-      margin: 50px auto 0;
-      padding-top: 50px;
-      padding-right: 10px; }
   .my-tasks-page .content-col {
-    padding-right: 0; }
-  .my-tasks-page .content {
-    margin-top: 80px; }
+    margin-top: 20px;
+    padding-right: 0;
+    background-color: #fff; }
+    .my-tasks-page .content-col .search {
+      position: sticky;
+      top: 180px;
+      z-index: 200;
+      align-items: flex-end;
+      width: calc(100% + 17px);
+      height: 100px;
+      margin-left: -15px;
+      padding-left: 15px;
+      background-color: #fff; }
+      .my-tasks-page .content-col .search .title {
+        white-space: nowrap; }
+      .my-tasks-page .content-col .search .input-group {
+        padding-left: 10px; }
   .my-tasks-page .list-heading {
     margin-top: 24px; }
     .my-tasks-page .list-heading .list-heading-inner {
@@ -18101,15 +18113,15 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     height: 100%;
     opacity: 0; }
   .support-page .status-bar-col {
-    width: 290px;
+    width: 300px;
     padding-left: 0; }
   .support-page .done-btn-container {
     display: none; }
   .support-page .status-bar {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
-    padding: 20px;
+    margin-top: 50px;
+    padding: 20px 15px;
     font-family: "Raleway", sans-serif;
     color: #585077;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
@@ -18246,7 +18258,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       border-radius: 5px; }
   @media (max-width: 1399px) {
     .support-page .status-bar {
-      margin-top: 50px;
       padding: 20px 15px 20px 15px; } }
   @media (max-width: 1199px) {
     .support-page .sort-by-date {
@@ -18265,16 +18276,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .support-page .task-type {
       padding: 15px 0; }
       .support-page .task-type .task-type-list {
-        overflow-x: hidden;
-        overflow-y: auto;
         margin-top: 10px;
         padding: 16px 10px 10px 20px; }
     .support-page .status-panel .status-item {
       width: auto;
       padding: 10px 6px; } }
   @media (max-width: 991px) {
-    .support-page .status-bar-col {
-      padding: 0; }
     .support-page .status-panel .status-item {
       width: 33.3%;
       padding: 0; }
@@ -18285,37 +18292,62 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .support-page .sort-by-date .date-container-outer {
       margin-left: 30px; } }
   @media (max-width: 767px) {
+    .support-page .content-col {
+      margin-left: 15px;
+      background-color: coral; }
+      .support-page .content-col .content {
+        padding-left: 0;
+        margin-left: -15px; }
+      .support-page .content-col .search .title {
+        height: 46px;
+        display: flex;
+        align-items: center; }
     .support-page .status-bar-col {
+      margin-top: 10px;
       padding-left: 0;
       padding-right: 0; }
-    .support-page .status-bar {
-      margin-top: 0;
-      padding: 0;
-      background-color: transparent;
-      box-shadow: none; }
-      .support-page .status-bar .title {
-        margin-bottom: 0; }
-      .support-page .status-bar .user {
-        width: 100%; }
-      .support-page .status-bar .sort-by-date {
-        width: 100%; }
-      .support-page .status-bar .status-panel {
-        width: 100%; }
-        .support-page .status-bar .status-panel .title {
-          margin: 5px 0 20px; }
-      .support-page .status-bar .task-type {
-        width: 100%; }
+    .support-page .status-bar .title {
+      margin-bottom: 0; }
+    .support-page .status-bar .user {
+      width: 100%; }
+    .support-page .status-bar .sort-by-date {
+      width: 100%; }
+    .support-page .status-bar .status-panel {
+      width: 100%; }
+      .support-page .status-bar .status-panel .title {
+        margin: 20px 0 20px; }
+    .support-page .status-bar .task-type {
+      width: 100%; }
     .support-page .task-type-list {
-      overflow-x: hidden;
-      overflow-y: auto;
-      height: 38vh;
       margin-bottom: 20px;
       padding-bottom: 36px !important; } }
   @media (max-width: 599px) {
-    .support-page .status-bar .task-type-list {
-      height: 430px;
-      margin-bottom: 20px;
-      padding-bottom: 36px !important; }
+    .support-page .content-col .search {
+      display: none;
+      margin-left: 0px !important;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      border-bottom-color: #d3d3d3; }
+      .support-page .content-col .search .input-group {
+        width: 100%; }
+      .support-page .content-col .search .title {
+        height: 46px;
+        display: flex;
+        align-items: center; }
+    .support-page .content-col .content {
+      width: 100%;
+      margin-top: 80px; }
+    .support-page .status-bar-col {
+      margin-top: 10px; }
+    .support-page .status-bar {
+      margin-top: 0;
+      padding: 0;
+      background-color: red; }
+      .support-page .status-bar .task-type-list {
+        margin-bottom: 20px;
+        padding-bottom: 36px !important; }
     .support-page .status-bar-heading {
       position: fixed;
       z-index: 3;
@@ -18407,25 +18439,20 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        padding: 0 10px;
-        overflow-y: scroll; }
-      .support-page .status-bar-inner .search {
-        width: 100%;
-        margin-top: 20px;
-        padding-bottom: 20px;
-        border-bottom-color: #d3d3d3; }
-        .support-page .status-bar-inner .search .input-group {
-          width: 100%; }
+        height: calc(100vh - 80px);
+        padding: 0 20px;
+        overflow-y: auto;
+        overflow-x: hidden; }
     .support-page .done-btn-container {
       position: fixed;
       bottom: 0;
-      left: 0;
+      left: 8px;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: calc(100% - 16px);
       height: 76px;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), #fff); }
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), red); }
       .support-page .done-btn-container button {
         display: flex;
         justify-content: center;

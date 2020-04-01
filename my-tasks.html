@@ -246,7 +246,7 @@
   <div class="main-wrapper">
     <div class="my-tasks-page">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row main-row">
           <!-- Status bar left -->
           <div class="status-bar-col col-auto">
             <div class="status-bar">
@@ -309,9 +309,9 @@
                           <span><i class="far fa-chevron-down"></i></span>
                         </div>
                         <div class="date-container">
-                          <span class="font-r-13 date-from">Jan 1/2019</span>
+                          <span class="font-r-11 date-from">Jan 1/2019</span>
                           <span class="date-divider">-</span>
-                          <span class="font-r-13 date-to">Mar 20/2020</span>
+                          <span class="font-r-11 date-to">Mar 20/2020</span>
                         </div>
                       </div>
                     </div>
@@ -426,12 +426,12 @@
                           <label class="custom-control-label font-r-13" for="customCheck4">Schedule meeting</label>
                         </div>
                       </div>
+
+                      <div class="done-btn-container">
+                        <button class="font-r-18 font-weight-bold" type="button">Done</button>
+                      </div>
                     </div>
                     <!-- EOL: Task Type -->
-
-                    <div class="done-btn-container">
-                      <button class="font-r-18 font-weight-bold" type="button">Done</button>
-                    </div>
                   </div>
                 </div>
 
@@ -442,17 +442,18 @@
 
           <!-- Content right -->
           <div class="content-col col">
-            <div class="content">
 
-              <!-- Search desktop -->
-              <div class="search mb-3 mb-lg-0">
-                <span class="title font-weight-500 font-r-13">My Tasks</span>
-                <div class="input-group">
-                  <div class="input-group-prepend"><i class="far fa-search"></i></div>
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
+            <!-- Search desktop -->
+            <div class="search mb-3 mb-lg-0">
+              <span class="title font-weight-500 font-r-13">My Tasks</span>
+              <div class="input-group">
+                <div class="input-group-prepend"><i class="far fa-search"></i></div>
+                <input type="text" class="form-control" placeholder="Search">
               </div>
-              <!-- EOL: Search desktop -->
+            </div>
+            <!-- EOL: Search desktop -->
+
+            <div class="content">
 
               <div class="task-list">
                 <div class="list-heading">
@@ -477,11 +478,11 @@
                     <div class="task-col col-auto col-lg-3">
                       <div class="task-card confirm">
                         <span class="colored-circle "></span>
-                        <div class="label font-weight-500 font-r-10">
+                        <div class="label font-weight-500 font-r-10 is-active">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner">
+                        <div class="task-card-inner is-active">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
@@ -547,11 +548,11 @@
                     <div class="task-col col-auto col-lg-3">
                       <div class="task-card confirm">
                         <span class="colored-circle "></span>
-                        <div class="label font-weight-500 font-r-10">
+                        <div class="label font-weight-500 font-r-10 is-active">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner">
+                        <div class="task-card-inner is-active">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
@@ -617,11 +618,11 @@
                     <div class="task-col col-auto col-lg-3">
                       <div class="task-card confirm">
                         <span class="colored-circle "></span>
-                        <div class="label font-weight-500 font-r-10">
+                        <div class="label font-weight-500 font-r-10 is-active">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner">
+                        <div class="task-card-inner is-active">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
@@ -687,11 +688,11 @@
                     <div class="task-col col-auto col-lg-3">
                       <div class="task-card confirm">
                         <span class="colored-circle "></span>
-                        <div class="label font-weight-500 font-r-10">
+                        <div class="label font-weight-500 font-r-10 is-active">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner">
+                        <div class="task-card-inner is-active">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
@@ -755,13 +756,13 @@
                       </div>
                     </div>
                     <div class="task-col col-auto col-lg-3">
-                      <div class="task-card confirm">
+                      <div class="task-card call-back">
                         <span class="colored-circle "></span>
-                        <div class="label font-weight-500 font-r-10">
+                        <div class="label font-weight-500 font-r-10 is-active">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner">
+                        <div class="task-card-inner is-active">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
@@ -825,13 +826,13 @@
                       </div>
                     </div>
                     <div class="task-col col-auto col-lg-3">
-                      <div class="task-card confirm">
+                      <div class="task-card setup">
                         <span class="colored-circle "></span>
-                        <div class="label font-weight-500 font-r-10">
+                        <div class="label font-weight-500 font-r-10 is-active">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner">
+                        <div class="task-card-inner is-active">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
@@ -895,13 +896,13 @@
                       </div>
                     </div>
                     <div class="task-col col-auto col-lg-3">
-                      <div class="task-card confirm">
+                      <div class="task-card send-company-info">
                         <span class="colored-circle "></span>
-                        <div class="label font-weight-500 font-r-10">
+                        <div class="label font-weight-500 font-r-10 is-active">
                           <span>Confirm meeting</span>
                           <span class="more d-md-none">More <i class="far fa-chevron-down"></i></span>
                         </div>
-                        <div class="task-card-inner">
+                        <div class="task-card-inner is-active">
                           <!-- user -->
                           <div class="user">
                             <div class="user-info">
