@@ -16678,8 +16678,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       margin-left: 30px; } }
   @media (max-width: 767px) {
     .my-tasks-page .content-col {
-      margin-left: 15px;
-      background-color: coral; }
+      margin-left: 15px; }
       .my-tasks-page .content-col .content {
         padding-left: 0;
         margin-left: -15px; }
@@ -16725,7 +16724,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: 100%;
       margin-top: 80px; }
     .my-tasks-page .status-bar-col {
-      margin-top: 10px; }
+      position: relative;
+      align-self: auto;
+      margin-top: 0;
+      width: 0; }
     .my-tasks-page .status-bar {
       margin-top: 0;
       padding: 0;
@@ -18299,8 +18301,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       margin-left: 30px; } }
   @media (max-width: 767px) {
     .support-page .content-col {
-      margin-left: 15px;
-      background-color: coral; }
+      margin-left: 15px; }
       .support-page .content-col .content {
         padding-left: 0;
         margin-left: -15px; }
@@ -18346,7 +18347,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: 100%;
       margin-top: 80px; }
     .support-page .status-bar-col {
-      margin-top: 10px; }
+      position: relative;
+      align-self: auto;
+      margin-top: 0;
+      width: 0; }
     .support-page .status-bar {
       margin-top: 0;
       padding: 0;

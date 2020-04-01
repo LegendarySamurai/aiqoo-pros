@@ -1238,6 +1238,8 @@
     }
 
     .list-heading {
+      padding-left: 15px;
+      
       .list-heading-inner {
         border-bottom: 0;
       }
@@ -1303,14 +1305,7 @@
   }
 
   @media(max-width: 599px) {
-    .status-bar-col {
-      width: auto;
-      margin-top: 0;
-    }
-
     .content {
-      //margin-top: 90px;
-
       .task-list {
         height: 100%;
         padding-top: 0;

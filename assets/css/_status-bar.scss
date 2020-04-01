@@ -338,7 +338,6 @@
 @media(max-width: 767px) {
   .content-col {
     margin-left: 15px;
-    background-color: coral;
 
     .content {
       padding-left: 0;
@@ -400,7 +399,6 @@
 
 @media (max-width: 599px) {
   .content-col {
-
     .search {
       display: none;
       margin-left: 0px !important;
@@ -428,7 +426,10 @@
   }
 
   .status-bar-col {
-    margin-top: 10px;
+    position: relative;
+    align-self: auto;
+    margin-top: 0;
+    width: 0;
   }
 
   .status-bar {

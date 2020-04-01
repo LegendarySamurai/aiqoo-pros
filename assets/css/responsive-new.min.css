@@ -1426,8 +1426,10 @@
     margin: 0 auto;
     padding-right: 15px;
     min-width: inherit; }
-  .my-tasks-page .list-heading .list-heading-inner {
-    border-bottom: 0; }
+  .my-tasks-page .list-heading {
+    padding-left: 15px; }
+    .my-tasks-page .list-heading .list-heading-inner {
+      border-bottom: 0; }
   .my-tasks-page .task-card .label {
     display: flex;
     flex-direction: row;
@@ -1456,9 +1458,6 @@
     display: none; } }
 
 @media (max-width: 599px) {
-  .my-tasks-page .status-bar-col {
-    width: auto;
-    margin-top: 0; }
   .my-tasks-page .content .task-list {
     height: 100%;
     padding-top: 0;
