@@ -16495,6 +16495,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     height: 100%;
     opacity: 0; }
   .my-tasks-page .status-bar-col {
+    align-self: flex-end;
+    position: sticky;
+    bottom: 0;
     width: 300px;
     padding-left: 0; }
   .my-tasks-page .done-btn-container {
@@ -16827,14 +16830,14 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         overflow-x: hidden; }
     .my-tasks-page .done-btn-container {
       position: fixed;
-      bottom: 0;
+      bottom: 6px;
       left: 8px;
       display: flex;
       justify-content: center;
       align-items: center;
       width: calc(100% - 16px);
       height: 76px;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), red); }
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), #fff); }
       .my-tasks-page .done-btn-container button {
         display: flex;
         justify-content: center;
@@ -18113,6 +18116,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     height: 100%;
     opacity: 0; }
   .support-page .status-bar-col {
+    align-self: flex-end;
+    position: sticky;
+    bottom: 0;
     width: 300px;
     padding-left: 0; }
   .support-page .done-btn-container {
@@ -18445,14 +18451,14 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         overflow-x: hidden; }
     .support-page .done-btn-container {
       position: fixed;
-      bottom: 0;
+      bottom: 6px;
       left: 8px;
       display: flex;
       justify-content: center;
       align-items: center;
       width: calc(100% - 16px);
       height: 76px;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), red); }
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), #fff); }
       .support-page .done-btn-container button {
         display: flex;
         justify-content: center;

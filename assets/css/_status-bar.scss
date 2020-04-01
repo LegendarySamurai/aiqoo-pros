@@ -1,4 +1,7 @@
 .status-bar-col {
+  align-self: flex-end;
+  position: sticky;
+  bottom: 0;
   width: 300px;
   padding-left: 0;
 }
@@ -557,14 +560,14 @@
 
   .done-btn-container {
     position: fixed;
-    bottom: 0;
+    bottom: 6px;
     left: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: calc(100% - 16px);
     height: 76px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), red);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.53), #fff);
 
     button {
       display: flex;
