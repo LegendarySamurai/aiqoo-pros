@@ -469,6 +469,7 @@ body {
             z-index: 500;
             list-style: none;
             overflow-x: hidden;
+            transition: transform 300ms ease-out;
 
             &.is-hidden {
                 transform: translate(-50%, 0%);

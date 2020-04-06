@@ -1426,7 +1426,8 @@ body ::-webkit-scrollbar-thumb:hover {
       background-color: #e6e6e6;
       z-index: 500;
       list-style: none;
-      overflow-x: hidden; }
+      overflow-x: hidden;
+      transition: transform 300ms ease-out; }
       .header .wrapper-c .nav-sub-menu.is-hidden {
         transform: translate(-50%, 0%); }
       .header .wrapper-c .nav-sub-menu.is-active {
