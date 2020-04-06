@@ -1,0 +1,7 @@
+.main-row {
+  transition: margin 300ms ease;
+  // added on hover nav-menu-items
+  &.nav-bar-is-opened {
+    margin-top: 60px;
+  }
+}

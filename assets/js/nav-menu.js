@@ -13,32 +13,29 @@ function closeSideBar() {
 	$(".sidebar-overlay").attr("navIsOpen", "false");
 }
 
-
+// Nav menu header
+const navMenuHeader = document.querySelector('.wrapper-c .nav-menu');
+const navMenuItems = document.querySelectorAll(".wrapper-c .nav-menu .nav-menu-item");
+const navSubMenu = document.querySelector(".wrapper-c .nav-sub-menu");
 let subMenuIsVisible = false;
-const navMenu = document.querySelector(".nav-menu");
-const navMenuItems = document.querySelectorAll(".nav-menu-item");
-const navSubMenu = document.querySelector(".nav-sub-menu");
+console.log('=>', navMenuHeader);
 
 navMenuItems.forEach(item => {
-	if (!subMenuIsVisible) {
-		item.addEventListener('mouseover', function() {
-			console.log('=> Worked');
-			navSubMenu.classList.remove('is-hidden');
-			navSubMenu.classList.add('is-active');
-			subMenuIsVisible = true;
-		});
-	} else if (subMenuIsVisible) {
-		item.addEventListener('mouseout', function() {
-			navSubMenu.classList.remove('is-active');
-			navSubMenu.classList.add('is-hidden');
-			subMenuIsVisible = false;
-		});
-	}
+	item.addEventListener('mouseover', function() {
+		// console.log('=> Worked');
+		navSubMenu.classList.remove('is-hidden');
+		navSubMenu.classList.add('is-active');
+		subMenuIsVisible = true;
+	});
+	item.addEventListener('mouseout', function() {
+		// console.log('=> Worked');
+		navSubMenu.classList.add('is-hidden');
+		navSubMenu.classList.remove('is-active');
+		subMenuIsVisible = false;
+	});
 });
-//
-// navMenuItem
-//
-// navMenuItem
+
+
 
 // EOL: Igor
 

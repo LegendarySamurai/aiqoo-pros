@@ -1144,10 +1144,6 @@
   @media(max-width: 1599px) {}
 
   @media(max-width: 1399px) {
-    .content {
-      //margin-top: 60px;
-    }
-
     .colored-circle {
       top: 19px !important;
     }
@@ -1163,16 +1159,6 @@
   }
 
   @media(max-width: 1199px) {
-    .list-heading-inner {
-      //flex-direction: column !important;
-      //justify-content: flex-start !important;
-      //align-items: flex-start !important;
-
-      .task-date {
-        //margin-top: 10px;
-      }
-    }
-
     .task-card {
       &:before, &:after, .colored-circle {
         display: none;
@@ -1188,14 +1174,6 @@
     .task-list {
       margin-top: 24px;
     }
-
-    //.list-heading {
-    //  margin-top: 24px;
-    //}
-    //
-    //.list-body {
-    //  margin-top: 24px;
-    //}
   }
 
   @media(max-width: 991px) {
@@ -1209,7 +1187,6 @@
         margin-left: -15px;
         margin-right: -15px;
         padding-left: 15px;
-        //padding-right: 15px;
 
         .title {
           width: 100px;
@@ -1239,7 +1216,7 @@
 
     .list-heading {
       padding-left: 15px;
-      
+
       .list-heading-inner {
         border-bottom: 0;
       }
@@ -1333,6 +1310,25 @@
       min-width: 300px;
     }
   }
+}
+
+//************* Support page (Dashboard)  *************//
+.support-page {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
 }
 
 //************* Summary  Wizard *************//

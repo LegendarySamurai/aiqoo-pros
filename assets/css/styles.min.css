@@ -17078,6 +17078,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         white-space: nowrap; }
       .my-tasks-page .content-col .search .input-group {
         padding-left: 10px; }
+  .my-tasks-page .main-row {
+    transition: margin 300ms ease; }
+    .my-tasks-page .main-row.nav-bar-is-opened {
+      margin-top: 60px; }
 
 .support-page {
   /*
@@ -18550,6 +18554,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         white-space: nowrap; }
       .support-page .content-col .search .input-group {
         padding-left: 10px; }
+  .support-page .main-row {
+    transition: margin 300ms ease; }
+    .support-page .main-row.nav-bar-is-opened {
+      margin-top: 60px; }
 
 .sign-in-and-sign-up-page { }
   .sign-in-and-sign-up-page html, .sign-in-and-sign-up-page body {
