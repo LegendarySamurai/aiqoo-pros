@@ -1305,7 +1305,7 @@ body ::-webkit-scrollbar-thumb:hover {
     left: 50%;
     transform: translate(-50%, 50%);
     width: 90%;
-    height: 82px;
+    height: 64px;
     background-color: #fff;
     border-radius: 2.5px;
     -webkit-box-shadow: 0 -1px 21px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
@@ -1417,7 +1417,6 @@ body ::-webkit-scrollbar-thumb:hover {
       position: absolute;
       bottom: 0;
       left: 50%;
-      transform: translate(-50%, 0%);
       width: 99%;
       height: 64px;
       margin: 0;
@@ -1445,6 +1444,9 @@ body ::-webkit-scrollbar-thumb:hover {
         transition: all .2s ease;
         padding: 0 15px;
         color: #585077; }
+    .header .wrapper-c .nav-menu li:hover + .nav-sub-menu {
+      background-color: red;
+      transform: translate(-50%, -100%); }
 
 .header-mobile {
   position: fixed;
@@ -16909,7 +16911,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #fff; }
     .my-tasks-page .content-col .search {
       position: sticky;
-      top: 180px;
+      top: 150px;
       z-index: 200;
       align-items: flex-end;
       width: calc(100% + 17px);
@@ -16931,6 +16933,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .my-tasks-page .list-heading .fa-clipboard-list-check {
       width: 14px;
       margin-right: 10px; }
+    .my-tasks-page .list-heading .task-date {
+      margin-left: 10px; }
   .my-tasks-page .list-body {
     margin-top: 24px; }
     .my-tasks-page .list-body .label {

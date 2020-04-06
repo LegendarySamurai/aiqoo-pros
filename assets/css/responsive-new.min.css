@@ -1388,12 +1388,6 @@
     max-width: 33.33%; } }
 
 @media (max-width: 1199px) {
-  .my-tasks-page .list-heading-inner {
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    align-items: flex-start !important; }
-    .my-tasks-page .list-heading-inner .task-date {
-      margin-top: 10px; }
   .my-tasks-page .task-card:before, .my-tasks-page .task-card:after, .my-tasks-page .task-card .colored-circle {
     display: none; }
   .my-tasks-page .task-col {

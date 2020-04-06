@@ -22,6 +22,7 @@ const navSubMenu = document.querySelector(".nav-sub-menu");
 navMenuItems.forEach(item => {
 	if (!subMenuIsVisible) {
 		item.addEventListener('mouseover', function() {
+			console.log('=> Worked');
 			navSubMenu.classList.remove('is-hidden');
 			navSubMenu.classList.add('is-active');
 			subMenuIsVisible = true;

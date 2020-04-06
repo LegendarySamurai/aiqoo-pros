@@ -5,7 +5,7 @@
 
   .search {
     position: sticky;
-    top: 180px;
+    top: 150px;
     z-index: 200;
     align-items: flex-end;
     width: calc(100% + 17px);
@@ -38,6 +38,10 @@
   .fa-clipboard-list-check {
     width: 14px;
     margin-right: 10px;
+  }
+
+  .task-date {
+    margin-left: 10px;
   }
 }
 

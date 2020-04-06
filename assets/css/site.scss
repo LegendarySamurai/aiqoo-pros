@@ -323,7 +323,7 @@ body {
         left: 50%;
         transform: translate(-50%, 50%); // Updated by Igor Feb 13th, 2020
         width: 90%;
-        height: 82px; // Updated by Igor Feb 13th, 2020
+        height: 64px; // Updated by Igor Feb 13th, 2020
         background-color: #fff;
         border-radius: 2.5px;
         -webkit-box-shadow: 0 -1px 21px 0 rgba(0,0,0,.05), 0 6px 20px 0 rgba(0,0,0,.02);
@@ -342,7 +342,6 @@ body {
                 color: $primaryOpacityColor !important;
             }
         }
-
 
         & .nav-menu {
             display: flex; // Created by Igor Feb 13th, 2020
@@ -452,6 +451,7 @@ body {
             }
         }
         // Created by Igor Feb 13th, 2020
+
         & .nav-sub-menu {
             //display: none;
             //transform: translateX(-100%);
@@ -461,7 +461,7 @@ body {
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translate(-50%, 0%);
+            //transform: translate(-50%, 0%);
             width: 99%;
             height: 64px;
             margin: 0;
@@ -474,7 +474,7 @@ body {
             overflow-x: hidden;
 
             &.is-hidden {
-                transform: translate(-50%, 00%);
+                transform: translate(-50%, 0%);
             }
 
             &.is-active {
@@ -501,6 +501,11 @@ body {
             }
         }
         // EOL Created by Igor Feb 13th, 2020
+
+        .nav-menu li:hover + .nav-sub-menu {
+            background-color: red;
+            transform: translate(-50%, -100%);
+        }
     }
 }
 
