@@ -16905,24 +16905,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         font-weight: 300;
         color: #342e49;
         font-size: 1rem; }
-  .my-tasks-page .content-col {
-    margin-top: 20px;
-    padding-right: 0;
-    background-color: #fff; }
-    .my-tasks-page .content-col .search {
-      position: sticky;
-      top: 150px;
-      z-index: 200;
-      align-items: flex-end;
-      width: calc(100% + 17px);
-      height: 100px;
-      margin-left: -15px;
-      padding-left: 15px;
-      background-color: #fff; }
-      .my-tasks-page .content-col .search .title {
-        white-space: nowrap; }
-      .my-tasks-page .content-col .search .input-group {
-        padding-left: 10px; }
   .my-tasks-page .list-heading {
     margin-top: 24px; }
     .my-tasks-page .list-heading .list-heading-inner {
@@ -17078,6 +17060,24 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .my-tasks-page .green-button {
     border: 1px solid #00aa1a;
     color: #00aa1a; }
+  .my-tasks-page .content-col {
+    margin-top: 20px;
+    padding-right: 0;
+    background-color: #fff; }
+    .my-tasks-page .content-col .search {
+      position: sticky;
+      top: 150px;
+      z-index: 200;
+      align-items: flex-end;
+      width: calc(100% + 17px);
+      height: 100px;
+      margin-left: -15px;
+      padding-left: 15px;
+      background-color: #fff; }
+      .my-tasks-page .content-col .search .title {
+        white-space: nowrap; }
+      .my-tasks-page .content-col .search .input-group {
+        padding-left: 10px; }
 
 .support-page {
   /*
@@ -18532,6 +18532,24 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         font-size: 1rem; }
   .support-page .content {
     margin-top: 70px; }
+  .support-page .content-col {
+    margin-top: 20px;
+    padding-right: 0;
+    background-color: #fff; }
+    .support-page .content-col .search {
+      position: sticky;
+      top: 150px;
+      z-index: 200;
+      align-items: flex-end;
+      width: calc(100% + 17px);
+      height: 100px;
+      margin-left: -15px;
+      padding-left: 15px;
+      background-color: #fff; }
+      .support-page .content-col .search .title {
+        white-space: nowrap; }
+      .support-page .content-col .search .input-group {
+        padding-left: 10px; }
 
 .sign-in-and-sign-up-page { }
   .sign-in-and-sign-up-page html, .sign-in-and-sign-up-page body {

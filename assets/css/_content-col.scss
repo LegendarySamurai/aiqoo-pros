@@ -1,0 +1,26 @@
+// Content right
+.content-col {
+  margin-top: 20px;
+  padding-right: 0;
+  background-color: #fff;
+
+  .search {
+    position: sticky;
+    top: 150px;
+    z-index: 200;
+    align-items: flex-end;
+    width: calc(100% + 17px);
+    height: 100px;
+    margin-left: -15px;
+    padding-left: 15px;
+    background-color: #fff;
+
+    .title {
+      white-space: nowrap;
+    }
+
+    .input-group {
+      padding-left: 10px;
+    }
+  }
+}
