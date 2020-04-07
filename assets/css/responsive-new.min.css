@@ -1943,6 +1943,253 @@
     .landing-sign-up .quality-card:hover .quality-card-content {
       transform: scale(1.15); } }
 
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  @keyframes tonext {
+    75% {
+      left: 0; }
+    95% {
+      left: 100%; }
+    98% {
+      left: 100%; }
+    99% {
+      left: 0; } }
+  @keyframes tostart {
+    75% {
+      left: 0; }
+    95% {
+      left: -300%; }
+    98% {
+      left: -300%; }
+    99% {
+      left: 0; } }
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center; }
+    97% {
+      scroll-snap-align: none; }
+    99% {
+      scroll-snap-align: none; }
+    100% {
+      scroll-snap-align: center; } }
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent !important;
+    /* thumb and track color */
+    scrollbar-width: 0px !important; }
+  *::-webkit-scrollbar {
+    width: 0 !important; }
+  *::-webkit-scrollbar-track {
+    background: transparent !important; }
+  *::-webkit-scrollbar-thumb {
+    background: transparent !important;
+    border: none !important; }
+  * {
+    -ms-overflow-style: none !important; }
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .carousel {
+    position: relative;
+    padding-top: 250px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    perspective: 100px; }
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; }
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item; }
+  .carousel__slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -40%, 70px);
+    color: #fff;
+    font-size: 2em; }
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center; } }
+
+@media only screen and (min-width: 300px) and (max-width: 991px) and (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; }
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap; } }
+
+@media only screen and (min-width: 300px) and (max-width: 991px) and (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none; } }
+
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none; }
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center; }
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block; }
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #d8cdba;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s; }
+    .carousel__navigation-button.is-clicked {
+      width: 1.75rem;
+      height: 1.75rem;
+      background-color: #585077; } }
+
+@media (max-width: 1899px) {
+  .quality-cards {
+    display: flex;
+    align-items: center; }
+  .quality-card-text {
+    font-size: 14.75pt; } }
+
+@media (max-width: 1399px) {
+  .content-section h1 {
+    font-size: 24pt; }
+  .content-section .top-text {
+    font-size: 2.125vh !important; }
+  .content-section .bottom-text {
+    font-size: 2.25vh !important; }
+  .quality-card {
+    height: 210px;
+    margin: 0 10px; }
+  .quality-card-content {
+    padding: 15px; }
+  .quality-card-image {
+    height: 30px; }
+  .quality-card-text {
+    font-size: 10.5pt; }
+  .read-more {
+    font-size: 1.65vh !important; } }
+
+@media (max-width: 1279px) {
+  .head-section-body h1 {
+    font-size: 21px !important; }
+  .head-section-body .head-section-inner {
+    padding-left: 15vw !important; } }
+
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 18.75pt; }
+  .quality-card {
+    margin: 0 5px; }
+    .quality-card .quality-card-content {
+      padding: 20px 10px 10px 10px; }
+  .quality-card-image {
+    margin-bottom: 20px; }
+  .quality-card-text {
+    font-size: 9pt; } }
+
+@media (max-width: 991px) {
+  .back-layer {
+    position: static;
+    transform: none;
+    width: 96%;
+    max-width: 500px;
+    margin: 0 auto; }
+    .back-layer.is-active {
+      z-index: 9000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 60px;
+      background-color: rgba(0, 0, 0, 0.7); }
+      .back-layer.is-active .special-offers {
+        display: none; }
+      .back-layer.is-active .form-container {
+        width: 96%;
+        padding-top: 20px;
+        background-color: #fff;
+        border-radius: 5px; }
+      .back-layer.is-active .submit-button .btn {
+        padding: 0; }
+      .back-layer.is-active .custom-control-label {
+        padding-top: 8px; }
+  .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
+  .quality-cards {
+    display: flex;
+    align-items: initial;
+    flex-direction: initial;
+    margin-top: 0; }
+  .quality-card {
+    width: 96%;
+    height: 200px;
+    margin-bottom: 10px; }
+    .quality-card .quality-card-content {
+      padding: 20px 20px 10px; }
+      .quality-card .quality-card-content:before {
+        top: 0; }
+  .quality-card-image {
+    margin-bottom: 10px; }
+  .quality-card-text {
+    font-size: 1.75vw; }
+  .top-text {
+    font-size: 11.25pt; }
+    .top-text span {
+      font-size: 11.25pt; }
+  .cards-container {
+    max-width: 380px;
+    margin: 30px auto; }
+  .bottom-text {
+    margin: 20px 0;
+    font-size: 10.5pt; }
+  .head-section-body .head-section-inner {
+    padding-left: 0 !important; } }
+
+@media (max-width: 1599px) {
+  .main-page-container .special-offers .special-offer-text {
+    font-size: 1.75vh; } }
+
+@media (max-width: 1199px) {
+  .main-page-container .special-offers .special-offer-text {
+    font-size: 1.4vw; }
+  .main-page-container .special-offers .offer {
+    font-size: 1.5vh; }
+  .main-page-container .side-block h4 {
+    font-size: 1.875vh; } }
+
 .system-campaign { }
   @media (min-width: 1200px) {
     .system-campaign .cursor-p {
