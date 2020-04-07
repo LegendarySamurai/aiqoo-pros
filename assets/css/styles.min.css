@@ -12683,6 +12683,59 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     cursor: pointer;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
 
+.sign-up-landing .main-page-container {
+  width: 100%;
+  height: 100vh;
+  background-color: coral; }
+  .sign-up-landing .main-page-container .head-section {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    padding: 9vh 5% 3vh;
+    border-top: 2vh solid #585077;
+    background-image: url("../images/bg/landing-sign-up-bg-d.png");
+    background-position: center 100%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .sign-up-landing .main-page-container .head-section .text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      width: 50%;
+      height: 10vh;
+      background-color: #585077; }
+  .sign-up-landing .main-page-container .content-section {
+    position: relative;
+    width: 100%;
+    height: 62vh;
+    padding: 2vh 35% 3vh 5%;
+    background-color: grey; }
+    .sign-up-landing .main-page-container .content-section .content {
+      height: 19vh;
+      background-color: #fff; }
+    .sign-up-landing .main-page-container .content-section .text {
+      background-color: chartreuse; }
+    .sign-up-landing .main-page-container .content-section .top-text {
+      height: 19vh; }
+    .sign-up-landing .main-page-container .content-section .bottom-text {
+      height: 10vh; }
+    .sign-up-landing .main-page-container .content-section .cards-container {
+      height: 24vh;
+      margin: 2vh 0;
+      background-color: cornflowerblue; }
+    .sign-up-landing .main-page-container .content-section .form {
+      position: absolute;
+      bottom: 3vh;
+      right: 5%;
+      width: 25%;
+      height: 78vh;
+      background-color: chocolate; }
+  .sign-up-landing .main-page-container footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #585077; }
+
 .system-campaign { }
   @media (min-width: 1200px) {
     .system-campaign .cursor-p {

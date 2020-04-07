@@ -1,0 +1,81 @@
+.main-page-container {
+  $page-height: 100vh;
+  $main-side-padding: 5%;
+  $nine-percent-padding: 9vh;
+  $three-percent-padding: 3vh;
+
+  width: 100%;
+  height: $page-height;
+  background-color: coral; //
+
+  .head-section {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    padding: $nine-percent-padding $main-side-padding $three-percent-padding;
+    border-top: 2vh solid $purple;
+    background-image: url("../images/bg/landing-sign-up-bg-d.png");
+    //border-top: 28px solid $primaryColor;
+    background-position: center 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      width: 50%;
+      height: 10vh;
+      background-color: #585077;
+    }
+  }
+
+  .content-section {
+    position: relative;
+    width: 100%;
+    height: 62vh;
+    padding: 2vh 35% 3vh 5%;
+    background-color: grey; //
+
+    .content {
+      height: 19vh;
+      background-color: #fff;
+    }
+
+    .text {
+      background-color: chartreuse;
+    }
+
+    .top-text {
+      height: 19vh;
+    }
+
+    .bottom-text {
+      height: 10vh;
+    }
+
+    .cards-container {
+      height: 24vh;
+      margin: 2vh 0;
+      background-color: cornflowerblue;
+    }
+
+    .form {
+      position: absolute;
+      bottom: 3vh;
+      right: 5%;
+      width: 25%;
+      height: 78vh;
+      background-color: chocolate;
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #585077;
+  }
+}
+
+

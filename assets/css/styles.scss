@@ -43,6 +43,11 @@
   @import 'landing-sig-up-new.scss';
 }
 
+//************* Landing sign up page  *************//
+.sign-up-landing {
+  @import 'sign-up-landing';
+}
+
 //*************  System campaign: Services, summary, zip-code pages *************//
 .system-campaign {
   @import 'tabs';
