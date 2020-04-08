@@ -496,6 +496,11 @@ body {
                 transition: all .2s ease;
                 padding: 0 15px;
                 color: $purple;
+
+                @media(max-width: 991px) {
+                    font-size: 1.5vw;
+                }
+
             }
         }
         // EOL Created by Igor Feb 13th, 2020

@@ -5,3 +5,11 @@
     margin-top: 60px;
   }
 }
+
+.main-row {
+  @media(max-width: 599px) {
+    &.nav-bar-is-opened {
+      margin-top: 0;
+    }
+  }
+}

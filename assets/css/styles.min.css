@@ -1445,6 +1445,9 @@ body ::-webkit-scrollbar-thumb:hover {
         transition: all .2s ease;
         padding: 0 15px;
         color: #585077; }
+        @media (max-width: 991px) {
+          .header .wrapper-c .nav-sub-menu > li > a {
+            font-size: 1.5vw; } }
     .header .wrapper-c .nav-menu li:hover + .nav-sub-menu {
       background-color: red;
       transform: translate(-50%, -100%); }
@@ -17588,7 +17591,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #fff; }
     .my-tasks-page .content-col .search {
       position: sticky;
-      top: 150px;
+      top: 230px;
       z-index: 200;
       align-items: flex-end;
       width: calc(100% + 17px);
@@ -17604,6 +17607,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transition: margin 300ms ease; }
     .my-tasks-page .main-row.nav-bar-is-opened {
       margin-top: 60px; }
+  @media (max-width: 599px) {
+    .my-tasks-page .main-row.nav-bar-is-opened {
+      margin-top: 0; } }
 
 .support-page {
   /*
@@ -19064,7 +19070,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #fff; }
     .support-page .content-col .search {
       position: sticky;
-      top: 150px;
+      top: 230px;
       z-index: 200;
       align-items: flex-end;
       width: calc(100% + 17px);
@@ -19080,6 +19086,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transition: margin 300ms ease; }
     .support-page .main-row.nav-bar-is-opened {
       margin-top: 60px; }
+  @media (max-width: 599px) {
+    .support-page .main-row.nav-bar-is-opened {
+      margin-top: 0; } }
 
 .sign-in-and-sign-up-page { }
   .sign-in-and-sign-up-page html, .sign-in-and-sign-up-page body {
