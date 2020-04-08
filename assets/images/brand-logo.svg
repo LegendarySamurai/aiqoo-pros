@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.877" height="13.358" viewBox="0 0 15.877 13.358">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#585077}.prefix__cls-3{fill:#d8cdba}
+        </style>
+    </defs>
+    <g id="prefix__LOGO">
+        <g id="prefix__Group_1" data-name="Group 1">
+            <path id="prefix__Line_1" d="M0 0L0 0" data-name="Line 1" transform="translate(2.555 5.181)" style="fill:#ff8000;stroke:#e1c14b;stroke-miterlimit:10;stroke-width:49.353px"/>
+            <path id="prefix__Path_1" d="M493.262 1600.773l4.595-4.125a.579.579 0 0 0 .107-.756.56.56 0 0 0-.818-.109l-3.99 3.344c-1.012.942-1.856 1.848-1.856 3.312v6.156a.409.409 0 0 0 .2.353.414.414 0 0 0 .408.017l2.064-1.044a1.826 1.826 0 0 0 1.008-1.639v-4.038a.845.845 0 0 0-.743-.855.816.816 0 0 0-.886.731c0 .027-.005.057-.005.084v3.864a.373.373 0 0 1-.362.373.374.374 0 0 1-.385-.373v-3.868a1.877 1.877 0 0 1 .663-1.427z" class="prefix__cls-2" data-name="Path 1" transform="translate(-491.3 -1595.653)"/>
+            <path id="prefix__Path_2" d="M1219.789 1600.773l-4.595-4.125a.579.579 0 0 1-.107-.756.56.56 0 0 1 .818-.109l3.99 3.344c1.012.942 1.856 1.848 1.856 3.312v6.156a.408.408 0 0 1-.2.353.414.414 0 0 1-.408.017l-2.064-1.044a1.826 1.826 0 0 1-1.008-1.639v-4.038a.845.845 0 0 1 .743-.855.816.816 0 0 1 .886.731v3.948a.373.373 0 0 0 .362.373.374.374 0 0 0 .385-.373v-3.868a1.872 1.872 0 0 0-.658-1.427z" class="prefix__cls-2" data-name="Path 2" transform="translate(-1205.874 -1595.653)"/>
+            <path id="prefix__Rectangle_1" d="M0 0H1.555V1.555H0z" class="prefix__cls-3" data-name="Rectangle 1" transform="translate(5.898 8.103)"/>
+            <path id="prefix__Rectangle_2" d="M0 0H1.555V1.555H0z" class="prefix__cls-3" data-name="Rectangle 2" transform="translate(8.415 8.103)"/>
+            <path id="prefix__Rectangle_3" d="M0 0H1.555V1.555H0z" class="prefix__cls-3" data-name="Rectangle 3" transform="translate(5.898 5.639)"/>
+            <path id="prefix__Rectangle_4" d="M0 0H1.555V1.555H0z" class="prefix__cls-3" data-name="Rectangle 4" transform="translate(8.415 5.639)"/>
+        </g>
+    </g>
+</svg>

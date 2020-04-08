@@ -1318,11 +1318,23 @@
 
   @media(max-width: 1599px) {}
 
-  @media(max-width: 1399px) {}
+  @media(max-width: 1499px) {
+    .right-side-col {
+      display: none;
+    }
+  }
 
   @media(max-width: 1199px) {}
 
-  @media(max-width: 991px) {}
+  @media(max-width: 991px) {
+    .content {
+      margin-top: 90px;
+    }
+
+    .new-ticket {
+      transform: translate(310%, 144%);
+    }
+  }
 
   @media(max-width: 767px) {}
 

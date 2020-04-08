@@ -824,6 +824,9 @@ img {
   .cursor-p {
     cursor: pointer; } }
 
+.white-space-nowrap {
+  white-space: nowrap; }
+
 .red {
   color: #c30a0a; }
 
@@ -880,6 +883,9 @@ img {
 @media (min-width: 1200px) {
   .cursor-p {
     cursor: pointer; } }
+
+.white-space-nowrap {
+  white-space: nowrap; }
 
 .red {
   color: #c30a0a; }
@@ -5513,6 +5519,9 @@ img {
   .cursor-p {
     cursor: pointer; } }
 
+.white-space-nowrap {
+  white-space: nowrap; }
+
 .red {
   color: #c30a0a; }
 
@@ -5569,6 +5578,9 @@ img {
 @media (min-width: 1200px) {
   .cursor-p {
     cursor: pointer; } }
+
+.white-space-nowrap {
+  white-space: nowrap; }
 
 .red {
   color: #c30a0a; }
@@ -6270,6 +6282,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .my-profile-page .cursor-p {
       cursor: pointer; } }
+  .my-profile-page .white-space-nowrap {
+    white-space: nowrap; }
   .my-profile-page .red {
     color: #c30a0a; }
   .my-profile-page .purple {
@@ -6283,6 +6297,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .my-profile-page .cursor-p {
       cursor: pointer; } }
+  .my-profile-page .white-space-nowrap {
+    white-space: nowrap; }
   .my-profile-page .red {
     color: #c30a0a; }
   .my-profile-page .purple {
@@ -7098,6 +7114,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-company-profile-page .cursor-p {
       cursor: pointer; } }
+  .add-company-profile-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-company-profile-page .red {
     color: #c30a0a; }
   .add-company-profile-page .purple {
@@ -7111,6 +7129,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-company-profile-page .cursor-p {
       cursor: pointer; } }
+  .add-company-profile-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-company-profile-page .red {
     color: #c30a0a; }
   .add-company-profile-page .purple {
@@ -7918,6 +7938,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-company-profile-page .cursor-p {
       cursor: pointer; } }
+  .add-company-profile-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-company-profile-page .red {
     color: #c30a0a; }
   .add-company-profile-page .purple {
@@ -7931,6 +7953,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-company-profile-page .cursor-p {
       cursor: pointer; } }
+  .add-company-profile-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-company-profile-page .red {
     color: #c30a0a; }
   .add-company-profile-page .purple {
@@ -8112,6 +8136,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-company-profile-page .cursor-p {
       cursor: pointer; } }
+  .add-company-profile-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-company-profile-page .red {
     color: #c30a0a; }
   .add-company-profile-page .purple {
@@ -8457,6 +8483,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .summary-page-container .cursor-p {
       cursor: pointer; } }
+  .summary-page-container .white-space-nowrap {
+    white-space: nowrap; }
   .summary-page-container .red {
     color: #c30a0a; }
   .summary-page-container .purple {
@@ -8601,6 +8629,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .summary-page-empty-container .cursor-p {
       cursor: pointer; } }
+  .summary-page-empty-container .white-space-nowrap {
+    white-space: nowrap; }
   .summary-page-empty-container .red {
     color: #c30a0a; }
   .summary-page-empty-container .purple {
@@ -9252,6 +9282,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-portfolio-page .cursor-p {
       cursor: pointer; } }
+  .add-portfolio-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-portfolio-page .red {
     color: #c30a0a; }
   .add-portfolio-page .purple {
@@ -9265,6 +9297,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-portfolio-page .cursor-p {
       cursor: pointer; } }
+  .add-portfolio-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-portfolio-page .red {
     color: #c30a0a; }
   .add-portfolio-page .purple {
@@ -10072,6 +10106,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-portfolio-page .cursor-p {
       cursor: pointer; } }
+  .add-portfolio-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-portfolio-page .red {
     color: #c30a0a; }
   .add-portfolio-page .purple {
@@ -10085,6 +10121,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-portfolio-page .cursor-p {
       cursor: pointer; } }
+  .add-portfolio-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-portfolio-page .red {
     color: #c30a0a; }
   .add-portfolio-page .purple {
@@ -10266,6 +10304,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .add-portfolio-page .cursor-p {
       cursor: pointer; } }
+  .add-portfolio-page .white-space-nowrap {
+    white-space: nowrap; }
   .add-portfolio-page .red {
     color: #c30a0a; }
   .add-portfolio-page .purple {
@@ -11272,6 +11312,9 @@ img {
   .cursor-p {
     cursor: pointer; } }
 
+.white-space-nowrap {
+  white-space: nowrap; }
+
 .red {
   color: #c30a0a; }
 
@@ -11290,6 +11333,9 @@ img {
 @media (min-width: 1200px) {
   .cursor-p {
     cursor: pointer; } }
+
+.white-space-nowrap {
+  white-space: nowrap; }
 
 .red {
   color: #c30a0a; }
@@ -12050,6 +12096,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .landing-sign-up .cursor-p {
       cursor: pointer; } }
+  .landing-sign-up .white-space-nowrap {
+    white-space: nowrap; }
   .landing-sign-up .red {
     color: #c30a0a; }
   .landing-sign-up .purple {
@@ -12063,6 +12111,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .landing-sign-up .cursor-p {
       cursor: pointer; } }
+  .landing-sign-up .white-space-nowrap {
+    white-space: nowrap; }
   .landing-sign-up .red {
     color: #c30a0a; }
   .landing-sign-up .purple {
@@ -13211,6 +13261,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .system-campaign .cursor-p {
       cursor: pointer; } }
+  .system-campaign .white-space-nowrap {
+    white-space: nowrap; }
   .system-campaign .red {
     color: #c30a0a; }
   .system-campaign .purple {
@@ -13523,6 +13575,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (min-width: 1200px) {
       .system-campaign.system-campaign-zip-code .cursor-p {
         cursor: pointer; } }
+    .system-campaign.system-campaign-zip-code .white-space-nowrap {
+      white-space: nowrap; }
     .system-campaign.system-campaign-zip-code .red {
       color: #c30a0a; }
     .system-campaign.system-campaign-zip-code .purple {
@@ -13592,6 +13646,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (min-width: 1200px) {
       .system-campaign.system-campaign-zip-code .cursor-p {
         cursor: pointer; } }
+    .system-campaign.system-campaign-zip-code .white-space-nowrap {
+      white-space: nowrap; }
     .system-campaign.system-campaign-zip-code .red {
       color: #c30a0a; }
     .system-campaign.system-campaign-zip-code .purple {
@@ -14291,6 +14347,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
+  .services-and-location-page .white-space-nowrap {
+    white-space: nowrap; }
   .services-and-location-page .red {
     color: #c30a0a; }
   .services-and-location-page .purple {
@@ -14304,6 +14362,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
+  .services-and-location-page .white-space-nowrap {
+    white-space: nowrap; }
   .services-and-location-page .red {
     color: #c30a0a; }
   .services-and-location-page .purple {
@@ -15111,6 +15171,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
+  .services-and-location-page .white-space-nowrap {
+    white-space: nowrap; }
   .services-and-location-page .red {
     color: #c30a0a; }
   .services-and-location-page .purple {
@@ -15124,6 +15186,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
+  .services-and-location-page .white-space-nowrap {
+    white-space: nowrap; }
   .services-and-location-page .red {
     color: #c30a0a; }
   .services-and-location-page .purple {
@@ -15305,6 +15369,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
+  .services-and-location-page .white-space-nowrap {
+    white-space: nowrap; }
   .services-and-location-page .red {
     color: #c30a0a; }
   .services-and-location-page .purple {
@@ -15648,6 +15714,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
+  .services-and-location-page .white-space-nowrap {
+    white-space: nowrap; }
   .services-and-location-page .red {
     color: #c30a0a; }
   .services-and-location-page .purple {
@@ -15717,6 +15785,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
+  .services-and-location-page .white-space-nowrap {
+    white-space: nowrap; }
   .services-and-location-page .red {
     color: #c30a0a; }
   .services-and-location-page .purple {
@@ -16487,6 +16557,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .my-tasks-page .cursor-p {
       cursor: pointer; } }
+  .my-tasks-page .white-space-nowrap {
+    white-space: nowrap; }
   .my-tasks-page .red {
     color: #c30a0a; }
   .my-tasks-page .purple {
@@ -16500,6 +16572,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .my-tasks-page .cursor-p {
       cursor: pointer; } }
+  .my-tasks-page .white-space-nowrap {
+    white-space: nowrap; }
   .my-tasks-page .red {
     color: #c30a0a; }
   .my-tasks-page .purple {
@@ -16681,6 +16755,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .my-tasks-page .cursor-p {
       cursor: pointer; } }
+  .my-tasks-page .white-space-nowrap {
+    white-space: nowrap; }
   .my-tasks-page .red {
     color: #c30a0a; }
   .my-tasks-page .purple {
@@ -17063,8 +17139,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 33.3%;
+      width: auto;
       height: 100%;
+      padding: 0 5px;
       font-weight: 300;
       color: #342e49;
       cursor: pointer; }
@@ -17382,7 +17459,30 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     align-items: center;
     justify-content: space-between;
     padding-bottom: 10px;
-    border-bottom: 1px solid #707070; }
+    border-bottom: 1px solid #707070;
+    font-family: "Raleway", sans-serif; }
+    .my-tasks-page .search .controls {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .my-tasks-page .search .new-ticket {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      height: 46px;
+      padding: 0 10px;
+      background-color: #585077;
+      color: #fff;
+      font-weight: 300;
+      font-size: 1rem;
+      border: none; }
+      .my-tasks-page .search .new-ticket .fa-plus-square {
+        margin-right: 10px;
+        font-size: 2rem; }
+      .my-tasks-page .search .new-ticket:focus {
+        outline: none; }
     .my-tasks-page .search .input-group {
       position: relative;
       display: flex;
@@ -18119,6 +18219,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .support-page .cursor-p {
       cursor: pointer; } }
+  .support-page .white-space-nowrap {
+    white-space: nowrap; }
   .support-page .red {
     color: #c30a0a; }
   .support-page .purple {
@@ -18132,6 +18234,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .support-page .cursor-p {
       cursor: pointer; } }
+  .support-page .white-space-nowrap {
+    white-space: nowrap; }
   .support-page .red {
     color: #c30a0a; }
   .support-page .purple {
@@ -18313,6 +18417,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .support-page .cursor-p {
       cursor: pointer; } }
+  .support-page .white-space-nowrap {
+    white-space: nowrap; }
   .support-page .red {
     color: #c30a0a; }
   .support-page .purple {
@@ -18695,8 +18801,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 33.3%;
+      width: auto;
       height: 100%;
+      padding: 0 5px;
       font-weight: 300;
       color: #342e49;
       cursor: pointer; }
@@ -19014,7 +19121,30 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     align-items: center;
     justify-content: space-between;
     padding-bottom: 10px;
-    border-bottom: 1px solid #707070; }
+    border-bottom: 1px solid #707070;
+    font-family: "Raleway", sans-serif; }
+    .support-page .search .controls {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .support-page .search .new-ticket {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      height: 46px;
+      padding: 0 10px;
+      background-color: #585077;
+      color: #fff;
+      font-weight: 300;
+      font-size: 1rem;
+      border: none; }
+      .support-page .search .new-ticket .fa-plus-square {
+        margin-right: 10px;
+        font-size: 2rem; }
+      .support-page .search .new-ticket:focus {
+        outline: none; }
     .support-page .search .input-group {
       position: relative;
       display: flex;
@@ -19063,7 +19193,184 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         color: #342e49;
         font-size: 1rem; }
   .support-page .content {
-    margin-top: 70px; }
+    margin-top: 40px; }
+  .support-page .gray-title {
+    font-weight: 300;
+    color: #b3b3b3; }
+  .support-page .content-heading {
+    border-bottom: 1px solid rgba(20, 46, 110, 0.1); }
+    .support-page .content-heading .id,
+    .support-page .content-heading .card-opening-date {
+      margin: 0 0 15px 0; }
+    .support-page .content-heading .card-opening-date {
+      position: relative; }
+      .support-page .content-heading .card-opening-date:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        transform: translate(0, -50%);
+        width: 1px;
+        height: 100%;
+        background-color: rgba(20, 46, 110, 0.1); }
+    .support-page .content-heading .date .fa-calendar {
+      margin: 0 10px; }
+  .support-page .content-body {
+    margin-top: 10px; }
+    .support-page .content-body .image-container {
+      width: 28px;
+      height: 28px;
+      border-radius: 5px; }
+    .support-page .content-body .last-replied-by {
+      position: relative; }
+      .support-page .content-body .last-replied-by:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        transform: translate(0, -50%);
+        width: 1px;
+        height: 100%;
+        background-color: rgba(20, 46, 110, 0.1); }
+      .support-page .content-body .last-replied-by .logo-image-container {
+        width: 30px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
+        background-color: #fff; }
+    .support-page .content-body .info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px; }
+      .support-page .content-body .info .image-container,
+      .support-page .content-body .info .logo-image-container {
+        margin-right: 15px; }
+      .support-page .content-body .info .info-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+  .support-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px; }
+  .support-page .ticket {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
+    background-color: #fff; }
+    .support-page .ticket.orange .decoration-element,
+    .support-page .ticket.orange .indicator {
+      background-color: #f6bc5d; }
+    .support-page .ticket.light-purple .decoration-element,
+    .support-page .ticket.light-purple .indicator {
+      background-color: #c65dfd; }
+    .support-page .ticket.sean-green .decoration-element,
+    .support-page .ticket.sean-green .indicator {
+      background-color: #12b7aa; }
+    .support-page .ticket .type {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .support-page .ticket .indicator {
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin-right: 15px;
+      border-radius: 5px; }
+    .support-page .ticket .decoration-element {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 85%;
+      border-radius: 20px; }
+  .support-page .left-side-col {
+    width: 50%;
+    max-width: 50%;
+    min-width: 550px; }
+  .support-page .status {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    padding: 0 15px;
+    border-radius: 5px;
+    color: #fff; }
+    .support-page .status.resolved {
+      background-color: #7ed321; }
+    .support-page .status.unresolved {
+      background-color: #d31616; }
+  .support-page .ticket-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 6px 0 15px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    background-color: #f8f8f8; }
+  .support-page .ticket-content {
+    padding: 15px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
+    background-color: #fff; }
+  .support-page .last-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .support-page .last-message:not(:last-of-type) {
+      margin-bottom: 15px; }
+    .support-page .last-message .message-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      min-height: 70px;
+      padding: 10px 20px;
+      border-radius: 20px; }
+    .support-page .last-message .message-card-heading {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 5px; }
+    .support-page .last-message.user-message .message-card {
+      border-top-left-radius: 0;
+      background-color: #f4eee6; }
+    .support-page .last-message.user-message .image-container {
+      width: 34px;
+      height: 34px;
+      margin-right: 15px;
+      border-radius: 5px; }
+    .support-page .last-message.admin-message .message-card {
+      border-top-right-radius: 0;
+      background-color: #e8e8e8; }
+    .support-page .last-message.admin-message .logo-image-container {
+      width: 40px;
+      height: 40px;
+      margin-left: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: #fff; }
+    .support-page .last-message .message {
+      margin: auto 0; }
   .support-page .content-col {
     margin-top: 20px;
     padding-right: 0;
@@ -19595,6 +19902,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .sign-in-and-sign-up-page .cursor-p {
       cursor: pointer; } }
+  .sign-in-and-sign-up-page .white-space-nowrap {
+    white-space: nowrap; }
   .sign-in-and-sign-up-page .red {
     color: #c30a0a; }
   .sign-in-and-sign-up-page .purple {
@@ -20247,6 +20556,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (min-width: 1200px) {
     .account-verification-page .cursor-p {
       cursor: pointer; } }
+  .account-verification-page .white-space-nowrap {
+    white-space: nowrap; }
   .account-verification-page .red {
     color: #c30a0a; }
   .account-verification-page .purple {

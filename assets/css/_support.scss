@@ -1,3 +1,267 @@
 .content {
-  margin-top: 70px;
+  margin-top: 40px;
+}
+
+.gray-title {
+  font-weight: 300;
+  color: #b3b3b3;
+}
+
+.content-heading {
+  border-bottom: 1px solid rgba(20, 46, 110, 0.1);
+
+  .id,
+  .card-opening-date {
+    margin: 0 0 15px 0;
+  }
+
+  .card-opening-date {
+    position: relative;
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translate(0, -50%);
+      width: 1px;
+      height: 100%;
+      background-color: rgba(20, 46, 110, 0.1);
+    }
+  }
+
+  .date {
+    .fa-calendar {
+      margin: 0 10px;
+    }
+  }
+}
+
+.content-body {
+  margin-top: 10px;
+
+  .image-container {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+  }
+
+  .last-replied-by {
+    position: relative;
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translate(0, -50%);
+      width: 1px;
+      height: 100%;
+      background-color: rgba(20, 46, 110, 0.1);
+    }
+
+    .logo-image-container {
+      width: 30px;
+      height: 25px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+
+    .image-container,
+    .logo-image-container {
+      margin-right: 15px;
+    }
+
+    .info-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+// Ticket
+.ticket {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
+  background-color: #fff;
+
+  &.orange {
+    .decoration-element,
+    .indicator {
+      background-color: #f6bc5d;
+    }
+  }
+
+  &.light-purple {
+    .decoration-element,
+    .indicator {
+      background-color: #c65dfd;
+    }
+  }
+
+  &.sean-green {
+    .decoration-element,
+    .indicator {
+      background-color: #12b7aa;
+    }
+  }
+
+  .type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .indicator {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+
+  .decoration-element {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 85%;
+    border-radius: 20px;
+  }
+}
+
+.left-side-col {
+  width: 50%;
+  max-width: 50%;
+  min-width: 550px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 15px;
+  border-radius: 5px;
+  color: #fff;
+
+  &.resolved {
+    background-color: #7ed321;
+  }
+
+  &.unresolved {
+    background-color: #d31616;
+  }
+}
+
+.ticket-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding: 0 6px 0 15px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  background-color: #f8f8f8;
+}
+
+.ticket-content {
+  padding: 15px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
+  background-color: #fff;
+}
+
+.last-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  .message-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  .message-card-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  &.user-message {
+    .message-card {
+      border-top-left-radius: 0;
+      background-color: #f4eee6;
+    }
+
+    .image-container {
+      width: 34px;
+      height: 34px;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+  }
+
+  &.admin-message {
+    .message-card {
+      border-top-right-radius: 0;
+      background-color: #e8e8e8;
+    }
+
+    .logo-image-container {
+      width: 40px;
+      height: 40px;
+      margin-left: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+  }
+
+  .message {
+    margin: auto 0;
+  }
 }

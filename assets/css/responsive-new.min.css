@@ -14,6 +14,9 @@
   .cursor-p {
     cursor: pointer; } }
 
+.white-space-nowrap {
+  white-space: nowrap; }
+
 .red {
   color: #c30a0a; }
 
@@ -32,6 +35,9 @@
 @media (min-width: 1200px) {
   .cursor-p {
     cursor: pointer; } }
+
+.white-space-nowrap {
+  white-space: nowrap; }
 
 .red {
   color: #c30a0a; }
@@ -1470,6 +1476,16 @@
   .my-tasks-page .task-col {
     min-width: 300px; } }
 
+@media (max-width: 1499px) {
+  .support-page .right-side-col {
+    display: none; } }
+
+@media (max-width: 991px) {
+  .support-page .content {
+    margin-top: 90px; }
+  .support-page .new-ticket {
+    transform: translate(310%, 144%); } }
+
 @media (min-width: 300px) {
   .summary-page .content-container {
     max-width: 100%;
@@ -2210,6 +2226,8 @@
   @media (min-width: 1200px) {
     .system-campaign .cursor-p {
       cursor: pointer; } }
+  .system-campaign .white-space-nowrap {
+    white-space: nowrap; }
   .system-campaign .red {
     color: #c30a0a; }
   .system-campaign .purple {

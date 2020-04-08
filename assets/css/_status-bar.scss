@@ -62,8 +62,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33.3%;
+    //width: 33.3%;
+    width: auto;
     height: 100%;
+    padding: 0 5px;
     font-weight: 300;
     color: #342e49;
     cursor: pointer;
