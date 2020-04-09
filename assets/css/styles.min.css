@@ -1606,10 +1606,11 @@ body ::-webkit-scrollbar-thumb:hover {
     .wrapper-c .nav-menu .active span i {
       color: #585077; }
   .wrapper-c .nav-sub-menu {
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 64px;
     margin: 0;
     padding: 0 20px;
@@ -1621,12 +1622,9 @@ body ::-webkit-scrollbar-thumb:hover {
     overflow-x: hidden;
     transition: transform 300ms ease-out; }
     .wrapper-c .nav-sub-menu.is-hidden {
-      width: 100%;
       transform: translate(0%, 0%); }
     .wrapper-c .nav-sub-menu.is-active {
-      position: fixed;
-      transform: translate(0%, 100%);
-      width: 90%; }
+      transform: translate(0%, 100%); }
     .wrapper-c .nav-sub-menu > li:not(:last-child) {
       border-right: 2px solid #d7d7d7; }
     .wrapper-c .nav-sub-menu > li:first-child a {
@@ -17892,6 +17890,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       margin-left: -15px;
       padding-left: 15px;
       background-color: #fff; }
+      .my-tasks-page .content-col .search.big-space {
+        top: 230px; }
       .my-tasks-page .content-col .search .title {
         white-space: nowrap; }
       .my-tasks-page .content-col .search .input-group {
@@ -19580,6 +19580,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       margin-left: -15px;
       padding-left: 15px;
       background-color: #fff; }
+      .support-page .content-col .search.big-space {
+        top: 230px; }
       .support-page .content-col .search .title {
         white-space: nowrap; }
       .support-page .content-col .search .input-group {

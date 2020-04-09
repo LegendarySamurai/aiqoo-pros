@@ -7,7 +7,6 @@
   .search {
     position: sticky;
     top: 150px;
-    //top: 230px;
     z-index: 200;
     align-items: flex-end;
     width: calc(100% + 17px);
@@ -15,6 +14,10 @@
     margin-left: -15px;
     padding-left: 15px;
     background-color: #fff;
+
+    &.big-space {
+      top: 230px;
+    }
 
     .title {
       white-space: nowrap;

@@ -18,6 +18,7 @@ function closeSideBar() {
 const navMenuItems = document.querySelectorAll(".wrapper-c .nav-menu .nav-menu-item");
 const navSubMenu = document.querySelector(".wrapper-c .nav-sub-menu");
 const mainRow = document.querySelector('#main-row');
+const contentSearchInput = document.querySelector('#content-search-input');
 let subMenuIsVisible = false;
 // console.log('=>', navMenuHeader);
 
@@ -45,55 +46,14 @@ navMenuItems.forEach(item => {
 			subMenuIsVisible = false;
 		});
 	}
-
-
-	// item.addEventListener('mouseover', function() {
-	// 	// console.log('=> Worked');
-	//
-	// 	if (navSubMenu.classList.contains('is-active')) {
-	// 		subMenuIsVisible = true;
-	// 		return;
-	// 		// mainRow.classList.add('nav-bar-is-opened');
-	// 	} else {
-	// 		navSubMenu.classList.remove('is-hidden');
-	// 		navSubMenu.classList.add('is-active');
-	// 		mainRow.classList.add('nav-bar-is-opened');
-	// 		// subMenuIsVisible = true;
-	// 		// mainRow.classList.remove('nav-bar-is-opened');
-	// 	}
-	// 	//
-	// 	// navSubMenu.classList.remove('is-hidden');
-	// 	// navSubMenu.classList.add('is-active');
-	// 	// mainRow.classList.add('nav-bar-is-opened');
-	// 	// subMenuIsVisible = true;
-	// });
-	// item.addEventListener('mouseout', function() {
-	//
-	// 	if (navSubMenu.classList.contains('is-active')) {
-	// 		return;
-	// 		// navSubMenu.classList.add('is-hidden');
-	// 		// mainRow.classList.remove('nav-bar-is-opened');
-	// 	} else {
-	// 		navSubMenu.classList.remove('is-active');
-	// 		navSubMenu.classList.add('is-hidden');
-	// 		mainRow.classList.remove('nav-bar-is-opened');
-	// 		subMenuIsVisible = false;
-	// 	}
-	//
-	// 	if (!navSubMenu.classList.contains('is-active')) {
-	//
-	// 	}
-	// 	//
-	// 	// navSubMenu.classList.add('is-hidden');
-	// 	// navSubMenu.classList.remove('is-active');
-	// 	// mainRow.classList.remove('nav-bar-is-opened');
-	// });
 });
 
 if (navSubMenu.classList.contains('is-active')) {
 	mainRow.classList.add('nav-bar-is-opened');
+	contentSearchInput.classList.add('big-space');
 } else {
 	mainRow.classList.remove('nav-bar-is-opened');
+	contentSearchInput.classList.remove('big-space');
 }
 
 // EOL: Igor

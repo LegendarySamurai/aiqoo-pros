@@ -658,10 +658,11 @@ body {
     // Created by Igor Feb 13th, 2020
 
     & .nav-sub-menu {
+        position: fixed;
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 100%;
+        width: 90%;
         height: 64px;
         margin: 0;
         padding: 0 20px;
@@ -674,17 +675,16 @@ body {
         transition: transform 300ms ease-out;
 
         &.is-hidden {
-            width: 100%;
+            //width: 90%;
             transform: translate(0%, 0%);
         }
 
         &.is-active {
-            position: fixed;
             //bottom: auto;
             //left: 50%;
             //top: 64px;
             transform: translate(0%, 100%);
-            width: 90%;
+            //width: 90%;
         }
 
         & > li:not(:last-child) {
