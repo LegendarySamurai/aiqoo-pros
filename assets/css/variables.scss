@@ -118,3 +118,21 @@ $max_font: 24px;
 @mixin placeholderFontSize {
     font-size: 1.4rem;
 }
+
+// Display
+
+.d-600-none {
+    display: flex !important;
+
+    @media(max-width: 599px) {
+        display: none !important;
+    }
+}
+
+.d-600-flex {
+    display: none !important;
+
+    @media(max-width: 599px) {
+        display: flex !important;
+    }
+}

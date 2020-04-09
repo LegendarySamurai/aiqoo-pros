@@ -32,6 +32,18 @@
 .font-w-500 {
   font-weight: 500; }
 
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
+
 @media (min-width: 1200px) {
   .cursor-p {
     cursor: pointer; } }
@@ -53,6 +65,18 @@
 
 .font-w-500 {
   font-weight: 500; }
+
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
 
 .only-in-mobile {
   display: none !important; }
@@ -1429,18 +1453,6 @@
     padding-left: 15px; }
     .my-tasks-page .list-heading .list-heading-inner {
       border-bottom: 0; }
-  .my-tasks-page .task-card .label {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px; }
-  .my-tasks-page .task-card .label.is-active .more .fa-chevron-down {
-    transform: rotate(0); }
-  .my-tasks-page .task-card .more .fa-chevron-down {
-    transform: rotate(180deg);
-    margin-left: 10px; }
   .my-tasks-page .task-card-inner.is-active .client-info {
     padding: 0 10px;
     background-color: #fff; }
@@ -1477,14 +1489,162 @@
     min-width: 300px; } }
 
 @media (max-width: 1499px) {
+  .support-page .right-side-col .message-card-heading {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; } }
+
+@media (max-width: 1299px) {
   .support-page .right-side-col {
-    display: none; } }
+    display: none; }
+  .support-page .left-side-col {
+    width: 100%;
+    max-width: 100%;
+    min-width: inherit; } }
 
 @media (max-width: 991px) {
+  .support-page .content-col .search .input-group {
+    flex-grow: 1;
+    width: auto; }
   .support-page .content {
-    margin-top: 90px; }
-  .support-page .new-ticket {
-    transform: translate(310%, 144%); } }
+    margin-top: 30px; }
+  .support-page .controls .new-ticket {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .support-page .controls .new-ticket .fa-plus-square {
+      margin-right: 0;
+      font-size: 1.25rem;
+      margin-bottom: 5px; }
+  .support-page .card-opening-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .support-page .card-opening-date .date {
+      margin-top: 5px; }
+      .support-page .card-opening-date .date .fa-calendar {
+        margin: 0 10px 0 0; } }
+
+@media (max-width: 767px) {
+  .support-page .status {
+    line-height: 1.125;
+    padding: 0 13px !important;
+    font-size: 0 !important; }
+  .support-page .controls .new-ticket {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 72px;
+    height: 68px;
+    padding: 0; }
+    .support-page .controls .new-ticket .fa-plus-square {
+      font-size: 2.125rem; }
+  .support-page .ticket.orange .ticket-header {
+    background-color: #f6bc5d; }
+  .support-page .ticket.light-purple .ticket-header {
+    background-color: #c65dfd; }
+  .support-page .ticket.sean-green .ticket-header {
+    background-color: #12b7aa; }
+  .support-page .label {
+    color: #fff !important; }
+    .support-page .label .indicator {
+      display: none; }
+  .support-page .decoration-element {
+    display: none; } }
+
+@media (max-width: 599px) {
+  .support-page .content-heading .id {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .support-page .ticket {
+    max-width: 90%;
+    margin: 0 auto 26px; }
+    .support-page .ticket .ticket-header .type {
+      font-size: 1rem !important; }
+    .support-page .ticket .ticket-content.is-active .last-message {
+      display: none; }
+    .support-page .ticket .ticket-content.is-active .last-replied-by::before {
+      display: none; }
+    .support-page .ticket .ticket-content .id span,
+    .support-page .ticket .ticket-content .info-content span,
+    .support-page .ticket .ticket-content .last-replied-by span {
+      font-size: .9rem !important; }
+    .support-page .ticket .ticket-content .id .status,
+    .support-page .ticket .ticket-content .info-content .status,
+    .support-page .ticket .ticket-content .last-replied-by .status {
+      font-size: 1rem !important; }
+    .support-page .ticket .ticket-content .gray-title {
+      font-size: .8rem !important; }
+    .support-page .ticket .ticket-content .date,
+    .support-page .ticket .ticket-content .user-name {
+      font-size: .9rem !important; }
+    .support-page .ticket .ticket-content .info span {
+      font-size: .8rem !important; }
+    .support-page .ticket .id .status {
+      padding: 0 10px;
+      font-size: inherit !important; }
+    .support-page .ticket .content-body {
+      margin-top: 0; }
+    .support-page .ticket .id,
+    .support-page .ticket .created-by,
+    .support-page .ticket .last-replied-by {
+      position: relative;
+      margin-bottom: 15px; }
+      .support-page .ticket .id::before,
+      .support-page .ticket .created-by::before,
+      .support-page .ticket .last-replied-by::before {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        height: 1px;
+        background-color: rgba(20, 46, 110, 0.1); }
+    .support-page .ticket .last-replied-by {
+      margin-top: 5px; }
+      .support-page .ticket .last-replied-by::before {
+        top: auto; }
+    .support-page .ticket .card-opening-date {
+      margin-top: 5px; }
+      .support-page .ticket .card-opening-date::before {
+        display: none; }
+    .support-page .ticket .right-side-col {
+      display: flex; }
+    .support-page .ticket .right-side {
+      width: 100%; }
+    .support-page .ticket .last-message {
+      display: flex;
+      margin-top: 15px; }
+      .support-page .ticket .last-message .message-card {
+        margin-top: 10px; }
+        .support-page .ticket .last-message .message-card .author-name {
+          font-size: 0.8rem !important; }
+        .support-page .ticket .last-message .message-card .updated {
+          font-size: 0.7rem !important; }
+        .support-page .ticket .last-message .message-card .message {
+          font-size: 0.6rem !important; }
+      .support-page .ticket .last-message.admin-message {
+        align-items: flex-end; }
+      .support-page .ticket .last-message.user-message .message-card {
+        border-top-right-radius: 20px;
+        border-top-left-radius: 0; }
+      .support-page .ticket .last-message .message-card-heading {
+        flex-direction: column-reverse; }
+      .support-page .ticket .last-message .logo-image-container {
+        margin-left: 0; }
+      .support-page .ticket .last-message .image-container {
+        margin-right: 0; }
+      .support-page .ticket .last-message.admin-message {
+        flex-direction: column-reverse;
+        justify-content: flex-start; }
+      .support-page .ticket .last-message.user-message {
+        flex-direction: column;
+        justify-content: flex-end; } }
 
 @media (min-width: 300px) {
   .summary-page .content-container {
@@ -2238,6 +2398,16 @@
     font-weight: 300; }
   .system-campaign .font-w-500 {
     font-weight: 500; }
+  .system-campaign .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .system-campaign .d-600-none {
+        display: none !important; } }
+  .system-campaign .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .system-campaign .d-600-flex {
+        display: flex !important; } }
   @media (max-width: 1599px) {
     .system-campaign .warning {
       text-align: right; } }

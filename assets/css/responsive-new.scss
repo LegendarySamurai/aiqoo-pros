@@ -1222,34 +1222,6 @@
       }
     }
 
-    .task-card {
-      .label {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 0 20px;
-      }
-
-      .label {
-        &.is-active {
-          .more {
-            .fa-chevron-down {
-              transform: rotate(0);
-            }
-          }
-        }
-      }
-
-      .more {
-        .fa-chevron-down {
-          transform: rotate(180deg);
-          margin-left: 10px;
-        }
-      }
-    }
-
     .task-card-inner {
       &.is-active {
         .client-info {
@@ -1320,25 +1292,300 @@
 
   @media(max-width: 1499px) {
     .right-side-col {
+      .message-card-heading {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  @media(max-width: 1299px) {
+    .right-side-col {
       display: none;
+    }
+
+    .left-side-col {
+      width: 100%;
+      max-width: 100%;
+      min-width: inherit;
     }
   }
 
   @media(max-width: 1199px) {}
 
   @media(max-width: 991px) {
-    .content {
-      margin-top: 90px;
+    // only for this page styles
+    .content-col {
+      .search {
+        .input-group {
+          flex-grow: 1;
+          width: auto;
+        }
+      }
     }
 
-    .new-ticket {
-      transform: translate(310%, 144%);
+    .content {
+      margin-top: 30px;
+    }
+
+    .controls {
+      .new-ticket {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .fa-plus-square {
+          margin-right: 0;
+          font-size: 1.25rem;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .card-opening-date {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .date {
+        margin-top: 5px;
+
+        .fa-calendar {
+          margin: 0 10px 0 0;
+        }
+      }
     }
   }
 
-  @media(max-width: 767px) {}
+  @media(max-width: 767px) {
+    .status {
+      line-height: 1.125;
+      padding: 0 13px !important;
+      font-size: 0 !important;
+    }
 
-  @media(max-width: 599px) {}
+    .controls {
+      .new-ticket {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 72px;
+        height: 68px;
+        padding: 0;
+
+        .fa-plus-square {
+          font-size: 2.125rem;
+        }
+      }
+    }
+
+    .ticket {
+      &.orange {
+        .ticket-header {
+          background-color: #f6bc5d;
+        }
+      }
+
+      &.light-purple {
+        .ticket-header {
+          background-color: #c65dfd;
+        }
+      }
+
+      &.sean-green {
+        .ticket-header {
+          background-color: #12b7aa;
+        }
+      }
+    }
+
+    .label {
+      color: #fff !important;
+
+      .indicator {
+        display: none;
+      }
+    }
+    .decoration-element {
+      display: none;
+    }
+  }
+
+  @media(max-width: 599px) {
+    .content-heading {
+      .id {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    // Ticket
+    .ticket {
+      max-width: 90%;
+      margin: 0 auto 26px;
+
+      .ticket-header {
+        .type {
+          font-size: 1rem !important;
+        }
+      }
+
+      .ticket-content {
+        &.is-active {
+          .last-message {
+            display: none;
+          }
+
+          .last-replied-by {
+            &::before {
+              display: none;
+            }
+          }
+        }
+
+        .id,
+        .info-content,
+        .last-replied-by {
+          span {
+            font-size: .9rem !important;
+          }
+
+          .status {
+            font-size: 1rem !important;
+          }
+        }
+
+        .gray-title {
+          font-size: .8rem !important;
+        }
+
+        .date,
+        .user-name {
+          font-size: .9rem !important;
+        }
+
+        .info {
+          span {
+            font-size: .8rem !important;
+          }
+        }
+      }
+
+      .id {
+        .status {
+          padding: 0 10px;
+          font-size: inherit !important;
+        }
+      }
+
+      .content-body {
+        margin-top: 0;
+      }
+
+      // Left side col
+      .id,
+      .created-by,
+      .last-replied-by {
+        position: relative;
+        margin-bottom: 15px;
+
+        &::before {
+          display: block;
+          content: '';
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          width: 100%;
+          height: 1px;
+          background-color: rgba(20, 46, 110, 0.1);
+        }
+      }
+
+      .last-replied-by {
+        margin-top: 5px;
+
+        &::before {
+          top: auto;
+        }
+      }
+
+      .card-opening-date {
+        margin-top: 5px;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      // Right side col
+      .right-side-col {
+        display: flex;
+      }
+
+      .right-side {
+        width: 100%;
+      }
+
+      .last-message {
+        display: flex;
+        margin-top: 15px;
+
+        .message-card {
+          margin-top: 10px;
+
+          .author-name {
+            font-size: 0.8rem !important;
+          }
+
+          .updated {
+            font-size: 0.7rem !important;
+          }
+
+          .message {
+            font-size: 0.6rem !important;
+          }
+        }
+
+        &.admin-message {
+          align-items: flex-end;
+        }
+
+        &.user-message {
+          .message-card {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 0;
+          }
+        }
+
+        .message-card-heading {
+          flex-direction: column-reverse;
+        }
+
+        .logo-image-container {
+          margin-left: 0;
+        }
+
+        .image-container {
+          margin-right: 0;
+        }
+
+        &.admin-message {
+          flex-direction: column-reverse;
+          justify-content: flex-start;
+        }
+
+        &.user-message {
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
 
   @media(max-width: 374px) {}
 }

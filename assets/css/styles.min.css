@@ -243,6 +243,12 @@ app {
 .f-r-l {
   font-size: calc(100vw * 0.01); }
 
+.font-6 {
+  font-size: 6pt; }
+
+.font-7 {
+  font-size: 7pt; }
+
 .font-8 {
   font-size: 8pt; }
 
@@ -290,6 +296,12 @@ app {
 
 .font-50 {
   font-size: 50pt; }
+
+.font-r-6 {
+  font-size: 0.6rem !important; }
+
+.font-r-7 {
+  font-size: 0.7rem !important; }
 
 .font-r-8 {
   font-size: 0.8rem !important; }
@@ -340,6 +352,10 @@ app {
   font-size: 5rem !important; }
 
 @media (max-width: 1200px) {
+  .font-r-6 {
+    font-size: 0.54rem !important; }
+  .font-r-7 {
+    font-size: 0.63rem !important; }
   .font-r-8 {
     font-size: 0.72rem !important; }
   .font-r-9 {
@@ -374,6 +390,10 @@ app {
     font-size: 4.5rem !important; } }
 
 @media (max-width: 600px) {
+  .font-r-6 {
+    font-size: 0.48rem !important; }
+  .font-r-7 {
+    font-size: 0.56rem !important; }
   .font-r-8 {
     font-size: 0.64rem !important; }
   .font-r-9 {
@@ -842,6 +862,18 @@ img {
 .font-w-500 {
   font-weight: 500; }
 
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
+
 .accordion-items {
   overflow-y: scroll; }
 
@@ -901,6 +933,18 @@ img {
 
 .font-w-500 {
   font-weight: 500; }
+
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
 
 /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -5127,6 +5171,12 @@ app {
 .f-r-l {
   font-size: calc(100vw * 0.01); }
 
+.font-6 {
+  font-size: 6pt; }
+
+.font-7 {
+  font-size: 7pt; }
+
 .font-8 {
   font-size: 8pt; }
 
@@ -5174,6 +5224,12 @@ app {
 
 .font-50 {
   font-size: 50pt; }
+
+.font-r-6 {
+  font-size: 0.6rem !important; }
+
+.font-r-7 {
+  font-size: 0.7rem !important; }
 
 .font-r-8 {
   font-size: 0.8rem !important; }
@@ -5224,6 +5280,10 @@ app {
   font-size: 5rem !important; }
 
 @media (max-width: 1200px) {
+  .font-r-6 {
+    font-size: 0.54rem !important; }
+  .font-r-7 {
+    font-size: 0.63rem !important; }
   .font-r-8 {
     font-size: 0.72rem !important; }
   .font-r-9 {
@@ -5258,6 +5318,10 @@ app {
     font-size: 4.5rem !important; } }
 
 @media (max-width: 600px) {
+  .font-r-6 {
+    font-size: 0.48rem !important; }
+  .font-r-7 {
+    font-size: 0.56rem !important; }
   .font-r-8 {
     font-size: 0.64rem !important; }
   .font-r-9 {
@@ -5726,6 +5790,18 @@ img {
 .font-w-500 {
   font-weight: 500; }
 
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
+
 .accordion-items {
   overflow-y: scroll; }
 
@@ -5785,6 +5861,18 @@ img {
 
 .font-w-500 {
   font-weight: 500; }
+
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
 
 /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -6029,6 +6117,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .my-profile-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .my-profile-page .font-6 {
+    font-size: 6pt; }
+  .my-profile-page .font-7 {
+    font-size: 7pt; }
   .my-profile-page .font-8 {
     font-size: 8pt; }
   .my-profile-page .font-9 {
@@ -6061,6 +6153,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .my-profile-page .font-50 {
     font-size: 50pt; }
+  .my-profile-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .my-profile-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .my-profile-page .font-r-8 {
     font-size: 0.8rem !important; }
   .my-profile-page .font-r-9 {
@@ -6094,6 +6190,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .my-profile-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .my-profile-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .my-profile-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .my-profile-page .font-r-8 {
       font-size: 0.72rem !important; }
     .my-profile-page .font-r-9 {
@@ -6127,6 +6227,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .my-profile-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .my-profile-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .my-profile-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .my-profile-page .font-r-8 {
       font-size: 0.64rem !important; }
     .my-profile-page .font-r-9 {
@@ -6483,6 +6587,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .my-profile-page .font-w-500 {
     font-weight: 500; }
+  .my-profile-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .my-profile-page .d-600-none {
+        display: none !important; } }
+  .my-profile-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .my-profile-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .my-profile-page .cursor-p {
       cursor: pointer; } }
@@ -6498,6 +6612,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .my-profile-page .font-w-500 {
     font-weight: 500; }
+  .my-profile-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .my-profile-page .d-600-none {
+        display: none !important; } }
+  .my-profile-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .my-profile-page .d-600-flex {
+        display: flex !important; } }
   .my-profile-page form {
     font-family: "Raleway", sans-serif; }
     .my-profile-page form .input-group-select {
@@ -6861,6 +6985,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .add-company-profile-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .add-company-profile-page .font-6 {
+    font-size: 6pt; }
+  .add-company-profile-page .font-7 {
+    font-size: 7pt; }
   .add-company-profile-page .font-8 {
     font-size: 8pt; }
   .add-company-profile-page .font-9 {
@@ -6893,6 +7021,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .add-company-profile-page .font-50 {
     font-size: 50pt; }
+  .add-company-profile-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .add-company-profile-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .add-company-profile-page .font-r-8 {
     font-size: 0.8rem !important; }
   .add-company-profile-page .font-r-9 {
@@ -6926,6 +7058,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-company-profile-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .add-company-profile-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .add-company-profile-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .add-company-profile-page .font-r-8 {
       font-size: 0.72rem !important; }
     .add-company-profile-page .font-r-9 {
@@ -6959,6 +7095,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .add-company-profile-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .add-company-profile-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .add-company-profile-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .add-company-profile-page .font-r-8 {
       font-size: 0.64rem !important; }
     .add-company-profile-page .font-r-9 {
@@ -7315,6 +7455,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-company-profile-page .font-w-500 {
     font-weight: 500; }
+  .add-company-profile-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-none {
+        display: none !important; } }
+  .add-company-profile-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .add-company-profile-page .cursor-p {
       cursor: pointer; } }
@@ -7330,6 +7480,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-company-profile-page .font-w-500 {
     font-weight: 500; }
+  .add-company-profile-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-none {
+        display: none !important; } }
+  .add-company-profile-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-flex {
+        display: flex !important; } }
   .add-company-profile-page form {
     font-family: "Raleway", sans-serif; }
     .add-company-profile-page form .input-group-select {
@@ -7685,6 +7845,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .add-company-profile-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .add-company-profile-page .font-6 {
+    font-size: 6pt; }
+  .add-company-profile-page .font-7 {
+    font-size: 7pt; }
   .add-company-profile-page .font-8 {
     font-size: 8pt; }
   .add-company-profile-page .font-9 {
@@ -7717,6 +7881,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .add-company-profile-page .font-50 {
     font-size: 50pt; }
+  .add-company-profile-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .add-company-profile-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .add-company-profile-page .font-r-8 {
     font-size: 0.8rem !important; }
   .add-company-profile-page .font-r-9 {
@@ -7750,6 +7918,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-company-profile-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .add-company-profile-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .add-company-profile-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .add-company-profile-page .font-r-8 {
       font-size: 0.72rem !important; }
     .add-company-profile-page .font-r-9 {
@@ -7783,6 +7955,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .add-company-profile-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .add-company-profile-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .add-company-profile-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .add-company-profile-page .font-r-8 {
       font-size: 0.64rem !important; }
     .add-company-profile-page .font-r-9 {
@@ -8139,6 +8315,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-company-profile-page .font-w-500 {
     font-weight: 500; }
+  .add-company-profile-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-none {
+        display: none !important; } }
+  .add-company-profile-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .add-company-profile-page .cursor-p {
       cursor: pointer; } }
@@ -8154,6 +8340,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-company-profile-page .font-w-500 {
     font-weight: 500; }
+  .add-company-profile-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-none {
+        display: none !important; } }
+  .add-company-profile-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-flex {
+        display: flex !important; } }
   .add-company-profile-page form {
     font-family: "Raleway", sans-serif; }
     .add-company-profile-page form .input-group-select {
@@ -8337,6 +8533,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-company-profile-page .font-w-500 {
     font-weight: 500; }
+  .add-company-profile-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-none {
+        display: none !important; } }
+  .add-company-profile-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-company-profile-page .d-600-flex {
+        display: flex !important; } }
   .add-company-profile-page .tabs {
     display: flex;
     flex-direction: row;
@@ -8684,6 +8890,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .summary-page-container .font-w-500 {
     font-weight: 500; }
+  .summary-page-container .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .summary-page-container .d-600-none {
+        display: none !important; } }
+  .summary-page-container .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .summary-page-container .d-600-flex {
+        display: flex !important; } }
   .summary-page-container .summary-page .content-container {
     background-color: #fff;
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16); }
@@ -8830,6 +9046,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .summary-page-empty-container .font-w-500 {
     font-weight: 500; }
+  .summary-page-empty-container .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .summary-page-empty-container .d-600-none {
+        display: none !important; } }
+  .summary-page-empty-container .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .summary-page-empty-container .d-600-flex {
+        display: flex !important; } }
   .summary-page-empty-container .summary-page .content-container {
     background-color: #fff;
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16); }
@@ -9029,6 +9255,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .add-portfolio-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .add-portfolio-page .font-6 {
+    font-size: 6pt; }
+  .add-portfolio-page .font-7 {
+    font-size: 7pt; }
   .add-portfolio-page .font-8 {
     font-size: 8pt; }
   .add-portfolio-page .font-9 {
@@ -9061,6 +9291,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .add-portfolio-page .font-50 {
     font-size: 50pt; }
+  .add-portfolio-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .add-portfolio-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .add-portfolio-page .font-r-8 {
     font-size: 0.8rem !important; }
   .add-portfolio-page .font-r-9 {
@@ -9094,6 +9328,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-portfolio-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .add-portfolio-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .add-portfolio-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .add-portfolio-page .font-r-8 {
       font-size: 0.72rem !important; }
     .add-portfolio-page .font-r-9 {
@@ -9127,6 +9365,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .add-portfolio-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .add-portfolio-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .add-portfolio-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .add-portfolio-page .font-r-8 {
       font-size: 0.64rem !important; }
     .add-portfolio-page .font-r-9 {
@@ -9483,6 +9725,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-portfolio-page .font-w-500 {
     font-weight: 500; }
+  .add-portfolio-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-none {
+        display: none !important; } }
+  .add-portfolio-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .add-portfolio-page .cursor-p {
       cursor: pointer; } }
@@ -9498,6 +9750,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-portfolio-page .font-w-500 {
     font-weight: 500; }
+  .add-portfolio-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-none {
+        display: none !important; } }
+  .add-portfolio-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-flex {
+        display: flex !important; } }
   .add-portfolio-page form {
     font-family: "Raleway", sans-serif; }
     .add-portfolio-page form .input-group-select {
@@ -9853,6 +10115,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .add-portfolio-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .add-portfolio-page .font-6 {
+    font-size: 6pt; }
+  .add-portfolio-page .font-7 {
+    font-size: 7pt; }
   .add-portfolio-page .font-8 {
     font-size: 8pt; }
   .add-portfolio-page .font-9 {
@@ -9885,6 +10151,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .add-portfolio-page .font-50 {
     font-size: 50pt; }
+  .add-portfolio-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .add-portfolio-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .add-portfolio-page .font-r-8 {
     font-size: 0.8rem !important; }
   .add-portfolio-page .font-r-9 {
@@ -9918,6 +10188,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-portfolio-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .add-portfolio-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .add-portfolio-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .add-portfolio-page .font-r-8 {
       font-size: 0.72rem !important; }
     .add-portfolio-page .font-r-9 {
@@ -9951,6 +10225,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .add-portfolio-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .add-portfolio-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .add-portfolio-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .add-portfolio-page .font-r-8 {
       font-size: 0.64rem !important; }
     .add-portfolio-page .font-r-9 {
@@ -10307,6 +10585,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-portfolio-page .font-w-500 {
     font-weight: 500; }
+  .add-portfolio-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-none {
+        display: none !important; } }
+  .add-portfolio-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .add-portfolio-page .cursor-p {
       cursor: pointer; } }
@@ -10322,6 +10610,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-portfolio-page .font-w-500 {
     font-weight: 500; }
+  .add-portfolio-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-none {
+        display: none !important; } }
+  .add-portfolio-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-flex {
+        display: flex !important; } }
   .add-portfolio-page form {
     font-family: "Raleway", sans-serif; }
     .add-portfolio-page form .input-group-select {
@@ -10505,6 +10803,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .add-portfolio-page .font-w-500 {
     font-weight: 500; }
+  .add-portfolio-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-none {
+        display: none !important; } }
+  .add-portfolio-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .add-portfolio-page .d-600-flex {
+        display: flex !important; } }
   .add-portfolio-page .tabs {
     display: flex;
     flex-direction: row;
@@ -10920,6 +11228,12 @@ app {
 .f-r-l {
   font-size: calc(100vw * 0.01); }
 
+.font-6 {
+  font-size: 6pt; }
+
+.font-7 {
+  font-size: 7pt; }
+
 .font-8 {
   font-size: 8pt; }
 
@@ -10967,6 +11281,12 @@ app {
 
 .font-50 {
   font-size: 50pt; }
+
+.font-r-6 {
+  font-size: 0.6rem !important; }
+
+.font-r-7 {
+  font-size: 0.7rem !important; }
 
 .font-r-8 {
   font-size: 0.8rem !important; }
@@ -11017,6 +11337,10 @@ app {
   font-size: 5rem !important; }
 
 @media (max-width: 1200px) {
+  .font-r-6 {
+    font-size: 0.54rem !important; }
+  .font-r-7 {
+    font-size: 0.63rem !important; }
   .font-r-8 {
     font-size: 0.72rem !important; }
   .font-r-9 {
@@ -11051,6 +11375,10 @@ app {
     font-size: 4.5rem !important; } }
 
 @media (max-width: 600px) {
+  .font-r-6 {
+    font-size: 0.48rem !important; }
+  .font-r-7 {
+    font-size: 0.56rem !important; }
   .font-r-8 {
     font-size: 0.64rem !important; }
   .font-r-9 {
@@ -11519,6 +11847,18 @@ img {
 .font-w-500 {
   font-weight: 500; }
 
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
+
 @media (min-width: 1200px) {
   .cursor-p {
     cursor: pointer; } }
@@ -11540,6 +11880,18 @@ img {
 
 .font-w-500 {
   font-weight: 500; }
+
+.d-600-none {
+  display: flex !important; }
+  @media (max-width: 599px) {
+    .d-600-none {
+      display: none !important; } }
+
+.d-600-flex {
+  display: none !important; }
+  @media (max-width: 599px) {
+    .d-600-flex {
+      display: flex !important; } }
 
 /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -11843,6 +12195,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .landing-sign-up .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .landing-sign-up .font-6 {
+    font-size: 6pt; }
+  .landing-sign-up .font-7 {
+    font-size: 7pt; }
   .landing-sign-up .font-8 {
     font-size: 8pt; }
   .landing-sign-up .font-9 {
@@ -11875,6 +12231,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .landing-sign-up .font-50 {
     font-size: 50pt; }
+  .landing-sign-up .font-r-6 {
+    font-size: 0.6rem !important; }
+  .landing-sign-up .font-r-7 {
+    font-size: 0.7rem !important; }
   .landing-sign-up .font-r-8 {
     font-size: 0.8rem !important; }
   .landing-sign-up .font-r-9 {
@@ -11908,6 +12268,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .landing-sign-up .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .landing-sign-up .font-r-6 {
+      font-size: 0.54rem !important; }
+    .landing-sign-up .font-r-7 {
+      font-size: 0.63rem !important; }
     .landing-sign-up .font-r-8 {
       font-size: 0.72rem !important; }
     .landing-sign-up .font-r-9 {
@@ -11941,6 +12305,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .landing-sign-up .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .landing-sign-up .font-r-6 {
+      font-size: 0.48rem !important; }
+    .landing-sign-up .font-r-7 {
+      font-size: 0.56rem !important; }
     .landing-sign-up .font-r-8 {
       font-size: 0.64rem !important; }
     .landing-sign-up .font-r-9 {
@@ -12297,6 +12665,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .landing-sign-up .font-w-500 {
     font-weight: 500; }
+  .landing-sign-up .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .landing-sign-up .d-600-none {
+        display: none !important; } }
+  .landing-sign-up .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .landing-sign-up .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .landing-sign-up .cursor-p {
       cursor: pointer; } }
@@ -12312,6 +12690,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .landing-sign-up .font-w-500 {
     font-weight: 500; }
+  .landing-sign-up .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .landing-sign-up .d-600-none {
+        display: none !important; } }
+  .landing-sign-up .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .landing-sign-up .d-600-flex {
+        display: flex !important; } }
   .landing-sign-up form {
     font-family: "Raleway", sans-serif; }
     .landing-sign-up form .input-group-select {
@@ -13462,6 +13850,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .system-campaign .font-w-500 {
     font-weight: 500; }
+  .system-campaign .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .system-campaign .d-600-none {
+        display: none !important; } }
+  .system-campaign .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .system-campaign .d-600-flex {
+        display: flex !important; } }
   .system-campaign .tabs {
     display: flex;
     flex-direction: row;
@@ -13776,6 +14174,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       font-weight: 300; }
     .system-campaign.system-campaign-zip-code .font-w-500 {
       font-weight: 500; }
+    .system-campaign.system-campaign-zip-code .d-600-none {
+      display: flex !important; }
+      @media (max-width: 599px) {
+        .system-campaign.system-campaign-zip-code .d-600-none {
+          display: none !important; } }
+    .system-campaign.system-campaign-zip-code .d-600-flex {
+      display: none !important; }
+      @media (max-width: 599px) {
+        .system-campaign.system-campaign-zip-code .d-600-flex {
+          display: flex !important; } }
     .system-campaign.system-campaign-zip-code .tabs {
       display: flex;
       flex-direction: row;
@@ -13847,6 +14255,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       font-weight: 300; }
     .system-campaign.system-campaign-zip-code .font-w-500 {
       font-weight: 500; }
+    .system-campaign.system-campaign-zip-code .d-600-none {
+      display: flex !important; }
+      @media (max-width: 599px) {
+        .system-campaign.system-campaign-zip-code .d-600-none {
+          display: none !important; } }
+    .system-campaign.system-campaign-zip-code .d-600-flex {
+      display: none !important; }
+      @media (max-width: 599px) {
+        .system-campaign.system-campaign-zip-code .d-600-flex {
+          display: flex !important; } }
     @media (min-width: 300px) {
       .system-campaign.system-campaign-zip-code .system-campaign-services .services-to-chose {
         background-color: #fff; }
@@ -14094,6 +14512,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .services-and-location-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .services-and-location-page .font-6 {
+    font-size: 6pt; }
+  .services-and-location-page .font-7 {
+    font-size: 7pt; }
   .services-and-location-page .font-8 {
     font-size: 8pt; }
   .services-and-location-page .font-9 {
@@ -14126,6 +14548,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .services-and-location-page .font-50 {
     font-size: 50pt; }
+  .services-and-location-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .services-and-location-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .services-and-location-page .font-r-8 {
     font-size: 0.8rem !important; }
   .services-and-location-page .font-r-9 {
@@ -14159,6 +14585,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .services-and-location-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .services-and-location-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .services-and-location-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .services-and-location-page .font-r-8 {
       font-size: 0.72rem !important; }
     .services-and-location-page .font-r-9 {
@@ -14192,6 +14622,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .services-and-location-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .services-and-location-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .services-and-location-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .services-and-location-page .font-r-8 {
       font-size: 0.64rem !important; }
     .services-and-location-page .font-r-9 {
@@ -14548,6 +14982,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .services-and-location-page .font-w-500 {
     font-weight: 500; }
+  .services-and-location-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-none {
+        display: none !important; } }
+  .services-and-location-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
@@ -14563,6 +15007,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .services-and-location-page .font-w-500 {
     font-weight: 500; }
+  .services-and-location-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-none {
+        display: none !important; } }
+  .services-and-location-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-flex {
+        display: flex !important; } }
   .services-and-location-page form {
     font-family: "Raleway", sans-serif; }
     .services-and-location-page form .input-group-select {
@@ -14918,6 +15372,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .services-and-location-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .services-and-location-page .font-6 {
+    font-size: 6pt; }
+  .services-and-location-page .font-7 {
+    font-size: 7pt; }
   .services-and-location-page .font-8 {
     font-size: 8pt; }
   .services-and-location-page .font-9 {
@@ -14950,6 +15408,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .services-and-location-page .font-50 {
     font-size: 50pt; }
+  .services-and-location-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .services-and-location-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .services-and-location-page .font-r-8 {
     font-size: 0.8rem !important; }
   .services-and-location-page .font-r-9 {
@@ -14983,6 +15445,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .services-and-location-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .services-and-location-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .services-and-location-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .services-and-location-page .font-r-8 {
       font-size: 0.72rem !important; }
     .services-and-location-page .font-r-9 {
@@ -15016,6 +15482,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .services-and-location-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .services-and-location-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .services-and-location-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .services-and-location-page .font-r-8 {
       font-size: 0.64rem !important; }
     .services-and-location-page .font-r-9 {
@@ -15372,6 +15842,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .services-and-location-page .font-w-500 {
     font-weight: 500; }
+  .services-and-location-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-none {
+        display: none !important; } }
+  .services-and-location-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .services-and-location-page .cursor-p {
       cursor: pointer; } }
@@ -15387,6 +15867,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .services-and-location-page .font-w-500 {
     font-weight: 500; }
+  .services-and-location-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-none {
+        display: none !important; } }
+  .services-and-location-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-flex {
+        display: flex !important; } }
   .services-and-location-page form {
     font-family: "Raleway", sans-serif; }
     .services-and-location-page form .input-group-select {
@@ -15570,6 +16060,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .services-and-location-page .font-w-500 {
     font-weight: 500; }
+  .services-and-location-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-none {
+        display: none !important; } }
+  .services-and-location-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-flex {
+        display: flex !important; } }
   .services-and-location-page .tabs {
     display: flex;
     flex-direction: row;
@@ -15915,6 +16415,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .services-and-location-page .font-w-500 {
     font-weight: 500; }
+  .services-and-location-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-none {
+        display: none !important; } }
+  .services-and-location-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-flex {
+        display: flex !important; } }
   .services-and-location-page .tabs {
     display: flex;
     flex-direction: row;
@@ -15986,6 +16496,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .services-and-location-page .font-w-500 {
     font-weight: 500; }
+  .services-and-location-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-none {
+        display: none !important; } }
+  .services-and-location-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .services-and-location-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 300px) {
     .services-and-location-page .system-campaign-services .services-to-chose {
       background-color: #fff; }
@@ -16304,6 +16824,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .my-tasks-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .my-tasks-page .font-6 {
+    font-size: 6pt; }
+  .my-tasks-page .font-7 {
+    font-size: 7pt; }
   .my-tasks-page .font-8 {
     font-size: 8pt; }
   .my-tasks-page .font-9 {
@@ -16336,6 +16860,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .my-tasks-page .font-50 {
     font-size: 50pt; }
+  .my-tasks-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .my-tasks-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .my-tasks-page .font-r-8 {
     font-size: 0.8rem !important; }
   .my-tasks-page .font-r-9 {
@@ -16369,6 +16897,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .my-tasks-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .my-tasks-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .my-tasks-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .my-tasks-page .font-r-8 {
       font-size: 0.72rem !important; }
     .my-tasks-page .font-r-9 {
@@ -16402,6 +16934,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .my-tasks-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .my-tasks-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .my-tasks-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .my-tasks-page .font-r-8 {
       font-size: 0.64rem !important; }
     .my-tasks-page .font-r-9 {
@@ -16758,6 +17294,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .my-tasks-page .font-w-500 {
     font-weight: 500; }
+  .my-tasks-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .my-tasks-page .d-600-none {
+        display: none !important; } }
+  .my-tasks-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .my-tasks-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .my-tasks-page .cursor-p {
       cursor: pointer; } }
@@ -16773,6 +17319,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .my-tasks-page .font-w-500 {
     font-weight: 500; }
+  .my-tasks-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .my-tasks-page .d-600-none {
+        display: none !important; } }
+  .my-tasks-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .my-tasks-page .d-600-flex {
+        display: flex !important; } }
   .my-tasks-page form {
     font-family: "Raleway", sans-serif; }
     .my-tasks-page form .input-group-select {
@@ -16956,6 +17512,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .my-tasks-page .font-w-500 {
     font-weight: 500; }
+  .my-tasks-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .my-tasks-page .d-600-none {
+        display: none !important; } }
+  .my-tasks-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .my-tasks-page .d-600-flex {
+        display: flex !important; } }
   .my-tasks-page .tabs {
     display: flex;
     flex-direction: row;
@@ -17735,15 +18301,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       margin-left: 10px; }
   .my-tasks-page .list-body {
     margin-top: 24px; }
-    .my-tasks-page .list-body .label {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      height: 38px;
-      padding: 0 20px;
-      color: #fff; }
   .my-tasks-page .task-card {
     position: relative;
     display: flex;
@@ -17903,6 +18460,32 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (max-width: 599px) {
     .my-tasks-page .main-row.nav-bar-is-opened {
       margin-top: 0; } }
+  .my-tasks-page .label {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 38px;
+    padding: 0 20px;
+    color: #fff; }
+    @media (max-width: 767px) {
+      .my-tasks-page .label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px; }
+        .my-tasks-page .label.is-active .more .fa-chevron-down {
+          transform: rotate(0); }
+        .my-tasks-page .label .more {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .my-tasks-page .label .more .fa-chevron-down {
+            transform: rotate(180deg);
+            margin-left: 10px; } }
 
 .support-page {
   /*
@@ -17970,6 +18553,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .support-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .support-page .font-6 {
+    font-size: 6pt; }
+  .support-page .font-7 {
+    font-size: 7pt; }
   .support-page .font-8 {
     font-size: 8pt; }
   .support-page .font-9 {
@@ -18002,6 +18589,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .support-page .font-50 {
     font-size: 50pt; }
+  .support-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .support-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .support-page .font-r-8 {
     font-size: 0.8rem !important; }
   .support-page .font-r-9 {
@@ -18035,6 +18626,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .support-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .support-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .support-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .support-page .font-r-8 {
       font-size: 0.72rem !important; }
     .support-page .font-r-9 {
@@ -18068,6 +18663,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .support-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .support-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .support-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .support-page .font-r-8 {
       font-size: 0.64rem !important; }
     .support-page .font-r-9 {
@@ -18424,6 +19023,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .support-page .font-w-500 {
     font-weight: 500; }
+  .support-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .support-page .d-600-none {
+        display: none !important; } }
+  .support-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .support-page .d-600-flex {
+        display: flex !important; } }
   @media (min-width: 1200px) {
     .support-page .cursor-p {
       cursor: pointer; } }
@@ -18439,6 +19048,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .support-page .font-w-500 {
     font-weight: 500; }
+  .support-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .support-page .d-600-none {
+        display: none !important; } }
+  .support-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .support-page .d-600-flex {
+        display: flex !important; } }
   .support-page form {
     font-family: "Raleway", sans-serif; }
     .support-page form .input-group-select {
@@ -18622,6 +19241,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .support-page .font-w-500 {
     font-weight: 500; }
+  .support-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .support-page .d-600-none {
+        display: none !important; } }
+  .support-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .support-page .d-600-flex {
+        display: flex !important; } }
   .support-page .tabs {
     display: flex;
     flex-direction: row;
@@ -19392,23 +20021,23 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     color: #b3b3b3; }
   .support-page .content-heading {
     border-bottom: 1px solid rgba(20, 46, 110, 0.1); }
-    .support-page .content-heading .id,
-    .support-page .content-heading .card-opening-date {
-      margin: 0 0 15px 0; }
-    .support-page .content-heading .card-opening-date {
-      position: relative; }
-      .support-page .content-heading .card-opening-date:before {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: -15px;
-        transform: translate(0, -50%);
-        width: 1px;
-        height: 100%;
-        background-color: rgba(20, 46, 110, 0.1); }
-    .support-page .content-heading .date .fa-calendar {
-      margin: 0 10px; }
+  .support-page .id,
+  .support-page .card-opening-date {
+    margin: 0 0 15px 0; }
+  .support-page .card-opening-date {
+    position: relative; }
+    .support-page .card-opening-date:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translate(0, -50%);
+      width: 1px;
+      height: 100%;
+      background-color: rgba(20, 46, 110, 0.1); }
+  .support-page .date .fa-calendar {
+    margin: 0 10px; }
   .support-page .content-body {
     margin-top: 10px; }
     .support-page .content-body .image-container {
@@ -19416,25 +20045,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       height: 28px;
       border-radius: 5px;
       box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.2); }
-    .support-page .content-body .last-replied-by {
-      position: relative; }
-      .support-page .content-body .last-replied-by:before {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: -15px;
-        transform: translate(0, -50%);
-        width: 1px;
-        height: 100%;
-        background-color: rgba(20, 46, 110, 0.1); }
-      .support-page .content-body .last-replied-by .logo-image-container {
-        width: 30px;
-        height: 25px;
-        padding: 5px;
-        border-radius: 5px;
-        box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
-        background-color: #fff; }
     .support-page .content-body .info {
       display: flex;
       flex-direction: row;
@@ -19448,6 +20058,25 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start; }
+  .support-page .last-replied-by {
+    position: relative; }
+    .support-page .last-replied-by:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translate(0, -50%);
+      width: 1px;
+      height: 100%;
+      background-color: rgba(20, 46, 110, 0.1); }
+    .support-page .last-replied-by .logo-image-container {
+      width: 30px;
+      height: 25px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: #fff; }
   .support-page img {
     width: 100%;
     height: 100%;
@@ -19470,10 +20099,13 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .support-page .ticket.sean-green .decoration-element,
     .support-page .ticket.sean-green .indicator {
       background-color: #12b7aa; }
+    .support-page .ticket .label {
+      color: #585077; }
     .support-page .ticket .type {
       display: flex;
       flex-direction: row;
-      align-items: center; }
+      align-items: center;
+      width: 100%; }
     .support-page .ticket .indicator {
       display: block;
       width: 16px;
@@ -19593,6 +20225,32 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   @media (max-width: 599px) {
     .support-page .main-row.nav-bar-is-opened {
       margin-top: 0; } }
+  .support-page .label {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 38px;
+    padding: 0 20px;
+    color: #fff; }
+    @media (max-width: 767px) {
+      .support-page .label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px; }
+        .support-page .label.is-active .more .fa-chevron-down {
+          transform: rotate(0); }
+        .support-page .label .more {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .support-page .label .more .fa-chevron-down {
+            transform: rotate(180deg);
+            margin-left: 10px; } }
 
 .sign-in-and-sign-up-page { }
   .sign-in-and-sign-up-page html, .sign-in-and-sign-up-page body {
@@ -19657,6 +20315,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .sign-in-and-sign-up-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .sign-in-and-sign-up-page .font-6 {
+    font-size: 6pt; }
+  .sign-in-and-sign-up-page .font-7 {
+    font-size: 7pt; }
   .sign-in-and-sign-up-page .font-8 {
     font-size: 8pt; }
   .sign-in-and-sign-up-page .font-9 {
@@ -19689,6 +20351,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .sign-in-and-sign-up-page .font-50 {
     font-size: 50pt; }
+  .sign-in-and-sign-up-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .sign-in-and-sign-up-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .sign-in-and-sign-up-page .font-r-8 {
     font-size: 0.8rem !important; }
   .sign-in-and-sign-up-page .font-r-9 {
@@ -19722,6 +20388,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .sign-in-and-sign-up-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .sign-in-and-sign-up-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .sign-in-and-sign-up-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .sign-in-and-sign-up-page .font-r-8 {
       font-size: 0.72rem !important; }
     .sign-in-and-sign-up-page .font-r-9 {
@@ -19755,6 +20425,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .sign-in-and-sign-up-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .sign-in-and-sign-up-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .sign-in-and-sign-up-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .sign-in-and-sign-up-page .font-r-8 {
       font-size: 0.64rem !important; }
     .sign-in-and-sign-up-page .font-r-9 {
@@ -20111,6 +20785,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .sign-in-and-sign-up-page .font-w-500 {
     font-weight: 500; }
+  .sign-in-and-sign-up-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .sign-in-and-sign-up-page .d-600-none {
+        display: none !important; } }
+  .sign-in-and-sign-up-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .sign-in-and-sign-up-page .d-600-flex {
+        display: flex !important; } }
   .sign-in-and-sign-up-page .head-section {
     width: 100%;
     height: 19.25vw;
@@ -20311,6 +20995,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: calc(100vw * 0.008); }
   .account-verification-page .f-r-l {
     font-size: calc(100vw * 0.01); }
+  .account-verification-page .font-6 {
+    font-size: 6pt; }
+  .account-verification-page .font-7 {
+    font-size: 7pt; }
   .account-verification-page .font-8 {
     font-size: 8pt; }
   .account-verification-page .font-9 {
@@ -20343,6 +21031,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 40pt; }
   .account-verification-page .font-50 {
     font-size: 50pt; }
+  .account-verification-page .font-r-6 {
+    font-size: 0.6rem !important; }
+  .account-verification-page .font-r-7 {
+    font-size: 0.7rem !important; }
   .account-verification-page .font-r-8 {
     font-size: 0.8rem !important; }
   .account-verification-page .font-r-9 {
@@ -20376,6 +21068,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .account-verification-page .font-r-50 {
     font-size: 5rem !important; }
   @media (max-width: 1200px) {
+    .account-verification-page .font-r-6 {
+      font-size: 0.54rem !important; }
+    .account-verification-page .font-r-7 {
+      font-size: 0.63rem !important; }
     .account-verification-page .font-r-8 {
       font-size: 0.72rem !important; }
     .account-verification-page .font-r-9 {
@@ -20409,6 +21105,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .account-verification-page .font-r-50 {
       font-size: 4.5rem !important; } }
   @media (max-width: 600px) {
+    .account-verification-page .font-r-6 {
+      font-size: 0.48rem !important; }
+    .account-verification-page .font-r-7 {
+      font-size: 0.56rem !important; }
     .account-verification-page .font-r-8 {
       font-size: 0.64rem !important; }
     .account-verification-page .font-r-9 {
@@ -20765,6 +21465,16 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-weight: 300; }
   .account-verification-page .font-w-500 {
     font-weight: 500; }
+  .account-verification-page .d-600-none {
+    display: flex !important; }
+    @media (max-width: 599px) {
+      .account-verification-page .d-600-none {
+        display: none !important; } }
+  .account-verification-page .d-600-flex {
+    display: none !important; }
+    @media (max-width: 599px) {
+      .account-verification-page .d-600-flex {
+        display: flex !important; } }
   .account-verification-page .head-section {
     width: 100%;
     height: 19.25vw;

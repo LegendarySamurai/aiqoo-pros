@@ -29,6 +29,7 @@
 </head>
 <body>
 <app>
+  <!-- Header -->
   <div class="header-fluid">
     <div onclick="closeNav(event)" class="sidebar-overlay"></div>
     <div id="mySidebar" class="sidebar">
@@ -56,26 +57,19 @@
           </div>
         </div>
         <div class="item-container">
-          <a class="item p-3" href="Dashboard" onclick="closeNav()"><i class="fal fa-chart-pie-alt font-15 ma-r-10"></i>
-            Dashboard</a>
-          <a class="item p-3" href="Payments/Balance" onclick="closeNav()"><i
-              class="far fa-exchange font-15 ma-r-10"></i> Billing</a>
-          <a class="item p-3" href="Leads" onclick="closeNav()"><i class="fal fa-bullseye-pointer font-15 ma-r-10"></i>
-            Marketing</a>
-          <a class="item p-3" href="Aiqoo-index" onclick="closeNav()"><i class="fal fa-indent font-15 ma-r-10"></i>Aiqoo
-            index</a>
+          <a class="item p-3" href="Dashboard" onclick="closeNav()"><i class="fal fa-chart-pie-alt font-15 ma-r-10"></i> Dashboard</a>
+          <a class="item p-3" href="Payments/Balance" onclick="closeNav()"><i class="far fa-exchange font-15 ma-r-10"></i> Billing</a>
+          <a class="item p-3" href="Leads" onclick="closeNav()"><i class="fal fa-bullseye-pointer font-15 ma-r-10"></i> Marketing</a>
+          <a class="item p-3" href="Aiqoo-index" onclick="closeNav()"><i class="fal fa-indent font-15 ma-r-10"></i>Aiqoo index</a>
           <a class="item p-3" href="Sales" onclick="closeNav()"><i class="fal fa-money-bill-wave font-15 ma-r-10"></i>Sales</a>
           <a class="item p-3" href="Projects" onclick="closeNav()"><i class="fal fa-tasks font-15 ma-r-10"></i>Projects</a>
           <a class="item p-3" href="Network" onclick="closeNav()"><i class="fal fa-chart-network font-15 ma-r-10"></i>Network</a>
           <a class="item p-3" href="Suppliers" onclick="closeNav()"><i class="fal fa-ballot-check font-15 ma-r-10"></i>Suppliers</a>
           <a class="item p-3" href="Calendar" onclick="closeNav()"><i class="fal fa-calendar-alt font-15 ma-r-10"></i>Calendar</a>
-          <a class="item p-3" href="Address Book" onclick="closeNav()"><i
-              class="fal fa-address-card font-15 ma-r-10"></i>Address Book</a>
-          <a class="item p-3" href="Support" onclick="closeNav()"><i
-              class="fal fa-comment-exclamation font-15 ma-r-10"></i>Support</a>
+          <a class="item p-3" href="Address Book" onclick="closeNav()"><i class="fal fa-address-card font-15 ma-r-10"></i>Address Book</a>
+          <a class="item p-3" href="Support" onclick="closeNav()"><i class="fal fa-comment-exclamation font-15 ma-r-10"></i>Support</a>
         </div>
-        <a class="item p-3" id="logOut" href="/SignOut" onclick="closeNav()"><i
-            class="far fa-sign-out font-15 ma-r-10"></i> Sign Out</a>
+        <a class="item p-3" id="logOut" href="/SignOut" onclick="closeNav()"><i class="far fa-sign-out font-15 ma-r-10"></i> Sign Out</a>
 
       </div>
     </div>
@@ -111,8 +105,7 @@
           </li>
           <li class="list-inline-item text-right align-top">
             <div class="btn-group dropdown ma-t-5" style="min-width:140px;">
-              <button type="button" class="btn dropdown-toggle-user" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
+              <button type="button" class="btn dropdown-toggle-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="d-inline-block text-left">
                   <div class="text-capitalize font-10"><strong>Nofar</strong></div>
                   <div class="font-10"> Excel Construction LA</div>
@@ -143,8 +136,7 @@
               <li class="list-inline-item text-right align-top">
                 <div class="btn-group dropdown ma-t-5" style="min-width:60px;">
                   <div class="user-nav-wrapper">
-                    <button type="button" class="btn dropdown-toggle-user" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                    <button type="button" class="btn dropdown-toggle-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <div class="d-inline-block text-left float-right">
                         <div class="float-left text-right mr-3">
                           <div class="text-capitalize font-10"><strong>Nofar</strong></div>
@@ -161,8 +153,7 @@
 
                       <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-10 ma-r-10"></i>Account Settings</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-10 ma-r-10"></i>Sign
-                        Out</a>
+                      <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-10 ma-r-10"></i>Sign Out</a>
                       <div class="dropdown-divider" style="padding-bottom:15px;"></div>
                     </div>
                   </div>
@@ -171,95 +162,95 @@
             </ul>
           </div>
         </div>
-
-        <div class="wrapper-c paimary-menu">
-          <ul class="nav-menu">
-            <li class="nav-menu-item hide-in-1024">
-              <a href="Dashboard" class="pl-o"><i class="fal fa-chart-pie-alt"></i><span>Dashboard</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1024">
-              <a href="Leads"><i class="fal fa-bullseye-pointer"></i><span>Marketing</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1024">
-              <a href="Aiqoo-index"><i class="fal fa-indent"></i><span>Aiqoo index</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1024">
-              <a href="Sales" class="active"><i class="fal fa-money-bill-wave"></i><span>Sales</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1024">
-              <a href="Projects"><i class="fal fa-tasks"></i><span class="">Projects</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1120">
-              <a href="Network"><i class="fal fa-chart-network"></i><span>Network</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1200">
-              <a href="Suppliers"><i class="fal fa-ballot-check"></i><span>Suppliers</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1220">
-              <a href="Calendar"><i class="fal fa-calendar-alt"></i><span>Calendar</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1500">
-              <a href="Address Book"><i class="fal fa-address-card"></i><span>Address Book</span></a>
-            </li>
-            <li class="nav-menu-item hide-in-1570">
-              <a href="Support"><i class="fal fa-comment-exclamation"></i><span>Support</span></a>
-            </li>
-            <li class="show-in-1570 cursor-p more-btn pos-r">
-              <a href="#" class="more-btn-inner">
-                <i class="fal fa-ellipsis-h-alt"></i>
-                <span>More</span>
-              </a>
-              <div class="sub-menu-container">
-                <ul class="hide-sub-menu">
-                  <li class="show-in-1024">
-                    <a href="Dashboard" class="pl-o "><i class="fal fa-chart-pie-alt"></i><span
-                        class="">Dashboard</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Leads "><i class="fal fa-bullseye-pointer"></i><span class="">Marketing</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Aiqoo-index "><i class="fal fa-indent"></i><span class="">Aiqoo index</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Sales "><i class="fal fa-money-bill-wave"></i><span class="">Sales</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Projects "><i class="fal fa-tasks"></i><span class="">Projects</span></a>
-                  </li>
-                  <li class="show-in-1120">
-                    <a href="Network "><i class="fal fa-chart-network"></i><span class="">Network</span></a>
-                  </li>
-                  <li class="show-in-1200">
-                    <a href="Suppliers "><i class="fal fa-ballot-check"></i><span class="">Suppliers</span></a>
-                  </li>
-                  <li class="show-in-1220">
-                    <a href="Calendar "><i class="fal fa-calendar-alt"></i><span class="">Calendar</span></a>
-                  </li>
-                  <li class="show-in-1500">
-                    <a href="Address Book"><i class="fal fa-address-card"></i><span class="">Address Book</span></a>
-                  </li>
-                  <li class="show-in-1570">
-                    <a href="Support"><i class="fal fa-comment-exclamation"></i><span class="">Support</span></a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="nav-sub-menu is-active">
-            <li><a href="Summary">Summary</a></li>
-            <li><a href="Leads">Leads</a></li>
-            <li><a href="Transaction">Transaction</a></li>
-            <li><a href="BI">BI</a></li>
-            <li><a href="Mettings">Mettings</a></li>
-            <li><a href="Tasks">Tasks</a></li>
-            <li><a href="Loans">Loans</a></li>
-            <li><a href="Quality Score">Quality Score</a></li>
-          </ul>
-        </div>
       </div>
     </section>
   </div>
+
+  <!-- Navigation -->
+  <nav class="wrapper-c paimary-menu hide-in-mobile">
+    <ul class="nav-menu">
+      <li class="nav-menu-item hide-in-1024">
+        <a href="Dashboard" class="pl-o"><i class="fal fa-chart-pie-alt"></i><span>Dashboard</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1024">
+        <a href="Leads"><i class="fal fa-bullseye-pointer"></i><span>Marketing</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1024">
+        <a href="Aiqoo-index"><i class="fal fa-indent"></i><span>Aiqoo index</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1024">
+        <a href="Sales" class="active"><i class="fal fa-money-bill-wave"></i><span>Sales</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1024">
+        <a href="Projects"><i class="fal fa-tasks"></i><span class="">Projects</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1120">
+        <a href="Network"><i class="fal fa-chart-network"></i><span>Network</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1200">
+        <a href="Suppliers"><i class="fal fa-ballot-check"></i><span>Suppliers</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1220">
+        <a href="Calendar"><i class="fal fa-calendar-alt"></i><span>Calendar</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1500">
+        <a href="Address Book"><i class="fal fa-address-card"></i><span>Address Book</span></a>
+      </li>
+      <li class="nav-menu-item hide-in-1570">
+        <a href="Support"><i class="fal fa-comment-exclamation"></i><span>Support</span></a>
+      </li>
+      <li class="show-in-1570 cursor-p more-btn pos-r">
+        <a href="#" class="more-btn-inner">
+          <i class="fal fa-ellipsis-h-alt"></i>
+          <span>More</span>
+        </a>
+        <div class="sub-menu-container">
+          <ul class="hide-sub-menu">
+            <li class="show-in-1024">
+              <a href="Dashboard" class="pl-o "><i class="fal fa-chart-pie-alt"></i><span class="">Dashboard</span></a>
+            </li>
+            <li class="show-in-1024">
+              <a href="Leads "><i class="fal fa-bullseye-pointer"></i><span class="">Marketing</span></a>
+            </li>
+            <li class="show-in-1024">
+              <a href="Aiqoo-index "><i class="fal fa-indent"></i><span class="">Aiqoo index</span></a>
+            </li>
+            <li class="show-in-1024">
+              <a href="Sales "><i class="fal fa-money-bill-wave"></i><span class="">Sales</span></a>
+            </li>
+            <li class="show-in-1024">
+              <a href="Projects "><i class="fal fa-tasks"></i><span class="">Projects</span></a>
+            </li>
+            <li class="show-in-1120">
+              <a href="Network "><i class="fal fa-chart-network"></i><span class="">Network</span></a>
+            </li>
+            <li class="show-in-1200">
+              <a href="Suppliers "><i class="fal fa-ballot-check"></i><span class="">Suppliers</span></a>
+            </li>
+            <li class="show-in-1220">
+              <a href="Calendar "><i class="fal fa-calendar-alt"></i><span class="">Calendar</span></a>
+            </li>
+            <li class="show-in-1500">
+              <a href="Address Book"><i class="fal fa-address-card"></i><span class="">Address Book</span></a>
+            </li>
+            <li class="show-in-1570">
+              <a href="Support"><i class="fal fa-comment-exclamation"></i><span class="">Support</span></a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="nav-sub-menu is-active">
+      <li><a href="Summary">Summary</a></li>
+      <li><a href="Leads">Leads</a></li>
+      <li><a href="Transaction">Transaction</a></li>
+      <li><a href="BI">BI</a></li>
+      <li><a href="Mettings">Mettings</a></li>
+      <li><a href="Tasks">Tasks</a></li>
+      <li><a href="Loans">Loans</a></li>
+      <li><a href="Quality Score">Quality Score</a></li>
+    </ul>
+  </nav>
 
   <div class="main-wrapper">
     <div class="support-page">
@@ -462,10 +453,10 @@
           <div class="content-col col">
 
             <!-- Search desktop -->
-            <div class="search mb-3 mb-lg-0">
+            <div id="content-search-input"  class="search mb-3 mb-lg-0">
               <span class="title font-weight-500 font-r-13">Support</span>
               <div class="controls">
-                <button class="new-ticket">
+                <button class="new-ticket font-r-9">
                   <i class="fal fa-plus-square"></i>
                   <span>New Ticket</span>
                 </button>
@@ -481,34 +472,36 @@
             <div class="content">
               <div class="tickets-list">
                 <div class="row">
-                  <div class="col-12 ticket-col">
+                  <div class="col-12 tickets-col">
                     <!-- Tickets type classes: orange, light-purple, sean-green -->
                     <div class="ticket orange">
                       <div class="decoration-element"></div>
                       <div class="row">
 
                         <div class="col-12 ticket-header-col">
-                          <div class="ticket-header">
+                          <div class="ticket-header label is-active">
                             <span class="type font-weight-bold font-r-10"><i class="indicator"></i>Problem receiving inquiries</span>
+                            <span class="more d-600-flex">More <i class="far fa-chevron-down"></i></span>
                             <!-- Resolved, unresolved -->
-                            <span class="status resolved font-weight-500 font-r-10">Resolved</span>
+                            <span class="status resolved font-weight-500 font-r-10 d-600-none">Resolved</span>
                           </div>
                         </div>
 
                         <div class="col-12 ticket-content-col">
-                          <div class="ticket-content">
+                          <div class="ticket-content is-active">
                             <div class="row">
                               <div class="col-12 col-lg-auto left-side-col">
                                 <div class="left-side">
                                   <!-- Heading -->
                                   <div class="content-heading">
                                     <div class="row">
-                                      <div class="col-4">
+                                      <div class="col-12 col-md-6 col-lg-4">
                                         <div class="id">
                                           <span class="font-weight-500 font-r-9">ID <span>342535354345</span></span>
+                                          <span class="status resolved font-weight-500 font-r-10 d-600-flex">Resolved</span>
                                         </div>
                                       </div>
-                                      <div class="col-8">
+                                      <div class="col-12 col-md-6 col-lg-8">
                                         <div class="card-opening-date">
                                           <span class="gray-title font-r-8">Card opening date</span>
                                           <span class="date font-r-9">
@@ -523,7 +516,7 @@
                                   <!-- Body -->
                                   <div class="content-body">
                                     <div class="row">
-                                      <div class="col-4">
+                                      <div class="col-12 col-md-6 col-lg-4">
                                         <div class="created-by">
                                           <span class="gray-title font-r-8">Created By</span>
                                           <div class="info">
@@ -537,7 +530,7 @@
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="col-8">
+                                      <div class="col-12 col-md-6 col-lg-8">
                                         <div class="last-replied-by">
                                           <span class="gray-title font-r-8">Last Replied by</span>
                                           <div class="info">
@@ -558,16 +551,16 @@
                               <div class="col-12 col-lg right-side-col">
                                 <div class="right-side">
                                   <!-- User message -->
-                                  <div class="last-message user-message d-none">
+                                  <div class="last-message user-message">
                                     <div class="image-container">
                                       <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
                                     </div>
                                     <div class="message-card">
                                       <div class="message-card-heading">
                                         <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
-                                        <span class="updated">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                        <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                                       </div>
-                                      <div class="message">
+                                      <div class="message font-r-6">
                                         Hi Dave,
                                         As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
                                         regards,
@@ -581,9 +574,9 @@
                                     <div class="message-card">
                                       <div class="message-card-heading">
                                         <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
-                                        <span class="updated">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                        <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                                       </div>
-                                      <div class="message">
+                                      <div class="message font-r-6">
                                         What's up with that?
                                       </div>
                                     </div>
@@ -604,27 +597,29 @@
                       <div class="row">
 
                         <div class="col-12 ticket-header-col">
-                          <div class="ticket-header">
+                          <div class="ticket-header label is-active">
                             <span class="type font-weight-bold font-r-10"><i class="indicator"></i>Problem receiving inquiries</span>
+                            <span class="more d-600-flex">More <i class="far fa-chevron-down"></i></span>
                             <!-- Resolved, unresolved -->
-                            <span class="status unresolved font-weight-500 font-r-10">Unresolved</span>
+                            <span class="status unresolved font-weight-500 font-r-10 d-600-none">Unresolved</span>
                           </div>
                         </div>
 
                         <div class="col-12 ticket-content-col">
-                          <div class="ticket-content">
+                          <div class="ticket-content is-active">
                             <div class="row">
                               <div class="col-12 col-lg-auto left-side-col">
                                 <div class="left-side">
                                   <!-- Heading -->
                                   <div class="content-heading">
                                     <div class="row">
-                                      <div class="col-4">
+                                      <div class="col-12 col-md-6 col-lg-4">
                                         <div class="id">
                                           <span class="font-weight-500 font-r-9">ID <span>342535354345</span></span>
+                                          <span class="status unresolved font-weight-500 font-r-10 d-600-flex">Unresolved</span>
                                         </div>
                                       </div>
-                                      <div class="col-8">
+                                      <div class="col-12 col-md-6 col-lg-8">
                                         <div class="card-opening-date">
                                           <span class="gray-title font-r-8">Card opening date</span>
                                           <span class="date font-r-9">
@@ -639,7 +634,7 @@
                                   <!-- Body -->
                                   <div class="content-body">
                                     <div class="row">
-                                      <div class="col-4">
+                                      <div class="col-12 col-md-6 col-lg-4">
                                         <div class="created-by">
                                           <span class="gray-title font-r-8">Created By</span>
                                           <div class="info">
@@ -653,7 +648,7 @@
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="col-8">
+                                      <div class="col-12 col-md-6 col-lg-8">
                                         <div class="last-replied-by">
                                           <span class="gray-title font-r-8">Last Replied by</span>
                                           <div class="info">
@@ -681,9 +676,9 @@
                                     <div class="message-card">
                                       <div class="message-card-heading">
                                         <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
-                                        <span class="updated">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                        <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                                       </div>
-                                      <div class="message">
+                                      <div class="message font-r-6">
                                         Hi Dave,
                                         As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
                                         regards,
@@ -697,9 +692,9 @@
                                     <div class="message-card">
                                       <div class="message-card-heading">
                                         <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
-                                        <span class="updated">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                        <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                                       </div>
-                                      <div class="message">
+                                      <div class="message font-r-6">
                                         What's up with that?
                                       </div>
                                     </div>
@@ -720,27 +715,29 @@
                       <div class="row">
 
                         <div class="col-12 ticket-header-col">
-                          <div class="ticket-header">
+                          <div class="ticket-header label is-active">
                             <span class="type font-weight-bold font-r-10"><i class="indicator"></i>Problem receiving inquiries</span>
+                            <span class="more d-600-flex">More <i class="far fa-chevron-down"></i></span>
                             <!-- Resolved, unresolved -->
-                            <span class="status resolved font-weight-500 font-r-10">Resolved</span>
+                            <span class="status resolved font-weight-500 font-r-10 d-600-none">Resolved</span>
                           </div>
                         </div>
 
                         <div class="col-12 ticket-content-col">
-                          <div class="ticket-content">
+                          <div class="ticket-content is-active">
                             <div class="row">
                               <div class="col-12 col-lg-auto left-side-col">
                                 <div class="left-side">
                                   <!-- Heading -->
                                   <div class="content-heading">
                                     <div class="row">
-                                      <div class="col-4">
+                                      <div class="col-12 col-md-6 col-lg-4">
                                         <div class="id">
                                           <span class="font-weight-500 font-r-9">ID <span>342535354345</span></span>
+                                          <span class="status resolved font-weight-500 font-r-10 d-600-flex">Resolved</span>
                                         </div>
                                       </div>
-                                      <div class="col-8">
+                                      <div class="col-12 col-md-6 col-lg-8">
                                         <div class="card-opening-date">
                                           <span class="gray-title font-r-8">Card opening date</span>
                                           <span class="date font-r-9">
@@ -755,7 +752,7 @@
                                   <!-- Body -->
                                   <div class="content-body">
                                     <div class="row">
-                                      <div class="col-4">
+                                      <div class="col-12 col-md-6 col-lg-4">
                                         <div class="created-by">
                                           <span class="gray-title font-r-8">Created By</span>
                                           <div class="info">
@@ -769,7 +766,7 @@
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="col-8">
+                                      <div class="col-12 col-md-6 col-lg-8">
                                         <div class="last-replied-by">
                                           <span class="gray-title font-r-8">Last Replied by</span>
                                           <div class="info">
@@ -797,9 +794,9 @@
                                     <div class="message-card">
                                       <div class="message-card-heading">
                                         <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
-                                        <span class="updated">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                        <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                                       </div>
-                                      <div class="message">
+                                      <div class="message font-r-6">
                                         Hi Dave,
                                         As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
                                         regards,
@@ -813,9 +810,9 @@
                                     <div class="message-card">
                                       <div class="message-card-heading">
                                         <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
-                                        <span class="updated">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                        <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                                       </div>
-                                      <div class="message">
+                                      <div class="message font-r-6">
                                         What's up with that?
                                       </div>
                                     </div>
@@ -844,6 +841,7 @@
 </app>
 
 <script src="assets/js/status-bar.js"></script>
+<script src="assets/js/support.js"></script>
 <script src="assets/js/nav-menu.js"></script>
 
 </body>

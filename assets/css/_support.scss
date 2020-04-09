@@ -9,32 +9,32 @@
 
 .content-heading {
   border-bottom: 1px solid rgba(20, 46, 110, 0.1);
+}
 
-  .id,
-  .card-opening-date {
-    margin: 0 0 15px 0;
+.id,
+.card-opening-date {
+  margin: 0 0 15px 0;
+}
+
+.card-opening-date {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 100%;
+    background-color: rgba(20, 46, 110, 0.1);
   }
+}
 
-  .card-opening-date {
-    position: relative;
-
-    &:before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: -15px;
-      transform: translate(0, -50%);
-      width: 1px;
-      height: 100%;
-      background-color: rgba(20, 46, 110, 0.1);
-    }
-  }
-
-  .date {
-    .fa-calendar {
-      margin: 0 10px;
-    }
+.date {
+  .fa-calendar {
+    margin: 0 10px;
   }
 }
 
@@ -46,31 +46,6 @@
     height: 28px;
     border-radius: 5px;
     box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .last-replied-by {
-    position: relative;
-
-    &:before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: -15px;
-      transform: translate(0, -50%);
-      width: 1px;
-      height: 100%;
-      background-color: rgba(20, 46, 110, 0.1);
-    }
-
-    .logo-image-container {
-      width: 30px;
-      height: 25px;
-      padding: 5px;
-      border-radius: 5px;
-      box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-    }
   }
 
   .info {
@@ -90,6 +65,31 @@
       justify-content: flex-start;
       align-items: flex-start;
     }
+  }
+}
+
+.last-replied-by {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 100%;
+    background-color: rgba(20, 46, 110, 0.1);
+  }
+
+  .logo-image-container {
+    width: 30px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
   }
 }
 
@@ -131,10 +131,15 @@ img {
     }
   }
 
+  .label {
+    color: #585077;
+  }
+
   .type {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
   }
 
   .indicator {
