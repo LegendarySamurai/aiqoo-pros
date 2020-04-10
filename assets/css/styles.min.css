@@ -1768,11 +1768,10 @@ body ::-webkit-scrollbar-thumb:hover {
   top: 0;
   left: 0;
   right: 0;
-  background: #0f225d;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   width: 100%;
-  height: 70px;
+  height: 60px;
   background-color: #FFF;
   z-index: 500; }
   .header-mobile .logo {
