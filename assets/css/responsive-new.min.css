@@ -1503,19 +1503,27 @@
     min-width: inherit; } }
 
 @media (max-width: 991px) {
+  .support-page .content-col .search > .title {
+    display: none; }
+  .support-page .content-col .search .controls {
+    justify-content: space-between;
+    width: 100%; }
   .support-page .content-col .search .input-group {
+    order: 3;
     flex-grow: 1;
-    width: auto; }
+    width: auto;
+    max-width: 50%;
+    height: 40px; }
+  .support-page .content-col .search .controls-title {
+    display: flex !important;
+    order: 2; }
+  .support-page .content-col .search .new-ticket {
+    order: 1;
+    height: 40px; }
+    .support-page .content-col .search .new-ticket .fa-plus-square {
+      font-size: 1.25rem; }
   .support-page .content {
     margin-top: 30px; }
-  .support-page .controls .new-ticket {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .support-page .controls .new-ticket .fa-plus-square {
-      margin-right: 0;
-      font-size: 1.25rem;
-      margin-bottom: 5px; }
   .support-page .card-opening-date {
     display: flex;
     flex-direction: column;
@@ -1535,11 +1543,18 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 72px;
-    height: 68px;
+    height: 68px !important;
     padding: 0; }
     .support-page .controls .new-ticket .fa-plus-square {
-      font-size: 2.125rem; }
+      margin-bottom: 5px;
+      margin-right: 0;
+      font-size: 2.125rem !important; }
+  .support-page .controls .input-group {
+    max-width: inherit !important; }
   .support-page .ticket.orange .ticket-header {
     background-color: #f6bc5d; }
   .support-page .ticket.light-purple .ticket-header {
@@ -1554,6 +1569,26 @@
     display: none; } }
 
 @media (max-width: 599px) {
+  .support-page .content {
+    position: relative; }
+    .support-page .content .new-ticket {
+      z-index: 10;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 68px !important;
+      padding: 0;
+      background-color: #585077;
+      color: #fff;
+      font-weight: 300;
+      border: none; }
+      .support-page .content .new-ticket .fa-plus-square {
+        margin-bottom: 5px;
+        font-size: 2.125rem; }
   .support-page .content-heading .id {
     display: flex;
     flex-direction: row;

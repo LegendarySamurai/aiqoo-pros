@@ -800,6 +800,30 @@ app {
     .hide-in-620 {
       display: none !important; } }
 
+.show-in-830 {
+  display: none !important; }
+  @media (max-width: 830px) {
+    .show-in-830 {
+      display: inline-block !important; } }
+
+.show-in-860 {
+  display: none !important; }
+  @media (max-width: 860px) {
+    .show-in-860 {
+      display: inline-block !important; } }
+
+.show-in-970 {
+  display: none !important; }
+  @media (max-width: 970px) {
+    .show-in-970 {
+      display: inline-block !important; } }
+
+.show-in-1000 {
+  display: none !important; }
+  @media (max-width: 1000px) {
+    .show-in-1000 {
+      display: inline-block !important; } }
+
 .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
@@ -5728,6 +5752,30 @@ app {
     .hide-in-620 {
       display: none !important; } }
 
+.show-in-830 {
+  display: none !important; }
+  @media (max-width: 830px) {
+    .show-in-830 {
+      display: inline-block !important; } }
+
+.show-in-860 {
+  display: none !important; }
+  @media (max-width: 860px) {
+    .show-in-860 {
+      display: inline-block !important; } }
+
+.show-in-970 {
+  display: none !important; }
+  @media (max-width: 970px) {
+    .show-in-970 {
+      display: inline-block !important; } }
+
+.show-in-1000 {
+  display: none !important; }
+  @media (max-width: 1000px) {
+    .show-in-1000 {
+      display: inline-block !important; } }
+
 .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
@@ -6539,6 +6587,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .my-profile-page .hide-in-620 {
         display: none !important; } }
+  .my-profile-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .my-profile-page .show-in-830 {
+        display: inline-block !important; } }
+  .my-profile-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .my-profile-page .show-in-860 {
+        display: inline-block !important; } }
+  .my-profile-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .my-profile-page .show-in-970 {
+        display: inline-block !important; } }
+  .my-profile-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .my-profile-page .show-in-1000 {
+        display: inline-block !important; } }
   .my-profile-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -7407,6 +7475,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .add-company-profile-page .hide-in-620 {
         display: none !important; } }
+  .add-company-profile-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .add-company-profile-page .show-in-830 {
+        display: inline-block !important; } }
+  .add-company-profile-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .add-company-profile-page .show-in-860 {
+        display: inline-block !important; } }
+  .add-company-profile-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .add-company-profile-page .show-in-970 {
+        display: inline-block !important; } }
+  .add-company-profile-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .add-company-profile-page .show-in-1000 {
+        display: inline-block !important; } }
   .add-company-profile-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -8267,6 +8355,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .add-company-profile-page .hide-in-620 {
         display: none !important; } }
+  .add-company-profile-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .add-company-profile-page .show-in-830 {
+        display: inline-block !important; } }
+  .add-company-profile-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .add-company-profile-page .show-in-860 {
+        display: inline-block !important; } }
+  .add-company-profile-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .add-company-profile-page .show-in-970 {
+        display: inline-block !important; } }
+  .add-company-profile-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .add-company-profile-page .show-in-1000 {
+        display: inline-block !important; } }
   .add-company-profile-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -9677,6 +9785,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .add-portfolio-page .hide-in-620 {
         display: none !important; } }
+  .add-portfolio-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .add-portfolio-page .show-in-830 {
+        display: inline-block !important; } }
+  .add-portfolio-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .add-portfolio-page .show-in-860 {
+        display: inline-block !important; } }
+  .add-portfolio-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .add-portfolio-page .show-in-970 {
+        display: inline-block !important; } }
+  .add-portfolio-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .add-portfolio-page .show-in-1000 {
+        display: inline-block !important; } }
   .add-portfolio-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -10537,6 +10665,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .add-portfolio-page .hide-in-620 {
         display: none !important; } }
+  .add-portfolio-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .add-portfolio-page .show-in-830 {
+        display: inline-block !important; } }
+  .add-portfolio-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .add-portfolio-page .show-in-860 {
+        display: inline-block !important; } }
+  .add-portfolio-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .add-portfolio-page .show-in-970 {
+        display: inline-block !important; } }
+  .add-portfolio-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .add-portfolio-page .show-in-1000 {
+        display: inline-block !important; } }
   .add-portfolio-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -11785,6 +11933,30 @@ app {
     .hide-in-620 {
       display: none !important; } }
 
+.show-in-830 {
+  display: none !important; }
+  @media (max-width: 830px) {
+    .show-in-830 {
+      display: inline-block !important; } }
+
+.show-in-860 {
+  display: none !important; }
+  @media (max-width: 860px) {
+    .show-in-860 {
+      display: inline-block !important; } }
+
+.show-in-970 {
+  display: none !important; }
+  @media (max-width: 970px) {
+    .show-in-970 {
+      display: inline-block !important; } }
+
+.show-in-1000 {
+  display: none !important; }
+  @media (max-width: 1000px) {
+    .show-in-1000 {
+      display: inline-block !important; } }
+
 .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
@@ -12617,6 +12789,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .landing-sign-up .hide-in-620 {
         display: none !important; } }
+  .landing-sign-up .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .landing-sign-up .show-in-830 {
+        display: inline-block !important; } }
+  .landing-sign-up .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .landing-sign-up .show-in-860 {
+        display: inline-block !important; } }
+  .landing-sign-up .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .landing-sign-up .show-in-970 {
+        display: inline-block !important; } }
+  .landing-sign-up .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .landing-sign-up .show-in-1000 {
+        display: inline-block !important; } }
   .landing-sign-up .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -14934,6 +15126,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .services-and-location-page .hide-in-620 {
         display: none !important; } }
+  .services-and-location-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .services-and-location-page .show-in-830 {
+        display: inline-block !important; } }
+  .services-and-location-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .services-and-location-page .show-in-860 {
+        display: inline-block !important; } }
+  .services-and-location-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .services-and-location-page .show-in-970 {
+        display: inline-block !important; } }
+  .services-and-location-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .services-and-location-page .show-in-1000 {
+        display: inline-block !important; } }
   .services-and-location-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -15794,6 +16006,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .services-and-location-page .hide-in-620 {
         display: none !important; } }
+  .services-and-location-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .services-and-location-page .show-in-830 {
+        display: inline-block !important; } }
+  .services-and-location-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .services-and-location-page .show-in-860 {
+        display: inline-block !important; } }
+  .services-and-location-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .services-and-location-page .show-in-970 {
+        display: inline-block !important; } }
+  .services-and-location-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .services-and-location-page .show-in-1000 {
+        display: inline-block !important; } }
   .services-and-location-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -17246,6 +17478,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .my-tasks-page .hide-in-620 {
         display: none !important; } }
+  .my-tasks-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .my-tasks-page .show-in-830 {
+        display: inline-block !important; } }
+  .my-tasks-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .my-tasks-page .show-in-860 {
+        display: inline-block !important; } }
+  .my-tasks-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .my-tasks-page .show-in-970 {
+        display: inline-block !important; } }
+  .my-tasks-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .my-tasks-page .show-in-1000 {
+        display: inline-block !important; } }
   .my-tasks-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -18026,9 +18278,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: auto;
       padding: 10px 6px; } }
   @media (max-width: 991px) {
-    .my-tasks-page .status-panel .status-item {
-      width: 33.3%;
-      padding: 0; }
     .my-tasks-page .sort-by-date .image-container {
       width: 44px; }
     .my-tasks-page .sort-by-date .date-container {
@@ -18220,6 +18469,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       display: flex;
       flex-direction: row;
       align-items: center; }
+    .my-tasks-page .search .controls-title {
+      display: none; }
     .my-tasks-page .search .new-ticket {
       display: flex;
       flex-direction: row;
@@ -18975,6 +19226,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .support-page .hide-in-620 {
         display: none !important; } }
+  .support-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .support-page .show-in-830 {
+        display: inline-block !important; } }
+  .support-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .support-page .show-in-860 {
+        display: inline-block !important; } }
+  .support-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .support-page .show-in-970 {
+        display: inline-block !important; } }
+  .support-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .support-page .show-in-1000 {
+        display: inline-block !important; } }
   .support-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -19755,9 +20026,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: auto;
       padding: 10px 6px; } }
   @media (max-width: 991px) {
-    .support-page .status-panel .status-item {
-      width: 33.3%;
-      padding: 0; }
     .support-page .sort-by-date .image-container {
       width: 44px; }
     .support-page .sort-by-date .date-container {
@@ -19949,6 +20217,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       display: flex;
       flex-direction: row;
       align-items: center; }
+    .support-page .search .controls-title {
+      display: none; }
     .support-page .search .new-ticket {
       display: flex;
       flex-direction: row;
@@ -20737,6 +21007,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .sign-in-and-sign-up-page .hide-in-620 {
         display: none !important; } }
+  .sign-in-and-sign-up-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .sign-in-and-sign-up-page .show-in-830 {
+        display: inline-block !important; } }
+  .sign-in-and-sign-up-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .sign-in-and-sign-up-page .show-in-860 {
+        display: inline-block !important; } }
+  .sign-in-and-sign-up-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .sign-in-and-sign-up-page .show-in-970 {
+        display: inline-block !important; } }
+  .sign-in-and-sign-up-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .sign-in-and-sign-up-page .show-in-1000 {
+        display: inline-block !important; } }
   .sign-in-and-sign-up-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
@@ -21417,6 +21707,26 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 620px) {
       .account-verification-page .hide-in-620 {
         display: none !important; } }
+  .account-verification-page .show-in-830 {
+    display: none !important; }
+    @media (max-width: 830px) {
+      .account-verification-page .show-in-830 {
+        display: inline-block !important; } }
+  .account-verification-page .show-in-860 {
+    display: none !important; }
+    @media (max-width: 860px) {
+      .account-verification-page .show-in-860 {
+        display: inline-block !important; } }
+  .account-verification-page .show-in-970 {
+    display: none !important; }
+    @media (max-width: 970px) {
+      .account-verification-page .show-in-970 {
+        display: inline-block !important; } }
+  .account-verification-page .show-in-1000 {
+    display: none !important; }
+    @media (max-width: 1000px) {
+      .account-verification-page .show-in-1000 {
+        display: inline-block !important; } }
   .account-verification-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {

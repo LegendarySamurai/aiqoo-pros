@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  //padding: 20px;
   padding: 20px 15px;
   font-family: "Raleway", sans-serif;
   color: $purple;
@@ -254,7 +253,6 @@
 
 @media(max-width: 1399px) {
   .status-bar {
-    //margin-top: 50px;
     padding: 20px 15px 20px 15px;
   }
 }
@@ -289,9 +287,6 @@
     padding: 15px 0;
 
     .task-type-list {
-      //max-height: 310px;
-      //overflow-x: hidden;
-      //overflow-y: auto;
       margin-top: 10px;
       padding: 16px 10px 10px 20px;
     }
@@ -306,17 +301,6 @@
 }
 
 @media(max-width: 991px) {
-  .status-bar-col {
-    //padding: 0;
-  }
-
-  .status-panel {
-    .status-item {
-      width: 33.3%;
-      padding: 0;
-    }
-  }
-
   .sort-by-date {
     .image-container {
       width: 44px;
@@ -324,11 +308,6 @@
 
     .date-container {
       flex-direction: row !important;
-
-      //.date-divider {
-      //  padding-left: 0;
-      //  padding-right: 0;
-      //}
     }
 
     .date-container-outer {
@@ -356,18 +335,12 @@
   }
 
   .status-bar-col {
-    //width: 100%;
     margin-top: 10px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .status-bar {
-    //margin-top: 0;
-    //padding: 0;
-    //background-color: transparent;
-    //box-shadow: none;
-
     .title {
       margin-bottom: 0;
     }
@@ -440,7 +413,6 @@
     background-color: red;
 
     .task-type-list {
-      //height: 430px;
       margin-bottom: 20px;
       padding-bottom: 36px !important;
     }

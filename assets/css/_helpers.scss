@@ -671,6 +671,38 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 
 // Show on
 
+.show-in-830 {
+  display: none !important;
+
+  @media(max-width: 830px) {
+    display: inline-block !important;
+  }
+}
+
+.show-in-860 {
+  display: none !important;
+
+  @media(max-width: 860px) {
+    display: inline-block !important;
+  }
+}
+
+.show-in-970 {
+  display: none !important;
+
+  @media(max-width: 970px) {
+    display: inline-block !important;
+  }
+}
+
+.show-in-1000 {
+  display: none !important;
+
+  @media(max-width: 1000px) {
+    display: inline-block !important;
+  }
+}
+
 .show-in-1024 {
   display: none !important;
 
