@@ -53,3 +53,9 @@ carouselItems.forEach(item => {
 		carouselButtonClicked = true;
 	});
 });
+
+
+// Jarallax
+$('.jarallax').jarallax({
+	speed: 0.2
+});

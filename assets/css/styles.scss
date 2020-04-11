@@ -5,6 +5,11 @@
 @import 'accordion';
 @import 'form';
 
+// vendor custom bootstrap cherry picking styles
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
+
+
 //************* My profile page (Dashboard) *************//
 .my-profile-page {
   @import 'my-profile.scss';
