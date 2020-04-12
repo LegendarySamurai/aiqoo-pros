@@ -55,7 +55,27 @@ carouselItems.forEach(item => {
 });
 
 
-// Jarallax
-$('.jarallax').jarallax({
-	speed: 0.2
-});
+// Footer scroll to top
+if ('onwheel' in document) {
+	// IE9+, FF17+
+	window.addEventListener("wheel", onWheel);
+}
+
+const FooterScrollContainer = document.querySelector('.scroll-container');
+
+function onWheel(e) {
+	e = e || window.event;
+
+	var delta = e.deltaY || e.detail || e.wheelDelta;
+
+	// e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+
+	if (delta > 0) {
+		FooterScrollContainer.classList.remove('hide');
+		FooterScrollContainer.classList.add('show');
+	} else {
+		FooterScrollContainer.classList.remove('show');
+		FooterScrollContainer.classList.add('hide');
+	}
+	// console.log('=> delta', delta);
+}

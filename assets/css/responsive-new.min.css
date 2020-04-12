@@ -2286,12 +2286,11 @@
 
 @media (max-width: 1699px) {
   .footer-outer .footer-col {
-    position: relative;
-    padding-right: 100px; }
-  .footer-outer .read-more {
-    position: absolute;
-    top: 0;
-    right: 0; } }
+    position: relative; } }
+
+@media (max-width: 1299px) {
+  .sticky-logo-container {
+    width: 18vw !important; } }
 
 @media (max-width: 1399px) {
   .head-section-body .aiqoo-logo-outer {
@@ -2343,8 +2342,6 @@
     height: 5vh !important; }
   .footer-outer .sticky-logo-outer {
     padding: 1vh 1vw 1.5vh !important; }
-  .footer-outer .footer-col {
-    padding-right: 80px; }
   .footer-outer h4 {
     font-size: 1.35vh !important; }
   .footer-outer .text {

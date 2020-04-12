@@ -2,7 +2,7 @@
 $('#slick-container').slick({
 	rows: 1,
 	slidesToShow: 2,
-	slidesToScroll: 2,
+	slidesToScroll: 1,
 	arrows: true,
 	dots: false,
 	infinite: false,

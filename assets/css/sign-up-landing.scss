@@ -6,6 +6,7 @@
 
   width: 100%;
   height: $page-height;
+  overflow: hidden;
 
   // Head section
   .head-section {
@@ -154,9 +155,14 @@
     color: $purple;
 
     .top-text {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
       width: 100%;
       height: 19vh;
       line-height: 1.25;
+      //padding-top: 2vh;
       font-weight: 300;
       font-size: 2.5vh;
       //background-color: chartreuse; // !!!!!!!!!
@@ -189,6 +195,7 @@
           justify-content: flex-start;
           width: 100%;
           height: 100%;
+          background-color: #fff;
         }
 
         .image-container {
@@ -283,7 +290,7 @@
       margin-top: auto;
       padding: 0;
       font-weight: 300;
-      font-size: 2.25vh;
+      font-size: 2.125vh;
       color: #d8cdba;
     }
 
@@ -305,20 +312,7 @@
       height: 100%;
       padding: 1vh 1vw;
       transition: transform 200ms ease;
-      //box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13);
-      //background-color: #ffffff;
       transition-duration: 400ms;
-
-      //&:before {
-      //  display: block;
-      //  content: '';
-      //  position: absolute;
-      //  left: 50%;
-      //  top: -5px;
-      //  transform: translate(-50%);
-      //  width: 100%;
-      //  height: 5px;
-      //}
     }
 
     .quality-card-text {
@@ -479,7 +473,7 @@
 
 // Special offers
 .special-offers {
-  padding: 2vh 2vw 2.5vh;
+  padding: 1.5vh 2vw 2vh;
 
   .special-offers-header {
     display: flex;
@@ -621,11 +615,18 @@
   position: relative;
   z-index: 1;
   flex-grow: 1;
-  margin-top: 2.5vh;
+  margin-top: 1vh;
   padding: 0 2vw 1vh;
   background-color: #fff;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+
+  .error-message {
+    span {
+      font-size: 1.6vh;
+      color: #ff0000;
+    }
+  }
 
   .form-control {
     padding: .75vw .75vw;
@@ -831,15 +832,34 @@
 
 ////////////// footer //////////////
 footer {
-  position: sticky;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  //position: sticky;
+  //bottom: 0;
+  //left: 0;
   width: 100%;
   height: 8vh;
+  //overflow: hidden;
   //height: auto;
   background-color: #585077;
 
+  .scroll-container {
+    z-index: 10;
+    position: absolute;
+    top: 3.875vh;
+    left: 0;
+    transition: transform 400ms ease-out;
+
+    &.show {
+      transform: translate(0, -100%);
+    }
+
+    &.hide {
+      transform: translate(0, 0%);
+    }
+  }
+
   .sticky-logo-container {
+    z-index: 20;
     position: fixed;
     bottom: 0;
     right: 7.5vw;
@@ -881,14 +901,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20px;
+    width: 146px;
+    height: 36px;
+    margin-top: 1vh;
     padding: 0;
     color: #fff;
     font-weight: 300;
-    font-size: 1.25vh;
-    text-decoration: underline;
-    border: none !important;
-    transition: position 300ms ease;
+    font-size: 1.5vh;
+    border: .5px solid #fff !important;
+    border-radius: 2.5px;
   }
 
   a {
@@ -896,12 +917,13 @@ footer {
   }
 
   h4 {
-    font-size: 1.5vh;
+    font-size: 1.75vh;
   }
 
   .text {
+    line-height: 1.5;
     font-weight: 300;
-    font-size: 1.25vh;
+    font-size: 1.5vh;
   }
 
   .decoration-element {
@@ -920,29 +942,20 @@ footer {
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: .5vh 5vw;
+  padding: 1.5vh 5vw;
   color: #fff;
   text-align: left;
-  background-color: coral; //
+  background-color: $purple;
 }
 
 .footer-col {
   width: 48%;
   height: auto;
-  //background-color: #ccc;
 }
-
-.footer-col-1 {}
-
-.footer-col-2 {}
 
 .links-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.parallax-window {
-  min-height: 400px;
-  background: red;
+  margin-top: 1vh;
 }

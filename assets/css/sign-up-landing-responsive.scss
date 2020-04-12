@@ -16,18 +16,22 @@
   .footer-outer {
     .footer-col {
       position: relative;
-      padding-right: 100px;
+      //padding-right: 100px;
     }
 
-    .read-more {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+    //.read-more {
+    //  position: absolute;
+    //  top: 0;
+    //  right: 0;
+    //}
   }
 }
 
-@media(max-width: 1599px) {}
+@media(max-width: 1299px) {
+  .sticky-logo-container {
+    width: 18vw !important;
+  }
+}
 
 @media(max-width: 1399px) {
   // Head section
@@ -162,7 +166,7 @@
     }
 
     .footer-col {
-      padding-right: 80px;
+      //padding-right: 80px;
     }
 
     h4 {
