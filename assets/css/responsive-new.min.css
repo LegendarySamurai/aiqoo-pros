@@ -2362,7 +2362,17 @@
     padding: 1.5vh 2vw !important; }
   .head-section-body h2 {
     padding-left: 0 !important;
-    font-size: 2.5vw !important; } }
+    font-size: 2.5vw !important; }
+  .cards-container {
+    height: auto !important; }
+  .quality-cards {
+    flex-direction: column !important;
+    align-items: center; }
+  .quality-card {
+    width: 100% !important;
+    height: 100% !important; }
+  .quality-card-content-inner {
+    position: static !important; } }
 
 @media (max-width: 991px) {
   .back-layer {

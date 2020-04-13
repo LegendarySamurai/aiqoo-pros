@@ -206,6 +206,25 @@
       font-size: 2.5vw !important;
     }
   }
+
+  // Quality cards
+  .cards-container {
+    height: auto !important;
+  }
+
+  .quality-cards {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .quality-card {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .quality-card-content-inner {
+    position: static !important;
+  }
 }
 
 @media(max-width: 991px) {
