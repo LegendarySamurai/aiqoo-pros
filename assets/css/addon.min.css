@@ -1,0 +1,103 @@
+.main-wrapper-inner {
+  padding-top: 30px; }
+
+.my-profile-page form .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+  top: 4px !important; }
+
+.custom-control .custom-control-label:before {
+  top: -4px; }
+
+form .custom-checkbox {
+  margin-left: 20px; }
+
+.account-verification-page .account-verification .verification-code-container .code {
+  width: 90%; }
+
+.account-verification-page .account-verification .verification-code-container .verification-code {
+  width: 80%;
+  letter-spacing: 28px; }
+
+#landing-sign-up .error, #SignUp .error {
+  width: 100%;
+  color: red; }
+
+.wizard-dialog .wizard-content.locations .wizard-content-inner {
+  height: 290px; }
+
+.company-profile-page .page-right-container .wizard-dialog {
+  min-height: 556px; }
+
+.page-right-container {
+  width: 100%; }
+
+.my-profile-page .content-container .content .upload-photo i {
+  background-size: cover; }
+
+@media (min-width: 300px) {
+  .wizard-dialog .page-content .aiqoo-collapse-checkbox-outer {
+    margin-top: 20px; } }
+
+@media (max-width: 768px) {
+  .wizard-dialog .page-content {
+    padding: 0px 0 20px; }
+  .add-company-profile-page .dashboard-outer {
+    margin-top: 10px; } }
+
+@media (min-width: 768px) {
+  .page-right-container {
+    box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+    background-color: #fff;
+    width: 100%;
+    margin-left: 20px; }
+  .page-right-container .container {
+    padding: 0px; }
+  .page-right-container .wizard-dialog {
+    box-shadow: none;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 80%; } }
+
+@media (min-width: 1600px) {
+  .wizard-dialog .page-content {
+    padding-top: 20px; }
+  .wizard-dialog .buttons-container {
+    margin-top: 10px; }
+  /*.page-content {
+        padding-top: 0px !important;
+    }*/ }
+
+.page-right-container .wizard-dialog .locations {
+  width: 100%; }
+
+.page-right-container .wizard-dialog .submit-button {
+  margin-right: -8px; }
+
+.company-profile-page .page-right-container .wizard-dialog {
+  width: 70%; }
+
+.my-services-page .page-right-container .wizard-dialog {
+  width: 92%; }
+
+/* add company profile */
+.add-company-profile-page form .custom-checkbox .custom-control-label:before,
+.add-company-profile-page form .custom-checkbox .custom-control-label:after {
+  width: 1.5rem !important;
+  height: 1.5rem !important; }
+
+.add-company-profile-page form .custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+  left: -20px; }
+
+.add-company-profile-page .dashboard-outer .add-company-profile .content .activity-hours-group .input-group {
+  border: none; }
+
+.add-company-profile-page form .validation-message {
+  margin-bottom: 20px !important; }
+
+.add-company-profile-page .add-company-profile form label {
+  width: 100%; }
+
+.add-company-profile-page form .custom-checkbox .custom-control-label {
+  padding-top: 0px; }
+
+.add-company-profile-page .dashboard-outer {
+  margin-top: 30px; }

@@ -415,7 +415,7 @@
       margin-bottom: 10px;
       margin-top: 10px; }
     .sidebar .user-nav {
-      height: 172px;
+      height: 149px;
       background: #f9f9f9; }
       .sidebar .user-nav .user-img {
         width: 15%;
@@ -446,6 +446,7 @@
     display: flex;
     border-bottom: 1px solid #dedede;
     background-image: url(../images/bac-map.png);
+    z-index: 1;
     box-shadow: 0 0 5px 2px #cbcbcb; }
     .header-mobile .openbtn {
       position: relative;
