@@ -13962,6 +13962,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .sign-up-landing .main-page-container .quality-card .top-decoration-element {
       width: 100%;
       height: 5px; }
+    .sign-up-landing .main-page-container .quality-card .quality-card-content {
+      height: 100%; }
     .sign-up-landing .main-page-container .quality-card .quality-card-content-inner {
       z-index: 2;
       display: flex;
@@ -13970,9 +13972,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       align-items: flex-start;
       width: 100%;
       height: 100%;
-      padding: 1vh 1vw;
-      transition: transform 200ms ease;
-      transition-duration: 400ms; }
+      padding: 1vh 1vw; }
     .sign-up-landing .main-page-container .quality-card .quality-card-text {
       height: 100%;
       overflow: hidden;
@@ -13981,49 +13981,67 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       font-size: 1.75vh;
       color: #574f76;
       text-align: left; }
+      .sign-up-landing .main-page-container .quality-card .quality-card-text br {
+        display: none; }
     .sign-up-landing .main-page-container .quality-card .step span {
       margin-bottom: 1vh;
       font-size: 2vw; }
-    .sign-up-landing .main-page-container .quality-card.light-purple .top-decoration-element {
+    .sign-up-landing .main-page-container .quality-card.a .top-decoration-element {
       background-color: #b754c3; }
-    .sign-up-landing .main-page-container .quality-card.light-purple .step span {
+    .sign-up-landing .main-page-container .quality-card.a .step span {
       color: #b754c3; }
-    .sign-up-landing .main-page-container .quality-card.sean-blue .top-decoration-element {
+    .sign-up-landing .main-page-container .quality-card.b .top-decoration-element {
       background-color: #97bbe0; }
-    .sign-up-landing .main-page-container .quality-card.sean-blue .step span {
+    .sign-up-landing .main-page-container .quality-card.b .step span {
       color: #97bbe0; }
-    .sign-up-landing .main-page-container .quality-card.dark-blue .top-decoration-element {
+    .sign-up-landing .main-page-container .quality-card.c .top-decoration-element {
       background-color: #3b4889; }
-    .sign-up-landing .main-page-container .quality-card.dark-blue .step span {
+    .sign-up-landing .main-page-container .quality-card.c .step span {
       color: #3b4889; }
-  .sign-up-landing .main-page-container .quality-card:hover {
-    z-index: 10; }
-    .sign-up-landing .main-page-container .quality-card:hover .quality-card-content-inner {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      width: 48.5vw;
-      transform: translate(12%, 0%) scale(1.15);
-      height: 100%;
-      box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13);
-      background-color: #ffffff; }
-      .sign-up-landing .main-page-container .quality-card:hover .quality-card-content-inner:after {
-        display: block;
-        content: '';
+  .sign-up-landing .main-page-container .quality-card {
+    position: relative; }
+    .sign-up-landing .main-page-container .quality-card:hover {
+      z-index: 10; }
+      .sign-up-landing .main-page-container .quality-card:hover .quality-card-content-inner {
         position: absolute;
-        left: 50%;
-        top: -5px;
-        transform: translate(-50%);
-        width: 100%;
-        height: 5px; }
-  .sign-up-landing .main-page-container .quality-card.light-purple:hover .quality-card-content-inner:after {
-    background-color: #b754c3; }
-  .sign-up-landing .main-page-container .quality-card.sean-blue:hover .quality-card-content-inner:after {
-    background-color: #97bbe0; }
-  .sign-up-landing .main-page-container .quality-card.dark-blue:hover .quality-card-content-inner:after {
-    background-color: #3b4889; }
+        top: 0;
+        width: 48.5vw;
+        height: 100%;
+        box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13);
+        background-color: #ffffff; }
+        .sign-up-landing .main-page-container .quality-card:hover .quality-card-content-inner:after {
+          display: block;
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: -5px;
+          transform: translate(-50%);
+          width: 100%;
+          height: 5px; }
+        .sign-up-landing .main-page-container .quality-card:hover .quality-card-content-inner .quality-card-text br {
+          display: block; }
+        .sign-up-landing .main-page-container .quality-card:hover .quality-card-content-inner .quality-card-text .separator {
+          display: none; }
+        .sign-up-landing .main-page-container .quality-card:hover .quality-card-content-inner .read-more {
+          display: none; }
+    .sign-up-landing .main-page-container .quality-card.a:hover .quality-card-content-inner {
+      left: 0;
+      transform: scale(1.15);
+      transform-origin: 0% 0%; }
+      .sign-up-landing .main-page-container .quality-card.a:hover .quality-card-content-inner:after {
+        background-color: #b754c3; }
+    .sign-up-landing .main-page-container .quality-card.b:hover .quality-card-content-inner {
+      left: 50%;
+      right: auto;
+      transform: translate(-50%, 0) scale(1.15); }
+      .sign-up-landing .main-page-container .quality-card.b:hover .quality-card-content-inner:after {
+        background-color: #97bbe0; }
+    .sign-up-landing .main-page-container .quality-card.c:hover .quality-card-content-inner {
+      right: 0;
+      transform: scale(1.15);
+      transform-origin: 100% 0%; }
+      .sign-up-landing .main-page-container .quality-card.c:hover .quality-card-content-inner:after {
+        background-color: #3b4889; }
   .sign-up-landing .main-page-container .cards-container {
     width: 100%;
     height: 24vh;
