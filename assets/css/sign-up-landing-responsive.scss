@@ -87,9 +87,6 @@
   }
 }
 
-
-@media(max-width: 1279px) {}
-
 @media(max-width: 1199px) {
   // Head section
   .head-section-body {
@@ -179,9 +176,23 @@
   }
 }
 
-@media(max-width: 991px) {
+@media(max-width: 1000px) {
+  // Content
+  .content {
+    width: 42.5vw !important;
+  }
+
+  // Side block
+  .side-block {
+    width: 42.5vw !important;
+  }
+
   // Head section
   .head-section-body {
+    .pro-img {
+      display: none;
+    }
+
     .aiqoo-logo-outer {
       padding-left: 0 !important;
     }
@@ -192,10 +203,12 @@
 
     h2 {
       padding-left: 0 !important;
-      font-size: 3vw !important;
+      font-size: 2.5vw !important;
     }
   }
+}
 
+@media(max-width: 991px) {
   .back-layer {
     position: static;
     transform: none;

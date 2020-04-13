@@ -8,7 +8,7 @@ $('#slick-container').slick({
 	infinite: false,
 	responsive: [
 		{
-			breakpoint: 991,
+			breakpoint: 1000,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,

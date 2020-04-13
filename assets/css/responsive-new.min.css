@@ -1767,7 +1767,7 @@
   .summary-page-empty .content-col-left .content-col-main {
     padding-top: 80px; } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) {
+@media only screen and (min-width: 300px) and (max-width: 599px) {
   @keyframes tonext {
     75% {
       left: 0; }
@@ -1850,7 +1850,7 @@
     height: 100%;
     scroll-snap-align: center; } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) and (hover: hover) {
+@media only screen and (min-width: 300px) and (max-width: 599px) and (hover: hover) {
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
@@ -1859,11 +1859,11 @@
   .carousel__slide:last-child .carousel__snapper {
     animation-name: tostart, snap; } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) and (prefers-reduced-motion: reduce) {
+@media only screen and (min-width: 300px) and (max-width: 599px) and (prefers-reduced-motion: reduce) {
   .carousel__snapper {
     animation-name: none; } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) {
+@media only screen and (min-width: 300px) and (max-width: 599px) {
   .carousel:hover .carousel__snapper,
   .carousel:focus-within .carousel__snapper {
     animation-name: none; }
@@ -2153,7 +2153,7 @@
     .landing-sign-up .quality-card:hover .quality-card-content {
       transform: scale(1.15); } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) {
+@media only screen and (min-width: 300px) and (max-width: 599px) {
   @keyframes tonext {
     75% {
       left: 0; }
@@ -2236,7 +2236,7 @@
     height: 100%;
     scroll-snap-align: center; } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) and (hover: hover) {
+@media only screen and (min-width: 300px) and (max-width: 599px) and (hover: hover) {
   .carousel__snapper {
     animation-name: tonext, snap;
     animation-timing-function: ease;
@@ -2245,11 +2245,11 @@
   .carousel__slide:last-child .carousel__snapper {
     animation-name: tostart, snap; } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) and (prefers-reduced-motion: reduce) {
+@media only screen and (min-width: 300px) and (max-width: 599px) and (prefers-reduced-motion: reduce) {
   .carousel__snapper {
     animation-name: none; } }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) {
+@media only screen and (min-width: 300px) and (max-width: 599px) {
   .carousel:hover .carousel__snapper,
   .carousel:focus-within .carousel__snapper {
     animation-name: none; }
@@ -2349,14 +2349,22 @@
   .footer-outer .text {
     font-size: 1.125vh !important; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
+  .content {
+    width: 42.5vw !important; }
+  .side-block {
+    width: 42.5vw !important; }
+  .head-section-body .pro-img {
+    display: none; }
   .head-section-body .aiqoo-logo-outer {
     padding-left: 0 !important; }
   .head-section-body .aiqoo-logo-inner {
     padding: 1.5vh 2vw !important; }
   .head-section-body h2 {
     padding-left: 0 !important;
-    font-size: 3vw !important; }
+    font-size: 2.5vw !important; } }
+
+@media (max-width: 991px) {
   .back-layer {
     position: static;
     transform: none;

@@ -312,7 +312,7 @@
       width: 100%;
       height: 100%;
       padding: 1vh 1vw;
-      //transition-duration: 600ms;
+      transition-duration: 900ms;
     }
 
     .quality-card-text {
@@ -323,6 +323,7 @@
       font-size: 1.75vh;
       color: #574f76;
       text-align: left;
+      transition-delay: 200ms;
 
       br {
         display: none;
