@@ -24,19 +24,31 @@ const isMobile = window.innerWidth < 767;
 // });
 
 const qualityCards = document.querySelectorAll('.quality-card');
-const scaledUpCard = document.querySelector('#carousel__slide2');
-let cardScaledUp = true;
 
 qualityCards.forEach(card => {
-	card.addEventListener('mouseover', () =>{
-		qualityCards.forEach(item => {
-			item.classList.remove('scaled-up');
+	card.addEventListener('mouseover', () => {
+		qualityCards.forEach(card => {
+			card.classList.add('z-index-0');
 		});
-		cardScaledUp = false;
+
+		card.classList.remove('z-index-0');
+
+		if (!card.classList.contains('show')) {
+			card.classList.add('show');
+			card.classList.remove('hide');
+		} else {
+			card.classList.remove('hide');
+		}
 	});
+
 	card.addEventListener('mouseout', () => {
-		scaledUpCard.classList.add('scaled-up');
-	});
+		card.classList.add('hide');
+
+		qualityCards.forEach(card => {
+			card.classList.remove('show');
+			card.classList.add('z-index');
+		})
+	})
 });
 
 
