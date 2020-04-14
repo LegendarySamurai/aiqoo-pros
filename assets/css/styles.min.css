@@ -12715,7 +12715,11 @@ form {
 
 .wizard-dialog-services-and-locations {
   width: 86% !important;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Lato", sans-serif; }
+  .wizard-dialog-services-and-locations .select {
+    display: none; }
+  .wizard-dialog-services-and-locations .modal-content {
+    border: none !important; }
   .wizard-dialog-services-and-locations .left-side {
     width: 20%;
     background-color: #585077; }
@@ -12768,6 +12772,8 @@ form {
         padding-left: 0; }
     .wizard-dialog-services-and-locations .right-side .input-label {
       white-space: nowrap; }
+    .wizard-dialog-services-and-locations .right-side .custom-control-stats {
+      color: #b3b3b3 !important; }
     .wizard-dialog-services-and-locations .right-side .search {
       padding-bottom: 20px;
       border-bottom: none; }

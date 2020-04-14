@@ -103,7 +103,15 @@
 // Services and Area list popup
 .wizard-dialog-services-and-locations {
   width: 86% !important;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
+
+  .select {
+    display: none;
+  }
+
+  .modal-content {
+    border: none !important;
+  }
 
   .left-side {
     width: 20%;
@@ -185,6 +193,10 @@
 
     .input-label {
       white-space: nowrap;
+    }
+
+    .custom-control-stats {
+      color: #b3b3b3 !important;
     }
 
     // Search for this page

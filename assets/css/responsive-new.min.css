@@ -1110,6 +1110,74 @@
   form .input-group-title {
     font-size: 1.25rem; } }
 
+@media (max-width: 1199px) {
+  .wizard-dialog-services-and-locations .left-side {
+    width: 30%; }
+    .wizard-dialog-services-and-locations .left-side .counties-list-item.active {
+      padding: 15px 10px; }
+  .wizard-dialog-services-and-locations .right-side {
+    width: 70%; }
+    .wizard-dialog-services-and-locations .right-side .county-item {
+      width: 46%; }
+    .wizard-dialog-services-and-locations .right-side .modal-footer button {
+      width: 180px; } }
+
+@media (max-width: 1099px) {
+  .wizard-dialog-services-and-locations .right-side .modal-footer button {
+    width: 160px; } }
+
+@media (max-width: 991px) {
+  .wizard-dialog-services-and-locations .right-side .county-item {
+    width: 96%; }
+  .wizard-dialog-services-and-locations .right-side .modal-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px; }
+    .wizard-dialog-services-and-locations .right-side .modal-footer .buttons-container {
+      justify-content: flex-start;
+      margin-top: 20px !important; }
+      .wizard-dialog-services-and-locations .right-side .modal-footer .buttons-container button {
+        width: 50%; } }
+
+@media (max-width: 767px) {
+  .wizard-dialog-services-and-locations .left-side {
+    width: 40%;
+    padding: 20px 0 20px 20px; }
+  .wizard-dialog-services-and-locations .right-side {
+    width: 60%;
+    padding: 20px 20px 20px 20px; }
+    .wizard-dialog-services-and-locations .right-side .county-list-container {
+      padding: 20px 10px 20px 20px; } }
+
+@media (max-width: 599px) {
+  .wizard-dialog-services-and-locations button.close {
+    background-color: transparent; }
+  .wizard-dialog-services-and-locations .modal-body {
+    flex-direction: column; }
+    .wizard-dialog-services-and-locations .modal-body .left-side {
+      width: 100%;
+      padding: 20px 20px 20px 20px; }
+      .wizard-dialog-services-and-locations .modal-body .left-side .counties-list-item.active {
+        border-radius: 5px; }
+      .wizard-dialog-services-and-locations .modal-body .left-side .modal-title {
+        margin-bottom: 30px; }
+      .wizard-dialog-services-and-locations .modal-body .left-side .counties-list {
+        display: none; }
+      .wizard-dialog-services-and-locations .modal-body .left-side .select {
+        display: block !important;
+        width: 100%;
+        height: 46px;
+        padding: 0 10px;
+        border: 1px solid #b3b3b3;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #342e49;
+        font-weight: 500;
+        font-family: "Lato", sans-serif; }
+    .wizard-dialog-services-and-locations .modal-body .right-side {
+      width: 100%; } }
+
 @media (min-width: 300px) {
   .wizard-dialog {
     width: 98%; }

@@ -546,6 +546,150 @@
 }
 
 
+//************* Services and Area list popup  *************//
+.wizard-dialog-services-and-locations {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {
+    .left-side {
+      width: 30%;
+
+      .counties-list-item {
+        &.active {
+          padding: 15px 10px;
+        }
+      }
+    }
+
+    .right-side {
+      width: 70%;
+
+      .county-item {
+        width: 46%;
+      }
+
+      .modal-footer {
+        button {
+          width: 180px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1099px) {
+    .left-side {
+      .counties-list-item {
+        .quantity {
+          //padding: 3px 7px;
+        }
+      }
+    }
+
+    .right-side {
+      .modal-footer {
+        button {
+          width: 160px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    .right-side {
+      .county-item {
+        width: 96%;
+      }
+
+      .modal-footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 20px;
+
+        .buttons-container {
+          justify-content: flex-start;
+          margin-top: 20px !important;
+
+          button {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .left-side {
+      width: 40%;
+      padding: 20px 0 20px 20px;
+    }
+
+    .right-side {
+      width: 60%;
+      padding: 20px 20px 20px 20px;
+
+      .county-list-container {
+        padding: 20px 10px 20px 20px;
+      }
+    }
+  }
+
+  @media(max-width: 599px) {
+    button.close {
+      background-color: transparent;
+    }
+
+    .modal-body {
+      flex-direction: column;
+
+      .left-side {
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+
+        .counties-list-item {
+          &.active {
+            border-radius: 5px;
+          }
+        }
+
+        .modal-title {
+          margin-bottom: 30px;
+        }
+
+        .counties-list {
+          display: none;
+        }
+
+        // select
+        .select {
+          display: block !important;
+          width: 100%;
+          height: 46px;
+          padding: 0 10px;
+          border: 1px solid #b3b3b3;
+          background-color: #fff;
+          border-radius: 5px;
+          color: #342e49;
+          font-weight: 500;
+          font-family: "Lato", sans-serif;
+        }
+      }
+
+      .right-side {
+        width: 100%;
+      }
+    }
+  }
+
+  @media(max-width: 374px) {}
+}
+
+
+
 //************* Wizard  *************//
 .wizard-dialog  {
   @media(min-width: 300px) {
@@ -862,7 +1006,6 @@
     }
   }
 }
-
 
 //************* Dashboard  *************//
 .dashboard-outer {
