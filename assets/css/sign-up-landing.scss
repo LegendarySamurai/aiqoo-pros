@@ -4,6 +4,7 @@
   $nine-percent-padding: 9vh;
   $three-percent-padding: 3vh;
 
+  position: fixed;
   width: 100%;
   height: $page-height;
   overflow: hidden;
@@ -988,29 +989,17 @@
 ////////////// footer //////////////
 footer {
   position: relative;
-  //position: sticky;
-  //bottom: 0;
-  //left: 0;
   width: 100%;
-  height: 8vh;
-  //overflow: hidden;
-  //height: auto;
-  background-color: #585077;
+  height: auto;
+  padding-top: 92vh;
+  padding-bottom: 0;
+  pointer-events: none;
+  background-color: transparent;
 
   .scroll-container {
     z-index: 10;
-    position: absolute;
-    top: 3.875vh;
-    left: 0;
-    transition: transform 400ms ease-out;
-
-    &.show {
-      transform: translate(0, -100%);
-    }
-
-    &.hide {
-      transform: translate(0, 0%);
-    }
+    position: static;
+    pointer-events: auto;
   }
 
   .sticky-logo-container {
@@ -1065,6 +1054,7 @@ footer {
     font-size: 1.5vh;
     border: .5px solid #fff !important;
     border-radius: 2.5px;
+    background-color: transparent;
   }
 
   a {
@@ -1097,7 +1087,7 @@ footer {
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: 1.5vh 5vw;
+  padding: 4.875vh 5vw 1.5vh 5vw;
   color: #fff;
   text-align: left;
   background-color: $purple;
