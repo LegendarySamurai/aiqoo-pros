@@ -14286,6 +14286,15 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       height: 100%;
       background-color: #ffffff;
       box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13); }
+      .sign-up-landing .main-page-container .quality-card .quality-card-content-inner:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -5px;
+        transform: translate(-50%);
+        width: 100%;
+        height: 5px; }
     .sign-up-landing .main-page-container .quality-card .quality-card-text-content {
       display: flex;
       flex-direction: column;
@@ -14309,15 +14318,21 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       font-size: 2vw; }
     .sign-up-landing .main-page-container .quality-card.a .quality-card-content-inner {
       left: 0; }
+      .sign-up-landing .main-page-container .quality-card.a .quality-card-content-inner:after {
+        background-color: #b754c3; }
     .sign-up-landing .main-page-container .quality-card.a .step span {
       color: #b754c3; }
     .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner {
       left: 50%;
       transform: translate(-50%, 0%); }
+      .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner:after {
+        background-color: #97bbe0; }
     .sign-up-landing .main-page-container .quality-card.b .step span {
       color: #97bbe0; }
     .sign-up-landing .main-page-container .quality-card.c .quality-card-content-inner {
       right: 0; }
+      .sign-up-landing .main-page-container .quality-card.c .quality-card-content-inner:after {
+        background-color: #3b4889; }
     .sign-up-landing .main-page-container .quality-card.c .step span {
       color: #3b4889; }
   .sign-up-landing .main-page-container .quality-card {
@@ -14335,15 +14350,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         animation-duration: 2000ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1; }
-        .sign-up-landing .main-page-container .quality-card.show .quality-card-content-inner:after {
-          display: block;
-          content: '';
-          position: absolute;
-          left: 50%;
-          top: -5px;
-          transform: translate(-50%);
-          width: 100%;
-          height: 5px; }
         .sign-up-landing .main-page-container .quality-card.show .quality-card-content-inner .quality-card-text br {
           display: block; }
         .sign-up-landing .main-page-container .quality-card.show .quality-card-content-inner .quality-card-text .separator {
@@ -14363,8 +14369,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         animation-duration: 1200ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1; }
-    .sign-up-landing .main-page-container .quality-card.a.show .quality-card-content-inner:after {
-      background-color: #b754c3; }
     .sign-up-landing .main-page-container .quality-card.b.show .quality-card-content-inner:after {
       background-color: #97bbe0; }
     .sign-up-landing .main-page-container .quality-card.c.show .quality-card-content-inner:after {

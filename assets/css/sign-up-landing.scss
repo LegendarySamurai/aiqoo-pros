@@ -313,6 +313,17 @@
       height: 100%;
       background-color: #ffffff;
       box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13);
+
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -5px;
+        transform: translate(-50%);
+        width: 100%;
+        height: 5px;
+      }
     }
 
     .quality-card-text-content {
@@ -357,6 +368,10 @@
 
       .quality-card-content-inner {
         left: 0;
+
+        &:after {
+          background-color: #b754c3;
+        }
       }
 
       .step {
@@ -371,6 +386,10 @@
       .quality-card-content-inner {
         left: 50%;
         transform: translate(-50%, 0%);
+
+        &:after {
+          background-color: #97bbe0;
+        }
       }
 
       .step {
@@ -384,6 +403,10 @@
 
       .quality-card-content-inner {
         right: 0;
+
+        &:after {
+          background-color: #3b4889;
+        }
       }
 
       .step {
@@ -415,17 +438,6 @@
         animation-duration: 2000ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
-
-        &:after {
-          display: block;
-          content: '';
-          position: absolute;
-          left: 50%;
-          top: -5px;
-          transform: translate(-50%);
-          width: 100%;
-          height: 5px;
-        }
 
         .quality-card-text {
           br {
@@ -481,10 +493,6 @@
           //left: 0;
           //transform: scale(1.15);
           //transform-origin: 0% 0%;
-
-          &:after {
-            background-color: #b754c3;
-          }
         }
       }
     }
