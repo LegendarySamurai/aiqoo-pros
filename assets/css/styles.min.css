@@ -14062,10 +14062,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
 
 .sign-up-landing .main-page-container {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden; }
+  width: 100%; }
+  @media (min-width: 1000px) {
+    .sign-up-landing .main-page-container {
+      position: fixed;
+      height: 100vh;
+      overflow: hidden; } }
   .sign-up-landing .main-page-container .head-section {
     position: relative;
     width: 100%;
@@ -14123,25 +14125,31 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: 8.35vh; }
   .sign-up-landing .main-page-container .content-section {
     position: relative;
-    width: 100%;
-    height: 62vh;
-    padding: 2vh 5vw 3vh; }
+    width: 100%; }
+    @media (min-width: 1000px) {
+      .sign-up-landing .main-page-container .content-section {
+        height: 62vh;
+        padding: 2vh 5vw 3vh; } }
   .sign-up-landing .main-page-container .content-inner {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: -21vh;
     pointer-events: none; }
+    @media (min-width: 1000px) {
+      .sign-up-landing .main-page-container .content-inner {
+        margin-top: -21vh; } }
   .sign-up-landing .main-page-container .side-block {
-    width: 25vw;
-    height: 78vh;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
     background-color: #fff;
     pointer-events: auto; }
+    @media (min-width: 1000px) {
+      .sign-up-landing .main-page-container .side-block {
+        width: 25vw;
+        height: 78vh; } }
   .sign-up-landing .main-page-container .outer {
     height: 100%; }
   .sign-up-landing .main-page-container .back-layer {
@@ -14162,8 +14170,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 60vw;
     pointer-events: auto; }
+    @media (min-width: 1000px) {
+      .sign-up-landing .main-page-container .content {
+        width: 60vw; } }
     .sign-up-landing .main-page-container .content h1 {
       font-size: 4vh; }
   .sign-up-landing .main-page-container .content-section {
@@ -14176,13 +14186,17 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       flex-direction: column;
       justify-content: center;
       width: 100%;
-      height: 19vh;
       line-height: 1.25;
       font-weight: 300;
       font-size: 2.5vh; }
+      @media (min-width: 1000px) {
+        .sign-up-landing .main-page-container .content-section .top-text {
+          height: 19vh; } }
     .sign-up-landing .main-page-container .content-section .reviews {
-      width: 100%;
-      height: 10vh; }
+      width: 100%; }
+      @media (min-width: 1000px) {
+        .sign-up-landing .main-page-container .content-section .reviews {
+          height: 10vh; } }
       .sign-up-landing .main-page-container .content-section .reviews .slick-container {
         position: relative; }
         .sign-up-landing .main-page-container .content-section .reviews .slick-container:after {
@@ -14255,6 +14269,39 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     justify-content: space-between;
     height: 100%;
     color: #574f76; }
+    .sign-up-landing .main-page-container .quality-cards .quality-cards-underlay {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 5px);
+      background-color: rgba(255, 255, 255, 0.9);
+      pointer-events: none;
+      opacity: 0; }
+
+@keyframes quality-cards-underlay-enter {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .sign-up-landing .main-page-container .quality-cards.show-underlay .quality-cards-underlay {
+      animation-name: quality-cards-underlay-enter;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      z-index: 10; }
+
+@keyframes quality-cards-underlay-exit {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+    .sign-up-landing .main-page-container .quality-cards.hide-underlay .quality-cards-underlay {
+      animation-name: quality-cards-underlay-exit;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      z-index: 10; }
   .sign-up-landing .main-page-container .quality-card {
     display: flex;
     flex-direction: column;
@@ -14330,14 +14377,15 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         transform-origin: 0 0; }
     .sign-up-landing .main-page-container .quality-card.a .step span {
       color: #b754c3; }
-    .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner {
-      left: 50%;
-      transform: translate(-50%, 0%); }
-      .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner:after {
-        background-color: #97bbe0; }
-      .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner.big-card {
-        transform: translate(-50%, 0%) scale(0.75);
-        transform-origin: 50% 0; }
+    @media (min-width: 1000px) {
+      .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner {
+        left: 50%;
+        transform: translate(-50%, 0%); } }
+    .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner:after {
+      background-color: #97bbe0; }
+    .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner.big-card {
+      transform: translate(-50%, 0%) scale(0.75);
+      transform-origin: 50% 0; }
     .sign-up-landing .main-page-container .quality-card.b .step span {
       color: #97bbe0; }
     .sign-up-landing .main-page-container .quality-card.c .quality-card-content-inner {
@@ -14350,109 +14398,106 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       color: #3b4889; }
   .sign-up-landing .main-page-container .quality-card {
     position: relative; }
-    .sign-up-landing .main-page-container .quality-card.show {
-      z-index: 10; }
-
-@keyframes big-card-enter-animation {
-  0% {
-    transform: scale(0.75);
-    width: 100%;
-    opacity: 0; }
-  100% {
-    transform: scale(1);
-    width: 48.5vw;
-    opacity: 1; } }
-
-@keyframes big-card-b-enter-animation {
-  0% {
-    transform: scale(0.75) translate(-50%, 0);
-    width: 100%;
-    opacity: 0; }
-  100% {
-    transform: scale(1) translate(-50%, 0);
-    width: 48.5vw;
-    opacity: 1; } }
-      .sign-up-landing .main-page-container .quality-card.show .big-card:not(.b) {
-        animation-name: big-card-enter-animation;
-        animation-duration: 800ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .main-page-container .quality-card.show .big-card.b {
-        animation-name: big-card-b-enter-animation;
-        animation-duration: 800ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .main-page-container .quality-card.show .big-card .quality-card-text-content {
-        animation-name: big-card-text-enter-animation;
-        animation-duration: 500ms;
-        animation-delay: 400ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-
-@keyframes big-card-text-enter-animation {
-  0% {
-    transform: scale(0);
-    opacity: 0; }
-  50% {
-    opacity: 1; }
-  100% {
-    transform: scale(1); } }
-    .sign-up-landing .main-page-container .quality-card.hide {
-      z-index: 9; }
-
-@keyframes big-card-exit-animation {
-  0% {
-    transform: scale(1);
-    width: 48.5vw;
-    opacity: 1; }
-  50% {
-    transform: scale(1);
-    width: 48.5vw;
-    opacity: 1; }
-  100% {
-    transform: scale(0.75);
-    width: 100%;
-    opacity: 0; } }
-
-@keyframes big-card-b-exit-animation {
-  0% {
-    transform: scale(1) translate(-50%, 0);
-    width: 48.5vw;
-    opacity: 1; }
-  50% {
-    transform: scale(1) translate(-50%, 0);
-    width: 48.5vw;
-    opacity: 1; }
-  100% {
-    transform: scale(0.75) translate(-50%, 0);
-    width: 100%;
-    opacity: 0; } }
-      .sign-up-landing .main-page-container .quality-card.hide .big-card:not(.b) {
-        animation-name: big-card-exit-animation;
-        animation-duration: 600ms;
-        animation-delay: 0ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .main-page-container .quality-card.hide .big-card.b {
-        animation-name: big-card-b-exit-animation;
-        animation-duration: 600ms;
-        animation-delay: 0ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .main-page-container .quality-card.hide .big-card .quality-card-text-content {
-        animation-name: big-card-text-exit-animation;
-        animation-duration: 600ms;
-        animation-delay: 0ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-
-@keyframes big-card-text-exit-animation {
-  0% {
-    transform: scale(1);
-    opacity: 1; }
-  100% {
-    transform: scale(0);
-    opacity: 0; } }
+    @media (min-width: 1000px) {
+      .sign-up-landing .main-page-container .quality-card.show {
+        z-index: 10; }
+        .sign-up-landing .main-page-container .quality-card.show .small-card {
+          opacity: .1; }
+      @keyframes big-card-enter-animation {
+        0% {
+          transform: scale(0.75);
+          width: 100%;
+          opacity: 0; }
+        100% {
+          transform: scale(1);
+          width: 48.5vw;
+          opacity: 1; } }
+      @keyframes big-card-b-enter-animation {
+        0% {
+          transform: scale(0.75) translate(-50%, 0);
+          width: 100%;
+          opacity: 0; }
+        100% {
+          transform: scale(1) translate(-50%, 0);
+          width: 48.5vw;
+          opacity: 1; } }
+        .sign-up-landing .main-page-container .quality-card.show .big-card:not(.b) {
+          animation-name: big-card-enter-animation;
+          animation-duration: 600ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1; }
+        .sign-up-landing .main-page-container .quality-card.show .big-card.b {
+          animation-name: big-card-b-enter-animation;
+          animation-duration: 600ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1; }
+        .sign-up-landing .main-page-container .quality-card.show .big-card .quality-card-text-content {
+          animation-name: big-card-text-enter-animation;
+          animation-duration: 400ms;
+          animation-delay: 300ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1; }
+      @keyframes big-card-text-enter-animation {
+        0% {
+          transform: scale(0);
+          opacity: 0; }
+        50% {
+          opacity: 1; }
+        100% {
+          transform: scale(1); } }
+      .sign-up-landing .main-page-container .quality-card.hide {
+        z-index: 9; }
+      @keyframes big-card-exit-animation {
+        0% {
+          transform: scale(1);
+          width: 48.5vw;
+          opacity: 1; }
+        50% {
+          transform: scale(1);
+          width: 48.5vw;
+          opacity: 1; }
+        100% {
+          transform: scale(0.75);
+          width: 100%;
+          opacity: 0; } }
+      @keyframes big-card-b-exit-animation {
+        0% {
+          transform: scale(1) translate(-50%, 0);
+          width: 48.5vw;
+          opacity: 1; }
+        50% {
+          transform: scale(1) translate(-50%, 0);
+          width: 48.5vw;
+          opacity: 1; }
+        100% {
+          transform: scale(0.75) translate(-50%, 0);
+          width: 100%;
+          opacity: 0; } }
+        .sign-up-landing .main-page-container .quality-card.hide .big-card:not(.b) {
+          animation-name: big-card-exit-animation;
+          animation-duration: 400ms;
+          animation-delay: 0ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1; }
+        .sign-up-landing .main-page-container .quality-card.hide .big-card.b {
+          animation-name: big-card-b-exit-animation;
+          animation-duration: 400ms;
+          animation-delay: 0ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1; }
+        .sign-up-landing .main-page-container .quality-card.hide .big-card .quality-card-text-content {
+          animation-name: big-card-text-exit-animation;
+          animation-duration: 400ms;
+          animation-delay: 0ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1; }
+      @keyframes big-card-text-exit-animation {
+        0% {
+          transform: scale(1);
+          opacity: 1; }
+        100% {
+          transform: scale(0);
+          opacity: 0; } } }
   .sign-up-landing .main-page-container .cards-container {
     width: 100%;
     height: 24vh;
@@ -14744,17 +14789,25 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 92vh;
   padding-bottom: 0;
   pointer-events: none;
   background-color: transparent; }
+  @media (min-width: 1000px) {
+    .sign-up-landing footer {
+      padding-top: calc(100vh - 8vh); } }
   .sign-up-landing footer .scroll-container {
-    z-index: 10;
-    position: static;
+    z-index: 30;
+    position: relative;
     pointer-events: auto; }
   .sign-up-landing footer .sticky-logo-container {
-    z-index: 20;
     position: fixed;
+    bottom: 0;
+    z-index: 20;
+    width: 100%;
+    height: 8vh;
+    background-color: #585077; }
+  .sign-up-landing footer .sticky-logo-container-inner {
+    position: absolute;
     bottom: 0;
     right: 7.5vw;
     width: 20vw;
@@ -14762,7 +14815,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #fff;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; }
-  .sign-up-landing footer .sticky-logo-outer {
+  .sign-up-landing footer .sticky-logo-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -14799,6 +14852,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     color: #fff; }
   .sign-up-landing footer h4 {
     font-size: 1.75vh; }
+    @media (min-width: 1000px) {
+      .sign-up-landing footer h4 {
+        display: flex;
+        align-items: center;
+        height: 8vh;
+        margin-bottom: 0; } }
   .sign-up-landing footer .text {
     line-height: 1.5;
     font-weight: 300;
@@ -14817,10 +14876,13 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: 4.875vh 5vw 1.5vh 5vw;
+  padding: 0 5vw 1.5vh 5vw;
   color: #fff;
   text-align: left;
   background-color: #585077; }
+  @media (min-width: 1000px) {
+    .sign-up-landing .footer-outer {
+      width: 69vw; } }
 
 .sign-up-landing .footer-col {
   width: 48%;

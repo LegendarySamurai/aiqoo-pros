@@ -3,11 +3,13 @@
   $main-side-padding: 5%;
   $nine-percent-padding: 9vh;
   $three-percent-padding: 3vh;
-
-  position: fixed;
   width: 100%;
-  height: $page-height;
-  overflow: hidden;
+
+  @media(min-width: 1000px) {
+    position: fixed;
+    height: $page-height;
+    overflow: hidden;
+  }
 
   // Head section
   .head-section {
@@ -89,8 +91,11 @@
   .content-section {
     position: relative;
     width: 100%;
-    height: 62vh;
-    padding: 2vh 5vw 3vh;
+
+    @media(min-width: 1000px) {
+      height: 62vh;
+      padding: 2vh 5vw 3vh;
+    }
     //background-color: grey; // !!!!!!!!!
   }
 
@@ -100,19 +105,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: -21vh;
     pointer-events: none;
+
+    @media(min-width: 1000px) {
+      margin-top: -21vh;
+    }
   }
 
   // Side block
   .side-block {
-    width: 25vw;
-    height: 78vh;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
     background-color: #fff;
     pointer-events: auto;
+
+    @media(min-width: 1000px) {
+      width: 25vw;
+      height: 78vh;
+    }
   }
 
   .outer {
@@ -140,9 +151,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 60vw;
     //background-color: #fff;
     pointer-events: auto;
+
+    @media(min-width: 1000px) {
+      width: 60vw;
+    }
 
     h1 {
       font-size: 4vh;
@@ -161,18 +175,24 @@
       flex-direction: column;
       justify-content: center;
       width: 100%;
-      height: 19vh;
       line-height: 1.25;
       //padding-top: 2vh;
       font-weight: 300;
       font-size: 2.5vh;
       //background-color: chartreuse; // !!!!!!!!!
+
+      @media(min-width: 1000px) {
+        height: 19vh;
+      }
     }
 
     .reviews {
       width: 100%;
-      height: 10vh;
       //background-color: chartreuse; // !!!!!!!!!
+
+      @media(min-width: 1000px) {
+        height: 10vh;
+      }
 
       .slick-container {
         position: relative;
@@ -271,6 +291,57 @@
     justify-content: space-between;
     height: 100%;
     color: #574f76;
+
+    .quality-cards-underlay {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 5px);
+      background-color: transparentize(#fff, .1);
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    &.show-underlay {
+      @keyframes quality-cards-underlay-enter {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .quality-cards-underlay {
+        animation-name: quality-cards-underlay-enter;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        z-index: 10;
+      }
+    }
+
+    &.hide-underlay {
+      @keyframes quality-cards-underlay-exit {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .quality-cards-underlay {
+        animation-name: quality-cards-underlay-exit;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        z-index: 10;
+      }
+    }
   }
 
   .quality-card {
@@ -392,8 +463,10 @@
 
     &.b {
       .quality-card-content-inner {
-        left: 50%;
-        transform: translate(-50%, 0%);
+        @media (min-width: 1000px) {
+          left: 50%;
+          transform: translate(-50%, 0%);
+        }
 
         &:after {
           background-color: #97bbe0;
@@ -436,159 +509,165 @@
   .quality-card {
     position: relative;
 
-    &.show {
-      z-index: 10;
+    @media(min-width: 1000px) {
+      &.show {
+        z-index: 10;
 
-      @keyframes big-card-enter-animation {
-        0% {
-          transform: scale(.75);
-          width: 100%;
-          opacity: 0;
+        .small-card {
+          opacity: .1;
         }
 
-        100% {
-          transform: scale(1);
-          width: 48.5vw;
-          opacity: 1;
-        }
-      }
-
-      @keyframes big-card-b-enter-animation {
-        0% {
-          transform: scale(.75) translate(-50%, 0);
-          width: 100%;
-          opacity: 0;
-        }
-
-        100% {
-          transform: scale(1) translate(-50%, 0);
-          width: 48.5vw;
-          opacity: 1;
-        }
-      }
-
-      .big-card {
-        &:not(.b) {
-          animation-name: big-card-enter-animation;
-          animation-duration: 800ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-          //animation-delay: 400ms;
-        }
-
-        &.b {
-          animation-name: big-card-b-enter-animation;
-          animation-duration: 800ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-          //animation-delay: 400ms;
-        }
-
-        .quality-card-text-content {
-          @keyframes big-card-text-enter-animation {
-            0% {
-              transform: scale(0);
-              opacity: 0;
-            }
-
-            50% {
-              opacity: 1;
-            }
-
-            100% {
-              transform: scale(1);
-            }
+        @keyframes big-card-enter-animation {
+          0% {
+            transform: scale(.75);
+            width: 100%;
+            opacity: 0;
           }
 
-          animation-name: big-card-text-enter-animation;
-          animation-duration: 500ms;
-          animation-delay: 400ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-        }
-      }
-    }
-
-    &.hide {
-      z-index: 9;
-
-      @keyframes big-card-exit-animation {
-        0% {
-          transform: scale(1);
-          width: 48.5vw;
-          opacity: 1;
+          100% {
+            transform: scale(1);
+            width: 48.5vw;
+            opacity: 1;
+          }
         }
 
-        50% {
-          transform: scale(1);
-          width: 48.5vw;
-          opacity: 1;
-        }
-
-        100% {
-          transform: scale(.75);
-          width: 100%;
-          opacity: 0;
-        }
-      }
-
-      @keyframes big-card-b-exit-animation {
-        0% {
-          transform: scale(1) translate(-50%, 0);
-          width: 48.5vw;
-          opacity: 1;
-        }
-
-        50% {
-          transform: scale(1) translate(-50%, 0);
-          width: 48.5vw;
-          opacity: 1;
-        }
-
-        100% {
-          transform: scale(.75) translate(-50%, 0);
-          width: 100%;
-          opacity: 0;
-        }
-      }
-
-      .big-card {
-        &:not(.b) {
-          animation-name: big-card-exit-animation;
-          animation-duration: 600ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-        }
-
-        &.b {
-          animation-name: big-card-b-exit-animation;
-          animation-duration: 600ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-          //animation-duration: 600ms;
-          //animation-delay: 300ms;
-        }
-
-        .quality-card-text-content {
-          @keyframes big-card-text-exit-animation {
-            0% {
-              transform: scale(1);
-              opacity: 1;
-            }
-
-            100% {
-              transform: scale(0);
-              opacity: 0;
-            }
+        @keyframes big-card-b-enter-animation {
+          0% {
+            transform: scale(.75) translate(-50%, 0);
+            width: 100%;
+            opacity: 0;
           }
 
-          animation-name: big-card-text-exit-animation;
-          animation-duration: 600ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
+          100% {
+            transform: scale(1) translate(-50%, 0);
+            width: 48.5vw;
+            opacity: 1;
+          }
+        }
+
+        .big-card {
+          &:not(.b) {
+            animation-name: big-card-enter-animation;
+            animation-duration: 600ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            //animation-delay: 400ms;
+          }
+
+          &.b {
+            animation-name: big-card-b-enter-animation;
+            animation-duration: 600ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            //animation-delay: 400ms;
+          }
+
+          .quality-card-text-content {
+            @keyframes big-card-text-enter-animation {
+              0% {
+                transform: scale(0);
+                opacity: 0;
+              }
+
+              50% {
+                opacity: 1;
+              }
+
+              100% {
+                transform: scale(1);
+              }
+            }
+
+            animation-name: big-card-text-enter-animation;
+            animation-duration: 400ms;
+            animation-delay: 300ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+          }
+        }
+      }
+
+      &.hide {
+        z-index: 9;
+
+        @keyframes big-card-exit-animation {
+          0% {
+            transform: scale(1);
+            width: 48.5vw;
+            opacity: 1;
+          }
+
+          50% {
+            transform: scale(1);
+            width: 48.5vw;
+            opacity: 1;
+          }
+
+          100% {
+            transform: scale(.75);
+            width: 100%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes big-card-b-exit-animation {
+          0% {
+            transform: scale(1) translate(-50%, 0);
+            width: 48.5vw;
+            opacity: 1;
+          }
+
+          50% {
+            transform: scale(1) translate(-50%, 0);
+            width: 48.5vw;
+            opacity: 1;
+          }
+
+          100% {
+            transform: scale(.75) translate(-50%, 0);
+            width: 100%;
+            opacity: 0;
+          }
+        }
+
+        .big-card {
+          &:not(.b) {
+            animation-name: big-card-exit-animation;
+            animation-duration: 400ms;
+            animation-delay: 0ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+          }
+
+          &.b {
+            animation-name: big-card-b-exit-animation;
+            animation-duration: 400ms;
+            animation-delay: 0ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            //animation-duration: 600ms;
+            //animation-delay: 300ms;
+          }
+
+          .quality-card-text-content {
+            @keyframes big-card-text-exit-animation {
+              0% {
+                transform: scale(1);
+                opacity: 1;
+              }
+
+              100% {
+                transform: scale(0);
+                opacity: 0;
+              }
+            }
+
+            animation-name: big-card-text-exit-animation;
+            animation-duration: 400ms;
+            animation-delay: 0ms;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+          }
         }
       }
     }
@@ -988,23 +1067,41 @@
 
 ////////////// footer //////////////
 footer {
+  $height: 8vh;
+
   position: relative;
   width: 100%;
   height: auto;
-  padding-top: 92vh;
   padding-bottom: 0;
   pointer-events: none;
   background-color: transparent;
 
+  @media(min-width: 1000px) {
+    padding-top: calc(100vh - #{$height});
+  }
+
   .scroll-container {
-    z-index: 10;
-    position: static;
+    z-index: 30;
+    position: relative;
     pointer-events: auto;
+
+
+    @media(min-width: 1000px) {
+
+    }
   }
 
   .sticky-logo-container {
-    z-index: 20;
     position: fixed;
+    bottom: 0;
+    z-index: 20;
+    width: 100%;
+    height: $height;
+    background-color: $purple;
+  }
+
+  .sticky-logo-container-inner {
+    position: absolute;
     bottom: 0;
     right: 7.5vw;
     width: 20vw;
@@ -1014,7 +1111,7 @@ footer {
     border-top-right-radius: 20px;
   }
 
-  .sticky-logo-outer {
+  .sticky-logo-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1063,6 +1160,13 @@ footer {
 
   h4 {
     font-size: 1.75vh;
+
+    @media (min-width: 1000px) {
+      display: flex;
+      align-items: center;
+      height: $height;
+      margin-bottom: 0;
+    }
   }
 
   .text {
@@ -1087,10 +1191,14 @@ footer {
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: 4.875vh 5vw 1.5vh 5vw;
+  padding: 0 5vw 1.5vh 5vw;
   color: #fff;
   text-align: left;
   background-color: $purple;
+
+  @media (min-width: 1000px) {
+    width: 69vw;
+  }
 }
 
 .footer-col {
