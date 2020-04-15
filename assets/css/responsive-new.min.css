@@ -2369,9 +2369,6 @@
   .quality-card {
     height: 210px;
     margin: 0 10px; }
-  .quality-card-text {
-    max-height: 112px !important;
-    font-size: 1.65vh !important; }
   .read-more {
     font-size: 1.65vh !important; }
   .error-message {
@@ -2380,24 +2377,36 @@
     font-size: 1.125vh !important; } }
 
 @media (max-width: 1299px) {
-  .sticky-logo-container {
-    width: 18vw !important; } }
+  .sign-up-form .error-message span {
+    font-size: 1.5vh !important;
+    white-space: normal; } }
 
 @media (max-width: 1199px) {
   .head-section-body .aiqoo-logo-outer {
-    padding-left: 10vw !important;
-    width: 25vw !important; }
+    width: 30vw !important;
+    padding-left: 10vw !important; }
+  .head-section-body .aiqoo-logo-inner img {
+    width: 14vw !important; }
+  .head-section-body .pro-img {
+    width: 7vh !important;
+    top: -2vh !important; }
   .head-section-body h2 {
     padding-left: 11vw !important;
-    font-size: 3vh !important; }
+    font-size: 2.45vw !important; }
   .content h1 {
     font-size: 4vw !important; }
   .content .text {
     font-size: 1.65vw !important; }
+  .special-offers .offer {
+    font-size: 1.5vh !important; }
+  .side-block h4 {
+    font-size: 1.875vh; }
+  .side-block .special-offer-text {
+    font-size: 1.75vh !important; }
+  .side-block .sign-up-form .error-message span {
+    font-size: 1.25vh !important; }
   .quality-card {
     margin: 0 5px; }
-  .quality-card-text {
-    font-size: 9pt; }
   .reviews .slick-container:after {
     display: none !important; }
   .reviews .review-card .rate {
@@ -2409,7 +2418,7 @@
   .reviews .review-card .text {
     font-size: 1.25vh !important; }
   .footer-outer {
-    padding: 5.5vh 5vw 1.5vh 5vw !important; }
+    padding: 0.5vh 3vw 1.5vh 3vw !important; }
     .footer-outer .sticky-logo-container {
       height: 5vh !important; }
     .footer-outer .sticky-logo-wrapper {
@@ -2420,51 +2429,39 @@
       font-size: 1.125vh !important; } }
 
 @media (max-width: 999px) {
+  .head-section-body {
+    padding-left: 4vw; }
+  .content-section {
+    padding: 2vh 2vw 3vh !important; }
   .content {
-    width: 50% !important; }
+    width: 60% !important; }
   .top-text {
     max-width: 90%;
     margin: 0vh auto 0; }
+  .cards-container {
+    width: 96% !important;
+    margin: 2vh auto !important; }
+  .reviews {
+    width: 96% !important;
+    margin: 2vh auto !important; }
   .side-block {
-    width: 50% !important;
+    width: 38% !important;
     box-shadow: none;
     background: transparent; }
     .side-block .outer {
-      width: 96%;
+      width: 100%;
       box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
       background-color: #fff; }
-    .side-block .label {
-      width: 32% !important;
-      margin-right: -9% !important; }
-      .side-block .label img {
-        width: 63% !important; }
-  .head-section-body .pro-img {
-    display: none; }
-  .head-section-body .aiqoo-logo-outer {
-    padding-left: 0 !important; }
-  .head-section-body .aiqoo-logo-inner {
-    padding: 1.5vh 2vw !important; }
-  .head-section-body h2 {
-    padding-left: 0 !important;
-    font-size: 2.5vw !important; }
-  .cards-container {
-    max-width: 90% !important;
-    height: auto !important;
-    margin: 2vh auto 0 !important; }
-  .quality-cards {
-    flex-direction: column !important;
-    align-items: center; }
-  .quality-card {
-    width: 100% !important;
-    height: 150px !important; }
-  .quality-card-content-inner {
-    position: static !important; } }
+  .footer-outer {
+    width: 60%; } }
 
 @media (max-width: 991px) {
+  .head-section-body h2 {
+    font-size: 2.25vw !important; }
   .back-layer {
     position: static;
     transform: none;
-    width: 96%;
+    width: 100%;
     max-width: 500px;
     margin: 0 auto; }
     .back-layer.is-active {
@@ -2489,20 +2486,6 @@
         padding: 0; }
       .back-layer.is-active .custom-control-label {
         padding-top: 8px; }
-  .inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; }
-  .quality-cards {
-    display: flex;
-    align-items: initial;
-    flex-direction: initial;
-    margin-top: 0; }
   .quality-card {
     width: 96%;
     height: 200px;
@@ -2510,14 +2493,11 @@
     .quality-card .quality-card-content:before {
       top: 0; }
   .quality-card-text {
-    font-size: 1.75vw; }
+    font-size: 1.5vh !important; }
   .top-text {
     font-size: 11.25pt; }
     .top-text span {
       font-size: 11.25pt; }
-  .cards-container {
-    max-width: 380px;
-    margin: 30px auto; }
   .reviews .review-card .rate {
     width: inherit !important; }
   .reviews .review-card .author-name {
@@ -2528,20 +2508,54 @@
     font-size: inherit !important; } }
 
 @media (max-width: 767px) {
+  .head-section-body .aiqoo-logo-outer {
+    padding-left: 13vw !important; }
   .head-section-body .aiqoo-logo-inner {
-    padding: 1vh 1vw !important; } }
+    padding: 1vh 1vw !important; }
+  .head-section-body h2 {
+    padding-left: 13vw !important; } }
 
-@media (max-width: 1599px) {
-  .main-page-container .special-offers .special-offer-text {
-    font-size: 1.75vh; } }
-
-@media (max-width: 1199px) {
-  .main-page-container .special-offers .special-offer-text {
-    font-size: 1.4vw; }
-  .main-page-container .special-offers .offer {
-    font-size: 1.5vh; }
-  .main-page-container .side-block h4 {
-    font-size: 1.875vh; } }
+@media (max-width: 599px) {
+  .aiqoo-logo-outer {
+    width: 45vw !important;
+    padding-left: 16vw !important; }
+  .aiqoo-logo-inner img {
+    width: 22vw !important; }
+  .pro-img {
+    width: 8vh !important; }
+  .head-section-body h2 {
+    padding-left: 17vw !important;
+    font-size: 2.45vh !important; }
+  .content-section {
+    padding: 4vh 2vw 3vh !important; }
+  .content-inner {
+    flex-direction: column !important; }
+  .content {
+    width: 100% !important; }
+  .top-text .text {
+    font-size: 1.65vh !important; }
+  .cards-container {
+    max-width: 90% !important;
+    height: auto !important;
+    margin: 2vh auto 0 !important; }
+  .quality-cards {
+    flex-direction: column !important;
+    align-items: center !important; }
+  .quality-card {
+    width: 100% !important;
+    height: 150px !important; }
+  .quality-card-content-inner {
+    position: static !important; }
+    .quality-card-content-inner.small-card .quality-card-text-content {
+      padding: 1vh 2.5vw 2vh !important; }
+    .quality-card-content-inner.small-card .step span {
+      font-size: 3vh !important; }
+    .quality-card-content-inner.small-card .quality-card-text {
+      font-size: 1.75vh !important; }
+  .side-block {
+    width: 100% !important;
+    max-width: 96% !important;
+    margin: 2vh auto 0; } }
 
 .system-campaign { }
   @media (min-width: 1200px) {

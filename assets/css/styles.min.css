@@ -14063,7 +14063,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 
 .sign-up-landing .main-page-container {
   width: 100%; }
-  @media (min-width: 1000px) {
+  @media (min-width: 600px) {
     .sign-up-landing .main-page-container {
       position: fixed;
       height: 100vh;
@@ -14126,7 +14126,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .sign-up-landing .main-page-container .content-section {
     position: relative;
     width: 100%; }
-    @media (min-width: 1000px) {
+    @media (min-width: 600px) {
       .sign-up-landing .main-page-container .content-section {
         height: 62vh;
         padding: 2vh 5vw 3vh; } }
@@ -14137,16 +14137,17 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     justify-content: space-between;
     align-items: flex-end;
     pointer-events: none; }
-    @media (min-width: 1000px) {
+    @media (min-width: 600px) {
       .sign-up-landing .main-page-container .content-inner {
         margin-top: -21vh; } }
   .sign-up-landing .main-page-container .side-block {
+    position: relative;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
     background-color: #fff;
     pointer-events: auto; }
-    @media (min-width: 1000px) {
+    @media (min-width: 600px) {
       .sign-up-landing .main-page-container .side-block {
         width: 25vw;
         height: 78vh; } }
@@ -14171,7 +14172,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     flex-direction: column;
     justify-content: flex-end;
     pointer-events: auto; }
-    @media (min-width: 1000px) {
+    @media (min-width: 600px) {
       .sign-up-landing .main-page-container .content {
         width: 60vw; } }
     .sign-up-landing .main-page-container .content h1 {
@@ -14189,12 +14190,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       line-height: 1.25;
       font-weight: 300;
       font-size: 2.5vh; }
-      @media (min-width: 1000px) {
+      @media (min-width: 600px) {
         .sign-up-landing .main-page-container .content-section .top-text {
           height: 19vh; } }
     .sign-up-landing .main-page-container .content-section .reviews {
       width: 100%; }
-      @media (min-width: 1000px) {
+      @media (min-width: 600px) {
         .sign-up-landing .main-page-container .content-section .reviews {
           height: 10vh; } }
       .sign-up-landing .main-page-container .content-section .reviews .slick-container {
@@ -14262,246 +14263,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
             margin-top: auto;
             font-size: 1.5vh;
             color: rgba(51, 51, 51, 0.5); }
-  .sign-up-landing .main-page-container .quality-cards {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
-    color: #574f76; }
-    .sign-up-landing .main-page-container .quality-cards .quality-cards-underlay {
-      position: absolute;
-      top: -5px;
-      left: 0;
-      width: 100%;
-      height: calc(100% + 5px);
-      background-color: rgba(255, 255, 255, 0.9);
-      pointer-events: none;
-      opacity: 0; }
-
-@keyframes quality-cards-underlay-enter {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-    .sign-up-landing .main-page-container .quality-cards.show-underlay .quality-cards-underlay {
-      animation-name: quality-cards-underlay-enter;
-      animation-duration: 600ms;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-      z-index: 10; }
-
-@keyframes quality-cards-underlay-exit {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-    .sign-up-landing .main-page-container .quality-cards.hide-underlay .quality-cards-underlay {
-      animation-name: quality-cards-underlay-exit;
-      animation-duration: 600ms;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-      z-index: 10; }
-  .sign-up-landing .main-page-container .quality-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 31%;
-    height: 100%;
-    cursor: pointer;
-    background-color: #fff; }
-    .sign-up-landing .main-page-container .quality-card.z-index-0 {
-      z-index: 0 !important; }
-    .sign-up-landing .main-page-container .quality-card .read-more {
-      display: block;
-      margin-top: auto;
-      padding: 0;
-      font-weight: 300;
-      font-size: 2.125vh;
-      color: #d8cdba; }
-    .sign-up-landing .main-page-container .quality-card .top-decoration-element {
-      width: 100%;
-      height: 5px; }
-    .sign-up-landing .main-page-container .quality-card .quality-card-content {
-      width: 100%;
-      height: 100%; }
-    .sign-up-landing .main-page-container .quality-card .quality-card-content-inner {
-      position: absolute;
-      top: 0;
-      z-index: 2;
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13); }
-      .sign-up-landing .main-page-container .quality-card .quality-card-content-inner:after {
-        display: block;
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: -5px;
-        transform: translate(-50%);
-        width: 100%;
-        height: 5px; }
-      .sign-up-landing .main-page-container .quality-card .quality-card-content-inner.big-card {
-        transform: scale(0.75);
-        opacity: 0;
-        padding: 1vh 1.5vw; }
-        .sign-up-landing .main-page-container .quality-card .quality-card-content-inner.big-card .quality-card-text-content {
-          transform: scale(0); }
-    .sign-up-landing .main-page-container .quality-card .quality-card-text-content {
-      transform-origin: 50% 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
-      height: 100%;
-      padding: 1vh 1vw; }
-    .sign-up-landing .main-page-container .quality-card .quality-card-text {
-      height: 100%;
-      overflow: hidden;
-      max-height: 90px;
-      line-height: 1.15;
-      font-size: 1.75vh;
-      color: #574f76;
-      text-align: left; }
-    .sign-up-landing .main-page-container .quality-card .step span {
-      margin-bottom: 1vh;
-      font-size: 2vw; }
-    .sign-up-landing .main-page-container .quality-card.a .quality-card-content-inner {
-      left: 0; }
-      .sign-up-landing .main-page-container .quality-card.a .quality-card-content-inner:after {
-        background-color: #b754c3; }
-      .sign-up-landing .main-page-container .quality-card.a .quality-card-content-inner.big-card {
-        transform-origin: 0 0; }
-    .sign-up-landing .main-page-container .quality-card.a .step span {
-      color: #b754c3; }
-    @media (min-width: 1000px) {
-      .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner {
-        left: 50%;
-        transform: translate(-50%, 0%); } }
-    .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner:after {
-      background-color: #97bbe0; }
-    .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner.big-card {
-      transform: translate(-50%, 0%) scale(0.75);
-      transform-origin: 50% 0; }
-    .sign-up-landing .main-page-container .quality-card.b .step span {
-      color: #97bbe0; }
-    .sign-up-landing .main-page-container .quality-card.c .quality-card-content-inner {
-      right: 0; }
-      .sign-up-landing .main-page-container .quality-card.c .quality-card-content-inner:after {
-        background-color: #3b4889; }
-      .sign-up-landing .main-page-container .quality-card.c .quality-card-content-inner.big-card {
-        transform-origin: 100% 0; }
-    .sign-up-landing .main-page-container .quality-card.c .step span {
-      color: #3b4889; }
-  .sign-up-landing .main-page-container .quality-card {
-    position: relative; }
-    @media (min-width: 1000px) {
-      .sign-up-landing .main-page-container .quality-card.show {
-        z-index: 10; }
-        .sign-up-landing .main-page-container .quality-card.show .small-card {
-          opacity: .1; }
-      @keyframes big-card-enter-animation {
-        0% {
-          transform: scale(0.75);
-          width: 100%;
-          opacity: 0; }
-        100% {
-          transform: scale(1);
-          width: 48.5vw;
-          opacity: 1; } }
-      @keyframes big-card-b-enter-animation {
-        0% {
-          transform: scale(0.75) translate(-50%, 0);
-          width: 100%;
-          opacity: 0; }
-        100% {
-          transform: scale(1) translate(-50%, 0);
-          width: 48.5vw;
-          opacity: 1; } }
-        .sign-up-landing .main-page-container .quality-card.show .big-card:not(.b) {
-          animation-name: big-card-enter-animation;
-          animation-duration: 600ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1; }
-        .sign-up-landing .main-page-container .quality-card.show .big-card.b {
-          animation-name: big-card-b-enter-animation;
-          animation-duration: 600ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1; }
-        .sign-up-landing .main-page-container .quality-card.show .big-card .quality-card-text-content {
-          animation-name: big-card-text-enter-animation;
-          animation-duration: 400ms;
-          animation-delay: 300ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1; }
-      @keyframes big-card-text-enter-animation {
-        0% {
-          transform: scale(0);
-          opacity: 0; }
-        50% {
-          opacity: 1; }
-        100% {
-          transform: scale(1); } }
-      .sign-up-landing .main-page-container .quality-card.hide {
-        z-index: 9; }
-      @keyframes big-card-exit-animation {
-        0% {
-          transform: scale(1);
-          width: 48.5vw;
-          opacity: 1; }
-        50% {
-          transform: scale(1);
-          width: 48.5vw;
-          opacity: 1; }
-        100% {
-          transform: scale(0.75);
-          width: 100%;
-          opacity: 0; } }
-      @keyframes big-card-b-exit-animation {
-        0% {
-          transform: scale(1) translate(-50%, 0);
-          width: 48.5vw;
-          opacity: 1; }
-        50% {
-          transform: scale(1) translate(-50%, 0);
-          width: 48.5vw;
-          opacity: 1; }
-        100% {
-          transform: scale(0.75) translate(-50%, 0);
-          width: 100%;
-          opacity: 0; } }
-        .sign-up-landing .main-page-container .quality-card.hide .big-card:not(.b) {
-          animation-name: big-card-exit-animation;
-          animation-duration: 400ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1; }
-        .sign-up-landing .main-page-container .quality-card.hide .big-card.b {
-          animation-name: big-card-b-exit-animation;
-          animation-duration: 400ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1; }
-        .sign-up-landing .main-page-container .quality-card.hide .big-card .quality-card-text-content {
-          animation-name: big-card-text-exit-animation;
-          animation-duration: 400ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1; }
-      @keyframes big-card-text-exit-animation {
-        0% {
-          transform: scale(1);
-          opacity: 1; }
-        100% {
-          transform: scale(0);
-          opacity: 0; } } }
-  .sign-up-landing .main-page-container .cards-container {
-    width: 100%;
-    height: 24vh;
-    margin: 2vh 0; }
   .sign-up-landing .main-page-container button {
     display: inline-block;
     font-weight: 400;
@@ -14531,29 +14292,24 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     align-items: center;
     margin-bottom: 2vh; }
   .sign-up-landing .special-offers .label {
-    position: relative;
+    position: absolute;
+    top: 10px;
+    right: -10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 38%;
-    height: 6vh;
-    margin-right: -14%;
-    padding-right: 7%;
-    background-color: #585077; }
-    .sign-up-landing .special-offers .label:before {
-      position: absolute;
-      top: 1px;
-      left: 0;
-      transform: translateX(-50%);
+    width: 8vw;
+    height: 6vh; }
+    .sign-up-landing .special-offers .label img.bg {
       display: block;
-      content: '';
-      width: 0;
-      height: 0;
-      border-bottom: 6vh solid #fff;
-      border-left: 3vh solid transparent;
-      border-right: 3vh solid transparent; }
-    .sign-up-landing .special-offers .label img {
-      width: 65%; }
+      width: 100%;
+      height: 100%; }
+    .sign-up-landing .special-offers .label img.offer-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%; }
   .sign-up-landing .special-offers .special-offer-text {
     line-height: 1.3;
     font-size: 2vh; }
@@ -14629,8 +14385,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .sign-up-landing .sign-up-form .error-message {
     margin-top: 2vh; }
     .sign-up-landing .sign-up-form .error-message span {
+      line-height: 1;
       font-size: 1.6vh;
-      color: #f00; }
+      color: #f00;
+      white-space: nowrap; }
   .sign-up-landing .sign-up-form .form-control {
     padding: .75vw .75vw;
     font-size: 1.75vh; }
@@ -14792,7 +14550,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   padding-bottom: 0;
   pointer-events: none;
   background-color: transparent; }
-  @media (min-width: 1000px) {
+  @media (min-width: 600px) {
     .sign-up-landing footer {
       padding-top: calc(100vh - 8vh); } }
   .sign-up-landing footer .scroll-container {
@@ -14821,7 +14579,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     justify-content: center;
     align-items: flex-end;
     height: 100%;
-    padding: 1vh 1vw 1.75vh; }
+    padding: 1vh 1vw 1vh; }
   .sign-up-landing footer .aiqoo-logo {
     width: 4.5vw; }
     .sign-up-landing footer .aiqoo-logo img {
@@ -14852,7 +14610,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     color: #fff; }
   .sign-up-landing footer h4 {
     font-size: 1.75vh; }
-    @media (min-width: 1000px) {
+    @media (min-width: 600px) {
       .sign-up-landing footer h4 {
         display: flex;
         align-items: center;
@@ -14880,7 +14638,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   color: #fff;
   text-align: left;
   background-color: #585077; }
-  @media (min-width: 1000px) {
+  @media (min-width: 600px) {
     .sign-up-landing .footer-outer {
       width: 69vw; } }
 
@@ -14893,6 +14651,263 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   flex-direction: row;
   align-items: center;
   margin-top: 1vh; }
+
+.sign-up-landing .cards-container {
+  width: 100%;
+  height: 24vh;
+  margin: 2vh 0; }
+
+.sign-up-landing .quality-cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  color: #574f76; }
+  .sign-up-landing .quality-cards .quality-cards-underlay {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    pointer-events: none;
+    opacity: 0; }
+
+@keyframes quality-cards-underlay-enter {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .sign-up-landing .quality-cards.show-underlay .quality-cards-underlay {
+    animation-name: quality-cards-underlay-enter;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    z-index: 10; }
+
+@keyframes quality-cards-underlay-exit {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+  .sign-up-landing .quality-cards.hide-underlay .quality-cards-underlay {
+    animation-name: quality-cards-underlay-exit;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    z-index: 10; }
+
+.sign-up-landing .quality-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 31%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fff; }
+  .sign-up-landing .quality-card.z-index-0 {
+    z-index: 0 !important; }
+  .sign-up-landing .quality-card .read-more {
+    display: block;
+    margin-top: auto;
+    padding: 0;
+    font-weight: 300;
+    font-size: 2.125vh;
+    color: #d8cdba; }
+  .sign-up-landing .quality-card .top-decoration-element {
+    width: 100%;
+    height: 5px; }
+  .sign-up-landing .quality-card .quality-card-content {
+    width: 100%;
+    height: 100%; }
+  .sign-up-landing .quality-card .quality-card-content-inner {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13); }
+    .sign-up-landing .quality-card .quality-card-content-inner:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      transform: translate(-50%);
+      width: 100%;
+      height: 5px; }
+    .sign-up-landing .quality-card .quality-card-content-inner.big-card {
+      transform: scale(0.75);
+      opacity: 0;
+      padding: 1.25vh 1.75vw 1.5vh; }
+      .sign-up-landing .quality-card .quality-card-content-inner.big-card .quality-card-text-content {
+        transform: scale(0);
+        padding: 0; }
+  .sign-up-landing .quality-card .quality-card-text-content {
+    transform-origin: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 1vh 1vw; }
+  .sign-up-landing .quality-card .quality-card-text {
+    height: 100%;
+    overflow: hidden;
+    max-height: 90px;
+    line-height: 1.15;
+    font-size: 1.75vh;
+    color: #574f76;
+    text-align: left; }
+  .sign-up-landing .quality-card .step span {
+    display: block;
+    margin-bottom: 1vh;
+    font-size: 2vw; }
+  @media (min-width: 600px) {
+    .sign-up-landing .quality-card.a .quality-card-content-inner {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%); } }
+  .sign-up-landing .quality-card.a .quality-card-content-inner:after {
+    background-color: #b754c3; }
+  .sign-up-landing .quality-card.a .quality-card-content-inner.big-card {
+    transform-origin: 0 0; }
+  .sign-up-landing .quality-card.a .step span {
+    color: #b754c3; }
+  @media (min-width: 600px) {
+    .sign-up-landing .quality-card.b .quality-card-content-inner {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+  .sign-up-landing .quality-card.b .quality-card-content-inner:after {
+    background-color: #97bbe0; }
+  .sign-up-landing .quality-card.b .quality-card-content-inner.big-card {
+    transform: translate(-50%, 0%) scale(0.75);
+    transform-origin: 0% 0%; }
+  .sign-up-landing .quality-card.b .step span {
+    color: #97bbe0; }
+  @media (min-width: 600px) {
+    .sign-up-landing .quality-card.c .quality-card-content-inner {
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%); } }
+  .sign-up-landing .quality-card.c .quality-card-content-inner:after {
+    background-color: #3b4889; }
+  .sign-up-landing .quality-card.c .quality-card-content-inner.big-card {
+    transform-origin: 100% 0; }
+  .sign-up-landing .quality-card.c .step span {
+    color: #3b4889; }
+
+.sign-up-landing .quality-card {
+  position: relative; }
+  @media (min-width: 300px) {
+    .sign-up-landing .quality-card.show {
+      z-index: 10; }
+      .sign-up-landing .quality-card.show .small-card {
+        opacity: .1; }
+      .sign-up-landing .quality-card.show .big-card .quality-card-text {
+        max-height: inherit !important;
+        margin-bottom: 0;
+        height: 100%; }
+    @keyframes big-card-enter-animation {
+      0% {
+        transform: scale(0.75) translate(0, -50%);
+        width: 100%;
+        opacity: 0; }
+      100% {
+        transform: scale(1.15) translate(0, -50%);
+        width: 48.5vw;
+        opacity: 1; } }
+    @keyframes big-card-b-enter-animation {
+      0% {
+        transform: scale(0.75) translate(-50%, -50%);
+        width: 100%;
+        opacity: 0; }
+      100% {
+        transform: scale(1.15) translate(-50%, -50%);
+        width: 48.5vw;
+        opacity: 1; } }
+      .sign-up-landing .quality-card.show .big-card:not(.b) {
+        animation-name: big-card-enter-animation;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1; }
+      .sign-up-landing .quality-card.show .big-card.b {
+        animation-name: big-card-b-enter-animation;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1; }
+      .sign-up-landing .quality-card.show .big-card .quality-card-text-content {
+        animation-name: big-card-text-enter-animation;
+        animation-duration: 400ms;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1; }
+    @keyframes big-card-text-enter-animation {
+      0% {
+        transform: scale(0);
+        opacity: 0; }
+      50% {
+        opacity: 1; }
+      100% {
+        transform: scale(1); } }
+    .sign-up-landing .quality-card.hide {
+      z-index: 9; }
+    @keyframes big-card-exit-animation {
+      0% {
+        transform: scale(1.15) translate(0, -50%);
+        width: 48.5vw;
+        opacity: 1; }
+      50% {
+        transform: scale(1.15) translate(0, -50%);
+        width: 48.5vw;
+        opacity: 1; }
+      100% {
+        transform: scale(0.75) translate(0, -50%);
+        width: 100%;
+        opacity: 0; } }
+    @keyframes big-card-b-exit-animation {
+      0% {
+        transform: scale(1) translate(-50%, -50%);
+        width: 48.5vw;
+        opacity: 1; }
+      50% {
+        transform: scale(1) translate(-50%, -50%);
+        width: 48.5vw;
+        opacity: 1; }
+      100% {
+        transform: scale(0.75) translate(-50%, -50%);
+        width: 100%;
+        opacity: 0; } }
+      .sign-up-landing .quality-card.hide .big-card:not(.b) {
+        animation-name: big-card-exit-animation;
+        animation-duration: 400ms;
+        animation-delay: 0ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1; }
+      .sign-up-landing .quality-card.hide .big-card.b {
+        animation-name: big-card-b-exit-animation;
+        animation-duration: 400ms;
+        animation-delay: 0ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1; }
+      .sign-up-landing .quality-card.hide .big-card .quality-card-text-content {
+        animation-name: big-card-text-exit-animation;
+        animation-duration: 400ms;
+        animation-delay: 0ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1; }
+    @keyframes big-card-text-exit-animation {
+      0% {
+        transform: scale(1);
+        opacity: 1; }
+      100% {
+        transform: scale(0);
+        opacity: 0; } } }
 
 .system-campaign { }
   @media (min-width: 1200px) {

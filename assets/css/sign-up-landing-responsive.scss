@@ -26,6 +26,15 @@
     //}
   }
 }
+
+@media(max-width: 1599px) {
+  .special-offers {
+    .special-offer-text {
+      //font-size: 1.75vh !important;
+    }
+  }
+}
+
 @media(max-width: 1399px) {
   // Head section
   .head-section-body {
@@ -61,8 +70,8 @@
   }
 
   .quality-card-text {
-    max-height: 112px !important;
-    font-size: 1.65vh !important;
+    //max-height: 112px !important;
+    //font-size: 1.65vh !important;
   }
 
   .read-more {
@@ -83,7 +92,16 @@
 
 @media(max-width: 1299px) {
   .sticky-logo-container {
-    width: 18vw !important;
+    //width: 18vw !important;
+  }
+
+  .sign-up-form {
+    .error-message {
+      span {
+        font-size: 1.5vh !important;
+        white-space: normal;
+      }
+    }
   }
 }
 
@@ -91,13 +109,25 @@
   // Head section
   .head-section-body {
     .aiqoo-logo-outer {
+      width: 30vw !important;
       padding-left: 10vw !important;
-      width: 25vw !important;
+      //width: 25vw !important;
+    }
+
+    .aiqoo-logo-inner {
+      img {
+        width: 14vw !important;
+      }
+    }
+
+    .pro-img {
+      width: 7vh !important;
+      top: -2vh !important;
     }
 
     h2 {
       padding-left: 11vw !important;
-      font-size: 3vh !important;
+      font-size: 2.45vw !important;
     }
   }
 
@@ -112,6 +142,36 @@
     }
   }
 
+  .special-offers {
+    .special-offer-text {
+      //font-size: 1.4vw !important;
+    }
+
+    .offer {
+      font-size: 1.5vh !important;
+    }
+  }
+
+  .side-block {
+    //min-width: 350px !important;
+
+    h4 {
+      font-size: 1.875vh;
+    }
+
+    .special-offer-text {
+      font-size: 1.75vh !important;
+    }
+
+    .sign-up-form {
+      .error-message {
+        span {
+          font-size: 1.25vh !important;
+        }
+      }
+    }
+  }
+
   // Quality cards
   .quality-card {
     margin: 0 5px;
@@ -119,10 +179,6 @@
     .quality-card-content {
       //padding: 20px 10px 10px 10px;
     }
-  }
-
-  .quality-card-text {
-    font-size: 9pt;
   }
 
   // Slick
@@ -154,7 +210,7 @@
 
   // footer
   .footer-outer {
-    padding: 5.5vh 5vw 1.5vh 5vw !important;
+    padding: 0.5vh 3vw 1.5vh 3vw !important;
 
     .sticky-logo-container {
       height: 5vh !important;
@@ -179,10 +235,18 @@
 }
 
 @media(max-width: 999px) {
+  // Head section
+  .head-section-body {
+    padding-left: 4vw;
+  }
+
   // Content
+  .content-section {
+    padding: 2vh 2vw 3vh !important;
+  }
+
   .content {
-    //width: 42.5vw !important;
-    width: 50% !important;
+    width: 60% !important;
   }
 
   .top-text {
@@ -190,82 +254,58 @@
     margin: 0vh auto 0;
   }
 
+  // Cards
+  .cards-container {
+    width: 96% !important;
+    margin: 2vh auto !important;
+  }
+
+  // Reviews
+  .reviews {
+    width: 96% !important;
+    margin: 2vh auto !important;
+  }
+
   // Side block
   .side-block {
-    //width: 42.5vw !important;
-    width: 50% !important;
+    width: 38% !important;
     box-shadow: none;
     background: transparent;
 
     .outer {
-      width: 96%;
+      width: 100%;
       box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
       background-color: #fff;
     }
 
     .label {
-      width: 32% !important;
-      margin-right: -9% !important;
+      //width: 32% !important;
+      //margin-right: -9% !important;
 
       img {
-        width: 63% !important;
+        //width: 63% !important;
       }
     }
   }
 
-  // Head section
-  .head-section-body {
-    .pro-img {
-      display: none;
-    }
-
-    .aiqoo-logo-outer {
-      padding-left: 0 !important;
-    }
-
-    .aiqoo-logo-inner {
-      padding: 1.5vh 2vw !important;
-    }
-
-    h2 {
-      padding-left: 0 !important;
-      font-size: 2.5vw !important;
-    }
+  // Footer
+  .footer-outer {
+    width: 60%;
   }
-
-  // Quality cards
-  .cards-container {
-    max-width: 90% !important;
-    height: auto !important;
-    margin: 2vh auto 0 !important;
-  }
-
-  .quality-cards {
-    flex-direction: column !important;
-    align-items: center;
-  }
-
-  .quality-card {
-    width: 100% !important;
-    height: 150px !important;
-  }
-
-  .quality-card-content-inner {
-    position: static !important;
-  }
-
-  .sign-up-landing .main-page-container .quality-card.b .quality-card-content-inner {
-    //left: 0;
-    //transform: translate(0, 0);
-  }
-
 }
 
 @media(max-width: 991px) {
+// Head section
+  .head-section-body {
+    h2 {
+      font-size: 2.25vw !important;
+    }
+  }
+
   .back-layer {
     position: static;
     transform: none;
-    width: 96%;
+    width: 100%;
     max-width: 500px;
     margin: 0 auto;
 
@@ -305,32 +345,23 @@
   }
 
   .inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //right: 0;
+    //bottom: 0;
+    //width: 100%;
+    //height: 100%;
+    //pointer-events: none;
   }
 
   // Quality cards
-  .quality-cards {
-    display: flex;
-    align-items: initial;
-    flex-direction: initial;
-    margin-top: 0;
-  }
-
   .quality-card {
     width: 96%;
     height: 200px;
     margin-bottom: 10px;
 
     .quality-card-content {
-      //padding: 20px 20px 10px;
-
       &:before {
         top: 0;
       }
@@ -338,7 +369,7 @@
   }
 
   .quality-card-text {
-    font-size: 1.75vw;
+    font-size: 1.5vh !important;
   }
 
   .top-text {
@@ -347,11 +378,6 @@
     span {
       font-size: 11.25pt;
     }
-  }
-
-  .cards-container {
-    max-width: 380px;
-    margin: 30px auto;
   }
 
   // Slick
@@ -379,69 +405,107 @@
 @media(max-width: 767px) {
   // Head section
   .head-section-body {
+    .aiqoo-logo-outer {
+      padding-left: 13vw !important;
+    }
+
     .aiqoo-logo-inner {
       padding: 1vh 1vw !important;
     }
+
+    h2 {
+      padding-left: 13vw !important;
+    }
   }
 }
 
-@media(max-width: 599px) {}
+@media(max-width: 599px) {
+  // Head section
+  .aiqoo-logo-outer {
+    width: 45vw !important;
+    padding-left: 16vw !important;
+  }
+
+  .aiqoo-logo-inner {
+    img {
+      width: 22vw !important;
+    }
+  }
+
+  .pro-img {
+    width: 8vh !important;
+  }
+
+  .head-section-body {
+    h2 {
+      padding-left: 17vw !important;
+      font-size: 2.45vh !important;
+    }
+  }
+
+  // Content section
+  .content-section {
+    padding: 4vh 2vw 3vh !important;
+  }
+
+  .content-inner {
+    flex-direction: column !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  .top-text {
+    .text {
+      font-size: 1.65vh !important;
+    }
+  }
+
+  // Quality cards
+  .cards-container {
+    max-width: 90% !important;
+    height: auto !important;
+    margin: 2vh auto 0 !important;
+  }
+
+  .quality-cards {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .quality-card {
+    width: 100% !important;
+    height: 150px !important;
+  }
+
+  .quality-card-content-inner {
+    position: static !important;
+
+    &.small-card {
+      .quality-card-text-content {
+        padding: 1vh 2.5vw 2vh !important;
+      }
+
+      .step {
+        span {
+          font-size: 3vh !important;
+        }
+      }
+
+      .quality-card-text {
+        font-size: 1.75vh !important;
+      }
+    }
+  }
+
+  // Side block
+  .side-block {
+    width: 100% !important;
+    max-width: 96% !important;
+    margin: 2vh auto 0;
+  }
+}
 
 @media(max-width: 374px) {}
 
-.main-page-container {
-  @media(max-width: 1599px) {
-    .special-offers {
-      .special-offer-text {
-        font-size: 1.75vh;
-      }
-    }
-  }
-
-  @media(max-width: 1199px) {
-    .special-offers {
-      .special-offer-text {
-        font-size: 1.4vw;
-      }
-
-      .offer {
-        font-size: 1.5vh;
-      }
-    }
-
-    .side-block {
-      //min-width: 350px !important;
-
-      h4 {
-        font-size: 1.875vh;
-      }
-    }
-  }
-
-  @media(max-width: 991px) {
-    //height: auto !important;
-    //.content-section {
-    //  height: auto !important;
-    //  padding: 2vh 5% 3vh 5% !important;
-    //
-    //  .content {
-    //    height: auto !important;
-    //  }
-    //
-    //  .form {
-    //    position: static !important;
-    //    transform: none;
-    //    width: 96% !important;
-    //    max-width: 500px;
-    //    height: auto !important;
-    //    margin: 2vh auto;
-    //  }
-    //}
-  }
-
-  @media(max-width: 767px) {}
-
-  @media(max-width: 599px) {}
-
-  @media(max-width: 374px) {}
-}

@@ -66,9 +66,6 @@ qualityCards.forEach(card => {
 		})
 	});
 
-	if (isMobile) {
-		card.addEventListener()
-	}
 });
 
 

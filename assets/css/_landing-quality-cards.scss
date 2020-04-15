@@ -1,0 +1,421 @@
+// Cards container
+.cards-container {
+  width: 100%;
+  height: 24vh;
+  margin: 2vh 0;
+}
+
+
+// QUALITY Card
+.quality-cards {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  color: #574f76;
+
+  .quality-cards-underlay {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 5px);
+    background-color: transparentize(#fff, .1);
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &.show-underlay {
+    @keyframes quality-cards-underlay-enter {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .quality-cards-underlay {
+      animation-name: quality-cards-underlay-enter;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      z-index: 10;
+    }
+  }
+
+  &.hide-underlay {
+    @keyframes quality-cards-underlay-exit {
+      0% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .quality-cards-underlay {
+      animation-name: quality-cards-underlay-exit;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      z-index: 10;
+    }
+  }
+}
+
+.quality-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 31%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #fff;
+
+  &.z-index-0 {
+    z-index: 0 !important;
+  }
+
+  .read-more {
+    display: block;
+    margin-top: auto;
+    padding: 0;
+    font-weight: 300;
+    font-size: 2.125vh;
+    color: #d8cdba;
+  }
+
+  .top-decoration-element {
+    width: 100%;
+    height: 5px;
+  }
+
+  .quality-card-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .quality-card-content-inner {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.13);
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      transform: translate(-50%);
+      width: 100%;
+      height: 5px;
+    }
+
+    &.small-card {
+      //transform: scale(1);
+      //opacity: 1;
+    }
+
+    &.big-card {
+      transform: scale(.75);
+      opacity: 0;
+      //padding: 1vh 1.5vw;
+      padding: 1.25vh 1.75vw 1.5vh;
+
+      .quality-card-text-content {
+        transform: scale(0);
+        padding: 0;
+      }
+    }
+  }
+
+  .quality-card-text-content {
+    transform-origin: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 1vh 1vw;
+
+  }
+
+  .quality-card-text {
+    height: 100%;
+    overflow: hidden;
+    max-height: 90px;
+    line-height: 1.15;
+    font-size: 1.75vh;
+    color: #574f76;
+    text-align: left;
+  }
+
+  .step {
+    span {
+      display: block;
+      margin-bottom: 1vh;
+      font-size: 2vw;
+    }
+  }
+
+  // initial styles for card 'a'
+  &.a {
+    .quality-card-content-inner {
+      @media(min-width: 600px) {
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+      }
+
+      &:after {
+        background-color: #b754c3;
+      }
+
+      &.big-card {
+        transform-origin: 0 0;
+      }
+    }
+
+    .step {
+      span {
+        color: #b754c3;
+      }
+    }
+  }
+
+  // initial styles for card 'b'
+  &.b {
+    .quality-card-content-inner {
+      @media (min-width: 600px) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:after {
+        background-color: #97bbe0;
+      }
+
+      &.big-card {
+        transform: translate(-50%, 0%) scale(.75);
+        transform-origin: 0% 0%;
+      }
+    }
+
+    .step {
+      span {
+        color: #97bbe0;
+      }
+    }
+  }
+
+  // initial styles for card 'c'
+  &.c {
+    .quality-card-content-inner {
+      @media(min-width: 600px) {
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+      }
+
+      &:after {
+        background-color: #3b4889;
+      }
+
+      &.big-card {
+        transform-origin: 100% 0;
+      }
+    }
+
+    .step {
+      span {
+        color: #3b4889;
+      }
+    }
+  }
+}
+
+.quality-card {
+  position: relative;
+
+  @media(min-width: 300px) {
+    &.show {
+      z-index: 10;
+
+      .small-card {
+        opacity: .1;
+      }
+
+      .big-card {
+        .quality-card-text {
+          max-height: inherit !important;
+          margin-bottom: 0;
+          height: 100%;
+        }
+      }
+
+      @keyframes big-card-enter-animation {
+        0% {
+          transform: scale(.75) translate(0, -50%);
+          width: 100%;
+          opacity: 0;
+        }
+
+        100% {
+          transform: scale(1.15) translate(0, -50%);
+          width: 48.5vw;
+          opacity: 1;
+        }
+      }
+
+      @keyframes big-card-b-enter-animation {
+        0% {
+          transform: scale(.75) translate(-50%, -50%);
+          width: 100%;
+          opacity: 0;
+        }
+
+        100% {
+          transform: scale(1.15) translate(-50%, -50%);
+          width: 48.5vw;
+          opacity: 1;
+        }
+      }
+
+      .big-card {
+        &:not(.b) {
+          animation-name: big-card-enter-animation;
+          animation-duration: 600ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+          //animation-delay: 400ms;
+        }
+
+        &.b {
+          animation-name: big-card-b-enter-animation;
+          animation-duration: 600ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+          //animation-delay: 400ms;
+        }
+
+        .quality-card-text-content {
+          @keyframes big-card-text-enter-animation {
+            0% {
+              transform: scale(0);
+              opacity: 0;
+            }
+
+            50% {
+              opacity: 1;
+            }
+
+            100% {
+              transform: scale(1);
+            }
+          }
+
+          animation-name: big-card-text-enter-animation;
+          animation-duration: 400ms;
+          animation-delay: 300ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+        }
+      }
+    }
+
+    &.hide {
+      z-index: 9;
+
+      @keyframes big-card-exit-animation {
+        0% {
+          transform: scale(1.15) translate(0, -50%);
+          width: 48.5vw;
+          opacity: 1;
+        }
+
+        50% {
+          transform: scale(1.15) translate(0, -50%);
+          width: 48.5vw;
+          opacity: 1;
+        }
+
+        100% {
+          transform: scale(.75) translate(0, -50%);
+          width: 100%;
+          opacity: 0;
+        }
+      }
+
+      @keyframes big-card-b-exit-animation {
+        0% {
+          transform: scale(1) translate(-50%, -50%);
+          width: 48.5vw;
+          opacity: 1;
+        }
+
+        50% {
+          transform: scale(1) translate(-50%, -50%);
+          width: 48.5vw;
+          opacity: 1;
+        }
+
+        100% {
+          transform: scale(.75) translate(-50%, -50%);
+          width: 100%;
+          opacity: 0;
+        }
+      }
+
+      .big-card {
+        &:not(.b) {
+          animation-name: big-card-exit-animation;
+          animation-duration: 400ms;
+          animation-delay: 0ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+        }
+
+        &.b {
+          animation-name: big-card-b-exit-animation;
+          animation-duration: 400ms;
+          animation-delay: 0ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+          //animation-duration: 600ms;
+          //animation-delay: 300ms;
+        }
+
+        .quality-card-text-content {
+          @keyframes big-card-text-exit-animation {
+            0% {
+              transform: scale(1);
+              opacity: 1;
+            }
+
+            100% {
+              transform: scale(0);
+              opacity: 0;
+            }
+          }
+
+          animation-name: big-card-text-exit-animation;
+          animation-duration: 400ms;
+          animation-delay: 0ms;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+        }
+      }
+    }
+  }
+}
