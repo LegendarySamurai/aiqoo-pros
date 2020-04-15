@@ -548,16 +548,8 @@
 
 //************* Services and Area list popup  *************//
 .wizard-dialog-services-and-locations {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
-  @media(max-width: 1399px) {}
-
   @media(max-width: 1199px) {
     .left-side {
-      width: 30%;
-
       .counties-list-item {
         &.active {
           padding: 15px 10px;
@@ -566,16 +558,8 @@
     }
 
     .right-side {
-      width: 70%;
-
       .county-item {
-        width: 46%;
-      }
-
-      .modal-footer {
-        button {
-          width: 180px;
-        }
+        width: 46% !important;
       }
     }
   }
@@ -601,7 +585,11 @@
   @media(max-width: 991px) {
     .right-side {
       .county-item {
-        width: 96%;
+        width: 96% !important;
+      }
+
+      .modal-title {
+        padding-left: 0;
       }
 
       .modal-footer {
@@ -623,19 +611,24 @@
   }
 
   @media(max-width: 767px) {
-    .left-side {
-      width: 40%;
-      padding: 20px 0 20px 20px;
-    }
+    .modal-content {
+      .modal-body {
+        .left-side {
+          width: 40% !important;
+          padding: 20px 0 20px 20px;
+        }
 
-    .right-side {
-      width: 60%;
-      padding: 20px 20px 20px 20px;
+        .right-side {
+          width: 60% !important;
+          padding: 20px 10px 20px 0px;
 
-      .county-list-container {
-        padding: 20px 10px 20px 20px;
+          .county-list-container {
+            padding: 20px 10px 20px 20px;
+          }
+        }
       }
     }
+
   }
 
   @media(max-width: 599px) {
@@ -643,56 +636,213 @@
       background-color: transparent;
     }
 
-    .modal-body {
-      flex-direction: column;
+    .modal-content {
+      .modal-body {
+        flex-direction: column;
 
-      .left-side {
-        width: 100%;
-        padding: 20px 20px 20px 20px;
+        .left-side {
+          width: 100% !important;
+          padding: 20px 20px 20px 20px;
 
-        .counties-list-item {
-          &.active {
+          .counties-list-item {
+            &.active {
+              border-radius: 5px;
+            }
+          }
+
+          .modal-title {
+            margin-bottom: 30px;
+          }
+
+          .counties-list {
+            display: none;
+          }
+
+          // select
+          .select {
+            display: block !important;
+            width: 100%;
+            height: 46px;
+            padding: 0 10px;
+            border: 1px solid #b3b3b3;
+            background-color: #fff;
             border-radius: 5px;
+            color: #342e49;
+            font-weight: 500;
+            font-family: "Lato", sans-serif;
           }
         }
 
-        .modal-title {
-          margin-bottom: 30px;
-        }
+        .right-side {
+          width: 100% !important;
 
-        .counties-list {
-          display: none;
-        }
-
-        // select
-        .select {
-          display: block !important;
-          width: 100%;
-          height: 46px;
-          padding: 0 10px;
-          border: 1px solid #b3b3b3;
-          background-color: #fff;
-          border-radius: 5px;
-          color: #342e49;
-          font-weight: 500;
-          font-family: "Lato", sans-serif;
+          .county-list {
+            max-height: 40vh !important;
+          }
         }
       }
+    }
+  }
+}
 
-      .right-side {
+//************** Wizard dialog COMMON STYLES **************//
+// Services and Area list popup
+// Details Wizard
+.wizard-dialog-services-and-locations,
+.wizard-dialog-details,
+.wizard-dialog-success-message {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {
+    .left-side {
+      width: 30% !important;
+    }
+
+    .right-side {
+      width: 70% !important;
+    }
+
+    .modal-footer {
+      button {
+        width: 180px;
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    .left-side {
+      display: none;
+    }
+
+    .right-side {
+      width: 100% !important;
+
+      .modal-body {
+        width: 100% !important;
+      }
+
+      .modal-body-col {
         width: 100%;
       }
     }
   }
 
-  @media(max-width: 374px) {}
+  @media(max-width: 599px) {
+    & {
+      width: 90% !important;
+    }
+
+    .right-side {
+      .right-side-header {
+        padding: 20px;
+      }
+
+      .right-side-inner {
+        &.without-scroll {
+          padding: 20px;
+        }
+      }
+
+      .modal-body-container {
+        padding: 20px !important;
+      }
+
+      .input-group-select {
+        padding: 0px !important;
+      }
+    }
+  }
 }
+
+
+//************* Details Wizard *******************//
+.wizard-dialog-details {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {
+    .modal-content {
+      .modal-body {
+        .left-side {
+          padding: 50px 20px 30px 20px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    .modal-body-container {
+      flex-direction: column;
+    }
+
+    .input-group-select {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      height: initial !important;
+      padding: 0 30px;
+
+      .input-group {
+        height: 50px;
+      }
+
+      span {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .right-side {
+      .right-side-header {
+        height: 55px;
+      }
+
+      .right-side-inner {
+        &.without-scroll {
+          padding: 10px 20px 10px 20px;
+        }
+      }
+
+      .input-group {
+        height: 45px;
+      }
+
+      .modal-heading {
+        margin: 10px 0;
+        line-height: .75;
+      }
+
+      .modal-footer {
+        margin-top: 20px;
+
+        .buttons-container {
+          width: 100%;
+        }
+      }
+
+      .input-group-select {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
 
 //************* Wizard  *************//
 .wizard-dialog  {
   @media(min-width: 300px) {
     & { width: 98%; }
 
+    // Success
     &.wizard-dialog-success {
       .success-icon {
         img { max-width: 100%; }
@@ -838,6 +988,7 @@
       width: 60%;
     }
 
+    // Success
     &.wizard-dialog-success {
       .success {
         margin-top: 50px;
@@ -853,6 +1004,7 @@
   // EOL: 768
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    // Services
     &.wizard-dialog-services {
       width: 620px;
       margin-top: 2rem;
@@ -869,6 +1021,7 @@
       width: 56%;
     }
 
+    // Success
     &.wizard-dialog-success {
       .success {
         padding: 0px 40px;

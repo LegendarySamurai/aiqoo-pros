@@ -12713,19 +12713,22 @@ form {
   .wizard-dialog .details {
     width: 45%; }
 
-.wizard-dialog-services-and-locations {
+.wizard-dialog-services-and-locations,
+.wizard-dialog-details,
+.wizard-dialog-success-message {
   width: 86% !important;
   font-family: "Lato", sans-serif; }
-  .wizard-dialog-services-and-locations .select {
-    display: none; }
-  .wizard-dialog-services-and-locations .modal-content {
+  .wizard-dialog-services-and-locations .form-control::placeholder,
+  .wizard-dialog-details .form-control::placeholder,
+  .wizard-dialog-success-message .form-control::placeholder {
+    font-size: inherit !important; }
+  .wizard-dialog-services-and-locations .modal-content,
+  .wizard-dialog-details .modal-content,
+  .wizard-dialog-success-message .modal-content {
     border: none !important; }
-  .wizard-dialog-services-and-locations .left-side {
-    width: 20%;
-    background-color: #585077; }
-  .wizard-dialog-services-and-locations .right-side {
-    width: 80%; }
-  .wizard-dialog-services-and-locations button.close {
+  .wizard-dialog-services-and-locations button.close,
+  .wizard-dialog-details button.close,
+  .wizard-dialog-success-message button.close {
     z-index: 3;
     position: absolute;
     top: 20px;
@@ -12736,105 +12739,114 @@ form {
     margin: 0;
     background-color: #b3b3b3;
     color: #fff; }
-    .wizard-dialog-services-and-locations button.close:focus, .wizard-dialog-services-and-locations button.close:active {
+    .wizard-dialog-services-and-locations button.close:focus, .wizard-dialog-services-and-locations button.close:active,
+    .wizard-dialog-details button.close:focus,
+    .wizard-dialog-details button.close:active,
+    .wizard-dialog-success-message button.close:focus,
+    .wizard-dialog-success-message button.close:active {
       outline: none; }
-    .wizard-dialog-services-and-locations button.close span {
+    .wizard-dialog-services-and-locations button.close span,
+    .wizard-dialog-details button.close span,
+    .wizard-dialog-success-message button.close span {
       font-size: 2rem;
       margin: 0;
       padding: 0;
       line-height: .5; }
-  .wizard-dialog-services-and-locations .modal-body {
-    flex-direction: row;
-    align-items: stretch; }
-  .wizard-dialog-services-and-locations .right-side {
-    padding: 30px 30px 30px 30px; }
-    .wizard-dialog-services-and-locations .right-side .modal-title {
-      margin-bottom: 30px;
-      color: #342e49; }
-    .wizard-dialog-services-and-locations .right-side .county-list-container {
-      padding: 30px 10px 30px 30px;
-      box-shadow: 0 1.5px 35px 0 rgba(0, 0, 0, 0.04);
-      background-color: #f5f5f5; }
-    .wizard-dialog-services-and-locations .right-side .county-list-wrapper {
-      padding: 0;
-      background-color: transparent; }
-    .wizard-dialog-services-and-locations .right-side .county-list {
-      justify-content: space-between;
-      max-height: 480px;
-      overflow-y: scroll;
-      padding-right: 20px; }
-    .wizard-dialog-services-and-locations .right-side .county-item {
-      width: 30%;
-      padding: 0;
-      border-bottom: none !important; }
-      .wizard-dialog-services-and-locations .right-side .county-item .custom-control {
-        justify-content: space-between;
-        padding-left: 0; }
-    .wizard-dialog-services-and-locations .right-side .input-label {
-      white-space: nowrap; }
-    .wizard-dialog-services-and-locations .right-side .custom-control-stats {
-      color: #b3b3b3 !important; }
-    .wizard-dialog-services-and-locations .right-side .search {
-      padding-bottom: 20px;
-      border-bottom: none; }
-    .wizard-dialog-services-and-locations .right-side .input-group-prepend {
-      left: 0;
-      right: auto; }
-    .wizard-dialog-services-and-locations .right-side .fa-search {
-      color: #b3b3b3; }
-    .wizard-dialog-services-and-locations .right-side .form-control {
-      padding-right: 20px;
-      padding-left: 40px;
-      color: #b3b3b3; }
-      .wizard-dialog-services-and-locations .right-side .form-control::placeholder {
-        color: #b3b3b3; }
-  .wizard-dialog-services-and-locations .left-side {
-    padding: 30px 0 30px 30px; }
-    .wizard-dialog-services-and-locations .left-side .modal-title {
-      margin-bottom: 60px;
-      color: #ffffff; }
-    .wizard-dialog-services-and-locations .left-side .counties-list {
-      padding: 0;
-      margin: 0;
-      text-decoration: none; }
-    .wizard-dialog-services-and-locations .left-side .counties-list-item {
+  .wizard-dialog-services-and-locations .left-side,
+  .wizard-dialog-details .left-side,
+  .wizard-dialog-success-message .left-side {
+    width: 20%;
+    padding: 30px 0 30px 30px;
+    background-color: #585077; }
+    .wizard-dialog-services-and-locations .left-side .modal-body-content,
+    .wizard-dialog-details .left-side .modal-body-content,
+    .wizard-dialog-success-message .left-side .modal-body-content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      width: 100% !important;
-      padding: 15px 10px;
-      margin-right: 10px;
-      background-color: transparent;
-      cursor: pointer; }
-      .wizard-dialog-services-and-locations .left-side .counties-list-item:not(:last-of-type) {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-      .wizard-dialog-services-and-locations .left-side .counties-list-item .county-name {
-        white-space: nowrap;
-        font-weight: bold;
-        color: #fff; }
-      .wizard-dialog-services-and-locations .left-side .counties-list-item .quantity {
-        padding: 3px 9px;
-        color: #e6e6e6;
-        border-radius: 20px;
-        border: solid 0.5px #d6d6d6; }
-      .wizard-dialog-services-and-locations .left-side .counties-list-item.active {
-        padding: 20px 20px 20px 15px;
-        margin-right: 0;
-        background-color: #fff;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px; }
-        .wizard-dialog-services-and-locations .left-side .counties-list-item.active .county-name {
-          color: #342e49; }
-        .wizard-dialog-services-and-locations .left-side .counties-list-item.active .quantity {
-          display: block;
-          padding: 3px 9px;
-          color: #585077;
-          border-radius: 20px;
-          background-color: #e3e3e3;
-          font-weight: 300;
-          border: none; }
-  .wizard-dialog-services-and-locations .modal-footer {
+      height: 100%; }
+      .wizard-dialog-services-and-locations .left-side .modal-body-content .text-content,
+      .wizard-dialog-details .left-side .modal-body-content .text-content,
+      .wizard-dialog-success-message .left-side .modal-body-content .text-content {
+        width: 100%;
+        padding: 20px;
+        border-radius: 2.5px;
+        background-color: #fffaf0;
+        text-align: left; }
+      .wizard-dialog-services-and-locations .left-side .modal-body-content .heading,
+      .wizard-dialog-details .left-side .modal-body-content .heading,
+      .wizard-dialog-success-message .left-side .modal-body-content .heading {
+        margin-bottom: 5px; }
+    .wizard-dialog-services-and-locations .left-side .image-container,
+    .wizard-dialog-details .left-side .image-container,
+    .wizard-dialog-success-message .left-side .image-container {
+      width: 60%;
+      margin: 0 auto; }
+      .wizard-dialog-services-and-locations .left-side .image-container img,
+      .wizard-dialog-details .left-side .image-container img,
+      .wizard-dialog-success-message .left-side .image-container img {
+        width: 100%; }
+  .wizard-dialog-services-and-locations .right-side,
+  .wizard-dialog-details .right-side,
+  .wizard-dialog-success-message .right-side {
+    width: 80%; }
+  .wizard-dialog-services-and-locations .right-side-header,
+  .wizard-dialog-details .right-side-header,
+  .wizard-dialog-success-message .right-side-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 65px;
+    line-height: 0.83;
+    padding: 20px 30px;
+    text-align: left;
+    color: #585077;
+    background-color: #eaeaea;
+    font-family: "Raleway", sans-serif; }
+  .wizard-dialog-services-and-locations .right-side-inner.scroll,
+  .wizard-dialog-details .right-side-inner.scroll,
+  .wizard-dialog-success-message .right-side-inner.scroll {
+    padding: 30px 10px 30px 30px; }
+  .wizard-dialog-services-and-locations .right-side-inner.without-scroll,
+  .wizard-dialog-details .right-side-inner.without-scroll,
+  .wizard-dialog-success-message .right-side-inner.without-scroll {
+    padding: 30px 30px 30px 30px; }
+  .wizard-dialog-services-and-locations .modal-heading,
+  .wizard-dialog-details .modal-heading,
+  .wizard-dialog-success-message .modal-heading {
+    line-height: 1.03;
+    font-family: "Raleway", sans-serif;
+    color: #585077; }
+  .wizard-dialog-services-and-locations .modal-sub-heading,
+  .wizard-dialog-details .modal-sub-heading,
+  .wizard-dialog-success-message .modal-sub-heading {
+    font-family: "Raleway", sans-serif;
+    color: #585077; }
+  .wizard-dialog-services-and-locations .modal-body-container,
+  .wizard-dialog-details .modal-body-container,
+  .wizard-dialog-success-message .modal-body-container {
+    margin-top: 20px;
+    padding: 30px 10px 30px 30px;
+    box-shadow: 0 1.5px 35px 0 rgba(0, 0, 0, 0.04);
+    background-color: #f5f5f5; }
+  .wizard-dialog-services-and-locations .input-group-title,
+  .wizard-dialog-details .input-group-title,
+  .wizard-dialog-success-message .input-group-title {
+    margin-bottom: 20px; }
+  .wizard-dialog-services-and-locations .modal-body,
+  .wizard-dialog-details .modal-body,
+  .wizard-dialog-success-message .modal-body {
+    flex-direction: row;
+    align-items: stretch; }
+  .wizard-dialog-services-and-locations .modal-body-col,
+  .wizard-dialog-details .modal-body-col,
+  .wizard-dialog-success-message .modal-body-col {
+    width: 45%; }
+  .wizard-dialog-services-and-locations .modal-footer,
+  .wizard-dialog-details .modal-footer,
+  .wizard-dialog-success-message .modal-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12842,20 +12854,207 @@ form {
     padding: 0;
     margin-top: 40px;
     border-top: none; }
-  .wizard-dialog-services-and-locations .selected-services {
-    white-space: nowrap; }
-  .wizard-dialog-services-and-locations .buttons-container {
+  .wizard-dialog-services-and-locations .buttons-container,
+  .wizard-dialog-details .buttons-container,
+  .wizard-dialog-success-message .buttons-container {
     justify-content: flex-end;
     margin: 0 !important; }
-    .wizard-dialog-services-and-locations .buttons-container button {
+    .wizard-dialog-services-and-locations .buttons-container button,
+    .wizard-dialog-details .buttons-container button,
+    .wizard-dialog-success-message .buttons-container button {
       width: 200px;
       height: 46px;
       background-color: #b3b3b3;
       color: #fff;
       border-radius: 0; }
-      .wizard-dialog-services-and-locations .buttons-container button.active {
+      .wizard-dialog-services-and-locations .buttons-container button.active,
+      .wizard-dialog-details .buttons-container button.active,
+      .wizard-dialog-success-message .buttons-container button.active {
         margin-left: 20px;
         background-color: #585077; }
+
+.wizard-dialog-services-and-locations {
+  width: 86% !important;
+  font-family: "Lato", sans-serif; }
+  .wizard-dialog-services-and-locations .select {
+    display: none; }
+  .wizard-dialog-services-and-locations .right-side .modal-title {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    color: #342e49; }
+  .wizard-dialog-services-and-locations .right-side .county-list-wrapper {
+    padding: 0;
+    background-color: transparent; }
+  .wizard-dialog-services-and-locations .right-side .county-list {
+    justify-content: space-between;
+    max-height: 480px;
+    overflow-y: scroll;
+    padding-right: 20px; }
+  .wizard-dialog-services-and-locations .right-side .county-item {
+    width: 30%;
+    padding: 0;
+    border-bottom: none !important; }
+    .wizard-dialog-services-and-locations .right-side .county-item .custom-control {
+      justify-content: space-between;
+      padding-left: 0; }
+  .wizard-dialog-services-and-locations .right-side .input-label {
+    white-space: nowrap; }
+  .wizard-dialog-services-and-locations .right-side .custom-control-stats {
+    color: #b3b3b3 !important; }
+  .wizard-dialog-services-and-locations .right-side .search {
+    padding-bottom: 20px;
+    border-bottom: none; }
+  .wizard-dialog-services-and-locations .right-side .input-group-prepend {
+    left: 0;
+    right: auto; }
+  .wizard-dialog-services-and-locations .right-side .fa-search {
+    color: #b3b3b3; }
+  .wizard-dialog-services-and-locations .right-side .form-control {
+    padding-right: 20px;
+    padding-left: 40px;
+    color: #b3b3b3; }
+    .wizard-dialog-services-and-locations .right-side .form-control::placeholder {
+      color: #b3b3b3; }
+  .wizard-dialog-services-and-locations .left-side .modal-title {
+    margin-bottom: 60px;
+    color: #ffffff; }
+  .wizard-dialog-services-and-locations .left-side .counties-list {
+    padding: 0;
+    margin: 0;
+    text-decoration: none; }
+  .wizard-dialog-services-and-locations .left-side .counties-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    padding: 15px 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer; }
+    .wizard-dialog-services-and-locations .left-side .counties-list-item:not(:last-of-type) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    .wizard-dialog-services-and-locations .left-side .counties-list-item .county-name {
+      white-space: nowrap;
+      font-weight: bold;
+      color: #fff; }
+    .wizard-dialog-services-and-locations .left-side .counties-list-item .quantity {
+      padding: 3px 9px;
+      color: #e6e6e6;
+      border-radius: 20px;
+      border: solid 0.5px #d6d6d6; }
+    .wizard-dialog-services-and-locations .left-side .counties-list-item.active {
+      padding: 20px 20px 20px 15px;
+      margin-right: 0;
+      background-color: #fff;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      .wizard-dialog-services-and-locations .left-side .counties-list-item.active .county-name {
+        color: #342e49; }
+      .wizard-dialog-services-and-locations .left-side .counties-list-item.active .quantity {
+        display: block;
+        padding: 3px 9px;
+        color: #585077;
+        border-radius: 20px;
+        background-color: #e3e3e3;
+        font-weight: 300;
+        border: none; }
+  .wizard-dialog-services-and-locations .selected-services {
+    white-space: nowrap; }
+
+.wizard-dialog-details .left-side {
+  padding: 50px 30px 30px 30px !important; }
+
+.wizard-dialog-details .right-side {
+  padding: 0 !important; }
+
+.wizard-dialog-details .modal-body-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 60px !important; }
+
+.wizard-dialog-details .input-group {
+  border: none; }
+
+.wizard-dialog-details .input-group-title {
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: #585077; }
+
+.wizard-dialog-details .input-group-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45%;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 30px;
+  font-family: "Raleway", sans-serif;
+  color: #585077; }
+  .wizard-dialog-details .input-group-select span {
+    margin-right: 10px;
+    white-space: nowrap;
+    font-weight: 300; }
+  .wizard-dialog-details .input-group-select .input-group {
+    height: 100%; }
+  .wizard-dialog-details .input-group-select select {
+    height: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    text-align: left;
+    color: #585077; }
+    .wizard-dialog-details .input-group-select select option {
+      color: #585077; }
+
+.wizard-dialog-success-message .modal-body {
+  height: 90vh; }
+
+.wizard-dialog-success-message .modal-body-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 60px !important; }
+
+.wizard-dialog-success-message .input-group-title {
+  width: 100%; }
+
+.wizard-dialog-success-message .headings-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
+  .wizard-dialog-success-message .headings-inner .headings-container {
+    margin-left: 20px; }
+
+.wizard-dialog-success-message .left-side {
+  padding: 30px; }
+
+.wizard-dialog-success-message .right-side .modal-body-container {
+  padding: 30px 60px; }
+
+.wizard-dialog-success-message .right-side .input-group .form-control {
+  width: 100%;
+  padding: 0 40px; }
+
+.wizard-dialog-success-message .right-side .input-group .fa-key {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+  z-index: 100; }
+
+.wizard-dialog-success-message .right-side .input-group .fa-eye {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  z-index: 100; }
 
 .landing-sign-up {
   /*
