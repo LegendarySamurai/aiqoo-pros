@@ -248,174 +248,196 @@
 .quality-card {
   position: relative;
 
-  @media(min-width: 300px) {
-    &.show {
-      z-index: 10;
+  // Show
+  &.show {
+    z-index: 10;
 
-      .small-card {
-        opacity: .1;
+    .small-card {
+      opacity: .1;
+    }
+
+    .big-card {
+      .quality-card-text {
+        max-height: inherit !important;
+        margin-bottom: 0;
+        height: 100%;
       }
+    }
 
-      .big-card {
-        .quality-card-text {
-          max-height: inherit !important;
-          margin-bottom: 0;
-          height: 100%;
+    @keyframes big-card-enter-animation {
+      0% {
+        width: 100%;
+        opacity: 0;
+
+        @media(max-width: 599px) {
+          transform: scale(.75);
         }
-      }
 
-      @keyframes big-card-enter-animation {
-        0% {
+        @media(min-width: 600px) {
           transform: scale(.75) translate(0, -50%);
-          width: 100%;
-          opacity: 0;
+        }
+      }
+
+      100% {
+        width: 48.5vw;
+        opacity: 1;
+
+        @media(max-width: 599px) {
+          transform: scale(1.15);
         }
 
-        100% {
+        @media(min-width: 600px) {
           transform: scale(1.15) translate(0, -50%);
-          width: 48.5vw;
-          opacity: 1;
-        }
-      }
-
-      @keyframes big-card-b-enter-animation {
-        0% {
-          transform: scale(.75) translate(-50%, -50%);
-          width: 100%;
-          opacity: 0;
-        }
-
-        100% {
-          transform: scale(1.15) translate(-50%, -50%);
-          width: 48.5vw;
-          opacity: 1;
-        }
-      }
-
-      .big-card {
-        &:not(.b) {
-          animation-name: big-card-enter-animation;
-          animation-duration: 600ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-          //animation-delay: 400ms;
-        }
-
-        &.b {
-          animation-name: big-card-b-enter-animation;
-          animation-duration: 600ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-          //animation-delay: 400ms;
-        }
-
-        .quality-card-text-content {
-          @keyframes big-card-text-enter-animation {
-            0% {
-              transform: scale(0);
-              opacity: 0;
-            }
-
-            50% {
-              opacity: 1;
-            }
-
-            100% {
-              transform: scale(1);
-            }
-          }
-
-          animation-name: big-card-text-enter-animation;
-          animation-duration: 400ms;
-          animation-delay: 300ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
         }
       }
     }
 
-    &.hide {
-      z-index: 9;
-
-      @keyframes big-card-exit-animation {
-        0% {
-          transform: scale(1.15) translate(0, -50%);
-          width: 48.5vw;
-          opacity: 1;
-        }
-
-        50% {
-          transform: scale(1.15) translate(0, -50%);
-          width: 48.5vw;
-          opacity: 1;
-        }
-
-        100% {
-          transform: scale(.75) translate(0, -50%);
-          width: 100%;
-          opacity: 0;
-        }
+    @keyframes big-card-b-enter-animation {
+      0% {
+        transform: scale(.75) translate(-50%, -50%);
+        width: 100%;
+        opacity: 0;
       }
 
-      @keyframes big-card-b-exit-animation {
-        0% {
-          transform: scale(1) translate(-50%, -50%);
-          width: 48.5vw;
-          opacity: 1;
-        }
-
-        50% {
-          transform: scale(1) translate(-50%, -50%);
-          width: 48.5vw;
-          opacity: 1;
-        }
-
-        100% {
-          transform: scale(.75) translate(-50%, -50%);
-          width: 100%;
-          opacity: 0;
-        }
-      }
-
-      .big-card {
-        &:not(.b) {
-          animation-name: big-card-exit-animation;
-          animation-duration: 400ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-        }
-
-        &.b {
-          animation-name: big-card-b-exit-animation;
-          animation-duration: 400ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-          //animation-duration: 600ms;
-          //animation-delay: 300ms;
-        }
-
-        .quality-card-text-content {
-          @keyframes big-card-text-exit-animation {
-            0% {
-              transform: scale(1);
-              opacity: 1;
-            }
-
-            100% {
-              transform: scale(0);
-              opacity: 0;
-            }
-          }
-
-          animation-name: big-card-text-exit-animation;
-          animation-duration: 400ms;
-          animation-delay: 0ms;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-        }
+      100% {
+        transform: scale(1.15) translate(-50%, -50%);
+        width: 48.5vw;
+        opacity: 1;
       }
     }
+
+    .big-card {
+      &:not(.b) {
+        animation-name: big-card-enter-animation;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        //animation-delay: 400ms;
+      }
+
+      &.b {
+        animation-name: big-card-b-enter-animation;
+        animation-duration: 600ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        //animation-delay: 400ms;
+      }
+
+      .quality-card-text-content {
+        @keyframes big-card-text-enter-animation {
+          0% {
+            transform: scale(0);
+            opacity: 0;
+          }
+
+          50% {
+            opacity: 1;
+          }
+
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        animation-name: big-card-text-enter-animation;
+        animation-duration: 400ms;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+
+  // Hide
+  &.hide {
+    z-index: 9;
+
+    @keyframes big-card-exit-animation {
+      0% {
+        transform: scale(1.15) translate(0, -50%);
+        width: 48.5vw;
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.15) translate(0, -50%);
+        width: 48.5vw;
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(.75) translate(0, -50%);
+        width: 100%;
+        opacity: 0;
+      }
+    }
+
+    @keyframes big-card-b-exit-animation {
+      0% {
+        transform: scale(1) translate(-50%, -50%);
+        width: 48.5vw;
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1) translate(-50%, -50%);
+        width: 48.5vw;
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(.75) translate(-50%, -50%);
+        width: 100%;
+        opacity: 0;
+      }
+    }
+
+    .big-card {
+      &:not(.b) {
+        animation-name: big-card-exit-animation;
+        animation-duration: 400ms;
+        animation-delay: 0ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+      }
+
+      &.b {
+        animation-name: big-card-b-exit-animation;
+        animation-duration: 400ms;
+        animation-delay: 0ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        //animation-duration: 600ms;
+        //animation-delay: 300ms;
+      }
+
+      .quality-card-text-content {
+        @keyframes big-card-text-exit-animation {
+          0% {
+            transform: scale(1);
+            opacity: 1;
+          }
+
+          100% {
+            transform: scale(0);
+            opacity: 0;
+          }
+        }
+
+        animation-name: big-card-text-exit-animation;
+        animation-duration: 400ms;
+        animation-delay: 0ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+
+  @media(min-width: 600px) {
+
+  }
+
+  @media(max-width: 599px) {
+
   }
 }

@@ -14804,110 +14804,121 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 
 .sign-up-landing .quality-card {
   position: relative; }
-  @media (min-width: 300px) {
-    .sign-up-landing .quality-card.show {
-      z-index: 10; }
-      .sign-up-landing .quality-card.show .small-card {
-        opacity: .1; }
-      .sign-up-landing .quality-card.show .big-card .quality-card-text {
-        max-height: inherit !important;
-        margin-bottom: 0;
-        height: 100%; }
-    @keyframes big-card-enter-animation {
-      0% {
-        transform: scale(0.75) translate(0, -50%);
-        width: 100%;
-        opacity: 0; }
-      100% {
-        transform: scale(1.15) translate(0, -50%);
-        width: 48.5vw;
-        opacity: 1; } }
-    @keyframes big-card-b-enter-animation {
-      0% {
-        transform: scale(0.75) translate(-50%, -50%);
-        width: 100%;
-        opacity: 0; }
-      100% {
-        transform: scale(1.15) translate(-50%, -50%);
-        width: 48.5vw;
-        opacity: 1; } }
-      .sign-up-landing .quality-card.show .big-card:not(.b) {
-        animation-name: big-card-enter-animation;
-        animation-duration: 600ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .quality-card.show .big-card.b {
-        animation-name: big-card-b-enter-animation;
-        animation-duration: 600ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .quality-card.show .big-card .quality-card-text-content {
-        animation-name: big-card-text-enter-animation;
-        animation-duration: 400ms;
-        animation-delay: 300ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-    @keyframes big-card-text-enter-animation {
-      0% {
-        transform: scale(0);
-        opacity: 0; }
-      50% {
-        opacity: 1; }
-      100% {
-        transform: scale(1); } }
-    .sign-up-landing .quality-card.hide {
-      z-index: 9; }
-    @keyframes big-card-exit-animation {
-      0% {
-        transform: scale(1.15) translate(0, -50%);
-        width: 48.5vw;
-        opacity: 1; }
-      50% {
-        transform: scale(1.15) translate(0, -50%);
-        width: 48.5vw;
-        opacity: 1; }
-      100% {
-        transform: scale(0.75) translate(0, -50%);
-        width: 100%;
-        opacity: 0; } }
-    @keyframes big-card-b-exit-animation {
-      0% {
-        transform: scale(1) translate(-50%, -50%);
-        width: 48.5vw;
-        opacity: 1; }
-      50% {
-        transform: scale(1) translate(-50%, -50%);
-        width: 48.5vw;
-        opacity: 1; }
-      100% {
-        transform: scale(0.75) translate(-50%, -50%);
-        width: 100%;
-        opacity: 0; } }
-      .sign-up-landing .quality-card.hide .big-card:not(.b) {
-        animation-name: big-card-exit-animation;
-        animation-duration: 400ms;
-        animation-delay: 0ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .quality-card.hide .big-card.b {
-        animation-name: big-card-b-exit-animation;
-        animation-duration: 400ms;
-        animation-delay: 0ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-      .sign-up-landing .quality-card.hide .big-card .quality-card-text-content {
-        animation-name: big-card-text-exit-animation;
-        animation-duration: 400ms;
-        animation-delay: 0ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1; }
-    @keyframes big-card-text-exit-animation {
-      0% {
-        transform: scale(1);
-        opacity: 1; }
-      100% {
-        transform: scale(0);
-        opacity: 0; } } }
+  .sign-up-landing .quality-card.show {
+    z-index: 10; }
+    .sign-up-landing .quality-card.show .small-card {
+      opacity: .1; }
+    .sign-up-landing .quality-card.show .big-card .quality-card-text {
+      max-height: inherit !important;
+      margin-bottom: 0;
+      height: 100%; }
+
+@keyframes big-card-enter-animation {
+  0% {
+    width: 100%;
+    opacity: 0;
+    @media (max-width: 599px) {
+      transform: scale(0.75); }
+    @media (min-width: 600px) {
+      transform: scale(0.75) translate(0, -50%); } }
+  100% {
+    width: 48.5vw;
+    opacity: 1;
+    @media (max-width: 599px) {
+      transform: scale(1.15); }
+    @media (min-width: 600px) {
+      transform: scale(1.15) translate(0, -50%); } } }
+
+@keyframes big-card-b-enter-animation {
+  0% {
+    transform: scale(0.75) translate(-50%, -50%);
+    width: 100%;
+    opacity: 0; }
+  100% {
+    transform: scale(1.15) translate(-50%, -50%);
+    width: 48.5vw;
+    opacity: 1; } }
+    .sign-up-landing .quality-card.show .big-card:not(.b) {
+      animation-name: big-card-enter-animation;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1; }
+    .sign-up-landing .quality-card.show .big-card.b {
+      animation-name: big-card-b-enter-animation;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1; }
+    .sign-up-landing .quality-card.show .big-card .quality-card-text-content {
+      animation-name: big-card-text-enter-animation;
+      animation-duration: 400ms;
+      animation-delay: 300ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1; }
+
+@keyframes big-card-text-enter-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: scale(1); } }
+  .sign-up-landing .quality-card.hide {
+    z-index: 9; }
+
+@keyframes big-card-exit-animation {
+  0% {
+    transform: scale(1.15) translate(0, -50%);
+    width: 48.5vw;
+    opacity: 1; }
+  50% {
+    transform: scale(1.15) translate(0, -50%);
+    width: 48.5vw;
+    opacity: 1; }
+  100% {
+    transform: scale(0.75) translate(0, -50%);
+    width: 100%;
+    opacity: 0; } }
+
+@keyframes big-card-b-exit-animation {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+    width: 48.5vw;
+    opacity: 1; }
+  50% {
+    transform: scale(1) translate(-50%, -50%);
+    width: 48.5vw;
+    opacity: 1; }
+  100% {
+    transform: scale(0.75) translate(-50%, -50%);
+    width: 100%;
+    opacity: 0; } }
+    .sign-up-landing .quality-card.hide .big-card:not(.b) {
+      animation-name: big-card-exit-animation;
+      animation-duration: 400ms;
+      animation-delay: 0ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1; }
+    .sign-up-landing .quality-card.hide .big-card.b {
+      animation-name: big-card-b-exit-animation;
+      animation-duration: 400ms;
+      animation-delay: 0ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1; }
+    .sign-up-landing .quality-card.hide .big-card .quality-card-text-content {
+      animation-name: big-card-text-exit-animation;
+      animation-duration: 400ms;
+      animation-delay: 0ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1; }
+
+@keyframes big-card-text-exit-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0);
+    opacity: 0; } }
 
 .system-campaign { }
   @media (min-width: 1200px) {
