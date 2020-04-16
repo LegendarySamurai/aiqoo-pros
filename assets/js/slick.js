@@ -1,6 +1,3 @@
-const isMobile = window.innerWidth < 599;
-const isDesktop = window.innerWidth > 600;
-
 // slick
 if (isDesktop) {
 	$('#slick-container').slick({

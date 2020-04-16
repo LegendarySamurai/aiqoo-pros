@@ -5,6 +5,7 @@
   margin: 2vh 0;
 }
 
+
 // QUALITY Card
 .quality-cards {
   position: relative;
@@ -267,27 +268,27 @@
       0% {
         width: 100%;
         opacity: 0;
+        transform: scale(.75) translate(0, -50%);
 
-        @media(max-width: 599px) {
-          transform: scale(.75);
-        }
-
-        @media(min-width: 600px) {
-          transform: scale(.75) translate(0, -50%);
-        }
+        //@media(max-width: 599px) {
+        //  transform: scale(.75);
+        //}
+        //
+        //@media(min-width: 600px) {
+        //}
       }
 
       100% {
         width: 48.5vw;
         opacity: 1;
+        transform: scale(1.15) translate(0, -50%);
 
-        @media(max-width: 599px) {
-          transform: scale(1.15);
-        }
-
-        @media(min-width: 600px) {
-          transform: scale(1.15) translate(0, -50%);
-        }
+        //@media(max-width: 599px) {
+        //  transform: scale(1.15);
+        //}
+        //
+        //@media(min-width: 600px) {
+        //}
       }
     }
 
@@ -373,13 +374,13 @@
 
     @keyframes big-card-b-exit-animation {
       0% {
-        transform: scale(1) translate(-50%, -50%);
+        transform: scale(1.15) translate(-50%, -50%);
         width: 48.5vw;
         opacity: 1;
       }
 
       50% {
-        transform: scale(1) translate(-50%, -50%);
+        transform: scale(1.15) translate(-50%, -50%);
         width: 48.5vw;
         opacity: 1;
       }

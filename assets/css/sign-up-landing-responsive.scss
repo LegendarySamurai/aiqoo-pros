@@ -286,59 +286,6 @@
     padding: 1vh 1vw 1vh 10vw !important;
   }
 
-  .back-layer {
-    position: static;
-    transform: none;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-
-    &.is-active {
-      z-index: 9000;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      padding-top: 60px;
-      background-color: transparentize(#000, 0.3);
-
-      .special-offers {
-        display: none;
-      }
-
-      .form-container {
-        width: 96%;
-        padding-top: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-      }
-
-      .submit-button {
-        .btn {
-          padding: 0;
-        }
-      }
-
-      .custom-control-label {
-        padding-top: 8px;
-      }
-    }
-  }
-
-  .inner {
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    //right: 0;
-    //bottom: 0;
-    //width: 100%;
-    //height: 100%;
-    //pointer-events: none;
-  }
-
   // Quality cards
   .quality-card {
     width: 96%;
@@ -474,6 +421,62 @@
 }
 
 @media(max-width: 599px) {
+
+
+  .back-layer {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    &.is-active {
+      z-index: 9000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      max-width: inherit !important;
+      height: 100%;
+      padding-top: 60px;
+      background-color: transparentize(#000, 0.3);
+
+      .special-offers {
+        display: none;
+      }
+
+      .form-container {
+        width: 96%;
+        padding-top: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+
+      .submit-button {
+        .btn {
+          padding: 0;
+        }
+      }
+
+      .custom-control-label {
+        padding-top: 8px;
+      }
+    }
+  }
+
+  .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
   // Lets go btn
   .lets-go-btn {
     display: block !important;

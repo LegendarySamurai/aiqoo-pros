@@ -1,3 +1,6 @@
+const isMobile = window.innerWidth < 600;
+const isDesktop = window.innerWidth > 600;
+
 // Button LETS GO on click shows form
 const letsGoBtn = document.querySelector('.lets-go-btn');
 const formWrapper = document.querySelector('.back-layer');
@@ -8,6 +11,7 @@ let popupVisible = false;
 
 letsGoBtn.addEventListener('click', function() {
 	if (isMobile) {
+		console.log('IS MOBILE');
 		formWrapper.classList.add('is-active');
 		body.classList.add('blocked');
 		popupVisible = true;
