@@ -1213,6 +1213,10 @@
   .wizard-dialog-details,
   .wizard-dialog-success-message {
     width: 90% !important; }
+  .wizard-dialog-services-and-locations .decoration-element-wizard,
+  .wizard-dialog-details .decoration-element-wizard,
+  .wizard-dialog-success-message .decoration-element-wizard {
+    display: none; }
   .wizard-dialog-services-and-locations .right-side .right-side-header,
   .wizard-dialog-details .right-side .right-side-header,
   .wizard-dialog-success-message .right-side .right-side-header {
@@ -1250,6 +1254,8 @@
       margin-bottom: 10px; } }
 
 @media (max-width: 767px) {
+  .wizard-dialog-details .decoration-element-wizard .dashed-line {
+    height: 230px; }
   .wizard-dialog-details .right-side .right-side-header {
     height: 55px; }
   .wizard-dialog-details .right-side .right-side-inner.without-scroll {
@@ -1264,6 +1270,14 @@
     .wizard-dialog-details .right-side .modal-footer .buttons-container {
       width: 100%; }
   .wizard-dialog-details .right-side .input-group-select {
+    margin-top: 10px; } }
+
+@media (max-width: 991px) {
+  .wizard-dialog-success-message .decoration-element-wizard .dashed-line {
+    height: 130px; } }
+
+@media (max-width: 767px) {
+  .wizard-dialog-success-message .modal-body-container .modal-body-col:not(:first-of-type) {
     margin-top: 10px; } }
 
 @media (min-width: 300px) {

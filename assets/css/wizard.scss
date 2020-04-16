@@ -109,6 +109,33 @@
   width: 86% !important;
   font-family: "Lato", sans-serif;
 
+  // wizard square decoration element
+  .decoration-element-wizard {
+    position: absolute;
+    left: -30px;
+
+    .square {
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: #585077;
+      box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+      border: solid 0.5px #fefefe;
+    }
+
+    .dashed-line {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 0;
+      //height: 60px;
+      display: block;
+      border: 1px dashed #585077;
+    }
+  }
+
+  // input and placeholder equal font size
   .form-control {
     &::placeholder {
       font-size: inherit !important;
@@ -251,6 +278,7 @@
   }
 
   .modal-body-col {
+    position: relative;
     width: 45%;
   }
 
@@ -432,6 +460,14 @@
 
 // Details Wizard
 .wizard-dialog-details {
+  .decoration-element-wizard {
+    top: 0;
+
+    .dashed-line {
+      height: 270px;
+    }
+  }
+
   .left-side {
     padding: 50px 30px 30px 30px !important;
   }
@@ -498,6 +534,14 @@
 
 // Success Wizard
 .wizard-dialog-success-message {
+  .decoration-element-wizard {
+    top: -40px;
+
+    .dashed-line {
+      height: 60px;
+    }
+  }
+
   .modal-body {
     height: 90vh;
   }
@@ -509,6 +553,10 @@
     justify-content: space-between;
     width: 100%;
     padding: 30px 60px !important;
+  }
+
+  .modal-body-col {
+    width: 48%;
   }
 
   .input-group-title {

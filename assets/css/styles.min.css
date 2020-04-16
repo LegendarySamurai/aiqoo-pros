@@ -12718,6 +12718,30 @@ form {
 .wizard-dialog-success-message {
   width: 86% !important;
   font-family: "Lato", sans-serif; }
+  .wizard-dialog-services-and-locations .decoration-element-wizard,
+  .wizard-dialog-details .decoration-element-wizard,
+  .wizard-dialog-success-message .decoration-element-wizard {
+    position: absolute;
+    left: -30px; }
+    .wizard-dialog-services-and-locations .decoration-element-wizard .square,
+    .wizard-dialog-details .decoration-element-wizard .square,
+    .wizard-dialog-success-message .decoration-element-wizard .square {
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: #585077;
+      box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+      border: solid 0.5px #fefefe; }
+    .wizard-dialog-services-and-locations .decoration-element-wizard .dashed-line,
+    .wizard-dialog-details .decoration-element-wizard .dashed-line,
+    .wizard-dialog-success-message .decoration-element-wizard .dashed-line {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 0;
+      display: block;
+      border: 1px dashed #585077; }
   .wizard-dialog-services-and-locations .form-control::placeholder,
   .wizard-dialog-details .form-control::placeholder,
   .wizard-dialog-success-message .form-control::placeholder {
@@ -12843,6 +12867,7 @@ form {
   .wizard-dialog-services-and-locations .modal-body-col,
   .wizard-dialog-details .modal-body-col,
   .wizard-dialog-success-message .modal-body-col {
+    position: relative;
     width: 45%; }
   .wizard-dialog-services-and-locations .modal-footer,
   .wizard-dialog-details .modal-footer,
@@ -12962,6 +12987,11 @@ form {
   .wizard-dialog-services-and-locations .selected-services {
     white-space: nowrap; }
 
+.wizard-dialog-details .decoration-element-wizard {
+  top: 0; }
+  .wizard-dialog-details .decoration-element-wizard .dashed-line {
+    height: 270px; }
+
 .wizard-dialog-details .left-side {
   padding: 50px 30px 30px 30px !important; }
 
@@ -13010,6 +13040,11 @@ form {
     .wizard-dialog-details .input-group-select select option {
       color: #585077; }
 
+.wizard-dialog-success-message .decoration-element-wizard {
+  top: -40px; }
+  .wizard-dialog-success-message .decoration-element-wizard .dashed-line {
+    height: 60px; }
+
 .wizard-dialog-success-message .modal-body {
   height: 90vh; }
 
@@ -13020,6 +13055,9 @@ form {
   justify-content: space-between;
   width: 100%;
   padding: 30px 60px !important; }
+
+.wizard-dialog-success-message .modal-body-col {
+  width: 48%; }
 
 .wizard-dialog-success-message .input-group-title {
   width: 100%; }
