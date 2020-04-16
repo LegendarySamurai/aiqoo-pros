@@ -14888,15 +14888,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 69vw;
   height: 100%;
   padding: 0 5vw 1.5vh 5vw;
   color: #fff;
   text-align: left;
   background-color: #585077; }
-  @media (min-width: 600px) {
-    .sign-up-landing .footer-outer {
-      width: 69vw; } }
 
 .sign-up-landing .footer-col {
   width: 48%;

@@ -42,10 +42,6 @@
       //padding-left: 9vw !important;
       width: 23vw !important;
     }
-
-    h2 {
-      //padding-left: 10vw !important;
-    }
   }
 
   // Content section
@@ -53,25 +49,15 @@
     h1 {
       font-size: 24pt;
     }
-
     .top-text {
       font-size: 2.125vh !important;
     }
-
-    //.bottom-text {
-    //  font-size: 2.25vh !important;
-    //}
   }
 
   // Quality cards
   .quality-card {
     height: 210px;
     margin: 0 10px;
-  }
-
-  .quality-card-text {
-    //max-height: 112px !important;
-    //font-size: 1.65vh !important;
   }
 
   .read-more {
@@ -84,6 +70,10 @@
 
   // Footer
   footer {
+    .footer-outer {
+      width: 68vw !important;
+    }
+
     .read-more {
       font-size: 1.125vh !important;
     }
@@ -110,8 +100,6 @@
   .head-section-body {
     .aiqoo-logo-outer {
       width: 30vw !important;
-      //padding-left: 10vw !important;
-      //width: 25vw !important;
     }
 
     .aiqoo-logo-inner {
@@ -123,11 +111,6 @@
     .pro-img {
       width: 7vh !important;
       top: -2vh !important;
-    }
-
-    h2 {
-      //padding-left: 11vw !important;
-      //font-size: 2.45vw !important;
     }
   }
 
@@ -287,19 +270,10 @@
       }
     }
   }
-
-  // Footer
-  .footer-outer {
-    width: 60%;
-  }
 }
 
 @media(max-width: 991px) {
   // Head section
-  .head-section-body {
-
-  }
-
   h2 {
     font-size: 2.35vh !important;
   }
@@ -412,6 +386,14 @@
   }
 
   // Footer
+  footer {
+    .scroll-container {
+      .footer-outer {
+        width: 60% !important;
+      }
+    }
+  }
+
   .sticky-logo-container-inner {
     width: 23vw !important;
     right: 2.5vw !important;

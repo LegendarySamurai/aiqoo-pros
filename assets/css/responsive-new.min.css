@@ -2472,6 +2472,8 @@
     font-size: 1.65vh !important; }
   .error-message {
     margin-top: 1vh; }
+  footer .footer-outer {
+    width: 68vw !important; }
   footer .read-more {
     font-size: 1.125vh !important; } }
 
@@ -2546,9 +2548,7 @@
     .side-block .outer {
       width: 100%;
       box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
-      background-color: #fff; }
-  .footer-outer {
-    width: 60%; } }
+      background-color: #fff; } }
 
 @media (max-width: 991px) {
   h2 {
@@ -2605,6 +2605,8 @@
     font-size: inherit !important; }
   .reviews .review-card .text {
     font-size: inherit !important; }
+  footer .scroll-container .footer-outer {
+    width: 60% !important; }
   .sticky-logo-container-inner {
     width: 23vw !important;
     right: 2.5vw !important; } }
