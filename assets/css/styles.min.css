@@ -12851,8 +12851,8 @@ form {
   .wizard-dialog-services-and-locations .modal-body-container,
   .wizard-dialog-details .modal-body-container,
   .wizard-dialog-success-message .modal-body-container {
-    margin-top: 20px;
     padding: 30px 10px 30px 30px;
+    margin-top: 20px;
     box-shadow: 0 1.5px 35px 0 rgba(0, 0, 0, 0.04);
     background-color: #f5f5f5; }
   .wizard-dialog-services-and-locations .input-group-title,
@@ -13043,7 +13043,7 @@ form {
 .wizard-dialog-success-message .decoration-element-wizard {
   top: -40px; }
   .wizard-dialog-success-message .decoration-element-wizard .dashed-line {
-    height: 60px; }
+    height: 70px; }
 
 .wizard-dialog-success-message .modal-body {
   height: 90vh; }
@@ -13058,6 +13058,9 @@ form {
 
 .wizard-dialog-success-message .modal-body-col {
   width: 48%; }
+
+.wizard-dialog-success-message .decoration-element-mobile {
+  display: none; }
 
 .wizard-dialog-success-message .input-group-title {
   width: 100%; }
