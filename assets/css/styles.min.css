@@ -15882,6 +15882,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       font-size: 2.75vh; }
 
 .sign-up-landing footer {
+  z-index: 12;
   position: relative;
   width: 100%;
   height: auto;

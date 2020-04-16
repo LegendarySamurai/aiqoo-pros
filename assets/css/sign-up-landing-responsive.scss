@@ -392,6 +392,19 @@
         width: 60% !important;
       }
     }
+
+    .links-container {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+
+    .decoration-element {
+      display: none !important;
+    }
+
+    .terms-and-conditions {
+      margin-top: 5px !important;
+    }
   }
 
   .sticky-logo-container-inner {
@@ -406,6 +419,15 @@
       h2 {
         font-size: 2vh !important;
       }
+    }
+  }
+}
+
+@media(max-width: 810px) {
+  // Footer
+  .footer-col {
+    h4 {
+      font-size: 1.5vw !important;
     }
   }
 }

@@ -2590,6 +2590,13 @@
     font-size: inherit !important; }
   footer .scroll-container .footer-outer {
     width: 60% !important; }
+  footer .links-container {
+    flex-direction: column !important;
+    align-items: flex-start !important; }
+  footer .decoration-element {
+    display: none !important; }
+  footer .terms-and-conditions {
+    margin-top: 5px !important; }
   .sticky-logo-container-inner {
     width: 23vw !important;
     right: 2.5vw !important; } }
@@ -2597,6 +2604,10 @@
 @media (max-width: 870px) {
   .head-section .head-section-body h2 {
     font-size: 2vh !important; } }
+
+@media (max-width: 810px) {
+  .footer-col h4 {
+    font-size: 1.5vw !important; } }
 
 @media (max-width: 767px) {
   .head-section .head-section-body .head-section-inner {
