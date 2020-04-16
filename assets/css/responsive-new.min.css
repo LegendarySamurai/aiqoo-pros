@@ -1231,6 +1231,11 @@
   .wizard-dialog-details,
   .wizard-dialog-success-message {
     width: 90% !important; }
+  .wizard-dialog-services-and-locations .modal-body,
+  .wizard-dialog-details .modal-body,
+  .wizard-dialog-success-message .modal-body {
+    z-index: 2;
+    background-color: #fff; }
   .wizard-dialog-services-and-locations .decoration-element-wizard,
   .wizard-dialog-details .decoration-element-wizard,
   .wizard-dialog-success-message .decoration-element-wizard {
@@ -1241,10 +1246,11 @@
     z-index: 1;
     display: block !important;
     position: absolute;
-    top: 6px;
-    left: -6px;
+    top: 50%;
+    left: -7px;
+    transform: translate(0, -50%);
     width: 12px;
-    height: 85%;
+    height: 95%;
     border-radius: 20px;
     background-color: #585077; }
   .wizard-dialog-services-and-locations .right-side .right-side-header,
@@ -1258,13 +1264,7 @@
   .wizard-dialog-services-and-locations .right-side .modal-body-container,
   .wizard-dialog-details .right-side .modal-body-container,
   .wizard-dialog-success-message .right-side .modal-body-container {
-    position: relative;
-    z-index: 2;
     padding: 20px !important; }
-  .wizard-dialog-services-and-locations .right-side .modal-body-container-outer,
-  .wizard-dialog-details .right-side .modal-body-container-outer,
-  .wizard-dialog-success-message .right-side .modal-body-container-outer {
-    position: relative; }
   .wizard-dialog-services-and-locations .right-side .input-group-select,
   .wizard-dialog-details .right-side .input-group-select,
   .wizard-dialog-success-message .right-side .input-group-select {

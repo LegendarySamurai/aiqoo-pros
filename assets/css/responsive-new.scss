@@ -760,6 +760,11 @@
       width: 90% !important;
     }
 
+    .modal-body {
+      z-index: 2;
+      background-color: #fff;
+    }
+
     .decoration-element-wizard {
       display: none;
     }
@@ -768,11 +773,11 @@
       z-index: 1;
       display: block !important;
       position: absolute;
-      top: 6px;
-      left: -6px;
-      //transform: translate(-50%, -50%);
+      top: 50%;
+      left: -7px;
+      transform: translate(0, -50%);
       width: 12px;
-      height: 85%;
+      height: 95%;
       border-radius: 20px;
       background-color: #585077;
     }
@@ -789,13 +794,13 @@
       }
 
       .modal-body-container {
-        position: relative;
-        z-index: 2;
+        //position: relative;
+        //z-index: 2;
         padding: 20px !important;
       }
 
       .modal-body-container-outer {
-        position: relative;
+        //position: relative;
       }
 
       .input-group-select {
