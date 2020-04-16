@@ -544,6 +544,122 @@
     }
   }
 }
+//************** Wizard dialog COMMON STYLES **************//
+// Services and Area list popup
+// Details Wizard
+.wizard-new-dialog {
+  @media(max-width: 1199px) {
+    .modal-footer {
+      button {
+        width: 180px;
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    .left-side {
+      //display: none;
+    }
+
+    .right-side {
+      //width: 100% !important;
+
+      .right-side-inner {
+        &.scroll {
+          padding: 20px;
+        }
+
+        &.without-scroll {
+          padding: 20px;
+        }
+      }
+
+      .modal-body {
+        width: 100% !important;
+      }
+
+      .modal-body-container {
+        //padding: 30px 40px !important;
+      }
+
+      .modal-body-col {
+        //width: 100%;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .left-side {
+      display: none;
+    }
+
+    .right-side {
+      width: 100% !important;
+    }
+
+    .modal-body-container {
+      flex-direction: column !important;
+
+      .modal-body-col {
+        width: 100% !important;
+      }
+    }
+
+    .modal-body {
+      z-index: 2;
+      background-color: #fff;
+    }
+
+    .decoration-element-wizard {
+      display: none;
+    }
+
+    .decoration-element-mobile {
+      z-index: 1;
+      display: block !important;
+      position: absolute;
+      top: 50%;
+      left: -7px;
+      transform: translate(0, -50%);
+      width: 12px;
+      height: 95%;
+      border-radius: 20px;
+      background-color: #585077;
+    }
+  }
+
+  @media(max-width: 599px) {
+    & {
+      width: 90% !important;
+    }
+
+    .right-side {
+      .right-side-header {
+        padding: 20px;
+      }
+
+      .right-side-inner {
+        &.without-scroll {
+          padding: 20px;
+        }
+      }
+
+      .modal-body-container {
+        //position: relative;
+        //z-index: 2;
+        padding: 20px !important;
+      }
+
+      .modal-body-container-outer {
+        //position: relative;
+      }
+
+      .input-group-select {
+        padding: 0px !important;
+      }
+    }
+  }
+}
 
 
 //************* Services and Area list popup  *************//
@@ -583,6 +699,8 @@
   }
 
   @media(max-width: 991px) {
+    .left-side {}
+
     .right-side {
       .county-item {
         width: 96% !important;
@@ -613,36 +731,12 @@
   @media(max-width: 767px) {
     .modal-content {
       .modal-body {
-        .left-side {
-          width: 40% !important;
-          padding: 20px 0 20px 20px;
-        }
-
-        .right-side {
-          width: 60% !important;
-          padding: 20px 10px 20px 0px;
-
-          .county-list-container {
-            padding: 20px 10px 20px 20px;
-          }
-        }
-      }
-    }
-
-  }
-
-  @media(max-width: 599px) {
-    button.close {
-      background-color: transparent;
-    }
-
-    .modal-content {
-      .modal-body {
         flex-direction: column;
 
         .left-side {
+          display: block !important;
           width: 100% !important;
-          padding: 20px 20px 20px 20px;
+          padding: 0 20px 0 0;
 
           .counties-list-item {
             &.active {
@@ -652,6 +746,7 @@
 
           .modal-title {
             margin-bottom: 30px;
+            text-align: left;
           }
 
           .counties-list {
@@ -674,166 +769,56 @@
         }
 
         .right-side {
+          //width: 60% !important;
+          padding: 20px 10px 20px 0px;
           width: 100% !important;
 
           .county-list {
             max-height: 40vh !important;
           }
+
+          .county-list-container {
+            padding: 20px 10px 20px 20px;
+          }
         }
       }
-    }
-  }
-}
 
-//************** Wizard dialog COMMON STYLES **************//
-// Services and Area list popup
-// Details Wizard
-.wizard-dialog-services-and-locations,
-.wizard-dialog-details,
-.wizard-dialog-success-message {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
-  @media(max-width: 1399px) {}
-
-  @media(max-width: 1199px) {
-    .left-side {
-      width: 30% !important;
-    }
-
-    .right-side {
-      width: 70% !important;
-    }
-
-    .modal-footer {
-      button {
-        width: 180px;
-      }
-    }
-  }
-
-  @media(max-width: 991px) {
-    .left-side {
-      display: none;
-    }
-
-    .right-side {
-      width: 100% !important;
-
-      .right-side-inner {
-        &.scroll {
-          padding: 20px; // ??
-        }
-
-        &.without-scroll {
-          padding: 20px;
-        }
-      }
 
       .modal-body {
-        width: 100% !important;
-      }
 
-      .modal-body-container {
-        padding: 30px 40px !important;
-      }
+        .left-side {
+        }
 
-      .modal-body-col {
-        //width: 100%;
+        .right-side {
+        }
       }
     }
-  }
 
-  @media(max-width: 767px) {
-    .modal-body-container {
-      flex-direction: column !important;
-
-      .modal-body-col {
-        width: 100% !important;
-      }
+    .modal-content {
     }
+
   }
 
   @media(max-width: 599px) {
-    & {
-      width: 90% !important;
-    }
-
-    .modal-body {
-      z-index: 2;
-      background-color: #fff;
-    }
-
-    .decoration-element-wizard {
-      display: none;
-    }
-
-    .decoration-element-mobile {
-      z-index: 1;
-      display: block !important;
-      position: absolute;
-      top: 50%;
-      left: -7px;
-      transform: translate(0, -50%);
-      width: 12px;
-      height: 95%;
-      border-radius: 20px;
-      background-color: #585077;
-    }
-
-    .right-side {
-      .right-side-header {
-        padding: 20px;
-      }
-
-      .right-side-inner {
-        &.without-scroll {
-          padding: 20px;
-        }
-      }
-
-      .modal-body-container {
-        //position: relative;
-        //z-index: 2;
-        padding: 20px !important;
-      }
-
-      .modal-body-container-outer {
-        //position: relative;
-      }
-
-      .input-group-select {
-        padding: 0px !important;
-      }
+    button.close {
+      background-color: transparent;
     }
   }
 }
 
-
 //************* Details Wizard *******************//
 .wizard-dialog-details {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
-  @media(max-width: 1399px) {}
-
   @media(max-width: 1199px) {
     .modal-content {
       .modal-body {
         .left-side {
-          padding: 50px 20px 30px 20px;
+          //padding: 50px 20px 30px 20px;
         }
       }
     }
   }
 
   @media(max-width: 991px) {
-    .modal-body-container {
-      //flex-direction: column;
-    }
-
     .input-group-select {
       flex-direction: column;
       justify-content: flex-start;
@@ -853,12 +838,6 @@
   }
 
   @media(max-width: 767px) {
-    .decoration-element-wizard {
-      .dashed-line {
-        height: 230px;
-      }
-    }
-
     .right-side {
       .right-side-header {
         height: 55px;
@@ -896,14 +875,6 @@
 
 //************* Success message Wizard *************//
 .wizard-dialog-success-message {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
-  @media(max-width: 1399px) {}
-
-  @media(max-width: 1199px) {}
-
   @media(max-width: 991px) {
     .decoration-element-wizard {
       .dashed-line {
@@ -926,16 +897,8 @@
         height: 150px;
       }
     }
-
   }
-
-  @media(max-width: 599px) {
-
-  }
-
-  @media(max-width: 374px) {}
 }
-
 
 //************* Wizard  *************//
 .wizard-dialog  {
