@@ -1111,6 +1111,56 @@
     font-size: 1.25rem; } }
 
 @media (max-width: 1199px) {
+  .wizard-new-dialog .modal-footer button {
+    width: 180px; } }
+
+@media (max-width: 991px) {
+  .wizard-new-dialog .right-side .right-side-inner.scroll {
+    padding: 20px; }
+  .wizard-new-dialog .right-side .right-side-inner.without-scroll {
+    padding: 20px; }
+  .wizard-new-dialog .right-side .modal-body {
+    width: 100% !important; } }
+
+@media (max-width: 767px) {
+  .wizard-new-dialog .left-side {
+    display: none; }
+  .wizard-new-dialog .right-side {
+    width: 100% !important; }
+  .wizard-new-dialog .modal-body-container {
+    flex-direction: column !important; }
+    .wizard-new-dialog .modal-body-container .modal-body-col {
+      width: 100% !important; }
+  .wizard-new-dialog .modal-body {
+    z-index: 2;
+    background-color: #fff; }
+  .wizard-new-dialog .decoration-element-wizard {
+    display: none; }
+  .wizard-new-dialog .decoration-element-mobile {
+    z-index: 1;
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #585077; } }
+
+@media (max-width: 599px) {
+  .wizard-new-dialog {
+    width: 90% !important; }
+  .wizard-new-dialog .right-side .right-side-header {
+    padding: 20px; }
+  .wizard-new-dialog .right-side .right-side-inner.without-scroll {
+    padding: 20px; }
+  .wizard-new-dialog .right-side .modal-body-container {
+    padding: 20px !important; }
+  .wizard-new-dialog .right-side .input-group-select {
+    padding: 0px !important; } }
+
+@media (max-width: 1199px) {
   .wizard-dialog-services-and-locations .left-side .counties-list-item.active {
     padding: 15px 10px; }
   .wizard-dialog-services-and-locations .right-side .county-item {
@@ -1137,27 +1187,17 @@
         width: 50%; } }
 
 @media (max-width: 767px) {
-  .wizard-dialog-services-and-locations .modal-content .modal-body .left-side {
-    width: 40% !important;
-    padding: 20px 0 20px 20px; }
-  .wizard-dialog-services-and-locations .modal-content .modal-body .right-side {
-    width: 60% !important;
-    padding: 20px 10px 20px 0px; }
-    .wizard-dialog-services-and-locations .modal-content .modal-body .right-side .county-list-container {
-      padding: 20px 10px 20px 20px; } }
-
-@media (max-width: 599px) {
-  .wizard-dialog-services-and-locations button.close {
-    background-color: transparent; }
   .wizard-dialog-services-and-locations .modal-content .modal-body {
     flex-direction: column; }
     .wizard-dialog-services-and-locations .modal-content .modal-body .left-side {
+      display: block !important;
       width: 100% !important;
-      padding: 20px 20px 20px 20px; }
+      padding: 0 20px 0 0; }
       .wizard-dialog-services-and-locations .modal-content .modal-body .left-side .counties-list-item.active {
         border-radius: 5px; }
       .wizard-dialog-services-and-locations .modal-content .modal-body .left-side .modal-title {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        text-align: left; }
       .wizard-dialog-services-and-locations .modal-content .modal-body .left-side .counties-list {
         display: none; }
       .wizard-dialog-services-and-locations .modal-content .modal-body .left-side .select {
@@ -1172,107 +1212,16 @@
         font-weight: 500;
         font-family: "Lato", sans-serif; }
     .wizard-dialog-services-and-locations .modal-content .modal-body .right-side {
+      padding: 20px 10px 20px 0px;
       width: 100% !important; }
       .wizard-dialog-services-and-locations .modal-content .modal-body .right-side .county-list {
-        max-height: 40vh !important; } }
-
-@media (max-width: 1199px) {
-  .wizard-dialog-services-and-locations .left-side,
-  .wizard-dialog-details .left-side,
-  .wizard-dialog-success-message .left-side {
-    width: 30% !important; }
-  .wizard-dialog-services-and-locations .right-side,
-  .wizard-dialog-details .right-side,
-  .wizard-dialog-success-message .right-side {
-    width: 70% !important; }
-  .wizard-dialog-services-and-locations .modal-footer button,
-  .wizard-dialog-details .modal-footer button,
-  .wizard-dialog-success-message .modal-footer button {
-    width: 180px; } }
-
-@media (max-width: 991px) {
-  .wizard-dialog-services-and-locations .left-side,
-  .wizard-dialog-details .left-side,
-  .wizard-dialog-success-message .left-side {
-    display: none; }
-  .wizard-dialog-services-and-locations .right-side,
-  .wizard-dialog-details .right-side,
-  .wizard-dialog-success-message .right-side {
-    width: 100% !important; }
-    .wizard-dialog-services-and-locations .right-side .right-side-inner.scroll,
-    .wizard-dialog-details .right-side .right-side-inner.scroll,
-    .wizard-dialog-success-message .right-side .right-side-inner.scroll {
-      padding: 20px; }
-    .wizard-dialog-services-and-locations .right-side .right-side-inner.without-scroll,
-    .wizard-dialog-details .right-side .right-side-inner.without-scroll,
-    .wizard-dialog-success-message .right-side .right-side-inner.without-scroll {
-      padding: 20px; }
-    .wizard-dialog-services-and-locations .right-side .modal-body,
-    .wizard-dialog-details .right-side .modal-body,
-    .wizard-dialog-success-message .right-side .modal-body {
-      width: 100% !important; }
-    .wizard-dialog-services-and-locations .right-side .modal-body-container,
-    .wizard-dialog-details .right-side .modal-body-container,
-    .wizard-dialog-success-message .right-side .modal-body-container {
-      padding: 30px 40px !important; } }
-
-@media (max-width: 767px) {
-  .wizard-dialog-services-and-locations .modal-body-container,
-  .wizard-dialog-details .modal-body-container,
-  .wizard-dialog-success-message .modal-body-container {
-    flex-direction: column !important; }
-    .wizard-dialog-services-and-locations .modal-body-container .modal-body-col,
-    .wizard-dialog-details .modal-body-container .modal-body-col,
-    .wizard-dialog-success-message .modal-body-container .modal-body-col {
-      width: 100% !important; } }
+        max-height: 40vh !important; }
+      .wizard-dialog-services-and-locations .modal-content .modal-body .right-side .county-list-container {
+        padding: 20px 10px 20px 20px; } }
 
 @media (max-width: 599px) {
-  .wizard-dialog-services-and-locations,
-  .wizard-dialog-details,
-  .wizard-dialog-success-message {
-    width: 90% !important; }
-  .wizard-dialog-services-and-locations .modal-body,
-  .wizard-dialog-details .modal-body,
-  .wizard-dialog-success-message .modal-body {
-    z-index: 2;
-    background-color: #fff; }
-  .wizard-dialog-services-and-locations .decoration-element-wizard,
-  .wizard-dialog-details .decoration-element-wizard,
-  .wizard-dialog-success-message .decoration-element-wizard {
-    display: none; }
-  .wizard-dialog-services-and-locations .decoration-element-mobile,
-  .wizard-dialog-details .decoration-element-mobile,
-  .wizard-dialog-success-message .decoration-element-mobile {
-    z-index: 1;
-    display: block !important;
-    position: absolute;
-    top: 50%;
-    left: -7px;
-    transform: translate(0, -50%);
-    width: 12px;
-    height: 95%;
-    border-radius: 20px;
-    background-color: #585077; }
-  .wizard-dialog-services-and-locations .right-side .right-side-header,
-  .wizard-dialog-details .right-side .right-side-header,
-  .wizard-dialog-success-message .right-side .right-side-header {
-    padding: 20px; }
-  .wizard-dialog-services-and-locations .right-side .right-side-inner.without-scroll,
-  .wizard-dialog-details .right-side .right-side-inner.without-scroll,
-  .wizard-dialog-success-message .right-side .right-side-inner.without-scroll {
-    padding: 20px; }
-  .wizard-dialog-services-and-locations .right-side .modal-body-container,
-  .wizard-dialog-details .right-side .modal-body-container,
-  .wizard-dialog-success-message .right-side .modal-body-container {
-    padding: 20px !important; }
-  .wizard-dialog-services-and-locations .right-side .input-group-select,
-  .wizard-dialog-details .right-side .input-group-select,
-  .wizard-dialog-success-message .right-side .input-group-select {
-    padding: 0px !important; } }
-
-@media (max-width: 1199px) {
-  .wizard-dialog-details .modal-content .modal-body .left-side {
-    padding: 50px 20px 30px 20px; } }
+  .wizard-dialog-services-and-locations button.close {
+    background-color: transparent; } }
 
 @media (max-width: 991px) {
   .wizard-dialog-details .input-group-select {
@@ -1288,8 +1237,6 @@
       margin-bottom: 10px; } }
 
 @media (max-width: 767px) {
-  .wizard-dialog-details .decoration-element-wizard .dashed-line {
-    height: 230px; }
   .wizard-dialog-details .right-side .right-side-header {
     height: 55px; }
   .wizard-dialog-details .right-side .right-side-inner.without-scroll {
