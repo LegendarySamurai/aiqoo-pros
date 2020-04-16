@@ -2460,10 +2460,7 @@
 
 @media (max-width: 1399px) {
   .head-section-body .aiqoo-logo-outer {
-    padding-left: 9vw !important;
     width: 23vw !important; }
-  .head-section-body h2 {
-    padding-left: 10vw !important; }
   .content-section h1 {
     font-size: 24pt; }
   .content-section .top-text {
@@ -2485,16 +2482,12 @@
 
 @media (max-width: 1199px) {
   .head-section-body .aiqoo-logo-outer {
-    width: 30vw !important;
-    padding-left: 10vw !important; }
+    width: 30vw !important; }
   .head-section-body .aiqoo-logo-inner img {
     width: 14vw !important; }
   .head-section-body .pro-img {
     width: 7vh !important;
     top: -2vh !important; }
-  .head-section-body h2 {
-    padding-left: 11vw !important;
-    font-size: 2.45vw !important; }
   .content h1 {
     font-size: 4vw !important; }
   .content .text {
@@ -2558,8 +2551,12 @@
     width: 60%; } }
 
 @media (max-width: 991px) {
-  .head-section-body h2 {
-    font-size: 2.25vw !important; }
+  h2 {
+    font-size: 2.35vh !important; }
+  .head-section-inner {
+    padding-left: 11vw !important; }
+  .aiqoo-logo-inner {
+    padding: 1vh 1vw 1vh 10vw !important; }
   .back-layer {
     position: static;
     transform: none;
@@ -2607,27 +2604,55 @@
   .reviews .review-card .location {
     font-size: inherit !important; }
   .reviews .review-card .text {
-    font-size: inherit !important; } }
+    font-size: inherit !important; }
+  .sticky-logo-container-inner {
+    width: 23vw !important;
+    right: 2.5vw !important; } }
+
+@media (max-width: 870px) {
+  .head-section .head-section-body h2 {
+    font-size: 2vh !important; } }
 
 @media (max-width: 767px) {
-  .head-section-body .aiqoo-logo-outer {
-    padding-left: 13vw !important; }
-  .head-section-body .aiqoo-logo-inner {
-    padding: 1vh 1vw !important; }
-  .head-section-body h2 {
-    padding-left: 13vw !important; } }
+  .head-section .head-section-body .head-section-inner {
+    padding-left: 11.5vw !important; }
+  .head-section .head-section-body h2 {
+    font-size: 2.35vw !important; }
+  .content-section h1 {
+    font-size: 4vh !important; }
+  .sticky-logo-container-inner {
+    width: 28vw !important;
+    right: 2.5vw !important; }
+  .sticky-logo-wrapper {
+    width: 100% !important; }
+  .powered-by {
+    font-size: 1.5vh !important;
+    margin-right: 0 !important; }
+  .aiqoo-logo {
+    width: 40% !important; } }
 
 @media (max-width: 599px) {
-  .aiqoo-logo-outer {
-    width: 45vw !important;
-    padding-left: 16vw !important; }
-  .aiqoo-logo-inner img {
-    width: 22vw !important; }
+  .lets-go-btn {
+    display: block !important;
+    margin-left: 16vw;
+    margin-top: 10px !important; }
+  .head-section::after {
+    display: none !important; }
+  .head-section .head-section-body .head-section-inner {
+    padding-left: 17vw !important; }
+  .head-section .head-section-inner h2 {
+    padding: 1.5vh 0 0 0;
+    font-size: 3.975vw !important; }
+  .head-section .head-section-inner .lets-go-btn {
+    margin-left: 0; }
+  .head-section .aiqoo-logo-inner {
+    padding: 1vh 1vw 1vh 9vw !important; }
+    .head-section .aiqoo-logo-inner img {
+      width: 90% !important; }
+  .head-section .aiqoo-logo-outer {
+    width: 200px !important; }
   .pro-img {
     width: 8vh !important; }
-  .head-section-body h2 {
-    padding-left: 17vw !important;
-    font-size: 2.45vh !important; }
   .content-section {
     padding: 4vh 2vw 3vh !important; }
   .content-inner {
@@ -2658,6 +2683,12 @@
     width: 100% !important;
     max-width: 96% !important;
     margin: 2vh auto 0; } }
+
+@media (max-width: 420px) {
+  .head-section .head-section-body .head-section-inner {
+    padding-left: 20.5vw !important; }
+  .head-section .aiqoo-logo-outer {
+    width: 200px !important; } }
 
 .system-campaign { }
   @media (min-width: 1200px) {

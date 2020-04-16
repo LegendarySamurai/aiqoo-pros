@@ -39,12 +39,12 @@
   // Head section
   .head-section-body {
     .aiqoo-logo-outer {
-      padding-left: 9vw !important;
+      //padding-left: 9vw !important;
       width: 23vw !important;
     }
 
     h2 {
-      padding-left: 10vw !important;
+      //padding-left: 10vw !important;
     }
   }
 
@@ -110,7 +110,7 @@
   .head-section-body {
     .aiqoo-logo-outer {
       width: 30vw !important;
-      padding-left: 10vw !important;
+      //padding-left: 10vw !important;
       //width: 25vw !important;
     }
 
@@ -126,8 +126,8 @@
     }
 
     h2 {
-      padding-left: 11vw !important;
-      font-size: 2.45vw !important;
+      //padding-left: 11vw !important;
+      //font-size: 2.45vw !important;
     }
   }
 
@@ -295,11 +295,21 @@
 }
 
 @media(max-width: 991px) {
-// Head section
+  // Head section
   .head-section-body {
-    h2 {
-      font-size: 2.25vw !important;
-    }
+
+  }
+
+  h2 {
+    font-size: 2.35vh !important;
+  }
+
+  .head-section-inner {
+    padding-left: 11vw !important;
+  }
+
+  .aiqoo-logo-inner {
+    padding: 1vh 1vw 1vh 10vw !important;
   }
 
   .back-layer {
@@ -400,47 +410,111 @@
       }
     }
   }
+
+  // Footer
+  .sticky-logo-container-inner {
+    width: 23vw !important;
+    right: 2.5vw !important;
+  }
+}
+
+@media(max-width: 870px) {
+  .head-section {
+    .head-section-body {
+      h2 {
+        font-size: 2vh !important;
+      }
+    }
+  }
 }
 
 @media(max-width: 767px) {
   // Head section
-  .head-section-body {
-    .aiqoo-logo-outer {
-      padding-left: 13vw !important;
-    }
+  .head-section {
+    .head-section-body {
+      .head-section-inner {
+        padding-left: 11.5vw !important;
+      }
 
-    .aiqoo-logo-inner {
-      padding: 1vh 1vw !important;
+      h2 {
+        font-size: 2.35vw !important;
+      }
     }
+  }
 
-    h2 {
-      padding-left: 13vw !important;
+  // Content section
+  .content-section {
+    h1 {
+      font-size: 4vh !important;
     }
+  }
+
+  // Footer
+  .sticky-logo-container-inner {
+    width: 28vw !important;
+    right: 2.5vw !important;
+  }
+
+  .sticky-logo-wrapper {
+    width: 100% !important;
+  }
+
+  .powered-by {
+    font-size: 1.5vh !important;
+    margin-right: 0 !important;
+  }
+
+  .aiqoo-logo {
+    width: 40% !important;
   }
 }
 
 @media(max-width: 599px) {
-  // Head section
-  .aiqoo-logo-outer {
-    width: 45vw !important;
-    padding-left: 16vw !important;
+  // Lets go btn
+  .lets-go-btn {
+    display: block !important;
+    margin-left: 16vw;
+    margin-top: 10px !important;
   }
 
-  .aiqoo-logo-inner {
-    img {
-      width: 22vw !important;
+  // Head section
+  .head-section {
+    &::after {
+      display: none !important;
+    }
+    .head-section-body {
+      .head-section-inner {
+        padding-left: 17vw !important;
+      }
+    }
+
+    .head-section-inner {
+      h2 {
+        padding: 1.5vh 0 0 0;
+        font-size: 3.975vw !important;
+      }
+
+      .lets-go-btn {
+        margin-left: 0;
+      }
+    }
+
+    .aiqoo-logo-inner {
+      padding: 1vh 1vw 1vh 9vw !important;
+
+      img {
+        width: 90%!important;
+      }
+    }
+
+    .aiqoo-logo-outer {
+      width: 200px !important;
+      //padding-left: 16vw !important;
     }
   }
 
   .pro-img {
     width: 8vh !important;
-  }
-
-  .head-section-body {
-    h2 {
-      padding-left: 17vw !important;
-      font-size: 2.45vh !important;
-    }
   }
 
   // Content section
@@ -507,5 +581,30 @@
   }
 }
 
-@media(max-width: 374px) {}
+@media(max-width: 420px) {
+  // Head section
+  .head-section {
+    .head-section-body {
+      .head-section-inner {
+        padding-left: 20.5vw !important;
+      }
+    }
+
+    .head-section-inner {
+    }
+
+    .aiqoo-logo-inner {
+      //padding: 1vh 1vw 1vh 9vw !important;
+
+      img {
+        //width: 90%!important;
+      }
+    }
+
+    .aiqoo-logo-outer {
+      width: 200px !important;
+      //padding-left: 16vw !important;
+    }
+  }
+}
 
