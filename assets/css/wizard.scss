@@ -260,9 +260,12 @@
   }
 
   // container styles
+  .modal-body-container-outer {
+  }
+
   .modal-body-container {
-    margin-top: 20px;
     padding: 30px 10px 30px 30px;
+    margin-top: 20px;
     box-shadow: 0 1.5px 35px 0 rgba(0, 0, 0, 0.04);
     background-color: #f5f5f5;
   }
@@ -538,7 +541,7 @@
     top: -40px;
 
     .dashed-line {
-      height: 60px;
+      height: 70px;
     }
   }
 
@@ -557,6 +560,10 @@
 
   .modal-body-col {
     width: 48%;
+  }
+
+  .decoration-element-mobile {
+    display: none;
   }
 
   .input-group-title {
