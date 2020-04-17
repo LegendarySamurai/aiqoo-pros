@@ -1,5 +1,4 @@
 const isMobile = window.innerWidth < 600;
-const isDesktop = window.innerWidth > 600;
 
 // Button LETS GO on click shows form
 const letsGoBtn = document.querySelector('.lets-go-btn');
