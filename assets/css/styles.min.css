@@ -16147,6 +16147,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #3b4889; }
   .sign-up-landing .quality-card.c .quality-card-content-inner.big-card {
     transform-origin: 100% 0; }
+    @media (max-width: 599px) {
+      .sign-up-landing .quality-card.c .quality-card-content-inner.big-card {
+        transform-origin: 0 0; } }
   .sign-up-landing .quality-card.c .step span {
     color: #3b4889; }
 
@@ -16170,6 +16173,19 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     width: 48.5vw;
     opacity: 1;
     transform: scale(1.15) translate(0, -50%); } }
+    @media (max-width: 599px) {
+      @keyframes big-card-enter-animation {
+        0% {
+          width: 100%;
+          opacity: 0;
+          transform: scale(0.75) translate(0, -50%); }
+        100% {
+          width: 90%;
+          height: 150%;
+          opacity: 1;
+          transform: scale(1.15) translate(0, -50%); } }
+      .sign-up-landing .quality-card.show .step span {
+        font-size: 3vh !important; } }
 
 @keyframes big-card-b-enter-animation {
   0% {
@@ -16180,6 +16196,19 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transform: scale(1.15) translate(-50%, -50%);
     width: 48.5vw;
     opacity: 1; } }
+    @media (max-width: 599px) {
+      @keyframes big-card-b-enter-animation {
+        0% {
+          width: 100%;
+          opacity: 0;
+          transform: scale(0.75) translate(0, -50%); }
+        100% {
+          width: 90%;
+          height: 150%;
+          opacity: 1;
+          transform: scale(1.15) translate(0, -50%); } }
+      .sign-up-landing .quality-card.show .step span {
+        font-size: 3vh !important; } }
     .sign-up-landing .quality-card.show .big-card:not(.b) {
       animation-name: big-card-enter-animation;
       animation-duration: 600ms;
@@ -16221,6 +16250,23 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transform: scale(0.75) translate(0, -50%);
     width: 100%;
     opacity: 0; } }
+    @media (max-width: 599px) {
+      @keyframes big-card-exit-animation {
+        0% {
+          transform: scale(1.15) translate(0, -50%);
+          width: 90%;
+          height: 150%;
+          opacity: 1; }
+        50% {
+          transform: scale(1.15) translate(0, -50%);
+          width: 90%;
+          height: 150%;
+          opacity: 1; }
+        100% {
+          transform: scale(0.75) translate(0, -50%);
+          width: 100%;
+          height: 100%;
+          opacity: 0; } } }
 
 @keyframes big-card-b-exit-animation {
   0% {
@@ -16235,6 +16281,23 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transform: scale(0.75) translate(-50%, -50%);
     width: 100%;
     opacity: 0; } }
+    @media (max-width: 599px) {
+      @keyframes big-card-b-exit-animation {
+        0% {
+          transform: scale(1.15) translate(0, -50%);
+          width: 90%;
+          height: 150%;
+          opacity: 1; }
+        50% {
+          transform: scale(1.15) translate(0, -50%);
+          width: 90%;
+          height: 150%;
+          opacity: 1; }
+        100% {
+          transform: scale(0.75) translate(0, -50%);
+          width: 100%;
+          height: 100%;
+          opacity: 0; } } }
     .sign-up-landing .quality-card.hide .big-card:not(.b) {
       animation-name: big-card-exit-animation;
       animation-duration: 400ms;

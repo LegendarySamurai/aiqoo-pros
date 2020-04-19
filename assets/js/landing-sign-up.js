@@ -10,7 +10,7 @@ let popupVisible = false;
 
 letsGoBtn.addEventListener('click', function() {
 	if (isMobile) {
-		console.log('IS MOBILE');
+		// console.log('IS MOBILE');
 		formWrapper.classList.add('is-active');
 		body.classList.add('blocked');
 		popupVisible = true;

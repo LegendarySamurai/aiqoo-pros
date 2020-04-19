@@ -1,3 +1,9 @@
+@media (min-width: 600px) {
+  .carousel {
+    display: none;
+  }
+}
+
 @media (max-width: 599px) {
   @keyframes tonext {
     75% {
@@ -81,10 +87,13 @@
   }
 
   .carousel {
-    position: relative;
-    padding-top: 250px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
-    perspective: 100px;
+    &.cards-container {
+      position: relative;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+      perspective: 100px;
+      margin: 1vh auto !important;
+      height: 113px !important;
+    }
   }
 
   .carousel__viewport {
@@ -105,17 +114,21 @@
     flex: 0 0 100%;
     width: 100%;
     counter-increment: item;
+
+    &:focus {
+      outline: none !important;
+    }
   }
 
-  .carousel__slide:before {
-    content: counter(item);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-40%,70px);
-    color: #fff;
-    font-size: 2em;
-  }
+  //.carousel__slide:before {
+  //  content: counter(item);
+  //  position: absolute;
+  //  top: 50%;
+  //  left: 50%;
+  //  transform: translate3d(-50%,-40%,70px);
+  //  color: #fff;
+  //  font-size: 2em;
+  //}
 
   .carousel__snapper {
     position: absolute;
