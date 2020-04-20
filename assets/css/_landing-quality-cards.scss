@@ -5,7 +5,6 @@
   margin: 2vh 0;
 }
 
-
 // QUALITY Card
 .quality-cards {
   position: relative;
@@ -34,7 +33,6 @@
       width: 100%;
       height: 100%;
       background-color: transparentize(#000, .5);
-      pointer-events: auto;
     }
   }
 
@@ -55,6 +53,7 @@
       animation-fill-mode: forwards;
       animation-iteration-count: 1;
       z-index: 10;
+      //pointer-events: auto;
     }
   }
 
@@ -180,6 +179,10 @@
     font-size: 1.75vh;
     color: #574f76;
     text-align: left;
+
+    @media(max-width: 599px) {
+      font-size: 2vh !important;
+    }
   }
 
   .step {
@@ -259,7 +262,7 @@
 
 
         @media(max-width: 599px) {
-          transform-origin: 0 0;
+          transform-origin: 100% 100%;
         }
       }
     }
@@ -284,10 +287,42 @@
     }
 
     .big-card {
+      @media(max-width: 599px) {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) scale(1) !important;
+        max-width: 96% !important;
+        height: 70vh;
+        padding: 1.5vh 4vw 1.5vh;
+      }
+
       .quality-card-text {
         max-height: inherit !important;
         margin-bottom: 0;
         height: 100%;
+
+        @media(max-width: 599px) {
+          span {
+            font-size: 2.25vh !important;
+          }
+        }
+      }
+    }
+
+    @keyframes big-card-enter-animation-m {
+      0% {
+        width: 100%;
+        opacity: 0;
+        //transform: translate(0, 0);
+        //transform: none !important;
+      }
+
+      100% {
+        //top: 3.5vh;
+        width: 100%;
+        opacity: 1;
+        //transform: translate(0, 0);
       }
     }
 
@@ -305,26 +340,27 @@
       }
     }
 
-    @media(max-width: 599px) {
-      @keyframes big-card-enter-animation {
-        0% {
-          width: 100%;
-          opacity: 0;
-          transform: scale(.75) translate(0, -50%);
-        }
+    //@media(max-width: 599px) {
+    //  .step {
+    //    span {
+    //      font-size: 3vh !important;
+    //    }
+    //  }
+    //}
 
-        100% {
-          width: 100%;
-          height: 150%;
-          opacity: 1;
-          transform: scale(1) translate(0, -50%);
-        }
+    @keyframes big-card-b-enter-animation-m {
+      0% {
+        width: 100%;
+        opacity: 0;
+        //transform: translate(0, -50%);
       }
 
-      .step {
-        span {
-          font-size: 3vh !important;
-        }
+      100% {
+        //top: 3.5vh;
+        width: 100%;
+        //height: 70vh;
+        opacity: 1;
+        //transform: translate(0, -50%);
       }
     }
 
@@ -342,23 +378,7 @@
       }
     }
 
-
     @media(max-width: 599px) {
-      @keyframes big-card-b-enter-animation {
-        0% {
-          width: 100%;
-          opacity: 0;
-          transform: scale(.75) translate(0, -50%);
-        }
-
-        100% {
-          width: 100%;
-          height: 150%;
-          opacity: 1;
-          transform: scale(1) translate(0, -50%);
-        }
-      }
-
       .step {
         span {
           font-size: 3vh !important;
@@ -368,7 +388,12 @@
 
     .big-card {
       &:not(.b) {
-        animation-name: big-card-enter-animation;
+        @media (max-width: 599px) {
+          animation-name: big-card-enter-animation-m;
+        }
+        @media (min-width: 600px) {
+          animation-name: big-card-enter-animation;
+        }
         animation-duration: 600ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
@@ -376,7 +401,13 @@
       }
 
       &.b {
-        animation-name: big-card-b-enter-animation;
+        @media (max-width: 599px) {
+          animation-name: big-card-b-enter-animation-m;
+        }
+        @media (min-width: 600px) {
+          animation-name: big-card-b-enter-animation;
+        }
+
         animation-duration: 600ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
@@ -406,8 +437,6 @@
         animation-iteration-count: 1;
       }
     }
-
-    @media(max-width: 599px) {}
   }
 
   // Hide
@@ -435,7 +464,7 @@
     }
 
     @media(max-width: 599px) {
-      @keyframes big-card-exit-animation {
+      @keyframes big-card-exit-animation-m {
         0% {
           transform: scale(1) translate(0, -50%);
           width: 90%;
@@ -480,7 +509,7 @@
     }
 
     @media(max-width: 599px) {
-      @keyframes big-card-b-exit-animation {
+      @keyframes big-card-b-exit-animation-m {
         0% {
           transform: scale(1) translate(0, -50%);
           width: 90%;
@@ -506,7 +535,13 @@
 
     .big-card {
       &:not(.b) {
-        animation-name: big-card-exit-animation;
+        @media(max-width: 599px) {
+          animation-name: big-card-exit-animation-m;
+        }
+        @media(min-width: 600px) {
+          animation-name: big-card-exit-animation;
+        }
+
         animation-duration: 400ms;
         animation-delay: 0ms;
         animation-fill-mode: forwards;
@@ -514,13 +549,17 @@
       }
 
       &.b {
-        animation-name: big-card-b-exit-animation;
+        @media(max-width: 599px) {
+          animation-name: big-card-b-exit-animation-m;
+        }
+        @media(min-width: 600px) {
+          animation-name: big-card-b-exit-animation;
+        }
+
         animation-duration: 400ms;
         animation-delay: 0ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
-        //animation-duration: 600ms;
-        //animation-delay: 300ms;
       }
 
       .quality-card-text-content {

@@ -1,12 +1,12 @@
 const isMobile = window.innerWidth < 600;
 
 // Button LETS START on click shows sms verification
-const letsStartBtn = document.querySelector('#submit-sign-up-form');
-
-letsStartBtn.addEventListener('click', (e) => {
-	e.preventDefault();
-	console.log('=> works');
-});
+// const letsStartBtn = document.querySelector('#submit-sign-up-form');
+//
+// letsStartBtn.addEventListener('click', (e) => {
+// 	e.preventDefault();
+// 	console.log('=> works');
+// });
 
 
 // Button LETS GO on click shows form
@@ -18,8 +18,8 @@ let popupVisible = false;
 
 
 letsGoBtn.addEventListener('click', function() {
+	console.log('IS MOBILE');
 	if (isMobile) {
-		// console.log('IS MOBILE');
 		formWrapper.classList.add('is-active');
 		body.classList.add('blocked');
 		popupVisible = true;

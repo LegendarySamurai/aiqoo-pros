@@ -271,6 +271,23 @@
       }
     }
   }
+
+  // Footer
+  footer {
+    .sticky-logo-container {
+      z-index: 900 !important;
+      background-color: transparent !important;
+    }
+
+    .footer-outer {
+      width: 100% !important;
+      padding-right: 30% !important;
+    }
+
+    .footer-col {
+      width: 40% !important;
+    }
+  }
 }
 
 @media(max-width: 991px) {
@@ -337,7 +354,7 @@
   footer {
     .scroll-container {
       .footer-outer {
-        width: 60% !important;
+        //width: 60% !important;
       }
     }
 
@@ -428,6 +445,12 @@
     }
   }
 
+  .offer {
+    &:after {
+      display: none !important;
+    }
+  }
+
   .back-layer {
     position: static;
     transform: none;
@@ -452,12 +475,6 @@
         background-color: #fff;
         width: 96%;
         margin: 0 auto;
-
-        .offer {
-          &:after {
-            right: -1px !important;
-          }
-        }
       }
 
       .label {
@@ -494,7 +511,6 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    //pointer-events: none;
   }
 
   // Lets go btn
@@ -602,9 +618,7 @@
     }
 
     &.big-card {
-      @media (max-width: 599px) {
-        top: 50% !important;
-      }
+      //top: 50% !important;
     }
   }
 
@@ -664,7 +678,6 @@
       font-size: 1.25vh !important;
     }
   }
-
 
   // Side block
   .side-block {
@@ -729,7 +742,7 @@
     .sticky-logo-container {
       width: 100%;
       z-index: 9000 !important;
-      background-color: transparent !important;
+      background-color: #585077 !important;
     }
 
     .sticky-logo-container-inner {

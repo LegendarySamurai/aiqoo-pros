@@ -16031,8 +16031,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        pointer-events: auto; } }
+        background-color: rgba(0, 0, 0, 0.5); } }
 
 @keyframes quality-cards-underlay-enter {
   0% {
@@ -16128,6 +16127,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     font-size: 1.75vh;
     color: #574f76;
     text-align: left; }
+    @media (max-width: 599px) {
+      .sign-up-landing .quality-card .quality-card-text {
+        font-size: 2vh !important; } }
   .sign-up-landing .quality-card .step span {
     display: block;
     margin-bottom: 1vh;
@@ -16166,7 +16168,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transform-origin: 100% 0; }
     @media (max-width: 599px) {
       .sign-up-landing .quality-card.c .quality-card-content-inner.big-card {
-        transform-origin: 0 0; } }
+        transform-origin: 100% 100%; } }
   .sign-up-landing .quality-card.c .step span {
     color: #3b4889; }
 
@@ -16176,10 +16178,30 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     z-index: 10; }
     .sign-up-landing .quality-card.show .small-card {
       opacity: .1; }
+    @media (max-width: 599px) {
+      .sign-up-landing .quality-card.show .big-card {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) scale(1) !important;
+        max-width: 96% !important;
+        height: 70vh;
+        padding: 1.5vh 4vw 1.5vh; } }
     .sign-up-landing .quality-card.show .big-card .quality-card-text {
       max-height: inherit !important;
       margin-bottom: 0;
       height: 100%; }
+      @media (max-width: 599px) {
+        .sign-up-landing .quality-card.show .big-card .quality-card-text span {
+          font-size: 2.25vh !important; } }
+
+@keyframes big-card-enter-animation-m {
+  0% {
+    width: 100%;
+    opacity: 0; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
 
 @keyframes big-card-enter-animation {
   0% {
@@ -16190,19 +16212,14 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     width: 48.5vw;
     opacity: 1;
     transform: scale(1.15) translate(0, -50%); } }
-    @media (max-width: 599px) {
-      @keyframes big-card-enter-animation {
-        0% {
-          width: 100%;
-          opacity: 0;
-          transform: scale(0.75) translate(0, -50%); }
-        100% {
-          width: 100%;
-          height: 150%;
-          opacity: 1;
-          transform: scale(1) translate(0, -50%); } }
-      .sign-up-landing .quality-card.show .step span {
-        font-size: 3vh !important; } }
+
+@keyframes big-card-b-enter-animation-m {
+  0% {
+    width: 100%;
+    opacity: 0; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
 
 @keyframes big-card-b-enter-animation {
   0% {
@@ -16214,28 +16231,28 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     width: 48.5vw;
     opacity: 1; } }
     @media (max-width: 599px) {
-      @keyframes big-card-b-enter-animation {
-        0% {
-          width: 100%;
-          opacity: 0;
-          transform: scale(0.75) translate(0, -50%); }
-        100% {
-          width: 100%;
-          height: 150%;
-          opacity: 1;
-          transform: scale(1) translate(0, -50%); } }
       .sign-up-landing .quality-card.show .step span {
         font-size: 3vh !important; } }
     .sign-up-landing .quality-card.show .big-card:not(.b) {
-      animation-name: big-card-enter-animation;
       animation-duration: 600ms;
       animation-fill-mode: forwards;
       animation-iteration-count: 1; }
+      @media (max-width: 599px) {
+        .sign-up-landing .quality-card.show .big-card:not(.b) {
+          animation-name: big-card-enter-animation-m; } }
+      @media (min-width: 600px) {
+        .sign-up-landing .quality-card.show .big-card:not(.b) {
+          animation-name: big-card-enter-animation; } }
     .sign-up-landing .quality-card.show .big-card.b {
-      animation-name: big-card-b-enter-animation;
       animation-duration: 600ms;
       animation-fill-mode: forwards;
       animation-iteration-count: 1; }
+      @media (max-width: 599px) {
+        .sign-up-landing .quality-card.show .big-card.b {
+          animation-name: big-card-b-enter-animation-m; } }
+      @media (min-width: 600px) {
+        .sign-up-landing .quality-card.show .big-card.b {
+          animation-name: big-card-b-enter-animation; } }
     .sign-up-landing .quality-card.show .big-card .quality-card-text-content {
       animation-name: big-card-text-enter-animation;
       animation-duration: 400ms;
@@ -16268,7 +16285,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     width: 100%;
     opacity: 0; } }
     @media (max-width: 599px) {
-      @keyframes big-card-exit-animation {
+      @keyframes big-card-exit-animation-m {
         0% {
           transform: scale(1) translate(0, -50%);
           width: 90%;
@@ -16299,7 +16316,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     width: 100%;
     opacity: 0; } }
     @media (max-width: 599px) {
-      @keyframes big-card-b-exit-animation {
+      @keyframes big-card-b-exit-animation-m {
         0% {
           transform: scale(1) translate(0, -50%);
           width: 90%;
@@ -16316,17 +16333,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
           height: 100%;
           opacity: 0; } } }
     .sign-up-landing .quality-card.hide .big-card:not(.b) {
-      animation-name: big-card-exit-animation;
       animation-duration: 400ms;
       animation-delay: 0ms;
       animation-fill-mode: forwards;
       animation-iteration-count: 1; }
+      @media (max-width: 599px) {
+        .sign-up-landing .quality-card.hide .big-card:not(.b) {
+          animation-name: big-card-exit-animation-m; } }
+      @media (min-width: 600px) {
+        .sign-up-landing .quality-card.hide .big-card:not(.b) {
+          animation-name: big-card-exit-animation; } }
     .sign-up-landing .quality-card.hide .big-card.b {
-      animation-name: big-card-b-exit-animation;
       animation-duration: 400ms;
       animation-delay: 0ms;
       animation-fill-mode: forwards;
       animation-iteration-count: 1; }
+      @media (max-width: 599px) {
+        .sign-up-landing .quality-card.hide .big-card.b {
+          animation-name: big-card-b-exit-animation-m; } }
+      @media (min-width: 600px) {
+        .sign-up-landing .quality-card.hide .big-card.b {
+          animation-name: big-card-b-exit-animation; } }
     .sign-up-landing .quality-card.hide .big-card .quality-card-text-content {
       animation-name: big-card-text-exit-animation;
       animation-duration: 400ms;
