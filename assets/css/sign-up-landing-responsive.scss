@@ -522,9 +522,26 @@
 
   // Head section
   .head-section {
+    height: 28vh !important;
+    padding: 2vh 0 3vh !important;
+
     &::after {
       display: none !important;
     }
+
+    //&:before {
+    //  position: absolute;
+    //  top: 0;
+    //  left: 0;
+    //  right: 0;
+    //  bottom: 0;
+    //  width: 100%;
+    //  height: 100%;
+    //  background-color: transparentize(rgba(0,0,0, 0.9), .5);
+    //  display: block;
+    //  content: '';
+    //}
+
     .head-section-body {
       .head-section-inner {
         padding-left: 17vw !important;
@@ -533,36 +550,51 @@
 
     .head-section-inner {
       h2 {
-        padding: 1.5vh 0 0 0;
+        display: block;
+        margin-top: .5rem;
+        padding: 1.5vh 1vw 1.75vh 1vw !important;
         font-size: 3.975vw !important;
+        background-color: transparentize(#585077, .5);
+        color: #fff !important;
+        border-radius: 10px;
       }
 
       .lets-go-btn {
-        margin-left: 0;
+        width: 42vw !important;
+        margin: 0 auto;
       }
     }
 
     .aiqoo-logo-inner {
-      padding: 1vh 1vw 1vh 9vw !important;
+      padding: 1vh 1vw 1vh 1vw !important;
 
       img {
-        width: 90%!important;
+        width: 100%!important;
       }
     }
 
     .aiqoo-logo-outer {
-      width: 200px !important;
-      //padding-left: 16vw !important;
+      width: 150px !important;
+      height: 7vh !important;
+      left: 4vw;
+      top: -3vh;
+      border-top-right-radius: 0 !important;
+      border-top-left-radius: 0 !important;
     }
   }
 
-  .pro-img {
-    width: 8vh !important;
+  .head-section-body {
+    .pro-img {
+      width: 9vh !important;
+      top: 2vh !important;
+      left: 2vw !important;
+    }
   }
 
   // Content section
   .content-section {
-    padding: 4vh 2vw 3vh !important;
+    padding: 1vh 2vw 3vh !important;
+    //padding: 4vh 2vw 3vh !important;
   }
 
   .content-inner {
@@ -583,7 +615,7 @@
   .cards-container {
     max-width: 92% !important;
     height: auto !important;
-    margin: 2vh auto 0 !important;
+    margin: 3.5vh auto 0 !important;
   }
 
   .quality-cards {
@@ -594,6 +626,7 @@
   .quality-card {
     width: 100% !important;
     height: 150px !important;
+    margin-bottom: 20px !important;
   }
 
   .quality-card-content-inner {
@@ -675,7 +708,7 @@
 
   .content {
     .text {
-      font-size: 1.25vh !important;
+      //font-size: 1.25vh !important;
     }
   }
 
