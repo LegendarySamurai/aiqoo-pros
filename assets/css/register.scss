@@ -8,59 +8,12 @@
   border-radius: 5px;
 }
 
-.head-section{
+.head-section {
   width: 100%;
   height: 19.25vw;
   border-top: 14px solid #{$pinkish-grey};
   background: url('../images/sign-in-bg-d.jpg') no-repeat center;
   background-size: cover;
-}
-
-.account-verification {
-  @include modalCommonStyles;
-
-  h5 {
-    line-height: 1.5;
-  }
-
-  .verification-code-container {
-    border: none;
-
-    .form-control {
-      border: none;
-
-      &:focus {
-        background-color: transparent;
-      }
-    }
-
-    .verification-code {
-      width: 100%;
-      height: 66px;
-    }
-
-    .code {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-end;
-      pointer-events: none !important;
-
-      span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 64px;
-        height: 66px;
-        border-bottom: 2px solid $purple;
-        margin: 0 5px;
-      }
-    }
-  }
 }
 
 .sign-in-and-sign-up {
@@ -166,8 +119,7 @@
 }
 
 .sign-in,
-.sign-up,
-.verification {
+.sign-up {
   z-index: 2;
   padding: 0 30px;
   background-color: #ffffff;
@@ -179,10 +131,3 @@
   padding: 0 50px;
 }
 
-.account-verification-icon {
-  img {
-    display: block;
-    width: 72px;
-    height: 80px;
-  }
-}

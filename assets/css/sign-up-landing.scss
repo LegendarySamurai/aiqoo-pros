@@ -17,7 +17,7 @@
     width: 100%;
     height: 30vh;
     padding: $nine-percent-padding 0 $three-percent-padding;
-    //border-top: 2vh solid $purple;
+    border-top: none !important;
     background-image: url("../images/bg/landing-sign-up-bg-d.png");
     background-position: center 80%;
     background-size: cover;
@@ -151,6 +151,10 @@
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
     background-color: #fff;
     pointer-events: auto;
+
+    &.disabled {
+      display: none;
+    }
 
     @media(min-width: 600px) {
       width: 25vw;
@@ -721,6 +725,19 @@
 
 .account-verification {
   display: none;
+
+  &.is-active {
+    //display: block;
+    pointer-events: auto;
+    width: 25vw;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 !important;
+    //margin: 0 auto;
+    //margin: 50px auto;
+  }
 }
 
 

@@ -1,14 +1,5 @@
 const isMobile = window.innerWidth < 600;
 
-// Button LETS START on click shows sms verification
-// const letsStartBtn = document.querySelector('#submit-sign-up-form');
-//
-// letsStartBtn.addEventListener('click', (e) => {
-// 	e.preventDefault();
-// 	console.log('=> works');
-// });
-
-
 // Button LETS GO on click shows form
 const letsGoBtn = document.querySelector('.lets-go-btn');
 const formWrapper = document.querySelector('.back-layer');
@@ -18,7 +9,7 @@ let popupVisible = false;
 
 
 letsGoBtn.addEventListener('click', function() {
-	console.log('IS MOBILE');
+	// console.log('IS MOBILE');
 	if (isMobile) {
 		formWrapper.classList.add('is-active');
 		body.classList.add('blocked');
@@ -32,6 +23,21 @@ letsGoBtn.addEventListener('click', function() {
 inner.addEventListener('click', () => {
 	formWrapper.classList.remove('is-active');
 	body.classList.remove('blocked');
+});
+
+
+// Button LETS START on click shows sms verification
+const letsStartBtns = document.querySelectorAll('.submit-sign-up-form-input');
+const sideBlockForm = document.querySelector('.side-block');
+const accountVerification = document.querySelector('.account-verification');
+
+letsStartBtns.forEach(btn => {
+	btn.addEventListener('click', (e) => {
+		e.preventDefault();
+		sideBlockForm.classList.add('disabled');
+		accountVerification.classList.add('is-active');
+		console.log(e.target, '=> works');
+	});
 });
 
 

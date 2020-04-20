@@ -15394,6 +15394,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     width: 100%;
     height: 30vh;
     padding: 9vh 0 3vh;
+    border-top: none !important;
     background-image: url("../images/bg/landing-sign-up-bg-d.png");
     background-position: center 80%;
     background-size: cover;
@@ -15494,6 +15495,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
     background-color: #fff;
     pointer-events: auto; }
+    .sign-up-landing .main-page-container .side-block.disabled {
+      display: none; }
     @media (min-width: 600px) {
       .sign-up-landing .main-page-container .side-block {
         width: 25vw;
@@ -15900,6 +15903,14 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 
 .sign-up-landing .account-verification {
   display: none; }
+  .sign-up-landing .account-verification.is-active {
+    pointer-events: auto;
+    width: 25vw;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 !important; }
 
 .sign-up-landing footer {
   z-index: 12;
@@ -16377,6 +16388,80 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   100% {
     transform: scale(0);
     opacity: 0; } }
+
+.sign-up-landing .account-verification {
+  margin: -11vw auto 0;
+  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+  border-radius: 5px; }
+  .sign-up-landing .account-verification h5 {
+    line-height: 1.5; }
+  .sign-up-landing .account-verification .verification-code-container {
+    border: none; }
+    .sign-up-landing .account-verification .verification-code-container .form-control {
+      border: none; }
+      .sign-up-landing .account-verification .verification-code-container .form-control:focus {
+        background-color: transparent; }
+    .sign-up-landing .account-verification .verification-code-container .verification-code {
+      width: 100%;
+      height: 66px; }
+    .sign-up-landing .account-verification .verification-code-container .code {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      pointer-events: none !important; }
+      .sign-up-landing .account-verification .verification-code-container .code span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 66px;
+        border-bottom: 2px solid #585077;
+        margin: 0 5px; }
+
+.sign-up-landing .text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px 0;
+  font-family: "Raleway", sans-serif;
+  color: #585077; }
+
+.sign-up-landing .account-verification-icon img {
+  display: block;
+  width: 72px;
+  height: 80px; }
+
+.sign-up-landing .verification {
+  z-index: 2;
+  padding: 0 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19); }
+
+.sign-up-landing .submit-button .btn {
+  top: -6px;
+  width: 100%;
+  height: 74px;
+  padding-top: 14px;
+  background-color: #585077;
+  border-radius: 5px;
+  border: none; }
+  .sign-up-landing .submit-button .btn:active {
+    background-color: #585077 !important;
+    box-shadow: none !important; }
+  .sign-up-landing .submit-button .btn:focus {
+    box-shadow: none !important; }
+  .sign-up-landing .submit-button .btn .fa-long-arrow-right {
+    position: absolute;
+    right: 32px;
+    top: 38%;
+    font-size: 2.25rem; }
 
 .system-campaign { }
   @media (min-width: 1200px) {
@@ -23443,39 +23528,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     border-top: 14px solid #d8cdba;
     background: url("../images/sign-in-bg-d.jpg") no-repeat center;
     background-size: cover; }
-  .sign-in-and-sign-up-page .account-verification {
-    margin-top: -11vw;
-    box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
-    border-radius: 5px; }
-    .sign-in-and-sign-up-page .account-verification h5 {
-      line-height: 1.5; }
-    .sign-in-and-sign-up-page .account-verification .verification-code-container {
-      border: none; }
-      .sign-in-and-sign-up-page .account-verification .verification-code-container .form-control {
-        border: none; }
-        .sign-in-and-sign-up-page .account-verification .verification-code-container .form-control:focus {
-          background-color: transparent; }
-      .sign-in-and-sign-up-page .account-verification .verification-code-container .verification-code {
-        width: 100%;
-        height: 66px; }
-      .sign-in-and-sign-up-page .account-verification .verification-code-container .code {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        pointer-events: none !important; }
-        .sign-in-and-sign-up-page .account-verification .verification-code-container .code span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 64px;
-          height: 66px;
-          border-bottom: 2px solid #585077;
-          margin: 0 5px; }
   .sign-in-and-sign-up-page .sign-in-and-sign-up {
     margin-top: -11vw;
     box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
@@ -23560,8 +23612,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         top: 38%;
         font-size: 2.25rem; }
   .sign-in-and-sign-up-page .sign-in,
-  .sign-in-and-sign-up-page .sign-up,
-  .sign-in-and-sign-up-page .verification {
+  .sign-in-and-sign-up-page .sign-up {
     z-index: 2;
     padding: 0 30px;
     background-color: #ffffff;
@@ -23569,12 +23620,77 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19); }
   .sign-in-and-sign-up-page .verification {
     padding: 0 50px; }
-  .sign-in-and-sign-up-page .account-verification-icon img {
+
+.account-verification-page { }
+  .account-verification-page .account-verification {
+    margin: -11vw auto 0;
+    box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+    border-radius: 5px; }
+    .account-verification-page .account-verification h5 {
+      line-height: 1.5; }
+    .account-verification-page .account-verification .verification-code-container {
+      border: none; }
+      .account-verification-page .account-verification .verification-code-container .form-control {
+        border: none; }
+        .account-verification-page .account-verification .verification-code-container .form-control:focus {
+          background-color: transparent; }
+      .account-verification-page .account-verification .verification-code-container .verification-code {
+        width: 100%;
+        height: 66px; }
+      .account-verification-page .account-verification .verification-code-container .code {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        pointer-events: none !important; }
+        .account-verification-page .account-verification .verification-code-container .code span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 64px;
+          height: 66px;
+          border-bottom: 2px solid #585077;
+          margin: 0 5px; }
+  .account-verification-page .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 32px 0;
+    font-family: "Raleway", sans-serif;
+    color: #585077; }
+  .account-verification-page .account-verification-icon img {
     display: block;
     width: 72px;
     height: 80px; }
-
-.account-verification-page { }
+  .account-verification-page .verification {
+    z-index: 2;
+    padding: 0 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19); }
+  .account-verification-page .submit-button .btn {
+    top: -6px;
+    width: 100%;
+    height: 74px;
+    padding-top: 14px;
+    background-color: #585077;
+    border-radius: 5px;
+    border: none; }
+    .account-verification-page .submit-button .btn:active {
+      background-color: #585077 !important;
+      box-shadow: none !important; }
+    .account-verification-page .submit-button .btn:focus {
+      box-shadow: none !important; }
+    .account-verification-page .submit-button .btn .fa-long-arrow-right {
+      position: absolute;
+      right: 32px;
+      top: 38%;
+      font-size: 2.25rem; }
   .account-verification-page html, .account-verification-page body {
     font-family: "Poppins", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #fff;
@@ -24143,39 +24259,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     border-top: 14px solid #d8cdba;
     background: url("../images/sign-in-bg-d.jpg") no-repeat center;
     background-size: cover; }
-  .account-verification-page .account-verification {
-    margin-top: -11vw;
-    box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
-    border-radius: 5px; }
-    .account-verification-page .account-verification h5 {
-      line-height: 1.5; }
-    .account-verification-page .account-verification .verification-code-container {
-      border: none; }
-      .account-verification-page .account-verification .verification-code-container .form-control {
-        border: none; }
-        .account-verification-page .account-verification .verification-code-container .form-control:focus {
-          background-color: transparent; }
-      .account-verification-page .account-verification .verification-code-container .verification-code {
-        width: 100%;
-        height: 66px; }
-      .account-verification-page .account-verification .verification-code-container .code {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        pointer-events: none !important; }
-        .account-verification-page .account-verification .verification-code-container .code span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 64px;
-          height: 66px;
-          border-bottom: 2px solid #585077;
-          margin: 0 5px; }
   .account-verification-page .sign-in-and-sign-up {
     margin-top: -11vw;
     box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
@@ -24260,8 +24343,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
         top: 38%;
         font-size: 2.25rem; }
   .account-verification-page .sign-in,
-  .account-verification-page .sign-up,
-  .account-verification-page .verification {
+  .account-verification-page .sign-up {
     z-index: 2;
     padding: 0 30px;
     background-color: #ffffff;
@@ -24269,7 +24351,3 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19); }
   .account-verification-page .verification {
     padding: 0 50px; }
-  .account-verification-page .account-verification-icon img {
-    display: block;
-    width: 72px;
-    height: 80px; }

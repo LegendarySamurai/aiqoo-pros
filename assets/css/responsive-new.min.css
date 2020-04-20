@@ -2530,6 +2530,8 @@
       width: 100%;
       box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
       background-color: #fff; }
+  .account-verification.is-active {
+    width: 38% !important; }
   footer .sticky-logo-container {
     z-index: 900 !important;
     background-color: transparent !important; }
@@ -2641,6 +2643,7 @@
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px; }
       .back-layer.is-active .submit-button .btn {
+        top: 0 !important;
         padding: 0; }
       .back-layer.is-active .custom-control-label {
         padding-top: 8px; }
@@ -2771,6 +2774,12 @@
     padding: 10px 15px !important; }
   .form-container .form-control {
     padding-left: 10px !important; }
+  .account-verification.is-active {
+    width: 100% !important;
+    max-width: 96% !important;
+    height: 65vh !important;
+    margin: 2vh auto 0;
+    box-shadow: none; }
   footer {
     padding: 0 !important; }
     footer .footer-outer {
