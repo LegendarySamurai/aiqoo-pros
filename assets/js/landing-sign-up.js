@@ -1,5 +1,9 @@
 const isMobile = window.innerWidth < 600;
 
+// Button LETS START on click shows sms verification
+const letsStartBtn = document.querySelector('#submit-sign-up-form');
+
+
 // Button LETS GO on click shows form
 const letsGoBtn = document.querySelector('.lets-go-btn');
 const formWrapper = document.querySelector('.back-layer');
@@ -52,17 +56,14 @@ if (!isMobile) {
 else {
 	qualityCardsContainer.addEventListener('click', () => {
 		if (qualityCardsContainer.classList.contains('hide-underlay')) {
-			console.log(0);
 			qualityCardsContainer.classList.remove('hide-underlay');
 			body.classList.add('blocked');
 		}
 		else if (qualityCardsContainer.classList.contains('show-underlay')) {
-			console.log(1);
 			qualityCardsContainer.classList.add('hide-underlay');
 			body.classList.remove('blocked');
 		}
 		else {
-			console.log(2);
 			qualityCardsContainer.classList.add('show-underlay');
 			body.classList.add('blocked');
 		}
@@ -74,9 +75,6 @@ else {
 		}
 	});
 }
-
-
-
 
 
 // Quality card on hover scaled
@@ -105,22 +103,6 @@ qualityCards.forEach(card => {
 		})
 	});
 });
-
-
-// Carousel
-// const carouselItems = document.querySelectorAll('.carousel__navigation-button');
-// let carouselButtonClicked= false;
-//
-// carouselItems.forEach(item => {
-//
-// 	item.addEventListener('click', (e) => {
-// 		carouselItems.forEach(item => {
-// 			item.classList.remove('is-clicked');
-// 		});
-// 		e.target.classList.add('is-clicked');
-// 		carouselButtonClicked = true;
-// 	});
-// });
 
 
 // Footer scroll to top
