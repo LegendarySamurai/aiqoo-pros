@@ -2685,16 +2685,20 @@
   .quality-card {
     width: 100% !important;
     height: 150px !important; }
-  .quality-card-content-inner {
-    position: static !important; }
-    .quality-card-content-inner.small-card .quality-card-text-content {
-      padding: 1vh 2.5vw 2vh !important; }
-    .quality-card-content-inner.small-card .step {
-      line-height: 1; }
-      .quality-card-content-inner.small-card .step span {
-        font-size: 3vh !important; }
-    .quality-card-content-inner.small-card .quality-card-text {
-      font-size: 1.75vh !important; }
+  .quality-card-content-inner.small-card .quality-card-text-content {
+    padding: 1vh 2.5vw 2vh !important; }
+  .quality-card-content-inner.small-card .step {
+    line-height: 1; }
+    .quality-card-content-inner.small-card .step span {
+      font-size: 3vh !important; }
+  .quality-card-content-inner.small-card .quality-card-text {
+    font-size: 1.75vh !important; } }
+
+@media (max-width: 599px) and (max-width: 599px) {
+  .quality-card-content-inner.big-card {
+    top: 50% !important; } }
+
+@media (max-width: 599px) {
   .review-card {
     display: flex;
     flex-direction: row;

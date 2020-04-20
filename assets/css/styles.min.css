@@ -16019,6 +16019,17 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: rgba(255, 255, 255, 0.9);
     pointer-events: none;
     opacity: 0; }
+    @media (max-width: 599px) {
+      .sign-up-landing .quality-cards .quality-cards-underlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: auto; } }
 
 @keyframes quality-cards-underlay-enter {
   0% {
@@ -16043,6 +16054,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     z-index: 10; }
+  @media (max-width: 599px) {
+    .sign-up-landing .quality-cards.hide-underlay .quality-cards-underlay {
+      pointer-events: none; } }
 
 .sign-up-landing .quality-card {
   display: flex;
@@ -16180,10 +16194,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
           opacity: 0;
           transform: scale(0.75) translate(0, -50%); }
         100% {
-          width: 90%;
+          width: 100%;
           height: 150%;
           opacity: 1;
-          transform: scale(1.15) translate(0, -50%); } }
+          transform: scale(1) translate(0, -50%); } }
       .sign-up-landing .quality-card.show .step span {
         font-size: 3vh !important; } }
 
@@ -16203,10 +16217,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
           opacity: 0;
           transform: scale(0.75) translate(0, -50%); }
         100% {
-          width: 90%;
+          width: 100%;
           height: 150%;
           opacity: 1;
-          transform: scale(1.15) translate(0, -50%); } }
+          transform: scale(1) translate(0, -50%); } }
       .sign-up-landing .quality-card.show .step span {
         font-size: 3vh !important; } }
     .sign-up-landing .quality-card.show .big-card:not(.b) {
@@ -16253,12 +16267,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 599px) {
       @keyframes big-card-exit-animation {
         0% {
-          transform: scale(1.15) translate(0, -50%);
+          transform: scale(1) translate(0, -50%);
           width: 90%;
           height: 150%;
           opacity: 1; }
         50% {
-          transform: scale(1.15) translate(0, -50%);
+          transform: scale(1) translate(0, -50%);
           width: 90%;
           height: 150%;
           opacity: 1; }
@@ -16284,12 +16298,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     @media (max-width: 599px) {
       @keyframes big-card-b-exit-animation {
         0% {
-          transform: scale(1.15) translate(0, -50%);
+          transform: scale(1) translate(0, -50%);
           width: 90%;
           height: 150%;
           opacity: 1; }
         50% {
-          transform: scale(1.15) translate(0, -50%);
+          transform: scale(1) translate(0, -50%);
           width: 90%;
           height: 150%;
           opacity: 1; }

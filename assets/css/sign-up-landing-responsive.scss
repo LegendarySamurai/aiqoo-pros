@@ -581,7 +581,7 @@
   }
 
   .quality-card-content-inner {
-    position: static !important;
+    //position: static !important;
 
     &.small-card {
       .quality-card-text-content {
@@ -598,6 +598,12 @@
 
       .quality-card-text {
         font-size: 1.75vh !important;
+      }
+    }
+
+    &.big-card {
+      @media (max-width: 599px) {
+        top: 50% !important;
       }
     }
   }

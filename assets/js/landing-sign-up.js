@@ -30,22 +30,53 @@ inner.addEventListener('click', () => {
 const qualityCardsContainer = document.querySelector('.quality-cards');
 const qualityCards = document.querySelectorAll('.quality-card');
 
-qualityCardsContainer.addEventListener('mouseover', () => {
-	// console.log('works');
-	qualityCards.forEach(card => {
-		if (!qualityCardsContainer.classList.contains('show-underlay')) {
+if (!isMobile) {
+	qualityCardsContainer.addEventListener('mouseover', () => {
+		// console.log('works');
+		qualityCards.forEach(() => {
+			if (!qualityCardsContainer.classList.contains('show-underlay')) {
+				qualityCardsContainer.classList.add('show-underlay');
+				qualityCardsContainer.classList.remove('hide-underlay');
+
+			} else {
+				qualityCardsContainer.classList.remove('hide-underlay');
+			}
+		});
+	});
+
+	qualityCardsContainer.addEventListener('mouseout', () => {
+		qualityCardsContainer.classList.add('hide-underlay');
+	});
+}
+// mobile
+else {
+	qualityCardsContainer.addEventListener('click', () => {
+		if (qualityCardsContainer.classList.contains('hide-underlay')) {
+			console.log(0);
+			qualityCardsContainer.classList.remove('hide-underlay');
+			body.classList.add('blocked');
+		}
+		else if (qualityCardsContainer.classList.contains('show-underlay')) {
+			console.log(1);
+			qualityCardsContainer.classList.add('hide-underlay');
+			body.classList.remove('blocked');
+		}
+		else {
+			console.log(2);
 			qualityCardsContainer.classList.add('show-underlay');
-			qualityCardsContainer.classList.remove('hide-underlay');
-		} else {
-			qualityCardsContainer.classList.remove('hide-underlay');
+			body.classList.add('blocked');
 		}
 	});
 
-});
+	qualityCardsContainer.addEventListener('click', () => {
+		if (qualityCardsContainer.classList.contains('show-underlay')) {
+			// qualityCardsContainer.classList.add('hide-underlay');
+		}
+	});
+}
 
-qualityCardsContainer.addEventListener('mouseout', () => {
-	qualityCardsContainer.classList.add('hide-underlay');
-});
+
+
 
 
 // Quality card on hover scaled
