@@ -727,16 +727,17 @@
   display: none;
 
   &.is-active {
-    //display: block;
     pointer-events: auto;
     width: 25vw;
     height: 78vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 !important;
-    //margin: 0 auto;
-    //margin: 50px auto;
+    margin: 0;
+
+    .verification {
+      //bottom: 90%;
+    }
   }
 }
 

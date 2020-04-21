@@ -15910,7 +15910,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 !important; }
+    margin: 0; }
 
 .sign-up-landing footer {
   z-index: 12;
@@ -16075,10 +16075,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     animation-duration: 600ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    z-index: 10; }
-  @media (max-width: 599px) {
-    .sign-up-landing .quality-cards.hide-underlay .quality-cards-underlay {
-      pointer-events: none; } }
+    z-index: 10;
+    pointer-events: none; }
 
 .sign-up-landing .quality-card {
   display: flex;
@@ -16124,7 +16122,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .sign-up-landing .quality-card .quality-card-content-inner.big-card {
       transform: scale(0.75);
       opacity: 0;
-      padding: 1.25vh 1.75vw 1.5vh; }
+      padding: 1.25vh 1.75vw 1.5vh;
+      pointer-events: none; }
       .sign-up-landing .quality-card .quality-card-content-inner.big-card .quality-card-text-content {
         transform: scale(0);
         padding: 0; }
@@ -16142,7 +16141,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .sign-up-landing .quality-card .quality-card-text {
     height: 100%;
     overflow: hidden;
-    max-height: 90px;
+    max-height: 100%;
     line-height: 1.15;
     font-size: 1.75vh;
     color: #574f76;
@@ -16290,6 +16289,8 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     transform: scale(1); } }
   .sign-up-landing .quality-card.hide {
     z-index: 9; }
+    .sign-up-landing .quality-card.hide .small-card {
+      opacity: 1; }
 
 @keyframes big-card-exit-animation {
   0% {

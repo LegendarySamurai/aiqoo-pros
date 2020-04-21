@@ -522,24 +522,15 @@
   // Head section
   .head-section {
     height: 28vh !important;
-    padding: 2vh 0 3vh !important;
+    padding: 0 !important;
 
     &::after {
       display: none !important;
     }
 
-    //&:before {
-    //  position: absolute;
-    //  top: 0;
-    //  left: 0;
-    //  right: 0;
-    //  bottom: 0;
-    //  width: 100%;
-    //  height: 100%;
-    //  background-color: transparentize(rgba(0,0,0, 0.9), .5);
-    //  display: block;
-    //  content: '';
-    //}
+    &::before {
+      height: 1vh !important;
+    }
 
     .head-section-body {
       .head-section-inner {
@@ -548,19 +539,38 @@
     }
 
     .head-section-inner {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      width: 100% !important;
+      height: 100% !important;
+      padding-left: 0 !important;
+      //padding: 0 0 0 1vh;
+
       h2 {
-        display: block;
-        margin-top: .5rem;
-        padding: 1.5vh 1vw 1.75vh 1vw !important;
-        font-size: 3.975vw !important;
+        display: block !important;
+        width: auto !important;
+        line-height: 1 !important;
+        margin: 4vh auto 0 !important;
+        padding: 1.5vh 2vw 1.5vh 2vw !important;
         background-color: transparentize(#585077, .5);
         color: #fff !important;
         border-radius: 10px;
+        font-size: 4vw !important;
+        text-align: center !important;
       }
 
       .lets-go-btn {
-        width: 42vw !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 40vw !important;
+        height: 40px !important;
         margin: 0 auto;
+        margin-top: auto !important;
+        margin-bottom: 2vh !important;
+        font-size: 15pt !important;
+        padding: 0 !important;
       }
     }
 
@@ -573,10 +583,13 @@
     }
 
     .aiqoo-logo-outer {
-      width: 150px !important;
-      height: 7vh !important;
-      left: 4vw;
-      top: -3vh;
+      top: 1vh;
+      //left: 8vw;
+      width: 120px !important;
+      height: 6vh !important;
+      max-height: 80px;
+      margin: 0 !important;
+      align-self: flex-start;
       border-top-right-radius: 0 !important;
       border-top-left-radius: 0 !important;
     }
@@ -584,9 +597,10 @@
 
   .head-section-body {
     .pro-img {
-      width: 9vh !important;
-      top: 2vh !important;
-      left: 2vw !important;
+      width: 8vh !important;
+      top: auto !important;
+      left: 3vw !important;
+      bottom: -1vh;
     }
   }
 
@@ -707,7 +721,7 @@
 
   .content {
     .text {
-      //font-size: 1.25vh !important;
+      font-size: 1.35vh !important;
     }
   }
 
@@ -755,9 +769,12 @@
     &.is-active {
       width: 100% !important;
       max-width: 96% !important;
-      height: 65vh !important;
-      margin: 2vh auto 0;
+      //height: 65vh !important;
+      //margin: 2vh auto 0;
       box-shadow: none;
+      justify-content: flex-start;
+      height: 100% !important;
+      margin: 2vh auto 0 !important;
     }
   }
 
@@ -767,6 +784,7 @@
 
     .footer-outer {
       flex-direction: column !important;
+      padding: 0.5vh 3vw 1.5vh 3vw !important;
 
       .footer-col {
         width: 100% !important;
@@ -779,6 +797,10 @@
       h4 {
         margin-top: 10px;
         font-size: 1.75vh !important;
+      }
+
+      .text {
+        font-size: 1.5vh !important;
       }
     }
 
@@ -818,31 +840,3 @@
     }
   }
 }
-
-@media(max-width: 420px) {
-  // Head section
-  .head-section {
-    .head-section-body {
-      .head-section-inner {
-        padding-left: 20.5vw !important;
-      }
-    }
-
-    .head-section-inner {
-    }
-
-    .aiqoo-logo-inner {
-      //padding: 1vh 1vw 1vh 9vw !important;
-
-      img {
-        //width: 90%!important;
-      }
-    }
-
-    .aiqoo-logo-outer {
-      width: 200px !important;
-      //padding-left: 16vw !important;
-    }
-  }
-}
-

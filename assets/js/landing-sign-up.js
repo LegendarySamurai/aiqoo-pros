@@ -36,7 +36,7 @@ letsStartBtns.forEach(btn => {
 		e.preventDefault();
 		sideBlockForm.classList.add('disabled');
 		accountVerification.classList.add('is-active');
-		console.log(e.target, '=> works');
+		// console.log(e.target, '=> works');
 	});
 });
 
@@ -44,76 +44,56 @@ letsStartBtns.forEach(btn => {
 // Quality cards on hover adds underlay
 const qualityCardsContainer = document.querySelector('.quality-cards');
 const qualityCards = document.querySelectorAll('.quality-card');
+const qualityCardsUnderlay = document.querySelector('.quality-cards-underlay');
+// let cardIsClicked = false;
+
+
+qualityCards.forEach(card => {
+	if (!isMobile) {
+		card.addEventListener('mouseover', function () {
+			this.classList.add('show');
+			this.classList.remove('hide');
+		});
+
+		card.addEventListener('mouseout', function () {
+			this.classList.add('hide');
+		})
+	}
+
+	if (isMobile) {
+		card.addEventListener('click', function() {
+			this.classList.add('show');
+			this.classList.remove('hide');
+		});
+	}
+});
 
 if (!isMobile) {
-	qualityCardsContainer.addEventListener('mouseover', () => {
-		// console.log('works');
-		qualityCards.forEach(() => {
-			if (!qualityCardsContainer.classList.contains('show-underlay')) {
-				qualityCardsContainer.classList.add('show-underlay');
-				qualityCardsContainer.classList.remove('hide-underlay');
-
-			} else {
-				qualityCardsContainer.classList.remove('hide-underlay');
-			}
-		});
+	qualityCardsContainer.addEventListener('mouseover', function() {
+		this.classList.add('show-underlay');
+		this.classList.remove('hide-underlay');
 	});
 
-	qualityCardsContainer.addEventListener('mouseout', () => {
+	qualityCardsContainer.addEventListener('mouseout', function() {
+		this.classList.add('hide-underlay');
+	});
+}
+
+if (isMobile) {
+	qualityCardsContainer.addEventListener('click', function() {
+		this.classList.add('show-underlay');
+		// this.classList.remove('hide-underlay');
+	});
+	qualityCardsUnderlay.addEventListener('click', () => {
+		// console.log(e.target, 'works');
+		qualityCards.forEach(card => {
+			card.classList.add('hide');
+		});
 		qualityCardsContainer.classList.add('hide-underlay');
-	});
-}
-// mobile
-else {
-	qualityCardsContainer.addEventListener('click', () => {
-		if (qualityCardsContainer.classList.contains('hide-underlay')) {
-			qualityCardsContainer.classList.remove('hide-underlay');
-			body.classList.add('blocked');
-		}
-		else if (qualityCardsContainer.classList.contains('show-underlay')) {
-			qualityCardsContainer.classList.add('hide-underlay');
-			body.classList.remove('blocked');
-		}
-		else {
-			qualityCardsContainer.classList.add('show-underlay');
-			body.classList.add('blocked');
-		}
+
 	});
 
-	qualityCardsContainer.addEventListener('click', () => {
-		if (qualityCardsContainer.classList.contains('show-underlay')) {
-			// qualityCardsContainer.classList.add('hide-underlay');
-		}
-	});
-}
 
-
-// Quality card on hover scaled
-qualityCards.forEach(card => {
-	card.addEventListener('mouseover', () => {
-		qualityCards.forEach(card => {
-			card.classList.add('z-index-0');
-		});
-
-		card.classList.remove('z-index-0');
-
-		if (!card.classList.contains('show')) {
-			card.classList.add('show');
-			card.classList.remove('hide');
-		} else {
-			card.classList.remove('hide');
-		}
-	});
-
-	card.addEventListener('mouseout', () => {
-		card.classList.add('hide');
-
-		qualityCards.forEach(card => {
-			card.classList.remove('show');
-			card.classList.add('z-index');
-		})
-	});
-});
 
 
 // Footer scroll to top
