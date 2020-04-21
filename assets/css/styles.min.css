@@ -6352,6 +6352,12 @@ form {
       height: 100%;
       margin: 0 auto; } }
 
+.new-layout-page .left-side-container {
+  width: 15%;
+  min-width: 250px;
+  height: 100%;
+  background-color: #585077; }
+
 .my-profile-page {
   /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20

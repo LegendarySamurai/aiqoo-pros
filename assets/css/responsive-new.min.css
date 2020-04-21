@@ -272,7 +272,7 @@
 .btn-action {
   display: none; }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   .only-in-mobile {
     display: block !important; }
   .hide-in-mobile {
@@ -516,12 +516,12 @@
     .leadDetails-fixed .card-body {
       overflow: unset;
       height: 85vh; } }
-    @media (max-width: 600px) and (max-width: 600px) {
+    @media (max-width: 599px) and (max-width: 600px) {
       .leadDetails-fixed .card-body {
         height: auto;
         margin-bottom: 0px; } }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .leadDetails-fixed .row-100 {
       height: 100vh; }
     .leadDetails-fixed .only-in-reg {
@@ -2980,3 +2980,35 @@
       padding: 0 6px 0 10px; }
     .system-campaign .system-campaign-services .form-control {
       max-width: 315px; } }
+
+@media (max-width: 599px) {
+  .mobile-only-flex {
+    display: flex; } }
+
+@media (min-width: 600px) {
+  .mobile-only-flex {
+    display: none; } }
+
+@media (max-width: 599px) {
+  .mobile-only-block {
+    display: block; } }
+
+@media (min-width: 600px) {
+  .mobile-only-block {
+    display: none; } }
+
+@media (max-width: 599px) {
+  .desktop-only-flex {
+    display: none; } }
+
+@media (min-width: 600px) {
+  .desktop-only-flex {
+    display: flex; } }
+
+@media (max-width: 599px) {
+  .desktop-only-block {
+    display: none; } }
+
+@media (min-width: 600px) {
+  .desktop-only-block {
+    display: block; } }

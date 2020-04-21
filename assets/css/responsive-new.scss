@@ -2192,5 +2192,45 @@
 
 
 //*************  New page layout responsive  *************//
-@import 'new-page-layout-responsive.scss';
+.new-layout-page {
+  @import 'new-page-layout-responsive.scss';
+}
+
+
+//**************************//
+.mobile-only-flex {
+  @media(max-width: 599px) {
+    display: flex;
+  }
+  @media(min-width: 600px) {
+    display: none;
+  }
+}
+
+.mobile-only-block {
+  @media(max-width: 599px) {
+    display: block;
+  }
+  @media(min-width: 600px) {
+    display: none;
+  }
+}
+
+.desktop-only-flex {
+  @media(max-width: 599px) {
+    display: none;
+  }
+  @media(min-width: 600px) {
+    display: flex;
+  }
+}
+
+.desktop-only-block {
+  @media(max-width: 599px) {
+    display: none;
+  }
+  @media(min-width: 600px) {
+    display: block;
+  }
+}
 

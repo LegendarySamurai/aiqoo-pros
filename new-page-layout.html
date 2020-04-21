@@ -3,66 +3,252 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>New Page Layout</title>
-  <link href="assets/css/sysf_bootstrap4.min.css" rel="stylesheet"/>
+  <title>New landing layout</title>
+  <link href="assets/css/sysf_bootstrap4.min.css" rel="stylesheet" />
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ej2.min.js"></script>
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ejs.interop.min.js"></script>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-          crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-          crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
-        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
   <link href="assets/css/styles.min.css" rel="stylesheet" />
   <link href="assets/css/responsive-new.min.css" rel="stylesheet" />
 </head>
 <body>
 <app>
-  <main>
+  <main class="new-layout-page">
     <div class="container-fluid">
       <div class="row">
-        <!-- Logo container -->
-        <div class="col-12">
-          <div class="top-logo-container">
-            <img src="assets/images/aiqoo-pros-logo.svg" alt="logo" class="logo white-logo">
-          </div>
-        </div>
-        <!-- Mobile menu -->
-        <div class="col-12">
-          <div class="menu-container d-lg-none">
-            <select name="select" id="mobile-menu">
-              <option value="value1">Dashboard</option>
-              <option value="value2">Dashboard</option>
-              <option value="value3">Aiqoo Index</option>
-              <option value="value4">Sales</option>
-              <option value="value5">Projects</option>
-              <option value="value6" selected>Tasks</option>
-              <option value="value7">Suppliers</option>
-              <option value="value8">Calendar</option>
-              <option value="value9">Address Book</option>
-              <option value="value10">Network</option>
-              <option value="value11">Support</option>
-            </select>
-          </div>
-        </div>
-        <!-- Desktop menu -->
+        <!-- Left purple side -->
         <div class="col-auto">
-          <div class="menu-container d-none d-lg-flex">
-            <ul class="menu-list">
-              <li class="menu-item">
-                <span class="menu-item-icon"></span>
-                <span class="menu-item-name"></span>
-              </li>
-            </ul>
+          <div class="left-side-container">
+            <!-- Logo container -->
+            <div class="tol-logo-col">
+              <div class="top-logo-container">
+                <img src="assets/images/aiqoo-pros-logo.svg" alt="logo" class="logo white-logo">
+              </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="menu-m-col">
+              <div class="menu-container mobile-only-flex">
+                <select name="select" id="mobile-menu">
+                  <option value="value1">Dashboard</option>
+                  <option value="value2">Dashboard</option>
+                  <option value="value3">Aiqoo Index</option>
+                  <option value="value4">Sales</option>
+                  <option value="value5">Projects</option>
+                  <option value="value6" selected>Tasks</option>
+                  <option value="value7">Suppliers</option>
+                  <option value="value8">Calendar</option>
+                  <option value="value9">Address Book</option>
+                  <option value="value10">Network</option>
+                  <option value="value11">Support</option>
+                </select>
+              </div>
+            </div>
+            <!-- Desktop menu -->
+            <div class="menu-d-col">
+              <div class="menu-container desktop-only-flex">
+                <div class="menu-items-list">
+                  <label for="dashboard" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/dashboard-icon-white.svg" alt="dashboard"></span>
+                    <span class="menu-item-name">Dashboard</span>
+                  </label>
+                  <label for="marketing" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/marketing-icon-white.svg" alt="marketing"></span>
+                    <span class="menu-item-name">Marketing</span>
+                  </label>
+                  <label for="aiqoo-index" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/aiqoo-index-icon-white.svg" alt="aiqoo-index"></span>
+                    <span class="menu-item-name">Aiqoo Index</span>
+                  </label>
+                  <label for="sales" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/sales-icon-white.svg" alt="sales"></span>
+                    <span class="menu-item-name">Sales</span>
+                  </label>
+                  <label for="projects" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/projects-icon-white.svg" alt="projects"></span>
+                    <span class="menu-item-name">Projects</span>
+                  </label>
+                  <label for="tasks" class="menu-item is-active">
+                    <span class="menu-item-icon"><img src="assets/images/menu/tasks-icon-white.svg" alt="tasks"></span>
+                    <span class="menu-item-name">Tasks</span>
+                  </label>
+                  <label for="suppliers" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/suppliers-icon-white.svg" alt="suppliers"></span>
+                    <span class="menu-item-name">Suppliers</span>
+                  </label>
+                  <label for="calendar" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/calendar-icon-white.svg" alt="calendar"></span>
+                    <span class="menu-item-name">Calendar</span>
+                  </label>
+                  <label for="address-book" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/address-card-icon-white.svg" alt="address-book"></span>
+                    <span class="menu-item-name">Address Book</span>
+                  </label>
+                  <label for="network" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/network-icon-white.svg" alt="network"></span>
+                    <span class="menu-item-name">Network</span>
+                  </label>
+                  <label for="support" class="menu-item">
+                    <span class="menu-item-icon"><img src="assets/images/menu/support-icon-white.svg" alt="support"></span>
+                    <span class="menu-item-name">Support</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content side -->
+        <div class="col">
+          <div class="right-side-container">
+            <!-- Desktop -->
+            <div class="fixed-top-panel-d">
+              <div class="row">
+                <div class="col-auto sub-menu-col">
+                  <!-- Pages titles -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                    <div class="col-12">
+                      <div class="page-title">Account Settings</div>
+                    </div>
+                  </div>
+                  <!-- Sub-menus -->
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="sub-menu-lists">
+                        <div class="sub-menu-items" id="dashboard">
+                          <span>My Profile</span>
+                          <span>Company Profile</span>
+                          <span>Services</span>
+                          <span>Locations</span>
+                          <span>Invoices</span>
+                          <span>Payments Methods</span>
+                        </div>
+                        <div class="sub-menu-items" id="marketing">
+                          <span>Sub menu item 1</span>
+                          <span>Sub menu item 1</span>
+                          <span>Sub menu item 1</span>
+                          <span>Sub menu item 1</span>
+                          <span>Sub menu item 1</span>
+                          <span>Sub menu item 1</span>
+                        </div>
+                        <div class="sub-menu-items" id="aiqoo-index">
+                          <span>Sub menu item 2</span>
+                          <span>Sub menu item 2</span>
+                          <span>Sub menu item 2</span>
+                          <span>Sub menu item 2</span>
+                          <span>Sub menu item 2</span>
+                          <span>Sub menu item 2</span>
+                        </div>
+                        <div class="sub-menu-items" id="sales">
+                          <span>Sub menu item 3</span>
+                          <span>Sub menu item 3</span>
+                          <span>Sub menu item 3</span>
+                          <span>Sub menu item 3</span>
+                          <span>Sub menu item 3</span>
+                          <span>Sub menu item 3</span>
+                        </div>
+                        <div class="sub-menu-items" id="projects">
+                          <span>Sub menu item 4</span>
+                          <span>Sub menu item 4</span>
+                          <span>Sub menu item 4</span>
+                          <span>Sub menu item 4</span>
+                          <span>Sub menu item 4</span>
+                          <span>Sub menu item 4</span>
+                        </div>
+                        <div class="sub-menu-items" id="tasks">
+                          <span>Sub menu item 5</span>
+                          <span>Sub menu item 5</span>
+                          <span>Sub menu item 5</span>
+                          <span>Sub menu item 5</span>
+                          <span>Sub menu item 5</span>
+                          <span>Sub menu item 5</span>
+                        </div>
+                        <div class="sub-menu-items" id="suppliers">
+                          <span>Sub menu item 6</span>
+                          <span>Sub menu item 6</span>
+                          <span>Sub menu item 6</span>
+                          <span>Sub menu item 6</span>
+                          <span>Sub menu item 6</span>
+                          <span>Sub menu item 6</span>
+                        </div>
+                        <div class="sub-menu-items" id="calendar">
+                          <span>Sub menu item 7</span>
+                          <span>Sub menu item 7</span>
+                          <span>Sub menu item 7</span>
+                          <span>Sub menu item 7</span>
+                          <span>Sub menu item 7</span>
+                          <span>Sub menu item 7</span>
+                        </div>
+                        <div class="sub-menu-items" id="address-book">
+                          <span>Sub menu item 8</span>
+                          <span>Sub menu item 8</span>
+                          <span>Sub menu item 8</span>
+                          <span>Sub menu item 8</span>
+                          <span>Sub menu item 8</span>
+                          <span>Sub menu item 8</span>
+                        </div>
+                        <div class="sub-menu-items" id="network">
+                          <span>Sub menu item 9</span>
+                          <span>Sub menu item 9</span>
+                          <span>Sub menu item 9</span>
+                          <span>Sub menu item 9</span>
+                          <span>Sub menu item 9</span>
+                          <span>Sub menu item 9</span>
+                        </div>
+                        <div class="sub-menu-items" id="support">
+                          <span>Sub menu item 10</span>
+                          <span>Sub menu item 10</span>
+                          <span>Sub menu item 10</span>
+                          <span>Sub menu item 10</span>
+                          <span>Sub menu item 10</span>
+                          <span>Sub menu item 10</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col user-settings-col">
+
+                </div>
+              </div>
+            </div>
+          <!--  Mobile -->
           </div>
         </div>
       </div>

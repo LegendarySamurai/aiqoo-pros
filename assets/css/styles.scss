@@ -11,7 +11,10 @@
 
 
 //************* New page Layout *************//
-@import 'new-layout-page.scss';
+.new-layout-page {
+  @import 'new-layout-page.scss';
+}
+
 
 //************* My profile page (Dashboard) *************//
 .my-profile-page {

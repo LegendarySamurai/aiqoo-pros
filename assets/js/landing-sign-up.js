@@ -90,11 +90,8 @@ if (isMobile) {
 			card.classList.add('hide');
 		});
 		qualityCardsContainer.classList.add('hide-underlay');
-
 	});
-
-
-
+}
 
 // Footer scroll to top
 if ('onwheel' in document) {
