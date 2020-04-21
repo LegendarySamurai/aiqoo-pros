@@ -2661,37 +2661,60 @@
     margin-top: 10px !important; }
   .head-section {
     height: 28vh !important;
-    padding: 2vh 0 3vh !important; }
+    padding: 0 !important; }
     .head-section::after {
       display: none !important; }
+    .head-section::before {
+      height: 1vh !important; }
     .head-section .head-section-body .head-section-inner {
       padding-left: 17vw !important; }
-    .head-section .head-section-inner h2 {
-      display: block;
-      margin-top: .5rem;
-      padding: 1.5vh 1vw 1.75vh 1vw !important;
-      font-size: 3.975vw !important;
-      background-color: rgba(88, 80, 119, 0.5);
-      color: #fff !important;
-      border-radius: 10px; }
-    .head-section .head-section-inner .lets-go-btn {
-      width: 42vw !important;
-      margin: 0 auto; }
+    .head-section .head-section-inner {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      width: 100% !important;
+      height: 100% !important;
+      padding-left: 0 !important; }
+      .head-section .head-section-inner h2 {
+        display: block !important;
+        width: auto !important;
+        line-height: 1 !important;
+        margin: 4vh auto 0 !important;
+        padding: 1.5vh 2vw 1.5vh 2vw !important;
+        background-color: rgba(88, 80, 119, 0.5);
+        color: #fff !important;
+        border-radius: 10px;
+        font-size: 4vw !important;
+        text-align: center !important; }
+      .head-section .head-section-inner .lets-go-btn {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 40vw !important;
+        height: 40px !important;
+        margin: 0 auto;
+        margin-top: auto !important;
+        margin-bottom: 2vh !important;
+        font-size: 15pt !important;
+        padding: 0 !important; }
     .head-section .aiqoo-logo-inner {
       padding: 1vh 1vw 1vh 1vw !important; }
       .head-section .aiqoo-logo-inner img {
         width: 100% !important; }
     .head-section .aiqoo-logo-outer {
-      width: 150px !important;
-      height: 7vh !important;
-      left: 4vw;
-      top: -3vh;
+      top: 1vh;
+      width: 120px !important;
+      height: 6vh !important;
+      max-height: 80px;
+      margin: 0 !important;
+      align-self: flex-start;
       border-top-right-radius: 0 !important;
       border-top-left-radius: 0 !important; }
   .head-section-body .pro-img {
-    width: 9vh !important;
-    top: 2vh !important;
-    left: 2vw !important; }
+    width: 8vh !important;
+    top: auto !important;
+    left: 3vw !important;
+    bottom: -1vh; }
   .content-section {
     padding: 1vh 2vw 3vh !important; }
   .content-inner {
@@ -2756,6 +2779,8 @@
       width: 100%;
       height: 100%;
       object-fit: contain; }
+  .content .text {
+    font-size: 1.35vh !important; }
   .side-block {
     width: 100% !important;
     max-width: 96% !important;
@@ -2777,13 +2802,15 @@
   .account-verification.is-active {
     width: 100% !important;
     max-width: 96% !important;
-    height: 65vh !important;
-    margin: 2vh auto 0;
-    box-shadow: none; }
+    box-shadow: none;
+    justify-content: flex-start;
+    height: 100% !important;
+    margin: 2vh auto 0 !important; }
   footer {
     padding: 0 !important; }
     footer .footer-outer {
-      flex-direction: column !important; }
+      flex-direction: column !important;
+      padding: 0.5vh 3vw 1.5vh 3vw !important; }
       footer .footer-outer .footer-col {
         width: 100% !important; }
       footer .footer-outer .footer-col-2 {
@@ -2791,6 +2818,8 @@
       footer .footer-outer h4 {
         margin-top: 10px;
         font-size: 1.75vh !important; }
+      footer .footer-outer .text {
+        font-size: 1.5vh !important; }
     footer .sticky-logo-container {
       width: 100%;
       z-index: 9000 !important;
@@ -2812,12 +2841,6 @@
       width: 28% !important; }
     footer .scroll-container .footer-outer {
       width: 100% !important; } }
-
-@media (max-width: 420px) {
-  .head-section .head-section-body .head-section-inner {
-    padding-left: 20.5vw !important; }
-  .head-section .aiqoo-logo-outer {
-    width: 200px !important; } }
 
 .system-campaign { }
   @media (min-width: 1200px) {
