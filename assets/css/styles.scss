@@ -10,6 +10,9 @@
 @import "slick/slick-theme.scss";
 
 
+//************* New page Layout *************//
+@import 'new-layout-page.scss';
+
 //************* My profile page (Dashboard) *************//
 .my-profile-page {
   @import 'my-profile.scss';
