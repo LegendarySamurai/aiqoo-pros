@@ -6382,8 +6382,7 @@ html, body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 100px;
-  background-color: coral; }
+  height: 100px; }
 
 .new-layout-page .notification {
   position: relative;
