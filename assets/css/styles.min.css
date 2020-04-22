@@ -6367,7 +6367,8 @@ html, body {
 .new-layout-page .sub-menu-container-inner {
   border-bottom: 2px solid #d7d7d7;
   margin-right: 15px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  background-color: #fff; }
 
 .new-layout-page .sub-menu-col {
   display: flex;
