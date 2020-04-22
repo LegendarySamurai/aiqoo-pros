@@ -72,7 +72,6 @@
 
   .menu-item-icon {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     width: 20px;
     //background-color: coral; // !!! remove
@@ -80,6 +79,7 @@
 
   .menu-item-icon-default {
     display: flex;
+    justify-content: flex-end;
   }
 
   .menu-item-icon-active {
@@ -93,19 +93,30 @@
 
   // active menu item state
   &:hover, &.is-active {
-    transform: translate(4px, 0);
-    width: calc(100% + 4px);
-    margin-right: 0;
+    position: relative;
+    //margin-right: 0;
     margin-left: -10px;
-    padding-left: 40px;
-    border-top-right-radius: 2.5px;
-    border-top-left-radius: 2.5px;
-    box-shadow: 0 1.5px 7.5px 0 rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
+    //padding-left: 40px;
     border-bottom: none;
-    border-left: 5px solid #d8cdba;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -14px;
+      width: calc(100% + 44px);
+      height: 100%;
+      border-left: 5px solid #d8cdba;
+      box-shadow: 0 1.5px 7.5px 0 rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
+      border-top-right-radius: 2.5px;
+      border-top-left-radius: 2.5px;
+    }
 
     .menu-item-name {
+      position: relative;
+      z-index: 1;
       color: #585077;
     }
 
@@ -115,6 +126,8 @@
 
     .menu-item-icon-active {
       display: flex;
+      //justify-content: flex-start;
+      transform: translate(0, 0);
     }
   }
 
@@ -138,6 +151,7 @@
 
   .page-title {
     line-height: 1.04;
+    margin-bottom: 20px;
     color: $purple;
     font-size: 1.35rem;
   }
@@ -232,13 +246,13 @@
 .sub-menu-col {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 80%;
   height: 100px;
   padding: 25px 15px 0;
-  //background-color: transparentize(#ccc, .6);
 }
 
+// User settings
 .user-settings-col {
   display: flex;
   flex-direction: row;
@@ -246,4 +260,156 @@
   align-items: flex-end;
   height: 100px;
   background-color: coral; // !!!! remove
+}
+
+.notification {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  height: 100%;
+
+  &.notification-1 {
+    .notification-button-icon {
+      padding: 8px;
+    }
+  }
+}
+
+.notification-button {
+  width: 40px;
+  height: 40px;
+
+  &.is-active {
+    .notification-button-icon {
+      background-color: #fff;
+    }
+  }
+
+  @media(min-width: 992px) {
+    cursor: pointer;
+  }
+}
+
+.notification-button-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  i {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 5px;
+    border-radius: 50%;
+    background-color: #fdc25d;
+    font-size: .5rem;
+
+  }
+}
+
+// Dropdown
+.dropdown-list {
+  //transform: translate(-100%, 0);
+  //opacity: 0;
+  //transition: opacity 200ms ease;
+
+
+  &.visible {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 50%);
+    //opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 180px;
+    //height: 113px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+  }
+
+  &.invisible {
+    display: none;
+  }
+}
+
+.dropdown-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 2px;
+
+  @media(min-width: 992px) {
+    cursor: pointer;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+
+.icon-container {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  padding: 5px;
+  border-radius: 1px;
+  background-color: #eaeaea;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: auto;
+  flex-grow: 1;
+  margin-left: 6px;
+  color: $purple;
+}
+
+.item-title {
+  font-size: .75rem;
+}
+
+.item-text {
+  font-size: .65rem;
+}
+
+.item-time {
+  align-self: flex-end;
+  font-size: .5rem;
+  color: #b3b3b3;
+}
+
+.settings-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
