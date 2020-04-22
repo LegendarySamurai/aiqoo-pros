@@ -9,6 +9,10 @@
 @import "slick/slick.scss";
 @import "slick/slick-theme.scss";
 
+html, body {
+  height: 100%;
+}
+
 
 //************* New page Layout *************//
 .new-layout-page {
