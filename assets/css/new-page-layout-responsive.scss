@@ -2,11 +2,29 @@
 
 @media(max-width: 1599px) {}
 
-@media(max-width: 1399px) {}
+@media(max-width: 1299px) {
+  // User info
+  .user {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 
-@media(max-width: 1199px) {}
+@media(max-width: 1199px) {
+  // User info
+  .user {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
 
 @media(max-width: 991px) {}
+
+@media(max-width: 899px) {
+  .card {
+    padding: 0 .35rem;
+  }
+}
 
 @media(max-width: 767px) {}
 

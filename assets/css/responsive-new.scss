@@ -2196,6 +2196,11 @@
   @import 'new-page-layout-responsive.scss';
 }
 
+//************ Area Settings ************//
+.area-settings {
+  @import 'area-settings-responsive';
+}
+
 
 //**************************//
 .mobile-only-flex {

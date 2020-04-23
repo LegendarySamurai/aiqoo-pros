@@ -74,7 +74,6 @@
     display: flex;
     align-items: center;
     width: 20px;
-    //background-color: coral; // !!! remove
   }
 
   .menu-item-icon-default {
@@ -94,9 +93,7 @@
   // active menu item state
   &:hover, &.is-active {
     position: relative;
-    //margin-right: 0;
     margin-left: -10px;
-    //padding-left: 40px;
     border-bottom: none;
 
     &::before {
@@ -126,7 +123,6 @@
 
     .menu-item-icon-active {
       display: flex;
-      //justify-content: flex-start;
       transform: translate(0, 0);
     }
   }
@@ -160,18 +156,23 @@
 .fixed-top-panel-d {
   position: fixed;
   top: 0;
-  left: 0;
+  //left: 0;
   right: 0;
-  z-index: 1;
-  width: 100%;
+  z-index: 10;
+  //width: 100%;
   height: 100px;
-  //background-color: lightcoral; // !!!! remove
+
+  //left: auto;
+  width: calc(100% - 250px);
+  max-width: calc(100% - 15%);
+  //background-color: bisque;
+  //z-index: 9000;
 }
 
 .right-side-col {
   position: relative;
-  width: 15%;
-  min-width: 250px;
+  //width: 15%;
+  //min-width: 250px;
 }
 
 .dummy-content {
@@ -179,7 +180,6 @@
   min-width: 250px;
   height: 100px;
   pointer-events: none;
-  background-color: lightgrey; //
 }
 
 .right-side-content-col {
@@ -204,7 +204,7 @@
 .sub-menu-item {
   display: block;
   line-height: 1.25;
-  font-size: 1rem;
+  //font-size: 1rem;
   color: #585077;
   margin: 0 15px;
   padding: 10px 0;
@@ -243,13 +243,17 @@
   margin-right: 15px;
   margin-left: 15px;
   background-color: #fff;
+
+  .row {
+    flex-wrap: nowrap;
+  }
 }
 
 .sub-menu-col {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 80%;
+  width: 70%;
   height: 100px;
   padding: 25px 15px 0;
 }
@@ -260,8 +264,9 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
+  width: auto;
   height: 100px;
-  //background-color: coral; // !!!! remove
+  flex-grow: 1;
 }
 
 .notification {
@@ -327,22 +332,15 @@
 
 // Dropdown
 .dropdown-list {
-  //transform: translate(-100%, 0);
-  //opacity: 0;
-  //transition: opacity 200ms ease;
-
-
   &.visible {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%, 50%);
-    //opacity: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 180px;
-    //height: 113px;
     height: auto;
     padding: 10px;
     border-radius: 5px;
@@ -413,5 +411,92 @@
   height: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
+}
+
+// User info
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  color: #585077;
+}
+
+.company {
+  font-weight: 300;
+}
+
+.fa-chevron-down {
+  margin-left: .5rem;
+  //font-size: 1rem;
+}
+
+.image-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+  padding: 3px;
+  border-radius: 20px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 50%;
+    height: calc(100px - 10px);
+    display: block;
+    content: '';
+    background-color: #585077;
+    width: 100%;
+    transform: translate(-50%, -32%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+
+// Right side CONTENT part
+.create-area-outer {
+
+}
+
+.create-area-inner {
+
+}
+
+.search-new {
+  h5 {
+
+  }
+}
+
+// Button small (Create, Done)
+.layout-button-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  background-color: #585077;
+  color: #fff;
 }

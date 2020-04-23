@@ -2981,6 +2981,24 @@
   .system-campaign .system-campaign-services .form-control {
     max-width: 315px; } }
 
+@media (max-width: 1299px) {
+  .new-layout-page .user {
+    margin-right: 10px;
+    margin-left: 10px; } }
+
+@media (max-width: 1199px) {
+  .new-layout-page .user {
+    margin-right: 0;
+    margin-left: 10px; } }
+
+@media (max-width: 899px) {
+  .new-layout-page .card {
+    padding: 0 .35rem; } }
+
+@media (max-width: 599px) {
+  .area-settings .map {
+    display: none; } }
+
 @media (max-width: 599px) {
   .mobile-only-flex {
     display: flex; } }
