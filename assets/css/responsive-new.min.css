@@ -3026,7 +3026,7 @@
       height: 1px;
       background-color: transparent; }
     .new-layout-page .sub-menu-lists-col::-webkit-scrollbar-thumb {
-      background-color: red;
+      background-color: transparent;
       width: 1px; }
   .new-layout-page .sub-menu-item {
     margin: 0 12px;
