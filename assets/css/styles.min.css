@@ -6378,7 +6378,8 @@ html, body {
   line-height: 1.25;
   color: #585077;
   margin: 0 15px;
-  padding: 10px 0; }
+  padding: 10px 0;
+  white-space: nowrap; }
   @media (min-width: 992px) {
     .new-layout-page .sub-menu-item {
       cursor: pointer; } }
@@ -6434,7 +6435,8 @@ html, body {
   align-items: flex-end;
   width: auto;
   height: 100px;
-  flex-grow: 1; }
+  flex-grow: 0;
+  margin-left: auto; }
 
 .new-layout-page .notification {
   position: relative;
@@ -6479,9 +6481,6 @@ html, body {
     border-radius: 50%;
     background-color: #fdc25d;
     font-size: .5rem; }
-
-.new-layout-page .info-inner {
-  position: relative; }
 
 .new-layout-page .dropdown-list.visible,
 .new-layout-page .dropdown-info.visible {
@@ -6559,22 +6558,37 @@ html, body {
   align-items: flex-end;
   height: 100%;
   margin-bottom: 20px;
-  margin-left: 30px; }
+  margin-left: 20px; }
+
+.new-layout-page .info {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin-bottom: 30px;
+  margin-left: 10px; }
+  .new-layout-page .info .fa-chevron-down {
+    position: absolute;
+    bottom: 10px;
+    top: auto;
+    right: -5px; }
 
 .new-layout-page .info-inner {
   display: flex;
   flex-direction: column;
   line-height: 1.25;
+  padding-right: 10px;
   color: #585077; }
   @media (min-width: 1000px) {
     .new-layout-page .info-inner {
       cursor: pointer; } }
 
-.new-layout-page .company {
-  font-weight: 300; }
+.new-layout-page .name-wrap {
+  white-space: nowrap; }
 
-.new-layout-page .fa-chevron-down {
-  margin-left: .5rem; }
+.new-layout-page .company {
+  font-weight: 300;
+  white-space: nowrap; }
 
 .new-layout-page .image-container {
   position: relative;
@@ -6764,7 +6778,8 @@ html, body {
   line-height: 1.25;
   color: #585077;
   margin: 0 15px;
-  padding: 10px 0; }
+  padding: 10px 0;
+  white-space: nowrap; }
   @media (min-width: 992px) {
     .area-settings .sub-menu-item {
       cursor: pointer; } }
@@ -6820,7 +6835,8 @@ html, body {
   align-items: flex-end;
   width: auto;
   height: 100px;
-  flex-grow: 1; }
+  flex-grow: 0;
+  margin-left: auto; }
 
 .area-settings .notification {
   position: relative;
@@ -6865,9 +6881,6 @@ html, body {
     border-radius: 50%;
     background-color: #fdc25d;
     font-size: .5rem; }
-
-.area-settings .info-inner {
-  position: relative; }
 
 .area-settings .dropdown-list.visible,
 .area-settings .dropdown-info.visible {
@@ -6945,22 +6958,37 @@ html, body {
   align-items: flex-end;
   height: 100%;
   margin-bottom: 20px;
-  margin-left: 30px; }
+  margin-left: 20px; }
+
+.area-settings .info {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin-bottom: 30px;
+  margin-left: 10px; }
+  .area-settings .info .fa-chevron-down {
+    position: absolute;
+    bottom: 10px;
+    top: auto;
+    right: -5px; }
 
 .area-settings .info-inner {
   display: flex;
   flex-direction: column;
   line-height: 1.25;
+  padding-right: 10px;
   color: #585077; }
   @media (min-width: 1000px) {
     .area-settings .info-inner {
       cursor: pointer; } }
 
-.area-settings .company {
-  font-weight: 300; }
+.area-settings .name-wrap {
+  white-space: nowrap; }
 
-.area-settings .fa-chevron-down {
-  margin-left: .5rem; }
+.area-settings .company {
+  font-weight: 300;
+  white-space: nowrap; }
 
 .area-settings .image-container {
   position: relative;
@@ -7166,7 +7194,7 @@ html, body {
   background-color: #ffffff; }
 
 .area-settings .card {
-  padding: 0 1.75rem;
+  padding: 0 15px;
   border: none !important; }
 
 .area-settings .card-header {
