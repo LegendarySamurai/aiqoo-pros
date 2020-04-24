@@ -3038,6 +3038,12 @@
   .new-layout-page .card {
     padding: 0 .35rem; } }
 
+@media (max-width: 767px) {
+  .area-settings .map {
+    display: none; }
+  .area-settings .right-side-content-inner .col-5 {
+    padding-left: 0; } }
+
 @media (max-width: 599px) {
   .area-settings .map {
     display: none; } }

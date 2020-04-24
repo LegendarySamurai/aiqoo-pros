@@ -8,7 +8,17 @@
 
 @media(max-width: 991px) {}
 
-@media(max-width: 767px) {}
+@media(max-width: 767px) {
+  .map {
+    display: none;
+  }
+
+  .right-side-content-inner {
+    .col-5 {
+      padding-left: 0;
+    }
+  }
+}
 
 @media(max-width: 599px) {
   .map {

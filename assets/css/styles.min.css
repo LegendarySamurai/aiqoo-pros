@@ -7038,7 +7038,6 @@ html, body {
     color: #d6d6d6; }
 
 .area-settings .input-group-prepend {
-  z-index: 1 !important;
   right: auto !important;
   left: 0;
   padding: .6rem .45rem !important; }
