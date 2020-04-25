@@ -6337,7 +6337,7 @@ html, body {
   height: 100%; }
   .new-layout-page .right-side-container .page-title {
     line-height: 1.04;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #585077;
     font-size: 1.35rem;
     white-space: nowrap; }
@@ -6371,7 +6371,8 @@ html, body {
 .new-layout-page .sub-menu-items {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  height: 40px; }
 
 .new-layout-page .sub-menu-item {
   display: block;
@@ -6429,13 +6430,14 @@ html, body {
   width: auto; }
 
 .new-layout-page .user-settings-col {
+  flex-grow: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   width: auto;
   height: 100px;
-  flex-grow: 0;
+  padding-bottom: 8px;
   margin-left: auto; }
 
 .new-layout-page .notification {
@@ -6443,7 +6445,6 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  margin-bottom: 20px;
   height: 100%; }
   .new-layout-page .notification.notification-1 .notification-button-icon {
     padding: 8px; }
@@ -6482,8 +6483,8 @@ html, body {
     background-color: #fdc25d;
     font-size: .5rem; }
 
-.new-layout-page .dropdown-list.visible,
-.new-layout-page .dropdown-info.visible {
+.new-layout-page .dropdown-info.visible,
+.new-layout-page .dropdown-list.visible {
   position: absolute;
   left: 50%;
   top: 0;
@@ -6498,9 +6499,13 @@ html, body {
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff; }
 
-.new-layout-page .dropdown-list.invisible,
-.new-layout-page .dropdown-info.invisible {
+.new-layout-page .dropdown-info.invisible,
+.new-layout-page .dropdown-list.invisible {
   display: none; }
+
+.new-layout-page .dropdown-info.visible {
+  top: 110%;
+  transform: translate(-50%, 0%); }
 
 .new-layout-page .dropdown-list-item {
   display: flex;
@@ -6553,25 +6558,34 @@ html, body {
   align-items: center; }
 
 .new-layout-page .user {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   margin-left: 20px; }
+  .new-layout-page .user::after {
+    position: absolute;
+    left: -.4em;
+    bottom: .4em;
+    top: auto;
+    content: "";
+    display: block;
+    border-top: 1px solid transparent;
+    border-right: 1px solid #342e4a;
+    border-bottom: 1px solid #342e4a;
+    border-left: 1px solid transparent;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg); }
 
 .new-layout-page .info {
   position: relative;
   display: flex;
   align-items: flex-end;
   height: 100%;
-  margin-bottom: 30px;
   margin-left: 10px; }
-  .new-layout-page .info .fa-chevron-down {
-    position: absolute;
-    bottom: 10px;
-    top: auto;
-    right: -5px; }
 
 .new-layout-page .info-inner {
   display: flex;
@@ -6584,35 +6598,29 @@ html, body {
       cursor: pointer; } }
 
 .new-layout-page .name-wrap {
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: right; }
 
 .new-layout-page .company {
   font-weight: 300;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: right; }
 
-.new-layout-page .image-container {
+.new-layout-page .image-wrapper {
   position: relative;
-  width: 60px;
-  height: 60px;
-  margin-left: 1rem;
-  padding: 3px;
-  border-radius: 20px; }
-  .new-layout-page .image-container::before {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 50%;
-    height: calc(100px - 10px);
-    display: block;
-    content: '';
-    background-color: #585077;
-    width: 100%;
-    transform: translate(-50%, -33%);
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px; }
-  .new-layout-page .image-container img {
-    position: relative;
-    z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  background-color: #585077; }
+  .new-layout-page .image-wrapper .image-container {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 20px; }
+  .new-layout-page .image-wrapper img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -6737,7 +6745,7 @@ html, body {
   height: 100%; }
   .area-settings .right-side-container .page-title {
     line-height: 1.04;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #585077;
     font-size: 1.35rem;
     white-space: nowrap; }
@@ -6771,7 +6779,8 @@ html, body {
 .area-settings .sub-menu-items {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  height: 40px; }
 
 .area-settings .sub-menu-item {
   display: block;
@@ -6829,13 +6838,14 @@ html, body {
   width: auto; }
 
 .area-settings .user-settings-col {
+  flex-grow: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   width: auto;
   height: 100px;
-  flex-grow: 0;
+  padding-bottom: 8px;
   margin-left: auto; }
 
 .area-settings .notification {
@@ -6843,7 +6853,6 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  margin-bottom: 20px;
   height: 100%; }
   .area-settings .notification.notification-1 .notification-button-icon {
     padding: 8px; }
@@ -6882,8 +6891,8 @@ html, body {
     background-color: #fdc25d;
     font-size: .5rem; }
 
-.area-settings .dropdown-list.visible,
-.area-settings .dropdown-info.visible {
+.area-settings .dropdown-info.visible,
+.area-settings .dropdown-list.visible {
   position: absolute;
   left: 50%;
   top: 0;
@@ -6898,9 +6907,13 @@ html, body {
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff; }
 
-.area-settings .dropdown-list.invisible,
-.area-settings .dropdown-info.invisible {
+.area-settings .dropdown-info.invisible,
+.area-settings .dropdown-list.invisible {
   display: none; }
+
+.area-settings .dropdown-info.visible {
+  top: 110%;
+  transform: translate(-50%, 0%); }
 
 .area-settings .dropdown-list-item {
   display: flex;
@@ -6953,25 +6966,34 @@ html, body {
   align-items: center; }
 
 .area-settings .user {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   margin-left: 20px; }
+  .area-settings .user::after {
+    position: absolute;
+    left: -.4em;
+    bottom: .4em;
+    top: auto;
+    content: "";
+    display: block;
+    border-top: 1px solid transparent;
+    border-right: 1px solid #342e4a;
+    border-bottom: 1px solid #342e4a;
+    border-left: 1px solid transparent;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg); }
 
 .area-settings .info {
   position: relative;
   display: flex;
   align-items: flex-end;
   height: 100%;
-  margin-bottom: 30px;
   margin-left: 10px; }
-  .area-settings .info .fa-chevron-down {
-    position: absolute;
-    bottom: 10px;
-    top: auto;
-    right: -5px; }
 
 .area-settings .info-inner {
   display: flex;
@@ -6984,35 +7006,29 @@ html, body {
       cursor: pointer; } }
 
 .area-settings .name-wrap {
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: right; }
 
 .area-settings .company {
   font-weight: 300;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-align: right; }
 
-.area-settings .image-container {
+.area-settings .image-wrapper {
   position: relative;
-  width: 60px;
-  height: 60px;
-  margin-left: 1rem;
-  padding: 3px;
-  border-radius: 20px; }
-  .area-settings .image-container::before {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 50%;
-    height: calc(100px - 10px);
-    display: block;
-    content: '';
-    background-color: #585077;
-    width: 100%;
-    transform: translate(-50%, -33%);
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px; }
-  .area-settings .image-container img {
-    position: relative;
-    z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  background-color: #585077; }
+  .area-settings .image-wrapper .image-container {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    border-radius: 20px; }
+  .area-settings .image-wrapper img {
     width: 100%;
     height: 100%;
     border-radius: 50%;

@@ -8,6 +8,11 @@
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  // Area-list-outer
+  .areas-list-outer {
+    padding: 1.5rem 1.5rem;
+  }
 }
 
 @media(max-width: 1199px) {
@@ -122,35 +127,35 @@
   }
 
   .areas-list-outer {
-    padding: 2rem 1rem;
+    //padding: 2rem 1rem;
   }
 }
 
 
 @media(max-width: 767px) {
   .settings-inner {
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
   }
 
   .notification {
-    width: 50%;
-    height: 50%;
-    margin-bottom: 0;
-    order: 1;
+    //width: 50%;
+    //height: 50%;
+    //margin-bottom: 0;
+    //order: 1;
 
-    &.notification-1 {z-index: 3;}
+    //&.notification-1 {z-index: 3;}
   }
 
   .info {
     height: 50%;
-    order: 3;
+    //order: 3;
     margin-left: 0;
     margin-bottom: 0;
     align-items: inherit;
 
-    .fa-chevron-down {
-      bottom: 20px;
-    }
+    //.fa-chevron-down {
+    //  bottom: 20px;
+    //}
   }
 
   // Dropdown

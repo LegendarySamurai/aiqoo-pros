@@ -2984,7 +2984,9 @@
 @media (max-width: 1299px) {
   .new-layout-page .user {
     margin-right: 10px;
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  .new-layout-page .areas-list-outer {
+    padding: 1.5rem 1.5rem; } }
 
 @media (max-width: 1199px) {
   .new-layout-page .user {
@@ -3048,28 +3050,14 @@
   .new-layout-page .sub-menu-item:hover:after {
     display: none; }
   .new-layout-page .card {
-    padding: 0 8px; }
-  .new-layout-page .areas-list-outer {
-    padding: 2rem 1rem; } }
+    padding: 0 8px; } }
 
 @media (max-width: 767px) {
-  .new-layout-page .settings-inner {
-    flex-wrap: wrap; }
-  .new-layout-page .notification {
-    width: 50%;
-    height: 50%;
-    margin-bottom: 0;
-    order: 1; }
-    .new-layout-page .notification.notification-1 {
-      z-index: 3; }
   .new-layout-page .info {
     height: 50%;
-    order: 3;
     margin-left: 0;
     margin-bottom: 0;
     align-items: inherit; }
-    .new-layout-page .info .fa-chevron-down {
-      bottom: 20px; }
   .new-layout-page .dropdown-list.visible,
   .new-layout-page .dropdown-info.visible {
     transform: translate(-50%, 25%); } }
