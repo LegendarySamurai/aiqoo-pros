@@ -494,7 +494,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 // Hide on
 
 .hide-in-1570 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1570px) {
     display: none !important;
@@ -502,7 +502,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1500 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1500px) {
     display: none !important;
@@ -510,7 +510,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1470 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1470px) {
     display: none !important;
@@ -518,7 +518,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1440 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1440px) {
     display: none !important;
@@ -526,7 +526,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1400 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1400px) {
     display: none !important;
@@ -542,7 +542,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1340 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1340px) {
     display: none !important;
@@ -550,7 +550,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1310 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1310px) {
     display: none !important;
@@ -558,7 +558,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1300 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1300px) {
     display: none !important;
@@ -566,7 +566,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1220 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1220px) {
     display: none !important;
@@ -574,7 +574,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1200 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1200px) {
     display: none !important;
@@ -582,7 +582,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1120 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1120px) {
     display: none !important;
@@ -590,7 +590,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1070 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1070px) {
     display: none !important;
@@ -598,15 +598,31 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-1024 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1024px) {
     display: none !important;
   }
 }
 
+.hide-in-1030 {
+  display: block;
+
+  @media(max-width:1030px) {
+    display: none !important;
+  }
+}
+
+.hide-in-1040 {
+  display: block;
+
+  @media(max-width: 1040px) {
+    display: none !important;
+  }
+}
+
 .hide-in-1000 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:1000px) {
     display: none !important;
@@ -614,7 +630,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-970 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:970px) {
     display: none !important;
@@ -622,15 +638,23 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-950 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:950px) {
     display: none !important;
   }
 }
 
+.hide-in-940 {
+  display: block;
+
+  @media(max-width:940px) {
+    display: none !important;
+  }
+}
+
 .hide-in-860 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:860px) {
     display: none !important;
@@ -638,7 +662,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-830 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:830px) {
     display: none !important;
@@ -646,7 +670,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-740 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:740px) {
     display: none !important;
@@ -654,15 +678,23 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 }
 
 .hide-in-730 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:730px) {
     display: none !important;
   }
 }
 
+.hide-in-680 {
+  display: block;
+
+  @media(max-width:680px) {
+    display: none !important;
+  }
+}
+
 .hide-in-620 {
-  display: inline-block;
+  display: block;
 
   @media(max-width:620px) {
     display: none !important;
@@ -671,11 +703,19 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 
 // Show on
 
+.show-in-680 {
+  display: none !important;
+
+  @media(max-width: 680px) {
+    display: block !important;
+  }
+}
+
 .show-in-830 {
   display: none !important;
 
   @media(max-width: 830px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
@@ -683,7 +723,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 860px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
@@ -691,7 +731,15 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 970px) {
-    display: inline-block !important;
+    display: block !important;
+  }
+}
+
+.show-in-940 {
+  display: none !important;
+
+  @media(max-width: 940px) {
+    display: block !important;
   }
 }
 
@@ -699,7 +747,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 1000px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
@@ -707,7 +755,31 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 1024px) {
-    display: inline-block !important;
+    display: block !important;
+  }
+}
+
+.show-in-1030 {
+  display: none !important;
+
+  @media(max-width: 1030px) {
+    display: block !important;
+  }
+}
+
+.show-in-1040 {
+  display: none !important;
+
+  @media(max-width: 1040px) {
+    display: block !important;
+  }
+}
+
+.show-in-1070 {
+  display: none !important;
+
+  @media(max-width: 1070px) {
+    display: block !important;
   }
 }
 
@@ -715,7 +787,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 1120px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
@@ -723,7 +795,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 1200px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
@@ -731,7 +803,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 1220px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
@@ -739,7 +811,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 1500px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 
@@ -747,7 +819,7 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   display: none !important;
 
   @media(max-width: 1569px) {
-    display: inline-block !important;
+    display: block !important;
   }
 }
 

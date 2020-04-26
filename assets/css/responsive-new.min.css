@@ -3002,49 +3002,9 @@
     width: 35px;
     height: 35px; } }
 
-@media (max-width: 1100px) {
-  .new-layout-page .sub-menu-item {
-    margin: 0 6px; }
-    .new-layout-page .sub-menu-item:first-of-type {
-      margin: 0 6px 0 0; } }
-
-@media (max-width: 1024px) {
-  .new-layout-page ::-webkit-scrollbar {
-    width: 0;
-    height: 0; }
-  .new-layout-page ::-webkit-scrollbar-thumb {
-    background: transparent; }
-  .new-layout-page ::-webkit-scrollbar-track {
-    background-color: transparent; }
-  .new-layout-page * {
-    box-sizing: border-box; }
-  .new-layout-page .sub-menu-col .sub-menu-item {
-    display: inline-block;
-    padding: 0;
-    margin: 0 12px;
-    white-space: nowrap; }
-    .new-layout-page .sub-menu-col .sub-menu-item:first-of-type {
-      margin: 0 12px; }
-  .new-layout-page .sub-menu-lists {
-    max-width: 600px;
-    height: 40px;
-    line-height: 2.5;
-    margin: 0 auto; }
-    .new-layout-page .sub-menu-lists .sub-menu-items {
-      -webkit-overflow-scrolling: touch;
-      display: block;
-      overflow: auto;
-      white-space: nowrap; } }
-
-@media (max-width: 999px) {
+@media (max-width: 1070px) {
   .new-layout-page .sub-menu-col {
-    max-width: 50%; }
-  .new-layout-page .left-side-col {
-    min-width: 200px; }
-  .new-layout-page .left-side-container {
-    min-width: 200px; }
-  .new-layout-page .fixed-top-panel-d {
-    width: calc(100% - 200px); } }
+    flex-grow: 1; } }
 
 @media (max-width: 991px) {
   .new-layout-page .sub-menu-item:hover:after {
@@ -3052,15 +3012,18 @@
   .new-layout-page .card {
     padding: 0 8px; } }
 
+@media (max-width: 899px) {
+  .new-layout-page .create-area-outer {
+    padding: .75rem 1.25rem; }
+  .new-layout-page .areas-list-outer {
+    padding: .75rem 1.25rem; } }
+
 @media (max-width: 767px) {
   .new-layout-page .info {
     height: 50%;
     margin-left: 0;
     margin-bottom: 0;
-    align-items: inherit; }
-  .new-layout-page .dropdown-list.visible,
-  .new-layout-page .dropdown-info.visible {
-    transform: translate(-50%, 25%); } }
+    align-items: inherit; } }
 
 @media (max-width: 767px) {
   .area-settings .map {

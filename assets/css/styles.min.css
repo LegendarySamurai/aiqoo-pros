@@ -513,31 +513,31 @@ app {
   border-bottom: solid 5px red; }
 
 .hide-in-1570 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1570px) {
     .hide-in-1570 {
       display: none !important; } }
 
 .hide-in-1500 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1500px) {
     .hide-in-1500 {
       display: none !important; } }
 
 .hide-in-1470 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1470px) {
     .hide-in-1470 {
       display: none !important; } }
 
 .hide-in-1440 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1440px) {
     .hide-in-1440 {
       display: none !important; } }
 
 .hide-in-1400 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1400px) {
     .hide-in-1400 {
       display: none !important; } }
@@ -549,160 +549,214 @@ app {
       display: none; } }
 
 .hide-in-1340 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1340px) {
     .hide-in-1340 {
       display: none !important; } }
 
 .hide-in-1310 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1310px) {
     .hide-in-1310 {
       display: none !important; } }
 
 .hide-in-1300 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1300px) {
     .hide-in-1300 {
       display: none !important; } }
 
 .hide-in-1220 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1220px) {
     .hide-in-1220 {
       display: none !important; } }
 
 .hide-in-1200 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1200px) {
     .hide-in-1200 {
       display: none !important; } }
 
 .hide-in-1120 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1120px) {
     .hide-in-1120 {
       display: none !important; } }
 
 .hide-in-1070 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1070px) {
     .hide-in-1070 {
       display: none !important; } }
 
 .hide-in-1024 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1024px) {
     .hide-in-1024 {
       display: none !important; } }
 
+.hide-in-1030 {
+  display: block; }
+  @media (max-width: 1030px) {
+    .hide-in-1030 {
+      display: none !important; } }
+
+.hide-in-1040 {
+  display: block; }
+  @media (max-width: 1040px) {
+    .hide-in-1040 {
+      display: none !important; } }
+
 .hide-in-1000 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1000px) {
     .hide-in-1000 {
       display: none !important; } }
 
 .hide-in-970 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 970px) {
     .hide-in-970 {
       display: none !important; } }
 
 .hide-in-950 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 950px) {
     .hide-in-950 {
       display: none !important; } }
 
+.hide-in-940 {
+  display: block; }
+  @media (max-width: 940px) {
+    .hide-in-940 {
+      display: none !important; } }
+
 .hide-in-860 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 860px) {
     .hide-in-860 {
       display: none !important; } }
 
 .hide-in-830 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 830px) {
     .hide-in-830 {
       display: none !important; } }
 
 .hide-in-740 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 740px) {
     .hide-in-740 {
       display: none !important; } }
 
 .hide-in-730 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 730px) {
     .hide-in-730 {
       display: none !important; } }
 
+.hide-in-680 {
+  display: block; }
+  @media (max-width: 680px) {
+    .hide-in-680 {
+      display: none !important; } }
+
 .hide-in-620 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 620px) {
     .hide-in-620 {
       display: none !important; } }
+
+.show-in-680 {
+  display: none !important; }
+  @media (max-width: 680px) {
+    .show-in-680 {
+      display: block !important; } }
 
 .show-in-830 {
   display: none !important; }
   @media (max-width: 830px) {
     .show-in-830 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-860 {
   display: none !important; }
   @media (max-width: 860px) {
     .show-in-860 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-970 {
   display: none !important; }
   @media (max-width: 970px) {
     .show-in-970 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-940 {
+  display: none !important; }
+  @media (max-width: 940px) {
+    .show-in-940 {
+      display: block !important; } }
 
 .show-in-1000 {
   display: none !important; }
   @media (max-width: 1000px) {
     .show-in-1000 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
     .show-in-1024 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-1030 {
+  display: none !important; }
+  @media (max-width: 1030px) {
+    .show-in-1030 {
+      display: block !important; } }
+
+.show-in-1040 {
+  display: none !important; }
+  @media (max-width: 1040px) {
+    .show-in-1040 {
+      display: block !important; } }
+
+.show-in-1070 {
+  display: none !important; }
+  @media (max-width: 1070px) {
+    .show-in-1070 {
+      display: block !important; } }
 
 .show-in-1120 {
   display: none !important; }
   @media (max-width: 1120px) {
     .show-in-1120 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1200 {
   display: none !important; }
   @media (max-width: 1200px) {
     .show-in-1200 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1220 {
   display: none !important; }
   @media (max-width: 1220px) {
     .show-in-1220 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1500 {
   display: none !important; }
   @media (max-width: 1500px) {
     .show-in-1500 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1570 {
   display: none !important; }
   @media (max-width: 1569px) {
     .show-in-1570 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 img {
   display: block;
@@ -5482,31 +5536,31 @@ app {
   border-bottom: solid 5px red; }
 
 .hide-in-1570 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1570px) {
     .hide-in-1570 {
       display: none !important; } }
 
 .hide-in-1500 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1500px) {
     .hide-in-1500 {
       display: none !important; } }
 
 .hide-in-1470 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1470px) {
     .hide-in-1470 {
       display: none !important; } }
 
 .hide-in-1440 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1440px) {
     .hide-in-1440 {
       display: none !important; } }
 
 .hide-in-1400 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1400px) {
     .hide-in-1400 {
       display: none !important; } }
@@ -5518,160 +5572,214 @@ app {
       display: none; } }
 
 .hide-in-1340 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1340px) {
     .hide-in-1340 {
       display: none !important; } }
 
 .hide-in-1310 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1310px) {
     .hide-in-1310 {
       display: none !important; } }
 
 .hide-in-1300 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1300px) {
     .hide-in-1300 {
       display: none !important; } }
 
 .hide-in-1220 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1220px) {
     .hide-in-1220 {
       display: none !important; } }
 
 .hide-in-1200 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1200px) {
     .hide-in-1200 {
       display: none !important; } }
 
 .hide-in-1120 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1120px) {
     .hide-in-1120 {
       display: none !important; } }
 
 .hide-in-1070 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1070px) {
     .hide-in-1070 {
       display: none !important; } }
 
 .hide-in-1024 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1024px) {
     .hide-in-1024 {
       display: none !important; } }
 
+.hide-in-1030 {
+  display: block; }
+  @media (max-width: 1030px) {
+    .hide-in-1030 {
+      display: none !important; } }
+
+.hide-in-1040 {
+  display: block; }
+  @media (max-width: 1040px) {
+    .hide-in-1040 {
+      display: none !important; } }
+
 .hide-in-1000 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1000px) {
     .hide-in-1000 {
       display: none !important; } }
 
 .hide-in-970 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 970px) {
     .hide-in-970 {
       display: none !important; } }
 
 .hide-in-950 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 950px) {
     .hide-in-950 {
       display: none !important; } }
 
+.hide-in-940 {
+  display: block; }
+  @media (max-width: 940px) {
+    .hide-in-940 {
+      display: none !important; } }
+
 .hide-in-860 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 860px) {
     .hide-in-860 {
       display: none !important; } }
 
 .hide-in-830 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 830px) {
     .hide-in-830 {
       display: none !important; } }
 
 .hide-in-740 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 740px) {
     .hide-in-740 {
       display: none !important; } }
 
 .hide-in-730 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 730px) {
     .hide-in-730 {
       display: none !important; } }
 
+.hide-in-680 {
+  display: block; }
+  @media (max-width: 680px) {
+    .hide-in-680 {
+      display: none !important; } }
+
 .hide-in-620 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 620px) {
     .hide-in-620 {
       display: none !important; } }
+
+.show-in-680 {
+  display: none !important; }
+  @media (max-width: 680px) {
+    .show-in-680 {
+      display: block !important; } }
 
 .show-in-830 {
   display: none !important; }
   @media (max-width: 830px) {
     .show-in-830 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-860 {
   display: none !important; }
   @media (max-width: 860px) {
     .show-in-860 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-970 {
   display: none !important; }
   @media (max-width: 970px) {
     .show-in-970 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-940 {
+  display: none !important; }
+  @media (max-width: 940px) {
+    .show-in-940 {
+      display: block !important; } }
 
 .show-in-1000 {
   display: none !important; }
   @media (max-width: 1000px) {
     .show-in-1000 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
     .show-in-1024 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-1030 {
+  display: none !important; }
+  @media (max-width: 1030px) {
+    .show-in-1030 {
+      display: block !important; } }
+
+.show-in-1040 {
+  display: none !important; }
+  @media (max-width: 1040px) {
+    .show-in-1040 {
+      display: block !important; } }
+
+.show-in-1070 {
+  display: none !important; }
+  @media (max-width: 1070px) {
+    .show-in-1070 {
+      display: block !important; } }
 
 .show-in-1120 {
   display: none !important; }
   @media (max-width: 1120px) {
     .show-in-1120 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1200 {
   display: none !important; }
   @media (max-width: 1200px) {
     .show-in-1200 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1220 {
   display: none !important; }
   @media (max-width: 1220px) {
     .show-in-1220 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1500 {
   display: none !important; }
   @media (max-width: 1500px) {
     .show-in-1500 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1570 {
   display: none !important; }
   @media (max-width: 1569px) {
     .show-in-1570 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 img {
   display: block;
@@ -6380,23 +6488,20 @@ html, body {
   color: #585077;
   margin: 0 15px;
   padding: 10px 0;
-  white-space: nowrap; }
-  @media (min-width: 992px) {
-    .new-layout-page .sub-menu-item {
-      cursor: pointer; } }
-  @media (min-width: 999px) {
-    .new-layout-page .sub-menu-item:hover {
-      position: relative; }
-      .new-layout-page .sub-menu-item:hover::after {
-        position: absolute;
-        bottom: -2px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 120%;
-        height: 4px;
-        display: block;
-        content: '';
-        background-color: #585077; } }
+  white-space: nowrap;
+  cursor: pointer; }
+  .new-layout-page .sub-menu-item:hover {
+    position: relative; }
+    .new-layout-page .sub-menu-item:hover::after {
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 120%;
+      height: 4px;
+      display: block;
+      content: '';
+      background-color: #585077; }
   .new-layout-page .sub-menu-item.is-active {
     position: relative; }
     .new-layout-page .sub-menu-item.is-active::after {
@@ -6409,6 +6514,10 @@ html, body {
       display: block;
       content: '';
       background-color: #585077; }
+  .new-layout-page .sub-menu-item.more-btn:hover::after {
+    display: none; }
+  .new-layout-page .sub-menu-item.more-btn.is-active::after {
+    display: none; }
   .new-layout-page .sub-menu-item:first-of-type {
     margin: 0 15px 0 0; }
 
@@ -6428,6 +6537,67 @@ html, body {
   height: 100px;
   padding-top: 25px;
   width: auto; }
+
+.new-layout-page .more-btn .more-btn-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.new-layout-page .more-btn i {
+  margin-right: 8px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  color: #585077;
+  font-weight: 300; }
+
+.new-layout-page .more-btn .sub-menu-container {
+  display: none; }
+
+.new-layout-page .more-btn:hover .sub-menu-container {
+  display: block;
+  padding-top: 34px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 34px;
+  left: 0;
+  transform: translate(0, 100%);
+  z-index: 10; }
+
+.new-layout-page .more-btn:hover .hide-sub-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-inline-start: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19); }
+
+.new-layout-page .more-btn:hover .hide-sub-menu > li {
+  margin: 2px 0;
+  padding: 10px 15px;
+  list-style: none;
+  font-size: 1rem;
+  color: #585077; }
+  .new-layout-page .more-btn:hover .hide-sub-menu > li:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa; }
+
+.new-layout-page .more-btn:hover .hide-sub-menu > li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.new-layout-page .more-btn:hover .hide-sub-menu > li > a i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  text-align: center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  color: #585077;
+  font-weight: 300; }
 
 .new-layout-page .user-settings-col {
   flex-grow: 0;
@@ -6797,23 +6967,20 @@ html, body {
   color: #585077;
   margin: 0 15px;
   padding: 10px 0;
-  white-space: nowrap; }
-  @media (min-width: 992px) {
-    .area-settings .sub-menu-item {
-      cursor: pointer; } }
-  @media (min-width: 999px) {
-    .area-settings .sub-menu-item:hover {
-      position: relative; }
-      .area-settings .sub-menu-item:hover::after {
-        position: absolute;
-        bottom: -2px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 120%;
-        height: 4px;
-        display: block;
-        content: '';
-        background-color: #585077; } }
+  white-space: nowrap;
+  cursor: pointer; }
+  .area-settings .sub-menu-item:hover {
+    position: relative; }
+    .area-settings .sub-menu-item:hover::after {
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 120%;
+      height: 4px;
+      display: block;
+      content: '';
+      background-color: #585077; }
   .area-settings .sub-menu-item.is-active {
     position: relative; }
     .area-settings .sub-menu-item.is-active::after {
@@ -6826,6 +6993,10 @@ html, body {
       display: block;
       content: '';
       background-color: #585077; }
+  .area-settings .sub-menu-item.more-btn:hover::after {
+    display: none; }
+  .area-settings .sub-menu-item.more-btn.is-active::after {
+    display: none; }
   .area-settings .sub-menu-item:first-of-type {
     margin: 0 15px 0 0; }
 
@@ -6845,6 +7016,67 @@ html, body {
   height: 100px;
   padding-top: 25px;
   width: auto; }
+
+.area-settings .more-btn .more-btn-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.area-settings .more-btn i {
+  margin-right: 8px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  color: #585077;
+  font-weight: 300; }
+
+.area-settings .more-btn .sub-menu-container {
+  display: none; }
+
+.area-settings .more-btn:hover .sub-menu-container {
+  display: block;
+  padding-top: 34px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 34px;
+  left: 0;
+  transform: translate(0, 100%);
+  z-index: 10; }
+
+.area-settings .more-btn:hover .hide-sub-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-inline-start: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19); }
+
+.area-settings .more-btn:hover .hide-sub-menu > li {
+  margin: 2px 0;
+  padding: 10px 15px;
+  list-style: none;
+  font-size: 1rem;
+  color: #585077; }
+  .area-settings .more-btn:hover .hide-sub-menu > li:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa; }
+
+.area-settings .more-btn:hover .hide-sub-menu > li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.area-settings .more-btn:hover .hide-sub-menu > li > a i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  text-align: center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  color: #585077;
+  font-weight: 300; }
 
 .area-settings .user-settings-col {
   flex-grow: 0;
@@ -7081,7 +7313,8 @@ html, body {
   width: auto;
   height: 100%;
   margin-right: 2rem;
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  white-space: nowrap; }
 
 .area-settings .search {
   width: auto;
@@ -7183,6 +7416,9 @@ html, body {
       margin-bottom: 1.5rem; }
   .area-settings .results .custom-control {
     padding-left: 0; }
+  .area-settings .results .custom-checkbox-ui {
+    width: 1.25rem !important;
+    height: 1.25rem !important; }
 
 .area-settings .map {
   width: 100%; }
@@ -7212,6 +7448,8 @@ html, body {
   .area-settings .area-btn.collapsed .edit-btn {
     display: flex;
     align-items: center;
+    width: 70px;
+    height: 30px;
     margin-left: auto; }
   .area-settings .area-btn.collapsed .fa-map-marker-edit {
     margin-right: .5rem; }
@@ -7892,27 +8130,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .my-profile-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .my-profile-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .my-profile-page .hide-in-1570 {
         display: none !important; } }
   .my-profile-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .my-profile-page .hide-in-1500 {
         display: none !important; } }
   .my-profile-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .my-profile-page .hide-in-1470 {
         display: none !important; } }
   .my-profile-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .my-profile-page .hide-in-1440 {
         display: none !important; } }
   .my-profile-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .my-profile-page .hide-in-1400 {
         display: none !important; } }
@@ -7922,135 +8160,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .my-profile-page .hide-from-1350 {
         display: none; } }
   .my-profile-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .my-profile-page .hide-in-1340 {
         display: none !important; } }
   .my-profile-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .my-profile-page .hide-in-1310 {
         display: none !important; } }
   .my-profile-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .my-profile-page .hide-in-1300 {
         display: none !important; } }
   .my-profile-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .my-profile-page .hide-in-1220 {
         display: none !important; } }
   .my-profile-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .my-profile-page .hide-in-1200 {
         display: none !important; } }
   .my-profile-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .my-profile-page .hide-in-1120 {
         display: none !important; } }
   .my-profile-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .my-profile-page .hide-in-1070 {
         display: none !important; } }
   .my-profile-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .my-profile-page .hide-in-1024 {
         display: none !important; } }
+  .my-profile-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .my-profile-page .hide-in-1030 {
+        display: none !important; } }
+  .my-profile-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .my-profile-page .hide-in-1040 {
+        display: none !important; } }
   .my-profile-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .my-profile-page .hide-in-1000 {
         display: none !important; } }
   .my-profile-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .my-profile-page .hide-in-970 {
         display: none !important; } }
   .my-profile-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .my-profile-page .hide-in-950 {
         display: none !important; } }
+  .my-profile-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .my-profile-page .hide-in-940 {
+        display: none !important; } }
   .my-profile-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .my-profile-page .hide-in-860 {
         display: none !important; } }
   .my-profile-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .my-profile-page .hide-in-830 {
         display: none !important; } }
   .my-profile-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .my-profile-page .hide-in-740 {
         display: none !important; } }
   .my-profile-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .my-profile-page .hide-in-730 {
         display: none !important; } }
+  .my-profile-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .my-profile-page .hide-in-680 {
+        display: none !important; } }
   .my-profile-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .my-profile-page .hide-in-620 {
         display: none !important; } }
+  .my-profile-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .my-profile-page .show-in-680 {
+        display: block !important; } }
   .my-profile-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .my-profile-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .my-profile-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .my-profile-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .my-profile-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .my-profile-page .show-in-940 {
+        display: block !important; } }
   .my-profile-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .my-profile-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .my-profile-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .my-profile-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .my-profile-page .show-in-1030 {
+        display: block !important; } }
+  .my-profile-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .my-profile-page .show-in-1040 {
+        display: block !important; } }
+  .my-profile-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .my-profile-page .show-in-1070 {
+        display: block !important; } }
   .my-profile-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .my-profile-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .my-profile-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .my-profile-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .my-profile-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .my-profile-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-profile-page img {
     display: block;
     max-width: 100%; }
@@ -8797,27 +9080,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-company-profile-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .add-company-profile-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .add-company-profile-page .hide-in-1570 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .add-company-profile-page .hide-in-1500 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .add-company-profile-page .hide-in-1470 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .add-company-profile-page .hide-in-1440 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .add-company-profile-page .hide-in-1400 {
         display: none !important; } }
@@ -8827,135 +9110,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .add-company-profile-page .hide-from-1350 {
         display: none; } }
   .add-company-profile-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .add-company-profile-page .hide-in-1340 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .add-company-profile-page .hide-in-1310 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .add-company-profile-page .hide-in-1300 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .add-company-profile-page .hide-in-1220 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .add-company-profile-page .hide-in-1200 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .add-company-profile-page .hide-in-1120 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .add-company-profile-page .hide-in-1070 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .add-company-profile-page .hide-in-1024 {
         display: none !important; } }
+  .add-company-profile-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .add-company-profile-page .hide-in-1030 {
+        display: none !important; } }
+  .add-company-profile-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .add-company-profile-page .hide-in-1040 {
+        display: none !important; } }
   .add-company-profile-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .add-company-profile-page .hide-in-1000 {
         display: none !important; } }
   .add-company-profile-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .add-company-profile-page .hide-in-970 {
         display: none !important; } }
   .add-company-profile-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .add-company-profile-page .hide-in-950 {
         display: none !important; } }
+  .add-company-profile-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .add-company-profile-page .hide-in-940 {
+        display: none !important; } }
   .add-company-profile-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .add-company-profile-page .hide-in-860 {
         display: none !important; } }
   .add-company-profile-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .add-company-profile-page .hide-in-830 {
         display: none !important; } }
   .add-company-profile-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .add-company-profile-page .hide-in-740 {
         display: none !important; } }
   .add-company-profile-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .add-company-profile-page .hide-in-730 {
         display: none !important; } }
+  .add-company-profile-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .add-company-profile-page .hide-in-680 {
+        display: none !important; } }
   .add-company-profile-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .add-company-profile-page .hide-in-620 {
         display: none !important; } }
+  .add-company-profile-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .add-company-profile-page .show-in-680 {
+        display: block !important; } }
   .add-company-profile-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .add-company-profile-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .add-company-profile-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .add-company-profile-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-company-profile-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .add-company-profile-page .show-in-940 {
+        display: block !important; } }
   .add-company-profile-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .add-company-profile-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .add-company-profile-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-company-profile-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .add-company-profile-page .show-in-1030 {
+        display: block !important; } }
+  .add-company-profile-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .add-company-profile-page .show-in-1040 {
+        display: block !important; } }
+  .add-company-profile-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .add-company-profile-page .show-in-1070 {
+        display: block !important; } }
   .add-company-profile-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .add-company-profile-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .add-company-profile-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .add-company-profile-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .add-company-profile-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .add-company-profile-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page img {
     display: block;
     max-width: 100%; }
@@ -9694,27 +10022,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-company-profile-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .add-company-profile-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .add-company-profile-page .hide-in-1570 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .add-company-profile-page .hide-in-1500 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .add-company-profile-page .hide-in-1470 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .add-company-profile-page .hide-in-1440 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .add-company-profile-page .hide-in-1400 {
         display: none !important; } }
@@ -9724,135 +10052,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .add-company-profile-page .hide-from-1350 {
         display: none; } }
   .add-company-profile-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .add-company-profile-page .hide-in-1340 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .add-company-profile-page .hide-in-1310 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .add-company-profile-page .hide-in-1300 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .add-company-profile-page .hide-in-1220 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .add-company-profile-page .hide-in-1200 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .add-company-profile-page .hide-in-1120 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .add-company-profile-page .hide-in-1070 {
         display: none !important; } }
   .add-company-profile-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .add-company-profile-page .hide-in-1024 {
         display: none !important; } }
+  .add-company-profile-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .add-company-profile-page .hide-in-1030 {
+        display: none !important; } }
+  .add-company-profile-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .add-company-profile-page .hide-in-1040 {
+        display: none !important; } }
   .add-company-profile-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .add-company-profile-page .hide-in-1000 {
         display: none !important; } }
   .add-company-profile-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .add-company-profile-page .hide-in-970 {
         display: none !important; } }
   .add-company-profile-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .add-company-profile-page .hide-in-950 {
         display: none !important; } }
+  .add-company-profile-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .add-company-profile-page .hide-in-940 {
+        display: none !important; } }
   .add-company-profile-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .add-company-profile-page .hide-in-860 {
         display: none !important; } }
   .add-company-profile-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .add-company-profile-page .hide-in-830 {
         display: none !important; } }
   .add-company-profile-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .add-company-profile-page .hide-in-740 {
         display: none !important; } }
   .add-company-profile-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .add-company-profile-page .hide-in-730 {
         display: none !important; } }
+  .add-company-profile-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .add-company-profile-page .hide-in-680 {
+        display: none !important; } }
   .add-company-profile-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .add-company-profile-page .hide-in-620 {
         display: none !important; } }
+  .add-company-profile-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .add-company-profile-page .show-in-680 {
+        display: block !important; } }
   .add-company-profile-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .add-company-profile-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .add-company-profile-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .add-company-profile-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-company-profile-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .add-company-profile-page .show-in-940 {
+        display: block !important; } }
   .add-company-profile-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .add-company-profile-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .add-company-profile-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-company-profile-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .add-company-profile-page .show-in-1030 {
+        display: block !important; } }
+  .add-company-profile-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .add-company-profile-page .show-in-1040 {
+        display: block !important; } }
+  .add-company-profile-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .add-company-profile-page .show-in-1070 {
+        display: block !important; } }
   .add-company-profile-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .add-company-profile-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .add-company-profile-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .add-company-profile-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .add-company-profile-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .add-company-profile-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-company-profile-page img {
     display: block;
     max-width: 100%; }
@@ -11201,27 +11574,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-portfolio-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .add-portfolio-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .add-portfolio-page .hide-in-1570 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .add-portfolio-page .hide-in-1500 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .add-portfolio-page .hide-in-1470 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .add-portfolio-page .hide-in-1440 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .add-portfolio-page .hide-in-1400 {
         display: none !important; } }
@@ -11231,135 +11604,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .add-portfolio-page .hide-from-1350 {
         display: none; } }
   .add-portfolio-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .add-portfolio-page .hide-in-1340 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .add-portfolio-page .hide-in-1310 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .add-portfolio-page .hide-in-1300 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .add-portfolio-page .hide-in-1220 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .add-portfolio-page .hide-in-1200 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .add-portfolio-page .hide-in-1120 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .add-portfolio-page .hide-in-1070 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .add-portfolio-page .hide-in-1024 {
         display: none !important; } }
+  .add-portfolio-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .add-portfolio-page .hide-in-1030 {
+        display: none !important; } }
+  .add-portfolio-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .add-portfolio-page .hide-in-1040 {
+        display: none !important; } }
   .add-portfolio-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .add-portfolio-page .hide-in-1000 {
         display: none !important; } }
   .add-portfolio-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .add-portfolio-page .hide-in-970 {
         display: none !important; } }
   .add-portfolio-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .add-portfolio-page .hide-in-950 {
         display: none !important; } }
+  .add-portfolio-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .add-portfolio-page .hide-in-940 {
+        display: none !important; } }
   .add-portfolio-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .add-portfolio-page .hide-in-860 {
         display: none !important; } }
   .add-portfolio-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .add-portfolio-page .hide-in-830 {
         display: none !important; } }
   .add-portfolio-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .add-portfolio-page .hide-in-740 {
         display: none !important; } }
   .add-portfolio-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .add-portfolio-page .hide-in-730 {
         display: none !important; } }
+  .add-portfolio-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .add-portfolio-page .hide-in-680 {
+        display: none !important; } }
   .add-portfolio-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .add-portfolio-page .hide-in-620 {
         display: none !important; } }
+  .add-portfolio-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .add-portfolio-page .show-in-680 {
+        display: block !important; } }
   .add-portfolio-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .add-portfolio-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .add-portfolio-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .add-portfolio-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-portfolio-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .add-portfolio-page .show-in-940 {
+        display: block !important; } }
   .add-portfolio-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .add-portfolio-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .add-portfolio-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-portfolio-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .add-portfolio-page .show-in-1030 {
+        display: block !important; } }
+  .add-portfolio-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .add-portfolio-page .show-in-1040 {
+        display: block !important; } }
+  .add-portfolio-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .add-portfolio-page .show-in-1070 {
+        display: block !important; } }
   .add-portfolio-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .add-portfolio-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .add-portfolio-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .add-portfolio-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .add-portfolio-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .add-portfolio-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page img {
     display: block;
     max-width: 100%; }
@@ -12098,27 +12516,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .add-portfolio-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .add-portfolio-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .add-portfolio-page .hide-in-1570 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .add-portfolio-page .hide-in-1500 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .add-portfolio-page .hide-in-1470 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .add-portfolio-page .hide-in-1440 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .add-portfolio-page .hide-in-1400 {
         display: none !important; } }
@@ -12128,135 +12546,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .add-portfolio-page .hide-from-1350 {
         display: none; } }
   .add-portfolio-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .add-portfolio-page .hide-in-1340 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .add-portfolio-page .hide-in-1310 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .add-portfolio-page .hide-in-1300 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .add-portfolio-page .hide-in-1220 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .add-portfolio-page .hide-in-1200 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .add-portfolio-page .hide-in-1120 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .add-portfolio-page .hide-in-1070 {
         display: none !important; } }
   .add-portfolio-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .add-portfolio-page .hide-in-1024 {
         display: none !important; } }
+  .add-portfolio-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .add-portfolio-page .hide-in-1030 {
+        display: none !important; } }
+  .add-portfolio-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .add-portfolio-page .hide-in-1040 {
+        display: none !important; } }
   .add-portfolio-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .add-portfolio-page .hide-in-1000 {
         display: none !important; } }
   .add-portfolio-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .add-portfolio-page .hide-in-970 {
         display: none !important; } }
   .add-portfolio-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .add-portfolio-page .hide-in-950 {
         display: none !important; } }
+  .add-portfolio-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .add-portfolio-page .hide-in-940 {
+        display: none !important; } }
   .add-portfolio-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .add-portfolio-page .hide-in-860 {
         display: none !important; } }
   .add-portfolio-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .add-portfolio-page .hide-in-830 {
         display: none !important; } }
   .add-portfolio-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .add-portfolio-page .hide-in-740 {
         display: none !important; } }
   .add-portfolio-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .add-portfolio-page .hide-in-730 {
         display: none !important; } }
+  .add-portfolio-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .add-portfolio-page .hide-in-680 {
+        display: none !important; } }
   .add-portfolio-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .add-portfolio-page .hide-in-620 {
         display: none !important; } }
+  .add-portfolio-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .add-portfolio-page .show-in-680 {
+        display: block !important; } }
   .add-portfolio-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .add-portfolio-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .add-portfolio-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .add-portfolio-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-portfolio-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .add-portfolio-page .show-in-940 {
+        display: block !important; } }
   .add-portfolio-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .add-portfolio-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .add-portfolio-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .add-portfolio-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .add-portfolio-page .show-in-1030 {
+        display: block !important; } }
+  .add-portfolio-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .add-portfolio-page .show-in-1040 {
+        display: block !important; } }
+  .add-portfolio-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .add-portfolio-page .show-in-1070 {
+        display: block !important; } }
   .add-portfolio-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .add-portfolio-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .add-portfolio-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .add-portfolio-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .add-portfolio-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .add-portfolio-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .add-portfolio-page img {
     display: block;
     max-width: 100%; }
@@ -13361,31 +13824,31 @@ app {
   border-bottom: solid 5px red; }
 
 .hide-in-1570 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1570px) {
     .hide-in-1570 {
       display: none !important; } }
 
 .hide-in-1500 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1500px) {
     .hide-in-1500 {
       display: none !important; } }
 
 .hide-in-1470 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1470px) {
     .hide-in-1470 {
       display: none !important; } }
 
 .hide-in-1440 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1440px) {
     .hide-in-1440 {
       display: none !important; } }
 
 .hide-in-1400 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1400px) {
     .hide-in-1400 {
       display: none !important; } }
@@ -13397,160 +13860,214 @@ app {
       display: none; } }
 
 .hide-in-1340 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1340px) {
     .hide-in-1340 {
       display: none !important; } }
 
 .hide-in-1310 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1310px) {
     .hide-in-1310 {
       display: none !important; } }
 
 .hide-in-1300 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1300px) {
     .hide-in-1300 {
       display: none !important; } }
 
 .hide-in-1220 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1220px) {
     .hide-in-1220 {
       display: none !important; } }
 
 .hide-in-1200 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1200px) {
     .hide-in-1200 {
       display: none !important; } }
 
 .hide-in-1120 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1120px) {
     .hide-in-1120 {
       display: none !important; } }
 
 .hide-in-1070 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1070px) {
     .hide-in-1070 {
       display: none !important; } }
 
 .hide-in-1024 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1024px) {
     .hide-in-1024 {
       display: none !important; } }
 
+.hide-in-1030 {
+  display: block; }
+  @media (max-width: 1030px) {
+    .hide-in-1030 {
+      display: none !important; } }
+
+.hide-in-1040 {
+  display: block; }
+  @media (max-width: 1040px) {
+    .hide-in-1040 {
+      display: none !important; } }
+
 .hide-in-1000 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1000px) {
     .hide-in-1000 {
       display: none !important; } }
 
 .hide-in-970 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 970px) {
     .hide-in-970 {
       display: none !important; } }
 
 .hide-in-950 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 950px) {
     .hide-in-950 {
       display: none !important; } }
 
+.hide-in-940 {
+  display: block; }
+  @media (max-width: 940px) {
+    .hide-in-940 {
+      display: none !important; } }
+
 .hide-in-860 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 860px) {
     .hide-in-860 {
       display: none !important; } }
 
 .hide-in-830 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 830px) {
     .hide-in-830 {
       display: none !important; } }
 
 .hide-in-740 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 740px) {
     .hide-in-740 {
       display: none !important; } }
 
 .hide-in-730 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 730px) {
     .hide-in-730 {
       display: none !important; } }
 
+.hide-in-680 {
+  display: block; }
+  @media (max-width: 680px) {
+    .hide-in-680 {
+      display: none !important; } }
+
 .hide-in-620 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 620px) {
     .hide-in-620 {
       display: none !important; } }
+
+.show-in-680 {
+  display: none !important; }
+  @media (max-width: 680px) {
+    .show-in-680 {
+      display: block !important; } }
 
 .show-in-830 {
   display: none !important; }
   @media (max-width: 830px) {
     .show-in-830 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-860 {
   display: none !important; }
   @media (max-width: 860px) {
     .show-in-860 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-970 {
   display: none !important; }
   @media (max-width: 970px) {
     .show-in-970 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-940 {
+  display: none !important; }
+  @media (max-width: 940px) {
+    .show-in-940 {
+      display: block !important; } }
 
 .show-in-1000 {
   display: none !important; }
   @media (max-width: 1000px) {
     .show-in-1000 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
     .show-in-1024 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-1030 {
+  display: none !important; }
+  @media (max-width: 1030px) {
+    .show-in-1030 {
+      display: block !important; } }
+
+.show-in-1040 {
+  display: none !important; }
+  @media (max-width: 1040px) {
+    .show-in-1040 {
+      display: block !important; } }
+
+.show-in-1070 {
+  display: none !important; }
+  @media (max-width: 1070px) {
+    .show-in-1070 {
+      display: block !important; } }
 
 .show-in-1120 {
   display: none !important; }
   @media (max-width: 1120px) {
     .show-in-1120 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1200 {
   display: none !important; }
   @media (max-width: 1200px) {
     .show-in-1200 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1220 {
   display: none !important; }
   @media (max-width: 1220px) {
     .show-in-1220 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1500 {
   display: none !important; }
   @media (max-width: 1500px) {
     .show-in-1500 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1570 {
   display: none !important; }
   @media (max-width: 1569px) {
     .show-in-1570 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 img {
   display: block;
@@ -14832,31 +15349,31 @@ app {
   border-bottom: solid 5px red; }
 
 .hide-in-1570 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1570px) {
     .hide-in-1570 {
       display: none !important; } }
 
 .hide-in-1500 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1500px) {
     .hide-in-1500 {
       display: none !important; } }
 
 .hide-in-1470 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1470px) {
     .hide-in-1470 {
       display: none !important; } }
 
 .hide-in-1440 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1440px) {
     .hide-in-1440 {
       display: none !important; } }
 
 .hide-in-1400 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1400px) {
     .hide-in-1400 {
       display: none !important; } }
@@ -14868,160 +15385,214 @@ app {
       display: none; } }
 
 .hide-in-1340 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1340px) {
     .hide-in-1340 {
       display: none !important; } }
 
 .hide-in-1310 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1310px) {
     .hide-in-1310 {
       display: none !important; } }
 
 .hide-in-1300 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1300px) {
     .hide-in-1300 {
       display: none !important; } }
 
 .hide-in-1220 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1220px) {
     .hide-in-1220 {
       display: none !important; } }
 
 .hide-in-1200 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1200px) {
     .hide-in-1200 {
       display: none !important; } }
 
 .hide-in-1120 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1120px) {
     .hide-in-1120 {
       display: none !important; } }
 
 .hide-in-1070 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1070px) {
     .hide-in-1070 {
       display: none !important; } }
 
 .hide-in-1024 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1024px) {
     .hide-in-1024 {
       display: none !important; } }
 
+.hide-in-1030 {
+  display: block; }
+  @media (max-width: 1030px) {
+    .hide-in-1030 {
+      display: none !important; } }
+
+.hide-in-1040 {
+  display: block; }
+  @media (max-width: 1040px) {
+    .hide-in-1040 {
+      display: none !important; } }
+
 .hide-in-1000 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1000px) {
     .hide-in-1000 {
       display: none !important; } }
 
 .hide-in-970 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 970px) {
     .hide-in-970 {
       display: none !important; } }
 
 .hide-in-950 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 950px) {
     .hide-in-950 {
       display: none !important; } }
 
+.hide-in-940 {
+  display: block; }
+  @media (max-width: 940px) {
+    .hide-in-940 {
+      display: none !important; } }
+
 .hide-in-860 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 860px) {
     .hide-in-860 {
       display: none !important; } }
 
 .hide-in-830 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 830px) {
     .hide-in-830 {
       display: none !important; } }
 
 .hide-in-740 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 740px) {
     .hide-in-740 {
       display: none !important; } }
 
 .hide-in-730 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 730px) {
     .hide-in-730 {
       display: none !important; } }
 
+.hide-in-680 {
+  display: block; }
+  @media (max-width: 680px) {
+    .hide-in-680 {
+      display: none !important; } }
+
 .hide-in-620 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 620px) {
     .hide-in-620 {
       display: none !important; } }
+
+.show-in-680 {
+  display: none !important; }
+  @media (max-width: 680px) {
+    .show-in-680 {
+      display: block !important; } }
 
 .show-in-830 {
   display: none !important; }
   @media (max-width: 830px) {
     .show-in-830 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-860 {
   display: none !important; }
   @media (max-width: 860px) {
     .show-in-860 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-970 {
   display: none !important; }
   @media (max-width: 970px) {
     .show-in-970 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-940 {
+  display: none !important; }
+  @media (max-width: 940px) {
+    .show-in-940 {
+      display: block !important; } }
 
 .show-in-1000 {
   display: none !important; }
   @media (max-width: 1000px) {
     .show-in-1000 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
     .show-in-1024 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.show-in-1030 {
+  display: none !important; }
+  @media (max-width: 1030px) {
+    .show-in-1030 {
+      display: block !important; } }
+
+.show-in-1040 {
+  display: none !important; }
+  @media (max-width: 1040px) {
+    .show-in-1040 {
+      display: block !important; } }
+
+.show-in-1070 {
+  display: none !important; }
+  @media (max-width: 1070px) {
+    .show-in-1070 {
+      display: block !important; } }
 
 .show-in-1120 {
   display: none !important; }
   @media (max-width: 1120px) {
     .show-in-1120 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1200 {
   display: none !important; }
   @media (max-width: 1200px) {
     .show-in-1200 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1220 {
   display: none !important; }
   @media (max-width: 1220px) {
     .show-in-1220 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1500 {
   display: none !important; }
   @media (max-width: 1500px) {
     .show-in-1500 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .show-in-1570 {
   display: none !important; }
   @media (max-width: 1569px) {
     .show-in-1570 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 img {
   display: block;
@@ -15899,27 +16470,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .landing-sign-up .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .landing-sign-up .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .landing-sign-up .hide-in-1570 {
         display: none !important; } }
   .landing-sign-up .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .landing-sign-up .hide-in-1500 {
         display: none !important; } }
   .landing-sign-up .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .landing-sign-up .hide-in-1470 {
         display: none !important; } }
   .landing-sign-up .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .landing-sign-up .hide-in-1440 {
         display: none !important; } }
   .landing-sign-up .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .landing-sign-up .hide-in-1400 {
         display: none !important; } }
@@ -15929,135 +16500,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .landing-sign-up .hide-from-1350 {
         display: none; } }
   .landing-sign-up .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .landing-sign-up .hide-in-1340 {
         display: none !important; } }
   .landing-sign-up .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .landing-sign-up .hide-in-1310 {
         display: none !important; } }
   .landing-sign-up .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .landing-sign-up .hide-in-1300 {
         display: none !important; } }
   .landing-sign-up .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .landing-sign-up .hide-in-1220 {
         display: none !important; } }
   .landing-sign-up .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .landing-sign-up .hide-in-1200 {
         display: none !important; } }
   .landing-sign-up .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .landing-sign-up .hide-in-1120 {
         display: none !important; } }
   .landing-sign-up .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .landing-sign-up .hide-in-1070 {
         display: none !important; } }
   .landing-sign-up .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .landing-sign-up .hide-in-1024 {
         display: none !important; } }
+  .landing-sign-up .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .landing-sign-up .hide-in-1030 {
+        display: none !important; } }
+  .landing-sign-up .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .landing-sign-up .hide-in-1040 {
+        display: none !important; } }
   .landing-sign-up .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .landing-sign-up .hide-in-1000 {
         display: none !important; } }
   .landing-sign-up .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .landing-sign-up .hide-in-970 {
         display: none !important; } }
   .landing-sign-up .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .landing-sign-up .hide-in-950 {
         display: none !important; } }
+  .landing-sign-up .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .landing-sign-up .hide-in-940 {
+        display: none !important; } }
   .landing-sign-up .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .landing-sign-up .hide-in-860 {
         display: none !important; } }
   .landing-sign-up .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .landing-sign-up .hide-in-830 {
         display: none !important; } }
   .landing-sign-up .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .landing-sign-up .hide-in-740 {
         display: none !important; } }
   .landing-sign-up .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .landing-sign-up .hide-in-730 {
         display: none !important; } }
+  .landing-sign-up .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .landing-sign-up .hide-in-680 {
+        display: none !important; } }
   .landing-sign-up .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .landing-sign-up .hide-in-620 {
         display: none !important; } }
+  .landing-sign-up .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .landing-sign-up .show-in-680 {
+        display: block !important; } }
   .landing-sign-up .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .landing-sign-up .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .landing-sign-up .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .landing-sign-up .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .landing-sign-up .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .landing-sign-up .show-in-940 {
+        display: block !important; } }
   .landing-sign-up .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .landing-sign-up .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .landing-sign-up .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .landing-sign-up .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .landing-sign-up .show-in-1030 {
+        display: block !important; } }
+  .landing-sign-up .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .landing-sign-up .show-in-1040 {
+        display: block !important; } }
+  .landing-sign-up .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .landing-sign-up .show-in-1070 {
+        display: block !important; } }
   .landing-sign-up .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .landing-sign-up .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .landing-sign-up .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .landing-sign-up .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .landing-sign-up .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .landing-sign-up .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .landing-sign-up img {
     display: block;
     max-width: 100%; }
@@ -18869,27 +19485,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .services-and-location-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .services-and-location-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .services-and-location-page .hide-in-1570 {
         display: none !important; } }
   .services-and-location-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .services-and-location-page .hide-in-1500 {
         display: none !important; } }
   .services-and-location-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .services-and-location-page .hide-in-1470 {
         display: none !important; } }
   .services-and-location-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .services-and-location-page .hide-in-1440 {
         display: none !important; } }
   .services-and-location-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .services-and-location-page .hide-in-1400 {
         display: none !important; } }
@@ -18899,135 +19515,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .services-and-location-page .hide-from-1350 {
         display: none; } }
   .services-and-location-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .services-and-location-page .hide-in-1340 {
         display: none !important; } }
   .services-and-location-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .services-and-location-page .hide-in-1310 {
         display: none !important; } }
   .services-and-location-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .services-and-location-page .hide-in-1300 {
         display: none !important; } }
   .services-and-location-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .services-and-location-page .hide-in-1220 {
         display: none !important; } }
   .services-and-location-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .services-and-location-page .hide-in-1200 {
         display: none !important; } }
   .services-and-location-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .services-and-location-page .hide-in-1120 {
         display: none !important; } }
   .services-and-location-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .services-and-location-page .hide-in-1070 {
         display: none !important; } }
   .services-and-location-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .services-and-location-page .hide-in-1024 {
         display: none !important; } }
+  .services-and-location-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .services-and-location-page .hide-in-1030 {
+        display: none !important; } }
+  .services-and-location-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .services-and-location-page .hide-in-1040 {
+        display: none !important; } }
   .services-and-location-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .services-and-location-page .hide-in-1000 {
         display: none !important; } }
   .services-and-location-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .services-and-location-page .hide-in-970 {
         display: none !important; } }
   .services-and-location-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .services-and-location-page .hide-in-950 {
         display: none !important; } }
+  .services-and-location-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .services-and-location-page .hide-in-940 {
+        display: none !important; } }
   .services-and-location-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .services-and-location-page .hide-in-860 {
         display: none !important; } }
   .services-and-location-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .services-and-location-page .hide-in-830 {
         display: none !important; } }
   .services-and-location-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .services-and-location-page .hide-in-740 {
         display: none !important; } }
   .services-and-location-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .services-and-location-page .hide-in-730 {
         display: none !important; } }
+  .services-and-location-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .services-and-location-page .hide-in-680 {
+        display: none !important; } }
   .services-and-location-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .services-and-location-page .hide-in-620 {
         display: none !important; } }
+  .services-and-location-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .services-and-location-page .show-in-680 {
+        display: block !important; } }
   .services-and-location-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .services-and-location-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .services-and-location-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .services-and-location-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .services-and-location-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .services-and-location-page .show-in-940 {
+        display: block !important; } }
   .services-and-location-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .services-and-location-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .services-and-location-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .services-and-location-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .services-and-location-page .show-in-1030 {
+        display: block !important; } }
+  .services-and-location-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .services-and-location-page .show-in-1040 {
+        display: block !important; } }
+  .services-and-location-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .services-and-location-page .show-in-1070 {
+        display: block !important; } }
   .services-and-location-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .services-and-location-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .services-and-location-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .services-and-location-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .services-and-location-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .services-and-location-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page img {
     display: block;
     max-width: 100%; }
@@ -19766,27 +20427,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .services-and-location-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .services-and-location-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .services-and-location-page .hide-in-1570 {
         display: none !important; } }
   .services-and-location-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .services-and-location-page .hide-in-1500 {
         display: none !important; } }
   .services-and-location-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .services-and-location-page .hide-in-1470 {
         display: none !important; } }
   .services-and-location-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .services-and-location-page .hide-in-1440 {
         display: none !important; } }
   .services-and-location-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .services-and-location-page .hide-in-1400 {
         display: none !important; } }
@@ -19796,135 +20457,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .services-and-location-page .hide-from-1350 {
         display: none; } }
   .services-and-location-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .services-and-location-page .hide-in-1340 {
         display: none !important; } }
   .services-and-location-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .services-and-location-page .hide-in-1310 {
         display: none !important; } }
   .services-and-location-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .services-and-location-page .hide-in-1300 {
         display: none !important; } }
   .services-and-location-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .services-and-location-page .hide-in-1220 {
         display: none !important; } }
   .services-and-location-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .services-and-location-page .hide-in-1200 {
         display: none !important; } }
   .services-and-location-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .services-and-location-page .hide-in-1120 {
         display: none !important; } }
   .services-and-location-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .services-and-location-page .hide-in-1070 {
         display: none !important; } }
   .services-and-location-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .services-and-location-page .hide-in-1024 {
         display: none !important; } }
+  .services-and-location-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .services-and-location-page .hide-in-1030 {
+        display: none !important; } }
+  .services-and-location-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .services-and-location-page .hide-in-1040 {
+        display: none !important; } }
   .services-and-location-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .services-and-location-page .hide-in-1000 {
         display: none !important; } }
   .services-and-location-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .services-and-location-page .hide-in-970 {
         display: none !important; } }
   .services-and-location-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .services-and-location-page .hide-in-950 {
         display: none !important; } }
+  .services-and-location-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .services-and-location-page .hide-in-940 {
+        display: none !important; } }
   .services-and-location-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .services-and-location-page .hide-in-860 {
         display: none !important; } }
   .services-and-location-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .services-and-location-page .hide-in-830 {
         display: none !important; } }
   .services-and-location-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .services-and-location-page .hide-in-740 {
         display: none !important; } }
   .services-and-location-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .services-and-location-page .hide-in-730 {
         display: none !important; } }
+  .services-and-location-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .services-and-location-page .hide-in-680 {
+        display: none !important; } }
   .services-and-location-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .services-and-location-page .hide-in-620 {
         display: none !important; } }
+  .services-and-location-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .services-and-location-page .show-in-680 {
+        display: block !important; } }
   .services-and-location-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .services-and-location-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .services-and-location-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .services-and-location-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .services-and-location-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .services-and-location-page .show-in-940 {
+        display: block !important; } }
   .services-and-location-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .services-and-location-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .services-and-location-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .services-and-location-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .services-and-location-page .show-in-1030 {
+        display: block !important; } }
+  .services-and-location-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .services-and-location-page .show-in-1040 {
+        display: block !important; } }
+  .services-and-location-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .services-and-location-page .show-in-1070 {
+        display: block !important; } }
   .services-and-location-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .services-and-location-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .services-and-location-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .services-and-location-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .services-and-location-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .services-and-location-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .services-and-location-page img {
     display: block;
     max-width: 100%; }
@@ -21255,27 +21961,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .my-tasks-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .my-tasks-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .my-tasks-page .hide-in-1570 {
         display: none !important; } }
   .my-tasks-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .my-tasks-page .hide-in-1500 {
         display: none !important; } }
   .my-tasks-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .my-tasks-page .hide-in-1470 {
         display: none !important; } }
   .my-tasks-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .my-tasks-page .hide-in-1440 {
         display: none !important; } }
   .my-tasks-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .my-tasks-page .hide-in-1400 {
         display: none !important; } }
@@ -21285,135 +21991,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .my-tasks-page .hide-from-1350 {
         display: none; } }
   .my-tasks-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .my-tasks-page .hide-in-1340 {
         display: none !important; } }
   .my-tasks-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .my-tasks-page .hide-in-1310 {
         display: none !important; } }
   .my-tasks-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .my-tasks-page .hide-in-1300 {
         display: none !important; } }
   .my-tasks-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .my-tasks-page .hide-in-1220 {
         display: none !important; } }
   .my-tasks-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .my-tasks-page .hide-in-1200 {
         display: none !important; } }
   .my-tasks-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .my-tasks-page .hide-in-1120 {
         display: none !important; } }
   .my-tasks-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .my-tasks-page .hide-in-1070 {
         display: none !important; } }
   .my-tasks-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .my-tasks-page .hide-in-1024 {
         display: none !important; } }
+  .my-tasks-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .my-tasks-page .hide-in-1030 {
+        display: none !important; } }
+  .my-tasks-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .my-tasks-page .hide-in-1040 {
+        display: none !important; } }
   .my-tasks-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .my-tasks-page .hide-in-1000 {
         display: none !important; } }
   .my-tasks-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .my-tasks-page .hide-in-970 {
         display: none !important; } }
   .my-tasks-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .my-tasks-page .hide-in-950 {
         display: none !important; } }
+  .my-tasks-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .my-tasks-page .hide-in-940 {
+        display: none !important; } }
   .my-tasks-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .my-tasks-page .hide-in-860 {
         display: none !important; } }
   .my-tasks-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .my-tasks-page .hide-in-830 {
         display: none !important; } }
   .my-tasks-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .my-tasks-page .hide-in-740 {
         display: none !important; } }
   .my-tasks-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .my-tasks-page .hide-in-730 {
         display: none !important; } }
+  .my-tasks-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .my-tasks-page .hide-in-680 {
+        display: none !important; } }
   .my-tasks-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .my-tasks-page .hide-in-620 {
         display: none !important; } }
+  .my-tasks-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .my-tasks-page .show-in-680 {
+        display: block !important; } }
   .my-tasks-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .my-tasks-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .my-tasks-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .my-tasks-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .my-tasks-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .my-tasks-page .show-in-940 {
+        display: block !important; } }
   .my-tasks-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .my-tasks-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .my-tasks-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .my-tasks-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .my-tasks-page .show-in-1030 {
+        display: block !important; } }
+  .my-tasks-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .my-tasks-page .show-in-1040 {
+        display: block !important; } }
+  .my-tasks-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .my-tasks-page .show-in-1070 {
+        display: block !important; } }
   .my-tasks-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .my-tasks-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .my-tasks-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .my-tasks-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .my-tasks-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .my-tasks-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .my-tasks-page img {
     display: block;
     max-width: 100%; }
@@ -23020,27 +23771,27 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   .support-page .border-5-improve-needed {
     border-bottom: solid 5px red; }
   .support-page .hide-in-1570 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1570px) {
       .support-page .hide-in-1570 {
         display: none !important; } }
   .support-page .hide-in-1500 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1500px) {
       .support-page .hide-in-1500 {
         display: none !important; } }
   .support-page .hide-in-1470 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1470px) {
       .support-page .hide-in-1470 {
         display: none !important; } }
   .support-page .hide-in-1440 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1440px) {
       .support-page .hide-in-1440 {
         display: none !important; } }
   .support-page .hide-in-1400 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1400px) {
       .support-page .hide-in-1400 {
         display: none !important; } }
@@ -23050,135 +23801,180 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       .support-page .hide-from-1350 {
         display: none; } }
   .support-page .hide-in-1340 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1340px) {
       .support-page .hide-in-1340 {
         display: none !important; } }
   .support-page .hide-in-1310 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1310px) {
       .support-page .hide-in-1310 {
         display: none !important; } }
   .support-page .hide-in-1300 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1300px) {
       .support-page .hide-in-1300 {
         display: none !important; } }
   .support-page .hide-in-1220 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1220px) {
       .support-page .hide-in-1220 {
         display: none !important; } }
   .support-page .hide-in-1200 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1200px) {
       .support-page .hide-in-1200 {
         display: none !important; } }
   .support-page .hide-in-1120 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1120px) {
       .support-page .hide-in-1120 {
         display: none !important; } }
   .support-page .hide-in-1070 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1070px) {
       .support-page .hide-in-1070 {
         display: none !important; } }
   .support-page .hide-in-1024 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1024px) {
       .support-page .hide-in-1024 {
         display: none !important; } }
+  .support-page .hide-in-1030 {
+    display: block; }
+    @media (max-width: 1030px) {
+      .support-page .hide-in-1030 {
+        display: none !important; } }
+  .support-page .hide-in-1040 {
+    display: block; }
+    @media (max-width: 1040px) {
+      .support-page .hide-in-1040 {
+        display: none !important; } }
   .support-page .hide-in-1000 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 1000px) {
       .support-page .hide-in-1000 {
         display: none !important; } }
   .support-page .hide-in-970 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 970px) {
       .support-page .hide-in-970 {
         display: none !important; } }
   .support-page .hide-in-950 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 950px) {
       .support-page .hide-in-950 {
         display: none !important; } }
+  .support-page .hide-in-940 {
+    display: block; }
+    @media (max-width: 940px) {
+      .support-page .hide-in-940 {
+        display: none !important; } }
   .support-page .hide-in-860 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 860px) {
       .support-page .hide-in-860 {
         display: none !important; } }
   .support-page .hide-in-830 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 830px) {
       .support-page .hide-in-830 {
         display: none !important; } }
   .support-page .hide-in-740 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 740px) {
       .support-page .hide-in-740 {
         display: none !important; } }
   .support-page .hide-in-730 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 730px) {
       .support-page .hide-in-730 {
         display: none !important; } }
+  .support-page .hide-in-680 {
+    display: block; }
+    @media (max-width: 680px) {
+      .support-page .hide-in-680 {
+        display: none !important; } }
   .support-page .hide-in-620 {
-    display: inline-block; }
+    display: block; }
     @media (max-width: 620px) {
       .support-page .hide-in-620 {
         display: none !important; } }
+  .support-page .show-in-680 {
+    display: none !important; }
+    @media (max-width: 680px) {
+      .support-page .show-in-680 {
+        display: block !important; } }
   .support-page .show-in-830 {
     display: none !important; }
     @media (max-width: 830px) {
       .support-page .show-in-830 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page .show-in-860 {
     display: none !important; }
     @media (max-width: 860px) {
       .support-page .show-in-860 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page .show-in-970 {
     display: none !important; }
     @media (max-width: 970px) {
       .support-page .show-in-970 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .support-page .show-in-940 {
+    display: none !important; }
+    @media (max-width: 940px) {
+      .support-page .show-in-940 {
+        display: block !important; } }
   .support-page .show-in-1000 {
     display: none !important; }
     @media (max-width: 1000px) {
       .support-page .show-in-1000 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page .show-in-1024 {
     display: none !important; }
     @media (max-width: 1024px) {
       .support-page .show-in-1024 {
-        display: inline-block !important; } }
+        display: block !important; } }
+  .support-page .show-in-1030 {
+    display: none !important; }
+    @media (max-width: 1030px) {
+      .support-page .show-in-1030 {
+        display: block !important; } }
+  .support-page .show-in-1040 {
+    display: none !important; }
+    @media (max-width: 1040px) {
+      .support-page .show-in-1040 {
+        display: block !important; } }
+  .support-page .show-in-1070 {
+    display: none !important; }
+    @media (max-width: 1070px) {
+      .support-page .show-in-1070 {
+        display: block !important; } }
   .support-page .show-in-1120 {
     display: none !important; }
     @media (max-width: 1120px) {
       .support-page .show-in-1120 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page .show-in-1200 {
     display: none !important; }
     @media (max-width: 1200px) {
       .support-page .show-in-1200 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page .show-in-1220 {
     display: none !important; }
     @media (max-width: 1220px) {
       .support-page .show-in-1220 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page .show-in-1500 {
     display: none !important; }
     @media (max-width: 1500px) {
       .support-page .show-in-1500 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page .show-in-1570 {
     display: none !important; }
     @media (max-width: 1569px) {
       .support-page .show-in-1570 {
-        display: inline-block !important; } }
+        display: block !important; } }
   .support-page img {
     display: block;
     max-width: 100%; }
@@ -24952,31 +25748,31 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   border-bottom: solid 5px red; }
 
 .sign-in-and-sign-up-page .hide-in-1570 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1570px) {
     .sign-in-and-sign-up-page .hide-in-1570 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1500 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1500px) {
     .sign-in-and-sign-up-page .hide-in-1500 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1470 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1470px) {
     .sign-in-and-sign-up-page .hide-in-1470 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1440 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1440px) {
     .sign-in-and-sign-up-page .hide-in-1440 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1400 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1400px) {
     .sign-in-and-sign-up-page .hide-in-1400 {
       display: none !important; } }
@@ -24988,160 +25784,214 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       display: none; } }
 
 .sign-in-and-sign-up-page .hide-in-1340 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1340px) {
     .sign-in-and-sign-up-page .hide-in-1340 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1310 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1310px) {
     .sign-in-and-sign-up-page .hide-in-1310 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1300 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1300px) {
     .sign-in-and-sign-up-page .hide-in-1300 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1220 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1220px) {
     .sign-in-and-sign-up-page .hide-in-1220 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1200 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1200px) {
     .sign-in-and-sign-up-page .hide-in-1200 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1120 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1120px) {
     .sign-in-and-sign-up-page .hide-in-1120 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1070 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1070px) {
     .sign-in-and-sign-up-page .hide-in-1070 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-1024 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1024px) {
     .sign-in-and-sign-up-page .hide-in-1024 {
       display: none !important; } }
 
+.sign-in-and-sign-up-page .hide-in-1030 {
+  display: block; }
+  @media (max-width: 1030px) {
+    .sign-in-and-sign-up-page .hide-in-1030 {
+      display: none !important; } }
+
+.sign-in-and-sign-up-page .hide-in-1040 {
+  display: block; }
+  @media (max-width: 1040px) {
+    .sign-in-and-sign-up-page .hide-in-1040 {
+      display: none !important; } }
+
 .sign-in-and-sign-up-page .hide-in-1000 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1000px) {
     .sign-in-and-sign-up-page .hide-in-1000 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-970 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 970px) {
     .sign-in-and-sign-up-page .hide-in-970 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-950 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 950px) {
     .sign-in-and-sign-up-page .hide-in-950 {
       display: none !important; } }
 
+.sign-in-and-sign-up-page .hide-in-940 {
+  display: block; }
+  @media (max-width: 940px) {
+    .sign-in-and-sign-up-page .hide-in-940 {
+      display: none !important; } }
+
 .sign-in-and-sign-up-page .hide-in-860 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 860px) {
     .sign-in-and-sign-up-page .hide-in-860 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-830 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 830px) {
     .sign-in-and-sign-up-page .hide-in-830 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-740 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 740px) {
     .sign-in-and-sign-up-page .hide-in-740 {
       display: none !important; } }
 
 .sign-in-and-sign-up-page .hide-in-730 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 730px) {
     .sign-in-and-sign-up-page .hide-in-730 {
       display: none !important; } }
 
+.sign-in-and-sign-up-page .hide-in-680 {
+  display: block; }
+  @media (max-width: 680px) {
+    .sign-in-and-sign-up-page .hide-in-680 {
+      display: none !important; } }
+
 .sign-in-and-sign-up-page .hide-in-620 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 620px) {
     .sign-in-and-sign-up-page .hide-in-620 {
       display: none !important; } }
+
+.sign-in-and-sign-up-page .show-in-680 {
+  display: none !important; }
+  @media (max-width: 680px) {
+    .sign-in-and-sign-up-page .show-in-680 {
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-830 {
   display: none !important; }
   @media (max-width: 830px) {
     .sign-in-and-sign-up-page .show-in-830 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-860 {
   display: none !important; }
   @media (max-width: 860px) {
     .sign-in-and-sign-up-page .show-in-860 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-970 {
   display: none !important; }
   @media (max-width: 970px) {
     .sign-in-and-sign-up-page .show-in-970 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.sign-in-and-sign-up-page .show-in-940 {
+  display: none !important; }
+  @media (max-width: 940px) {
+    .sign-in-and-sign-up-page .show-in-940 {
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-1000 {
   display: none !important; }
   @media (max-width: 1000px) {
     .sign-in-and-sign-up-page .show-in-1000 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
     .sign-in-and-sign-up-page .show-in-1024 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.sign-in-and-sign-up-page .show-in-1030 {
+  display: none !important; }
+  @media (max-width: 1030px) {
+    .sign-in-and-sign-up-page .show-in-1030 {
+      display: block !important; } }
+
+.sign-in-and-sign-up-page .show-in-1040 {
+  display: none !important; }
+  @media (max-width: 1040px) {
+    .sign-in-and-sign-up-page .show-in-1040 {
+      display: block !important; } }
+
+.sign-in-and-sign-up-page .show-in-1070 {
+  display: none !important; }
+  @media (max-width: 1070px) {
+    .sign-in-and-sign-up-page .show-in-1070 {
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-1120 {
   display: none !important; }
   @media (max-width: 1120px) {
     .sign-in-and-sign-up-page .show-in-1120 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-1200 {
   display: none !important; }
   @media (max-width: 1200px) {
     .sign-in-and-sign-up-page .show-in-1200 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-1220 {
   display: none !important; }
   @media (max-width: 1220px) {
     .sign-in-and-sign-up-page .show-in-1220 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-1500 {
   display: none !important; }
   @media (max-width: 1500px) {
     .sign-in-and-sign-up-page .show-in-1500 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page .show-in-1570 {
   display: none !important; }
   @media (max-width: 1569px) {
     .sign-in-and-sign-up-page .show-in-1570 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .sign-in-and-sign-up-page img {
   display: block;
@@ -25887,31 +26737,31 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   border-bottom: solid 5px red; }
 
 .account-verification-page .hide-in-1570 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1570px) {
     .account-verification-page .hide-in-1570 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1500 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1500px) {
     .account-verification-page .hide-in-1500 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1470 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1470px) {
     .account-verification-page .hide-in-1470 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1440 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1440px) {
     .account-verification-page .hide-in-1440 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1400 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1400px) {
     .account-verification-page .hide-in-1400 {
       display: none !important; } }
@@ -25923,160 +26773,214 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       display: none; } }
 
 .account-verification-page .hide-in-1340 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1340px) {
     .account-verification-page .hide-in-1340 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1310 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1310px) {
     .account-verification-page .hide-in-1310 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1300 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1300px) {
     .account-verification-page .hide-in-1300 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1220 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1220px) {
     .account-verification-page .hide-in-1220 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1200 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1200px) {
     .account-verification-page .hide-in-1200 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1120 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1120px) {
     .account-verification-page .hide-in-1120 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1070 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1070px) {
     .account-verification-page .hide-in-1070 {
       display: none !important; } }
 
 .account-verification-page .hide-in-1024 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1024px) {
     .account-verification-page .hide-in-1024 {
       display: none !important; } }
 
+.account-verification-page .hide-in-1030 {
+  display: block; }
+  @media (max-width: 1030px) {
+    .account-verification-page .hide-in-1030 {
+      display: none !important; } }
+
+.account-verification-page .hide-in-1040 {
+  display: block; }
+  @media (max-width: 1040px) {
+    .account-verification-page .hide-in-1040 {
+      display: none !important; } }
+
 .account-verification-page .hide-in-1000 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 1000px) {
     .account-verification-page .hide-in-1000 {
       display: none !important; } }
 
 .account-verification-page .hide-in-970 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 970px) {
     .account-verification-page .hide-in-970 {
       display: none !important; } }
 
 .account-verification-page .hide-in-950 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 950px) {
     .account-verification-page .hide-in-950 {
       display: none !important; } }
 
+.account-verification-page .hide-in-940 {
+  display: block; }
+  @media (max-width: 940px) {
+    .account-verification-page .hide-in-940 {
+      display: none !important; } }
+
 .account-verification-page .hide-in-860 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 860px) {
     .account-verification-page .hide-in-860 {
       display: none !important; } }
 
 .account-verification-page .hide-in-830 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 830px) {
     .account-verification-page .hide-in-830 {
       display: none !important; } }
 
 .account-verification-page .hide-in-740 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 740px) {
     .account-verification-page .hide-in-740 {
       display: none !important; } }
 
 .account-verification-page .hide-in-730 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 730px) {
     .account-verification-page .hide-in-730 {
       display: none !important; } }
 
+.account-verification-page .hide-in-680 {
+  display: block; }
+  @media (max-width: 680px) {
+    .account-verification-page .hide-in-680 {
+      display: none !important; } }
+
 .account-verification-page .hide-in-620 {
-  display: inline-block; }
+  display: block; }
   @media (max-width: 620px) {
     .account-verification-page .hide-in-620 {
       display: none !important; } }
+
+.account-verification-page .show-in-680 {
+  display: none !important; }
+  @media (max-width: 680px) {
+    .account-verification-page .show-in-680 {
+      display: block !important; } }
 
 .account-verification-page .show-in-830 {
   display: none !important; }
   @media (max-width: 830px) {
     .account-verification-page .show-in-830 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page .show-in-860 {
   display: none !important; }
   @media (max-width: 860px) {
     .account-verification-page .show-in-860 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page .show-in-970 {
   display: none !important; }
   @media (max-width: 970px) {
     .account-verification-page .show-in-970 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.account-verification-page .show-in-940 {
+  display: none !important; }
+  @media (max-width: 940px) {
+    .account-verification-page .show-in-940 {
+      display: block !important; } }
 
 .account-verification-page .show-in-1000 {
   display: none !important; }
   @media (max-width: 1000px) {
     .account-verification-page .show-in-1000 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page .show-in-1024 {
   display: none !important; }
   @media (max-width: 1024px) {
     .account-verification-page .show-in-1024 {
-      display: inline-block !important; } }
+      display: block !important; } }
+
+.account-verification-page .show-in-1030 {
+  display: none !important; }
+  @media (max-width: 1030px) {
+    .account-verification-page .show-in-1030 {
+      display: block !important; } }
+
+.account-verification-page .show-in-1040 {
+  display: none !important; }
+  @media (max-width: 1040px) {
+    .account-verification-page .show-in-1040 {
+      display: block !important; } }
+
+.account-verification-page .show-in-1070 {
+  display: none !important; }
+  @media (max-width: 1070px) {
+    .account-verification-page .show-in-1070 {
+      display: block !important; } }
 
 .account-verification-page .show-in-1120 {
   display: none !important; }
   @media (max-width: 1120px) {
     .account-verification-page .show-in-1120 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page .show-in-1200 {
   display: none !important; }
   @media (max-width: 1200px) {
     .account-verification-page .show-in-1200 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page .show-in-1220 {
   display: none !important; }
   @media (max-width: 1220px) {
     .account-verification-page .show-in-1220 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page .show-in-1500 {
   display: none !important; }
   @media (max-width: 1500px) {
     .account-verification-page .show-in-1500 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page .show-in-1570 {
   display: none !important; }
   @media (max-width: 1569px) {
     .account-verification-page .show-in-1570 {
-      display: inline-block !important; } }
+      display: block !important; } }
 
 .account-verification-page img {
   display: block;
