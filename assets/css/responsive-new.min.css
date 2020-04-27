@@ -3002,15 +3002,72 @@
     width: 35px;
     height: 35px; } }
 
-@media (max-width: 1070px) {
-  .new-layout-page .sub-menu-col {
-    flex-grow: 1; } }
-
 @media (max-width: 991px) {
+  .new-layout-page .sub-menu-items .more-btn {
+    display: none !important; }
   .new-layout-page .sub-menu-item:hover:after {
     display: none; }
   .new-layout-page .card {
-    padding: 0 8px; } }
+    padding: 0 8px; }
+  .new-layout-page ::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
+  .new-layout-page ::-webkit-scrollbar-thumb {
+    background: transparent; }
+  .new-layout-page ::-webkit-scrollbar-track {
+    background-color: transparent; }
+  .new-layout-page * {
+    box-sizing: border-box; }
+  .new-layout-page .sub-menu-col .sub-menu-item {
+    display: inline-block;
+    padding: 0;
+    margin: 0 12px;
+    white-space: nowrap; }
+    .new-layout-page .sub-menu-col .sub-menu-item:first-of-type {
+      margin: 0 12px 0 0; }
+  .new-layout-page .sub-menu-lists {
+    max-width: 600px;
+    height: 40px;
+    line-height: 2.5;
+    margin: 0 auto; }
+    .new-layout-page .sub-menu-lists .sub-menu-items {
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      overflow-y: auto;
+      white-space: nowrap; }
+  .new-layout-page .sub-menu-lists {
+    max-width: inherit; }
+  .new-layout-page .user {
+    flex-direction: column-reverse;
+    margin-left: 20px; }
+  .new-layout-page .info {
+    height: 50%;
+    margin-left: 0;
+    margin-bottom: 0;
+    align-items: inherit; }
+  .new-layout-page .image-wrapper {
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%; }
+  .new-layout-page .image-container {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 2px !important; }
+  .new-layout-page .dropdown-info.visible {
+    left: auto;
+    right: 0;
+    transform: translate(0, 0); }
+  .new-layout-page .settings-inner-d {
+    display: none; }
+  .new-layout-page .settings-inner-m {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 .875rem; } }
 
 @media (max-width: 899px) {
   .new-layout-page .create-area-outer {
@@ -3018,12 +3075,66 @@
   .new-layout-page .areas-list-outer {
     padding: .75rem 1.25rem; } }
 
-@media (max-width: 767px) {
-  .new-layout-page .info {
-    height: 50%;
-    margin-left: 0;
-    margin-bottom: 0;
-    align-items: inherit; } }
+@media (max-width: 850px) {
+  .new-layout-page .card {
+    padding: 0 4px; } }
+
+@media (max-width: 599px) {
+  .new-layout-page .left-side-col {
+    z-index: 20;
+    position: static;
+    min-width: inherit;
+    width: auto;
+    padding: 0; }
+  .new-layout-page .left-side-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-110%, 0);
+    width: 90%;
+    max-width: 450px; }
+  .new-layout-page .mobile-menu-ope-btn {
+    z-index: 12;
+    position: fixed;
+    flex: 1;
+    height: 100px;
+    display: flex;
+    align-items: center; }
+  .new-layout-page .left-side-container.is-active {
+    transform: translate(0, 0); }
+  .new-layout-page .underlay.is-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .new-layout-page .fixed-top-panel-d {
+    width: 100%;
+    max-width: 100%; }
+  .new-layout-page .right-side-col .sub-menu-col {
+    padding-left: 70px; }
+  .new-layout-page .results .item {
+    width: auto;
+    margin-bottom: 1rem !important;
+    padding: .25rem .875rem; } }
+
+@media (max-width: 1499px) {
+  .area-settings .list .item {
+    width: calc(100% / 6); } }
+
+@media (max-width: 1399px) {
+  .area-settings .list .item {
+    width: calc(100% / 5); } }
+
+@media (max-width: 1199px) {
+  .area-settings .list .item {
+    width: calc(100% / 4); } }
+
+@media (max-width: 899px) {
+  .area-settings .list .item {
+    width: calc(100% / 3); } }
 
 @media (max-width: 767px) {
   .area-settings .map {
@@ -3033,7 +3144,9 @@
 
 @media (max-width: 599px) {
   .area-settings .map {
-    display: none; } }
+    display: none; }
+  .area-settings .list .item {
+    width: auto; } }
 
 @media (max-width: 599px) {
   .mobile-only-flex {

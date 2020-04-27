@@ -29,6 +29,15 @@
   height: 100%;
   background-image: linear-gradient(to bottom, #585077 71%, #696577);
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
+  transition: transform 300ms ease;
+}
+
+.mobile-menu-ope-btn {
+  display: none;
+}
+
+.underlay {
+  display: none;
 }
 
 .top-logo-container {
@@ -155,25 +164,18 @@
 }
 
 .fixed-top-panel-d {
+  z-index: 10;
   position: fixed;
   top: 0;
-  //left: 0;
   right: 0;
-  z-index: 10;
-  //width: 100%;
-  height: 100px;
-
-  //left: auto;
   width: calc(100% - 250px);
   max-width: calc(100% - 15%);
-  //background-color: bisque;
-  //z-index: 9000;
+  height: 100px;
+  background-color: #fff;
 }
 
 .right-side-col {
   position: relative;
-  //width: 15%;
-  //min-width: 250px;
 }
 
 .dummy-content {
@@ -542,13 +544,17 @@
   color: #b3b3b3;
 }
 
-.settings-inner {
+.settings-inner-d {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+}
+
+.settings-inner-m {
+  display: none;
 }
 
 // User info
@@ -563,7 +569,7 @@
 
   &::after {
     position: absolute;
-    left: -.4em;
+    left: -.75em;
     bottom: .4em;
     top: auto;
     content: "";
@@ -584,13 +590,6 @@
   align-items: flex-end;
   height: 100%;
   margin-left: 10px;
-
-  //.fa-chevron-down {
-  //  position: absolute;
-  //  left: -18px;
-  //  bottom: 0;
-  //  top: auto;
-  //}
 }
 
 .info-inner {
@@ -626,30 +625,11 @@
   border-bottom-right-radius: 28px;
   background-color: #585077;
 
-  //&::before {
-  //  position: absolute;
-  //  top: 0;
-  //  z-index: 1;
-  //  left: 50%;
-  //  height: calc(100% - 10px);
-  //  display: block;
-  //  content: '';
-  //  background-color: #585077;
-  //  width: 100%;
-  //  transform: translate(-50%, -33%);
-  //  border-bottom-left-radius: 28px;
-  //  border-bottom-right-radius: 28px;
-  //}
-
   .image-container {
-    //position: relative;
-    //z-index: 2;
     width: 60px;
     height: 60px;
-    //margin-left: 1rem;
     padding: 3px;
     border-radius: 20px;
-
   }
 
   img {
@@ -685,4 +665,10 @@
   height: 30px;
   background-color: #585077;
   color: #fff;
+}
+
+.show-in-991 {
+  @media(max-width: 991px) {
+    display: block !important;
+  }
 }

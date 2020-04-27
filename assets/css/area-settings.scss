@@ -151,14 +151,17 @@ h5 {
   }
 
   .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 1.5rem 0;
+  }
 
-    .item {
-      width: auto;
-      //width: calc(100% / 7);
-      margin-bottom: 1.5rem;
-      //padding: 0 .25rem;
-    }
+  // list item
+  .item {
+    width: calc(100% / 7);
+    margin-bottom: 1.5rem;
+    //padding: 0 .25rem;
   }
 
   .custom-control {
@@ -200,7 +203,16 @@ h5 {
 
   .done-btn {
     display: flex;
+    height: 25px;
     margin-left: auto;
+  }
+
+  .text {
+    flex-grow: 1;
+    width: auto;
+    padding-left: 1.125rem;
+    padding-right: .75rem;
+    text-align: left;
   }
 
   .fa-map-marker-edit {
@@ -215,9 +227,10 @@ h5 {
   &.collapsed {
     .edit-btn {
       display: flex;
+      justify-content: center;
       align-items: center;
       width: 70px;
-      height: 30px;
+      height: 25px;
       margin-left: auto;
     }
 

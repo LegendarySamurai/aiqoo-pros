@@ -6359,7 +6359,14 @@ html, body {
   min-width: 250px;
   height: 100%;
   background-image: linear-gradient(to bottom, #585077 71%, #696577);
-  box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11); }
+  box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
+  transition: transform 300ms ease; }
+
+.new-layout-page .mobile-menu-ope-btn {
+  display: none; }
+
+.new-layout-page .underlay {
+  display: none; }
 
 .new-layout-page .top-logo-container {
   display: flex;
@@ -6451,13 +6458,14 @@ html, body {
     white-space: nowrap; }
 
 .new-layout-page .fixed-top-panel-d {
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
-  height: 100px;
   width: calc(100% - 250px);
-  max-width: calc(100% - 15%); }
+  max-width: calc(100% - 15%);
+  height: 100px;
+  background-color: #fff; }
 
 .new-layout-page .right-side-col {
   position: relative; }
@@ -6728,13 +6736,16 @@ html, body {
   font-size: .5rem;
   color: #b3b3b3; }
 
-.new-layout-page .settings-inner {
+.new-layout-page .settings-inner-d {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center; }
+
+.new-layout-page .settings-inner-m {
+  display: none; }
 
 .new-layout-page .user {
   position: relative;
@@ -6746,7 +6757,7 @@ html, body {
   margin-left: 20px; }
   .new-layout-page .user::after {
     position: absolute;
-    left: -.4em;
+    left: -.75em;
     bottom: .4em;
     top: auto;
     content: "";
@@ -6814,6 +6825,10 @@ html, body {
   background-color: #585077;
   color: #fff; }
 
+@media (max-width: 991px) {
+  .new-layout-page .show-in-991 {
+    display: block !important; } }
+
 .area-settings {
   flex-grow: 1;
   display: flex;
@@ -6838,7 +6853,14 @@ html, body {
   min-width: 250px;
   height: 100%;
   background-image: linear-gradient(to bottom, #585077 71%, #696577);
-  box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11); }
+  box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
+  transition: transform 300ms ease; }
+
+.area-settings .mobile-menu-ope-btn {
+  display: none; }
+
+.area-settings .underlay {
+  display: none; }
 
 .area-settings .top-logo-container {
   display: flex;
@@ -6930,13 +6952,14 @@ html, body {
     white-space: nowrap; }
 
 .area-settings .fixed-top-panel-d {
+  z-index: 10;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
-  height: 100px;
   width: calc(100% - 250px);
-  max-width: calc(100% - 15%); }
+  max-width: calc(100% - 15%);
+  height: 100px;
+  background-color: #fff; }
 
 .area-settings .right-side-col {
   position: relative; }
@@ -7207,13 +7230,16 @@ html, body {
   font-size: .5rem;
   color: #b3b3b3; }
 
-.area-settings .settings-inner {
+.area-settings .settings-inner-d {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center; }
+
+.area-settings .settings-inner-m {
+  display: none; }
 
 .area-settings .user {
   position: relative;
@@ -7225,7 +7251,7 @@ html, body {
   margin-left: 20px; }
   .area-settings .user::after {
     position: absolute;
-    left: -.4em;
+    left: -.75em;
     bottom: .4em;
     top: auto;
     content: "";
@@ -7292,6 +7318,10 @@ html, body {
   height: 30px;
   background-color: #585077;
   color: #fff; }
+
+@media (max-width: 991px) {
+  .area-settings .show-in-991 {
+    display: block !important; } }
 
 .area-settings .create-area-wrapper {
   padding-bottom: 30px; }
@@ -7410,10 +7440,13 @@ html, body {
   .area-settings .results .heading {
     color: #b3b3b3; }
   .area-settings .results .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 1.5rem 0; }
-    .area-settings .results .list .item {
-      width: auto;
-      margin-bottom: 1.5rem; }
+  .area-settings .results .item {
+    width: calc(100% / 7);
+    margin-bottom: 1.5rem; }
   .area-settings .results .custom-control {
     padding-left: 0; }
   .area-settings .results .custom-checkbox-ui {
@@ -7439,7 +7472,14 @@ html, body {
     display: none; }
   .area-settings .area-btn .done-btn {
     display: flex;
+    height: 25px;
     margin-left: auto; }
+  .area-settings .area-btn .text {
+    flex-grow: 1;
+    width: auto;
+    padding-left: 1.125rem;
+    padding-right: .75rem;
+    text-align: left; }
   .area-settings .area-btn .fa-map-marker-edit {
     transform: none !important; }
   .area-settings .area-btn .fa-trash-alt {
@@ -7447,9 +7487,10 @@ html, body {
     color: #d30000; }
   .area-settings .area-btn.collapsed .edit-btn {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 70px;
-    height: 30px;
+    height: 25px;
     margin-left: auto; }
   .area-settings .area-btn.collapsed .fa-map-marker-edit {
     margin-right: .5rem; }

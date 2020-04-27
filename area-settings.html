@@ -32,6 +32,7 @@
       <div class="row row-outer">
         <!-- Left purple side -->
         <div class="col-auto left-side-col">
+          <div class="underlay"></div>
           <div class="left-side-container">
             <!-- Logo container -->
             <div class="tol-logo-col">
@@ -148,6 +149,10 @@
         <!-- Right content side -->
         <div class="col right-side-col">
           <div class="right-side-container">
+            <!-- Only for mobile -->
+            <div class="mobile-menu-ope-btn">
+              <button class=""><i class="far fa-bars font-16"></i></button>
+            </div>
             <!-- Desktop -->
             <div class="fixed-top-panel-d">
               <!-- Fixed submenu -->
@@ -166,12 +171,12 @@
                         <div class="col-12 sub-menu-lists-col">
                           <div class="sub-menu-lists">
                             <div class="sub-menu-items" id="dashboard">
-                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-680">My Profile</span>
-                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-830">Company Profile</span>
-                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-860">Services</span>
-                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-940">Locations</span>
-                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-1030">Invoices</span>
-                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-1070">Payments Methods</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold">My Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold">Company Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold">Services</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold">Locations</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-1030 show-in-991">Invoices</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-1070 show-in-991">Payments Methods</span>
                               <span class="sub-menu-item font-r-10 font-weight-bold  show-in-1070 more-btn">
                                 <a href="#" class="more-btn-inner">
                                   <i class="fal fa-ellipsis-h-alt"></i>
@@ -179,10 +184,6 @@
                                 </a>
                                 <div class="sub-menu-container">
                                   <ul class="hide-sub-menu">
-                                    <li class="show-in-680">My Profile</li>
-                                    <li class="show-in-830">Company Profile</li>
-                                    <li class="show-in-860">Services</li>
-                                    <li class="show-in-940">Locations</li>
                                     <li class="show-in-1030">Invoices</li>
                                     <li class="show-in-1070">Payments Methods</li>
                                   </ul>
@@ -198,7 +199,7 @@
 
                     <!-- User settings -->
                     <div class="col user-settings-col">
-                      <div class="settings-inner">
+                      <div class="settings-inner-d">
                         <div class="notification notification-1">
                           <div class="notification-button">
                               <span class="notification-button-icon">
@@ -321,7 +322,110 @@
                           <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-10 ma-r-10"></i>Account Settings</a>
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-10 ma-r-10"></i>Sign Out</a>
-                          <!--<div class="dropdown-divider"></div>-->
+                          <div class="dropdown-divider"></div>
+
+                          <div class="settings-inner-m">
+                            <div class="notification notification-1">
+                              <div class="notification-button">
+                              <span class="notification-button-icon">
+                                <img src="assets/images/notifications/megaphone.svg" alt="icon">
+                              </span>
+                              </div>
+                              <div class="dropdown-list  dropdown-list-one invisible">
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 1</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 2</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 3</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 4</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="notification notification-2">
+                              <div class="notification-button">
+                              <span class="notification-button-icon">
+                                <img src="assets/images/notifications/notification.svg" alt="icon">
+                                <i class="index">1</i>
+                              </span>
+                              </div>
+                              <div class="dropdown-list dropdown-list-two invisible">
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Messages</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">10 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Message</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Bundle</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-black">Note</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -380,236 +484,205 @@
                                     </div>
                                     <span class="heading font-weight-black font-r-11">Results <span class="counter font-weight-300">(165 Zip's)</span></span>
                                     <div class="list">
-                                      <div class="row">
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-                                        <!-- list item -->
-                                        <div class="col-auto">
-                                          <div class="item">
-                                            <div class="custom-control custom-checkbox">
-                                              <label class="custom-control-label font-weight-600 font-r-10">
-                                                <input type="checkbox" class="custom-control-input">
-                                                <span class="custom-checkbox-ui"></span>
-                                                <span class="input-label">43534</span>
-                                              </label>
-                                            </div>
-                                          </div>
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
                                         </div>
-
+                                      </div>
+                                      <!-- list item -->
+                                      <div class="item">
+                                        <div class="custom-control custom-checkbox">
+                                          <label class="custom-control-label font-weight-600 font-r-10">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <span class="custom-checkbox-ui"></span>
+                                            <span class="input-label">43534</span>
+                                          </label>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -630,7 +703,7 @@
                                       <button class="area-btn btn w-100 px-2 collapsed" data-toggle="collapse"
                                               data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <i class="fal fa-trash-alt"></i>
-                                        <span class="px-3 text font-r-10">
+                                        <span class="text font-r-10">
                                           <span class="font-weight-bold">Area 1</span>
                                           <span class="font-weight-300"> (Title Location),</span>
                                           <span class="font-weight-300">distance 654 miles,</span>
@@ -651,236 +724,205 @@
                                         </div>
                                         <span class="heading font-weight-black font-r-11">Results <span class="counter font-weight-300">(165 Zip's)</span></span>
                                         <div class="list">
-                                          <div class="row">
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -895,7 +937,7 @@
                                       <button class="area-btn btn w-100 px-2 collapsed" data-toggle="collapse"
                                               data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                         <i class="fal fa-trash-alt"></i>
-                                        <span class="px-3 text font-r-10">
+                                        <span class="text font-r-10">
                                           <span class="font-weight-bold">Area 2</span>
                                           <span class="font-weight-300"> (Title Location),</span>
                                           <span class="font-weight-300">distance 654 miles,</span>
@@ -915,236 +957,205 @@
                                         </div>
                                         <span class="heading font-weight-black font-r-10">Results <span class="counter font-weight-300">(165 Zip's)</span></span>
                                         <div class="list">
-                                          <div class="row">
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-                                            <!-- list item -->
-                                            <div class="col-auto">
-                                              <div class="item">
-                                                <div class="custom-control custom-checkbox">
-                                                  <label class="custom-control-label font-weight-600 font-r-10">
-                                                    <input type="checkbox" class="custom-control-input">
-                                                    <span class="custom-checkbox-ui"></span>
-                                                    <span class="input-label">43534</span>
-                                                  </label>
-                                                </div>
-                                              </div>
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
                                             </div>
-
+                                          </div>
+                                          <!-- list item -->
+                                          <div class="item">
+                                            <div class="custom-control custom-checkbox">
+                                              <label class="custom-control-label font-weight-600 font-r-10">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-checkbox-ui"></span>
+                                                <span class="input-label">43534</span>
+                                              </label>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>

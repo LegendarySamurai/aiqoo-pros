@@ -72,3 +72,24 @@ subMenuItems.forEach(item => {
 		}
 	});
 });
+
+// Open menu btn
+const openMenuMobileBtn = document.querySelector('.mobile-menu-ope-btn button');
+const leftSideMenuContainer = document.querySelector('.left-side-container');
+const menuUnderlay = document.querySelector('.underlay');
+
+
+openMenuMobileBtn.addEventListener('click', () => {
+	if (!leftSideMenuContainer.classList.contains('is-active')) {
+		leftSideMenuContainer.classList.add('is-active');
+		menuUnderlay.classList.add('is-active');
+	} else {
+		leftSideMenuContainer.classList.remove('is-active');
+		menuUnderlay.classList.remove('is-active');
+	}
+});
+
+menuUnderlay.addEventListener('click', () => {
+	leftSideMenuContainer.classList.remove('is-active');
+	menuUnderlay.classList.remove('is-active');
+});
