@@ -6765,10 +6765,15 @@ html, body {
     box-shadow: 0 0 4px 2px #ccc; }
     .new-layout-page .user-outer.show .user.is-active {
       border-bottom: none;
-      background: #fff;
+      background: #585077;
       border-radius: 5px 5px 0 0;
-      box-shadow: 0 0 4px 2px #ccc;
+      box-shadow: 0 3px 4px 2px #f2f4f6;
       height: auto; }
+      .new-layout-page .user-outer.show .user.is-active .info-inner {
+        color: #fff; }
+        .new-layout-page .user-outer.show .user.is-active .info-inner::after {
+          border-right: 1px solid #fff;
+          border-bottom: 1px solid #fff; }
       .new-layout-page .user-outer.show .user.is-active .image-container::before {
         display: none; }
 
@@ -6824,16 +6829,16 @@ html, body {
   display: flex;
   align-items: flex-end;
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  padding: 2px 4px; }
   .new-layout-page .image-wrapper .image-container::before {
     display: block;
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
-    width: 115%;
+    width: 100%;
     height: 140%;
-    padding: 3px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: #585077;
@@ -7291,10 +7296,15 @@ html, body {
     box-shadow: 0 0 4px 2px #ccc; }
     .area-settings .user-outer.show .user.is-active {
       border-bottom: none;
-      background: #fff;
+      background: #585077;
       border-radius: 5px 5px 0 0;
-      box-shadow: 0 0 4px 2px #ccc;
+      box-shadow: 0 3px 4px 2px #f2f4f6;
       height: auto; }
+      .area-settings .user-outer.show .user.is-active .info-inner {
+        color: #fff; }
+        .area-settings .user-outer.show .user.is-active .info-inner::after {
+          border-right: 1px solid #fff;
+          border-bottom: 1px solid #fff; }
       .area-settings .user-outer.show .user.is-active .image-container::before {
         display: none; }
 
@@ -7350,16 +7360,16 @@ html, body {
   display: flex;
   align-items: flex-end;
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  padding: 2px 4px; }
   .area-settings .image-wrapper .image-container::before {
     display: block;
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
-    width: 115%;
+    width: 100%;
     height: 140%;
-    padding: 3px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: #585077;
