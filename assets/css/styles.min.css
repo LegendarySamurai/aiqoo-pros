@@ -6616,6 +6616,7 @@ html, body {
   width: auto;
   height: 90px;
   padding-bottom: 8px;
+  padding-right: 20px;
   margin-left: auto; }
 
 .new-layout-page .notification {
@@ -6691,7 +6692,7 @@ html, body {
 
 .new-layout-page .dropdown-info.visible {
   left: auto;
-  right: 15px;
+  right: 20px;
   top: 92%;
   transform: translate(0, 0%);
   max-height: 530px;
@@ -6761,14 +6762,14 @@ html, body {
   .new-layout-page .user-outer.show {
     border-bottom: none;
     background: #fff;
-    border-radius: 5px 5px 0 0;
-    box-shadow: 0 0 4px 2px #ccc; }
+    border-radius: 5px 5px 0 0; }
     .new-layout-page .user-outer.show .user.is-active {
       border-bottom: none;
       background: #585077;
       border-radius: 5px 5px 0 0;
       box-shadow: 0 3px 4px 2px #f2f4f6;
-      height: auto; }
+      height: auto;
+      padding: 1.25rem .75rem .375rem; }
       .new-layout-page .user-outer.show .user.is-active .info-inner {
         color: #fff; }
         .new-layout-page .user-outer.show .user.is-active .info-inner::after {
@@ -7147,6 +7148,7 @@ html, body {
   width: auto;
   height: 90px;
   padding-bottom: 8px;
+  padding-right: 20px;
   margin-left: auto; }
 
 .area-settings .notification {
@@ -7222,7 +7224,7 @@ html, body {
 
 .area-settings .dropdown-info.visible {
   left: auto;
-  right: 15px;
+  right: 20px;
   top: 92%;
   transform: translate(0, 0%);
   max-height: 530px;
@@ -7292,14 +7294,14 @@ html, body {
   .area-settings .user-outer.show {
     border-bottom: none;
     background: #fff;
-    border-radius: 5px 5px 0 0;
-    box-shadow: 0 0 4px 2px #ccc; }
+    border-radius: 5px 5px 0 0; }
     .area-settings .user-outer.show .user.is-active {
       border-bottom: none;
       background: #585077;
       border-radius: 5px 5px 0 0;
       box-shadow: 0 3px 4px 2px #f2f4f6;
-      height: auto; }
+      height: auto;
+      padding: 1.25rem .75rem .375rem; }
       .area-settings .user-outer.show .user.is-active .info-inner {
         color: #fff; }
         .area-settings .user-outer.show .user.is-active .info-inner::after {

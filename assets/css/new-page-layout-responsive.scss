@@ -190,14 +190,14 @@
   }
 
   .user {
-    padding-top: 0;
+    padding-top: 0 !important;
     align-items: center;
     justify-content: center;
   }
 
   .dropdown-info {
     &.visible {
-      top: 120%;
+      top: 130%;
     }
   }
 
@@ -216,7 +216,7 @@
 
     &::before {
       height: 110% !important;
-      transform: translate(-50%, 0) !important;
+      transform: translate(-50%, -3%) !important;
     }
   }
 
@@ -270,7 +270,7 @@
   }
   .dropdown-info {
     &.visible {
-      top: 140%;
+      //top: 140%;
     }
   }
 }

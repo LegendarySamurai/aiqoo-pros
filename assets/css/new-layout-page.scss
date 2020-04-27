@@ -376,6 +376,7 @@
   width: auto;
   height: 90px;
   padding-bottom: 8px;
+  padding-right: 20px;
   margin-left: auto;
 }
 
@@ -486,7 +487,7 @@
 .dropdown-info {
   &.visible {
     left: auto;
-    right: 15px;
+    right: 20px;
     top: 92%;
     transform: translate(0, 0%);
     max-height: 530px;
@@ -575,7 +576,7 @@
     border-bottom: none;
     background: #fff;
     border-radius: 5px 5px 0 0;
-    box-shadow: 0 0 4px 2px #ccc;
+    //box-shadow: 0 0 4px 2px #ccc;
 
     .user {
       &.is-active {
@@ -584,6 +585,7 @@
         border-radius: 5px 5px 0 0;
         box-shadow: 0 3px 4px 2px #f2f4f6;
         height: auto;
+        padding: 1.25rem .75rem .375rem;
 
         .info-inner {
           color: #fff;
