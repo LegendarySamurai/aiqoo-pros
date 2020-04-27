@@ -2,6 +2,7 @@
 // On top fixed panel users buttons click - showes dropdown for each.
 const notificationButtonOne = document.querySelector('.notification-1 .notification-button');
 const notificationButtonTwo = document.querySelector('.notification-2 .notification-button');
+const userInfoTopOuter = document.querySelector('.user-outer');
 const userInfoTop = document.querySelector('.user');
 const dropdownListOne = document.querySelector('.dropdown-list-one');
 const dropdownListTwo = document.querySelector('.dropdown-list-two');
@@ -42,18 +43,37 @@ userInfoTop.addEventListener('click', function() {
 	if(!userInfoTop.classList.contains('is-active')) {
 		// console.log(this, '5555555');
 		userInfoTop.classList.add('is-active');
+		userInfoTopOuter.classList.add('show');
 		dropdownInfo.classList.remove('invisible');
 		dropdownInfo.classList.add('visible');
 	} else {
 		// console.log(this, '666666');
 		this.classList.remove('is-active');
+		userInfoTopOuter.classList.remove('show');
 		dropdownInfo.classList.remove('visible');
 		dropdownInfo.classList.add('invisible');
 	}
 });
 
+// Adds class "is-active" to the clicked menu item left purple sidebar
+const menuItems = document.querySelectorAll('.menu-item-d');
 
-// Adds class "is-active" to the clicked sub-menu item
+menuItems.forEach(menuItem => {
+	menuItem.addEventListener('click', () => {
+		menuItems.forEach(menuItem => {
+			menuItem.classList.remove('is-active');
+		});
+
+		if (menuItem.classList.contains('is-active')) {
+			menuItem.classList.remove('is-active');
+		} else {
+			menuItem.classList.add('is-active');
+		}
+	});
+});
+
+
+// Adds class "is-active" to the clicked sub-menu item in top fixed panel
 const subMenuItems = document.querySelectorAll('.sub-menu-item');
 let subMenuBtnClicked = false;
 
@@ -72,6 +92,8 @@ subMenuItems.forEach(item => {
 		}
 	});
 });
+
+
 
 // Open menu btn
 const openMenuMobileBtn = document.querySelector('.mobile-menu-ope-btn button');
