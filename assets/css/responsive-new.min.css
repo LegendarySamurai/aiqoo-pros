@@ -3086,14 +3086,14 @@
     position: fixed;
     left: 0;
     flex: 1;
-    height: 40px;
+    height: 70px;
     display: flex;
     align-items: center; }
     .new-layout-page .mobile-menu-ope-btn .fa-bars {
       color: #fff; }
   .new-layout-page .left-side-container.is-active {
     transform: translate(0, 0); }
-  .new-layout-page .underlay.is-active {
+  .new-layout-page .left-underlay.is-active {
     display: block;
     position: absolute;
     top: 0;
@@ -3101,13 +3101,27 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); }
+  .new-layout-page .right-underlay-1.active,
+  .new-layout-page .right-underlay-2.active,
+  .new-layout-page .right-underlay-3.active {
+    z-index: 9000;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent; }
   .new-layout-page .fixed-top-panel-d {
     width: 100%;
     max-width: 100%; }
+  .new-layout-page .right-side-col .right-side-content-inner {
+    margin-top: 150px; }
   .new-layout-page .right-side-col .sub-menu-col {
     width: 100%;
     max-width: 100%;
-    height: 60px;
+    height: 70px;
     padding-left: 15px;
     padding-top: 10px; }
   .new-layout-page .right-side-col .sub-menu-container-inner .row {
@@ -3115,6 +3129,7 @@
   .new-layout-page .right-side-col .user-settings-col {
     flex-grow: 1;
     width: 100%;
+    height: 70px;
     padding-right: 15px;
     padding-left: 15px;
     background-color: #585077; }

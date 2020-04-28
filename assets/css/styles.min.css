@@ -6365,7 +6365,8 @@ html, body {
 .new-layout-page .mobile-menu-ope-btn {
   display: none; }
 
-.new-layout-page .underlay {
+.new-layout-page .left-underlay,
+.new-layout-page .right-underlay {
   display: none; }
 
 .new-layout-page .top-logo-container {
@@ -6669,6 +6670,7 @@ html, body {
 
 .new-layout-page .dropdown-info.visible,
 .new-layout-page .dropdown-list.visible {
+  z-index: 9001;
   position: absolute;
   left: 50%;
   display: flex;
@@ -6904,7 +6906,8 @@ html, body {
 .area-settings .mobile-menu-ope-btn {
   display: none; }
 
-.area-settings .underlay {
+.area-settings .left-underlay,
+.area-settings .right-underlay {
   display: none; }
 
 .area-settings .top-logo-container {
@@ -7208,6 +7211,7 @@ html, body {
 
 .area-settings .dropdown-info.visible,
 .area-settings .dropdown-list.visible {
+  z-index: 9001;
   position: absolute;
   left: 50%;
   display: flex;

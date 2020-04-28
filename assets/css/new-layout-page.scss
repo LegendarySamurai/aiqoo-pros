@@ -36,7 +36,8 @@
   display: none;
 }
 
-.underlay {
+.left-underlay,
+.right-underlay {
   display: none;
 }
 
@@ -453,9 +454,9 @@
 .dropdown-info,
 .dropdown-list {
   &.visible {
+    z-index: 9001;
     position: absolute;
     left: 50%;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
