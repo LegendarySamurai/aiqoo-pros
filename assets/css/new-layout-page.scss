@@ -385,8 +385,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  //margin-bottom: 20px;
   height: 100%;
+  cursor: pointer;
 
   &.notification-1 {
     .notification-button-icon {
@@ -403,6 +403,14 @@
     .notification-button-icon {
       background-color: #fff;
     }
+  }
+
+  .active-icon {
+    display: none;
+  }
+
+  .inactive-icon {
+    display: block;
   }
 
   @media(min-width: 992px) {
@@ -558,6 +566,10 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+
+  .image-container {
+    display: none;
+  }
 }
 
 .settings-inner-m {
@@ -580,7 +592,7 @@
 
     .user {
       &.is-active {
-        border-bottom: none;
+        border-bottom-color: transparent;
         background: #585077;
         border-radius: 5px 5px 0 0;
         box-shadow: 0 3px 4px 2px #f2f4f6;

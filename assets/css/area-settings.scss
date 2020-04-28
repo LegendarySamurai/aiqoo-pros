@@ -23,6 +23,7 @@ h5 {
   margin-right: 2rem;
   margin-bottom: 0 !important;
   white-space: nowrap;
+  font-family: "Raleway", sans-serif;
 }
 
 .search {
@@ -39,7 +40,6 @@ h5 {
 .form-control {
   @mixin inputStyles {
     font-weight: 300;
-    //font-size: 1.25rem;
     color: #d6d6d6;
   }
 

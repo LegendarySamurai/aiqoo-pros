@@ -290,17 +290,23 @@
     top: 0;
     left: 0;
     transform: translate(-110%, 0);
-    width: 90%;
-    max-width: 450px;
+    width: 60%;
+    //max-width: 450px;
+    min-width: 300px;
   }
 
   .mobile-menu-ope-btn {
     z-index: 12;
     position: fixed;
+    left: 0;
     flex: 1;
-    height: 100px;
+    height: 40px;
     display: flex;
     align-items: center;
+
+    .fa-bars {
+      color: #fff;
+    }
   }
 
   .left-side-container {
@@ -329,7 +335,194 @@
   // Right side col
   .right-side-col {
     .sub-menu-col {
-      padding-left: 70px;
+      width: 100%;
+      max-width: 100%;
+      height: 60px;
+      padding-left: 15px;
+      padding-top: 10px;
+    }
+
+    .sub-menu-container-inner {
+      .row {
+        flex-wrap: wrap-reverse;
+      }
+    }
+
+    .user-settings-col {
+      flex-grow: 1;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      background-color: #585077;
+    }
+
+    .user-outer {
+      height: 100% !important;
+      background-color: transparent;
+
+      .user {
+        justify-content: flex-end;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: auto;
+        height: 100%;
+        //margin-right: -15px;
+      }
+
+      .info-inner {
+        color: #fff;
+
+        &::after {
+          border-right: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+        }
+      }
+
+      .image-container {
+        width: 30px !important;
+        height: 30px !important;
+        padding: 0 !important;
+        margin-right: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &.show {
+        .user {
+          height: 100%;
+          padding-right: 0;
+          padding-bottom: 0;
+
+          &.is-active {
+            box-shadow: none !important;
+          }
+        }
+
+        .dropdown-info {
+          &.visible {
+            top: 100%;
+            right: 0;
+            width: 140px;
+            box-shadow: none;
+            border: 1px solid #585077;
+            border-top: none;
+          }
+
+          .dropdown-item {
+            padding: .25rem .75rem .25rem .25rem;
+            font-size: 9.5pt;
+
+            i {
+              font-size: 9.5pt;
+            }
+          }
+        }
+      }
+    }
+
+    .notification {
+      align-items: center;
+
+      &:not(:first-of-type) {
+        margin-left: 5px;
+      }
+    }
+
+    .notification-1 {
+      .notification-button-icon {
+        padding: 1.5px;
+      }
+    }
+
+    .notification-button {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+
+      &.is-active {
+        background-color: transparent !important;
+        border: 1px solid #fff;
+
+        .notification-button-icon {
+          background-color: transparent !important;
+        }
+
+        .inactive-icon {
+          display: none !important;
+        }
+
+        .active-icon {
+          display: block !important;
+        }
+      }
+    }
+
+    .notification-button-icon {
+      padding: 2px;
+
+      .index {
+        font-size: .35rem;
+        padding: 0px 2.5px;
+        top: 3px;
+        right: 2px;
+      }
+
+
+    }
+
+    .page-title {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+
+    .sub-menu-items {
+      height: 30px;
+    }
+
+    .sub-menu-item {
+      margin: 0px 7px;
+    }
+
+    .sub-menu-item:first-of-type {
+      margin: 0 7px 0 0;
+    }
+  }
+
+  // Setting inner
+  .settings-inner-d {
+    .image-container {
+      display: block;
+      width: 80px !important;
+      height: 40px !important;
+      margin-left: 40px;
+      margin-right: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  // Search new area
+  .search-new-area {
+    .form-control {
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 0.88rem !important;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        font-size: 0.88rem !important;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        font-size: 0.88rem !important;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        font-size: 0.88rem !important;
+      }
+
     }
   }
 
