@@ -6863,6 +6863,32 @@ html, body {
   border-radius: 50%;
   object-fit: cover; }
 
+.new-layout-page .left-underlay,
+.new-layout-page .right-underlay {
+  display: none; }
+
+.new-layout-page .left-underlay.is-active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.new-layout-page .right-underlay-1.active,
+.new-layout-page .right-underlay-2.active,
+.new-layout-page .right-underlay-3.active {
+  z-index: 9000;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent; }
+
 .new-layout-page .layout-button-sm {
   display: flex;
   justify-content: center;
@@ -7403,6 +7429,32 @@ html, body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover; }
+
+.area-settings .left-underlay,
+.area-settings .right-underlay {
+  display: none; }
+
+.area-settings .left-underlay.is-active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.area-settings .right-underlay-1.active,
+.area-settings .right-underlay-2.active,
+.area-settings .right-underlay-3.active {
+  z-index: 9000;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent; }
 
 .area-settings .layout-button-sm {
   display: flex;

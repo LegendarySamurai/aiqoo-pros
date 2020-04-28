@@ -3093,26 +3093,6 @@
       color: #fff; }
   .new-layout-page .left-side-container.is-active {
     transform: translate(0, 0); }
-  .new-layout-page .left-underlay.is-active {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); }
-  .new-layout-page .right-underlay-1.active,
-  .new-layout-page .right-underlay-2.active,
-  .new-layout-page .right-underlay-3.active {
-    z-index: 9000;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent; }
   .new-layout-page .fixed-top-panel-d {
     width: 100%;
     max-width: 100%; }
