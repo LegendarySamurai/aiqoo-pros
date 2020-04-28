@@ -3219,6 +3219,32 @@
     margin-bottom: 1rem !important;
     padding: .25rem .875rem; } }
 
+@media (max-width: 460px) {
+  .new-layout-page ::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
+  .new-layout-page ::-webkit-scrollbar-thumb {
+    background: transparent; }
+  .new-layout-page ::-webkit-scrollbar-track {
+    background-color: transparent; }
+  .new-layout-page * {
+    box-sizing: border-box; }
+  .new-layout-page .sub-menu-col .sub-menu-item {
+    display: inline-block;
+    padding: 0;
+    margin: 0 12px;
+    white-space: nowrap; }
+    .new-layout-page .sub-menu-col .sub-menu-item:first-of-type {
+      margin: 0 12px; }
+  .new-layout-page .sub-menu-lists {
+    max-width: 100%;
+    margin: 0 auto; }
+    .new-layout-page .sub-menu-lists .sub-menu-items {
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      overflow: auto;
+      white-space: nowrap; } }
+
 @media (max-width: 1499px) {
   .area-settings .list .item {
     width: calc(100% / 6); } }
