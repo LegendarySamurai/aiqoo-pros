@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>New landing layout</title>
+  <title>New page Layout</title>
   <link href="assets/css/sysf_bootstrap4.min.css" rel="stylesheet"/>
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ej2.min.js"></script>
   <script src="https://cdn.syncfusion.com/ej2/17.4.44/dist/ejs.interop.min.js"></script>
@@ -27,11 +27,12 @@
 </head>
 <body>
 <app>
-  <main class="new-layout-page">
+  <main class="new-layout-page area-settings">
     <div class="container-fluid">
       <div class="row row-outer">
         <!-- Left purple side -->
         <div class="col-auto left-side-col">
+          <div class="left-underlay"></div>
           <div class="left-side-container">
             <!-- Logo container -->
             <div class="tol-logo-col">
@@ -41,98 +42,98 @@
               </div>
             </div>
             <!-- Mobile menu -->
-            <div class="menu-m-col">
-              <div class="menu-container-m mobile-only-flex">
-                <select name="select" id="mobile-menu">
-                  <option value="value1">Dashboard</option>
-                  <option value="value2">Dashboard</option>
-                  <option value="value3">Aiqoo Index</option>
-                  <option value="value4">Sales</option>
-                  <option value="value5">Projects</option>
-                  <option value="value6" selected>Tasks</option>
-                  <option value="value7">Suppliers</option>
-                  <option value="value8">Calendar</option>
-                  <option value="value9">Address Book</option>
-                  <option value="value10">Network</option>
-                  <option value="value11">Support</option>
-                </select>
-              </div>
-            </div>
-            <!-- Desktop menu -->
+            <!--<div class="menu-m-col">-->
+            <!--  <div class="menu-container-m mobile-only-flex">-->
+            <!--    <select name="select" id="mobile-menu">-->
+            <!--      <option value="value1">Dashboard</option>-->
+            <!--      <option value="value2">Dashboard</option>-->
+            <!--      <option value="value3">Aiqoo Index</option>-->
+            <!--      <option value="value4">Sales</option>-->
+            <!--      <option value="value5">Projects</option>-->
+            <!--      <option value="value6" selected>Tasks</option>-->
+            <!--      <option value="value7">Suppliers</option>-->
+            <!--      <option value="value8">Calendar</option>-->
+            <!--      <option value="value9">Address Book</option>-->
+            <!--      <option value="value10">Network</option>-->
+            <!--      <option value="value11">Support</option>-->
+            <!--    </select>-->
+            <!--  </div>-->
+            <!--</div>-->
+            <!-- Desktop menu  desktop-only-flex-->
             <div class="menu-d-col">
-              <div class="menu-container-d desktop-only-flex">
+              <div class="menu-container-d">
                 <div class="menu-items-list">
-                  <label for="dashboard" class="menu-item-d">
+                  <label for="dashboard" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/dashboard-icon-white.svg" alt="dashboard"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/dashboard-icon-purple.svg" alt="dashboard"></span>
                     <span class="menu-item-name">Dashboard</span>
                   </label>
-                  <label for="marketing" class="menu-item-d">
+                  <label for="marketing" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/marketing-icon-white.svg" alt="marketing"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/marketing-icon-purple.svg" alt="marketing"></span>
                     <span class="menu-item-name">Marketing</span>
                   </label>
-                  <label for="aiqoo-index" class="menu-item-d">
+                  <label for="aiqoo-index" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/aiqoo-index-icon-white.svg" alt="aiqoo-index"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/aiqoo-index-icon-purple.svg" alt="aiqoo-index"></span>
                     <span class="menu-item-name">Aiqoo Index</span>
                   </label>
-                  <label for="sales" class="menu-item-d">
+                  <label for="sales" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/sales-icon-white.svg" alt="sales"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/sales-icon-purple.svg" alt="sales"></span>
                     <span class="menu-item-name">Sales</span>
                   </label>
-                  <label for="projects" class="menu-item-d">
+                  <label for="projects" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/projects-icon-white.svg" alt="projects"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/projects-icon-purple.svg" alt="projects"></span>
                     <span class="menu-item-name">Projects</span>
                   </label>
-                  <label for="tasks" class="menu-item-d is-active">
+                  <label for="tasks" class="menu-item menu-item-d is-active">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/tasks-icon-white.svg" alt="tasks"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/tasks-icon-purple.svg" alt="tasks"></span>
                     <span class="menu-item-name">Tasks</span>
                   </label>
-                  <label for="suppliers" class="menu-item-d">
+                  <label for="suppliers" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/suppliers-icon-white.svg" alt="suppliers"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/suppliers-icon-purple.svg" alt="suppliers"></span>
                     <span class="menu-item-name">Suppliers</span>
                   </label>
-                  <label for="calendar" class="menu-item-d">
+                  <label for="calendar" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/calendar-icon-white.svg" alt="calendar"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/calendar-icon-purple.svg" alt="calendar"></span>
                     <span class="menu-item-name">Calendar</span>
                   </label>
-                  <label for="address-book" class="menu-item-d">
+                  <label for="address-book" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/address-card-icon-white.svg" alt="address-book"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/address-card-icon-purple.svg" alt="address-book"></span>
                     <span class="menu-item-name">Address Book</span>
                   </label>
-                  <label for="network" class="menu-item-d">
+                  <label for="network" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/network-icon-white.svg" alt="network"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
                         src="assets/images/menu/network-icon-purple.svg" alt="network"></span>
                     <span class="menu-item-name">Network</span>
                   </label>
-                  <label for="support" class="menu-item-d">
+                  <label for="support" class="menu-item menu-item-d">
                     <span class="menu-item-icon menu-item-icon-default"><img
                         src="assets/images/menu/support-icon-white.svg" alt="support"></span>
                     <span class="menu-item-icon menu-item-icon-active"><img
@@ -146,155 +147,190 @@
         </div>
 
         <!-- Right content side -->
-        <div class="col">
+        <div class="col right-side-col">
           <div class="right-side-container">
+            <!-- Only for mobile -->
+            <div class="mobile-menu-ope-btn">
+              <button class=""><i class="far fa-bars font-16"></i></button>
+            </div>
             <!-- Desktop -->
             <div class="fixed-top-panel-d">
-              <div class="row">
-                <div class="col-auto right-side-col">
-                  <div class="dummy-content"></div>
-                </div>
+              <!-- Fixed submenu -->
+              <div class="sub-menu-container">
+                <div class="sub-menu-container-inner">
+                  <div class="row">
+                    <div class="col-auto sub-menu-col">
+                      <!-- Page titles -->
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="page-title font-weight-600">Account Settings</div>
+                        </div>
+                      </div>
+                      <!-- Sub-menus -->
+                      <div class="row">
+                        <div class="col-12 sub-menu-lists-col">
+                          <div class="sub-menu-lists">
+                            <div class="sub-menu-items" id="dashboard">
+                              <span class="sub-menu-item font-r-10 font-weight-bold">My Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold">Company Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold">Services</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold">Locations</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-1030 show-in-991">Invoices</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold  hide-in-1070 show-in-991">Payments Methods</span>
+                              <span class="sub-menu-item font-r-10 font-weight-bold  show-in-1070 more-btn">
+                                <a href="#" class="more-btn-inner">
+                                  <i class="fal fa-ellipsis-v-alt"></i>
+                                  <span>More</span>
+                                </a>
+                                <div class="sub-menu-container">
+                                  <ul class="hide-sub-menu">
+                                    <li class="show-in-1030">Invoices</li>
+                                    <li class="show-in-1070">Payments Methods</li>
+                                  </ul>
+                                </div>
 
-                <!-- Fixed submenu -->
-                <div class="col sub-menu-container">
-                  <div class="sub-menu-container-inner">
-                    <div class="row">
-                      <div class="col-auto sub-menu-col">
-                        <!-- Page titles -->
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="page-title font-weight-600">Account Settings</div>
+                              </span>
+                            </div>
+
                           </div>
                         </div>
-                        <!-- Sub-menus -->
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="sub-menu-lists">
-                              <div class="sub-menu-items" id="dashboard">
-                                <span class="sub-menu-item font-weight-bold">My Profile</span>
-                                <span class="sub-menu-item font-weight-bold">Company Profile</span>
-                                <span class="sub-menu-item font-weight-bold">Services</span>
-                                <span class="sub-menu-item font-weight-bold">Locations</span>
-                                <span class="sub-menu-item font-weight-bold">Invoices</span>
-                                <span class="sub-menu-item font-weight-bold">Payments Methods</span>
-                              </div>
+                      </div>
+                    </div>
 
+                    <!-- User settings -->
+                    <div class="col user-settings-col">
+                      <div class="settings-inner-d">
+                        <div class="image-container">
+                          <img src="assets/images/logo/white-logo.png" alt="logo" class="pros-white-logo">
+                        </div>
+                        <div class="notification notification-1">
+                          <div class="right-underlay-1"></div>
+                          <div class="notification-button">
+                              <span class="notification-button-icon">
+                                <img class="inactive-icon" src="assets/images/notifications/megaphone.svg" alt="icon">
+                                <img class="active-icon" src="assets/images/notifications/megaphone-white.svg" alt="icon">
+                              </span>
+                          </div>
+                          <div class="dropdown-list  dropdown-list-one invisible">
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 1</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                            </div>
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 2</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                            </div>
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 3</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                            </div>
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Promo 4</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notification notification-2">
+                          <div class="right-underlay-2"></div>
+                          <div class="notification-button">
+                              <span class="notification-button-icon">
+                                <img class="inactive-icon" src="assets/images/notifications/notification.svg" alt="icon">
+                                <img class="active-icon" src="assets/images/notifications/notification-white.svg" alt="icon">
+                                <i class="index">1</i>
+                              </span>
+                          </div>
+                          <div class="dropdown-list dropdown-list-two invisible">
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Messages</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">10 Min</span>
+                                </span>
+                            </div>
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Message</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                            </div>
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Bundle</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                            </div>
+                            <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                              <span class="item-content">
+                                  <span class="item-title font-weight-black">Note</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
                             </div>
                           </div>
                         </div>
                       </div>
-
-                      <!-- User settings -->
-                      <div class="col user-settings-col">
-                        <div class="settings-inner">
-                          <div class="notification notification-1">
-                            <div class="notification-button">
-                              <span class="notification-button-icon">
-                                <img src="assets/images/notifications/megaphone.svg" alt="icon">
-                              </span>
-                            </div>
-                            <div class="dropdown-list invisible">
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
+                      <div class="user-outer">
+                        <div class="right-underlay-3"></div>
+                        <button class="user">
+                          <div class="info">
+                            <div class="info-inner">
+                              <span class="name-wrap font-weight-black font-r-11">Hello <span class="name">Alice</span></span>
+                              <span class="company font-r-10">Dave company</span>
                             </div>
                           </div>
-                          <div class="notification notification-2">
-                            <div class="notification-button">
-                              <span class="notification-button-icon">
-                                <img src="assets/images/notifications/notification.svg" alt="icon">
-                                <i class="index">1</i>
-                              </span>
-                            </div>
-                            <div class="dropdown-list invisible">
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Promo</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">2 Min</span>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="info">
-                              <span class="font-weight-black">Hello <span class="name">Alice</span></span>
-                              <span class="company">Dave company<i class="far fa-chevron-down"></i></span>
-                            </div>
+                          <div class="image-wrapper">
                             <div class="image-container">
                               <img src="assets/images/notifications/user-image.png" alt="user-image">
                             </div>
                           </div>
+                        </button>
+                        <div class="dropdown-info invisible">
+                          <a class="dropdown-item" href="Payments/Balance">
+                            <i class="far fa-exchange font-11 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account Settings</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign Out</a>
+                          <div class="dropdown-divider"></div>
                         </div>
                       </div>
                     </div>
@@ -306,20 +342,7 @@
             <!--<div class="fixed-top-panel-m"></div>-->
 
             <div class="right-side-content">
-              <div class="row">
-                <div class="col right-side-content-col">
-                  <div class="right-side-content-inner">
-                    <div class="row">
-                      <div class="col-12 col-lg-7">
-
-                      </div>
-                      <div class="col-12 col-lg-5">
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- Content put here -->
             </div>
           </div>
         </div>
@@ -330,6 +353,7 @@
 
 
 <script src="assets/js/new-page-layout.js"></script>
+<!--<script src="assets/js/nav-menu.js"></script>-->
 
 </body>
 </html>
