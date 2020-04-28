@@ -4,6 +4,7 @@
 @import 'variables.scss';
 @import 'accordion';
 @import 'form';
+@import 'colors'; // New color panel
 
 // vendor custom bootstrap cherry picking styles
 @import "slick/slick.scss";
@@ -21,10 +22,11 @@ html, body {
 
 
 
-//************* New page Layout (area-settings) *************//
+//************* Area settings (New page Layout) area-settings.html *************//
 .area-settings {
   @import 'new-layout-page.scss';
   @import 'area-settings';
+
   .right-side-content {
     @import 'search';
     @import 'form';
@@ -32,6 +34,18 @@ html, body {
 }
 
 
+
+//************* Account settings (New page Layout) account-settings.html *************//
+
+.account-settings {
+  @import 'new-layout-page.scss';
+  @import 'account-settings.scss';
+
+  .right-side-content {
+    @import 'search';
+    @import 'form';
+  }
+}
 
 
 //************* My profile page (Dashboard) *************//

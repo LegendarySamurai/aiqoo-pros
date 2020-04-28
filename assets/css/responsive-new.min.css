@@ -3271,6 +3271,13 @@
   .area-settings .list .item {
     width: auto; } }
 
+.account-settings .right-side-content-col {
+  margin-top: 10px; }
+
+.account-settings .account-settings-wrapper {
+  padding: 20px 40px 20px 80px;
+  background-color: #f5f5f5; }
+
 @media (max-width: 599px) {
   .mobile-only-flex {
     display: flex; } }

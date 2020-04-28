@@ -2201,6 +2201,13 @@
   @import 'area-settings-responsive';
 }
 
+//************* Account settings (New page Layout) account-settings.html *************//
+
+.account-settings {
+  @import 'account-settings-responsive.scss';
+}
+
+
 
 //**************************//
 .mobile-only-flex {
