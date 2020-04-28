@@ -318,6 +318,7 @@
   .fixed-top-panel-d {
     width: 100%;
     max-width: 100%;
+    height: 142px;
   }
 
   // Right side col
@@ -330,11 +331,13 @@
       width: 100%;
       max-width: 100%;
       height: 70px;
-      padding-left: 15px;
-      padding-top: 10px;
+      padding: 10px 30px 0 30px;
     }
 
     .sub-menu-container-inner {
+      margin-right: 0;
+      margin-left: 0;
+
       .row {
         flex-wrap: wrap-reverse;
       }
@@ -344,6 +347,8 @@
       flex-grow: 1;
       width: 100%;
       height: 70px;
+      margin-right: 15px;
+      margin-left: 15px;
       padding-right: 15px;
       padding-left: 15px;
       background-color: #585077;
@@ -359,12 +364,6 @@
         padding-bottom: 0;
         width: auto;
         height: 100%;
-
-        //padding: 0 15px 0 6px;
-        //margin-right: -15px;
-        //margin-left: 10px;
-        //border: 1px solid transparent;
-        //margin-right: -15px;
       }
 
       .info-inner {
@@ -562,7 +561,7 @@
       white-space: nowrap;
 
       &:first-of-type {
-        margin: 0 12px;
+        margin: 0 12px 0 0;
       }
     }
   }
