@@ -3164,8 +3164,6 @@
       top: 100%;
       right: 0;
       width: 140px;
-      box-shadow: none;
-      border: 1px solid #585077;
       border-top: none; }
     .new-layout-page .right-side-col .user-outer.show .dropdown-info .dropdown-item {
       padding: .25rem .75rem .25rem .25rem;
@@ -3211,7 +3209,7 @@
     display: block;
     width: 80px !important;
     height: 40px !important;
-    margin-left: 40px;
+    margin-left: 30px;
     margin-right: auto; }
     .new-layout-page .settings-inner-d .image-container img {
       width: 100%;
