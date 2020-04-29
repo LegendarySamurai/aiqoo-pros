@@ -3068,6 +3068,8 @@
     margin: 0px 10px; } }
 
 @media (max-width: 599px) {
+  .new-layout-page .dropdown-list.visible {
+    bottom: 37%; }
   .new-layout-page .left-side-col {
     z-index: 20;
     position: static;
@@ -3271,12 +3273,23 @@
   .area-settings .list .item {
     width: auto; } }
 
-.account-settings .right-side-content-col {
-  margin-top: 10px; }
+@media (max-width: 1199px) {
+  .account-settings .content .text {
+    font-size: inherit !important; } }
 
-.account-settings .account-settings-wrapper {
-  padding: 20px 40px 20px 80px;
-  background-color: #f5f5f5; }
+@media (max-width: 999px) {
+  .account-settings .content {
+    width: 100% !important; }
+  .account-settings .search .input-group {
+    width: 100% !important; } }
+
+@media (max-width: 599px) {
+  .account-settings .account-settings-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 20px; }
+  .account-settings .content {
+    padding-left: 0; } }
 
 @media (max-width: 599px) {
   .mobile-only-flex {

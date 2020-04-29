@@ -276,6 +276,12 @@
 }
 
 @media(max-width: 599px) {
+  .dropdown-list {
+    &.visible {
+      bottom: 37%;
+    }
+  }
+
   // Left side container
   .left-side-col {
     z-index: 20;
