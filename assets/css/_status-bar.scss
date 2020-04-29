@@ -30,6 +30,35 @@
     .search {
       display: none;
     }
+
+    // user
+    .user {
+      padding: 15px 0;
+      border-bottom: 1px solid #dadada;
+
+      .user-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .user-name {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .avatar {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+    }
+    // EOL: user
   }
 
   .status-bar-heading {
@@ -222,7 +251,7 @@
   //EOL: task-type
 }
 
-// user
+/*// user
 .user {
   padding: 15px 0;
   border-bottom: 1px solid #dadada;
@@ -249,7 +278,7 @@
     border-radius: 5px;
   }
 }
-// EOL: user
+// EOL: user*/
 
 @media(max-width: 1399px) {
   .status-bar {

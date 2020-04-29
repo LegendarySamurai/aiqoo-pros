@@ -20,6 +20,17 @@ html, body {
   @import 'new-layout-page.scss';
 }
 
+//************* Services-panel (New page Layout) services-panel.html *************//
+.services-panel {
+  @import 'new-layout-page.scss';
+  @import 'status-bar';
+  @import 'services-panel';
+
+  .right-side-content {
+    @import 'search';
+    @import 'form';
+  }
+}
 
 
 //************* Area settings (New page Layout) area-settings.html *************//
@@ -32,8 +43,6 @@ html, body {
     @import 'form';
   }
 }
-
-
 
 //************* Account settings (New page Layout) account-settings.html *************//
 

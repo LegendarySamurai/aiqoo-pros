@@ -1,0 +1,40 @@
+@media(max-width: 1899px) {}
+
+@media(max-width: 1599px) {}
+
+@media(max-width: 1399px) {}
+
+@media(max-width: 1199px) {}
+
+@media(max-width: 991px) {}
+
+@media(max-width: 767px) {}
+
+@media(max-width: 599px) {
+  // Reset common styles only for this page (because we have twice bigger header on that page)
+  .status-bar-heading {
+    top: 140px;
+  }
+
+  // For pages which has Filter (status-bar)
+  .status-bar-heading {
+    z-index: 10;
+    top: 70px;
+    box-shadow: none;
+  }
+
+  .fixed-top-panel-d {
+    .sub-menu-col {
+      padding-top: 90px;
+      height: 30px;
+    }
+
+    .page-title {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 374px) {}
+
+
