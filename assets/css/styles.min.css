@@ -6461,6 +6461,9 @@ form {
 html, body {
   height: 100%; }
 
+body.blocked {
+  overflow: hidden; }
+
 .new-layout-page {
   flex-grow: 1;
   display: flex;
@@ -6493,6 +6496,9 @@ html, body {
 
 .new-layout-page .left-underlay,
 .new-layout-page .right-underlay {
+  display: none; }
+
+.new-layout-page .top-logo-col .close-button {
   display: none; }
 
 .new-layout-page .top-logo-container {
@@ -6760,7 +6766,7 @@ html, body {
   width: 40px;
   height: 40px; }
   .new-layout-page .notification-button.is-active .notification-button-icon {
-    background-color: #fff; }
+    background-color: transparent; }
   .new-layout-page .notification-button .active-icon {
     display: none; }
   .new-layout-page .notification-button .inactive-icon {
@@ -6794,6 +6800,22 @@ html, body {
     background-color: #fdc25d;
     font-size: .5rem; }
 
+.new-layout-page .dropdown-list-wrapper.active {
+  position: relative; }
+  .new-layout-page .dropdown-list-wrapper.active:before {
+    position: absolute;
+    top: -10px;
+    left: -28px;
+    transform: translate(0, 0);
+    display: block;
+    content: '';
+    width: .1px;
+    height: .1px;
+    border-bottom: 10px solid #585077;
+    border-top: none;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent; }
+
 .new-layout-page .dropdown-info.visible,
 .new-layout-page .dropdown-list.visible {
   z-index: 9001;
@@ -6817,7 +6839,7 @@ html, body {
 
 .new-layout-page .dropdown-list.visible {
   bottom: 0;
-  transform: translate(-50%, 100%);
+  transform: translate(-60%, 100%);
   max-height: 465px; }
 
 .new-layout-page .notification-2 .dropdown-list.visible .icon-container {
@@ -7085,6 +7107,8 @@ html, body {
   .services-panel .left-underlay,
   .services-panel .right-underlay {
     display: none; }
+  .services-panel .top-logo-col .close-button {
+    display: none; }
   .services-panel .top-logo-container {
     display: flex;
     flex-direction: row;
@@ -7324,7 +7348,7 @@ html, body {
     width: 40px;
     height: 40px; }
     .services-panel .notification-button.is-active .notification-button-icon {
-      background-color: #fff; }
+      background-color: transparent; }
     .services-panel .notification-button .active-icon {
       display: none; }
     .services-panel .notification-button .inactive-icon {
@@ -7356,6 +7380,21 @@ html, body {
       border-radius: 50%;
       background-color: #fdc25d;
       font-size: .5rem; }
+  .services-panel .dropdown-list-wrapper.active {
+    position: relative; }
+    .services-panel .dropdown-list-wrapper.active:before {
+      position: absolute;
+      top: -10px;
+      left: -28px;
+      transform: translate(0, 0);
+      display: block;
+      content: '';
+      width: .1px;
+      height: .1px;
+      border-bottom: 10px solid #585077;
+      border-top: none;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent; }
   .services-panel .dropdown-info.visible,
   .services-panel .dropdown-list.visible {
     z-index: 9001;
@@ -7377,7 +7416,7 @@ html, body {
     display: none; }
   .services-panel .dropdown-list.visible {
     bottom: 0;
-    transform: translate(-50%, 100%);
+    transform: translate(-60%, 100%);
     max-height: 465px; }
   .services-panel .notification-2 .dropdown-list.visible .icon-container {
     background-color: #dd0000; }
@@ -8234,6 +8273,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 .area-settings .right-underlay {
   display: none; }
 
+.area-settings .top-logo-col .close-button {
+  display: none; }
+
 .area-settings .top-logo-container {
   display: flex;
   flex-direction: row;
@@ -8499,7 +8541,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   width: 40px;
   height: 40px; }
   .area-settings .notification-button.is-active .notification-button-icon {
-    background-color: #fff; }
+    background-color: transparent; }
   .area-settings .notification-button .active-icon {
     display: none; }
   .area-settings .notification-button .inactive-icon {
@@ -8533,6 +8575,22 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #fdc25d;
     font-size: .5rem; }
 
+.area-settings .dropdown-list-wrapper.active {
+  position: relative; }
+  .area-settings .dropdown-list-wrapper.active:before {
+    position: absolute;
+    top: -10px;
+    left: -28px;
+    transform: translate(0, 0);
+    display: block;
+    content: '';
+    width: .1px;
+    height: .1px;
+    border-bottom: 10px solid #585077;
+    border-top: none;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent; }
+
 .area-settings .dropdown-info.visible,
 .area-settings .dropdown-list.visible {
   z-index: 9001;
@@ -8556,7 +8614,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 
 .area-settings .dropdown-list.visible {
   bottom: 0;
-  transform: translate(-50%, 100%);
+  transform: translate(-60%, 100%);
   max-height: 465px; }
 
 .area-settings .notification-2 .dropdown-list.visible .icon-container {
@@ -9271,6 +9329,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 .account-settings .right-underlay {
   display: none; }
 
+.account-settings .top-logo-col .close-button {
+  display: none; }
+
 .account-settings .top-logo-container {
   display: flex;
   flex-direction: row;
@@ -9536,7 +9597,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   width: 40px;
   height: 40px; }
   .account-settings .notification-button.is-active .notification-button-icon {
-    background-color: #fff; }
+    background-color: transparent; }
   .account-settings .notification-button .active-icon {
     display: none; }
   .account-settings .notification-button .inactive-icon {
@@ -9570,6 +9631,22 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #fdc25d;
     font-size: .5rem; }
 
+.account-settings .dropdown-list-wrapper.active {
+  position: relative; }
+  .account-settings .dropdown-list-wrapper.active:before {
+    position: absolute;
+    top: -10px;
+    left: -28px;
+    transform: translate(0, 0);
+    display: block;
+    content: '';
+    width: .1px;
+    height: .1px;
+    border-bottom: 10px solid #585077;
+    border-top: none;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent; }
+
 .account-settings .dropdown-info.visible,
 .account-settings .dropdown-list.visible {
   z-index: 9001;
@@ -9593,7 +9670,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 
 .account-settings .dropdown-list.visible {
   bottom: 0;
-  transform: translate(-50%, 100%);
+  transform: translate(-60%, 100%);
   max-height: 465px; }
 
 .account-settings .notification-2 .dropdown-list.visible .icon-container {
@@ -10172,7 +10249,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: 50%; }
     .account-settings .right-side-content .add-company-profile form .form-control-container {
       width: 50%; } }
-  @media (max-width: 599px) {
+  @media (max-width: 767px) {
     .account-settings .right-side-content .decoration-element-wizard {
       display: none; }
     .account-settings .right-side-content .decoration-element-mobile {
@@ -10185,7 +10262,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       width: 12px;
       height: 95%;
       border-radius: 20px;
-      background-color: #585077; } }
+      background-color: #585077; }
+    .account-settings .right-side-content .decoration-element-circle-arrow {
+      display: none; } }
 
 .my-profile-page {
   /*

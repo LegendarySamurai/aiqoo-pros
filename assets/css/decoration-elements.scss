@@ -1,5 +1,5 @@
 // Relative element should be position: relative;
-@media(max-width: 599px) {
+@media(max-width: 767px) {
   .decoration-element-wizard {
     display: none;
   }
@@ -15,5 +15,9 @@
     height: 95%;
     border-radius: 20px;
     background-color: #585077;
+  }
+
+  .decoration-element-circle-arrow {
+    display: none;
   }
 }

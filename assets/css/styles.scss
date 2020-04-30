@@ -14,6 +14,12 @@ html, body {
   height: 100%;
 }
 
+body {
+  &.blocked {
+    overflow: hidden;
+  }
+}
+
 
 //************* New page Layout *************//
 .new-layout-page {

@@ -3064,12 +3064,25 @@
     padding: 0 4px; } }
 
 @media (max-width: 767px) {
+  .new-layout-page .top-logo-col .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex; }
+    .new-layout-page .top-logo-col .close-button .fa-times {
+      color: #fff;
+      padding: 10px;
+      cursor: pointer; }
   .new-layout-page .sub-menu-item {
-    margin: 0px 10px; } }
-
-@media (max-width: 599px) {
+    margin: 0 10px; }
   .new-layout-page .dropdown-list.visible {
-    bottom: 37%; }
+    bottom: 25%;
+    transform: translate(-60%, 110%); }
+  .new-layout-page .dropdown-list-wrapper.active:before {
+    bottom: -23px;
+    left: -15px;
+    top: auto;
+    border-bottom: 10px solid #fff; }
   .new-layout-page .left-side-col {
     z-index: 20;
     position: static;
@@ -3077,7 +3090,7 @@
     width: auto;
     padding: 0; }
   .new-layout-page .left-side-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transform: translate(-110%, 0);
@@ -3283,13 +3296,27 @@
   .account-settings .search .input-group {
     width: 100% !important; } }
 
-@media (max-width: 599px) {
+@media (max-width: 899px) {
   .account-settings .account-settings-wrapper {
-    position: relative;
-    z-index: 2;
     padding: 20px; }
   .account-settings .content {
-    padding-left: 0; } }
+    padding-left: 15px; }
+  .account-settings .service-item {
+    height: 40px; }
+  .account-settings .service-name {
+    white-space: normal;
+    line-height: 1.15; } }
+
+@media (max-width: 767px) {
+  .account-settings .account-settings-wrapper {
+    position: relative;
+    z-index: 2; }
+  .account-settings .content {
+    padding-left: 0; }
+  .account-settings .left-part {
+    order: 2; }
+  .account-settings .rigth-part {
+    order: 1; } }
 
 @media (max-width: 599px) {
   .services-panel .status-bar-heading {

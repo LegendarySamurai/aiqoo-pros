@@ -29,19 +29,42 @@
   // EOL: reset common styles
 }
 
-@media(max-width: 991px) {}
 
-@media(max-width: 767px) {}
-
-@media(max-width: 599px) {
+@media(max-width: 899px) {
   .account-settings-wrapper {
-    position: relative;
-    z-index: 2;
     padding: 20px;
   }
 
   .content {
+    padding-left: 15px;
+  }
+
+  .service-item {
+    height: 40px;
+  }
+
+  .service-name {
+    white-space: normal;
+    line-height: 1.15;
+  }
+}
+
+@media(max-width: 767px) {
+  .account-settings-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  .content {
     padding-left: 0;
+  }
+
+  .left-part {
+    order: 2;
+  }
+
+  .rigth-part {
+    order: 1;
   }
 }
 
