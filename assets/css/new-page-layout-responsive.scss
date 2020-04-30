@@ -52,14 +52,6 @@
 }
 
 @media(max-width: 1120px) {
-  .notification-button-icon {
-    i {
-      padding: 1px 3.5px;
-      top: 6px;
-      right: 5px;
-    }
-  }
-
   .notification-button {
     width: 35px;
     height: 35px;
@@ -85,56 +77,7 @@
     padding: 0 8px;
   }
 
-  .areas-list-outer {
-    //padding: 2rem 1rem;
-  }
-
-  // SWIPER
-  //::-webkit-scrollbar {
-  //  width:0;
-  //  height:0;
-  //}
-  //
-  //::-webkit-scrollbar-thumb {
-  //  background: transparent;
-  //}
-  //
-  //::-webkit-scrollbar-track {
-  //  background-color: transparent;
-  //}
-  //
-  //* {
-  //  box-sizing: border-box;
-  //}
-  //
-  //.sub-menu-col {
-  //  .sub-menu-item {
-  //    display: inline-block;
-  //    padding: 0;
-  //    margin: 0 12px;
-  //    white-space: nowrap;
-  //
-  //    &:first-of-type {
-  //      margin: 0 12px 0 0;
-  //    }
-  //  }
-  //}
-  //
-  //.sub-menu-lists {
-  //  max-width: 600px;
-  //  height: 40px;
-  //  line-height: 2.5;
-  //  margin: 0 auto;
-  //
-  //  .sub-menu-items {
-  //    -webkit-overflow-scrolling: touch;
-  //    display: flex;
-  //    overflow-y: auto;
-  //    white-space: nowrap;
-  //  }
-  //}
-
-  // Sub-menu
+    // Sub-menu
   .sub-menu-lists {
     max-width: inherit;
   }
@@ -142,15 +85,36 @@
   .user-settings-col {
     justify-content: flex-start;
     align-items: flex-start;
-    height: 40px;
+    height: 55px;
     padding-bottom: 0;
   }
 
   .settings-inner-d {
     height: 100%;
-    //background-color: coral;
   }
 
+  // Notifications
+  .index {
+    width: 16px;
+    height: 16px;
+    font-size: 7pt;
+  }
+
+  .notification-1 {
+    .index {
+      top: 0px;
+      left: 7px;
+    }
+  }
+
+  .notification-2 {
+    .index {
+      top: 0px;
+      right: 0px;
+    }
+  }
+
+  // User
   .user {
     padding-top: 0 !important;
     align-items: center;
@@ -165,7 +129,6 @@
 
   .info {
     height: 50%;
-    //order: 3;
     margin-left: 0;
     margin-bottom: 0;
     align-items: inherit;
@@ -185,16 +148,10 @@
   .dropdown-info {
     &.visible {
       left: auto;
-      //right: 0;
-      //transform: translate(0, 0);
     }
   }
 
   // settings inner
-  .settings-inner-d {
-    //display: none;
-  }
-
   .settings-inner-m {
     width: 100%;
     height: auto;
@@ -203,7 +160,6 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0 .875rem;
-    //background-color: coral; // remove
   }
 }
 
@@ -347,9 +303,9 @@
 
       .user {
         justify-content: flex-end;
-        padding-right: 0;
+        padding-right: 15px;
         padding-bottom: 0;
-        width: auto;
+        width: 165px;
         height: 100%;
       }
 
@@ -420,55 +376,34 @@
       }
     }
 
+    // Notifications
+    .index {
+      width: 14px;
+      height: 14px;
+      font-size: 5pt;
+    }
+
     .notification {
       align-items: center;
-
-      &:not(:first-of-type) {
-        margin-left: 5px;
-        margin-right: 10px;
-      }
     }
 
     .notification-1 {
-      .notification-button-icon {
-        padding: 1.5px;
-      }
-    }
-
-    .notification-button {
-      width: 20px;
-      height: 20px;
-      background-color: #fff;
-
-      &.is-active {
-        background-color: transparent !important;
-        border: 1px solid #fff;
-
-        .notification-button-icon {
-          background-color: transparent !important;
-        }
-
-        .inactive-icon {
-          display: none !important;
-        }
-
-        .active-icon {
-          display: block !important;
-        }
-      }
-    }
-
-    .notification-button-icon {
-      padding: 2px;
-
       .index {
-        font-size: .35rem;
-        padding: 0px 2.5px;
-        top: 3px;
+        top: 0px;
+        left: 8px;
+      }
+    }
+
+    .notification-2 {
+      .index {
+        top: 0px;
         right: 2px;
       }
     }
 
+    .notification-button-icon {
+      color: #fff;
+    }
 
     .page-title {
       font-size: 1.25rem;
@@ -584,8 +519,8 @@
 @media(max-width: 374px) {
   .right-side-col {
     .notification-button {
-      width: 18px;
-      height: 18px;
+      //width: 18px;
+      //height: 18px;
     }
   }
 

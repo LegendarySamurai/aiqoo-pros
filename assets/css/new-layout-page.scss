@@ -394,30 +394,22 @@
   align-items: flex-end;
   height: 100%;
   cursor: pointer;
-
-  &.notification-1 {
-    .notification-button-icon {
-      padding: 8px;
-    }
-  }
 }
 
 .notification-button {
+  position: relative;
   width: 40px;
   height: 40px;
 
+  .notification-button-icon {
+    color: #585077;
+    font-size: 15pt;
+  }
+
   &.is-active {
     .notification-button-icon {
-      background-color: transparent;
+      //color: #585077;
     }
-  }
-
-  .active-icon {
-    display: none;
-  }
-
-  .inactive-icon {
-    display: block;
   }
 
   @media(min-width: 992px) {
@@ -425,8 +417,51 @@
   }
 }
 
+.notification-1 {
+  .notification-button-icon {
+    font-size: 13pt;
+  }
+}
+
+.index {
+  position: absolute;
+  //top: 8px;
+  //right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  //width: 14px;
+  //height: 14px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #342e49;
+  font-family: "Lato", sans-serif;
+  //font-size: 5pt;
+  font-size: 8pt;
+}
+
+.notification-1 {
+  .index {
+    //top: -4px;
+    //left: 1px;
+    top: 0px;
+    left: 7px;
+  }
+}
+
+.notification-2 {
+  .index {
+    //top: -4px;
+    //right: -4px;
+
+    top: 0px;
+    right: 2px;
+  }
+}
+
 .notification-button-icon {
-  position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -434,26 +469,6 @@
   width: 100%;
   height: 100%;
   padding: 10px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  i {
-    position: absolute;
-    top: 8px;
-    right: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1px 5px;
-    border-radius: 50%;
-    background-color: #fdc25d;
-    font-size: .5rem;
-
-  }
 }
 
 // Dropdown

@@ -140,20 +140,28 @@ subMenuItems.forEach(item => {
 
 // Open menu btn
 openMenuMobileBtn.addEventListener('click', () => {
+	if (!body.classList.contains('blocked')) {
+		body.classList.add('blocked');
+		subMenuBtnClicked = true;
+	} else {
+		body.classList.remove('blocked');
+		subMenuBtnClicked = false;
+	}
+
 	if (!leftSideMenuContainer.classList.contains('is-active')) {
 		leftSideMenuContainer.classList.add('is-active');
 		menuLeftUnderlay.classList.add('is-active');
-		body.classList.add('blocked');
+
 	} else {
 		leftSideMenuContainer.classList.remove('is-active');
 		menuLeftUnderlay.classList.remove('is-active');
-		body.classList.remove('blocked');
 	}
 });
 
 menuLeftUnderlay.addEventListener('click', () => {
 	leftSideMenuContainer.classList.remove('is-active');
 	menuLeftUnderlay.classList.remove('is-active');
+	body.classList.remove('blocked');
 });
 
 leftSideMenuCloseBtn.addEventListener('click', () => {

@@ -6759,24 +6759,43 @@ body.blocked {
   align-items: flex-end;
   height: 100%;
   cursor: pointer; }
-  .new-layout-page .notification.notification-1 .notification-button-icon {
-    padding: 8px; }
 
 .new-layout-page .notification-button {
+  position: relative;
   width: 40px;
   height: 40px; }
-  .new-layout-page .notification-button.is-active .notification-button-icon {
-    background-color: transparent; }
-  .new-layout-page .notification-button .active-icon {
-    display: none; }
-  .new-layout-page .notification-button .inactive-icon {
-    display: block; }
+  .new-layout-page .notification-button .notification-button-icon {
+    color: #585077;
+    font-size: 15pt; }
   @media (min-width: 992px) {
     .new-layout-page .notification-button {
       cursor: pointer; } }
 
+.new-layout-page .notification-1 .notification-button-icon {
+  font-size: 13pt; }
+
+.new-layout-page .index {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #342e49;
+  font-family: "Lato", sans-serif;
+  font-size: 8pt; }
+
+.new-layout-page .notification-1 .index {
+  top: 0px;
+  left: 7px; }
+
+.new-layout-page .notification-2 .index {
+  top: 0px;
+  right: 2px; }
+
 .new-layout-page .notification-button-icon {
-  position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -6784,21 +6803,6 @@ body.blocked {
   width: 100%;
   height: 100%;
   padding: 10px; }
-  .new-layout-page .notification-button-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; }
-  .new-layout-page .notification-button-icon i {
-    position: absolute;
-    top: 8px;
-    right: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1px 5px;
-    border-radius: 50%;
-    background-color: #fdc25d;
-    font-size: .5rem; }
 
 .new-layout-page .dropdown-list-wrapper.active {
   position: relative; }
@@ -7342,22 +7346,37 @@ body.blocked {
     align-items: flex-end;
     height: 100%;
     cursor: pointer; }
-    .services-panel .notification.notification-1 .notification-button-icon {
-      padding: 8px; }
   .services-panel .notification-button {
+    position: relative;
     width: 40px;
     height: 40px; }
-    .services-panel .notification-button.is-active .notification-button-icon {
-      background-color: transparent; }
-    .services-panel .notification-button .active-icon {
-      display: none; }
-    .services-panel .notification-button .inactive-icon {
-      display: block; }
+    .services-panel .notification-button .notification-button-icon {
+      color: #585077;
+      font-size: 15pt; }
     @media (min-width: 992px) {
       .services-panel .notification-button {
         cursor: pointer; } }
+  .services-panel .notification-1 .notification-button-icon {
+    font-size: 13pt; }
+  .services-panel .index {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: #342e49;
+    font-family: "Lato", sans-serif;
+    font-size: 8pt; }
+  .services-panel .notification-1 .index {
+    top: 0px;
+    left: 7px; }
+  .services-panel .notification-2 .index {
+    top: 0px;
+    right: 2px; }
   .services-panel .notification-button-icon {
-    position: relative;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -7365,21 +7384,6 @@ body.blocked {
     width: 100%;
     height: 100%;
     padding: 10px; }
-    .services-panel .notification-button-icon img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; }
-    .services-panel .notification-button-icon i {
-      position: absolute;
-      top: 8px;
-      right: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1px 5px;
-      border-radius: 50%;
-      background-color: #fdc25d;
-      font-size: .5rem; }
   .services-panel .dropdown-list-wrapper.active {
     position: relative; }
     .services-panel .dropdown-list-wrapper.active:before {
@@ -8534,24 +8538,43 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   align-items: flex-end;
   height: 100%;
   cursor: pointer; }
-  .area-settings .notification.notification-1 .notification-button-icon {
-    padding: 8px; }
 
 .area-settings .notification-button {
+  position: relative;
   width: 40px;
   height: 40px; }
-  .area-settings .notification-button.is-active .notification-button-icon {
-    background-color: transparent; }
-  .area-settings .notification-button .active-icon {
-    display: none; }
-  .area-settings .notification-button .inactive-icon {
-    display: block; }
+  .area-settings .notification-button .notification-button-icon {
+    color: #585077;
+    font-size: 15pt; }
   @media (min-width: 992px) {
     .area-settings .notification-button {
       cursor: pointer; } }
 
+.area-settings .notification-1 .notification-button-icon {
+  font-size: 13pt; }
+
+.area-settings .index {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #342e49;
+  font-family: "Lato", sans-serif;
+  font-size: 8pt; }
+
+.area-settings .notification-1 .index {
+  top: 0px;
+  left: 7px; }
+
+.area-settings .notification-2 .index {
+  top: 0px;
+  right: 2px; }
+
 .area-settings .notification-button-icon {
-  position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -8559,21 +8582,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   width: 100%;
   height: 100%;
   padding: 10px; }
-  .area-settings .notification-button-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; }
-  .area-settings .notification-button-icon i {
-    position: absolute;
-    top: 8px;
-    right: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1px 5px;
-    border-radius: 50%;
-    background-color: #fdc25d;
-    font-size: .5rem; }
 
 .area-settings .dropdown-list-wrapper.active {
   position: relative; }
@@ -9590,24 +9598,43 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   align-items: flex-end;
   height: 100%;
   cursor: pointer; }
-  .account-settings .notification.notification-1 .notification-button-icon {
-    padding: 8px; }
 
 .account-settings .notification-button {
+  position: relative;
   width: 40px;
   height: 40px; }
-  .account-settings .notification-button.is-active .notification-button-icon {
-    background-color: transparent; }
-  .account-settings .notification-button .active-icon {
-    display: none; }
-  .account-settings .notification-button .inactive-icon {
-    display: block; }
+  .account-settings .notification-button .notification-button-icon {
+    color: #585077;
+    font-size: 15pt; }
   @media (min-width: 992px) {
     .account-settings .notification-button {
       cursor: pointer; } }
 
+.account-settings .notification-1 .notification-button-icon {
+  font-size: 13pt; }
+
+.account-settings .index {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #342e49;
+  font-family: "Lato", sans-serif;
+  font-size: 8pt; }
+
+.account-settings .notification-1 .index {
+  top: 0px;
+  left: 7px; }
+
+.account-settings .notification-2 .index {
+  top: 0px;
+  right: 2px; }
+
 .account-settings .notification-button-icon {
-  position: relative;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -9615,21 +9642,6 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   width: 100%;
   height: 100%;
   padding: 10px; }
-  .account-settings .notification-button-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; }
-  .account-settings .notification-button-icon i {
-    position: absolute;
-    top: 8px;
-    right: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1px 5px;
-    border-radius: 50%;
-    background-color: #fdc25d;
-    font-size: .5rem; }
 
 .account-settings .dropdown-list-wrapper.active {
   position: relative; }
