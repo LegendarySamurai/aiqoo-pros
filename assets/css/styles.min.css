@@ -6628,14 +6628,14 @@ body.blocked {
   line-height: 1.25;
   color: #585077;
   margin: 0 15px;
-  padding: 10px 0;
+  padding: 10px 0 6px;
   white-space: nowrap;
   cursor: pointer; }
   .new-layout-page .sub-menu-item:hover {
     position: relative; }
     .new-layout-page .sub-menu-item:hover::after {
       position: absolute;
-      bottom: -2px;
+      bottom: -6px;
       left: 50%;
       transform: translate(-50%, 0);
       width: 120%;
@@ -6647,7 +6647,7 @@ body.blocked {
     position: relative; }
     .new-layout-page .sub-menu-item.is-active::after {
       position: absolute;
-      bottom: -2px;
+      bottom: -6px;
       left: 50%;
       transform: translate(-50%, 0);
       width: 120%;
@@ -6828,14 +6828,40 @@ body.blocked {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 180px;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 10px;
   border-radius: 5px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff; }
+  .new-layout-page .dropdown-info.visible .dropdown-items-wrapper,
+  .new-layout-page .dropdown-list.visible .dropdown-items-wrapper {
+    padding: 10px;
+    height: auto;
+    min-height: 300px;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .new-layout-page .dropdown-info.visible .dropdown-header,
+  .new-layout-page .dropdown-list.visible .dropdown-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 5px;
+    background-color: #585077;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt; }
+    .new-layout-page .dropdown-info.visible .dropdown-header:after,
+    .new-layout-page .dropdown-list.visible .dropdown-header:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 6px;
+      background-color: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
 
 .new-layout-page .dropdown-info.invisible,
 .new-layout-page .dropdown-list.invisible {
@@ -6846,6 +6872,9 @@ body.blocked {
   transform: translate(-60%, 100%);
   max-height: 465px; }
 
+.new-layout-page .dropdown-info.visible {
+  width: 180px; }
+
 .new-layout-page .notification-2 .dropdown-list.visible .icon-container {
   background-color: #dd0000; }
 
@@ -6855,6 +6884,7 @@ body.blocked {
   top: 92%;
   transform: translate(0, 0%);
   max-height: 530px;
+  padding: 10px;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 2px 4px 2px #ccc; }
 
@@ -6990,9 +7020,9 @@ body.blocked {
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 60px;
+  width: 50px;
   height: 60px;
-  padding: 2px 4px; }
+  padding: 10px 4px 0px; }
   .new-layout-page .image-wrapper .image-container::before {
     display: block;
     content: '';
@@ -7053,6 +7083,12 @@ body.blocked {
 @media (max-width: 991px) {
   .new-layout-page .show-in-991 {
     display: block !important; } }
+
+.new-layout-page ::-webkit-scrollbar-thumb {
+  background-color: transparent !important; }
+
+.new-layout-page ::-webkit-scrollbar-track {
+  background-color: transparent !important; }
 
 .services-panel {
   /*// user
@@ -7227,14 +7263,14 @@ body.blocked {
     line-height: 1.25;
     color: #585077;
     margin: 0 15px;
-    padding: 10px 0;
+    padding: 10px 0 6px;
     white-space: nowrap;
     cursor: pointer; }
     .services-panel .sub-menu-item:hover {
       position: relative; }
       .services-panel .sub-menu-item:hover::after {
         position: absolute;
-        bottom: -2px;
+        bottom: -6px;
         left: 50%;
         transform: translate(-50%, 0);
         width: 120%;
@@ -7246,7 +7282,7 @@ body.blocked {
       position: relative; }
       .services-panel .sub-menu-item.is-active::after {
         position: absolute;
-        bottom: -2px;
+        bottom: -6px;
         left: 50%;
         transform: translate(-50%, 0);
         width: 120%;
@@ -7407,14 +7443,40 @@ body.blocked {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 180px;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff; }
+    .services-panel .dropdown-info.visible .dropdown-items-wrapper,
+    .services-panel .dropdown-list.visible .dropdown-items-wrapper {
+      padding: 10px;
+      height: auto;
+      min-height: 300px;
+      width: 300px;
+      overflow-x: hidden;
+      overflow-y: auto; }
+    .services-panel .dropdown-info.visible .dropdown-header,
+    .services-panel .dropdown-list.visible .dropdown-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      padding-bottom: 5px;
+      background-color: #585077;
+      color: #fff;
+      font-family: "Raleway", sans-serif;
+      font-size: 10pt; }
+      .services-panel .dropdown-info.visible .dropdown-header:after,
+      .services-panel .dropdown-list.visible .dropdown-header:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 6px;
+        background-color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
   .services-panel .dropdown-info.invisible,
   .services-panel .dropdown-list.invisible {
     display: none; }
@@ -7422,6 +7484,8 @@ body.blocked {
     bottom: 0;
     transform: translate(-60%, 100%);
     max-height: 465px; }
+  .services-panel .dropdown-info.visible {
+    width: 180px; }
   .services-panel .notification-2 .dropdown-list.visible .icon-container {
     background-color: #dd0000; }
   .services-panel .dropdown-info.visible {
@@ -7430,6 +7494,7 @@ body.blocked {
     top: 92%;
     transform: translate(0, 0%);
     max-height: 530px;
+    padding: 10px;
     border-radius: 0 0 5px 5px;
     box-shadow: 0 2px 4px 2px #ccc; }
   .services-panel .dropdown-list-item {
@@ -7550,9 +7615,9 @@ body.blocked {
     position: relative;
     display: flex;
     align-items: flex-end;
-    width: 60px;
+    width: 50px;
     height: 60px;
-    padding: 2px 4px; }
+    padding: 10px 4px 0px; }
     .services-panel .image-wrapper .image-container::before {
       display: block;
       content: '';
@@ -7607,6 +7672,10 @@ body.blocked {
   @media (max-width: 991px) {
     .services-panel .show-in-991 {
       display: block !important; } }
+  .services-panel ::-webkit-scrollbar-thumb {
+    background-color: transparent !important; }
+  .services-panel ::-webkit-scrollbar-track {
+    background-color: transparent !important; }
   .services-panel .status-bar-col {
     align-self: flex-end;
     position: sticky;
@@ -8407,14 +8476,14 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   line-height: 1.25;
   color: #585077;
   margin: 0 15px;
-  padding: 10px 0;
+  padding: 10px 0 6px;
   white-space: nowrap;
   cursor: pointer; }
   .area-settings .sub-menu-item:hover {
     position: relative; }
     .area-settings .sub-menu-item:hover::after {
       position: absolute;
-      bottom: -2px;
+      bottom: -6px;
       left: 50%;
       transform: translate(-50%, 0);
       width: 120%;
@@ -8426,7 +8495,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     position: relative; }
     .area-settings .sub-menu-item.is-active::after {
       position: absolute;
-      bottom: -2px;
+      bottom: -6px;
       left: 50%;
       transform: translate(-50%, 0);
       width: 120%;
@@ -8607,14 +8676,40 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 180px;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 10px;
   border-radius: 5px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff; }
+  .area-settings .dropdown-info.visible .dropdown-items-wrapper,
+  .area-settings .dropdown-list.visible .dropdown-items-wrapper {
+    padding: 10px;
+    height: auto;
+    min-height: 300px;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .area-settings .dropdown-info.visible .dropdown-header,
+  .area-settings .dropdown-list.visible .dropdown-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 5px;
+    background-color: #585077;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt; }
+    .area-settings .dropdown-info.visible .dropdown-header:after,
+    .area-settings .dropdown-list.visible .dropdown-header:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 6px;
+      background-color: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
 
 .area-settings .dropdown-info.invisible,
 .area-settings .dropdown-list.invisible {
@@ -8625,6 +8720,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   transform: translate(-60%, 100%);
   max-height: 465px; }
 
+.area-settings .dropdown-info.visible {
+  width: 180px; }
+
 .area-settings .notification-2 .dropdown-list.visible .icon-container {
   background-color: #dd0000; }
 
@@ -8634,6 +8732,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   top: 92%;
   transform: translate(0, 0%);
   max-height: 530px;
+  padding: 10px;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 2px 4px 2px #ccc; }
 
@@ -8769,9 +8868,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 60px;
+  width: 50px;
   height: 60px;
-  padding: 2px 4px; }
+  padding: 10px 4px 0px; }
   .area-settings .image-wrapper .image-container::before {
     display: block;
     content: '';
@@ -8832,6 +8931,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 @media (max-width: 991px) {
   .area-settings .show-in-991 {
     display: block !important; } }
+
+.area-settings ::-webkit-scrollbar-thumb {
+  background-color: transparent !important; }
+
+.area-settings ::-webkit-scrollbar-track {
+  background-color: transparent !important; }
 
 .area-settings .create-area-wrapper {
   padding-bottom: 30px; }
@@ -9467,14 +9572,14 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   line-height: 1.25;
   color: #585077;
   margin: 0 15px;
-  padding: 10px 0;
+  padding: 10px 0 6px;
   white-space: nowrap;
   cursor: pointer; }
   .account-settings .sub-menu-item:hover {
     position: relative; }
     .account-settings .sub-menu-item:hover::after {
       position: absolute;
-      bottom: -2px;
+      bottom: -6px;
       left: 50%;
       transform: translate(-50%, 0);
       width: 120%;
@@ -9486,7 +9591,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     position: relative; }
     .account-settings .sub-menu-item.is-active::after {
       position: absolute;
-      bottom: -2px;
+      bottom: -6px;
       left: 50%;
       transform: translate(-50%, 0);
       width: 120%;
@@ -9667,14 +9772,40 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 180px;
-  height: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 10px;
   border-radius: 5px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff; }
+  .account-settings .dropdown-info.visible .dropdown-items-wrapper,
+  .account-settings .dropdown-list.visible .dropdown-items-wrapper {
+    padding: 10px;
+    height: auto;
+    min-height: 300px;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .account-settings .dropdown-info.visible .dropdown-header,
+  .account-settings .dropdown-list.visible .dropdown-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 5px;
+    background-color: #585077;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt; }
+    .account-settings .dropdown-info.visible .dropdown-header:after,
+    .account-settings .dropdown-list.visible .dropdown-header:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 6px;
+      background-color: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
 
 .account-settings .dropdown-info.invisible,
 .account-settings .dropdown-list.invisible {
@@ -9685,6 +9816,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   transform: translate(-60%, 100%);
   max-height: 465px; }
 
+.account-settings .dropdown-info.visible {
+  width: 180px; }
+
 .account-settings .notification-2 .dropdown-list.visible .icon-container {
   background-color: #dd0000; }
 
@@ -9694,6 +9828,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   top: 92%;
   transform: translate(0, 0%);
   max-height: 530px;
+  padding: 10px;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 2px 4px 2px #ccc; }
 
@@ -9829,9 +9964,9 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   position: relative;
   display: flex;
   align-items: flex-end;
-  width: 60px;
+  width: 50px;
   height: 60px;
-  padding: 2px 4px; }
+  padding: 10px 4px 0px; }
   .account-settings .image-wrapper .image-container::before {
     display: block;
     content: '';
@@ -9892,6 +10027,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
 @media (max-width: 991px) {
   .account-settings .show-in-991 {
     display: block !important; } }
+
+.account-settings ::-webkit-scrollbar-thumb {
+  background-color: transparent !important; }
+
+.account-settings ::-webkit-scrollbar-track {
+  background-color: transparent !important; }
 
 .account-settings .custom-select {
   height: 40px;
@@ -9955,7 +10096,10 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 .account-settings .service-item {
   display: flex;
@@ -9984,6 +10128,12 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   background-color: #585077;
   border-radius: 50%;
   font-size: 24pt; }
+
+.account-settings ::-webkit-scrollbar-thumb {
+  background-color: #585077 !important; }
+
+.account-settings ::-webkit-scrollbar-track {
+  background-color: #585077 !important; }
 
 .account-settings .right-side-content {
   /*

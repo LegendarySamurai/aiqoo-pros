@@ -27,7 +27,7 @@
 </head>
 <body>
 <app>
-  <main class="new-layout-page area-settings">
+  <main class="new-layout-page ">
     <div class="container-fluid">
       <div class="row row-outer">
         <!-- Left purple side -->
@@ -44,25 +44,8 @@
                 <i class="fal fa-times"></i>
               </div>
             </div>
-            <!-- Mobile menu -->
-            <!--<div class="menu-m-col">-->
-            <!--  <div class="menu-container-m mobile-only-flex">-->
-            <!--    <select name="select" id="mobile-menu">-->
-            <!--      <option value="value1">Dashboard</option>-->
-            <!--      <option value="value2">Dashboard</option>-->
-            <!--      <option value="value3">Aiqoo Index</option>-->
-            <!--      <option value="value4">Sales</option>-->
-            <!--      <option value="value5">Projects</option>-->
-            <!--      <option value="value6" selected>Tasks</option>-->
-            <!--      <option value="value7">Suppliers</option>-->
-            <!--      <option value="value8">Calendar</option>-->
-            <!--      <option value="value9">Address Book</option>-->
-            <!--      <option value="value10">Network</option>-->
-            <!--      <option value="value11">Support</option>-->
-            <!--    </select>-->
-            <!--  </div>-->
-            <!--</div>-->
-            <!-- Desktop menu  desktop-only-flex-->
+
+            <!-- Menu -->
             <div class="menu-d-col">
               <div class="menu-container-d">
                 <div class="menu-items-list">
@@ -156,7 +139,8 @@
             <div class="mobile-menu-ope-btn">
               <button class=""><i class="far fa-bars font-16"></i></button>
             </div>
-            <!-- Desktop -->
+
+            <!-- Fixed top panel -->
             <div class="fixed-top-panel-d">
               <!-- Fixed submenu -->
               <div class="sub-menu-container">
@@ -166,7 +150,7 @@
                       <!-- Page titles -->
                       <div class="row">
                         <div class="col-12">
-                          <div class="page-title font-weight-600">Account Settings</div>
+                          <div class="page-title font-weight-bold">Account Settings</div>
                         </div>
                       </div>
                       <!-- Sub-menus -->
@@ -176,9 +160,10 @@
                             <div class="sub-menu-items" id="dashboard">
                               <span class="sub-menu-item font-r-10 font-weight-500">My Profile</span>
                               <span class="sub-menu-item font-r-10 font-weight-500">Company Profile</span>
-                              <span class="sub-menu-item font-r-10 font-weight-500">Services</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500 is-active">Services</span>
                               <span class="sub-menu-item font-r-10 font-weight-500">Locations</span>
-                              <span class="sub-menu-item font-r-10 font-weight-500  hide-in-1030 show-in-991">Invoices</span>
+                              <span
+                                  class="sub-menu-item font-r-10 font-weight-500  hide-in-1030 show-in-991">Invoices</span>
                               <span class="sub-menu-item font-r-10 font-weight-500  hide-in-1070 show-in-991">Payments Methods</span>
                               <span class="sub-menu-item font-r-10 font-weight-500  show-in-1070 more-btn">
                                 <a href="#" class="more-btn-inner">
@@ -206,59 +191,60 @@
                         <div class="image-container">
                           <img src="assets/images/logo/white-logo.png" alt="logo" class="pros-white-logo">
                         </div>
-                        <div class="notification notification-1">
+                        <div class="promotion notification notification-1">
                           <div class="right-underlay-1"></div>
                           <div class="notification-button">
-                              <div class="notification-button-icon">
-                                <!--<img class="inactive-icon" src="assets/images/notifications/megaphone.svg" alt="icon">-->
-                                <!--<img class="" src="assets/images/notifications/megaphone-white.svg" alt="icon">-->
-                                <i class="fad fa-bullhorn"></i>
-                              </div>
-                              <div class="index system-color-bg-1">
-                                <i class="system-color-20">15</i>
-                              </div>
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bullhorn"></i>
+                            </div>
+                            <div class="index system-color-bg-1">
+                              <i class="system-color-20">15</i>
+                            </div>
                           </div>
                           <div class="dropdown-list-wrapper dropdown-list-wrapper-one">
                             <div class="dropdown-list  dropdown-list-one invisible">
-                              <div class="dropdown-list-item">
+                              <div class="dropdown-header font-weight-600">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
                                 <span class="icon-container">
                                   <img src="assets/images/notifications/shopping-cart.png" alt="icon">
                                 </span>
-                                <span class="item-content">
+                                  <span class="item-content">
                                   <span class="item-title font-weight-black">Promo 1</span>
                                   <span class="item-text">Lorem ipsum Lorem ipsum</span>
                                   <span class="item-time">2 Min</span>
                                 </span>
-                              </div>
-                              <div class="dropdown-list-item">
+                                </div>
+                                <div class="dropdown-list-item">
                                 <span class="icon-container">
                                   <img src="assets/images/notifications/shopping-cart.png" alt="icon">
                                 </span>
-                                <span class="item-content">
+                                  <span class="item-content">
                                   <span class="item-title font-weight-black">Promo 2</span>
                                   <span class="item-text">Lorem ipsum Lorem ipsum</span>
                                   <span class="item-time">2 Min</span>
                                 </span>
-                              </div>
-                              <div class="dropdown-list-item">
+                                </div>
+                                <div class="dropdown-list-item">
                                 <span class="icon-container">
                                   <img src="assets/images/notifications/shopping-cart.png" alt="icon">
                                 </span>
-                                <span class="item-content">
+                                  <span class="item-content">
                                   <span class="item-title font-weight-black">Promo 3</span>
                                   <span class="item-text">Lorem ipsum Lorem ipsum</span>
                                   <span class="item-time">2 Min</span>
                                 </span>
-                              </div>
-                              <div class="dropdown-list-item">
+                                </div>
+                                <div class="dropdown-list-item">
                                 <span class="icon-container">
                                   <img src="assets/images/notifications/shopping-cart.png" alt="icon">
                                 </span>
-                                <span class="item-content">
+                                  <span class="item-content">
                                   <span class="item-title font-weight-black">Promo 4</span>
                                   <span class="item-text">Lorem ipsum Lorem ipsum</span>
                                   <span class="item-time">2 Min</span>
                                 </span>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -267,57 +253,69 @@
                         <div class="notification notification-2">
                           <div class="right-underlay-2"></div>
                           <div class="notification-button">
-                              <div class="notification-button-icon">
-                                <!--<img class="inactive-icon" src="assets/images/notifications/notification.svg" alt="icon">-->
-                                <!--<img class="" src="assets/images/notifications/notification-white.svg" alt="icon">-->
-                                <i class="fad fa-bell"></i>
-                              </div>
-                              <div class="index system-color-bg-2">
-                                <i class="system-color-20">30</i>
-                              </div>
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bell"></i>
+                            </div>
+                            <div class="index system-color-bg-2">
+                              <i class="system-color-20">30</i>
+                            </div>
                           </div>
                           <div class="dropdown-list-wrapper dropdown-list-wrapper-two">
                             <div class="dropdown-list dropdown-list-two invisible">
-                              <div class="dropdown-list-item">
+                              <div class="dropdown-header font-weight-600">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-black">Messages</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
+                                <div class="dropdown-list-item">
                                 <span class="icon-container">
                                   <img src="assets/images/notifications/shopping-cart.png" alt="icon">
                                 </span>
-                                <span class="item-content">
-                                  <span class="item-title font-weight-black">Messages</span>
-                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
-                                  <span class="item-time">10 Min</span>
-                                </span>
-                              </div>
-                              <div class="dropdown-list-item">
-                                <span class="icon-container">
-                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
-                                </span>
-                                <span class="item-content">
+                                  <span class="item-content">
                                   <span class="item-title font-weight-black">Message</span>
                                   <span class="item-text">Lorem ipsum Lorem ipsum</span>
                                   <span class="item-time">2 Min</span>
                                 </span>
-                              </div>
-                              <div class="dropdown-list-item">
+                                </div>
+                                <div class="dropdown-list-item">
                                 <span class="icon-container">
                                   <img src="assets/images/notifications/shopping-cart.png" alt="icon">
                                 </span>
-                                <span class="item-content">
+                                  <span class="item-content">
                                   <span class="item-title font-weight-black">Bundle</span>
                                   <span class="item-text">Lorem ipsum Lorem ipsum</span>
                                   <span class="item-time">2 Min</span>
                                 </span>
-                              </div>
-                              <div class="dropdown-list-item">
+                                </div>
+                                <div class="dropdown-list-item">
                                 <span class="icon-container">
                                   <img src="assets/images/notifications/shopping-cart.png" alt="icon">
                                 </span>
-                                <span class="item-content">
+                                  <span class="item-content">
                                   <span class="item-title font-weight-black">Note</span>
                                   <span class="item-text">Lorem ipsum Lorem ipsum</span>
                                   <span class="item-time">2 Min</span>
                                 </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-black">Messages</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
                               </div>
+
                             </div>
                           </div>
 
@@ -328,7 +326,8 @@
                         <button class="user">
                           <div class="info">
                             <div class="info-inner">
-                              <span class="name-wrap font-weight-bold font-r-11">Hello <span class="name">Alice</span></span>
+                              <span class="name-wrap font-weight-bold font-r-11">Hello <span
+                                  class="name">Alice</span></span>
                               <span class="company font-r-10">Dave company</span>
                             </div>
                           </div>
@@ -344,9 +343,23 @@
                               <i class="far fa-exchange font-11 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account Settings</a>
+                            <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account
+                              Settings</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign Out</a>
+                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                              Out</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                              Out</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                              Out</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                              Out</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                              Out</a>
                             <div class="dropdown-divider"></div>
                           </div>
                         </div>
@@ -357,11 +370,10 @@
                 </div>
               </div>
             </div>
-            <!--  Mobile -->
-            <!--<div class="fixed-top-panel-m"></div>-->
+            <!-- EOL: Fixed top panel -->
 
             <div class="right-side-content">
-            <!-- Content put here -->
+              <!-- Content put here -->
             </div>
           </div>
         </div>

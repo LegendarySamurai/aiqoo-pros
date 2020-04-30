@@ -3035,7 +3035,7 @@
     align-items: center;
     justify-content: center; }
   .new-layout-page .dropdown-info.visible {
-    top: 130%; }
+    top: 100%; }
   .new-layout-page .info {
     height: 50%;
     margin-left: 0;
@@ -3320,8 +3320,6 @@
     padding: 20px; }
   .account-settings .content {
     padding-left: 15px; }
-  .account-settings .service-item {
-    height: 40px; }
   .account-settings .service-name {
     white-space: normal;
     line-height: 1.15; } }
@@ -3331,10 +3329,12 @@
     position: relative;
     z-index: 2; }
   .account-settings .content {
-    padding-left: 0; }
+    padding-left: 0; } }
+
+@media (max-width: 576px) {
   .account-settings .left-part {
     order: 2; }
-  .account-settings .rigth-part {
+  .account-settings .right-part {
     order: 1; } }
 
 @media (max-width: 599px) {

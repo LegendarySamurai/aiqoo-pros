@@ -39,9 +39,9 @@
     padding-left: 15px;
   }
 
-  .service-item {
-    height: 40px;
-  }
+  //.service-item {
+  //  height: 40px;
+  //}
 
   .service-name {
     white-space: normal;
@@ -58,14 +58,14 @@
   .content {
     padding-left: 0;
   }
+}
 
+@media(max-width: 576px) {
   .left-part {
     order: 2;
   }
 
-  .rigth-part {
+  .right-part {
     order: 1;
   }
 }
-
-@media(max-width: 374px) {}
