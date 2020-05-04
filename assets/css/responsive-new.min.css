@@ -836,13 +836,8 @@
     height: 110px; }
   .submit-button .btn:hover {
     color: #fff; }
-  .sign-in {
-    min-height: 420px; }
-  .sign-up {
-    min-height: 580px; }
   .verification {
     min-height: 510px; }
-  .sign-in-and-sign-up,
   .account-verification {
     width: 96%;
     max-width: 450px; }
@@ -956,13 +951,9 @@
 @media (min-width: 768px) {
   .buttons-container {
     width: 100%; }
-  .sign-in-and-sign-up,
   .account-verification {
     width: 420px;
     max-width: 450px; }
-  .sign-in,
-  .sign-up {
-    min-height: 420px; }
   .verification {
     min-height: 520px; } }
 
@@ -1058,7 +1049,6 @@
   .content-container .upload-photo i {
     width: 125px;
     height: 125px; }
-  .sign-in-and-sign-up,
   .account-verification {
     width: 550px; } }
 

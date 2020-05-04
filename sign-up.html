@@ -17,14 +17,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-  <link href="assets/css/styles.min.css" rel="stylesheet" />
-  <link href="assets/css/responsive-new.min.css" rel="stylesheet" />
+  <!--<link href="assets/css/styles.min.css" rel="stylesheet" />-->
+  <link href="assets/css/register.min.css" rel="stylesheet" />
+  <!--<link href="assets/css/responsive-new.min.css" rel="stylesheet" />-->
 </head>
 <body>
 <app>
   <div class="wrapper-full-width sign-in-and-sign-up-page">
     <div class="head-section"></div>
-    <div class="sign-in-and-sign-up margin-center">
+    <div class="sign-in-and-sign-up">
       <div class="tabs pos-r">
         <span class="tab font-r-14">Sign In</span>
         <span class="divider"></span>
@@ -44,36 +45,33 @@
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-user-alt"></i></div>
             </div>
-            <input type="text" class="form-control font-r-14" id="full-name" placeholder="Full-name">
+            <input type="text" class="form-control" id="full-name" placeholder="Full-name">
           </div>
           <div class="input-group mb-4">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-envelope"></i></div>
             </div>
-            <input type="text" class="form-control font-r-14" id="sign-up-email" placeholder="Email">
+            <input type="text" class="form-control" id="sign-up-email" placeholder="Email">
           </div>
           <div class="input-group mb-4">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-phone-alt"></i></div>
             </div>
-            <input type="tel" class="form-control font-r-14" id="phone" placeholder="Phone number">
+            <input type="tel" class="form-control" id="phone" placeholder="Phone number">
           </div>
           <div class="input-group input-group-password mb-4 pos-r">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
             </div>
-            <input type="password" class="form-control font-r-14" id="sign-in-password" placeholder="Password">
+            <input type="password" class="form-control" id="sign-in-password" placeholder="Password">
             <i class="far fa-eye cursor-p"></i>
           </div>
-          <div class="options">
-            <div class="form-check mb-3">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="terms">
-                <label class="custom-control-label cursor-p font-r-14" for="terms">
-                  I Agree to the <a href="#" class="terms-and-conditions pos-r">Terms and Conditions</a>
-                </label>
-              </div>
-            </div>
+          <div class="custom-control custom-checkbox pb-4">
+            <label class="custom-control-label">
+              <input id="terms" type="checkbox" class="custom-control-input">
+              <span class="custom-checkbox-ui"></span>
+              <span class="input-label">I Agree to the <a href="#" class="terms-and-conditions pos-r">Terms and Conditions</a></span>
+            </label>
           </div>
         </form>
 

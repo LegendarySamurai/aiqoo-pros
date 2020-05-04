@@ -1,78 +1,138 @@
-@import 'helpers';
-@import 'reset-styles';
-@import 'variables.scss';
+//@import 'form';
 
-@mixin modalCommonStyles {
-  margin-top: -11vw;
-  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
-  border-radius: 5px;
-}
+//.sign-in-and-sign-up-page {
+//  position: relative;
+//  width: 100%;
+//  min-height: 100vh;
+//  padding-bottom: 40px;
+//}
 
 .head-section {
   width: 100%;
   height: 19.25vw;
-  border-top: 14px solid #{$pinkish-grey};
+  border-top: 14px solid #d8cdba;
   background: url('../images/sign-in-bg-d.jpg') no-repeat center;
   background-size: cover;
 }
 
 .sign-in-and-sign-up {
-  @include modalCommonStyles;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  max-width: 450px;
+  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+  border-radius: 5px;
+}
 
-  .tabs {
-    bottom: -4px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    background-image: linear-gradient(#ffffff, #f1f0f4);
+.logo2 {
+  width: 168px;
+}
 
-    .divider {
-      @include positionCenter;
-      width: 2px;
-      height: 46px;
-      background-color: $purple;
-    }
+a {
+  display: block;
+  color: #585077;
 
-    .tab {
-      width: 49%;
-      line-height: 1.5;
-      padding: 26px;
-      font-family: "Raleway", sans-serif;
-      font-weight: 400;
-      color: #b3b3b3;
-      text-align: center;
+  &:hover,
+  &:focus {
+    color: #585077;
+  }
+}
 
-      &.active {
-        position: relative;
-        color: $purple;
-        font-weight: 900;
+// Tabs
+.tabs {
+  bottom: -4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-image: linear-gradient(#fff, #f1f0f4);
 
-        &:after {
-          position: absolute;
-          bottom: 4px;
-          left: 50%;
-          transform: translate(-50%, 0);
-          display: block;
-          content: '';
-          width: calc(100% - 64px);
-          height: 4px;
-          background-color: $purple;
-        }
+  .divider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 46px;
+    background-color: #585077;
+  }
+
+  .tab {
+    width: 49%;
+    line-height: 1.5;
+    padding: 26px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #b3b3b3;
+    text-align: center;
+
+    &.active {
+      position: relative;
+      color: #585077;
+      font-weight: 900;
+
+      &:after {
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: block;
+        content: '';
+        width: calc(100% - 64px);
+        height: 4px;
+        background-color: #585077;
       }
     }
   }
+}
 
-  .options {
+.custom-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+}
+
+.custom-control-label {
+  font-size: 1.25rem;
+
+  &:before {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    border: .5px solid #d6d6d6;
+    background-color: #ffffff;
+  }
+}
+
+.custom-control-input:checked ~ .custom-control-label:before {
+  border-color: #d6d6d6;
+  background-color: #ffffff;
+}
+
+.custom-control-input:checked ~ .custom-control-label:after {
+  left: -16px;
+  width: 24px;
+  height: 24px;
+  border-radius: 1px;
+  background-color: #585077;
+  background-image: none;
+}
+
+.terms-and-conditions {
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    justify-content: flex-start;
-    display: flex;
-
-    .form-check {
-      padding-left: 1.5rem;
-    }
+    height: 1px;
+    background-color: #585077;
   }
 }
 
@@ -83,7 +143,7 @@
   align-items: center;
   padding: 32px 0;
   font-family: "Raleway", sans-serif;
-  color: $purple;
+  color: #585077;
 }
 
 .submit-button {
@@ -118,16 +178,395 @@
   }
 }
 
+.options {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
 .sign-in,
 .sign-up {
   z-index: 2;
+  min-height: 420px;
   padding: 0 30px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+  font-family: "Raleway", sans-serif;
+  color: #585077;
 }
 
-.verification {
-  padding: 0 50px;
+// Form
+.input-group-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.input-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.input-group {
+  height: 68px;
+  border-radius: 2.5px;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+}
+.custom-select {
+  height: 100%;
+}
+
+.form-control {
+  height: 100%;
+  color: #585077;
+  border-left: none;
+  font-size: 1.25rem;
+
+  &:focus {
+    border: 1px solid #ced4da;
+    border-radius: 2.5px;
+    border-left: 0;
+  }
+
+  &::-webkit-input-placeholder {
+    height: 100%;
+    color: #585077;
+    font-size: 1.25rem;
+  }
+  &::-moz-placeholder {
+    height: 100%;
+    color: #585077;
+    font-size: 1.25rem;
+  }
+  &:-ms-input-placeholder {
+    height: 100%;
+    color: #585077;
+    font-size: 1.25rem;
+  }
+  &:-moz-placeholder {
+    height: 100%;
+    color: #585077;
+    font-size: 1.25rem;
+  }
+}
+
+.input-group-text {
+  height: 100%;
+  color: #585077;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  background-color: transparent;
+  border-right: none;
+
+  .input-group-aiqoo-text {
+    min-width: initial;
+  }
+
+  .far {
+    font-size: 1.5rem;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 65%;
+    background-color: #dedede;
+  }
+}
+
+.input-group-password {
+  .fa-eye {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #585077;
+  }
+
+  .form-control {
+    padding-right: 50px;
+  }
+}
+
+.custom-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+
+  .custom-control-label {
+    &:before {
+      width: 32px;
+      height: 32px;
+      border-radius: 2px;
+      border: .5px solid #d6d6d6;
+      background-color: #ffffff;
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label:before {
+    border-color: #d6d6d6;
+    background-color: #ffffff;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label:after {
+    left: -16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 1px;
+    background-color: #585077;
+    background-image: none;
+  }
+
+  .terms-and-conditions {
+    margin-left: 5px;
+    color: #585077;
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #585077;
+    }
+  }
+}
+
+.forgot-password {
+  margin-left: auto;
+  font-size: 1.25rem;
+}
+
+.custom-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .custom-control-label {
+    padding-top: .025em;
+
+    &:before { top: 0; }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: transparent !important;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url("../images/confirm-7.svg");
+    //top: 0;
+  }
+}
+
+// Checkbox
+.custom-control-label {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.custom-checkbox-ui {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border: 1px solid #585077;
+  border-radius: 5px;
+}
+
+.custom-control-input:checked ~ .custom-checkbox-ui::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url(../images/confirm-7.svg) no-repeat center;
+  background-size: 50% auto;
+}
+
+.input-label {
+  padding-left: 10px;
+}
+
+h5 {
+  white-space: nowrap;
+}
+
+// EOL: form
+
+.pos-r {
+  position: relative;
+}
+
+.ma-t-5 {
+  margin-top: 5px !important;
+}
+
+.ma-b-5 {
+  margin-bottom: 5px !important;
+}
+
+.font-weight-semi-bold {
+  font-weight: 800;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important
+}
+
+.font-r-14 {
+  font-size: 1.4rem !important;
+}
+
+.font-r-16 {
+  font-size: 1.6rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+// Media
+@media(max-width: 1899px) {}
+
+@media(max-width: 1599px) {}
+
+@media(max-width: 1399px) {}
+
+@media(max-width: 1199px) {
+  // Fonts
+  .font-r-14 {
+    font-size: 1.26rem !important;
+  }
+  .font-r-16 {
+    font-size: 1.44rem !important;
+  }
+}
+
+@media(max-width: 991px) {
+  .head-section {
+    height: 40vh;
+  }
+}
+
+@media(max-width: 767px) {}
+
+@media(max-width: 599px) {
+  .form-control {
+    font-size: 1.15rem;
+
+    &::-webkit-input-placeholder {
+      font-size: 1.15rem;
+    }
+    &::-moz-placeholder {
+      font-size: 1.15rem;
+    }
+    &:-ms-input-placeholder {
+      font-size: 1.15rem;
+    }
+    &:-moz-placeholder {
+      font-size: 1.15rem;
+    }
+  }
+  
+  .sign-in,
+  .sign-up {
+    padding: 0 20px;
+  }
+
+  .logo2 {
+    width: 138px;
+  }
+
+  // Sign-in, Sign-up
+  .sign-in {
+    min-height: 420px;
+  }
+
+  .sign-up {
+    min-height: 580px;
+  }
+
+  .sign-in-and-sign-up {
+    width: 96%;
+    max-width: 450px;
+  }
+
+  .submit-button {
+    .btn {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .options {
+    flex-direction: column;
+  }
+
+  .forgot-password {
+    margin-left: inherit;
+    margin-top: 10px;
+    font-size: 1.15rem;
+  }
+
+  .custom-control-label {
+    font-size: 1.15rem;
+  }
+
+  h5 {
+    font-size: 1.15rem;
+  }
+
+  // fonts
+  .font-r-16 {
+    font-size: 1.28rem !important;
+  }
+
+  .font-r-14 {
+    font-size: 1.12rem !important;
+  }
+}
+
+@media(max-width: 374px) {
+  .forgot-password,
+  .custom-control-label {
+    font-size: .975rem;
+  }
+}

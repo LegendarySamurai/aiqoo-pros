@@ -18,14 +18,15 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
 
-  <link href="assets/css/styles.min.css" rel="stylesheet" />
-  <link href="assets/css/responsive-new.min.css" rel="stylesheet" />
+  <!--<link href="assets/css/styles.min.css" rel="stylesheet" />-->
+  <!--<link href="assets/css/responsive-new.min.css" rel="stylesheet" />-->
+  <link href="assets/css/register.min.css" rel="stylesheet" />
 </head>
 <body>
 <app>
   <div class="wrapper-full-width sign-in-and-sign-up-page">
     <div class="head-section"></div>
-    <div class="sign-in-and-sign-up margin-center">
+    <div class="sign-in-and-sign-up">
       <div class="tabs pos-r">
         <span class="tab font-r-14 active">Sign In</span>
         <span class="divider"></span>
@@ -45,22 +46,23 @@
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-envelope"></i></div>
             </div>
-            <input type="text" class="form-control font-r-14" id="sign-in-email" placeholder="Email">
+            <input type="text" class="form-control" id="sign-in-email" placeholder="Email">
           </div>
           <div class="input-group mb-4">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
             </div>
-            <input type="password" class="form-control font-r-14" id="sign-in-password" placeholder="Password">
+            <input type="password" class="form-control" id="sign-in-password" placeholder="Password">
           </div>
-          <div class="options">
-            <div class="form-check">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label cursor-p font-r-14" for="customCheck1">Remember me</label>
-              </div>
+          <div class="options pb-4">
+            <div class="custom-control custom-checkbox">
+              <label class="custom-control-label">
+                <input id="terms" type="checkbox" class="custom-control-input">
+                <span class="custom-checkbox-ui"></span>
+                <span class="input-label">Remember me</span>
+              </label>
             </div>
-            <a class="forgot-password font-r-14" href="#">Forgot your password?</a>
+            <a class="forgot-password" href="#">Forgot your password?</a>
           </div>
         </form>
       </div>
