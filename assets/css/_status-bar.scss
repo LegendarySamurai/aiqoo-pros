@@ -167,65 +167,11 @@
     height: auto;
     margin-top: 20px;
     padding: 16px 30px;
-    background-color: #f4f4f4;
+    //background-color: #f4f4f4;
 
     .custom-control {
       position: relative;
       margin-bottom: 20px;
-
-      &.orange {
-        &:before {
-          background-color: #fdc25d;
-        }
-      }
-
-      &.dark-grey {
-        &:before {
-          background-color: #5d5d5d;
-        }
-      }
-
-      &.pink {
-        &:before {
-          background-color: #fd5d5d;
-        }
-      }
-
-      &.light-purple {
-        &:before {
-          background-color: #474e83;
-        }
-      }
-
-      &.dark-red {
-        &:before {
-          background-color: #881030;
-        }
-      }
-
-      &.very-light-purple {
-        &:before {
-          background-color: #c65dfd;
-        }
-      }
-
-      &.light-blue {
-        &:before {
-          background-color: #635dfd;
-        }
-      }
-
-      &.light-green {
-        &:before {
-          background-color: #12b7aa;
-        }
-      }
-
-      &.dark-orange {
-        &:before {
-          background-color: #ff8000;
-        }
-      }
 
       &:before {
         position: absolute;
@@ -249,36 +195,47 @@
     }
   }
   //EOL: task-type
-}
 
-/*// user
-.user {
-  padding: 15px 0;
-  border-bottom: 1px solid #dadada;
 
-  .user-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .user-name {
-    flex-grow: 1;
+  // accordion
+  // services-panel page
+  .collapse-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+
+    .fa-chevron-down {
+      transform: rotate(180deg);
+    }
+
+    &.collapsed {
+      .fa-chevron-down {
+        transform: rotate(0deg) !important;
+      }
+    }
+
+    .title {
+      margin-bottom: 0;
+    }
   }
 
-  .avatar {
-    width: 28px;
-    height: 28px;
-    margin-right: 10px;
-    border-radius: 5px;
+  .lead-management {
+    padding: 15px 0;
+
+    .custom-control {
+      margin-bottom: 20px;
+    }
   }
+
+  .lead-management-list {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  // EOL: services-panel page
 }
-// EOL: user*/
 
 @media(max-width: 1399px) {
   .status-bar {

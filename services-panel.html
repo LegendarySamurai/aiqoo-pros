@@ -444,7 +444,7 @@
                           </div>
                           <!-- EOL: date -->
                           <!-- user -->
-                          <div class="user">
+                          <div class="user d-none">
                             <div class="title font-r-13">User</div>
                             <div class="user-info">
                               <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
@@ -453,115 +453,292 @@
                           </div>
                           <!-- EOL: user -->
 
+                          <!--&lt;!&ndash; Accordion &ndash;&gt;-->
+                          <!--<div class="accordion" id="accordionExample">-->
+                          <!--  &lt;!&ndash; Task Type &ndash;&gt;-->
+                          <!--  <div class="task-type">-->
+                          <!--    <div class="card-header" id="headingOne">-->
+                          <!--      <h2 class="mb-0">-->
+                          <!--        &lt;!&ndash; this is collapse grey header &ndash;&gt;-->
+                          <!--        <div class="collapse-btn collapsed" data-toggle="collapse"-->
+                          <!--             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">-->
+                          <!--          <span class="title font-r-13">Task Type</span>-->
+                          <!--          <i class="far fa-chevron-down pt-lg-1"></i>-->
+                          <!--        </div>-->
+                          <!--        &lt;!&ndash; EOL: collapse grey header &ndash;&gt;-->
+                          <!--      </h2>-->
+                          <!--    </div>-->
+
+                          <!--    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">-->
+                          <!--      <div class="card-body">-->
+                          <!--        <div class="task-type-list">-->
+                          <!--          &lt;!&ndash; color classes : .system-a-b-bg# in _colors.scss &ndash;&gt;-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg1">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg2">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg3">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg4">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg5">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg6">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg7">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg8">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg9">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg10">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--          <div class="custom-control custom-checkbox system-a-b-bg11">-->
+                          <!--            <label class="custom-control-label font-weight-600 font-r-10">-->
+                          <!--              <input type="checkbox" class="custom-control-input">-->
+                          <!--              <span class="custom-checkbox-ui"></span>-->
+                          <!--              <span class="input-label">Call Back</span>-->
+                          <!--            </label>-->
+                          <!--          </div>-->
+                          <!--        </div>-->
+                          <!--      </div>-->
+                          <!--    </div>-->
+                          <!--  </div>-->
+                          <!--  &lt;!&ndash; EOL: Task Type &ndash;&gt;-->
+                          <!--</div>-->
+
+
                           <!-- Task Type -->
                           <div class="task-type">
-                            <span class="title font-r-13">Task Type</span>
-                            <div class="task-type-list">
-                              <!-- color classes :
-                              orange,
-                              dark-grey,
-                              pink,
-                              light-purple,
-                              dark-red,
-                              very-light-purple,
-                              light-blue,
-                              light-green,
-                              dark-orange
-                              -->
-                              <div class="custom-control custom-checkbox orange">
-                                <label class="custom-control-label font-weight-600 font-r-10">
-                                  <input type="checkbox" class="custom-control-input">
-                                  <span class="custom-checkbox-ui"></span>
-                                  <span class="input-label">Call Back</span>
-                                </label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox orange">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label font-r-13" for="customCheck1">Call Back</label>
-                              </div>
-                              <div class="custom-control custom-checkbox dark-grey">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                <label class="custom-control-label font-r-13" for="customCheck2">Follow up</label>
-                              </div>
-                              <div class="custom-control custom-checkbox pink">
-                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                <label class="custom-control-label font-r-13" for="customCheck3">Send company info</label>
-                              </div>
-                              <div class="custom-control custom-checkbox light-purple">
-                                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                <label class="custom-control-label font-r-13" for="customCheck4">Schedule meeting</label>
-                              </div>
-                            </div>
+                            <div class="collapse-body">
+                              <div class="accordion-items">
+                                <div id="accordionOne" class="accordion-item">
+                                  <div class="card-accordion-item">
+                                    <div class="card-accordion-header" id="headingOne">
+                                      <!-- this is collapse grey header -->
+                                      <div class="collapse-btn collapsed" data-toggle="collapse"
+                                           data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="title font-r-13">Task Type</span>
+                                        <i class="far fa-chevron-down pt-lg-1"></i>
+                                      </div>
+                                      <!-- EOL: collapse grey header -->
+                                    </div>
 
-                            <div class="done-btn-container">
-                              <button class="font-r-18 font-weight-bold" type="button">Done</button>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                         data-parent="#accordionOne">
+                                      <div class="w-100 my-2 collapse-item">
+
+                                        <div class="task-type-list">
+                                          <!-- color classes : .system-a-b-bg# in _colors.scss -->
+                                          <div class="custom-control custom-checkbox system-a-b-bg1">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg2">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg3">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg4">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg5">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg6">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg7">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg8">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg9">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg10">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg11">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Call Back</span>
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <!-- EOL: Task Type -->
+
+                          <!-- Lead management -->
+                          <div class="lead-management">
+                            <div class="collapse-body">
+                              <div class="accordion-items">
+                                <div id="accordionTwo" class="accordion-item">
+                                  <div class="card-accordion-item">
+                                    <div class="card-accordion-header" id="headingTwo">
+                                      <!-- this is collapse grey header -->
+                                      <div class="collapse-btn collapsed" data-toggle="collapse"
+                                           data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        <span class="title font-r-13">Lead Management</span>
+                                        <i class="far fa-chevron-down pt-lg-1"></i>
+                                      </div>
+                                      <!-- EOL: collapse grey header -->
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                         data-parent="#accordionTwo">
+                                      <div class="w-100 my-2 collapse-item">
+                                        <div class="lead-management-list">
+                                          <div class="custom-control custom-checkbox system-a-b-bg1">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">New</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg1">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Initial contact</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg1">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Sales in progress</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg1">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Loans requested</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg1">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Loans approved</span>
+                                            </label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox system-a-b-bg1">
+                                            <label class="custom-control-label font-weight-600 font-r-10">
+                                              <input type="checkbox" class="custom-control-input">
+                                              <span class="custom-checkbox-ui"></span>
+                                              <span class="input-label">Loans rejected</span>
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- EOL: Lead management -->
+
                         </div>
                       </div>
 
