@@ -3347,16 +3347,16 @@
     order: 1; } }
 
 @media (max-width: 599px) {
-  .services-panel .status-bar-heading {
+  .leads-list .status-bar-heading {
     top: 140px; }
-  .services-panel .status-bar-heading {
+  .leads-list .status-bar-heading {
     z-index: 10;
     top: 70px;
     box-shadow: none; }
-  .services-panel .fixed-top-panel-d .sub-menu-col {
+  .leads-list .fixed-top-panel-d .sub-menu-col {
     padding-top: 90px;
     height: 30px; }
-  .services-panel .fixed-top-panel-d .page-title {
+  .leads-list .fixed-top-panel-d .page-title {
     display: none; } }
 
 @media (max-width: 599px) {

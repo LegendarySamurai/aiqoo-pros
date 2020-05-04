@@ -26,17 +26,13 @@ body {
   @import 'new-layout-page.scss';
 }
 
-//************* Services-panel (New page Layout) services-panel.html *************//
-.services-panel {
-  @import 'new-layout-page.scss';
+//************* Services-panel (New page Layout) leads-list.html *************//
+.leads-list {
   @import 'status-bar';
-  @import 'services-panel';
-
-  .right-side-content {
-    @import 'search';
-    @import 'form';
-    @import 'accordion';
-  }
+  @import 'leads-list.scss';
+  @import 'search';
+  @import 'form';
+  @import 'accordion';
 }
 
 

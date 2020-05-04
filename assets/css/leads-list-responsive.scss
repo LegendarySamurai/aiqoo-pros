@@ -11,7 +11,8 @@
 @media(max-width: 767px) {}
 
 @media(max-width: 599px) {
-  // Reset common styles only for this page (because we have twice bigger header on that page)
+  // Reset common styles only for this page
+  // (because we have twice bigger header on that page)
   .status-bar-heading {
     top: 140px;
   }
