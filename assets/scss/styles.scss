@@ -1,0 +1,198 @@
+@import 'site.scss'; // This stylesheet for Ovadia updates and changes !!!
+@import 'helpers';
+@import 'reset-styles';
+@import 'variables.scss';
+@import 'accordion';
+@import 'form';
+@import 'colors'; // New color panel
+
+// vendor custom bootstrap cherry picking styles
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  &.blocked {
+    overflow: hidden;
+  }
+}
+
+//************* Sign-in, Sign-up *************//
+.sign-in-and-sign-up-page {
+  //@import 'register.scss';
+}
+
+//************* Account verification page *************//
+.account-verification-page {
+  @import 'account-verification';
+  //@import 'register.scss';
+}
+
+//************* Landing sign up page  *************//
+.landing-sign-up {
+  @import 'landing-sig-up-new.scss';
+}
+
+//************* Landing sign up page NEW  *************//
+.sign-up-landing {
+  //@import 'sign-up-landing';
+  //@import 'landing-quality-cards';
+  ////@import 'register';
+  //@import 'account-verification';
+}
+
+
+//************* New page Layout *************//
+.new-layout-page {
+  //@import 'new-layout-page.scss';
+}
+
+//************* Services-panel (New page Layout) leads-list.html *************//
+.leads-list {
+  @import 'status-bar';
+  @import 'leads-list.scss';
+  @import 'search';
+  @import 'form';
+  @import 'accordion';
+}
+
+
+//************* Area settings (New page Layout) area-settings.html *************//
+.area-settings {
+  @import 'new-layout-page.scss';
+  @import 'area-settings';
+
+  .right-side-content {
+    @import 'search';
+    @import 'form';
+  }
+}
+
+//************* Account settings (New page Layout) account-settings.html *************//
+
+.account-settings {
+  @import 'new-layout-page.scss';
+  @import 'account-settings.scss';
+
+  .right-side-content {
+    @import 'search';
+    @import 'form';
+    @import 'decoration-elements.scss';
+  }
+}
+
+
+//************* My profile page (Dashboard) *************//
+.my-profile-page {
+  @import 'my-profile.scss';
+}
+
+//************* Add company profile page (Dashboard) *************//
+.add-company-profile-page {
+  @import 'my-profile.scss';
+  @import 'dashboard.scss';
+}
+
+//************* Summary, Summary-empty pages (Dashboard)  *************//
+.summary-page-container {
+  @import 'summary.scss';
+}
+
+.summary-page-empty-container {
+  @import 'summary.scss';
+}
+
+//************* Add portfolio page (Dashboard)  *************//
+.add-portfolio-page {
+  @import 'my-profile.scss';
+  @import 'dashboard.scss';
+}
+
+//*************   Services and Area list, Details, Success (Wizard) *************//
+@import 'wizard-new-dialog.scss';
+
+//*************  Services and Area popup, Details, Locations, Services, Success (Wizard modals) *************//
+@import 'wizard.scss';
+
+//*************  System campaign: Services, summary, zip-code pages *************//
+.system-campaign {
+  @import 'tabs';
+  @import 'county-list.scss';
+  @import 'system-campaign.scss';
+
+  &.system-campaign-zip-code {
+    @import 'services-to-chose.scss';
+  }
+}
+
+//************* Services and Locations page (Dashboard) *************//
+
+.services-and-location-page {
+  @import 'my-profile.scss';
+  @import 'dashboard.scss';
+  @import 'services-to-chose.scss';
+  @import 'county-list.scss';
+}
+
+//************* My tasks page (Dashboard) *************//
+.my-tasks-page {
+  @import 'dashboard.scss';
+  @import 'status-bar';
+  @import 'search';
+  @import 'tasks.scss';
+  @import 'content-col';
+  @import 'main-row';
+  @import 'card-label';
+}
+
+//************* Support page (Dashboard) *************//
+.support-page {
+  @import 'dashboard.scss';
+  @import 'status-bar';
+  @import 'search';
+  @import 'support';
+  @import 'content-col';
+  @import 'main-row';
+  @import 'card-label';
+}
+
+//************* Wizard square decoration element *************//
+.decoration-element-wizard {
+  position: absolute;
+  left: -30px;
+
+  .square {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #585077;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px #fefefe;
+  }
+
+  .dashed-line {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    //height: 60px;
+    display: block;
+    border: 1px dashed #585077;
+  }
+}
+
+//*************  *************//
+
+//*************  *************//
+
+//*************  *************//
+
+//*************  *************//
+
+
+
+

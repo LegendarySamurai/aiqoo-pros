@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "area-settings-responsive.css",
+	"sources": [
+		"../scss/area-settings-responsive.scss"
+	],
+	"sourcesContent": [
+		"@media(max-width: 1899px) {}\r\n\r\n@media(max-width: 1599px) {}\r\n\r\n@media(max-width: 1499px) {\r\n  .list {\r\n    .item {\r\n      width: calc(100% / 6);\r\n      //margin-bottom: 1.5rem;\r\n      //padding: 0 .25rem;\r\n    }\r\n  }\r\n}\r\n\r\n@media(max-width: 1399px) {\r\n  .list {\r\n    .item {\r\n      width: calc(100% / 5);\r\n      //margin-bottom: 1.5rem;\r\n      //padding: 0 .25rem;\r\n    }\r\n  }\r\n}\r\n\r\n@media(max-width: 1199px) {\r\n  .list {\r\n    .item {\r\n      width: calc(100% / 4);\r\n    }\r\n  }\r\n}\r\n\r\n@media(max-width: 899px) {\r\n  .list {\r\n    .item {\r\n      width: calc(100% / 3);\r\n    }\r\n  }\r\n}\r\n\r\n@media(max-width: 991px) {}\r\n\r\n@media(max-width: 767px) {\r\n  .map {\r\n    display: none;\r\n  }\r\n\r\n  .right-side-content-inner {\r\n    .col-5 {\r\n      padding-left: 0;\r\n    }\r\n  }\r\n}\r\n\r\n@media(max-width: 599px) {\r\n  .map {\r\n    display: none;\r\n  }\r\n\r\n  .list {\r\n    .item {\r\n      width: auto;\r\n    }\r\n  }\r\n}\r\n\r\n@media(max-width: 374px) {}\r\n"
+	],
+	"names": [],
+	"mappings": "AAIA,MAAM,EAAC,SAAS,EAAE,MAAM;;EACtB,AACE,KADG,CACH,KAAK,CAAC;IACJ,KAAK,EAAE,cAAc,GAGtB;;AAIL,MAAM,EAAC,SAAS,EAAE,MAAM;;EACtB,AACE,KADG,CACH,KAAK,CAAC;IACJ,KAAK,EAAE,cAAc,GAGtB;;AAIL,MAAM,EAAC,SAAS,EAAE,MAAM;;EACtB,AACE,KADG,CACH,KAAK,CAAC;IACJ,KAAK,EAAE,cAAc,GACtB;;AAIL,MAAM,EAAC,SAAS,EAAE,KAAK;;EACrB,AACE,KADG,CACH,KAAK,CAAC;IACJ,KAAK,EAAE,cAAc,GACtB;;AAML,MAAM,EAAC,SAAS,EAAE,KAAK;;EACrB,AAAA,IAAI,CAAC;IACH,OAAO,EAAE,IAAI,GACd;;EAED,AACE,yBADuB,CACvB,MAAM,CAAC;IACL,YAAY,EAAE,CAAC,GAChB;;AAIL,MAAM,EAAC,SAAS,EAAE,KAAK;;EACrB,AAAA,IAAI,CAAC;IACH,OAAO,EAAE,IAAI,GACd;;EAED,AACE,KADG,CACH,KAAK,CAAC;IACJ,KAAK,EAAE,IAAI,GACZ"
+}

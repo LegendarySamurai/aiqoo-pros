@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+  /* line 3, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/decoration-elements.scss */
+  .decoration-element-wizard {
+    display: none; }
+  /* line 7, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/decoration-elements.scss */
+  .decoration-element-mobile {
+    z-index: 1;
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #585077; }
+  /* line 20, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/decoration-elements.scss */
+  .decoration-element-circle-arrow {
+    display: none; } }
+
+/*# sourceMappingURL=decoration-elements.css.map */

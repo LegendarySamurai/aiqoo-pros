@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "leads-list.css",
+	"sources": [
+		"../scss/leads-list.scss"
+	],
+	"sourcesContent": [
+		"// For pages which has Filter (status-bar)\r\n.status-bar {\r\n  padding: 60px 15px 20px 15px;\r\n}\r\n\r\n.status-bar-inner-body {\r\n  .search {\r\n    display: flex !important;\r\n  }\r\n}\r\n\r\n// Reset common styles only for this page\r\n.custom-control {\r\n  padding-left: 0;\r\n}\r\n\r\n\r\n"
+	],
+	"names": [],
+	"mappings": ";AACA,AAAA,WAAW,CAAC;EACV,OAAO,EAAE,mBAAmB,GAC7B;;;AAED,AACE,sBADoB,CACpB,OAAO,CAAC;EACN,OAAO,EAAE,eAAe,GACzB;;;AAIH,AAAA,eAAe,CAAC;EACd,YAAY,EAAE,CAAC,GAChB"
+}

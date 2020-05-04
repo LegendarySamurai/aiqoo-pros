@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "leads-list-responsive.css",
+	"sources": [
+		"../scss/leads-list-responsive.scss"
+	],
+	"sourcesContent": [
+		"@media(max-width: 1899px) {}\r\n\r\n@media(max-width: 1599px) {}\r\n\r\n@media(max-width: 1399px) {}\r\n\r\n@media(max-width: 1199px) {}\r\n\r\n@media(max-width: 991px) {}\r\n\r\n@media(max-width: 767px) {}\r\n\r\n@media(max-width: 599px) {\r\n  // Reset common styles only for this page\r\n  // (because we have twice bigger header on that page)\r\n  .status-bar-heading {\r\n    top: 140px;\r\n  }\r\n\r\n  // For pages which has Filter (status-bar)\r\n  .status-bar-heading {\r\n    z-index: 10;\r\n    top: 70px;\r\n    box-shadow: none;\r\n  }\r\n\r\n  .fixed-top-panel-d {\r\n    .sub-menu-col {\r\n      padding-top: 90px;\r\n      height: 30px;\r\n    }\r\n\r\n    .page-title {\r\n      display: none;\r\n    }\r\n  }\r\n}\r\n\r\n@media(max-width: 374px) {}\r\n\r\n\r\n"
+	],
+	"names": [],
+	"mappings": "AAYA,MAAM,EAAC,SAAS,EAAE,KAAK;;EAGrB,AAAA,mBAAmB,CAAC;IAClB,GAAG,EAAE,KAAK,GACX;;EAGD,AAAA,mBAAmB,CAAC;IAClB,OAAO,EAAE,EAAE;IACX,GAAG,EAAE,IAAI;IACT,UAAU,EAAE,IAAI,GACjB;;EAED,AACE,kBADgB,CAChB,aAAa,CAAC;IACZ,WAAW,EAAE,IAAI;IACjB,MAAM,EAAE,IAAI,GACb;;EAJH,AAME,kBANgB,CAMhB,WAAW,CAAC;IACV,OAAO,EAAE,IAAI,GACd"
+}

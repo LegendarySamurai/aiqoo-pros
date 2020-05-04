@@ -1,0 +1,125 @@
+/* line 2, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.custom-select {
+  height: 40px;
+  border: 1px solid #ced4da; }
+  /* line 6, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+  .custom-select:focus {
+    border: 1px solid #ced4da; }
+
+/* line 11, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.custom-control {
+  padding-left: 0; }
+
+/* line 15, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.search {
+  padding-bottom: 0 !important;
+  border-bottom: none !important; }
+  /* line 19, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+  .search .input-group {
+    height: 40px !important; }
+
+/* line 24, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.input-group {
+  color: #b3b3b3; }
+
+/* line 28, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.input-group-prepend {
+  right: auto;
+  left: 0; }
+
+/* line 33, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.form-control {
+  padding-right: 20px !important;
+  padding-left: 40px !important;
+  color: #b3b3b3; }
+  /* line 38, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+  .form-control::placeholder {
+    color: #b3b3b3; }
+
+/* line 43, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.decoration-element-wizard {
+  left: 0;
+  height: 100%; }
+
+/* line 48, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.dashed-line {
+  height: 100%; }
+
+/* line 60, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.right-side-content-col {
+  margin-top: 10px; }
+
+/* line 64, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.account-settings-inner {
+  position: relative; }
+
+/* line 68, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.account-settings-wrapper {
+  padding: 20px 40px 20px 40px;
+  background-color: #f5f5f5; }
+
+/* line 78, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.content {
+  padding-left: 30px; }
+
+/* line 82, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.input-group-select-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: coral; }
+
+/* line 92, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.selected-services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+/* line 103, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.service-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  width: auto;
+  padding: 0 15px;
+  color: #fff;
+  border-radius: 50px; }
+
+/* line 115, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.service-name {
+  white-space: nowrap; }
+
+/* line 119, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.fa-times {
+  font-size: 14pt;
+  cursor: pointer; }
+
+/* line 124, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+.fa-arrow-circle-right {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: translate(-20%, -70%);
+  color: #fff;
+  background-color: #585077;
+  border-radius: 50%;
+  font-size: 24pt; }
+
+/* line 138, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+::-webkit-scrollbar-thumb {
+  background-color: #585077 !important; }
+
+/* line 142, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/account-settings.scss */
+::-webkit-scrollbar-track {
+  background-color: #585077 !important; }
+
+/*# sourceMappingURL=account-settings.css.map */

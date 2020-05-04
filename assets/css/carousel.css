@@ -1,0 +1,144 @@
+@media (min-width: 600px) {
+  /* line 2, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel {
+    display: none; } }
+
+@media (max-width: 599px) {
+  @keyframes tonext {
+    75% {
+      left: 0; }
+    95% {
+      left: 100%; }
+    98% {
+      left: 100%; }
+    99% {
+      left: 0; } }
+  @keyframes tostart {
+    75% {
+      left: 0; }
+    95% {
+      left: -300%; }
+    98% {
+      left: -300%; }
+    99% {
+      left: 0; } }
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center; }
+    97% {
+      scroll-snap-align: none; }
+    99% {
+      scroll-snap-align: none; }
+    100% {
+      scroll-snap-align: center; } }
+  /* line 60, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent !important;
+    /* thumb and track color */
+    scrollbar-width: 0px !important; }
+  /* line 66, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  *::-webkit-scrollbar {
+    width: 0 !important; }
+  /* line 70, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  *::-webkit-scrollbar-track {
+    background: transparent !important; }
+  /* line 74, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  *::-webkit-scrollbar-thumb {
+    background: transparent !important;
+    border: none !important; }
+  /* line 79, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  * {
+    -ms-overflow-style: none !important; }
+  /* line 83, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  /* line 90, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel.cards-container {
+    position: relative;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    perspective: 100px;
+    margin: 1vh auto !important;
+    height: 113px !important; }
+  /* line 99, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; }
+  /* line 112, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item; }
+    /* line 118, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+    .carousel__slide:focus {
+      outline: none !important; }
+  /* line 133, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center; } }
+
+@media (max-width: 599px) and (hover: hover) {
+  /* line 143, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; }
+  /* line 150, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap; } }
+
+@media (max-width: 599px) and (prefers-reduced-motion: reduce) {
+  /* line 156, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__snapper {
+    animation-name: none; } }
+
+@media (max-width: 599px) {
+  /* line 161, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none; }
+  /* line 166, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center; }
+  /* line 174, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block; }
+  /* line 179, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #d8cdba;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s; }
+    /* line 190, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/carousel.scss */
+    .carousel__navigation-button.is-clicked {
+      width: 1.75rem;
+      height: 1.75rem;
+      background-color: #585077; } }
+
+/*# sourceMappingURL=carousel.css.map */

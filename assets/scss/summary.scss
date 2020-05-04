@@ -1,0 +1,244 @@
+@import 'variables';
+
+.summary-page {
+  .content-container {
+    background-color: #fff;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  .content-col-left {
+    .collapse-container {
+      .collapse-col-1 {
+        width: 30%;
+      }
+      .collapse-col-2 {
+        width: 20%;
+      }
+      .collapse-col-3 {
+        width: auto;
+        flex-grow: 1;
+      }
+
+      .collapse-header {
+        @includedisplay: flex;
+    flex-direction: row;;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .collapse-body {
+        .collapse-btn {
+          @includedisplay: flex;
+    flex-direction: row;;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #ebebeb;
+
+          .collapse-col-1 {
+
+          }
+
+          .collapse-col-2 {
+
+          }
+
+          .collapse-col-3 {
+            @includedisplay: flex;
+    flex-direction: row;;
+
+          }
+
+          &.collapsed {
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+
+        .collapse-item {
+          @includedisplay: flex;
+    flex-direction: row;;
+          align-items: center;
+
+          .collapse-col-1 {
+            @includedisplay: flex;
+    flex-direction: row;;
+            align-items: center;
+          }
+
+          .collapse-col-2 {
+
+          }
+
+          .collapse-col-3 {
+            @includedisplay: flex;
+    flex-direction: row;;
+            justify-content: space-between;
+
+            .edit {
+              @includedisplay: flex;
+    flex-direction: row;;
+              align-items: center;
+
+              i {
+                padding-right: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content-col-right {
+
+    // Dates
+    .dates-container {
+      .dates {
+        border-radius: 8px;
+        background-color: #f5f5f5;
+      }
+    }
+
+    // Graps container
+    .graphs-container {
+      .graph-card {
+        border-radius: 10px;
+        box-shadow: 0 1px 8px 0 rgba(20, 46, 110, 0.1);
+        background-color: #ffffff;
+      }
+    }
+
+    // Profile
+    .profile-container {
+      .profile-card {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 1px 8px 0 rgba(20, 46, 110, 0.1);
+        background-color: #ffffff;
+      }
+
+      .profile-card-header {
+        @includedisplay: flex;
+    flex-direction: row;;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        border-bottom: 1px solid #d6d6d6;
+
+        span, i {
+          color: #585077;
+        }
+      }
+
+      .profile-card-body {
+        @includedisplay: flex;
+    flex-direction: row;;
+
+        img {
+          max-width: 100%;
+        }
+
+        .profile-data-unit {
+          font-family: "Raleway", sans-serif;
+
+          .title {
+            color: #b3b3b3;
+          }
+
+          .data {
+            i {
+              color: #585077;
+            }
+
+            span {
+              color: #585077;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Common styles
+  .content-col-main {
+    margin-top: 20px;
+  }
+
+  .content-col-header {
+    border-bottom: 2px solid transparentize(#000, .84);
+  }
+
+  .content-col-heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  .collapse-body {
+    background-color: #f5f5f5;
+  }
+}
+
+
+
+// Empty
+.summary-page-empty {
+  .content-container {
+    background-color: #fff;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  .content-col-left {
+    .content-col-main {
+      @include flex-column;
+      align-items: center;
+      height: 100%;
+      padding-top: 80px;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .img-container {
+      &:before {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        content: '';
+        border-radius: 50%;
+        background-color: #f2f2f2;
+      }
+
+      img {
+        z-index: 2;
+      }
+
+      i {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(100%, 0) rotate(90deg);
+        color: #585077;
+      }
+    }
+
+    .text {
+      @includedisplay: flex;
+    flex-direction: row;;
+      justify-content: center;
+      align-items: center;
+      color: #585077;
+      line-height: 2;
+    }
+
+    .click-btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translate(50px, 10px);
+      padding: 5px 10px;
+      color: #fff;
+      background-color: #585077;
+      cursor: pointer;
+    }
+  }
+}

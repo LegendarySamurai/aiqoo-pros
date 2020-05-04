@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "decoration-elements.css",
+	"sources": [
+		"../scss/decoration-elements.scss"
+	],
+	"sourcesContent": [
+		"// Relative element should be position: relative;\r\n@media(max-width: 767px) {\r\n  .decoration-element-wizard {\r\n    display: none;\r\n  }\r\n\r\n  .decoration-element-mobile {\r\n    z-index: 1;\r\n    display: block !important;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: -7px;\r\n    transform: translate(0, -50%);\r\n    width: 12px;\r\n    height: 95%;\r\n    border-radius: 20px;\r\n    background-color: #585077;\r\n  }\r\n\r\n  .decoration-element-circle-arrow {\r\n    display: none;\r\n  }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AACA,MAAM,EAAC,SAAS,EAAE,KAAK;;EACrB,AAAA,0BAA0B,CAAC;IACzB,OAAO,EAAE,IAAI,GACd;;EAED,AAAA,0BAA0B,CAAC;IACzB,OAAO,EAAE,CAAC;IACV,OAAO,EAAE,gBAAgB;IACzB,QAAQ,EAAE,QAAQ;IAClB,GAAG,EAAE,GAAG;IACR,IAAI,EAAE,IAAI;IACV,SAAS,EAAE,kBAAkB;IAC7B,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,GAAG;IACX,aAAa,EAAE,IAAI;IACnB,gBAAgB,EAAE,OAAO,GAC1B;;EAED,AAAA,gCAAgC,CAAC;IAC/B,OAAO,EAAE,IAAI,GACd"
+}
