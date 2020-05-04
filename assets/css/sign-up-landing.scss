@@ -1,3 +1,31 @@
+// import here:
+@import "slick/slick";
+@import "slick/slick-theme";
+
+@import "bootstrap/bootstrap";
+// landing quality cards styles
+@import "landing-quality-cards";
+// account verification styles
+@import "account-verification";
+// sign up page responsive styles
+@import "sign-up-landing-responsive";
+@import "register";
+@import "fonts";
+@import "helpers";
+
+$purple: #585077;
+$primaryColer: #606060;
+
+//img {
+//  width: 100%;
+//  height: 100%;
+//  object-fit: contain;
+//}
+
+.position-relative {
+  position: relative;
+}
+
 .main-page-container {
   $page-height: 100vh;
   $main-side-padding: 5%;
@@ -115,6 +143,12 @@
       top: -2.875vh;
       left: 8vw;
       width: 8.35vh;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 
@@ -503,7 +537,7 @@
 
 .sign-up-form {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   flex-grow: 1;
   margin-top: 1vh;
   padding: 0 2vw 1vh;
@@ -735,8 +769,8 @@
     justify-content: flex-end;
     margin: 0;
 
-    .verification {
-      //bottom: 90%;
+    h5 {
+      white-space: normal;
     }
   }
 }

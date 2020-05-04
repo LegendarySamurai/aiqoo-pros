@@ -57,7 +57,7 @@
 
   // Quality cards
   .quality-card {
-    height: 210px;
+    //height: 210px;
     margin: 0 10px;
   }
 
@@ -647,7 +647,7 @@
 
     &.small-card {
       .quality-card-text-content {
-        padding: 1vh 2.5vw 2vh !important;
+        padding: 1vh 2.5vw 1vh !important;
       }
 
       .step {
