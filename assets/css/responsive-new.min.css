@@ -3081,9 +3081,11 @@
       cursor: pointer; }
   .new-layout-page .sub-menu-item {
     margin: 0 10px; }
+    .new-layout-page .sub-menu-item:after {
+      bottom: -1px !important; }
   .new-layout-page .dropdown-list.visible {
     bottom: 25%;
-    transform: translate(-60%, 110%); }
+    transform: translate(-56%, 106%); }
   .new-layout-page .dropdown-list-wrapper.active:before {
     bottom: -23px;
     left: -15px;
@@ -3187,9 +3189,9 @@
       .new-layout-page .right-side-col .user-outer.show .dropdown-info .dropdown-item i {
         font-size: 9.5pt; }
   .new-layout-page .right-side-col .index {
-    width: 14px;
-    height: 14px;
-    font-size: 5pt; }
+    width: 16px;
+    height: 16px;
+    font-size: 7pt; }
   .new-layout-page .right-side-col .notification {
     align-items: center; }
   .new-layout-page .right-side-col .notification-1 .index {
@@ -3248,19 +3250,23 @@
     box-sizing: border-box; }
   .new-layout-page .sub-menu-col .sub-menu-item {
     display: inline-block;
-    padding: 0;
     margin: 0 12px;
     white-space: nowrap; }
     .new-layout-page .sub-menu-col .sub-menu-item:first-of-type {
       margin: 0 12px 0 0; }
   .new-layout-page .sub-menu-lists {
+    transform: translate(0px, 2px);
     max-width: 100%;
     margin: 0 auto; }
     .new-layout-page .sub-menu-lists .sub-menu-items {
       -webkit-overflow-scrolling: touch;
       display: flex;
       overflow: auto;
-      white-space: nowrap; } }
+      white-space: nowrap; }
+  .new-layout-page .sub-menu-item.is-active::after {
+    bottom: 0px !important; }
+  .new-layout-page .promotion .dropdown-list-one.visible {
+    transform: translate(-48%, 106%); } }
 
 @media (max-width: 374px) {
   .new-layout-page .user-settings-col {
@@ -3275,7 +3281,10 @@
   .new-layout-page .user-outer.show .dropdown-info.visible {
     width: 135px !important; }
     .new-layout-page .user-outer.show .dropdown-info.visible .dropdown-item {
-      font-size: 8.75pt; } }
+      font-size: 8.75pt; }
+  .new-layout-page .user-outer .user {
+    padding-left: 0;
+    padding-right: 30px !important; } }
 
 @media (max-width: 1499px) {
   .area-settings .list .item {
