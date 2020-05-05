@@ -1,11 +1,9 @@
-@import 'pages/new-page-layout-responsive';
+//@import 'pages/new-page-layout-responsive';
 
 @media(max-width: 1499px) {
   .list {
     .item {
       width: calc(100% / 6);
-      //margin-bottom: 1.5rem;
-      //padding: 0 .25rem;
     }
   }
 }
@@ -14,8 +12,6 @@
   .list {
     .item {
       width: calc(100% / 5);
-      //margin-bottom: 1.5rem;
-      //padding: 0 .25rem;
     }
   }
 }
@@ -35,8 +31,6 @@
     }
   }
 }
-
-@media(max-width: 991px) {}
 
 @media(max-width: 767px) {
   .map {
@@ -61,5 +55,3 @@
     }
   }
 }
-
-@media(max-width: 374px) {}
