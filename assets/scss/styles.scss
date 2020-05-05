@@ -2,8 +2,8 @@
 @import 'utils/helpers';
 @import 'utils/reset-styles';
 @import 'utils/variables';
-@import 'accordion';
-@import 'form';
+@import 'modules/accordion';
+@import 'modules/form';
 @import 'utils/colors'; // New color panel
 
 // vendor custom bootstrap cherry picking styles
@@ -65,7 +65,7 @@ body {
 //  .right-side-content {
 //    //@import 'search';
 //    //@import 'form';
-//    //@import 'decoration-elements.scss';
+//    //@import '_decoration-elements.scss';
 //  }
 //}
 
@@ -104,12 +104,12 @@ body {
 
 //*************  System campaign: Services, summary, zip-code pages *************//
 .system-campaign {
-  @import 'tabs';
-  @import 'county-list.scss';
+  @import 'modules/tabs';
+  @import 'modules/county-list';
   @import 'system-campaign.scss';
 
   &.system-campaign-zip-code {
-    @import 'services-to-chose.scss';
+    @import 'modules/services-to-chose';
   }
 }
 
@@ -118,30 +118,30 @@ body {
 .services-and-location-page {
   @import 'my-profile.scss';
   @import 'dashboard.scss';
-  @import 'services-to-chose.scss';
-  @import 'county-list.scss';
+  @import 'modules/services-to-chose';
+  @import 'modules/county-list';
 }
 
 //************* My tasks page (Dashboard) *************//
 .my-tasks-page {
   @import 'dashboard.scss';
-  @import 'status-bar';
-  @import 'search';
-  @import 'tasks.scss';
-  @import 'content-col';
-  @import 'main-row';
-  @import 'card-label';
+  @import 'modules/status-bar';
+  @import 'modules/search';
+  @import 'modules/tasks';
+  @import 'modules/content-col';
+  @import 'modules/main-row';
+  @import 'modules/card-label';
 }
 
 //************* Support page (Dashboard) *************//
 .support-page {
-  @import 'dashboard.scss';
-  @import 'status-bar';
-  @import 'search';
+  @import 'modules/status-bar';
+  @import 'modules/search';
+  @import 'modules/content-col';
+  @import 'modules/main-row';
+  @import 'modules/card-label';
   @import 'support';
-  @import 'content-col';
-  @import 'main-row';
-  @import 'card-label';
+  @import 'dashboard.scss';
 }
 
 //************* Wizard square decoration element *************//

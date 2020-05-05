@@ -1,9 +1,9 @@
 @import 'utils/helpers';
 @import 'utils/reset-styles';
 @import 'utils/variables';
-@import 'form';
-@import 'search';
-@import 'county-list';
+@import 'modules/form';
+@import 'modules/search';
+@import 'modules/county-list';
 
 
 // Wizard new dialog for wrappers and common elements

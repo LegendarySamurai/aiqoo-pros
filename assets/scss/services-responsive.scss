@@ -1,4 +1,4 @@
-@import 'new-page-layout-responsive.scss';
+//@import 'pages/new-page-layout-responsive';
 
 @media(max-width: 1199px) {
   // Reset common styles
@@ -27,7 +27,7 @@
 
 
 @media(max-width: 899px) {
-  .account-settings-wrapper {
+  .services-wrapper {
     padding: 20px !important;
   }
 
@@ -46,7 +46,7 @@
 }
 
 @media(max-width: 767px) {
-  .account-settings-wrapper {
+  .services-wrapper {
     position: relative;
     z-index: 2;
   }

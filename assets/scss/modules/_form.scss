@@ -1,4 +1,4 @@
-@import 'utils/variables';
+@import '../utils/variables';
 
 /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -167,7 +167,7 @@ form {
   }
 
   .custom-control-input:checked ~ .custom-control-label::after {
-    background-image: url("../images/confirm-7.svg");
+    background-image: url("../../images/confirm-7.svg");
     //top: 0;
   }
 }

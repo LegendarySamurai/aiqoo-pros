@@ -1,8 +1,8 @@
 @import 'utils/helpers';
 @import 'utils/reset-styles';
 @import 'utils/variables';
-@import 'form';
-@import 'tabs';
+@import 'modules/form';
+@import 'modules/tabs';
 
 // Dashboard
 .dashboard-outer {

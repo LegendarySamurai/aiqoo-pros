@@ -1,13 +1,13 @@
-@import 'new-layout-page.scss';
-@import 'header.scss';
-@import 'search.scss';
-@import 'custom-checkbox-ui.scss';
-@import 'decoration-elements.scss';
-@import 'utils/colors';
-@import 'utils/reset-styles';
-@import 'utils/helpers';
-@import 'utils/fonts';
-@import 'utils/base';
+//@import 'pages/new-layout-page';
+//@import 'modules/header';
+//@import 'modules/search';
+//@import 'modules/custom-checkbox-ui';
+//@import 'modules/decoration-elements';
+//@import 'utils/colors';
+//@import 'utils/reset-styles';
+//@import 'utils/helpers';
+//@import 'utils/fonts';
+//@import 'utils/base';
 
 
 .account-settings {
@@ -77,7 +77,7 @@
     position: relative;
   }
 
-  .account-settings-wrapper {
+  .services-wrapper {
     padding: 20px 40px 20px 40px;
     background-color: #f5f5f5;
   }

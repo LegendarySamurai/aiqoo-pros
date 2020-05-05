@@ -2,8 +2,8 @@
 @import 'utils/helpers';
 @import 'utils/reset-styles';
 @import 'utils/variables';
-@import 'accordion';
-@import 'form';
+@import 'modules/accordion';
+@import 'modules/form';
 @import 'utils/colors';
 
 
@@ -28,14 +28,14 @@
 
 //************* Account settings (New page Layout) services.html *************//
 
-.account-settings {
-  @import 'services-responsive';
-}
+//.account-settings {
+//  @import 'services-responsive';
+//}
 
 //************* Services panel (New page Layout) leads-list.html *************//
-.leads-list {
-  @import 'leads-list-responsive';
-}
+//.leads-list {
+//  @import 'pages/leads-list-responsive';
+//}
 
 
 .logo2,
@@ -87,17 +87,17 @@
     }
   }
   // EOL: My profile
-
-  .verification {
-    min-height: 510px;
-  }
-
-  //.sign-in-and-sign-up,
-  .account-verification {
-    width: 96%;
-    max-width: 450px;
-  }
-  // EOL: Sign-in, Sign-up, Account-verification
+  //
+  //.verification {
+  //  min-height: 510px;
+  //}
+  //
+  ////.sign-in-and-sign-up,
+  //.account-verification {
+  //  width: 96%;
+  //  max-width: 450px;
+  //}
+  //// EOL: Sign-in, Sign-up, Account-verification
 
   .buttons-container {
     display: flex;
@@ -242,19 +242,19 @@
     width: 100%;
   }
 
-  .verification-code {
-    height: 50px;
-  }
+  //.verification-code {
+  //  height: 50px;
+  //}
 
   .content-container {
     padding: 90px 10px 0 !important;
   }
 
-  .code {
-    span {
-      height: 50px;
-    }
-  }
+  //.code {
+  //  span {
+  //    height: 50px;
+  //  }
+  //}
 
   .main-wrapper-inner {
     flex-direction: column;
@@ -285,14 +285,14 @@
 
   // Sign-in, Sign-up, Account-verification
   //.sign-in-and-sign-up,
-  .account-verification {
-    width: 420px;
-    max-width: 450px;
-  }
-
-  .verification {
-    min-height: 520px;
-  }
+  //.account-verification {
+  //  width: 420px;
+  //  max-width: 450px;
+  //}
+  //
+  //.verification {
+  //  min-height: 520px;
+  //}
 
   // EOL: Sign-in, Sign-up, Account-verification
 }
@@ -418,12 +418,12 @@
   // Sign-in, Sign-up, Account-verification
   .sign-in,
   .sign-up {
-    min-height: 420px;
+    //min-height: 420px;
   }
 
-  .verification {
-    min-height: 550px;
-  }
+  //.verification {
+  //  min-height: 550px;
+  //}
 
   // EOL: Sign-in, Sign-up, Account-verification
 
@@ -481,9 +481,9 @@
 
   // Sign-in, Sign-up, Account-verification
   //.sign-in-and-sign-up,
-  .account-verification {
-    width: 550px;
-  }
+  //.account-verification {
+  //  width: 550px;
+  //}
 
   // EOL: Sign-in, Sign-up, Account-verification
 }
@@ -539,17 +539,17 @@
 
 
   // Sign-in, Sign-up, Account-verification
-  .sign-in {
-    min-height: 530px;
-  }
+  //.sign-in {
+  //  min-height: 530px;
+  //}
+  //
+  //.sign-up {
+  //  min-height: 610px;
+  //}
 
-  .sign-up {
-    min-height: 610px;
-  }
-
-  .verification {
-    min-height: 550px;
-  }
+  //.verification {
+  //  min-height: 550px;
+  //}
 
   // EOL: Sign-in, Sign-up, Account-verification
 

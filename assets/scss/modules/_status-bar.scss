@@ -13,8 +13,7 @@
 .status-bar {
   display: flex;
   flex-direction: column;
-  //margin-top: 50px;
-  padding: 20px 15px;
+  padding: 60px 15px 20px 15px;
   font-family: "Raleway", sans-serif;
   color: #585077;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
@@ -28,7 +27,7 @@
 
   .status-bar-inner-body {
     .search {
-      display: none;
+      display: flex !important;
     }
 
     // user
@@ -407,7 +406,10 @@
 
   .status-bar-heading {
     position: fixed;
-    z-index: 3;
+    //z-index: 10;
+    //top: 70px;
+    //box-shadow: none;
+    z-index: 11;
     display: flex !important;
     flex-direction: row;
     align-items: center;
@@ -514,7 +516,7 @@
       align-items: flex-start;
       width: 100%;
       height: calc(100vh - 80px);
-      padding: 0 20px;
+      padding: 20px 20px 0;
       overflow-y: auto;
       overflow-x: hidden;
     }
