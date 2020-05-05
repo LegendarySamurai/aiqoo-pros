@@ -1,6 +1,6 @@
-@import 'helpers';
-@import 'reset-styles';
-@import 'variables';
+@import 'utils/helpers';
+@import 'utils/reset-styles';
+@import 'utils/variables';
 @import 'form';
 @import 'tabs';
 
@@ -232,7 +232,7 @@
         .card-accordion-header {  }
 
         .collapse-btn {
-          @includedisplay: flex;
+          display: flex;
     flex-direction: row;;
           justify-content: space-between;
           align-items: center;

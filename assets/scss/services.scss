@@ -1,0 +1,157 @@
+@import 'new-layout-page.scss';
+@import 'header.scss';
+@import 'search.scss';
+@import 'custom-checkbox-ui.scss';
+@import 'decoration-elements.scss';
+@import 'utils/colors';
+@import 'utils/reset-styles';
+@import 'utils/helpers';
+@import 'utils/fonts';
+@import 'utils/base';
+
+
+.account-settings {
+  .custom-select {
+    height: 40px;
+    border: 1px solid #ced4da;
+
+    &:focus {
+      border: 1px solid #ced4da;
+    }
+  }
+
+  .custom-control {
+    padding-left: 0;
+  }
+
+  .search {
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+
+    .input-group {
+      height: 40px !important;
+    }
+  }
+
+  .input-group {
+    color: #b3b3b3;
+  }
+
+  .input-group-prepend {
+    right: auto;
+    left: 0;
+  }
+
+  .form-control {
+    padding-right: 20px !important;
+    padding-left: 40px !important;
+    color: #b3b3b3;
+
+    &::placeholder {
+      color: #b3b3b3;
+    }
+  }
+
+  .decoration-element-wizard {
+    left: 0;
+    height: 100%;
+  }
+
+  .dashed-line {
+    height: 100%;
+  }
+
+  // EOL: Reset common styles
+
+
+  // Styles for this page
+  .right-side-content {
+
+  }
+
+  .right-side-content-col {
+    margin-top: 10px;
+  }
+
+  .account-settings-inner {
+    position: relative;
+  }
+
+  .account-settings-wrapper {
+    padding: 20px 40px 20px 40px;
+    background-color: #f5f5f5;
+  }
+
+  // Content
+  .left-part {
+
+  }
+
+  .content {
+    padding-left: 30px;
+  }
+
+  .input-group-select-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: coral; // remove
+  }
+
+  // Selected services styles
+  .selected-services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .service-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    padding: 0 15px;
+    color: #fff;
+    border-radius: 50px;
+  }
+
+  .service-name {
+    white-space: nowrap;
+  }
+
+  .fa-times {
+    font-size: 14pt;
+    cursor: pointer;
+  }
+
+  .fa-arrow-circle-right {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    transform: translate(-20%, -70%);
+    color: #fff;
+    background-color: #585077;
+    border-radius: 50%;
+    font-size: 24pt;
+  }
+
+  // EOL: Selected services styles
+
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #585077 !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #585077 !important;
+  }
+}

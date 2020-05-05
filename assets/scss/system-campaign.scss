@@ -1,5 +1,5 @@
 //////// Commons reusable styles ////////
-@import 'variables';
+@import 'utils/variables';
 
 .system-campaign-outer {
   font-family: "Raleway",sans-serif;
@@ -158,7 +158,7 @@
   width: 100%;
 
   .tools {
-    @includedisplay: flex;
+    display: flex;
     flex-direction: row;;
     justify-content: flex-end;
     align-items: center;

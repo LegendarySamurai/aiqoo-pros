@@ -1,3 +1,14 @@
+@import 'new-layout-page';
+@import 'status-bar';
+@import 'search';
+@import 'form';
+@import 'custom-checkbox-ui';
+@import 'accordion';
+@import 'utils/base';
+@import 'utils/reset-styles';
+@import 'utils/helpers';
+@import 'utils/colors';
+
 // For pages which has Filter (status-bar)
 .status-bar {
   padding: 60px 15px 20px 15px;

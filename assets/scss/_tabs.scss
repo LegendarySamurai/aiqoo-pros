@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'utils/variables';
 
 .tabs {
   display: flex;
@@ -41,8 +41,8 @@
       height: 40px;
 
       .tab {
-        @includedisplay: flex;
-    flex-direction: row;;
+        display: flex;
+        flex-direction: row;;
         align-items: center;
         line-height: 1;
         padding: 0 5px;
@@ -60,7 +60,7 @@
   }
   // EOL: 300px
 
-  @media(min-width: $break-tablet) { // from 768
+  @media(min-width: 768px) { // from 768
     & {
       .tab {
         padding: 0 10px;
@@ -72,7 +72,7 @@
     }
   }
 
-  @media(min-width: $break-pc) { // from 1200
+  @media(min-width: 1200px) { // from 1200
     & {
       .tab {
         line-height: inherit;
@@ -81,7 +81,7 @@
     }
   }
 
-  @media(min-width: $break-large-screen) { // from 1600
+  @media(min-width: 1600px) { // from 1600
     & {
       height: 50px;
 

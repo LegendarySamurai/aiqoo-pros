@@ -1,5 +1,5 @@
 @import 'tabs';
-@import "variables";
+@import "utils/variables";
 
 @media(min-width: 300px) { // from 300
   .system-campaign-services {
@@ -64,7 +64,7 @@
     }
 
     .tools {
-      @includedisplay: flex;
+      display: flex;
     flex-direction: row;;
       justify-content: flex-end;
       align-items: center;
@@ -138,8 +138,8 @@
       }
 
       .table-item {
-        @includedisplay: flex;
-    flex-direction: row;;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         padding: 10px;
         background-color: #ededed;
@@ -150,7 +150,6 @@
 
     // County-list
     .county-list {
-      //padding: 20px 0 0;
 
       .tools {
         justify-content: flex-start;
@@ -175,8 +174,8 @@
     }
 
     .custom-control {
-      @includedisplay: flex;
-    flex-direction: row;;
+      display: flex;
+      flex-direction: row;;
       align-items: center;
 
       .custom-control-label {
@@ -188,7 +187,7 @@
 }
 // EOL: 300px
 
-@media(min-width: $break-tablet) { // from 768
+@media(min-width: 768px) {
   .table-cell {
     margin: 8px 0 !important;
   }
@@ -205,7 +204,7 @@
 // EOL: 768px
 
 
-@media(min-width: $break-pc) { // from 1200
+@media(min-width: 1200px) { // from 1200
   .system-campaign-services {
     .table-items-list {
       .table-item {
@@ -292,7 +291,7 @@
 }
 // EOL: 1200px
 
-@media(min-width: $break-large-screen) {
+@media(min-width: 1600px) {
   // Common
   .services-to-chose {
     .tools {

@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'utils/variables';
 
 @media(max-width: 1799px) {
   // zip-code //
@@ -254,7 +254,7 @@
   }
 
   .tools {
-    @includedisplay: flex;
+    display: flex;
     flex-direction: row;;
     justify-content: flex-end;
     align-items: center;

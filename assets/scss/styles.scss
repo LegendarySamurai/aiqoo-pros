@@ -1,10 +1,10 @@
-@import 'site.scss'; // This stylesheet for Ovadia updates and changes !!!
-@import 'helpers';
-@import 'reset-styles';
-@import 'variables.scss';
+//@import 'site.scss'; // This stylesheet for Ovadia updates and changes !!!
+@import 'utils/helpers';
+@import 'utils/reset-styles';
+@import 'utils/variables';
 @import 'accordion';
 @import 'form';
-@import 'colors'; // New color panel
+@import 'utils/colors'; // New color panel
 
 // vendor custom bootstrap cherry picking styles
 @import "slick/slick.scss";
@@ -20,21 +20,10 @@ body {
   }
 }
 
-//************* Sign-in, Sign-up *************//
-.sign-in-and-sign-up-page {
-  //@import 'register.scss';
-}
-
-//************* Account verification page *************//
-.account-verification-page {
-  @import 'account-verification';
-  //@import 'register.scss';
-}
-
 //************* Landing sign up page  *************//
-.landing-sign-up {
-  @import 'landing-sig-up-new.scss';
-}
+//.landing-sign-up {
+//  //@import 'landing-sig-up-new.scss';
+//}
 
 //************* Landing sign up page NEW  *************//
 .sign-up-landing {
@@ -46,43 +35,39 @@ body {
 
 
 //************* New page Layout *************//
-.new-layout-page {
-  //@import 'new-layout-page.scss';
-}
+//.new-layout-page {
+//  //@import 'new-layout-page.scss';
+//}
 
 //************* Services-panel (New page Layout) leads-list.html *************//
-.leads-list {
-  @import 'status-bar';
-  @import 'leads-list.scss';
-  @import 'search';
-  @import 'form';
-  @import 'accordion';
-}
+//.leads-list {
+//
+//}
 
 
-//************* Area settings (New page Layout) area-settings.html *************//
-.area-settings {
-  @import 'new-layout-page.scss';
-  @import 'area-settings';
+//************* Area settings (New page Layout) locations.html *************//
+//.area-settings {
+//  @import 'new-layout-page.scss';
+//  @import 'area-settings';
+//
+//  .right-side-content {
+//    @import 'search';
+//    @import 'form';
+//  }
+//}
 
-  .right-side-content {
-    @import 'search';
-    @import 'form';
-  }
-}
+//************* Account settings (New page Layout) services.html *************//
 
-//************* Account settings (New page Layout) account-settings.html *************//
-
-.account-settings {
-  @import 'new-layout-page.scss';
-  @import 'account-settings.scss';
-
-  .right-side-content {
-    @import 'search';
-    @import 'form';
-    @import 'decoration-elements.scss';
-  }
-}
+//.account-settings {
+//  //@import 'new-layout-page.scss';
+//  //@import 'services.scss';
+//
+//  .right-side-content {
+//    //@import 'search';
+//    //@import 'form';
+//    //@import 'decoration-elements.scss';
+//  }
+//}
 
 
 //************* My profile page (Dashboard) *************//

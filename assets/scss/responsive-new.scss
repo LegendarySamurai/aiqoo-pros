@@ -1,10 +1,47 @@
-@import "variables.scss";
-@import 'responsive.scss'; // This responsive stylesheet for Ovadia updates and changes !!!
+@import "utils/variables";
+@import 'utils/helpers';
+@import 'utils/reset-styles';
+@import 'utils/variables';
+@import 'accordion';
+@import 'form';
+@import 'utils/colors';
+
+
+//************* Landing sign up page  *************//
+//@import 'landing-sign-up-responsive.scss';
+
+//*************  System campaign: Services, summary, zip-code pages *************//
+.system-campaign {
+  @import 'system-campaign-responsive.scss';
+}
+
+
+//*************  New page layout responsive  *************//
+//.new-layout-page {
+//  //@import 'new-page-layout-responsive.scss';
+//}
+
+//************ Area Settings ************//
+//.area-settings {
+//  @import 'area-settings-responsive';
+//}
+
+//************* Account settings (New page Layout) services.html *************//
+
+.account-settings {
+  @import 'services-responsive';
+}
+
+//************* Services panel (New page Layout) leads-list.html *************//
+.leads-list {
+  @import 'leads-list-responsive';
+}
+
 
 .logo2,
 .success-icon {
   @media(min-width: 300px) { width: 138px; }
-  @media(min-width: $break-mobile) { width: 168px; }
+  @media(min-width: 600px) { width: 168px; }
 }
 
 .custom-select:focus {
@@ -51,16 +88,6 @@
   }
   // EOL: My profile
 
-
-  // Sign-in, Sign-up, Account-verification
-  //.sign-in {
-  //  min-height: 420px;
-  //}
-  //
-  //.sign-up {
-  //  min-height: 580px;
-  //}
-
   .verification {
     min-height: 510px;
   }
@@ -73,11 +100,11 @@
   // EOL: Sign-in, Sign-up, Account-verification
 
   .buttons-container {
-    @includedisplay: flex;
-    flex-direction: row;;
-    width: 98%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 98%;
   }
 
   .submit-button {
@@ -91,12 +118,11 @@
       color: #fff;
       border-radius: 0;
 
-      &.btn {
+      .btn {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        //background-color: $pinkish-grey;
 
         .fa-long-arrow-right {
           transform: rotate(180deg);
@@ -121,7 +147,6 @@
     .page-content-outer {
       display: flex;
       flex-direction: column;
-      //height: 100%;
       padding: 20px 6px 20px 20px;
       background-color: #f5f5f5;
 
@@ -143,6 +168,7 @@
       max-height: 290px;
       overflow-y: scroll;
 
+      // Accordion
       .accordion-item {
         .card {
           background-color: transparent;
@@ -166,7 +192,7 @@
             }
 
             .btn {
-              @includedisplay: flex;
+              display: flex;
     flex-direction: row;;
               flex-grow: 1;
               justify-content: space-between;
@@ -192,7 +218,7 @@
       }
     }
 
-    &.success {
+    .success {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -211,7 +237,7 @@
   }
 }
 
-@media(max-width: $break-mobile) {
+@media(max-width: 599px) {
   .main-wrapper {
     width: 100%;
   }
@@ -244,7 +270,7 @@
   }
 }
 
-@media(max-width: $break-tablet) {
+@media(max-width: 767px) {
   .content-container {
     .content {
       width: 100% !important;
@@ -252,7 +278,7 @@
   }
 }
 
-@media(min-width: $break-tablet) {
+@media(min-width: 768px) {
   .buttons-container {
     width: 100%;
   }
@@ -263,11 +289,6 @@
     width: 420px;
     max-width: 450px;
   }
-
-  //.sign-in,
-  //.sign-up {
-  //  min-height: 420px;
-  //}
 
   .verification {
     min-height: 520px;
@@ -346,7 +367,7 @@
 }
 
 @media(min-width: 1025px) {
-  // My profile
+  // My profile page
   .content-container {
     flex-grow: 1;
     padding: 74px 20px 0;
@@ -357,7 +378,6 @@
     }
 
     .upload-photo {
-
       span {
         position: absolute;
         top: 25%;
@@ -394,8 +414,7 @@
   // EOL: My profile
 }
 
-@media(min-width: $break-pc) {
-
+@media(min-width: 1200px) {
   // Sign-in, Sign-up, Account-verification
   .sign-in,
   .sign-up {
@@ -482,7 +501,7 @@
   }
 }
 
-@media(min-width: $break-large-screen) {
+@media(min-width: 1600px) {
   /// Wizard content ///
   .page-content {
     padding-top: 20px;
@@ -564,28 +583,18 @@
     }
 
     .right-side {
-      //width: 100% !important;
-
       .right-side-inner {
-        &.scroll {
+        .scroll {
           padding: 20px;
         }
 
-        &.without-scroll {
+        .without-scroll {
           padding: 20px;
         }
       }
 
       .modal-body {
         width: 100% !important;
-      }
-
-      .modal-body-container {
-        //padding: 30px 40px !important;
-      }
-
-      .modal-body-col {
-        //width: 100%;
       }
     }
   }
@@ -631,9 +640,7 @@
   }
 
   @media(max-width: 599px) {
-    & {
-      width: 90% !important;
-    }
+    width: 90% !important;
 
     .right-side {
       .right-side-header {
@@ -641,23 +648,17 @@
       }
 
       .right-side-inner {
-        &.without-scroll {
+        .without-scroll {
           padding: 20px;
         }
       }
 
       .modal-body-container {
-        //position: relative;
-        //z-index: 2;
         padding: 20px !important;
       }
 
-      .modal-body-container-outer {
-        //position: relative;
-      }
-
       .input-group-select {
-        padding: 0px !important;
+        padding: 0 !important;
       }
     }
   }
@@ -682,14 +683,6 @@
   }
 
   @media(max-width: 1099px) {
-    .left-side {
-      .counties-list-item {
-        .quantity {
-          //padding: 3px 7px;
-        }
-      }
-    }
-
     .right-side {
       .modal-footer {
         button {
@@ -700,8 +693,6 @@
   }
 
   @media(max-width: 991px) {
-    .left-side {}
-
     .right-side {
       .county-item {
         width: 96% !important;
@@ -770,7 +761,6 @@
         }
 
         .right-side {
-          //width: 60% !important;
           padding: 20px 10px 20px 0px;
           width: 100% !important;
 
@@ -783,21 +773,7 @@
           }
         }
       }
-
-
-      .modal-body {
-
-        .left-side {
-        }
-
-        .right-side {
-        }
-      }
     }
-
-    .modal-content {
-    }
-
   }
 
   @media(max-width: 599px) {
@@ -809,16 +785,6 @@
 
 //************* Details Wizard *******************//
 .wizard-dialog-details {
-  @media(max-width: 1199px) {
-    .modal-content {
-      .modal-body {
-        .left-side {
-          //padding: 50px 20px 30px 20px;
-        }
-      }
-    }
-  }
-
   @media(max-width: 991px) {
     .input-group-select {
       flex-direction: column;
@@ -904,10 +870,10 @@
 //************* Wizard  *************//
 .wizard-dialog  {
   @media(min-width: 300px) {
-    & { width: 98%; }
+    width: 98%;
 
     // Success
-    &.wizard-dialog-success {
+    .wizard-dialog-success {
       .success-icon {
         img { max-width: 100%; }
       }
@@ -983,7 +949,7 @@
         }
       }
 
-      &.success {
+      .success {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1014,17 +980,14 @@
     }
   }
 
-  @media(max-width: $break-tablet) { // to 768
-    & {
-      margin: 1rem auto;
+  @media(max-width: 767px) {
+    margin: 1rem auto;
 
-      .page-content {
-        padding: 40px 0 20px;
-      }
+    .page-content {
+      padding: 40px 0 20px;
     }
 
     .tabs-w {
-
       .tab > span {
         margin-right: .5rem !important;
       }
@@ -1047,10 +1010,8 @@
     }
   }
 
-  @media(min-width: $break-tablet) { // from 768
-    & {
-      width: 60%;
-    }
+  @media(min-width: 768px) {
+    width: 60%;
 
     // Success
     &.wizard-dialog-success {
@@ -1080,10 +1041,8 @@
   }
   // EOL: 768-1024
 
-  @media(min-width: $break-pc) { // from 1200px
-    & {
-      width: 56%;
-    }
+  @media(min-width: 1200px) {
+    width: 56%;
 
     // Success
     &.wizard-dialog-success {
@@ -1128,12 +1087,9 @@
       padding-bottom: 20px;
 
       .aiqoo-collapse-checkbox-outer {
-
         .card {
-          i {
-            &.fa-times {
-              cursor: pointer;
-            }
+          .fa-times {
+            cursor: pointer;
           }
         }
       }
@@ -1163,8 +1119,7 @@
     }
   } // EOL: 1200
 
-  @media(min-width: $break-large-screen) { // from 1600
-
+  @media(min-width: 1600px) {
     .page-content {
       padding-top: 50px;
       padding-bottom: 20px;
@@ -1194,7 +1149,7 @@
   }
   // EOL: 1600
 
-  @media(min-width: 1920px) { // from 1920
+  @media(min-width: 1920px) {
     .tabs-w {
       height: 66px;
 
@@ -1230,7 +1185,7 @@
       padding: 20px 20px;
     }
 
-    @media(min-width: $break-pc) {
+    @media(min-width: 1200px) {
       width: 100%;
       padding: 20px 0 0 45px;
     }
@@ -1242,11 +1197,9 @@
 
   // Here starts media
 
-  @media(min-width: 300px) { // from 300
-    & {
-      margin-top: 50px;
-      padding-bottom: 40px;
-    }
+  @media(min-width: 300px) {
+    margin-top: 50px;
+    padding-bottom: 40px;
 
     .content {
       .text {
@@ -1288,25 +1241,17 @@
             width: 100%;
             font-size: 1.125em;
 
-            &:focus {
-
-            }
-
             &::-webkit-input-placeholder {
               font-size: 1.125em;
-
             }
             &::-moz-placeholder {
               font-size: 1.125em;
-
             }
             &:-ms-input-placeholder {
               font-size: 1.125em;
-
             }
             &:-moz-placeholder {
               font-size: 1.125em;
-
             }
           }
         }
@@ -1320,7 +1265,6 @@
 
     // Add portfolio
     .add-portfolio {
-
       .content-col-container {
         display: flex;
         flex-direction: column;
@@ -1356,7 +1300,7 @@
   }
   // EOL: 300px
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) { // from 768 to 1024
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .services-list {
       .table-items-list {
         .table-item {
@@ -1367,7 +1311,7 @@
   }
   // EOL: 768px - 1024px
 
-  @media(min-width: $small-pc) { // from 992px
+  @media(min-width: 992px) {
     // add-portfolio
     .add-portfolio {
       .content-col-container {
@@ -1415,10 +1359,8 @@
   }
   // EOL: 992px
 
-  @media(min-width: $break-pc) { // from 1200
-    & {
-      padding-bottom: 80px;
-    }
+  @media(min-width: 1200px) {
+    padding-bottom: 80px;
 
     // Add company profile
     .add-company-profile {
@@ -1450,24 +1392,16 @@
 
               &::-webkit-input-placeholder {
                 font-size: .875em;
-
               }
-
               &::-moz-placeholder {
                 font-size: .875em;
-
               }
-
               &:-ms-input-placeholder {
                 font-size: .875em;
-
               }
-
               &:-moz-placeholder {
                 font-size: .875em;
-
               }
-
             }
           }
         }
@@ -1476,15 +1410,13 @@
   }
   // EOL: 1200px
 
-  @media(min-width: $break-large-screen) { // from 1600
-    & {
-      margin-top: 60px;
-    }
+  @media(min-width: 1600px) {
+    margin-top: 60px;
   }
   // EOL: 1600px
 
-  @media(min-width: 1920px) { // from 1920
-    & { margin-top: 80px; }
+  @media(min-width: 1920px) {
+    margin-top: 80px;
   }
   // EOL: 1920px
 }
@@ -1498,8 +1430,6 @@
       }
     }
   }
-
-  @media(max-width: 1599px) {}
 
   @media(max-width: 1399px) {
     .colored-circle {
@@ -1518,7 +1448,9 @@
 
   @media(max-width: 1199px) {
     .task-card {
-      &:before, &:after, .colored-circle {
+      &:before,
+      &:after,
+      .colored-circle {
         display: none;
       }
     }
@@ -1566,7 +1498,6 @@
   @media(max-width: 767px) {
     .task-col {
       flex: 0 0 97% !important;
-      //max-width: 290px !important;
       margin: 0 auto;
       padding-right: 15px;
       min-width: inherit;
@@ -1604,9 +1535,7 @@
           }
         }
 
-        .notes {
-          display: none;
-        }
+        .notes { display: none; }
       }
     }
   }
@@ -1644,10 +1573,6 @@
 
 //************* Support page (Dashboard)  *************//
 .support-page {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
   @media(max-width: 1499px) {
     .right-side-col {
       .message-card-heading {
@@ -1669,8 +1594,6 @@
       min-width: inherit;
     }
   }
-
-  @media(max-width: 1199px) {}
 
   @media(max-width: 991px) {
     // only for this page styles
@@ -1787,9 +1710,8 @@
         display: none;
       }
     }
-    .decoration-element {
-      display: none;
-    }
+
+    .decoration-element { display: none; }
   }
 
   @media(max-width: 599px) {
@@ -1991,8 +1913,6 @@
       }
     }
   }
-
-  @media(max-width: 374px) {}
 }
 
 //************* Summary  Wizard *************//
@@ -2083,7 +2003,8 @@
     }
   }
 
-  @media(min-width: 1600px) {    // Profile
+  @media(min-width: 1600px) {
+    // Profile
     .profile-container {
       .profile-card {
         padding: 0 20px 20px;
@@ -2179,41 +2100,6 @@
     }
   }
 }
-
-//************* Landing sign up page  *************//
-@import 'landing-sig-up-new-responsive.scss';
-
-//************* New sign up landing page  07.04.2020 *************//
-//@import 'sign-up-landing-responsive';
-
-
-//*************  System campaign: Services, summary, zip-code pages *************//
-.system-campaign {
-  @import 'system-campaign-responsive.scss';
-}
-
-
-//*************  New page layout responsive  *************//
-.new-layout-page {
-  @import 'new-page-layout-responsive.scss';
-}
-
-//************ Area Settings ************//
-.area-settings {
-  @import 'area-settings-responsive';
-}
-
-//************* Account settings (New page Layout) account-settings.html *************//
-
-.account-settings {
-  @import 'account-settings-responsive.scss';
-}
-
-//************* Services panel (New page Layout) leads-list.html *************//
-.leads-list {
-  @import 'leads-list-responsive';
-}
-
 
 //**************************//
 .mobile-only-flex {

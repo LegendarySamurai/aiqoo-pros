@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import 'utils/variables';
 
 /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -154,6 +154,7 @@ form {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 0;
 
   .custom-control-label {
     padding-top: .025em;
@@ -213,7 +214,7 @@ form {
       }
     }
 
-    @media(min-width: $break-pc) { // from 1200
+    @media(min-width: 1200px) { // from 1200
       .form-group {
         display: flex;
         flex-direction: row;
