@@ -15,7 +15,7 @@
 @import '../utils/fonts';
 @import '../utils/colors';
 
-.new-layout-page {
+.layout-page {
   flex-grow: 1;
   display: flex;
   font-family: "Raleway", sans-serif;
@@ -69,7 +69,17 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px;
+  padding: 0 20px 20px;
+
+  .top-logo-container-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 6% 10% 4% 10%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
 
 // Menu
@@ -151,7 +161,8 @@
     .menu-item-name {
       position: relative;
       z-index: 1;
-      color: #585077;
+      color: #322d48;
+      font-weight: bold;
     }
 
     .menu-item-icon-default {
@@ -167,6 +178,15 @@
   @media(min-width: 992px) {
     cursor: pointer;
   }
+}
+
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  //font-weight: bold;
 }
 
 .menu-item-name {
@@ -188,6 +208,12 @@
     color: #585077;
     font-size: 1.35rem;
     white-space: nowrap;
+
+    @media(min-width: 992px) {
+      &.big {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
@@ -525,17 +551,18 @@
       display: flex;
       align-items: center;
       height: 50px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
       background-color: #585077;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       color: #fff;
       font-family: "Raleway", sans-serif;
-      font-size: 10pt;
+      font-size: 12pt;
+      font-weight: 700;
 
       &:after {
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         display: block;
         content: '';
@@ -616,6 +643,7 @@
 .icon-container {
   display: flex;
   align-items: center;
+  min-width: 25px;
   width: 25px;
   height: 25px;
   margin-top: 4px;
@@ -636,16 +664,16 @@
 }
 
 .item-title {
-  font-size: .875rem;
+  font-size: 11pt;
 }
 
 .item-text {
-  font-size: .75rem;
+  font-size: 10pt;
 }
 
 .item-time {
   align-self: flex-end;
-  font-size: .65rem;
+  font-size: 9pt;
   color: #b3b3b3;
 }
 
@@ -716,7 +744,6 @@
   //width: 190px;
   height: 100%;
   padding-left: 10px;
-  padding-bottom: 10px;
   cursor: pointer;
 
   &:focus {
@@ -728,6 +755,7 @@
   display: flex;
   align-items: flex-end;
   height: 100%;
+  padding-bottom: 10px;
 }
 
 .info-inner {

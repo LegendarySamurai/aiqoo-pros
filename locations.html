@@ -20,13 +20,14 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-  <link href="assets/css/pages/new-layout-page.css" rel="stylesheet"/>
-  <link href="assets/css/pages/new-page-layout-responsive.css" rel="stylesheet"/>
+  <link href="assets/css/pages/layout-page.css" rel="stylesheet"/>
+  <link href="assets/css/pages/layout-page-responsive.css" rel="stylesheet"/>
 
 </head>
 <body>
+
 <app>
-  <main class="new-layout-page">
+  <main class="layout-page">
     <div class="container-fluid">
       <div class="row row-outer">
         <!-- Left purple side -->
@@ -160,7 +161,6 @@
             <div class="mobile-menu-ope-btn">
               <button class=""><i class="far fa-bars font-16"></i></button>
             </div>
-
             <!-- Fixed top panel -->
             <div class="fixed-top-panel-d">
               <!-- Fixed submenu -->
@@ -181,7 +181,7 @@
                             <div class="sub-menu-items" id="dashboard">
                               <span class="sub-menu-item font-r-10 font-weight-500">My Profile</span>
                               <span class="sub-menu-item font-r-10 font-weight-500">Company Profile</span>
-                              <span class="sub-menu-item font-r-10 font-weight-500 is-active">Services</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500 active">Services</span>
                               <span class="sub-menu-item font-r-10 font-weight-500">Locations</span>
                               <span
                                   class="sub-menu-item font-r-10 font-weight-500  hide-in-1030 show-in-991">Invoices</span>
@@ -345,43 +345,44 @@
                       <div class="user-outer">
                         <div class="right-underlay-3"></div>
                         <div class="user">
+                          <div class="dropdown-info-wrapper">
+                            <div class="dropdown-info invisible">
+                              <a class="dropdown-item" href="Payments/Balance">
+                                <i class="far fa-exchange font-11 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account
+                                Settings</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                            </div>
+                          </div>
+
                           <div class="info">
                             <div class="info-inner">
                               <span class="name-wrap font-weight-bold font-r-11">Hello <span
-                                  class="name">Alice</span></span>
-                              <span class="company font-r-10">Dave company</span>
+                                  class="name">Aiqoo User</span></span>
+                              <span class="company font-r-10">Aiqoo User company</span>
                             </div>
                           </div>
                           <div class="image-wrapper">
                             <div class="image-container">
                               <img src="assets/images/notifications/user-image.png" alt="user-image">
                             </div>
-                          </div>
-                        </div>
-                        <div class="dropdown-info-wrapper">
-                          <div class="dropdown-info invisible">
-                            <a class="dropdown-item" href="Payments/Balance">
-                              <i class="far fa-exchange font-11 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account
-                              Settings</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
-                              Out</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
-                              Out</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
-                              Out</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
-                              Out</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
-                              Out</a>
-                            <div class="dropdown-divider"></div>
                           </div>
                         </div>
 
@@ -393,10 +394,12 @@
             </div>
             <!-- EOL: Fixed top panel -->
 
+            <!-- CONTENT BODY -->
             <div class="right-side-content">
               <div class="row">
                 <div class="col right-side-content-col">
                   <div class="right-side-content-inner">
+
                     <!-- Unique content -->
                     <div class="locations">
 
@@ -1136,12 +1139,13 @@
                         </div>
                       </div>
                     </div>
-
+                    <!-- EOL: Unique content -->
 
                   </div>
                 </div>
               </div>
             </div>
+            <!-- EOL: CONTENT BODY -->
           </div>
         </div>
       </div>
@@ -1150,7 +1154,7 @@
 </app>
 
 
-<script src="assets/js/new-page-layout.js"></script>
+<script src="assets/js/layout-page.js"></script>
 
 
 

@@ -28,6 +28,11 @@
   .status-bar-inner-body {
     .search {
       display: flex !important;
+      width: 100%;
+
+      .input-group {
+        width: 100% !important;
+      }
     }
 
     // user
@@ -145,7 +150,9 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
+      //width: 100%;
+      min-width: 150px;
+      width: auto;
       font-weight: 300;
       color: #342e49;
 
@@ -347,14 +354,17 @@
       }
     }
 
-    .task-type {
+    .task-type,
+    .lead-management,
+    .project-management,
+    .other {
       width: 100%;
     }
   }
 
   .task-type-list {
-    margin-bottom: 20px;
-    padding-bottom: 36px !important;
+    margin-bottom: 10px;
+    padding-bottom: 20px !important;
   }
 }
 
@@ -399,17 +409,15 @@
     background-color: red;
 
     .task-type-list {
-      margin-bottom: 20px;
-      padding-bottom: 36px !important;
+      //margin-bottom: 20px;
+      //padding-bottom: 36px !important;
     }
   }
 
   .status-bar-heading {
     position: fixed;
-    //z-index: 10;
-    //top: 70px;
-    //box-shadow: none;
-    z-index: 11;
+    //z-index: 11;
+    z-index: 1;
     display: flex !important;
     flex-direction: row;
     align-items: center;

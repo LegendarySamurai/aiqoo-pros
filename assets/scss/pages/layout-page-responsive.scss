@@ -490,6 +490,30 @@
 }
 
 @media(max-width: 599px) {
+
+  .fixed-top-panel-d {
+    background-color: transparent;
+    pointer-events: none;
+  }
+
+  .sub-menu-container-inner {
+    background-color: transparent;
+  }
+
+  .sub-menu-col {
+    & > .row {
+      pointer-events: auto;
+    }
+  }
+
+  //.pointer-event-auto {
+  //  pointer-events: auto;
+  //}
+
+  .page-title {
+    display: none;
+  }
+
   .settings-inner-d {
     margin-right: 0;
   }
@@ -506,9 +530,12 @@
       }
     }
 
-
     .name-wrap {
       font-size: 0.75rem !important;
+    }
+
+    .user-settings-col {
+      pointer-events: auto;
     }
 
     .user-outer {
@@ -525,6 +552,9 @@
       }
 
       &.show {
+        position: relative;
+        z-index: 5000;
+
         .user {
           &.active {
             padding-right: 0;
@@ -691,9 +721,12 @@
     }
 
     .status-bar-heading {
-      z-index: 10;
-      top: 140px;
+      //z-index: 10;
+      //top: 140px;
+      top: 70px;
+      height: 40px;
       box-shadow: none;
+      background-color: transparentize(coral, .5);
     }
 
     .fixed-top-panel-d {

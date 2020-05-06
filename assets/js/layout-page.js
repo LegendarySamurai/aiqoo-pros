@@ -129,7 +129,7 @@ menuItems.forEach(menuItem => {
 
 
 
-// Open menu btn
+// Open hamburger menu btn on mobile
 openMenuMobileBtn.addEventListener('click', () => {
 	if (!body.classList.contains('blocked')) {
 		body.classList.add('blocked');
@@ -149,12 +149,14 @@ openMenuMobileBtn.addEventListener('click', () => {
 	}
 });
 
+// when the left side menu on mobile is opened and you click outside of it - the menu closes.
 menuLeftUnderlay.addEventListener('click', () => {
 	leftSideMenuContainer.classList.remove('active');
 	menuLeftUnderlay.classList.remove('active');
 	body.classList.remove('blocked');
 });
 
+// click on icon close to close left side purple menu on mobile
 leftSideMenuCloseBtn.addEventListener('click', () => {
 	leftSideMenuContainer.classList.remove('active');
 	menuLeftUnderlay.classList.remove('active');
