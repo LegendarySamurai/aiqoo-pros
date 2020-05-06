@@ -16,7 +16,7 @@ const leftSideMenuCloseBtn = document.querySelector('.top-logo-col .close-button
 const menuRightUnderlayOne = document.querySelector('.right-underlay-1');
 const menuRightUnderlayTwo = document.querySelector('.right-underlay-2');
 const menuRightUnderlayThree = document.querySelector('.right-underlay-3');
-const subMenuItems = document.querySelectorAll('.sub-menu-item');
+// const subMenuItems = document.querySelectorAll('.sub-menu-item');
 const menuItems = document.querySelectorAll('.menu-item-d');
 const body = document.querySelector('body');
 let subMenuBtnClicked = false;
@@ -25,21 +25,17 @@ const closeMenu = function(underlay, button, dropdown, wrapper) {
 	if (underlay.classList.contains('active')) {
 		underlay.addEventListener('click', () => {
 			underlay.classList.remove('active');
-			button.classList.remove('is-active');
+			button.classList.remove('active');
 			dropdown.classList.remove('visible');
 			dropdown.classList.add('invisible');
 			wrapper.classList.remove('active');
-			// userInfoTop.classList.remove('is-active');
-			// notificationButtonOne.classList.remove('is-active');
-			// notificationButtonTwo.classList.remove('is-active');
 		});
 	}
 };
 
 notificationButtonOne.addEventListener('click', function () {
-	if(!this.classList.contains('is-active')) {
-		// console.log(this, '1111111');
-		this.classList.add('is-active');
+	if(!this.classList.contains('active')) {
+		this.classList.add('active');
 		dropdownListOne.classList.remove('invisible');
 		dropdownListOne.classList.add('visible');
 		dropdownListWrapperOne.classList.add('active');
@@ -47,8 +43,7 @@ notificationButtonOne.addEventListener('click', function () {
 		closeMenu(menuRightUnderlayOne, this, dropdownListOne, dropdownListWrapperOne);
 	} else {
 
-		// console.log(this, '2222222');
-		this.classList.remove('is-active');
+		this.classList.remove('active');
 		dropdownListOne.classList.remove('visible');
 		dropdownListOne.classList.add('invisible');
 		dropdownListWrapperOne.classList.remove('active');
@@ -57,10 +52,9 @@ notificationButtonOne.addEventListener('click', function () {
 });
 
 notificationButtonTwo.addEventListener('click', function () {
-	if(!this.classList.contains('is-active')) {
+	if(!this.classList.contains('active')) {
 
-		// console.log(this, '3333');
-		this.classList.add('is-active');
+		this.classList.add('active');
 		dropdownListTwo.classList.remove('invisible');
 		dropdownListTwo.classList.add('visible');
 		dropdownListWrapperTwo.classList.add('active');
@@ -69,8 +63,7 @@ notificationButtonTwo.addEventListener('click', function () {
 		closeMenu(menuRightUnderlayTwo, this, dropdownListTwo,dropdownListWrapperTwo);
 	} else {
 
-		// console.log(this, '44444');
-		this.classList.remove('is-active');
+		this.classList.remove('active');
 		dropdownListTwo.classList.remove('visible');
 		dropdownListTwo.classList.add('invisible');
 		dropdownListWrapperTwo.classList.remove('active');
@@ -79,9 +72,8 @@ notificationButtonTwo.addEventListener('click', function () {
 });
 
 userInfoTop.addEventListener('click', function() {
-	if(!userInfoTop.classList.contains('is-active')) {
-		// console.log(this, '5555555');
-		userInfoTop.classList.add('is-active');
+	if(!userInfoTop.classList.contains('active')) {
+		userInfoTop.classList.add('active');
 		userInfoTopOuter.classList.add('show');
 		dropdownInfoWrapper.classList.add('active');
 		dropdownInfo.classList.remove('invisible');
@@ -90,8 +82,7 @@ userInfoTop.addEventListener('click', function() {
 		menuRightUnderlayThree.classList.add('active');
 		closeMenu(menuRightUnderlayThree, this, dropdownInfo, dropdownInfoWrapper);
 	} else {
-		// console.log(this, '666666');
-		this.classList.remove('is-active');
+		this.classList.remove('active');
 		userInfoTopOuter.classList.remove('show');
 		dropdownInfoWrapper.classList.remove('active');
 		dropdownInfo.classList.remove('visible');
@@ -102,39 +93,39 @@ userInfoTop.addEventListener('click', function() {
 });
 
 
-// Adds class "is-active" to the clicked menu item left purple sidebar
+// Adds class "active" to the clicked menu item left purple sidebar
 menuItems.forEach(menuItem => {
 	menuItem.addEventListener('click', () => {
 		menuItems.forEach(menuItem => {
-			menuItem.classList.remove('is-active');
+			menuItem.classList.remove('active');
 		});
 
-		if (menuItem.classList.contains('is-active')) {
-			menuItem.classList.remove('is-active');
+		if (menuItem.classList.contains('active')) {
+			menuItem.classList.remove('active');
 		} else {
-			menuItem.classList.add('is-active');
+			menuItem.classList.add('active');
 		}
 	});
 });
 
 
-// Adds class "is-active" to the clicked sub-menu item in top fixed panel
+// Adds class "active" to the clicked sub-menu item in top fixed panel
 
-subMenuItems.forEach(item => {
-	item.addEventListener('click', () => {
-		subMenuItems.forEach(item => {
-			item.classList.remove('is-active');
-		});
-
-		if (!item.classList.contains('is-active')) {
-			item.classList.add('is-active');
-			subMenuBtnClicked = true;
-		} else {
-			item.classList.remove('is-active');
-			subMenuBtnClicked = false;
-		}
-	});
-});
+// subMenuItems.forEach(item => {
+// 	item.addEventListener('click', () => {
+// 		subMenuItems.forEach(item => {
+// 			item.classList.remove('active');
+// 		});
+//
+// 		if (!item.classList.contains('active')) {
+// 			item.classList.add('active');
+// 			subMenuBtnClicked = true;
+// 		} else {
+// 			item.classList.remove('active');
+// 			subMenuBtnClicked = false;
+// 		}
+// 	});
+// });
 
 
 
@@ -148,23 +139,23 @@ openMenuMobileBtn.addEventListener('click', () => {
 		subMenuBtnClicked = false;
 	}
 
-	if (!leftSideMenuContainer.classList.contains('is-active')) {
-		leftSideMenuContainer.classList.add('is-active');
-		menuLeftUnderlay.classList.add('is-active');
+	if (!leftSideMenuContainer.classList.contains('active')) {
+		leftSideMenuContainer.classList.add('active');
+		menuLeftUnderlay.classList.add('active');
 
 	} else {
-		leftSideMenuContainer.classList.remove('is-active');
-		menuLeftUnderlay.classList.remove('is-active');
+		leftSideMenuContainer.classList.remove('active');
+		menuLeftUnderlay.classList.remove('active');
 	}
 });
 
 menuLeftUnderlay.addEventListener('click', () => {
-	leftSideMenuContainer.classList.remove('is-active');
-	menuLeftUnderlay.classList.remove('is-active');
+	leftSideMenuContainer.classList.remove('active');
+	menuLeftUnderlay.classList.remove('active');
 	body.classList.remove('blocked');
 });
 
 leftSideMenuCloseBtn.addEventListener('click', () => {
-	leftSideMenuContainer.classList.remove('is-active');
-	menuLeftUnderlay.classList.remove('is-active');
+	leftSideMenuContainer.classList.remove('active');
+	menuLeftUnderlay.classList.remove('active');
 });

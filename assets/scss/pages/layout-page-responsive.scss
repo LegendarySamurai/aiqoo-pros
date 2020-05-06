@@ -258,7 +258,7 @@
   }
 
   .left-side-container {
-    &.is-active {
+    &.active {
       transform: translate(0, 0);
     }
   }
@@ -315,6 +315,11 @@
         height: 100%;
       }
 
+      .info {
+        height: 100% !important;
+        align-items: center;
+      }
+
       .info-inner {
         color: #fff;
 
@@ -346,7 +351,7 @@
           padding-right: 15px;
           padding-bottom: 0;
 
-          &.is-active {
+          &.active {
             width: 165px;
             padding-right: 5px;
             padding-left: 5px;
@@ -490,8 +495,20 @@
   }
 
   .right-side-col {
-    .user-settings-col {
+    .info-inner {
+      &::after {
+        width: 8px;
+        height: 8px;
+      }
 
+      .info {
+        margin: 0 auto 10px;
+      }
+    }
+
+
+    .name-wrap {
+      font-size: 0.75rem !important;
     }
 
     .user-outer {
@@ -509,7 +526,7 @@
 
       &.show {
         .user {
-          &.is-active {
+          &.active {
             padding-right: 0;
             padding-left: 5px;
             min-width: inherit;
@@ -577,7 +594,7 @@
   }
 
   .sub-menu-item {
-    &.is-active {
+    &.active {
       &::after {
         bottom: 0px !important;
       }
@@ -627,17 +644,17 @@
   .user-outer {
     &.show {
       .user {
-        width: 135px !important;
+        //width: 135px !important;
         padding-right: 5px !important;
 
-        &.is-active {
-          width: 135px !important;
+        &.active {
+          //width: 135px !important;
         }
       }
 
       .dropdown-info {
         &.visible {
-          width: 135px !important;
+          //width: 135px !important;
 
           .dropdown-item {
             font-size: 8.75pt;
@@ -647,13 +664,13 @@
     }
 
     .user {
-      width: 135px !important;
+      //width: 135px !important;
       padding-left: 0;
       padding-right: 0 !important;
     }
 
     .info-inner {
-      padding-right: 15px;
+      padding-right: 25px;
     }
   }
 
