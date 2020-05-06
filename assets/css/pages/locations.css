@@ -1199,28 +1199,28 @@ button:focus {
 .system-a-b-bg21::after, .system-a-b-bg21::before {
   background-color: #5d5d5d; }
 
-/* line 7, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 7, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .new-layout-page {
   flex-grow: 1;
   display: flex;
   font-family: "Raleway", sans-serif; }
 
-/* line 13, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 13, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .container-fluid {
   flex-grow: 1; }
 
-/* line 17, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 17, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .row-outer {
   height: 100%; }
 
-/* line 22, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 22, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .left-side-col {
   position: relative;
   z-index: 2;
   width: 15%;
   min-width: 250px; }
 
-/* line 29, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 29, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .left-side-container {
   position: fixed;
   left: 0;
@@ -1232,20 +1232,20 @@ button:focus {
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
   transition: transform 300ms ease; }
 
-/* line 41, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 41, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .mobile-menu-ope-btn {
   display: none; }
 
-/* line 45, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 45, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .left-underlay,
 .right-underlay {
   display: none; }
 
-/* line 51, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 51, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .top-logo-col .close-button {
   display: none; }
 
-/* line 56, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 56, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .top-logo-container {
   display: flex;
   flex-direction: row;
@@ -1253,23 +1253,23 @@ button:focus {
   align-items: center;
   padding: 20px 10px; }
 
-/* line 65, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 65, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .menu-d-col {
   width: 100%;
   margin-top: 50px; }
 
-/* line 70, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 70, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .menu-container-d {
   width: 100%; }
 
-/* line 74, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 74, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .menu-items-list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 100%; }
 
-/* line 82, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 82, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .menu-item-d {
   display: flex;
   flex-direction: row;
@@ -1281,27 +1281,27 @@ button:focus {
   margin-bottom: 0;
   padding-left: 10px;
   background-color: transparent; }
-  /* line 94, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 94, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .menu-item-d .menu-item-icon {
     display: flex;
     align-items: center;
     width: 20px; }
-  /* line 100, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 100, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .menu-item-d .menu-item-icon-default {
     display: flex;
     justify-content: flex-end; }
-  /* line 105, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 105, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .menu-item-d .menu-item-icon-active {
     display: none; }
-  /* line 110, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 110, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .menu-item-d:not(:last-of-type) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
-  /* line 115, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 115, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .menu-item-d:hover, .menu-item-d.is-active {
     position: relative;
     margin-left: -10px;
     border-bottom: none; }
-    /* line 120, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 120, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .menu-item-d:hover::before, .menu-item-d.is-active::before {
       display: block;
       content: '';
@@ -1315,36 +1315,36 @@ button:focus {
       background-color: #ffffff;
       border-top-right-radius: 2.5px;
       border-top-left-radius: 2.5px; }
-    /* line 135, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 135, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .menu-item-d:hover .menu-item-name, .menu-item-d.is-active .menu-item-name {
       position: relative;
       z-index: 1;
       color: #585077; }
-    /* line 141, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 141, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .menu-item-d:hover .menu-item-icon-default, .menu-item-d.is-active .menu-item-icon-default {
       display: none; }
-    /* line 145, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 145, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .menu-item-d:hover .menu-item-icon-active, .menu-item-d.is-active .menu-item-icon-active {
       display: flex;
       transform: translate(0, 0); }
   @media (min-width: 992px) {
-    /* line 82, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 82, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .menu-item-d {
       cursor: pointer; } }
 
-/* line 156, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 156, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .menu-item-name {
   line-height: 1.125;
   margin-left: 15px;
   font-size: 1.125rem;
   color: #fff; }
 
-/* line 164, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 164, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .right-side-container {
   position: relative;
   width: 100%;
   height: 100%; }
-  /* line 169, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 169, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .right-side-container .page-title {
     line-height: 1.04;
     margin-bottom: 10px;
@@ -1352,7 +1352,7 @@ button:focus {
     font-size: 1.35rem;
     white-space: nowrap; }
 
-/* line 178, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 178, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .fixed-top-panel-d {
   z-index: 11;
   position: fixed;
@@ -1363,35 +1363,35 @@ button:focus {
   height: 100px;
   background-color: #fff; }
 
-/* line 189, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 189, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .right-side-col {
   position: relative; }
 
-/* line 193, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 193, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dummy-content {
   width: 15%;
   min-width: 250px;
   height: 100px;
   pointer-events: none; }
 
-/* line 200, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 200, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .right-side-content-col {
   pointer-events: none; }
 
-/* line 204, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 204, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .right-side-content-inner {
   width: 100%;
   margin-top: 110px;
   pointer-events: auto; }
 
-/* line 212, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 212, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .sub-menu-items {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 40px; }
 
-/* line 219, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 219, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .sub-menu-item {
   display: block;
   line-height: 1.25;
@@ -1400,10 +1400,10 @@ button:focus {
   padding: 10px 0 6px;
   white-space: nowrap;
   cursor: pointer; }
-  /* line 228, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 228, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .sub-menu-item:hover {
     position: relative; }
-    /* line 231, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 231, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .sub-menu-item:hover::after {
       position: absolute;
       bottom: -6px;
@@ -1414,10 +1414,10 @@ button:focus {
       display: block;
       content: '';
       background-color: #585077; }
-  /* line 244, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 244, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .sub-menu-item.is-active {
     position: relative; }
-    /* line 247, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 247, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .sub-menu-item.is-active::after {
       position: absolute;
       bottom: -6px;
@@ -1428,27 +1428,27 @@ button:focus {
       display: block;
       content: '';
       background-color: #585077; }
-  /* line 262, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 262, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .sub-menu-item.more-btn:hover::after {
     display: none; }
-  /* line 268, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 268, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .sub-menu-item.more-btn.is-active::after {
     display: none; }
-  /* line 274, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 274, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .sub-menu-item:first-of-type {
     margin: 0 15px 0 0; }
 
-/* line 279, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 279, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .sub-menu-container-inner {
   border-bottom: 2px solid #d7d7d7;
   margin-right: 15px;
   margin-left: 15px;
   background-color: #fff; }
-  /* line 285, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 285, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .sub-menu-container-inner .row {
     flex-wrap: nowrap; }
 
-/* line 290, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 290, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .sub-menu-col {
   display: flex;
   flex-direction: column;
@@ -1458,24 +1458,24 @@ button:focus {
   padding-top: 25px;
   width: auto; }
 
-/* line 302, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 302, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn .more-btn-inner {
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-/* line 308, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 308, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn i {
   margin-right: 8px;
   transition: all .2s ease;
   color: #585077;
   font-weight: 300; }
 
-/* line 315, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 315, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn .sub-menu-container {
   display: none; }
 
-/* line 320, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 320, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn:hover .sub-menu-container {
   display: block;
   padding-top: 34px;
@@ -1487,7 +1487,7 @@ button:focus {
   transform: translate(0, 100%);
   z-index: 10; }
 
-/* line 332, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 332, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn:hover .hide-sub-menu {
   display: flex;
   flex-direction: column;
@@ -1498,26 +1498,26 @@ button:focus {
   background-color: #ffffff;
   box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19); }
 
-/* line 343, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 343, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn:hover .hide-sub-menu > li {
   margin: 2px 0;
   padding: 10px 15px;
   list-style: none;
   font-size: 1rem;
   color: #585077; }
-  /* line 350, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 350, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .more-btn:hover .hide-sub-menu > li:hover {
     color: #16181b;
     text-decoration: none;
     background-color: #f8f9fa; }
 
-/* line 357, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 357, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn:hover .hide-sub-menu > li > a {
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-/* line 363, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 363, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .more-btn:hover .hide-sub-menu > li > a i {
   font-size: 1.5rem;
   margin-right: 8px;
@@ -1527,7 +1527,7 @@ button:focus {
   color: #585077;
   font-weight: 300; }
 
-/* line 376, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 376, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .user-settings-col {
   flex-grow: 0;
   display: flex;
@@ -1540,7 +1540,7 @@ button:focus {
   padding-right: 20px;
   margin-left: auto; }
 
-/* line 389, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 389, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .notification {
   position: relative;
   display: flex;
@@ -1549,25 +1549,25 @@ button:focus {
   height: 100%;
   cursor: pointer; }
 
-/* line 398, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 398, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .notification-button {
   position: relative;
   width: 40px;
   height: 40px; }
-  /* line 403, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 403, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .notification-button .notification-button-icon {
     color: #585077;
     font-size: 15pt; }
   @media (min-width: 992px) {
-    /* line 398, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 398, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .notification-button {
       cursor: pointer; } }
 
-/* line 414, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 414, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .notification-1 .notification-button-icon {
   font-size: 13pt; }
 
-/* line 419, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 419, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .index {
   position: absolute;
   display: flex;
@@ -1581,17 +1581,17 @@ button:focus {
   font-family: "Lato", sans-serif;
   font-size: 8pt; }
 
-/* line 434, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 434, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .notification-1 .index {
   top: 0px;
   left: 7px; }
 
-/* line 441, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 441, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .notification-2 .index {
   top: 0px;
   right: 2px; }
 
-/* line 447, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 447, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .notification-button-icon {
   z-index: 1;
   display: flex;
@@ -1601,10 +1601,10 @@ button:focus {
   height: 100%;
   padding: 10px; }
 
-/* line 460, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 460, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dropdown-list-wrapper.active {
   position: relative; }
-  /* line 463, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 463, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .dropdown-list-wrapper.active:before {
     position: absolute;
     top: -10px;
@@ -1619,7 +1619,7 @@ button:focus {
     border-right: 6px solid transparent;
     border-left: 6px solid transparent; }
 
-/* line 482, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 482, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dropdown-info.visible,
 .dropdown-list.visible {
   z-index: 9001;
@@ -1631,7 +1631,7 @@ button:focus {
   border-radius: 5px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff; }
-  /* line 493, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 493, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .dropdown-info.visible .dropdown-items-wrapper,
   .dropdown-list.visible .dropdown-items-wrapper {
     padding: 10px;
@@ -1640,7 +1640,7 @@ button:focus {
     width: 300px;
     overflow-x: hidden;
     overflow-y: auto; }
-  /* line 502, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 502, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .dropdown-info.visible .dropdown-header,
   .dropdown-list.visible .dropdown-header {
     position: relative;
@@ -1652,7 +1652,7 @@ button:focus {
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 10pt; }
-    /* line 513, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 513, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .dropdown-info.visible .dropdown-header:after,
     .dropdown-list.visible .dropdown-header:after {
       position: absolute;
@@ -1666,26 +1666,26 @@ button:focus {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px; }
 
-/* line 528, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 528, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dropdown-info.invisible,
 .dropdown-list.invisible {
   display: none; }
 
-/* line 534, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 534, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dropdown-list.visible {
   bottom: 0;
   transform: translate(-60%, 100%);
   max-height: 465px; }
 
-/* line 542, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 542, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dropdown-info.visible {
   width: 190px; }
 
-/* line 550, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 550, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .notification-2 .dropdown-list.visible .icon-container {
   background-color: #dd0000; }
 
-/* line 558, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 558, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dropdown-info.visible {
   left: auto;
   right: 20px;
@@ -1696,24 +1696,24 @@ button:focus {
   border-radius: 0 0 5px 5px;
   box-shadow: 0 2px 4px 2px #ccc; }
 
-/* line 570, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 570, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .dropdown-list-item {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding-bottom: 2px; }
   @media (min-width: 992px) {
-    /* line 570, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 570, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .dropdown-list-item {
       cursor: pointer; } }
-  /* line 580, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 580, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .dropdown-list-item:not(:last-child) {
     border-bottom: 1px solid #f1f1f1; }
-  /* line 584, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 584, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .dropdown-list-item:not(:first-child) {
     margin-top: 5px; }
 
-/* line 589, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 589, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .icon-container {
   display: flex;
   align-items: center;
@@ -1724,7 +1724,7 @@ button:focus {
   border-radius: 1px;
   background-color: #eaeaea; }
 
-/* line 600, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 600, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .item-content {
   display: flex;
   flex-direction: column;
@@ -1735,21 +1735,21 @@ button:focus {
   margin-left: 6px;
   color: #585077; }
 
-/* line 611, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 611, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .item-title {
   font-size: .875rem; }
 
-/* line 615, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 615, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .item-text {
   font-size: .75rem; }
 
-/* line 619, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 619, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .item-time {
   align-self: flex-end;
   font-size: .65rem;
   color: #b3b3b3; }
 
-/* line 625, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 625, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .settings-inner-d {
   width: 100%;
   height: 100%;
@@ -1758,44 +1758,44 @@ button:focus {
   justify-content: flex-end;
   align-items: center;
   margin-right: 20px; }
-  /* line 634, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 634, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .settings-inner-d .image-container {
     display: none; }
 
-/* line 639, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 639, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .settings-inner-m {
   display: none; }
 
-/* line 644, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 644, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .user-outer {
   height: 100%;
   margin-bottom: 0;
   user-select: none;
   background: #fff; }
-  /* line 650, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 650, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .user-outer.show {
     border-bottom: none;
     background: #fff;
     border-radius: 5px 5px 0 0; }
-    /* line 656, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+    /* line 656, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
     .user-outer.show .user.is-active {
       border-bottom-color: transparent;
       background: #585077;
       border-radius: 5px 5px 0 0;
       box-shadow: 0 3px 4px 2px #f2f4f6;
       height: 100%; }
-      /* line 664, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+      /* line 664, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
       .user-outer.show .user.is-active .info-inner {
         color: #fff; }
-        /* line 667, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+        /* line 667, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
         .user-outer.show .user.is-active .info-inner::after {
           border-right: 1px solid #fff;
           border-bottom: 1px solid #fff; }
-      /* line 674, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+      /* line 674, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
       .user-outer.show .user.is-active .image-container::before {
         display: none; }
 
-/* line 683, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 683, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .user-outer .user {
   position: relative;
   display: flex;
@@ -1806,17 +1806,17 @@ button:focus {
   padding-left: 10px;
   padding-bottom: 10px;
   cursor: pointer; }
-  /* line 694, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 694, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .user-outer .user:focus {
     outline: none; }
 
-/* line 699, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 699, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .info {
   display: flex;
   align-items: flex-end;
   height: 100%; }
 
-/* line 705, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 705, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .info-inner {
   position: relative;
   display: flex;
@@ -1825,7 +1825,7 @@ button:focus {
   padding-right: 20px;
   color: #585077;
   cursor: pointer; }
-  /* line 714, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 714, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .info-inner::after {
     position: absolute;
     right: 0.5em;
@@ -1841,18 +1841,18 @@ button:focus {
     height: 5px;
     transform: rotate(45deg); }
 
-/* line 731, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 731, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .name-wrap {
   white-space: nowrap;
   text-align: center; }
 
-/* line 736, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 736, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .company {
   font-weight: 300;
   white-space: nowrap;
   text-align: center; }
 
-/* line 742, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 742, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .image-wrapper {
   height: 100%;
   border-bottom-left-radius: 100rem;
@@ -1861,7 +1861,7 @@ button:focus {
   display: flex;
   align-items: flex-end;
   padding: 4px; }
-  /* line 751, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 751, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .image-wrapper .image-container {
     position: relative;
     display: flex;
@@ -1871,7 +1871,7 @@ button:focus {
     padding: 4px;
     border: 1px solid white;
     border-radius: 50%; }
-  /* line 777, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 777, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .image-wrapper img {
     z-index: 2;
     position: relative;
@@ -1880,12 +1880,12 @@ button:focus {
     border-radius: 50%;
     object-fit: cover; }
 
-/* line 788, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 788, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .left-underlay,
 .right-underlay {
   display: none; }
 
-/* line 794, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 794, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .left-underlay.is-active {
   display: block;
   position: absolute;
@@ -1895,7 +1895,7 @@ button:focus {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); }
 
-/* line 808, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 808, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .right-underlay-1.active,
 .right-underlay-2.active,
 .right-underlay-3.active {
@@ -1909,7 +1909,7 @@ button:focus {
   width: 100%;
   background-color: transparent; }
 
-/* line 822, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+/* line 822, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
 .layout-button-sm {
   display: flex;
   justify-content: center;
@@ -1920,7 +1920,7 @@ button:focus {
   color: #fff; }
 
 @media (max-width: 991px) {
-  /* line 832, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/new-layout-page.scss */
+  /* line 832, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/layout-page.scss */
   .show-in-991 {
     display: block !important; } }
 
