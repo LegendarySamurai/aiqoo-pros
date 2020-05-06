@@ -1799,15 +1799,15 @@ form {
       height: 100%;
       margin: 0 auto; } }
 
-/* line 13, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 13, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 html, body {
   height: 100%; }
 
-/* line 18, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 18, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 body.blocked {
   overflow: hidden; }
 
-/* line 74, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 74, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 .my-profile-page {
   /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -2991,7 +2991,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
       max-width: 100%;
       margin-top: auto; }
 
-/* line 79, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 79, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 .add-company-profile-page {
   /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -6117,7 +6117,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
   background-color: #585077;
   cursor: pointer; }
 
-/* line 94, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 94, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 .add-portfolio-page {
   /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -12957,7 +12957,7 @@ form {
   .system-campaign.system-campaign-zip-code .services-to-chose .custom-control .custom-control-label {
     padding: 0 20px; } }
 
-/* line 118, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 118, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 .services-and-location-page {
   /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -16087,7 +16087,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     .services-and-location-page .county-item {
       width: 100%; } }
 
-/* line 126, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 126, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 .my-tasks-page {
   /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -18344,7 +18344,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
             transform: rotate(180deg);
             margin-left: 10px; } }
 
-/* line 137, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 137, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 .support-page {
   /*
 styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.02.20
@@ -20643,11 +20643,11 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     height: 100%;
     opacity: 0; }
 
-/* line 148, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+/* line 148, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
 .decoration-element-wizard {
   position: absolute;
   left: -30px; }
-  /* line 152, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+  /* line 152, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
   .decoration-element-wizard .square {
     display: block;
     width: 18px;
@@ -20655,7 +20655,7 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     background-color: #585077;
     box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
     border: solid 0.5px #fefefe; }
-  /* line 161, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/styles.scss */
+  /* line 161, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/web.scss */
   .decoration-element-wizard .dashed-line {
     position: absolute;
     top: 20px;
@@ -20665,4 +20665,4 @@ styles for all forms on sign-in, sign-up, wiz pages etc. Created by Igor 10-15.0
     display: block;
     border: 1px dashed #585077; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=web.css.map */

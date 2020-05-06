@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "responsive-new.css",
+	"file": "web-responsive.css",
 	"sources": [
-		"../scss/responsive-new.scss",
+		"../scss/web-responsive.scss",
 		"../scss/utils/_variables.scss",
 		"../scss/utils/_helpers.scss",
 		"../scss/utils/_reset-styles.scss",

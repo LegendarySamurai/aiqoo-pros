@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "styles.css",
+	"file": "web.css",
 	"sources": [
-		"../scss/styles.scss",
+		"../scss/web.scss",
 		"../scss/utils/_helpers.scss",
 		"../scss/utils/_reset-styles.scss",
 		"../scss/utils/_variables.scss",
