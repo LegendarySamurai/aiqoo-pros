@@ -318,6 +318,7 @@
       .info {
         height: 100% !important;
         align-items: center;
+        padding-bottom: 0;
       }
 
       .info-inner {
@@ -540,9 +541,10 @@
 
     .user-outer {
       .user {
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
         min-width: inherit;
-        width: auto;
+        //width: auto;
         padding: 0 5px 5px !important;
         //background-color: coral;
       }
