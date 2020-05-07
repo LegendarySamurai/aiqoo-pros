@@ -1,7 +1,7 @@
-@import 'utils/helpers';
-@import 'utils/reset-styles';
-@import 'utils/variables';
-@import 'modules/form';
+//@import 'utils/helpers';
+//@import 'utils/reset-styles';
+//@import 'utils/variables';
+//@import 'modules/form';
 
 // Side menu
 .side-menu {
@@ -151,7 +151,7 @@
       font-family: "Raleway", sans-serif;
 
       &::-webkit-input-placeholder {
-        @include placeholderFontSize;
+        font-size: 1.4rem;
       }
     }
 

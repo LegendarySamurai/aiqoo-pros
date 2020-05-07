@@ -1,0 +1,183 @@
+//@import 'site.scss'; // This stylesheet for Ovadia updates and changes !!!
+@import 'utils/helpers';
+@import 'utils/reset-styles';
+@import 'utils/variables';
+@import 'modules/accordion';
+@import 'modules/form';
+@import 'utils/colors'; // New color panel
+
+// vendor custom bootstrap cherry picking styles
+@import "slick/slick";
+@import "slick/slick-theme";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  &.blocked {
+    overflow: hidden;
+  }
+}
+
+//************* Landing sign up page  *************//
+//.landing-sign-up {
+//  //@import 'landing-sig-up-new.scss';
+//}
+
+//************* Landing sign up page NEW  *************//
+.sign-up-landing {
+  //@import 'sign-up-landing';
+  //@import 'landing-quality-cards';
+  ////@import 'register';
+  //@import 'account-verification';
+}
+
+
+//************* New page Layout *************//
+//.new-layout-page {
+//  //@import 'web.scss';
+//}
+
+//************* Services-panel (New page Layout) leads-list.html *************//
+//.leads-list {
+//
+//}
+
+
+//************* Area settings (New page Layout) locations.html *************//
+//.area-settings {
+//  @import 'web.scss';
+//  @import 'area-settings';
+//
+//  .right-side-content {
+//    @import 'search';
+//    @import 'form';
+//  }
+//}
+
+//************* Account settings (New page Layout) services.html *************//
+
+//.account-settings {
+//  //@import 'web.scss';
+//  //@import 'services.scss';
+//
+//  .right-side-content {
+//    //@import 'search';
+//    //@import 'form';
+//    //@import '_decoration-elements.scss';
+//  }
+//}
+
+
+//************* My profile page (Dashboard) *************//
+.my-profile-page {
+  @import 'my-profile';
+}
+
+//************* Add company profile page (Dashboard) *************//
+.add-company-profile-page {
+  @import 'my-profile';
+  @import 'dashboard';
+}
+
+//************* Summary, Summary-empty pages (Dashboard)  *************//
+.summary-page-container {
+  @import 'summary';
+}
+
+.summary-page-empty-container {
+  @import 'summary';
+}
+
+//************* Add portfolio page (Dashboard)  *************//
+.add-portfolio-page {
+  @import 'my-profile';
+  @import 'dashboard';
+}
+
+//*************   Services and Area list, Details, Success (Wizard) *************//
+@import 'wizard-new-dialog';
+
+//*************  Services and Area popup, Details, Locations, Services, Success (Wizard modals) *************//
+@import 'wizard';
+
+//*************  System campaign: Services, summary, zip-code pages *************//
+.system-campaign {
+  @import 'modules/tabs';
+  @import 'modules/county-list';
+  @import 'system-campaign';
+
+  &.system-campaign-zip-code {
+    @import 'modules/services-to-chose';
+  }
+}
+
+//************* Services and Locations page (Dashboard) *************//
+
+.services-and-location-page {
+  @import 'my-profile';
+  @import 'dashboard';
+  @import 'modules/services-to-chose';
+  @import 'modules/county-list';
+}
+
+//************* My tasks page (Dashboard) *************//
+.my-tasks-page {
+  @import 'dashboard';
+  @import 'modules/status-bar';
+  @import 'modules/search';
+  @import 'modules/tasks';
+  @import 'modules/content-col';
+  @import 'modules/main-row';
+  @import 'modules/card-label';
+}
+
+//************* Support page (Dashboard) *************//
+.support-page {
+  @import 'modules/status-bar';
+  @import 'modules/search';
+  @import 'modules/content-col';
+  @import 'modules/main-row';
+  @import 'modules/card-label';
+  @import 'support';
+  @import 'dashboard';
+}
+
+//************* Wizard square decoration element *************//
+.decoration-element-wizard {
+  position: absolute;
+  left: -30px;
+
+  .square {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #585077;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px #fefefe;
+  }
+
+  .dashed-line {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    //height: 60px;
+    display: block;
+    border: 1px dashed #585077;
+  }
+}
+
+//*************  *************//
+
+//*************  *************//
+
+//*************  *************//
+
+//*************  *************//
+
+
+
+

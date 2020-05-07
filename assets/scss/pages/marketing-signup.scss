@@ -1,17 +1,17 @@
 // import here:
 @import "../slick/slick";
 @import "../slick/slick-theme";
-
 @import "../bootstrap/bootstrap";
-// landing quality cards styles
 @import "../modules/landing-quality-cards";
-// account verification styles
+@import "../modules/form";
 @import "../account-verification";
-// sign up page responsive styles
-//@import "landing-sign-up-responsive";
-@import "register";
+//@import "auth-pages";
 @import "../utils/fonts";
 @import "../utils/helpers";
+
+// Responsive
+@import 'marketing-signup-responsive';
+
 
 .position-relative {
   position: relative;
@@ -38,7 +38,7 @@
     height: 30vh;
     padding: $nine-percent-padding 0 $three-percent-padding;
     border-top: none !important;
-    background-image: url("../../images/bg/landing-sign-up-bg-d.png");
+    background-image: url("../images/bg/landing-sign-up-bg-d.png");
     background-position: center 80%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -551,6 +551,7 @@
   .form-control {
     padding: .75vw .75vw;
     font-size: 1.75vh;
+    border-left: none;
 
     &::placeholder {
       font-size: 1.75vh;
