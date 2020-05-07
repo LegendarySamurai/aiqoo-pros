@@ -1,14 +1,14 @@
 //@import 'site.scss'; // This stylesheet for Ovadia updates and changes !!!
-@import 'utils/helpers';
-@import 'utils/reset-styles';
-@import 'utils/variables';
-@import 'modules/accordion';
-@import 'modules/form';
-@import 'utils/colors'; // New color panel
+@import '../utils/helpers';
+@import '../utils/reset-styles';
+@import '../utils/variables';
+@import '../modules/accordion';
+@import '../modules/form';
+@import '../utils/colors'; // New color panel
 
 // vendor custom bootstrap cherry picking styles
-@import "slick/slick.scss";
-@import "slick/slick-theme.scss";
+@import "../slick/slick";
+@import "../slick/slick-theme";
 
 html, body {
   height: 100%;
@@ -72,76 +72,76 @@ body {
 
 //************* My profile page (Dashboard) *************//
 .my-profile-page {
-  @import 'my-profile.scss';
+  @import '../my-profile';
 }
 
 //************* Add company profile page (Dashboard) *************//
 .add-company-profile-page {
-  @import 'my-profile.scss';
-  @import 'dashboard.scss';
+  @import '../my-profile';
+  @import '../dashboard';
 }
 
 //************* Summary, Summary-empty pages (Dashboard)  *************//
 .summary-page-container {
-  @import 'summary.scss';
+  @import '../summary';
 }
 
 .summary-page-empty-container {
-  @import 'summary.scss';
+  @import '../summary';
 }
 
 //************* Add portfolio page (Dashboard)  *************//
 .add-portfolio-page {
-  @import 'my-profile.scss';
-  @import 'dashboard.scss';
+  @import '../my-profile';
+  @import '../dashboard';
 }
 
 //*************   Services and Area list, Details, Success (Wizard) *************//
-@import 'wizard-new-dialog.scss';
+@import '../wizard-new-dialog';
 
 //*************  Services and Area popup, Details, Locations, Services, Success (Wizard modals) *************//
-@import 'wizard.scss';
+@import '../wizard';
 
 //*************  System campaign: Services, summary, zip-code pages *************//
 .system-campaign {
-  @import 'modules/tabs';
-  @import 'modules/county-list';
-  @import 'system-campaign.scss';
+  @import '../modules/tabs';
+  @import '../modules/county-list';
+  @import '../system-campaign';
 
   &.system-campaign-zip-code {
-    @import 'modules/services-to-chose';
+    @import '../modules/services-to-chose';
   }
 }
 
 //************* Services and Locations page (Dashboard) *************//
 
 .services-and-location-page {
-  @import 'my-profile.scss';
-  @import 'dashboard.scss';
-  @import 'modules/services-to-chose';
-  @import 'modules/county-list';
+  @import '../my-profile';
+  @import '../dashboard';
+  @import '../modules/services-to-chose';
+  @import '../modules/county-list';
 }
 
 //************* My tasks page (Dashboard) *************//
 .my-tasks-page {
-  @import 'dashboard.scss';
-  @import 'modules/status-bar';
-  @import 'modules/search';
-  @import 'modules/tasks';
-  @import 'modules/content-col';
-  @import 'modules/main-row';
-  @import 'modules/card-label';
+  @import '../dashboard';
+  @import '../modules/status-bar';
+  @import '../modules/search';
+  @import '../modules/tasks';
+  @import '../modules/content-col';
+  @import '../modules/main-row';
+  @import '../modules/card-label';
 }
 
 //************* Support page (Dashboard) *************//
 .support-page {
-  @import 'modules/status-bar';
-  @import 'modules/search';
-  @import 'modules/content-col';
-  @import 'modules/main-row';
-  @import 'modules/card-label';
-  @import 'support';
-  @import 'dashboard.scss';
+  @import '../modules/status-bar';
+  @import '../modules/search';
+  @import '../modules/content-col';
+  @import '../modules/main-row';
+  @import '../modules/card-label';
+  @import '../support';
+  @import '../dashboard';
 }
 
 //************* Wizard square decoration element *************//

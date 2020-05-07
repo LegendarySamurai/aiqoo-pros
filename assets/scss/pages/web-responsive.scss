@@ -1,10 +1,10 @@
-@import "utils/variables";
-@import 'utils/helpers';
-@import 'utils/reset-styles';
-@import 'utils/variables';
-@import 'modules/accordion';
-@import 'modules/form';
-@import 'utils/colors';
+@import "../utils/variables";
+@import '../utils/helpers';
+@import '../utils/reset-styles';
+@import '../utils/variables';
+@import '../modules/accordion';
+@import '../modules/form';
+@import '../utils/colors';
 
 
 //************* Landing sign up page  *************//
@@ -12,7 +12,7 @@
 
 //*************  System campaign: Services, summary, zip-code pages *************//
 .system-campaign {
-  @import 'system-campaign-responsive.scss';
+  @import '../system-campaign-responsive';
 }
 
 

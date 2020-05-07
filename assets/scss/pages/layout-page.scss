@@ -718,6 +718,20 @@
         height: 100%;
         //padding: 1.25rem .75rem .375rem;
 
+        .user-inner {
+          @media(max-width: 460px) {
+            width: 100%;
+
+            .fa-user-edit {
+              display: block;
+              margin-right: auto;
+              margin-left: 10px;
+              margin-bottom: 10px;
+              font-size: 18pt;
+            }
+          }
+        }
+
         .info-inner {
           color: #fff;
 
@@ -751,6 +765,18 @@
 }
 
 .user-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  //background-color: transparentize(coral, .5);
+  
+  .fa-user-edit {
+    display: none;
+  }
+}
+
+.user-inner-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
