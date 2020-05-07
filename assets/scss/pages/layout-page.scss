@@ -140,7 +140,7 @@
   // active menu item state
   &:hover, &.active {
     position: relative;
-    margin-left: -10px;
+    //margin-left: -10px;
     border-bottom: none;
 
     &::before {
@@ -148,14 +148,12 @@
       content: '';
       position: absolute;
       top: 0;
-      right: -14px;
-      width: calc(100% + 44px);
+      width: calc(100% + 20px);
+      right: 0;
       height: 100%;
       border-left: 5px solid #d8cdba;
       box-shadow: 0 1.5px 7.5px 0 rgba(0, 0, 0, 0.16);
       background-color: #ffffff;
-      border-top-right-radius: 2.5px;
-      border-top-left-radius: 2.5px;
     }
 
     .menu-item-name {

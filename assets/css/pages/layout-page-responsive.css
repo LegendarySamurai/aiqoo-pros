@@ -5,10 +5,6 @@
     /* line 5, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/pages/layout-page-responsive.scss */
     .menu-item-d label {
       width: 100%; }
-    /* line 11, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/pages/layout-page-responsive.scss */
-    .menu-item-d.active::before, .menu-item-d:hover::before {
-      width: calc(100% + 24px);
-      right: -5px; }
   /* line 18, ../../../../Work/WorkNest/Aiqoo/demo-aiqpros.com/assets/scss/pages/layout-page-responsive.scss */
   .left-side-col {
     min-width: 200px; }

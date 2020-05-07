@@ -1,433 +1,428 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Add Company profile</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add company profile</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+          integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+          crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-
-  <link href="assets/css/pages/web.css" rel="stylesheet" />
-  <link href="assets/css/pages/web-responsive.css" rel="stylesheet" />
+  <link href="assets/css/pages/layout-page.css" rel="stylesheet"/>
+  <link href="assets/css/pages/layout-page-responsive.css" rel="stylesheet"/>
 </head>
 <body>
+
 <app>
-  <div class="main-wrapper add-company-profile-page">
-    <div class="dashboard-outer">
-      <div class="add-company-profile">
-        <div class="tabs">
-          <div class="tab font-weight-600 font-r-13 active">
-            <span class="index font-weight-bold mr-3 font-r-13">1</span>
-            Company Profile
-          </div>
-          <div class="tab font-weight-600 font-r-13">
-            <span class="index font-weight-bold mr-3 font-r-13">2</span>
-            Services & Location
-          </div>
-          <div class="tab font-weight-600 font-r-13">
-            <span class="index font-weight-bold mr-3 font-r-13 pb-2">3</span>
-            Portfolio
-          </div>
-        </div>
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 px-0">
-                <div class="text">
-                  <span class="font-r-12 font-weight-500">Please fill out all information fields regarding your account, service or company</span>
+  <main class="layout-page">
+    <div class="container-fluid">
+      <div class="row row-outer">
+        <!-- Left purple side -->
+        <div class="col-auto left-side-col">
+          <div class="left-underlay"></div>
+          <div class="left-side-container">
+            <!-- Logo container -->
+            <div class="top-logo-col">
+              <div class="top-logo-container">
+                <div class="top-logo-container-inner system-color-bg-22">
+                  <img src="assets/images/logo/aiqoo-logo-white-middle.png" alt="logo" class="aiqoo-white-logo">
+                  <img src="assets/images/logo/pros-white-middle.png" alt="logo" class="pros-white-logo">
                 </div>
               </div>
-              <div class="col-12 px-0">
-                <div class="row">
-                  <div class="col-12 col-md-6 col-lg-3 my-4 px-0">
-                    <div class="company-info px-3 px-lg-4">
-                      <div class="title font-r-13 font-weight-bold">Company Information</div>
-                      <form>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput">Company name</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
-                            <i class="fal fa-flag-alt"></i>
-                          </div>
+              <div class="close-button">
+                <i class="fal fa-times"></i>
+              </div>
+            </div>
 
-                        </div>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput2">Company address</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" ">
-                            <i class="fal fa-map-marker-alt"></i>
-                          </div>
+            <!-- Menu -->
+            <div class="menu-d-col">
+              <div class="menu-container-d">
+                <div class="menu-items-list">
+                  <a href="Dashboard" class="menu-item menu-item-d">
+                    <label for="dashboard">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/dashboard-icon-white.svg" alt="dashboard"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/dashboard-icon-purple.svg" alt="dashboard"></span>
+                      <span class="menu-item-name">Dashboard</span>
+                    </label>
+                  </a>
+                  <a href="marketing" class="menu-item menu-item-d active">
+                    <label for="marketing">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/marketing-icon-white.svg" alt="marketing"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/marketing-icon-purple.svg" alt="marketing"></span>
+                      <span class="menu-item-name">Marketing</span>
+                    </label>
+                  </a>
+                  <a href="aiqoo-index" class="menu-item menu-item-d">
+                    <label for="aiqoo-index">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/aiqoo-index-icon-white.svg" alt="aiqoo-index"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/aiqoo-index-icon-purple.svg" alt="aiqoo-index"></span>
+                      <span class="menu-item-name">Aiqoo Index</span>
+                    </label>
+                  </a>
+                  <a href="sales" class="menu-item menu-item-d">
+                    <label for="sales">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/sales-icon-white.svg" alt="sales"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/sales-icon-purple.svg" alt="sales"></span>
+                      <span class="menu-item-name">Sales</span>
+                    </label>
+                  </a>
+                  <a href="projects" class="menu-item menu-item-d">
+                    <label for="projects">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/projects-icon-white.svg" alt="projects"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/projects-icon-purple.svg" alt="projects"></span>
+                      <span class="menu-item-name">Projects</span>
+                    </label>
+                  </a>
+                  <a href="tasks" class="menu-item menu-item-d">
+                    <label for="tasks">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/tasks-icon-white.svg" alt="tasks"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/tasks-icon-purple.svg" alt="tasks"></span>
+                      <span class="menu-item-name">Tasks</span>
+                    </label>
+                  </a>
+                  <a href="suppliers" class="menu-item menu-item-d">
+                    <label for="suppliers">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/suppliers-icon-white.svg" alt="suppliers"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/suppliers-icon-purple.svg" alt="suppliers"></span>
+                      <span class="menu-item-name">Suppliers</span>
+                    </label>
+                  </a>
+                  <a href="calendar" class="menu-item menu-item-d">
+                    <label for="calendar">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/calendar-icon-white.svg" alt="calendar"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/calendar-icon-purple.svg" alt="calendar"></span>
+                      <span class="menu-item-name">Calendar</span>
+                    </label>
+                  </a>
+                  <a href="address" class="menu-item menu-item-d">
+                    <label for="address-book">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/address-card-icon-white.svg" alt="address-book"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/address-card-icon-purple.svg" alt="address-book"></span>
+                      <span class="menu-item-name">Address Book</span>
+                    </label>
+                  </a>
+                  <a href="network" class="menu-item menu-item-d">
+                    <label for="network">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/network-icon-white.svg" alt="network"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/network-icon-purple.svg" alt="network"></span>
+                      <span class="menu-item-name">Network</span>
+                    </label>
+                  </a>
+                  <a href="support" class="menu-item menu-item-d">
+                    <label for="support">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/support-icon-white.svg" alt="support"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/support-icon-purple.svg" alt="support"></span>
+                      <span class="menu-item-name">Support</span>
+                    </label>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-                        </div>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput3">Company phone</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder=" ">
-                            <i class="fal fa-phone-alt"></i>
-                          </div>
+            <div class="copyright system-color-19">©️ 2019 AiqPros - <span class="d-none d-sm-inline-block">by AIQOO</span></div>
+          </div>
+        </div>
 
+        <!-- Right content side -->
+        <div class="col right-side-col">
+          <div class="right-side-container">
+            <!-- Only for mobile -->
+            <div class="mobile-menu-ope-btn">
+              <button class=""><i class="far fa-bars font-16"></i></button>
+            </div>
+            <!-- Fixed top panel -->
+            <div class="fixed-top-panel-d">
+              <!-- Fixed submenu -->
+              <div class="sub-menu-container">
+                <div class="sub-menu-container-inner">
+                  <div class="row">
+                    <div class="col-auto sub-menu-col">
+                      <!-- Page titles -->
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="page-title font-weight-bold">Account Settings</div>
                         </div>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput4">Company website</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder=" ">
-                            <i class="fal fa-globe"></i>
-                          </div>
+                      </div>
+                      <!-- Sub-menus -->
+                      <div class="row">
+                        <div class="col-12 sub-menu-lists-col">
+                          <div class="sub-menu-lists">
+                            <div class="sub-menu-items" id="dashboard">
+                              <span class="sub-menu-item font-r-10 font-weight-500">My Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500">Company Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500 active">Services</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500">Locations</span>
+                              <span
+                                  class="sub-menu-item font-r-10 font-weight-500  hide-in-1030 show-in-991">Invoices</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  hide-in-1070 show-in-991">Payments Methods</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  show-in-1070 more-btn">
+                                <a href="#" class="more-btn-inner">
+                                  <i class="fal fa-ellipsis-v-alt"></i>
+                                  <span>More</span>
+                                </a>
+                                <div class="sub-menu-container">
+                                  <ul class="hide-sub-menu">
+                                    <li class="show-in-1030">Invoices</li>
+                                    <li class="show-in-1070">Payments Methods</li>
+                                  </ul>
+                                </div>
 
-                        </div>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput5">Years of Experience </label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput5" placeholder=" ">
-                            <i class="fal fa-calendar"></i>
-                          </div>
+                              </span>
+                            </div>
 
-                        </div>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput6">License number</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput6" placeholder=" ">
-                            <i class="fal fa-clipboard-list-check"></i> <!-- Didn't find the match icon from design -->
                           </div>
-
                         </div>
-                      </form>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3 my-4 px-0">
-                    <div class="contact-info px-3 px-lg-4">
-                      <div class="title font-r-13 font-weight-bold">Contact Information</div>
-                      <form>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput7">Contact name</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput7" placeholder=" ">
-                            <i class="fal fa-user"></i>
-                          </div>
+
+                    <!-- User settings -->
+                    <div class="col user-settings-col">
+                      <div class="settings-inner-d">
+                        <div class="image-container">
+                          <img src="assets/images/logo/white-logo.png" alt="logo" class="pros-white-logo">
                         </div>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput8">Contact phone</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput8" placeholder=" ">
-                            <i class="fal fa-phone-alt"></i>
+                        <div class="promotion notification notification-1">
+                          <div class="right-underlay-1"></div>
+                          <div class="notification-button">
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bullhorn"></i>
+                            </div>
+                            <div class="index system-color-bg-1">
+                              <i class="system-color-20">15</i>
+                            </div>
+                          </div>
+                          <div class="dropdown-list-wrapper dropdown-list-wrapper-one">
+                            <div class="dropdown-list  dropdown-list-one invisible">
+                              <div class="dropdown-header">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 1</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 2</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 3</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 4</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                              </div>
+                            </div>
                           </div>
 
                         </div>
-                        <div class="form-group font-r-12">
-                          <label for="formGroupExampleInput9">Contact E-mail</label>
-                          <div class="form-control-container">
-                            <input type="text" class="form-control" id="formGroupExampleInput9" placeholder=" ">
-                            <i class="fal fa-envelope"></i>
+                        <div class="notification notification-2">
+                          <div class="right-underlay-2"></div>
+                          <div class="notification-button">
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bell"></i>
+                            </div>
+                            <div class="index system-color-bg-2">
+                              <i class="system-color-20">30</i>
+                            </div>
+                          </div>
+                          <div class="dropdown-list-wrapper dropdown-list-wrapper-two">
+                            <div class="dropdown-list dropdown-list-two invisible">
+                              <div class="dropdown-header">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-bold">Messages bla bla</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Message</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Bundle</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Note</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-bold">Messages</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
+                              </div>
+
+                            </div>
                           </div>
 
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="finances py-4">
-                      <div class="working-hours">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="title font-r-13 font-weight-bold">Financial Working Conditions</div>
-                          </div>
-                          <div class="col-6">
-                            <div class="custom-control custom-checkbox my-2 font-r-12">
-                              <input type="checkbox" class="custom-control-input" id="customCheck1">
-                              <label class="custom-control-label pl-3" for="customCheck1">Company Provides Funding Services</label>
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <div class="custom-control custom-checkbox my-2 font-r-12">
-                              <input type="checkbox" class="custom-control-input" id="customCheck2">
-                              <label class="custom-control-label pl-3" for="customCheck2">Company is insured</label>
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <div class="custom-control custom-checkbox my-2 font-r-12">
-                              <input type="checkbox" class="custom-control-input" id="customCheck3">
-                              <label class="custom-control-label pl-3" for="customCheck3">Company is Bonded</label>
-                            </div>
-                          </div>
-                          <div class="col-6">
-                            <div class="custom-control custom-checkbox my-2 font-r-12">
-                              <input type="checkbox" class="custom-control-input" id="customCheck4">
-                              <label class="custom-control-label pl-3" for="customCheck4">Company Provides Free Estimates</label>
-                            </div>
-                          </div>
                         </div>
                       </div>
-                      <div class="payment-method">
-                        <div class="row mt-3">
-                          <div class="col-12">
-                            <div class="title font-r-13 font-weight-bold">My accepted payment methods</div>
+                      <div class="user-outer">
+                        <div class="right-underlay-3"></div>
+                        <div class="user">
+                          <div class="dropdown-info-wrapper">
+                            <div class="dropdown-info invisible">
+                              <a class="dropdown-item" href="Payments/Balance">
+                                <i class="far fa-exchange font-11 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account
+                                Settings</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                            </div>
                           </div>
-                          <div class="col-12">
-                            <div class="row">
-                              <div class="col-6 col-md-auto">
-                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                  <label class="custom-control-label pl-3" for="customCheck5">Cash</label>
+
+                          <div class="user-inner">
+                            <i class="fad fa-user-edit"></i>
+                            <div class="user-inner-wrapper">
+                              <div class="info">
+                                <div class="info-inner">
+                              <span class="name-wrap font-weight-bold font-r-11">Hello <span
+                                  class="name">Aiqoo User</span></span>
+                                  <span class="company font-r-10">Aiqoo User company</span>
                                 </div>
                               </div>
-                              <div class="col-6 col-md-auto">
-                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                  <label class="custom-control-label pl-3" for="customCheck6">Credit card</label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-md-auto">
-                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck7">
-                                  <label class="custom-control-label pl-3" for="customCheck7">Cheque</label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-md-auto">
-                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                  <label class="custom-control-label pl-3" for="customCheck8">Wire transfer</label>
+                              <div class="image-wrapper">
+                                <div class="image-container">
+                                  <img src="assets/images/notifications/user-image.png" alt="user-image">
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div class="activity-hours pb-5">
-                        <div class="row mt-3">
-                          <div class="col-12">
-                            <div class="title font-r-13 font-weight-bold">Activity hours</div>
-                          </div>
-                          <div class="col-12">
-                            <div class="activity-hours-group">
-                              <div class="row">
-                                <div class="col-12 col-md-6">
-                                  <div class="input-group pr-3">
-                                    <span class="day-of-the-week font-r-12">Sunday</span>
-                                    <div class="select-group-outer">
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                  <div class="input-group pr-3">
-                                    <span class="day-of-the-week font-r-12">Monday</span>
-                                    <div class="select-group-outer">
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                  <div class="input-group pr-3">
-                                    <span class="day-of-the-week font-r-12">Monday</span>
-                                    <div class="select-group-outer">
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                  <div class="input-group pr-3">
-                                    <span class="day-of-the-week font-r-12">Monday</span>
-                                    <div class="select-group-outer">
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                  <div class="input-group pr-3">
-                                    <span class="day-of-the-week font-r-12">Monday</span>
-                                    <div class="select-group-outer">
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                  <div class="input-group pr-3">
-                                    <span class="day-of-the-week font-r-12">Monday</span>
-                                    <div class="select-group-outer">
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                  <div class="input-group pr-3">
-                                    <span class="day-of-the-week font-r-12">Monday</span>
-                                    <div class="select-group-outer">
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
-                                      <div class="select-group">
-                                        <i class="fal fa-clock font-r-12"></i>
-                                        <select class="custom-select font-r-12 mt-3 mb-2">
-                                          <option class="font-r-12" selected></option>
-                                          <option class="font-r-12" value="1">10:00</option>
-                                          <option class="font-r-12" value="2">11:00</option>
-                                          <option class="font-r-12" value="3">12:00</option>
-                                          <option class="font-r-12" value="4">1:00</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </div>
-
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- EOL: Fixed top panel -->
+
+            <!-- CONTENT BODY -->
+            <div class="right-side-content">
+              <div class="row">
+                <div class="col right-side-content-col">
+                  <div class="right-side-content-inner">
+
+                    <!-- Unique content -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- EOL: CONTENT BODY -->
           </div>
         </div>
       </div>
-
-      <div class="submit-button pos-r">
-        <button type="button" id="next" class="d-block btn active ml-auto font-r-12 pos-r">
-          Next
-          <i class="fas fa-long-arrow-right ml-3"></i>
-        </button>
-      </div>
     </div>
-
-  </div>
+  </main>
 </app>
+
+
+<script src="assets/js/layout-page.js"></script>
 
 </body>
 </html>

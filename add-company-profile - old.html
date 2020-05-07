@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Company profile OLD</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+
+  <link href="assets/css/pages/web.css" rel="stylesheet" />
+  <link href="assets/css/pages/web-responsive.css" rel="stylesheet" />
+</head>
+<body>
+<app>
+  <div class="main-wrapper add-company-profile-page">
+    <div class="dashboard-outer">
+      <div class="add-company-profile">
+        <div class="tabs">
+          <div class="tab font-weight-600 font-r-13 active">
+            <span class="index font-weight-bold mr-3 font-r-13">1</span>
+            Company Profile
+          </div>
+          <div class="tab font-weight-600 font-r-13">
+            <span class="index font-weight-bold mr-3 font-r-13">2</span>
+            Services & Location
+          </div>
+          <div class="tab font-weight-600 font-r-13">
+            <span class="index font-weight-bold mr-3 font-r-13 pb-2">3</span>
+            Portfolio
+          </div>
+        </div>
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 px-0">
+                <div class="text">
+                  <span class="font-r-12 font-weight-500">Please fill out all information fields regarding your account, service or company</span>
+                </div>
+              </div>
+              <div class="col-12 px-0">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3 my-4 px-0">
+                    <div class="company-info px-3 px-lg-4">
+                      <div class="title font-r-13 font-weight-bold">Company Information</div>
+                      <form>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput">Company name</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
+                            <i class="fal fa-flag-alt"></i>
+                          </div>
+
+                        </div>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput2">Company address</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" ">
+                            <i class="fal fa-map-marker-alt"></i>
+                          </div>
+
+                        </div>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput3">Company phone</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder=" ">
+                            <i class="fal fa-phone-alt"></i>
+                          </div>
+
+                        </div>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput4">Company website</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder=" ">
+                            <i class="fal fa-globe"></i>
+                          </div>
+
+                        </div>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput5">Years of Experience </label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput5" placeholder=" ">
+                            <i class="fal fa-calendar"></i>
+                          </div>
+
+                        </div>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput6">License number</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput6" placeholder=" ">
+                            <i class="fal fa-clipboard-list-check"></i> <!-- Didn't find the match icon from design -->
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3 my-4 px-0">
+                    <div class="contact-info px-3 px-lg-4">
+                      <div class="title font-r-13 font-weight-bold">Contact Information</div>
+                      <form>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput7">Contact name</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput7" placeholder=" ">
+                            <i class="fal fa-user"></i>
+                          </div>
+                        </div>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput8">Contact phone</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput8" placeholder=" ">
+                            <i class="fal fa-phone-alt"></i>
+                          </div>
+
+                        </div>
+                        <div class="form-group font-r-12">
+                          <label for="formGroupExampleInput9">Contact E-mail</label>
+                          <div class="form-control-container">
+                            <input type="text" class="form-control" id="formGroupExampleInput9" placeholder=" ">
+                            <i class="fal fa-envelope"></i>
+                          </div>
+
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="finances py-4">
+                      <div class="working-hours">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="title font-r-13 font-weight-bold">Financial Working Conditions</div>
+                          </div>
+                          <div class="col-6">
+                            <div class="custom-control custom-checkbox my-2 font-r-12">
+                              <input type="checkbox" class="custom-control-input" id="customCheck1">
+                              <label class="custom-control-label pl-3" for="customCheck1">Company Provides Funding Services</label>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="custom-control custom-checkbox my-2 font-r-12">
+                              <input type="checkbox" class="custom-control-input" id="customCheck2">
+                              <label class="custom-control-label pl-3" for="customCheck2">Company is insured</label>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="custom-control custom-checkbox my-2 font-r-12">
+                              <input type="checkbox" class="custom-control-input" id="customCheck3">
+                              <label class="custom-control-label pl-3" for="customCheck3">Company is Bonded</label>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="custom-control custom-checkbox my-2 font-r-12">
+                              <input type="checkbox" class="custom-control-input" id="customCheck4">
+                              <label class="custom-control-label pl-3" for="customCheck4">Company Provides Free Estimates</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="payment-method">
+                        <div class="row mt-3">
+                          <div class="col-12">
+                            <div class="title font-r-13 font-weight-bold">My accepted payment methods</div>
+                          </div>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-6 col-md-auto">
+                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                  <label class="custom-control-label pl-3" for="customCheck5">Cash</label>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-auto">
+                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                  <label class="custom-control-label pl-3" for="customCheck6">Credit card</label>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-auto">
+                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                  <label class="custom-control-label pl-3" for="customCheck7">Cheque</label>
+                                </div>
+                              </div>
+                              <div class="col-6 col-md-auto">
+                                <div class="custom-control custom-checkbox w-100 my-2 font-r-12">
+                                  <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                  <label class="custom-control-label pl-3" for="customCheck8">Wire transfer</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="activity-hours pb-5">
+                        <div class="row mt-3">
+                          <div class="col-12">
+                            <div class="title font-r-13 font-weight-bold">Activity hours</div>
+                          </div>
+                          <div class="col-12">
+                            <div class="activity-hours-group">
+                              <div class="row">
+                                <div class="col-12 col-md-6">
+                                  <div class="input-group pr-3">
+                                    <span class="day-of-the-week font-r-12">Sunday</span>
+                                    <div class="select-group-outer">
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="input-group pr-3">
+                                    <span class="day-of-the-week font-r-12">Monday</span>
+                                    <div class="select-group-outer">
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="input-group pr-3">
+                                    <span class="day-of-the-week font-r-12">Monday</span>
+                                    <div class="select-group-outer">
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="input-group pr-3">
+                                    <span class="day-of-the-week font-r-12">Monday</span>
+                                    <div class="select-group-outer">
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="input-group pr-3">
+                                    <span class="day-of-the-week font-r-12">Monday</span>
+                                    <div class="select-group-outer">
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="input-group pr-3">
+                                    <span class="day-of-the-week font-r-12">Monday</span>
+                                    <div class="select-group-outer">
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                  <div class="input-group pr-3">
+                                    <span class="day-of-the-week font-r-12">Monday</span>
+                                    <div class="select-group-outer">
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                      <i class="fal fa-long-arrow-right mx-3 font-r-12"></i>
+                                      <div class="select-group">
+                                        <i class="fal fa-clock font-r-12"></i>
+                                        <select class="custom-select font-r-12 mt-3 mb-2">
+                                          <option class="font-r-12" selected></option>
+                                          <option class="font-r-12" value="1">10:00</option>
+                                          <option class="font-r-12" value="2">11:00</option>
+                                          <option class="font-r-12" value="3">12:00</option>
+                                          <option class="font-r-12" value="4">1:00</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit-button pos-r">
+        <button type="button" id="next" class="d-block btn active ml-auto font-r-12 pos-r">
+          Next
+          <i class="fas fa-long-arrow-right ml-3"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</app>
+
+</body>
+</html>
