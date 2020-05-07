@@ -35,6 +35,7 @@
   z-index: 2;
   width: 15%;
   min-width: 250px;
+  max-width: 250px;
 }
 
 .left-side-container {
@@ -43,6 +44,7 @@
   top: 0;
   width: 15%;
   min-width: 250px;
+  max-width: 250px;
   height: 100%;
   background-image: linear-gradient(to bottom, #585077 71%, #696577);
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
@@ -148,7 +150,7 @@
       content: '';
       position: absolute;
       top: 0;
-      width: calc(100% + 20px);
+      width: calc(100% + 30px);
       right: 0;
       height: 100%;
       border-left: 5px solid #d8cdba;

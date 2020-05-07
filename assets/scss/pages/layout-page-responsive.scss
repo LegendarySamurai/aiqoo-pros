@@ -1,26 +1,12 @@
 @media(max-width: 1399px) {
-  .menu-item-d {
-    width: calc(100% - 20px);
-
-    label {
-      width: 100%;
-    }
-
-    &.active,
-    &:hover {
-      &::before {
-        //width: calc(100% + 24px);
-        //right: -5px;
-      }
-    }
-  }
-
   .left-side-col {
     min-width: 200px;
+    max-width: inherit;
   }
 
   .left-side-container {
     min-width: 200px;
+    max-width: inherit;
   }
 
   .sub-menu-col {
