@@ -20,1134 +20,1527 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-  <link href="assets/css/web-old.css" rel="stylesheet" />
-  <link href="assets/css/web-responsive-old.css" rel="stylesheet" />
+  <link href="assets/css/web.css" rel="stylesheet"/>
+  <link href="assets/css/web-responsive.css" rel="stylesheet"/>
 </head>
 <body>
 <app>
-  <div class="main-wrapper services-and-location-page">
-    <div class="dashboard-outer">
-      <div class="services-and-location">
-        <div class="tabs">
-          <div class="tab font-weight-600 font-r-13">
-            <span class="index font-weight-bold mr-3 font-r-13">1</span>
-            Company Profile
-          </div>
-          <div class="tab font-weight-600 font-r-13 active">
-            <span class="index font-weight-bold mr-3 font-r-13">2</span>
-            Services & Location
-          </div>
-          <div class="tab font-weight-600 font-r-13">
-            <span class="index font-weight-bold mr-3 font-r-13 pb-2">3</span>
-            Portfolio
+  <main class="layout-page">
+    <div class="container-fluid">
+      <div class="row row-outer">
+        <!-- Left purple side -->
+        <div class="col-auto left-side-col">
+          <div class="left-underlay"></div>
+          <div class="left-side-container">
+            <!-- Logo container -->
+            <div class="top-logo-col">
+              <div class="top-logo-container">
+                <div class="top-logo-container-inner system-color-bg-22">
+                  <img src="assets/images/logo/aiqoo-logo-white-middle.png" alt="logo" class="aiqoo-white-logo">
+                  <img src="assets/images/logo/pros-white-middle.png" alt="logo" class="pros-white-logo">
+                </div>
+              </div>
+              <div class="close-button">
+                <i class="fal fa-times"></i>
+              </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu-d-col">
+              <div class="menu-container-d">
+                <div class="menu-items-list">
+                  <a href="Dashboard" class="menu-item menu-item-d">
+                    <label for="dashboard">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/dashboard-icon-white.svg" alt="dashboard"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/dashboard-icon-purple.svg" alt="dashboard"></span>
+                      <span class="menu-item-name">Dashboard</span>
+                    </label>
+                  </a>
+                  <a href="marketing" class="menu-item menu-item-d active">
+                    <label for="marketing">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/marketing-icon-white.svg" alt="marketing"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/marketing-icon-purple.svg" alt="marketing"></span>
+                      <span class="menu-item-name">Marketing</span>
+                    </label>
+                  </a>
+                  <a href="aiqoo-index" class="menu-item menu-item-d">
+                    <label for="aiqoo-index">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/aiqoo-index-icon-white.svg" alt="aiqoo-index"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/aiqoo-index-icon-purple.svg" alt="aiqoo-index"></span>
+                      <span class="menu-item-name">Aiqoo Index</span>
+                    </label>
+                  </a>
+                  <a href="sales" class="menu-item menu-item-d">
+                    <label for="sales">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/sales-icon-white.svg" alt="sales"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/sales-icon-purple.svg" alt="sales"></span>
+                      <span class="menu-item-name">Sales</span>
+                    </label>
+                  </a>
+                  <a href="projects" class="menu-item menu-item-d">
+                    <label for="projects">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/projects-icon-white.svg" alt="projects"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/projects-icon-purple.svg" alt="projects"></span>
+                      <span class="menu-item-name">Projects</span>
+                    </label>
+                  </a>
+                  <a href="tasks" class="menu-item menu-item-d">
+                    <label for="tasks">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/tasks-icon-white.svg" alt="tasks"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/tasks-icon-purple.svg" alt="tasks"></span>
+                      <span class="menu-item-name">Tasks</span>
+                    </label>
+                  </a>
+                  <a href="suppliers" class="menu-item menu-item-d">
+                    <label for="suppliers">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/suppliers-icon-white.svg" alt="suppliers"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/suppliers-icon-purple.svg" alt="suppliers"></span>
+                      <span class="menu-item-name">Suppliers</span>
+                    </label>
+                  </a>
+                  <a href="calendar" class="menu-item menu-item-d">
+                    <label for="calendar">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/calendar-icon-white.svg" alt="calendar"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/calendar-icon-purple.svg" alt="calendar"></span>
+                      <span class="menu-item-name">Calendar</span>
+                    </label>
+                  </a>
+                  <a href="address" class="menu-item menu-item-d">
+                    <label for="address-book">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/address-card-icon-white.svg" alt="address-book"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/address-card-icon-purple.svg" alt="address-book"></span>
+                      <span class="menu-item-name">Address Book</span>
+                    </label>
+                  </a>
+                  <a href="network" class="menu-item menu-item-d">
+                    <label for="network">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/network-icon-white.svg" alt="network"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/network-icon-purple.svg" alt="network"></span>
+                      <span class="menu-item-name">Network</span>
+                    </label>
+                  </a>
+                  <a href="support" class="menu-item menu-item-d">
+                    <label for="support">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/support-icon-white.svg" alt="support"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/support-icon-purple.svg" alt="support"></span>
+                      <span class="menu-item-name">Support</span>
+                    </label>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="copyright system-color-19">©️ 2019 AiqPros - <span class="d-none d-sm-inline-block">by AIQOO</span></div>
           </div>
         </div>
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <div class="text">
-                  <span class="font-r-13 font-weight-700">Select a zip code in the places you service</span>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="search mb-3 mb-lg-0">
-                  <span class="search-title font-weight-bold pr-3">List of services</span>
-                  <div class="input-group">
-                    <div class="input-group-prepend"><i class="far fa-search"></i></div>
-                    <input type="text" class="form-control font-r-10" placeholder="Search">
-                  </div>
-                </div>
-              </div>
 
-              <div class="col-12">
-                <div class="services-to-chose mt-2 mt-lg-3">
+        <!-- Right content side -->
+        <div class="col right-side-col">
+          <div class="right-side-container">
+            <!-- Only for mobile -->
+            <div class="mobile-menu-ope-btn">
+              <button class=""><i class="far fa-bars font-16"></i></button>
+            </div>
+            <!-- Fixed top panel -->
+            <div class="fixed-top-panel-d">
+              <!-- Fixed submenu -->
+              <div class="sub-menu-container">
+                <div class="sub-menu-container-inner">
                   <div class="row">
-                    <div class="col-12 mb-3">
-
-
-                      <!-- Tabs -->
+                    <div class="col-auto sub-menu-col">
+                      <!-- Page titles -->
                       <div class="row">
-                        <div class="col-12 col-lg-10 px-xl-4">
-                          <!-- Selected tabs -->
-                          <div class="select-tabs input-group-container">
-                            <div class="row align-items-center">
-
-                              <div class="col-12 col-xl-3 px-xl-0">
-                                <div id="tab-one" class="tab">
-                                  <div class="input-group mb-3 mb-lg-0">
-                                    <div class="input-group-prepend">
-                                      <label class="input-group-text font-weight-bold font-r-11"
-                                             for="service-select">Service</label>
-                                    </div>
-                                    <select class="custom-select font-r-11" id="service-select">
-                                      <option selected>Choose</option>
-                                      <option value="1">Roofing</option>
-                                      <option value="2">Roofing</option>
-                                      <option value="3">Roofing</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="col-12 col-xl-3 px-xl-0">
-                                <div id="tab-two" class="tab">
-                                  <div class="input-group mb-3 mb-lg-0">
-                                    <div class="input-group-prepend">
-                                      <label class="input-group-text font-weight-bold font-r-11"
-                                             for="county-select">County</label>
-                                    </div>
-                                    <select class="custom-select font-r-11" id="county-select">
-                                      <option value="0">Choose</option>
-                                      <option value="1">Ornage County</option>
-                                      <option value="2">Ornage County</option>
-                                      <option value="3">Ornage County</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="col-12 col-xl-3 px-xl-0">
-                                <div id="tab-three" class="tab">
-                                  <div class="input-group mb-3 mb-lg-0">
-                                    <div class="input-group-prepend">
-                                      <label class="input-group-text font-weight-bold font-r-11"
-                                             for="cities-select">Cities</label>
-                                    </div>
-                                    <select class="custom-select font-r-11" id="cities-select">
-                                      <option selected>Choose</option>
-                                      <option value="1">Choose</option>
-                                      <option value="2">Choose</option>
-                                      <option value="3">Choose</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="col-auto col-xl-3 px-xl-0">
-                                <button type="button" class="add-btn btn active pos-r">
-                                  <i class="fad fa-plus-square mr-2"></i>
-                                  Add
-                                </button>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="col-12">
+                          <div class="page-title font-weight-bold">Account Settings</div>
                         </div>
+                      </div>
+                      <!-- Sub-menus -->
+                      <div class="row">
+                        <div class="col-12 sub-menu-lists-col">
+                          <div class="sub-menu-lists">
+                            <div class="sub-menu-items" id="dashboard">
+                              <span class="sub-menu-item font-r-10 font-weight-500">My Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500">Company Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500 active">Services</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500">Locations</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  hide-in-1030 show-in-991">Invoices</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  hide-in-1070 show-in-991">Payments Methods</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  show-in-1070 more-btn">
+                                <a href="#" class="more-btn-inner">
+                                  <i class="fal fa-ellipsis-v-alt"></i>
+                                  <span>More</span>
+                                </a>
+                                <div class="sub-menu-container">
+                                  <ul class="hide-sub-menu">
+                                    <li class="show-in-1030">Invoices</li>
+                                    <li class="show-in-1070">Payments Methods</li>
+                                  </ul>
+                                </div>
 
-
-                        <div class="col-12 col-lg-2">
-                          <div class="tools-container">
-                            <div class="tools">
-                              <span class="cursor-p font-r-11">Check all</span>
-                              <span class="divider"></span>
-                              <span class="cursor-p font-r-11 active">Clear</span>
+                              </span>
                             </div>
+
                           </div>
                         </div>
                       </div>
+                    </div>
 
-                      <!-- Content -->
-                      <div class="services-content">
-                          <!-- Services list -->
-                          <div id="content-box-1" class="content-box">
-                            <div class="services-list">
-                              <div class="table-title-list d-none d-md-flex">
-                                <div class="table-cell table-cell-1"></div>
-                                <div class="table-cell table-cell-2">Service</div>
-                                <div class="table-cell table-cell-3">County</div>
-                                <div class="table-cell table-cell-4">Cities</div>
-                                <div class="table-cell table-cell-5">Reach</div>
-                                <div class="table-cell table-cell-6"></div>
-                              </div>
-                              <div class="table-items-list">
-                                <div class="table-item my-2 mt-0">
-                                  <div class="table-cell table-cell-1">
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                      <label class="custom-control-label" for="customCheck1"></label>
-                                    </div>
-                                  </div>
-                                  <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
-                                    Roofing, Kitchen
-                                  </div>
-                                  <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
-                                  <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
-                                    <i class="fal fa-map-marker-edit pr-3"></i>
-                                    Edit
-                                  </div>
+                    <!-- User settings -->
+                    <div class="col user-settings-col">
+                      <div class="settings-inner-d">
+                        <div class="image-container">
+                          <img src="assets/images/logo/white-logo.png" alt="logo" class="pros-white-logo">
+                        </div>
+                        <div class="promotion notification notification-1">
+                          <div class="right-underlay-1"></div>
+                          <div class="notification-button">
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bullhorn"></i>
+                            </div>
+                            <div class="index system-color-bg-1">
+                              <i class="system-color-20">15</i>
+                            </div>
+                          </div>
+                          <div class="dropdown-list-wrapper dropdown-list-wrapper-one">
+                            <div class="dropdown-list  dropdown-list-one invisible">
+                              <div class="dropdown-header">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 1</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
                                 </div>
-                                <div class="table-item my-2">
-                                  <div class="table-cell table-cell-1">
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                      <label class="custom-control-label" for="customCheck2"></label>
-                                    </div>
-                                  </div>
-                                  <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
-                                    Roofing, Kitchen
-                                  </div>
-                                  <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
-                                  <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
-                                    <i class="fal fa-map-marker-edit pr-3"></i>
-                                    Edit
-                                  </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 2</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
                                 </div>
-                                <div class="table-item my-2">
-                                  <div class="table-cell table-cell-1">
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                      <label class="custom-control-label" for="customCheck3"></label>
-                                    </div>
-                                  </div>
-                                  <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
-                                    Roofing, Kitchen
-                                  </div>
-                                  <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
-                                  <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
-                                    <i class="fal fa-map-marker-edit pr-3"></i>
-                                    Edit
-                                  </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 3</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
                                 </div>
-                                <div class="table-item my-2">
-                                  <div class="table-cell table-cell-1">
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                      <label class="custom-control-label" for="customCheck4"></label>
-                                    </div>
-                                  </div>
-                                  <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
-                                    Roofing, Kitchen
-                                  </div>
-                                  <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
-                                  <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
-                                    <i class="fal fa-map-marker-edit pr-3"></i>
-                                    Edit
-                                  </div>
-                                </div>
-                                <div class="table-item my-2">
-                                  <div class="table-cell table-cell-1">
-                                    <div class="custom-control custom-checkbox">
-                                      <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                      <label class="custom-control-label" for="customCheck5"></label>
-                                    </div>
-                                  </div>
-                                  <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
-                                    Roofing, Kitchen
-                                  </div>
-                                  <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
-                                    angeles, New York, orange…
-                                  </div>
-                                  <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
-                                  <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
-                                    <i class="fal fa-map-marker-edit pr-3"></i>
-                                    Edit
-                                  </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 4</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <!-- EOL: Services list -->
 
-                          <!-- County list -->
-                          <div id="content-box-2" class="content-box d-none">
-                            <!-- County list -->
-                            <div class="county-list-wrapper">
-                              <div class="tools">
-                                <span class="cursor-p font-r-11">Check all</span>
-                                <span class="divider"></span>
-                                <span class="cursor-p font-r-11 active">Clear</span>
+                        </div>
+                        <div class="notification notification-2">
+                          <div class="right-underlay-2"></div>
+                          <div class="notification-button">
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bell"></i>
+                            </div>
+                            <div class="index system-color-bg-2">
+                              <i class="system-color-20">30</i>
+                            </div>
+                          </div>
+                          <div class="dropdown-list-wrapper dropdown-list-wrapper-two">
+                            <div class="dropdown-list dropdown-list-two invisible">
+                              <div class="dropdown-header">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-bold">Messages bla bla</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Message</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Bundle</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Note</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-bold">Messages</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
                               </div>
 
-                              <div class="county-list">
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="user-outer">
+                        <div class="right-underlay-3"></div>
+                        <div class="user">
+                          <div class="dropdown-info-wrapper">
+                            <div class="dropdown-info invisible">
+                              <a class="dropdown-item" href="Payments/Balance">
+                                <i class="far fa-exchange font-11 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account
+                                Settings</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                            </div>
+                          </div>
+
+                          <div class="user-inner">
+                            <i class="fad fa-user-edit"></i>
+                            <div class="user-inner-wrapper">
+                              <div class="info">
+                                <div class="info-inner">
+                                  <span class="name-wrap font-weight-bold font-r-11">Hello <span class="name">Aiqoo User</span></span>
+                                  <span class="company font-r-10">Aiqoo User company</span>
                                 </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <div class="county-item">
-                                  <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label font-weight-600 font-r-11">
-                                      <input type="checkbox" class="custom-control-input">
-                                      <span class="custom-checkbox-ui"></span>
-                                      <span class="input-label">Ornage County</span>
-                                    </label>
-                                    <span class="custom-control-stats font-r-9">(154,000)</span>
-                                  </div>
-                                </div>
-
-                                <button class="load-more font-r-11" type="button">Load More</button>
-
                               </div>
-
-                              <div class="submit-button pos-r">
-                                <button type="button" id="ok" class="d-block btn active ml-auto font-r-12">
-                                  Ok
-                                </button>
+                              <div class="image-wrapper">
+                                <div class="image-container">
+                                  <img src="assets/images/notifications/user-image.png" alt="user-image">
+                                </div>
                               </div>
                             </div>
-                            <!-- EOL: County list -->
                           </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="selected-services font-r-11">
-            <span class="font-weight-black">17</span> services were selected
+            <!-- EOL: Fixed top panel -->
+
+            <!-- CONTENT BODY -->
+            <div class="right-side-content">
+              <div class="row">
+                <div class="col right-side-content-col">
+                  <div class="right-side-content-inner">
+
+                    <!-- Unique content -->
+                    <div class="dashboard-outer">
+                      <div class="services-and-location">
+                        <div class="tabs">
+                          <div class="tab font-weight-600 font-r-13">
+                            <span class="index font-weight-bold mr-3 font-r-13">1</span>
+                            Company Profile
+                          </div>
+                          <div class="tab font-weight-600 font-r-13 active">
+                            <span class="index font-weight-bold mr-3 font-r-13">2</span>
+                            Services & Location
+                          </div>
+                          <div class="tab font-weight-600 font-r-13">
+                            <span class="index font-weight-bold mr-3 font-r-13 pb-2">3</span>
+                            Portfolio
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="text">
+                                  <span class="font-r-13 font-weight-700">Select a zip code in the places you service</span>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-6">
+                                <div class="search mb-3 mb-lg-0">
+                                  <span class="search-title font-weight-bold pr-3">List of services</span>
+                                  <div class="input-group">
+                                    <div class="input-group-prepend"><i class="far fa-search"></i></div>
+                                    <input type="text" class="form-control font-r-10" placeholder="Search">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-12">
+                                <div class="services-to-chose mt-2 mt-lg-3">
+                                  <div class="row">
+                                    <div class="col-12 mb-3">
+
+
+                                      <!-- Tabs -->
+                                      <div class="row">
+                                        <div class="col-12 col-lg-10 px-xl-4">
+                                          <!-- Selected tabs -->
+                                          <div class="select-tabs input-group-container">
+                                            <div class="row align-items-center">
+
+                                              <div class="col-12 col-xl-3 px-xl-0">
+                                                <div id="tab-one" class="tab">
+                                                  <div class="input-group mb-3 mb-xl-0">
+                                                    <div class="input-group-prepend">
+                                                      <label class="input-group-text font-weight-bold font-r-11"
+                                                             for="service-select">Service</label>
+                                                    </div>
+                                                    <select class="custom-select font-r-11" id="service-select">
+                                                      <option selected>Choose</option>
+                                                      <option value="1">Roofing</option>
+                                                      <option value="2">Roofing</option>
+                                                      <option value="3">Roofing</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-12 col-xl-3 px-xl-0">
+                                                <div id="tab-two" class="tab">
+                                                  <div class="input-group mb-3 mb-xl-0">
+                                                    <div class="input-group-prepend">
+                                                      <label class="input-group-text font-weight-bold font-r-11"
+                                                             for="county-select">County</label>
+                                                    </div>
+                                                    <select class="custom-select font-r-11" id="county-select">
+                                                      <option value="0">Choose</option>
+                                                      <option value="1">Ornage County</option>
+                                                      <option value="2">Ornage County</option>
+                                                      <option value="3">Ornage County</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-12 col-xl-3 px-xl-0">
+                                                <div id="tab-three" class="tab">
+                                                  <div class="input-group mb-3 mb-xl-0">
+                                                    <div class="input-group-prepend">
+                                                      <label class="input-group-text font-weight-bold font-r-11"
+                                                             for="cities-select">Cities</label>
+                                                    </div>
+                                                    <select class="custom-select font-r-11" id="cities-select">
+                                                      <option selected>Choose</option>
+                                                      <option value="1">Choose</option>
+                                                      <option value="2">Choose</option>
+                                                      <option value="3">Choose</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-auto col-xl-3 px-xl-0">
+                                                <button type="button" class="add-btn btn active pos-r">
+                                                  <i class="fad fa-plus-square mr-2"></i>
+                                                  Add
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        <div class="col-auto col-xl-2">
+                                          <div class="tools-container">
+                                            <div class="tools">
+                                              <span class="cursor-p font-r-11">Check all</span>
+                                              <span class="divider"></span>
+                                              <span class="cursor-p font-r-11 active">Clear</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- Content -->
+                                      <div class="services-content">
+                                        <!-- Services list -->
+                                        <div id="content-box-1" class="content-box">
+                                          <div class="services-list">
+                                            <div class="table-title-list d-none d-md-flex">
+                                              <div class="table-cell table-cell-1"></div>
+                                              <div class="table-cell table-cell-2">Service</div>
+                                              <div class="table-cell table-cell-3">County</div>
+                                              <div class="table-cell table-cell-4">Cities</div>
+                                              <div class="table-cell table-cell-5">Reach</div>
+                                              <div class="table-cell table-cell-6"></div>
+                                            </div>
+                                            <div class="table-items-list">
+                                              <div class="table-item my-2 mt-0">
+                                                <div class="table-cell table-cell-1">
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1"></label>
+                                                  </div>
+                                                </div>
+                                                <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
+                                                  Roofing, Kitchen
+                                                </div>
+                                                <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
+                                                <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
+                                                  <i class="fal fa-map-marker-edit pr-3"></i>
+                                                  Edit
+                                                </div>
+                                              </div>
+                                              <div class="table-item my-2">
+                                                <div class="table-cell table-cell-1">
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label" for="customCheck2"></label>
+                                                  </div>
+                                                </div>
+                                                <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
+                                                  Roofing, Kitchen
+                                                </div>
+                                                <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
+                                                <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
+                                                  <i class="fal fa-map-marker-edit pr-3"></i>
+                                                  Edit
+                                                </div>
+                                              </div>
+                                              <div class="table-item my-2">
+                                                <div class="table-cell table-cell-1">
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                    <label class="custom-control-label" for="customCheck3"></label>
+                                                  </div>
+                                                </div>
+                                                <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
+                                                  Roofing, Kitchen
+                                                </div>
+                                                <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
+                                                <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
+                                                  <i class="fal fa-map-marker-edit pr-3"></i>
+                                                  Edit
+                                                </div>
+                                              </div>
+                                              <div class="table-item my-2">
+                                                <div class="table-cell table-cell-1">
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                    <label class="custom-control-label" for="customCheck4"></label>
+                                                  </div>
+                                                </div>
+                                                <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
+                                                  Roofing, Kitchen
+                                                </div>
+                                                <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
+                                                <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
+                                                  <i class="fal fa-map-marker-edit pr-3"></i>
+                                                  Edit
+                                                </div>
+                                              </div>
+                                              <div class="table-item my-2">
+                                                <div class="table-cell table-cell-1">
+                                                  <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                    <label class="custom-control-label" for="customCheck5"></label>
+                                                  </div>
+                                                </div>
+                                                <div class="table-cell table-cell-2 font-weight-bold pos-r"><span class="">(2)</span>
+                                                  Roofing, Kitchen
+                                                </div>
+                                                <div class="table-cell table-cell-3 pos-r"><span class="font-weight-bold">(33)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-4"><span class="font-weight-bold">(21)</span> Los
+                                                  angeles, New York, orange…
+                                                </div>
+                                                <div class="table-cell table-cell-5 font-weight-bold">577,334</div>
+                                                <div class="table-cell table-cell-6 d-flex flex-row align-items-center cursor-p">
+                                                  <i class="fal fa-map-marker-edit pr-3"></i>
+                                                  Edit
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- EOL: Services list -->
+
+                                        <!-- County list -->
+                                        <div id="content-box-2" class="content-box d-none">
+                                          <!-- County list -->
+                                          <div class="county-list-wrapper">
+                                            <div class="tools">
+                                              <span class="cursor-p font-r-11">Check all</span>
+                                              <span class="divider"></span>
+                                              <span class="cursor-p font-r-11 active">Clear</span>
+                                            </div>
+
+                                            <div class="county-list">
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <div class="county-item">
+                                                <div class="custom-control custom-checkbox">
+                                                  <label class="custom-control-label font-weight-600 font-r-11">
+                                                    <input type="checkbox" class="custom-control-input">
+                                                    <span class="custom-checkbox-ui"></span>
+                                                    <span class="input-label">Ornage County</span>
+                                                  </label>
+                                                  <span class="custom-control-stats font-r-9">(154,000)</span>
+                                                </div>
+                                              </div>
+
+                                              <button class="load-more font-r-11" type="button">Load More</button>
+
+                                            </div>
+
+                                            <div class="submit-button pos-r">
+                                              <button type="button" id="ok" class="d-block btn active ml-auto font-r-12">
+                                                Ok
+                                              </button>
+                                            </div>
+                                          </div>
+                                          <!-- EOL: County list -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="selected-services font-r-11">
+                            <span class="font-weight-black">17</span> services were selected
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="submit-button pos-r">
+                        <button type="button" id="next" class="d-block btn active ml-auto font-r-12 pos-r">
+                          Next
+                          <i class="fas fa-long-arrow-right ml-3"></i>
+                        </button>
+                      </div>
+
+                    </div>
+                    <!-- EOL: Unique content -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- EOL: CONTENT BODY -->
           </div>
         </div>
       </div>
-
-      <div class="submit-button pos-r">
-        <button type="button" id="next" class="d-block btn active ml-auto font-r-12 pos-r">
-          Next
-          <i class="fas fa-long-arrow-right ml-3"></i>
-        </button>
-      </div>
-
     </div>
-  </div>
+  </main>
+
 </app>
 
 <script src="assets/js/igor-js.js"></script>
+<script src="assets/js/layout-page.js"></script>
 </body>
 </html>

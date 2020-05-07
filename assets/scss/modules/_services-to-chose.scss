@@ -58,6 +58,7 @@
 
     .add-btn {
       color: #fff;
+
       &.active {
         background-color: #585077;
       }
@@ -65,7 +66,7 @@
 
     .tools {
       display: flex;
-    flex-direction: row;;
+      flex-direction: row;;
       justify-content: flex-end;
       align-items: center;
       height: 100%;
@@ -74,6 +75,7 @@
         font-weight: 500;
         font-size: .75em;
         color: #585077;
+        white-space: nowrap;
 
         &.divider {
           width: 1px;
@@ -185,6 +187,7 @@
     }
   }
 }
+
 // EOL: 300px
 
 @media(min-width: 768px) {
@@ -201,8 +204,17 @@
     }
   }
 }
+
 // EOL: 768px
 
+@media(max-width: 1199px) {
+  // Services-list
+  .services-list {
+    .table-cell-1 {
+      width: 0 !important;
+    }
+  }
+}
 
 @media(min-width: 1200px) { // from 1200
   .system-campaign-services {
@@ -289,6 +301,7 @@
     }
   }
 }
+
 // EOL: 1200px
 
 @media(min-width: 1600px) {
@@ -360,4 +373,5 @@
     }
   }
 }
+
 // EOL: 1600px
