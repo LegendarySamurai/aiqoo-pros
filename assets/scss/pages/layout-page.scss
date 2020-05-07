@@ -521,7 +521,9 @@
 }
 
 .dropdown-info-wrapper {
-  width: 100%;
+  &.active {
+    width: 100%;
+  }
 }
 
 .dropdown-info,
@@ -705,13 +707,13 @@
   &.show {
     border-bottom: none;
     background: #fff;
-    border-radius: 5px 5px 0 0;
+    //border-radius: 5px 5px 0 0;
 
     .user {
       &.active {
         border-bottom-color: transparent;
         background: #585077;
-        border-radius: 5px 5px 0 0;
+        //border-radius: 5px 5px 0 0;
         box-shadow: 0 3px 4px 2px #f2f4f6;
         height: 100%;
         //padding: 1.25rem .75rem .375rem;
@@ -737,9 +739,6 @@
 
 .user-outer .user {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
   min-width: 190px;
   //width: 190px;
   height: 100%;
@@ -749,6 +748,12 @@
   &:focus {
     outline: none;
   }
+}
+
+.user-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .info {
@@ -770,16 +775,15 @@
   &::after {
     position: absolute;
     right: 0.5em;
-    bottom: .4em;
-    top: auto;
+    top: 0.25rem;
     content: "";
     display: block;
     border-top: 1px solid transparent;
     border-right: 1px solid #342e4a;
     border-bottom: 1px solid #342e4a;
     border-left: 1px solid transparent;
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     transform: rotate(45deg)
   }
 }
