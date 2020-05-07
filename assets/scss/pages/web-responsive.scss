@@ -490,7 +490,7 @@
   }
 
   .sub-menu-container-inner {
-    background-color: transparent;
+    //background-color: transparent; // styles for filtered pages
   }
 
   .sub-menu-col {
@@ -1152,6 +1152,12 @@
   }
 }
 
+@media(max-width: 992px) {
+  .banner {
+    display: none;
+  }
+}
+
 @media(max-width: 1024px) {
   .main-wrapper-inner {
     flex-direction: row;
@@ -1182,10 +1188,10 @@
   }
 
   // My profile
-  .content-container {
+  .my-profile {
     flex-grow: 1;
     align-items: flex-start;
-    padding: 38px 20px 0;
+    padding: 0 20px 0;
     width: 100%;
 
     .content {
@@ -1194,7 +1200,7 @@
     }
 
     .banner {
-      display: none;
+      //display: none;
     }
 
     .content-inner {
@@ -1223,9 +1229,9 @@
 
 @media(min-width: 1025px) {
   // My profile page
-  .content-container {
+  .my-profile {
     flex-grow: 1;
-    padding: 74px 20px 0;
+    padding: 20px 20px 0;
 
     .content {
       flex-grow: 1;
