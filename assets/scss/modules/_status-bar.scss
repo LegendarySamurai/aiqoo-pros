@@ -1,9 +1,9 @@
 .status-bar-col {
-  align-self: flex-end;
-  position: sticky;
-  bottom: 0;
+  //align-self: flex-end;
+  //position: sticky;
+  //bottom: 0;
   width: 300px;
-  padding-left: 0;
+  //padding-left: 0;
 }
 
 .done-btn-container {
@@ -311,11 +311,11 @@
 
 @media(max-width: 767px) {
   .content-col {
-    margin-left: 15px;
+    //margin-left: 15px;
 
     .content {
-      padding-left: 0;
-      margin-left: -15px;
+      //padding-left: 0;
+      //margin-left: -15px;
     }
 
     .search {

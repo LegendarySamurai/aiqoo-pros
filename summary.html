@@ -19,522 +19,680 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-  <link href="assets/css/web-old.css" rel="stylesheet" />
-  <link href="assets/css/web-responsive-old.css" rel="stylesheet" />
+  <link href="assets/css/web.css" rel="stylesheet"/>
+  <link href="assets/css/web-responsive.css" rel="stylesheet"/>
 </head>
 <body>
 <app>
-  <div class="header-fluid d-none">
-    <div onclick="closeNav(event)" class="sidebar-overlay"></div>
-    <div id="mySidebar" class="sidebar">
-      <div class="sidebar-inner">
-        <div class="p-3 user-nav">
-          <div class="d-flex flex-md-row-reverse justify-content-between">
-            <img src="assets/images/avatar.jpg" alt="user" class="user-img rounded-circle">
-            <div class="text-center">
-              <div class="d-block text-capitalize font-10"><strong>Nofar</strong></div>
-              <div class="d-block font-10"> Excel Construction LA</div>
-            </div>
-            <div>
-              <p class="d-flex">
-                <a class="p-1" href="#" onclick="closeNav()"><i class="far fa-sliders-h  font-14 ma-r-2"></i></a>
-              </p>
-            </div>
-          </div>
-
-          <div class="card account-balance-div border-2-green">
-            <div class="text-muted">
-              <span class="font-10 ma-l-10">$ 420</span><br>
-              <span class="font-6 ma-l-10 ma-r-60">Account Balance</span>
-              <i class="far fa-university float-right account-balance-icon font-20"></i>
-            </div>
-          </div>
-        </div>
-        <div class="item-container">
-          <a class="item p-3" href="Dashboard" onclick="closeNav()"><i class="fal fa-chart-pie-alt font-15 ma-r-10"></i>
-            Dashboard</a>
-          <a class="item p-3" href="Payments/Balance" onclick="closeNav()"><i
-              class="far fa-exchange font-15 ma-r-10"></i> Billing</a>
-          <a class="item p-3" href="Leads" onclick="closeNav()"><i class="fal fa-bullseye-pointer font-15 ma-r-10"></i>
-            Marketing</a>
-          <a class="item p-3" href="Aiqoo-index" onclick="closeNav()"><i class="fal fa-indent font-15 ma-r-10"></i>Aiqoo
-            index</a>
-          <a class="item p-3" href="Sales" onclick="closeNav()"><i class="fal fa-money-bill-wave font-15 ma-r-10"></i>Sales</a>
-          <a class="item p-3" href="Projects" onclick="closeNav()"><i class="fal fa-tasks font-15 ma-r-10"></i>Projects</a>
-          <a class="item p-3" href="Network" onclick="closeNav()"><i class="fal fa-chart-network font-15 ma-r-10"></i>Network</a>
-          <a class="item p-3" href="Suppliers" onclick="closeNav()"><i class="fal fa-ballot-check font-15 ma-r-10"></i>Suppliers</a>
-          <a class="item p-3" href="Calendar" onclick="closeNav()"><i class="fal fa-calendar-alt font-15 ma-r-10"></i>Calendar</a>
-          <a class="item p-3" href="Address Book" onclick="closeNav()"><i
-              class="fal fa-address-card font-15 ma-r-10"></i>Address Book</a>
-          <a class="item p-3" href="Support" onclick="closeNav()"><i
-              class="fal fa-comment-exclamation font-15 ma-r-10"></i>Support</a>
-        </div>
-        <a class="item p-3" id="logOut" href="/SignOut" onclick="closeNav()"><i
-            class="far fa-sign-out font-15 ma-r-10"></i> Sign Out</a>
-
-      </div>
-    </div>
-
-    <section class="header-mobile only-in-mobile">
-      <div style="flex:1; position:fixed" id="main" class="float-left">
-        <button class="openbtn" onclick="openNav()"><i class="far fa-bars font-16"></i></button>
-      </div>
-      <a style="flex:1" href="Dashboard" class="active">
-        <img src="assets/images/logo2.png" alt class="logo">
-      </a>
-      <div style="flex:1" class="empty"></div>
-    </section>
-
-    <section class="header hide-in-mobile">
-      <div class="wrapper-a">
-        <a href="Dashboard" class="active">
-          <img src="assets/images/logo2.png" alt class="logo">
-        </a>
-
-        <ul class="float-right list-inline">
-          <li class="list-inline-item text-left">
-            <div class="account-balance  ma-t-5 ma-r-15">
-              <a href="Payments/Balance">
-                <div class="card account-balance-div bg-light border-2-green">
-                  <div class="text-muted account-balance-card">
-                    <span class="font-14 ma-l-10">$ 420</span><br>
-                    <span class="font-9 ma-l-10 ma-r-60">Account Balance</span>
-                  </div>
+  <main class="layout-page">
+    <div class="container-fluid">
+      <div class="row row-outer">
+        <!-- Left purple side -->
+        <div class="col-auto left-side-col">
+          <div class="left-underlay"></div>
+          <div class="left-side-container">
+            <!-- Logo container -->
+            <div class="top-logo-col">
+              <div class="top-logo-container">
+                <div class="top-logo-container-inner system-color-bg-22">
+                  <img src="assets/images/logo/aiqoo-logo-white-middle.png" alt="logo" class="aiqoo-white-logo">
+                  <img src="assets/images/logo/pros-white-middle.png" alt="logo" class="pros-white-logo">
                 </div>
-              </a>
-            </div>
-          </li>
-          <li class="list-inline-item text-right align-top">
-            <div class="btn-group dropdown ma-t-5" style="min-width:140px;">
-              <button type="button" class="btn dropdown-toggle-user" data-toggle="dropdown" aria-haspopup="true"
-                      aria-expanded="false">
-                <div class="d-inline-block text-left">
-                  <div class="text-capitalize font-10"><strong>Nofar</strong></div>
-                  <div class="font-10"> Excel Construction LA</div>
-                </div>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-12 ma-r-10"></i>Account Settings</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-12 ma-r-10"></i>Sign Out</a>
+              </div>
+              <div class="close-button">
+                <i class="fal fa-times"></i>
               </div>
             </div>
-          </li>
-          <li class="list-inline-item text-right align-top">
-            <img src="assets/images/avatar.jpg" alt="user" class="user-img rounded-circle ma-r-20 ma-t-10">
-          </li>
-        </ul>
-      </div>
-      <div class="wrapper-b">
-        <div class="title-wrapper">
-          <div class="e-left">
-            <br><br>
-            <a style="flex:1" href="Dashboard" class="active">
-              <img src="assets/images/logo2.png" alt class="logo">
-            </a>
-          </div>
-          <div class="e-right">
-            <ul class="float-right list-inline">
-              <li class="list-inline-item text-right align-top">
-                <div class="btn-group dropdown ma-t-5" style="min-width:60px;">
-                  <div class="user-nav-wrapper">
-                    <button type="button" class="btn dropdown-toggle-user" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                      <div class="d-inline-block text-left float-right">
-                        <div class="float-left text-right mr-3">
-                          <div class="text-capitalize font-10"><strong>Nofar</strong></div>
-                          <div class="font-10"> Excel Construction LA</div>
-                        </div>
-                        <i class="fas fa-user-circle"></i>
-                      </div>
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="Payments/Balance">
-                        <i class="far fa-exchange font-10 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
-                      </a>
-                      <div class="dropdown-divider"></div>
 
-                      <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-10 ma-r-10"></i>Account Settings</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-10 ma-r-10"></i>Sign
-                        Out</a>
-                      <div class="dropdown-divider" style="padding-bottom:15px;"></div>
-                    </div>
-                  </div>
+            <!-- Menu -->
+            <div class="menu-d-col">
+              <div class="menu-container-d">
+                <div class="menu-items-list">
+                  <a href="Dashboard" class="menu-item menu-item-d">
+                    <label for="dashboard">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/dashboard-icon-white.svg" alt="dashboard"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/dashboard-icon-purple.svg" alt="dashboard"></span>
+                      <span class="menu-item-name">Dashboard</span>
+                    </label>
+                  </a>
+                  <a href="marketing" class="menu-item menu-item-d active">
+                    <label for="marketing">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/marketing-icon-white.svg" alt="marketing"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/marketing-icon-purple.svg" alt="marketing"></span>
+                      <span class="menu-item-name">Marketing</span>
+                    </label>
+                  </a>
+                  <a href="aiqoo-index" class="menu-item menu-item-d">
+                    <label for="aiqoo-index">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/aiqoo-index-icon-white.svg" alt="aiqoo-index"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/aiqoo-index-icon-purple.svg" alt="aiqoo-index"></span>
+                      <span class="menu-item-name">Aiqoo Index</span>
+                    </label>
+                  </a>
+                  <a href="sales" class="menu-item menu-item-d">
+                    <label for="sales">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/sales-icon-white.svg" alt="sales"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/sales-icon-purple.svg" alt="sales"></span>
+                      <span class="menu-item-name">Sales</span>
+                    </label>
+                  </a>
+                  <a href="projects" class="menu-item menu-item-d">
+                    <label for="projects">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/projects-icon-white.svg" alt="projects"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/projects-icon-purple.svg" alt="projects"></span>
+                      <span class="menu-item-name">Projects</span>
+                    </label>
+                  </a>
+                  <a href="tasks" class="menu-item menu-item-d">
+                    <label for="tasks">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/tasks-icon-white.svg" alt="tasks"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/tasks-icon-purple.svg" alt="tasks"></span>
+                      <span class="menu-item-name">Tasks</span>
+                    </label>
+                  </a>
+                  <a href="suppliers" class="menu-item menu-item-d">
+                    <label for="suppliers">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/suppliers-icon-white.svg" alt="suppliers"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/suppliers-icon-purple.svg" alt="suppliers"></span>
+                      <span class="menu-item-name">Suppliers</span>
+                    </label>
+                  </a>
+                  <a href="calendar" class="menu-item menu-item-d">
+                    <label for="calendar">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/calendar-icon-white.svg" alt="calendar"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/calendar-icon-purple.svg" alt="calendar"></span>
+                      <span class="menu-item-name">Calendar</span>
+                    </label>
+                  </a>
+                  <a href="address" class="menu-item menu-item-d">
+                    <label for="address-book">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/address-card-icon-white.svg" alt="address-book"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/address-card-icon-purple.svg" alt="address-book"></span>
+                      <span class="menu-item-name">Address Book</span>
+                    </label>
+                  </a>
+                  <a href="network" class="menu-item menu-item-d">
+                    <label for="network">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/network-icon-white.svg" alt="network"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/network-icon-purple.svg" alt="network"></span>
+                      <span class="menu-item-name">Network</span>
+                    </label>
+                  </a>
+                  <a href="support" class="menu-item menu-item-d">
+                    <label for="support">
+                      <span class="menu-item-icon menu-item-icon-default"><img
+                          src="assets/images/menu/support-icon-white.svg" alt="support"></span>
+                      <span class="menu-item-icon menu-item-icon-active"><img
+                          src="assets/images/menu/support-icon-purple.svg" alt="support"></span>
+                      <span class="menu-item-name">Support</span>
+                    </label>
+                  </a>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
+
+            <div class="copyright system-color-19">©️ 2019 AiqPros - <span class="d-none d-sm-inline-block">by AIQOO</span></div>
           </div>
         </div>
 
-        <div class="wrapper-c paimary-menu">
-          <ul class="nav-menu">
-            <li class="hide-in-1024">
-              <a href="Dashboard" class="pl-o"><i class="fal fa-chart-pie-alt"></i><span>Dashboard</span></a>
-            </li>
-            <li class="hide-in-1024">
-              <a href="Leads"><i class="fal fa-bullseye-pointer"></i><span>Marketing</span></a>
-            </li>
-            <li class="hide-in-1024">
-              <a href="Aiqoo-index"><i class="fal fa-indent"></i><span>Aiqoo index</span></a>
-            </li>
-            <li class="hide-in-1024">
-              <a href="Sales" class="active"><i class="fal fa-money-bill-wave"></i><span>Sales</span></a>
-            </li>
-            <li class="hide-in-1024">
-              <a href="Projects"><i class="fal fa-tasks"></i><span class="">Projects</span></a>
-            </li>
-            <li class="hide-in-1120">
-              <a href="Network"><i class="fal fa-chart-network"></i><span>Network</span></a>
-            </li>
-            <li class="hide-in-1200">
-              <a href="Suppliers"><i class="fal fa-ballot-check"></i><span>Suppliers</span></a>
-            </li>
-            <li class="hide-in-1220">
-              <a href="Calendar"><i class="fal fa-calendar-alt"></i><span>Calendar</span></a>
-            </li>
-            <li class="hide-in-1500">
-              <a href="Address Book"><i class="fal fa-address-card"></i><span>Address Book</span></a>
-            </li>
-            <li class="hide-in-1570">
-              <a href="Support"><i class="fal fa-comment-exclamation"></i><span>Support</span></a>
-            </li>
-            <li class="show-in-1570 cursor-p more-btn pos-r">
-              <a href="#" class="more-btn-inner">
-                <i class="fal fa-ellipsis-h-alt"></i>
-                <span>More</span>
-              </a>
+        <!-- Right content side -->
+        <div class="col right-side-col">
+          <div class="right-side-container">
+            <!-- Only for mobile -->
+            <div class="mobile-menu-ope-btn">
+              <button class=""><i class="far fa-bars font-16"></i></button>
+            </div>
+            <!-- Fixed top panel -->
+            <div class="fixed-top-panel-d">
+              <!-- Fixed submenu -->
               <div class="sub-menu-container">
-                <ul class="hide-sub-menu">
-                  <li class="show-in-1024">
-                    <a href="Dashboard" class="pl-o "><i class="fal fa-chart-pie-alt"></i><span
-                        class="">Dashboard</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Leads "><i class="fal fa-bullseye-pointer"></i><span class="">Marketing</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Aiqoo-index "><i class="fal fa-indent"></i><span class="">Aiqoo index</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Sales "><i class="fal fa-money-bill-wave"></i><span class="">Sales</span></a>
-                  </li>
-                  <li class="show-in-1024">
-                    <a href="Projects "><i class="fal fa-tasks"></i><span class="">Projects</span></a>
-                  </li>
-                  <li class="show-in-1120">
-                    <a href="Network "><i class="fal fa-chart-network"></i><span class="">Network</span></a>
-                  </li>
-                  <li class="show-in-1200">
-                    <a href="Suppliers "><i class="fal fa-ballot-check"></i><span class="">Suppliers</span></a>
-                  </li>
-                  <li class="show-in-1220">
-                    <a href="Calendar "><i class="fal fa-calendar-alt"></i><span class="">Calendar</span></a>
-                  </li>
-                  <li class="show-in-1500">
-                    <a href="Address Book"><i class="fal fa-address-card"></i><span class="">Address Book</span></a>
-                  </li>
-                  <li class="show-in-1570">
-                    <a href="Support"><i class="fal fa-comment-exclamation"></i><span class="">Support</span></a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <ul class="nav-sub-menu d-none">
-            <li><a href="Summary">Summary</a></li>
-            <li><a href="Leads">Leads</a></li>
-            <li><a href="Transaction">Transaction</a></li>
-            <li><a href="BI">BI</a></li>
-            <li><a href="Mettings">Mettings</a></li>
-            <li><a href="Tasks">Tasks</a></li>
-            <li><a href="Loans">Loans</a></li>
-            <li><a href="Quality Score">Quality Score</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
-
-
-  <div class="main-wrapper summary-page-container">
-    <!-- Common structure for all pages in side menu -->
-    <div class="main-wrapper-inner summary-page">
-      <div class="container content-container">
-
-        <div class="row">
-          <div class="col-12 col-lg-6 content-col content-col-left">
-            <header class="content-col-header">
-              <span class="content-col-heading font-r-13 font-weight-700">List of services</span>
-            </header>
-
-            <div class="content-col-main">
-              <div class="collapse-container">
-                <div class="collapse-header my-lg-2">
-                  <div class="collapse-col-1">
-                    <span class="font-r-10 font-w-300">Services</span>
-                  </div>
-                  <div class="collapse-col-2">
-                    <span class="font-r-10 font-w-300">Cities</span>
-                  </div>
-                  <div class="collapse-col-3">
-                    <span class="font-r-10 font-w-300">Reach</span>
-                  </div>
-                </div>
-                <div class="collapse-body">
-                  <div class="accordion-items">
-                    <div id="accordionOne" class="accordion-item">
-                      <div class="card-accordion-item">
-                        <div class="card-accordion-header" id="headingOne">
-                          <!-- this is collapse grey header -->
-                          <div class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="collapse-col-1">
-                              <span class="pl-3 font-w-500">Roof repair</span>
-                            </div>
-                            <div class="collapse-col-2">
-                              <span class="cities-quantity">2</span>
-                            </div>
-                            <div class="collapse-col-3 justify-content-between">
-                              <span class="reach">6,900</span>
-                              <i class="far fa-chevron-up pt-lg-1"></i>
-                            </div>
-                          </div>
-                          <!-- EOL: collapse grey header -->
+                <div class="sub-menu-container-inner">
+                  <div class="row">
+                    <div class="col-auto sub-menu-col">
+                      <!-- Page titles -->
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="page-title font-weight-bold">Account Settings</div>
                         </div>
+                      </div>
+                      <!-- Sub-menus -->
+                      <div class="row">
+                        <div class="col-12 sub-menu-lists-col">
+                          <div class="sub-menu-lists">
+                            <div class="sub-menu-items" id="dashboard">
+                              <span class="sub-menu-item font-r-10 font-weight-500">My Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500">Company Profile</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500 active">Services</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500">Locations</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  hide-in-1030 show-in-991">Invoices</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  hide-in-1070 show-in-991">Payments Methods</span>
+                              <span class="sub-menu-item font-r-10 font-weight-500  show-in-1070 more-btn">
+                                <a href="#" class="more-btn-inner">
+                                  <i class="fal fa-ellipsis-v-alt"></i>
+                                  <span>More</span>
+                                </a>
+                                <div class="sub-menu-container">
+                                  <ul class="hide-sub-menu">
+                                    <li class="show-in-1030">Invoices</li>
+                                    <li class="show-in-1070">Payments Methods</li>
+                                  </ul>
+                                </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
-                          <div class="w-100 my-2 collapse-item">
-                            <div class="collapse-col-1">
-                              <i class="fal fa-times red"></i>
-                              <span class="pl-3">Los ángeles</span>
+                              </span>
                             </div>
-                            <div class="collapse-col-2">
-                              <span class="cities-quantity">2</span>
-                            </div>
-                            <div class="collapse-col-3">
-                              <span class="reach">6,900</span>
-                              <div class="edit cursor-p">
-                                <i class="fal fa-map-marker-edit"></i>
-                                <span class="font-r-11 font-w-300">Edit</span>
-                              </div>
-                              <i class="fad fa-chart-pie"></i>
-                            </div>
-                          </div>
-                          <div class="w-100 my-2 collapse-item">
-                            <div class="collapse-col-1">
-                              <i class="fal fa-times red"></i>
-                              <span class="pl-3">Los ángeles</span>
-                            </div>
-                            <div class="collapse-col-2">
-                              <span class="cities-quantity">2</span>
-                            </div>
-                            <div class="collapse-col-3">
-                              <span class="reach">6,900</span>
-                              <div class="edit cursor-p">
-                                <i class="fal fa-map-marker-edit"></i>
-                                <span class="font-r-11 font-w-300">Edit</span>
-                              </div>
-                              <i class="fad fa-chart-pie"></i>
-                            </div>
+
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div id="accordionTwo" class="accordion-item">
-                      <div class="card-accordion-item">
-                        <div class="card-accordion-header" id="headingTwo">
-                          <!-- this is collapse grey header -->
-                          <div class="collapse-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                            <div class="collapse-col-1">
-                              <span class="pl-3 font-w-500">Roof repair</span>
-                            </div>
-                            <div class="collapse-col-2">
-                              <span class="cities-quantity">2</span>
-                            </div>
-                            <div class="collapse-col-3 justify-content-between">
-                              <span class="reach">6,900</span>
-                              <i class="far fa-chevron-up pt-lg-1"></i>
-                            </div>
-                          </div>
-                          <!-- EOL: collapse grey header -->
-                        </div>
 
-                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionTwo">
-                          <div class="w-100 my-2 collapse-item">
-                            <div class="collapse-col-1">
-                              <i class="fal fa-times red"></i>
-                              <span class="pl-3">Los ángeles</span>
+                    <!-- User settings -->
+                    <div class="col user-settings-col">
+                      <div class="settings-inner-d">
+                        <div class="image-container">
+                          <img src="assets/images/logo/white-logo.png" alt="logo" class="pros-white-logo">
+                        </div>
+                        <div class="promotion notification notification-1">
+                          <div class="right-underlay-1"></div>
+                          <div class="notification-button">
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bullhorn"></i>
                             </div>
-                            <div class="collapse-col-2">
-                              <span class="cities-quantity">2</span>
-                            </div>
-                            <div class="collapse-col-3">
-                              <span class="reach">6,900</span>
-                              <div class="edit cursor-p">
-                                <i class="fal fa-map-marker-edit"></i>
-                                <span class="font-r-11 font-w-300">Edit</span>
-                              </div>
-                              <i class="fad fa-chart-pie"></i>
+                            <div class="index system-color-bg-1">
+                              <i class="system-color-20">15</i>
                             </div>
                           </div>
-                          <div class="w-100 my-2 collapse-item">
-                            <div class="collapse-col-1">
-                              <i class="fal fa-times red"></i>
-                              <span class="pl-3">Los ángeles</span>
-                            </div>
-                            <div class="collapse-col-2">
-                              <span class="cities-quantity">2</span>
-                            </div>
-                            <div class="collapse-col-3">
-                              <span class="reach">6,900</span>
-                              <div class="edit cursor-p">
-                                <i class="fal fa-map-marker-edit"></i>
-                                <span class="font-r-11 font-w-300">Edit</span>
+                          <div class="dropdown-list-wrapper dropdown-list-wrapper-one">
+                            <div class="dropdown-list  dropdown-list-one invisible">
+                              <div class="dropdown-header">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 1</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 2</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 3</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Promo 4</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
                               </div>
-                              <i class="fad fa-chart-pie"></i>
                             </div>
                           </div>
+
+                        </div>
+                        <div class="notification notification-2">
+                          <div class="right-underlay-2"></div>
+                          <div class="notification-button">
+                            <div class="notification-button-icon">
+                              <i class="fad fa-bell"></i>
+                            </div>
+                            <div class="index system-color-bg-2">
+                              <i class="system-color-20">30</i>
+                            </div>
+                          </div>
+                          <div class="dropdown-list-wrapper dropdown-list-wrapper-two">
+                            <div class="dropdown-list dropdown-list-two invisible">
+                              <div class="dropdown-header">Notifications</div>
+                              <div class="dropdown-items-wrapper">
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-bold">Messages bla bla</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Message</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Bundle</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                <span class="icon-container">
+                                  <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                </span>
+                                  <span class="item-content">
+                                  <span class="item-title font-weight-bold">Note</span>
+                                  <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                  <span class="item-time">2 Min</span>
+                                </span>
+                                </div>
+                                <div class="dropdown-list-item">
+                                  <span class="icon-container">
+                                    <img src="assets/images/notifications/shopping-cart.png" alt="icon">
+                                  </span>
+                                  <span class="item-content">
+                                    <span class="item-title font-weight-bold">Messages</span>
+                                    <span class="item-text">Lorem ipsum Lorem ipsum</span>
+                                    <span class="item-time">10 Min</span>
+                                  </span>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
                         </div>
                       </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6 content-col content-col-right">
-            <header class="content-col-header">
-              <span class="content-col-heading font-r-13 font-weight-700">Engagement</span>
-            </header>
-
-            <div class="content-col-main">
-              <!-- dates -->
-              <div class="row dates-container my-lg-4">
-                <div class="col-12">
-                  <div class="dates"></div>
-                </div>
-              </div>
-
-              <!-- graph cards -->
-              <div class="row graphs-container my-lg-4">
-                <div class="col-12 col-lg-4">
-                  <div class="graph-card">
-                    <h4 class="graph-card-title"></h4>
-                    <div class="graph-card-body"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="graph-card">
-                    <h4 class="graph-card-title"></h4>
-                    <div class="graph-card-body"></div>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                  <div class="graph-card">
-                    <h4 class="graph-card-title"></h4>
-                    <div class="graph-card-body"></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- profile -->
-              <div class="row profile-container my-lg-4">
-                <div class="col-12">
-                  <div class="profile-card">
-                    <header class="profile-card-header">
-                      <span class="font-r-10 font-w-500">My profile</span>
-                      <div class="edit cursor-p">
-                        <i class="fas fa-pencil pr-lg-2"></i>
-                        <span class="font-r-11 font-w-300">Edit</span>
-                      </div>
-                    </header>
-                    <div class="row profile-card-body">
-                      <!-- profile picture -->
-                      <div class="col-12 col-lg-4">
-                        <img src="assets/images/profile-img.png" alt="profile img">
-                      </div>
-
-                      <!-- profile-data -->
-                      <div class="col-12 col-lg-8">
-                        <div class="row">
-                          <!-- profile data (left side) -->
-                          <div class="col-12 col-lg-6">
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">Company name</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-flag font-r-10"></i>
-                                <span class="font-r-10 font-w-500">Name 123</span>
-                              </div>
-                            </div>
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">Company address</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-map-marker-alt font-r-10"></i>
-                                <span class="font-r-10 font-w-500">LA PA 2433</span>
-                              </div>
-                            </div>
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">Company phone</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-phone-alt font-r-10"></i>
-                                <span class="font-r-10 font-w-500">+1453 234345</span>
-                              </div>
-                            </div>
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">Company website</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-globe font-r-10"></i>
-                                <span class="font-r-10 font-w-500">WWW.DDA.COM</span>
-                              </div>
+                      <div class="user-outer">
+                        <div class="right-underlay-3"></div>
+                        <div class="user">
+                          <div class="dropdown-info-wrapper">
+                            <div class="dropdown-info invisible">
+                              <a class="dropdown-item" href="Payments/Balance">
+                                <i class="far fa-exchange font-11 ma-r-10"></i>Billing <span class="font-8">($ 420)</span>
+                              </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#"><i class="far fa-sliders-h font-11 ma-r-10"></i>Account
+                                Settings</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="/SignOut"><i class="far fa-sign-out font-11 ma-r-10"></i>Sign
+                                Out</a>
+                              <div class="dropdown-divider"></div>
                             </div>
                           </div>
 
-                          <!-- profile data (right side) -->
-                          <div class="col-12 col-lg-6">
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">Years of Experience</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-calendar font-r-10"></i>
-                                <span class="font-r-10 font-w-500">3 Years</span>
+                          <div class="user-inner">
+                            <i class="fad fa-user-edit"></i>
+                            <div class="user-inner-wrapper">
+                              <div class="info">
+                                <div class="info-inner">
+                                  <span class="name-wrap font-weight-bold font-r-11">Hello <span class="name">Aiqoo User</span></span>
+                                  <span class="company font-r-10">Aiqoo User company</span>
+                                </div>
                               </div>
-                            </div>
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">License number</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-clipboard-user font-r-10"></i>
-                                <span class="font-r-10 font-w-500">2345356924534</span>
-                              </div>
-                            </div>
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">Contact phone</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-user font-r-10"></i>
-                                <span class="font-r-10 font-w-500">+1 4354 245555</span>
-                              </div>
-                            </div>
-                            <div class="profile-data-unit">
-                              <div class="title font-r-10 font-w-300">Contact E-mail</div>
-                              <div class="data mt-lg-2">
-                                <i class="fal fa-envelope font-r-10"></i>
-                                <span class="font-r-10 font-w-500">Dave@repair.com</span>
+                              <div class="image-wrapper">
+                                <div class="image-container">
+                                  <img src="assets/images/notifications/user-image.png" alt="user-image">
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- EOL: Fixed top panel -->
+
+            <!-- CONTENT BODY -->
+            <div class="right-side-content">
+              <div class="row">
+                <div class="col right-side-content-col">
+                  <div class="right-side-content-inner">
+
+                    <!-- Unique content -->
+                    <div class="summary-page">
+                      <div class="row">
+                          <div class="col-12 col-lg-6 content-col content-col-left">
+                            <header class="content-col-header">
+                              <span class="content-col-heading font-r-13 font-weight-700">List of services</span>
+                            </header>
+
+                            <div class="content-col-main">
+                              <div class="collapse-container">
+                                <div class="collapse-header my-lg-2">
+                                  <div class="collapse-col-1">
+                                    <span class="font-r-10 font-w-300">Services</span>
+                                  </div>
+                                  <div class="collapse-col-2">
+                                    <span class="font-r-10 font-w-300">Cities</span>
+                                  </div>
+                                  <div class="collapse-col-3">
+                                    <span class="font-r-10 font-w-300">Reach</span>
+                                  </div>
+                                </div>
+                                <div class="collapse-body">
+                                  <div class="accordion-items">
+                                    <div id="accordionOne" class="accordion-item">
+                                      <div class="card-accordion-item">
+                                        <div class="card-accordion-header" id="headingOne">
+                                          <!-- this is collapse grey header -->
+                                          <div class="collapse-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <div class="collapse-col-1">
+                                              <span class="pl-3 font-w-500">Roof repair</span>
+                                            </div>
+                                            <div class="collapse-col-2">
+                                              <span class="cities-quantity">2</span>
+                                            </div>
+                                            <div class="collapse-col-3 justify-content-between">
+                                              <span class="reach">6,900</span>
+                                              <i class="far fa-chevron-up pt-lg-1"></i>
+                                            </div>
+                                          </div>
+                                          <!-- EOL: collapse grey header -->
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                                          <div class="w-100 my-2 collapse-item">
+                                            <div class="collapse-col-1">
+                                              <i class="fal fa-times red"></i>
+                                              <span class="pl-3">Los ángeles</span>
+                                            </div>
+                                            <div class="collapse-col-2">
+                                              <span class="cities-quantity">2</span>
+                                            </div>
+                                            <div class="collapse-col-3">
+                                              <span class="reach">6,900</span>
+                                              <div class="edit cursor-p">
+                                                <i class="fal fa-map-marker-edit"></i>
+                                                <span class="font-r-11 font-w-300">Edit</span>
+                                              </div>
+                                              <i class="fad fa-chart-pie"></i>
+                                            </div>
+                                          </div>
+                                          <div class="w-100 my-2 collapse-item">
+                                            <div class="collapse-col-1">
+                                              <i class="fal fa-times red"></i>
+                                              <span class="pl-3">Los ángeles</span>
+                                            </div>
+                                            <div class="collapse-col-2">
+                                              <span class="cities-quantity">2</span>
+                                            </div>
+                                            <div class="collapse-col-3">
+                                              <span class="reach">6,900</span>
+                                              <div class="edit cursor-p">
+                                                <i class="fal fa-map-marker-edit"></i>
+                                                <span class="font-r-11 font-w-300">Edit</span>
+                                              </div>
+                                              <i class="fad fa-chart-pie"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="accordionTwo" class="accordion-item">
+                                      <div class="card-accordion-item">
+                                        <div class="card-accordion-header" id="headingTwo">
+                                          <!-- this is collapse grey header -->
+                                          <div class="collapse-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <div class="collapse-col-1">
+                                              <span class="pl-3 font-w-500">Roof repair</span>
+                                            </div>
+                                            <div class="collapse-col-2">
+                                              <span class="cities-quantity">2</span>
+                                            </div>
+                                            <div class="collapse-col-3 justify-content-between">
+                                              <span class="reach">6,900</span>
+                                              <i class="far fa-chevron-up pt-lg-1"></i>
+                                            </div>
+                                          </div>
+                                          <!-- EOL: collapse grey header -->
+                                        </div>
+
+                                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionTwo">
+                                          <div class="w-100 my-2 collapse-item">
+                                            <div class="collapse-col-1">
+                                              <i class="fal fa-times red"></i>
+                                              <span class="pl-3">Los ángeles</span>
+                                            </div>
+                                            <div class="collapse-col-2">
+                                              <span class="cities-quantity">2</span>
+                                            </div>
+                                            <div class="collapse-col-3">
+                                              <span class="reach">6,900</span>
+                                              <div class="edit cursor-p">
+                                                <i class="fal fa-map-marker-edit"></i>
+                                                <span class="font-r-11 font-w-300">Edit</span>
+                                              </div>
+                                              <i class="fad fa-chart-pie"></i>
+                                            </div>
+                                          </div>
+                                          <div class="w-100 my-2 collapse-item">
+                                            <div class="collapse-col-1">
+                                              <i class="fal fa-times red"></i>
+                                              <span class="pl-3">Los ángeles</span>
+                                            </div>
+                                            <div class="collapse-col-2">
+                                              <span class="cities-quantity">2</span>
+                                            </div>
+                                            <div class="collapse-col-3">
+                                              <span class="reach">6,900</span>
+                                              <div class="edit cursor-p">
+                                                <i class="fal fa-map-marker-edit"></i>
+                                                <span class="font-r-11 font-w-300">Edit</span>
+                                              </div>
+                                              <i class="fad fa-chart-pie"></i>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-lg-6 content-col content-col-right">
+                            <header class="content-col-header">
+                              <span class="content-col-heading font-r-13 font-weight-700">Engagement</span>
+                            </header>
+
+                            <div class="content-col-main">
+                              <!-- dates -->
+                              <div class="row dates-container my-lg-4">
+                                <div class="col-12">
+                                  <div class="dates"></div>
+                                </div>
+                              </div>
+
+                              <!-- graph cards -->
+                              <div class="row graphs-container my-lg-4">
+                                <div class="col-12 col-lg-4">
+                                  <div class="graph-card">
+                                    <h4 class="graph-card-title"></h4>
+                                    <div class="graph-card-body"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                  <div class="graph-card">
+                                    <h4 class="graph-card-title"></h4>
+                                    <div class="graph-card-body"></div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                  <div class="graph-card">
+                                    <h4 class="graph-card-title"></h4>
+                                    <div class="graph-card-body"></div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- profile -->
+                              <div class="row profile-container my-lg-4 mt-4 mt-lg-0">
+                                <div class="col-12">
+                                  <div class="profile-card">
+                                    <header class="profile-card-header">
+                                      <span class="font-r-10 font-w-500">My profile</span>
+                                      <div class="edit cursor-p">
+                                        <i class="fas fa-pencil pr-lg-2"></i>
+                                        <span class="font-r-11 font-w-300">Edit</span>
+                                      </div>
+                                    </header>
+                                    <div class="row profile-card-body">
+                                      <!-- profile picture -->
+                                      <div class="col-auto col-lg-4 profile-img-col">
+                                        <img src="assets/images/profile-img.png" alt="profile img">
+                                      </div>
+
+                                      <!-- profile-data -->
+                                      <div class="col col-lg-8 profile-data-col">
+                                        <div class="row">
+                                          <!-- profile data (left side) -->
+                                          <div class="col-6">
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">Company name</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-flag font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">Name 123</span>
+                                              </div>
+                                            </div>
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">Company address</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-map-marker-alt font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">LA PA 2433</span>
+                                              </div>
+                                            </div>
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">Company phone</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-phone-alt font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">+1453 234345</span>
+                                              </div>
+                                            </div>
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">Company website</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-globe font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">WWW.DDA.COM</span>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <!-- profile data (right side) -->
+                                          <div class="col-6">
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">Years of Experience</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-calendar font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">3 Years</span>
+                                              </div>
+                                            </div>
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">License number</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-clipboard-user font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">2345356924534</span>
+                                              </div>
+                                            </div>
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">Contact phone</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-user font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">+1 4354 245555</span>
+                                              </div>
+                                            </div>
+                                            <div class="profile-data-unit">
+                                              <div class="title font-r-10 font-w-300">Contact E-mail</div>
+                                              <div class="data mt-lg-2">
+                                                <i class="fal fa-envelope font-r-10"></i>
+                                                <span class="font-r-10 font-w-500">Dave@repair.com</span>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- EOL: Unique content -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- EOL: CONTENT BODY -->
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </app>
+
+
+<script src="assets/js/layout-page.js"></script>
+
 
 </body>
 </html>

@@ -6,10 +6,45 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  height: 50px;
   background-color: #e0e0e0;
 
+  @media(max-width: 1199px) {
+    //height: 50px;
+  }
+
+  @media(max-width: 991px) {
+    height: 40px;
+  }
+
   .tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1;
+    padding: 0 15px;
+    font-size: 1rem;
     color: #585077;
+
+    &:first-child {
+      padding-left: 45px;
+    }
+
+    @media(max-width: 1199px) {
+      padding: 0 10px;
+
+      &:first-child {
+        padding-left: 35px;
+      }
+    }
+
+    @media(max-width: 991px) {
+      padding: 0 10px;
+
+      &:first-child {
+        padding-left: 25px;
+      }
+    }
 
     &:not(:first-child) {
       border-left: 1px solid #b1adbb;
@@ -23,7 +58,12 @@
 
     .index {
       position: static; // reset layout index styles for this type of pages
-      padding-bottom: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 26px;
+      height: 26px;
+      padding-bottom: 0 !important;
       border-radius: 2px;
       background-color: #b3b3b3;
       color: #d6d6d6;
@@ -35,65 +75,5 @@
         color: #fff;
       }
     }
-  }
-
-  @media(min-width: 300px) { // from 300
-    & {
-      height: 40px;
-
-      .tab {
-        display: flex;
-        flex-direction: row;;
-        align-items: center;
-        line-height: 1;
-        padding: 0 5px;
-        font-size: 1rem;
-
-        .index {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 26px;
-          height: 26px;
-        }
-      }
-    }
-  }
-  // EOL: 300px
-
-  @media(min-width: 768px) { // from 768
-    & {
-      .tab {
-        padding: 0 10px;
-
-        &:first-child {
-          padding-left: 45px;
-        }
-      }
-    }
-  }
-
-  @media(min-width: 1200px) { // from 1200
-    & {
-      .tab {
-        line-height: inherit;
-        cursor: pointer;
-      }
-    }
-  }
-
-  @media(min-width: 1600px) { // from 1600
-    & {
-      height: 50px;
-
-      .tab {
-        padding: 0 28px;
-      }
-    }
-  }
-
-  @media(min-width: 1920px) { // from 1920
-
-    & { height: 60px; }
   }
 }

@@ -174,6 +174,10 @@
     }
   }
 
+  .sub-menu-items {
+    padding-left: 0;
+  }
+
   .sub-menu-item {
     margin: 0 10px;
 
@@ -2085,41 +2089,6 @@
         color: #342e49;
       }
     }
-
-    // Add portfolio
-    .add-portfolio {
-      .content-col-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding-top: 30px;
-      }
-
-      // left
-      .content-col-left {
-        width: 100%;
-
-        .form-group {
-          i {
-            position: absolute;
-            bottom: calc(50% - 3px);
-            left: 10px;
-          }
-
-          textarea {
-            border: solid 1px #585077;
-            background-color: #ffffff;
-            padding: 10px 30px;
-          }
-        }
-      }
-
-      // right
-      .content-col-right {
-        width: 100%;
-      }
-    }
   }
   // EOL: 300px
 
@@ -2137,25 +2106,6 @@
   @media(min-width: 992px) {
     // add-portfolio
     .add-portfolio {
-      .content-col-container {
-        flex-direction: row;
-        padding-top: 15px;
-      }
-
-      .content-col {
-        padding: 0 10px;
-      }
-
-      // left
-      .content-col-left {
-        width: 50%;
-      }
-
-      // right
-      .content-col-right {
-        width: 50%;
-      }
-
       // Collapse
       .card-accordion-body {
         .collapse-col-1 {
@@ -2738,191 +2688,6 @@
   }
 }
 
-//************* Summary  Wizard *************//
-.summary-page {
-  @media(min-width: 300px) {
-    .content-container {
-      max-width: 100%;
-      flex-grow: 0;
-      padding: 0 10px 60px 0;
-    }
-
-    .content-col-left {
-      padding-left: 45px;
-      padding-right: 32px;
-
-      .accordion-items {
-        padding-right: 10px;
-        max-height: 500px;
-      }
-
-      .collapse-container {
-        .collapse-header {
-          padding: 0 10px;
-        }
-
-        .collapse-body {
-          padding: 12px 10px 30px 8px;
-
-          .collapse-btn {
-            padding: 10px;
-          }
-
-          .collapse-item {
-            padding: 10px;
-          }
-        }
-      }
-    }
-
-    .content-col-right {
-      padding-left: 32px;
-      padding-right: 45px;
-    }
-
-    .content-col-header {
-      padding: 22px 0 20px;
-    }
-
-    .content-col-heading {
-      margin-bottom: 0;
-    }
-
-    // Dates
-    .dates-container {
-      .dates {
-        height: 80px;
-      }
-    }
-
-    // Graps container
-    .graphs-container {
-      .graph-card {
-        height: 130px;
-      }
-    }
-
-    // Profile
-    .profile-container {
-      .profile-card {
-        padding: 0 15px 15px;
-      }
-      .profile-card-header {
-        padding: 10px 0;
-        margin-bottom: 10px;
-      }
-
-      .profile-card-body {
-        .profile-data-unit {
-          margin-bottom: 15px;
-
-          .data {
-            i {
-              padding-right: 10px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media(min-width: 1600px) {
-    // Profile
-    .profile-container {
-      .profile-card {
-        padding: 0 20px 20px;
-      }
-      .profile-card-header {
-        padding: 15px 0;
-        margin-bottom: 20px;
-      }
-
-      .profile-card-body {
-        .profile-data-unit {
-          margin-bottom: 15px;
-
-          .data {
-            i {
-              padding-right: 15px;
-            }
-          }
-        }
-      }
-    }
-
-    .content-col-left {
-      .accordion-items {
-        max-height: 530px;
-      }
-    }
-  }
-
-  @media(min-width: 1800px) {
-    .content-col-left {
-      .accordion-items {
-        max-height: 680px;
-      }
-    }
-    // Dates
-    .dates-container {
-      .dates {
-        height: 100px;
-      }
-    }
-
-    // Graps container
-    .graphs-container {
-      margin: 30px 0;
-
-      .graph-card {
-        height: 262px;
-      }
-    }
-  }
-}
-
-//************* Summary Empty  Wizard *************//
-.summary-page-empty {
-  @media(min-width: 300px) {
-    .content-container {
-      max-width: 100%;
-      flex-grow: 0;
-      padding: 0;
-    }
-  }
-
-  @media(min-width: 1200px) {
-    .content-container {
-      flex-grow: 0;
-      padding: 0 25px 60px 0;
-    }
-
-    .content-col-left {
-      .content-col-main {
-      }
-
-      .img-container {
-        margin-top: 50px;
-
-        &:before {
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 200px;
-          height: 200px;
-        }
-      }
-    }
-  }
-
-  @media(min-width: 1800px) {
-    .content-col-left {
-      .content-col-main {
-        padding-top: 80px;
-      }
-    }
-  }
-}
 
 //**************************//
 .mobile-only-flex {
