@@ -481,6 +481,13 @@
 }
 
 @media(max-width: 599px) {
+  // Right side col
+  .right-side-col {
+    .right-side-content-inner {
+      margin-top: 140px;
+    }
+  }
+
   .top-logo-container-inner {
     img {
       height: inherit;
@@ -1424,6 +1431,13 @@
         width: 100% !important;
       }
     }
+
+    .left-side {
+      .image-container {
+        width: 13vh !important;
+        height: inherit !important;
+      }
+    }
   }
 
   @media(max-width: 767px) {
@@ -2240,10 +2254,6 @@
   }
 
   @media(max-width: 991px) {
-    .main-row {
-      flex-wrap: nowrap;
-    }
-
     .content-col {
       .search {
         width: calc(100% + 15px);
@@ -2334,6 +2344,7 @@
       flex-basis: auto;
       width: 100%;
       padding-right: 15px;
+      margin-top: 70px;
     }
   }
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marketing</title>
+  <title>Marketing account verification </title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -444,7 +444,7 @@
             </div>
 
             <!-- Side block -->
-            <div class="side-block">
+            <div class="side-block d-none">
               <div class="outer">
                 <div class="back-layer">
                   <div class="inner"></div>
@@ -494,7 +494,7 @@
                     </div>
 
                     <form class="sign-up-form">
-                      <div class="input-group">
+                      <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <div class="input-group-text position-relative">
                             <!--<i class="fal fa-user"></i>-->
@@ -503,11 +503,7 @@
                         </div>
                         <input type="text" class="form-control" id="company-name" placeholder="Company name">
                       </div>
-                      <div class="error-message mb-3">
-                        <span>Please enter a <span class="font-weight-bold">Company Name</span> to register</span>
-                      </div>
-
-                      <div class="input-group">
+                      <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <div class="input-group-text position-relative">
                             <!--<i class="fal fa-phone-alt"></i>-->
@@ -516,11 +512,7 @@
                         </div>
                         <input type="tel" class="form-control" id="phone-number" placeholder="Phone number">
                       </div>
-                      <div class="error-message mb-3">
-                        <span>Please enter a <span class="font-weight-bold">Phone number</span> to register</span>
-                      </div>
-
-                      <div class="input-group">
+                      <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <div class="input-group-text position-relative">
                             <!--<i class="fal fa-envelope"></i>-->
@@ -529,20 +521,13 @@
                         </div>
                         <input type="text" class="form-control" id="mail" placeholder="Email">
                       </div>
-                      <div class="error-message mb-3">
-                        <span>Please enter an <span class="font-weight-bold">Email</span> to register</span>
-                      </div>
-
                       <div class="options">
                         <div class="form-check">
                           <div class="custom-checkbox position-relative">
                             <input type="checkbox" class="custom-control-input" id="postCustomerTerms" name="postCustomerTerms" data-val="true" value="1" checked="@Model.PostCustomerTerms">
                             <label class="custom-control-label" for="postCustomerTerms">
                               <span class="custom-control-label-text">
-                                  I Agree to the
-                                  <button type="button" class="custom-control-label-link open-terms-and-conditions" data-toggle="modal" data-target="#term-and-conditions">
-                                    Terms and Conditions
-                                  </button>
+                                  I Agree to the <span class="custom-control-label-link position-relative">Terms and Conditions</span>
                               </span>
                             </label>
                           </div>
@@ -550,6 +535,10 @@
                       </div>
                       <div class="position-relative">
                         <input type="submit" id="submit-sign-up-form" class="submit-sign-up-form-input">
+                      </div>
+
+                      <div class="error-message">
+                        <span>Please enter a <span class="font-weight-bold">Company Name</span> to register</span>
                       </div>
 
                       <div class="bottom-decoration-element"></div>
@@ -568,7 +557,7 @@
             </div>
 
           <!-- SMS Verification -->
-            <div class="account-verification d-none">
+            <div class="account-verification is-active">
               <div class="verification pos-r">
                 <div class="text-block">
                   <a href="#">
@@ -697,94 +686,6 @@
         </div>
       </footer>
     </main>
-
-    <!-- Modal -->
-    <div class="terms-and-conditions-info" id="terms-and-conditions-info" tabindex="-1" role="dialog" aria-labelledby="wizard-modal-title" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered wizard-dialog wizard-new-dialog wizard-dialog-success-message" role="document">
-        <div class="modal-content">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-          <div class="decoration-element-mobile"></div>
-          <div class="modal-body">
-            <div class="left-side">
-              <div class="modal-body-content">
-                <div class="text-content">
-                  <div class="heading font-weight-bold font-r-11">Company name</div>
-                  <div class="text font-r-9">
-                    g and typesetting industry.
-                    Lorem Ipsum has been the industry’s standard
-                    dummy text ever since the 1500s, has been the
-                    industryhas been the industry
-                  </div>
-                </div>
-                <div class="image-container">
-                  <img src="assets/images/pro-image.png" alt="pro">
-                </div>
-              </div>
-            </div>
-
-            <div class="right-side">
-              <span class="right-side-header font-r-16 font-weight-bold">Success!</span>
-              <div class="right-side-inner without-scroll">
-                <div class="headings-inner">
-                  <div class="image-container">
-                    <img src="assets/images/success.svg" alt="success">
-                  </div>
-                  <div class="headings-container">
-                    <h2 class="modal-heading font-r-18 font-weight-black">Congratulations!</h2>
-                    <span class="modal-sub-heading font-r-13">You are now a member of AIQ</span>
-                  </div>
-                </div>
-
-
-                <div class="modal-body-container-outer">
-                  <form class="modal-body-container">
-                    <h6 class="input-group-title font-r-13">Please enter a new password to log in</h6>
-                    <!-- Col -->
-                    <div class="modal-body-col">
-                      <div class="decoration-element-wizard">
-                        <span class="square"></span>
-                        <span class="dashed-line"></span>
-                      </div>
-                      <div class="input-group-container">
-                        <div class="input-group mb-3">
-                          <i class="far fa-key"></i>
-                          <input type="password" class="form-control font-r-11" id="password" placeholder="Password">
-                          <i class="fal fa-eye"></i>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Col -->
-                    <div class="modal-body-col">
-                      <div class="input-group-container">
-                        <h6 class="input-group-title font-r-13 m-0"></h6>
-                        <div class="input-group mb-3">
-                          <i class="far fa-key"></i>
-                          <input type="password" class="form-control font-r-11" id="repeat-password" placeholder="Repeat the password">
-                          <i class="fal fa-eye"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-
-                <div class="modal-footer">
-                  <div class="buttons-container">
-                    <button type="button" class="btn active font-r-11">Done</button>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="modal-backdrop"></div>
   </app>
 
   <script

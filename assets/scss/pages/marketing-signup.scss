@@ -4,8 +4,6 @@
 @import "../bootstrap/bootstrap";
 @import "../modules/landing-quality-cards";
 @import "../modules/form";
-@import "../account-verification";
-//@import "auth-pages";
 @import "../utils/fonts";
 @import "../utils/helpers";
 
@@ -25,7 +23,7 @@
 
   width: 100%;
 
-  @media(min-width: 600px) {
+  @media(min-width: 768px) {
     position: fixed;
     height: $page-height;
     overflow: hidden;
@@ -149,7 +147,7 @@
     position: relative;
     width: 100%;
 
-    @media(min-width: 600px) {
+    @media(min-width: 768px) {
       height: 62vh;
       padding: 2vh 5vw 3vh;
     }
@@ -164,7 +162,7 @@
     align-items: flex-end;
     pointer-events: none;
 
-    @media(min-width: 600px) {
+    @media(min-width: 768px) {
       margin-top: -21vh;
     }
   }
@@ -182,7 +180,7 @@
       display: none;
     }
 
-    @media(min-width: 600px) {
+    @media(min-width: 768px) {
       width: 25vw;
       height: 78vh;
     }
@@ -216,7 +214,7 @@
     //background-color: #fff;
     pointer-events: auto;
 
-    @media(min-width: 600px) {
+    @media(min-width: 768px) {
       width: 60vw;
     }
 
@@ -243,7 +241,7 @@
       font-size: 2.5vh;
       //background-color: chartreuse; // !!!!!!!!!
 
-      @media(min-width: 600px) {
+      @media(min-width: 768px) {
         height: 19vh;
       }
     }
@@ -261,7 +259,7 @@
           display: block;
         }
       }
-      @media(min-width: 600px) {
+      @media(min-width: 768px) {
         &.reviews-desktop {
           display: block;
         }
@@ -538,11 +536,11 @@
   border-bottom-right-radius: 8px;
 
   .error-message {
-    margin-top: 2vh;
+    margin-top: .5rem;
 
     span {
       line-height: 1;
-      font-size: 1.6vh;
+      font-size: 8pt;
       color: #f00;
       white-space: nowrap;
     }
@@ -607,12 +605,6 @@
     }
   }
 
-  .fa-user,
-  .fa-phone-alt,
-  .fa-envelope {
-    font-size: 2vh;
-  }
-
   .options {
     width: 100%;
     justify-content: flex-start;
@@ -641,7 +633,7 @@
       border-radius: 1px;
       background-color: #585077;
       top: 2.75px !important;
-      left: 2.75px !important;
+      left: 3px !important;
       width: 1.875vh;
       height: 1.875vh;
     }
@@ -652,7 +644,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 3vh;
+    //min-height: 3vh;
     margin-bottom: 0;
     padding-top: 0 !important;
     padding-left: 14% !important;
@@ -680,7 +672,10 @@
 
   .custom-control-label-link {
     margin-left: .2em;
+    padding: 0 !important;
     text-decoration: underline;
+    font-size: 1.65vh !important;
+    color: #585077 !important;
   }
 
   .bottom-decoration-element {
@@ -742,16 +737,126 @@
     cursor: pointer;
     border: none;
 
-    i {
+    img {
       position: absolute;
       right: 2vw;
-      font-size: 2.75vh;
+      width: 30px;
+      height: 20px;
+      display: block;
     }
   }
 }
 
 .account-verification {
-  display: none;
+  h5 {
+    white-space: normal;
+    line-height: 1.5;
+  }
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 32px 0;
+    font-family: "Raleway", sans-serif;
+    color: #585077;
+  }
+
+  .account-verification-icon {
+    img {
+      display: block;
+      width: 72px;
+      height: 80px;
+    }
+  }
+
+  .verification-code-container {
+    border: none;
+
+    .form-control {
+      border: none;
+
+      &:focus {
+        border: 1px solid #ced4da;
+        border-radius: 2.5px;
+        border-left: 0;
+        background-color: transparent;
+      }
+    }
+
+    .verification-code {
+      width: 100%;
+      height: 66px;
+    }
+
+    .code {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 1.5rem;
+      pointer-events: none !important;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 66px;
+        border-bottom: 2px solid #585077;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .logo2 {
+    width: 168px;
+  }
+
+  .verification {
+    z-index: 2;
+    padding: 0 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+  }
+
+  .submit-button {
+    background-color: #585077;
+    border-radius: 5px;
+    z-index: 1;
+
+    .btn {
+      top: -6px;
+      width: 100%;
+      height: 74px;
+      padding-top: 14px;
+      background-color: #585077;
+      border-radius: 5px;
+      border: none;
+
+      &:active {
+        background-color: #585077 !important;
+        box-shadow: none !important;
+      }
+
+      &:focus {
+        box-shadow: none !important;
+      }
+
+      .fa-long-arrow-right {
+        position: absolute;
+        right: 32px;
+        top: 38%;
+        font-size: 2.25rem;
+      }
+    }
+  }
 
   &.is-active {
     pointer-events: auto;
@@ -761,10 +866,8 @@
     flex-direction: column;
     justify-content: flex-end;
     margin: 0;
-
-    h5 {
-      white-space: normal;
-    }
+    box-shadow: 0 1.5px 25px 0 rgba(88,80,119,0.19);
+    border-radius: 5px;
   }
 }
 
@@ -781,7 +884,7 @@ footer {
   pointer-events: none;
   background-color: transparent;
 
-  @media(min-width: 600px) {
+  @media(min-width: 768px) {
     padding-top: calc(100vh - #{$height});
   }
 
@@ -862,7 +965,7 @@ footer {
   h4 {
     font-size: 1.75vh;
 
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       display: flex;
       align-items: center;
       height: $height;
@@ -897,9 +1000,6 @@ footer {
   color: #fff;
   text-align: left;
   background-color: #585077;
-
-  @media (min-width: 600px) {
-  }
 }
 
 .footer-col {
@@ -912,4 +1012,33 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-top: 1vh;
+}
+
+textarea:focus, input:focus {
+  outline: none !important;
+  border-color: inherit !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none !important;
+  border-color: #d6d6d6 !important;
+}
+
+.form-control:focus {
+  border: 1px solid #ced4da !important;
+  border-radius: 2.5px;
+  border-left: 0 !important;
+  background-color: transparent;
+}
+
+
+// Terms and conditions modal
+.terms-and-conditions-info {
+  display: none;
+
+  &.active {
+
+  }
 }

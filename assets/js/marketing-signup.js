@@ -1,4 +1,32 @@
-const isMobile = window.innerWidth < 600;
+//--  slick INIT
+//--------------------------------
+
+const isDesktop = window.innerWidth >= 768;
+if (isDesktop) {
+	$('#slick-container').slick({
+		rows: 1,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: true,
+		dots: false,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 1000,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+		]
+	});
+}
+
+
+
+//--  ?
+//--------------------------------
+const isMobile = window.innerWidth < 768;
 
 // Button LETS GO on click shows form
 const letsGoBtn = document.querySelector('.lets-go-btn');
@@ -28,14 +56,14 @@ inner.addEventListener('click', () => {
 
 // Button LETS START on click shows sms verification
 const letsStartBtns = document.querySelectorAll('.submit-sign-up-form-input');
-const sideBlockForm = document.querySelector('.side-block');
-const accountVerification = document.querySelector('.account-verification');
+// const sideBlockForm = document.querySelector('.side-block');
+// const accountVerification = document.querySelector('.account-verification');
 
 letsStartBtns.forEach(btn => {
 	btn.addEventListener('click', (e) => {
 		e.preventDefault();
-		sideBlockForm.classList.add('disabled');
-		accountVerification.classList.add('is-active');
+		// sideBlockForm.classList.add('disabled');
+		// accountVerification.classList.add('is-active');
 		// console.log(e.target, '=> works');
 	});
 });
@@ -49,6 +77,7 @@ const qualityCardsUnderlay = document.querySelector('.quality-cards-underlay');
 
 
 qualityCards.forEach(card => {
+	// for desktop
 	if (!isMobile) {
 		card.addEventListener('mouseover', function () {
 			this.classList.add('show');
@@ -60,6 +89,7 @@ qualityCards.forEach(card => {
 		})
 	}
 
+	// for mobile
 	if (isMobile) {
 		card.addEventListener('click', function() {
 			this.classList.add('show');
@@ -68,6 +98,7 @@ qualityCards.forEach(card => {
 	}
 });
 
+// for desktop
 if (!isMobile) {
 	qualityCardsContainer.addEventListener('mouseover', function() {
 		this.classList.add('show-underlay');
@@ -79,18 +110,38 @@ if (!isMobile) {
 	});
 }
 
+// for mobile
 if (isMobile) {
 	qualityCardsContainer.addEventListener('click', function() {
-		this.classList.add('show-underlay');
-		// this.classList.remove('hide-underlay');
+		if (!qualityCardsContainer.classList.contains('show-underlay')) {
+			console.log('click 1');
+			qualityCardsContainer.classList.add('show-underlay');
+		}
+		else if (qualityCardsContainer.classList.contains('hide-underlay')) {
+			console.log('click 3');
+			qualityCardsContainer.classList.remove('hide-underlay');
+		}
+		else {
+			return;
+		}
+
+		// 'hide-underlay'
+		// 'show-underlay'
 	});
-	qualityCardsUnderlay.addEventListener('click', () => {
-		// console.log(e.target, 'works');
+
+	qualityCardsUnderlay.addEventListener('click', function(e) {
+		e.stopPropagation();
+		if (qualityCardsContainer.classList.contains('show-underlay') && !qualityCardsContainer.classList.contains('hide-underlay')) {
+			console.log('click 2');
+			qualityCardsContainer.classList.add('hide-underlay');
+		}
+
 		qualityCards.forEach(card => {
 			card.classList.add('hide');
 		});
-		qualityCardsContainer.classList.add('hide-underlay');
 	});
+
+
 }
 
 // Footer scroll to top
@@ -106,8 +157,6 @@ function onWheel(e) {
 
 	var delta = e.deltaY || e.detail || e.wheelDelta;
 
-	// e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-
 	if (delta > 0) {
 		FooterScrollContainer.classList.remove('hide');
 		FooterScrollContainer.classList.add('show');
@@ -115,5 +164,13 @@ function onWheel(e) {
 		FooterScrollContainer.classList.remove('show');
 		FooterScrollContainer.classList.add('hide');
 	}
-	// console.log('=> delta', delta);
 }
+
+// Terms and conditions popup
+const termsAndConditionsOpenBtn = document.querySelector('.open-terms-and-conditions');
+const termAndConditionsInfoModal = document.querySelector('.terms-and-conditions-info');
+
+termsAndConditionsOpenBtn.addEventListener('click', function(e) {
+	console.log(e.target);
+	termAndConditionsInfoModal.classList.add('active');
+});

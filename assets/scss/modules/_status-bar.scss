@@ -1,23 +1,30 @@
 .status-bar-col {
-  //align-self: flex-end;
-  position: sticky;
-  top: 90px;
-  width: 300px;
-  //padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: -15px;
+  padding-left: 15px;
+  transition-duration: 400ms;
+  box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fafafa;
 }
 
 .done-btn-container {
   display: none;
 }
 
+// When filter closed
 .status-bar {
   display: flex;
   flex-direction: column;
-  padding: 60px 15px 20px 15px;
+  width: 270px;
+  padding: 0 10px;
+  height: 100%;
   font-family: "Raleway", sans-serif;
   color: #585077;
-  box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
-  background-color: #fafafa;
+  //box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
+  //background-color: #fafafa;
 
   .status-bar-inner-container {
     .status-bar-inner-header {
@@ -26,14 +33,14 @@
   }
 
   .status-bar-inner-body {
-    .search {
-      display: flex !important;
-      width: 100%;
-
-      .input-group {
-        width: 100% !important;
-      }
-    }
+    //.search {
+    //  display: flex !important;
+    //  width: 100%;
+    //
+    //  .input-group {
+    //    width: 100% !important;
+    //  }
+    //}
 
     // user
     .user {
@@ -242,6 +249,56 @@
   }
 
   // EOL: services-panel page
+}
+
+.status-bar-panel {
+  display: none;
+}
+
+.open-filter-btn {
+  position: absolute;
+  top: 30%;
+  right: -15px;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 80px;
+  color: #fff;
+  background-color: #585077;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  .fa-chevron-right {
+    transition-duration: 300ms;
+    transform: rotate(180deg);
+  }
+}
+
+// When filter opened
+.filter-opened {
+  margin-left: -290px;
+
+  .status-bar-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 100%;
+    padding-top: 180px;
+  }
+
+  .button {
+    margin-bottom: 30px;
+    font-size: 12pt;
+    color: #443b67;
+    cursor: pointer;
+  }
+
+  .fa-chevron-right {
+    transform: rotate(0deg);
+  }
 }
 
 @media(max-width: 1399px) {

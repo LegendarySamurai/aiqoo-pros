@@ -1,7 +1,7 @@
 // onClick opens .sidebar-menu-outer. Created by Igor 14.02.2020
 
 function openSideBar() {
-	console.log('added');
+	// console.log('added');
 	$(".sidebar-overlay").attr("navIsOpen", "true");
 	$(".main-wrapper-inner").addClass("active");
 }

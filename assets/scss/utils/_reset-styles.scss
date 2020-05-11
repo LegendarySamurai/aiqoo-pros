@@ -31,6 +31,13 @@ button:focus {
   box-shadow: unset;
 }
 
+textarea:focus, input:focus {
+  outline: none !important;
+  border-color: inherit !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 .custom-control {
   padding-left: 0;
 }

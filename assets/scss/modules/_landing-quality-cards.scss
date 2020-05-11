@@ -24,7 +24,7 @@
     pointer-events: none;
     opacity: 0;
 
-    @media(max-width: 599px) {
+    @media(max-width: 767px) {
       position: fixed;
       top: 0;
       left: 0;
@@ -76,12 +76,6 @@
       animation-iteration-count: 1;
       z-index: 10;
       pointer-events: none;
-    }
-
-    .quality-cards-underlay {
-      @media (max-width: 599px) {
-
-      }
     }
   }
 }
@@ -139,15 +133,9 @@
       height: 5px;
     }
 
-    &.small-card {
-      //transform: scale(1);
-      //opacity: 1;
-    }
-
     &.big-card {
       transform: scale(.75);
       opacity: 0;
-      //padding: 1vh 1.5vw;
       padding: 1.25vh 1.75vw 1.5vh;
       pointer-events: none;
 
@@ -183,7 +171,7 @@
     color: #574f76;
     text-align: left;
 
-    @media(max-width: 599px) {
+    @media(max-width: 767px) {
       font-size: 2vh !important;
     }
   }
@@ -199,7 +187,7 @@
   // initial styles for card 'a'
   &.a {
     .quality-card-content-inner {
-      @media(min-width: 600px) {
+      @media(min-width: 768px) {
         top: 50%;
         left: 0;
         transform: translate(0, -50%);
@@ -224,7 +212,7 @@
   // initial styles for card 'b'
   &.b {
     .quality-card-content-inner {
-      @media (min-width: 600px) {
+      @media (min-width: 768px) {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -250,7 +238,7 @@
   // initial styles for card 'c'
   &.c {
     .quality-card-content-inner {
-      @media(min-width: 600px) {
+      @media(min-width: 768px) {
         top: 50%;
         right: 0;
         transform: translate(0, -50%);
@@ -264,7 +252,7 @@
         transform-origin: 100% 0;
 
 
-        @media(max-width: 599px) {
+        @media(max-width: 767px) {
           transform-origin: 100% 100%;
         }
       }
@@ -290,7 +278,7 @@
     }
 
     .big-card {
-      @media(max-width: 599px) {
+      @media(max-width: 767px) {
         position: fixed !important;
         top: 50% !important;
         left: 50% !important;
@@ -305,7 +293,7 @@
         margin-bottom: 0;
         height: 100%;
 
-        @media(max-width: 599px) {
+        @media(max-width: 767px) {
           span {
             font-size: 2.25vh !important;
           }
@@ -317,15 +305,11 @@
       0% {
         width: 100%;
         opacity: 0;
-        //transform: translate(0, 0);
-        //transform: none !important;
       }
 
       100% {
-        //top: 3.5vh;
         width: 100%;
         opacity: 1;
-        //transform: translate(0, 0);
       }
     }
 
@@ -347,15 +331,11 @@
       0% {
         width: 100%;
         opacity: 0;
-        //transform: translate(0, -50%);
       }
 
       100% {
-        //top: 3.5vh;
         width: 100%;
-        //height: 70vh;
         opacity: 1;
-        //transform: translate(0, -50%);
       }
     }
 
@@ -373,7 +353,7 @@
       }
     }
 
-    @media(max-width: 599px) {
+    @media(max-width: 767px) {
       .step {
         span {
           font-size: 3vh !important;
@@ -383,30 +363,28 @@
 
     .big-card {
       &:not(.b) {
-        @media (max-width: 599px) {
+        @media (max-width: 767px) {
           animation-name: big-card-enter-animation-m;
         }
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
           animation-name: big-card-enter-animation;
         }
         animation-duration: 600ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
-        //animation-delay: 400ms;
       }
 
       &.b {
-        @media (max-width: 599px) {
+        @media (max-width: 767px) {
           animation-name: big-card-b-enter-animation-m;
         }
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
           animation-name: big-card-b-enter-animation;
         }
 
         animation-duration: 600ms;
         animation-fill-mode: forwards;
         animation-iteration-count: 1;
-        //animation-delay: 400ms;
       }
 
       .quality-card-text-content {
@@ -462,7 +440,7 @@
       }
     }
 
-    @media(max-width: 599px) {
+    @media(max-width: 767px) {
       @keyframes big-card-exit-animation-m {
         0% {
           transform: scale(1) translate(0, -50%);
@@ -507,7 +485,7 @@
       }
     }
 
-    @media(max-width: 599px) {
+    @media(max-width: 767px) {
       @keyframes big-card-b-exit-animation-m {
         0% {
           transform: scale(1) translate(0, -50%);
@@ -534,10 +512,10 @@
 
     .big-card {
       &:not(.b) {
-        @media(max-width: 599px) {
+        @media(max-width: 767px) {
           animation-name: big-card-exit-animation-m;
         }
-        @media(min-width: 600px) {
+        @media(min-width: 768px) {
           animation-name: big-card-exit-animation;
         }
 
@@ -548,10 +526,10 @@
       }
 
       &.b {
-        @media(max-width: 599px) {
+        @media(max-width: 767px) {
           animation-name: big-card-b-exit-animation-m;
         }
-        @media(min-width: 600px) {
+        @media(min-width: 768px) {
           animation-name: big-card-b-exit-animation;
         }
 
@@ -581,13 +559,5 @@
         animation-iteration-count: 1;
       }
     }
-  }
-
-  @media(min-width: 600px) {
-
-  }
-
-  @media(max-width: 599px) {
-
   }
 }

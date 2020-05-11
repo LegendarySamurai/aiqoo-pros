@@ -1,15 +1,15 @@
-.main-row {
-  transition: margin 300ms ease;
-  // added on hover nav-menu-items
-  &.nav-bar-is-opened {
-    margin-top: 60px;
-  }
-}
-
-.main-row {
-  @media(max-width: 599px) {
-    &.nav-bar-is-opened {
-      margin-top: 0;
-    }
-  }
-}
+//.main-row {
+//  transition: margin 300ms ease;
+//  // added on hover nav-menu-items
+//  &.nav-bar-is-opened {
+//    margin-top: 60px;
+//  }
+//}
+//
+//.main-row {
+//  @media(max-width: 599px) {
+//    &.nav-bar-is-opened {
+//      margin-top: 0;
+//    }
+//  }
+//}
