@@ -1093,6 +1093,10 @@ textarea:focus, input:focus {
       height: 100%;
     }
 
+    .decoration-element-mobile {
+      display: none;
+    }
+
     .modal-body {
       position: relative;
       flex: 1 1 auto;

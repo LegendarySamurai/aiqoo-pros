@@ -396,6 +396,28 @@
 }
 
 @media(max-width: 767px) {
+  .modal-content {
+    position: relative;
+  }
+  
+  .left-side {
+    display: none;
+  }
+
+  // decoration element
+  .decoration-element-mobile {
+    z-index: 1;
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #585077;
+  }
+
   // Quality cards
   .cards-container {
     max-width: 92% !important;
