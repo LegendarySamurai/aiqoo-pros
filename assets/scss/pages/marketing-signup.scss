@@ -1035,10 +1035,117 @@ textarea:focus, input:focus {
 
 
 // Terms and conditions modal
+.modal-backdrop {
+  &.active {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparentize(#000, .3);
+    z-index: 20;
+  }
+}
+
 .terms-and-conditions-info {
   display: none;
 
   &.active {
+    display: flex !important;
+    //position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 86% !important;
+    max-width: 1200px !important;
+    height: 75vh;
+    background: #fff;
 
+    position: fixed;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+
+    .modal-dialog {
+      height: 100%;
+    }
+
+    button.close {
+      z-index: 3;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 22px;
+      height: 22px;
+      padding: 0;
+      margin: 0;
+      background-color: #b3b3b3;
+      color: #fff;
+      border: none;
+    }
+
+    .modal-content {
+      height: 100%;
+    }
+
+    .modal-body {
+      position: relative;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      height: 100%;
+    }
+
+    .left-side {
+      width: 25%;
+      background-color: #585077;
+    }
+
+    .modal-body-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 30px 3vw;
+    }
+
+    .text-content {
+      width: 100%;
+      padding: 20px;
+      border-radius: 2.5px;
+      background-color: #fffaf0;
+      text-align: left;
+    }
+
+    .heading {
+      margin-bottom: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .text {
+      font-size: .875rem;
+    }
+
+    .image-container {
+      width: 13vh;
+      margin: 2vh auto 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .right-side {
+      width: 75%;
+    }
   }
 }
