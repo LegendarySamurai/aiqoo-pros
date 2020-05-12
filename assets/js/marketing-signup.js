@@ -68,12 +68,12 @@ letsStartBtns.forEach(btn => {
 });
 
 
-// Quality cards on hover adds underlay
+// QUALITY CARDS on hover adds underlay
 const qualityCardsContainer = document.querySelector('.quality-cards');
 const qualityCards = document.querySelectorAll('.quality-card');
+const smallCardsContent = document.querySelectorAll('.quality-card .small-card');
+const bigCardsContent = document.querySelectorAll('.quality-card .big-card');
 const qualityCardsUnderlay = document.querySelector('.quality-cards-underlay');
-// let cardIsClicked = false;
-
 
 qualityCards.forEach(card => {
 	// for desktop
@@ -81,11 +81,15 @@ qualityCards.forEach(card => {
 		card.addEventListener('mouseover', function () {
 			this.classList.add('show');
 			this.classList.remove('hide');
+
+			if (qualityCardsContainer.classList.contains('hide-underlay')) {
+				qualityCardsContainer.classList.remove('hide-underlay');
+			}
 		});
 
-		card.addEventListener('mouseout', function () {
-			this.classList.add('hide');
-		})
+		// card.addEventListener('mouseout', function () {
+		// 	this.classList.add('hide');
+		// })
 	}
 
 	// for mobile
@@ -97,18 +101,41 @@ qualityCards.forEach(card => {
 	}
 });
 
-
-
 // for desktop
 if (isDesktop) {
 	qualityCardsContainer.addEventListener('mouseover', function() {
+		// this.classList.remove('hide-underlay');
 		this.classList.add('show-underlay');
-		this.classList.remove('hide-underlay');
+
+		if (this.classList.contains('hide-underlay')) {
+		}
+
+
 	});
 
-	qualityCardsContainer.addEventListener('mouseout', function() {
-		this.classList.add('hide-underlay');
+	$('.big-card').mouseleave(function() {
+		$('.quality-cards').addClass('hide-underlay');
+		$('.quality-card').addClass('hide');
+		console.log('MOUSE OUT');
 	});
+
+	// $('.quality-cards-underlay').mouseover(function() {
+	// 	$('.quality-cards').addClass('hide-underlay');
+	// 	$('.quality-cards').removeClass('show-underlay');
+	// 	$('.quality-card').addClass('hide');
+	// });
+	//
+	// $('.quality-cards').mouseleave(function() {
+	// 	$('.quality-cards').removeClass('hide-underlay');
+	// 	$('.quality-cards').removeClass('show-underlay');
+	// });
+
+	// qualityCards.forEach(card => {
+	// 	// 	card.classList.add('hide');
+	// 	// });
+	// qualityCardsContainer.addEventListener('mouseout', function() {
+	// 	this.classList.add('hide-underlay');
+	// });
 }
 
 // for mobile

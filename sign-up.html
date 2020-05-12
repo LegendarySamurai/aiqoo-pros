@@ -4,7 +4,6 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sign-up popup</title>
-  <script src="assets/js/js.es5.min.js"></script>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,6 +22,11 @@
   <link href="assets/css/auth-pages.css" rel="stylesheet"/>
 </head>
 <body>
+<script>
+	$('#submit-sign-up').click(function(event) {
+		event.preventDefault();
+	});
+</script>
 <app>
   <div class="wrapper-full-width sign-in-and-sign-up-page">
     <div class="head-section"></div>
@@ -42,36 +46,48 @@
         </div>
 
         <form>
-          <div class="input-group mb-4">
+          <div class="input-group">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-user-alt"></i></div>
             </div>
             <input type="text" class="form-control" id="full-name" placeholder="Full-name">
           </div>
-          <div class="input-group mb-4">
+          <div class="error-message mb-3" id="SignUpErrorFullName">
+            <span>Please enter your <span class="font-weight-bold">Full Name</span></span>
+          </div>
+          <div class="input-group">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-envelope"></i></div>
             </div>
             <input type="text" class="form-control" id="sign-up-email" placeholder="Email">
           </div>
-          <div class="input-group mb-4">
+          <div class="error-message mb-3" id="SignUpErrorEmail">
+            <span>Please enter valid <span class="font-weight-bold">Email Address</span></span>
+          </div>
+          <div class="input-group">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-phone-alt"></i></div>
             </div>
             <input type="tel" class="form-control" id="phone" placeholder="Phone number">
           </div>
-          <div class="input-group input-group-password mb-4 pos-r">
+          <div class="error-message mb-3" id="SignUpErrorPhone">
+            <span>Please enter valid <span class="font-weight-bold">Phone Number</span></span>
+          </div>
+          <div class="input-group input-group-password pos-r">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
             </div>
             <input type="password" class="form-control" id="sign-in-password" placeholder="Password">
             <i class="far fa-eye cursor-p"></i>
           </div>
+          <div class="error-message mb-3" id="SignUpErrorPassword">
+            <span><span class="font-weight-bold">Password</span> should not be empty</span>
+          </div>
           <div class="options">
             <div class="form-check">
               <div class="custom-checkbox position-relative">
                 <input type="checkbox" class="custom-control-input" id="terms" name="postCustomerTerms" data-val="true"
-                       value="1" checked="@Model.PostCustomerTerms">
+                       value="1" checked="">
                 <label class="custom-control-label" for="terms">
                   <span class="custom-control-label-text input-label">
                       I Agree to the

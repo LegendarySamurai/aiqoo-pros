@@ -272,11 +272,24 @@
   &.show {
     z-index: 10;
 
+    @media(max-width: 991px) {
+      background-color: transparent;
+      pointer-events: none;
+    }
+
     .small-card {
       opacity: .1;
+
+      @media(max-width: 991px) {
+        opacity: 0;
+        background-color: transparent;
+        pointer-events: none;
+      }
     }
 
     .big-card {
+      pointer-events: auto;
+
       @media(max-width: 991px) {
         position: fixed !important;
         top: 50% !important;
@@ -414,6 +427,10 @@
   // Hide
   &.hide {
     z-index: 9;
+
+    @media (max-width: 991px) {
+      pointer-events: auto;
+    }
 
     .small-card {
       opacity: 1;

@@ -16,6 +16,11 @@
   <link href="assets/css/auth-pages.css" rel="stylesheet" />
 </head>
 <body>
+<script>
+  $('#sign-in-btn').click(function(event) {
+  	event.preventDefault();
+  });
+</script>
 <app>
   <div class="wrapper-full-width sign-in-and-sign-up-page">
     <div class="head-section"></div>
@@ -35,17 +40,23 @@
         </div>
 
         <form>
-          <div class="input-group mb-4">
+          <div class="input-group">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-envelope"></i></div>
             </div>
-            <input type="text" class="form-control" id="sign-in-email" placeholder="Email">
+            <input type="text" name="userEmail" value="@Model.postUserEmail" class="form-control font-10" id="sign-in-email" placeholder="Email">
           </div>
-          <div class="input-group mb-4">
+          <div class="error-message mb-3" id="SignInErrorEmail">
+            <span>Please enter valid <span class="font-weight-bold">Email Address</span></span>
+          </div>
+          <div class="input-group">
             <div class="input-group-prepend">
               <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
             </div>
-            <input type="password" class="form-control" id="sign-in-password" placeholder="Password">
+            <input type="text" name="userPassword" value="@Model.postUserPassword" class="form-control font-10" id="sign-in-password" placeholder="Password">
+          </div>
+          <div class="error-message mb-3" id="SignInErrorPassword">
+            <span><span class="font-weight-bold">Password</span> should not be empty</span>
           </div>
 
           <div class="options pb-4">
@@ -80,8 +91,5 @@
     </div>
   </div>
 </app>
-
-
-<script src="assets/js/auth.js"></script>
 </body>
 </html>

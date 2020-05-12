@@ -1,14 +1,3 @@
-const submitSignUpBtn = document.querySelector('#submit-sign-up');
-const submitSignInBtn = document.querySelector('#submit-sign-up');
-
-submitSignInBtn.addEventListener('click', (e) => {
-	e.preventDefault();
-});
-
-submitSignUpBtn.addEventListener('click', (e) => {
-	e.preventDefault();
-});
-
 // Terms and conditions popup
 const termsAndConditionsOpenBtn = document.querySelector('.open-terms-and-conditions');
 const termAndConditionsInfoModal = document.querySelector('.terms-and-conditions-info');
