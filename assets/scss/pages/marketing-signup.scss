@@ -84,10 +84,15 @@
       padding-left: 9vw;
     }
 
-    .lets-go-btn {
+    .lets-go-container {
       display: none;
       width: 228px;
       height: 52px;
+    }
+
+    .lets-go-btn {
+      width: 100%;
+      height: 100% !important;
       margin-top: 20px;
       font-size: 17.25pt;
       background-color: #585077;
@@ -566,6 +571,12 @@
     border-radius: 2.5px;
     border: 1px solid #ced4da;
     background-color: #fff;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: none;
+    }
   }
 
   .input-group-prepend {
@@ -579,7 +590,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 1vh 1.25vw;
+    padding: 0;
     color: #606060;
     background-color: transparent;
     border-right: none;
@@ -626,6 +637,9 @@
       }
     }
 
+    .custom-control-input:checked ~ .custom-control-label:before {
+    }
+
     .custom-control-input:checked ~ .custom-control-label:after {
       display: block;
       content: "";
@@ -635,6 +649,10 @@
       top: 2.75px !important;
       left: 3px !important;
       width: 1.875vh;
+      background-image: url('../images/confirm-white.svg');
+      background-repeat:  no-repeat;
+      background-position: center;
+      background-size: 50% auto;
       height: 1.875vh;
     }
   }
@@ -714,6 +732,20 @@
   pointer-events: none;
 }
 
+img {
+  width: 30px;
+  height: 20px;
+  display: block;
+
+  &.default {
+    display: block;
+  }
+
+  &.hovered {
+    display: none;
+  }
+}
+
 .submit-button {
   display: flex;
   justify-content: flex-end;
@@ -743,6 +775,28 @@
       width: 30px;
       height: 20px;
       display: block;
+
+      &.default {
+        display: block;
+      }
+
+      &.hovered {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: #d8cdba;
+
+      img {
+        &.default {
+          display: none;
+        }
+
+        &.hovered {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -960,6 +1014,10 @@ footer {
 
   a {
     color: #fff;
+
+    &:hover {
+      color: #d8cdba;
+    }
   }
 
   h4 {
@@ -1026,6 +1084,18 @@ textarea:focus, input:focus {
   border-color: #d6d6d6 !important;
 }
 
+//.custom-control-input:checked ~ .custom-checkbox-ui::before {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  display: block;
+//  content: '';
+//  width: 100%;
+//  height: 100%;
+//background: url(../../images/confirm-7.svg) no-repeat center;
+//background-size: 50% auto;
+//}
+
 .form-control:focus {
   border: 1px solid #ced4da !important;
   border-radius: 2.5px;
@@ -1033,19 +1103,21 @@ textarea:focus, input:focus {
   background-color: transparent;
 }
 
+:focus {
+  outline: none !important;
+}
 
-// Terms and conditions modal
+
+// MODAL Terms and conditions
 .modal-backdrop {
   &.active {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    z-index: 1040;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: transparentize(#000, .3);
-    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    background: transparentize(#000, .5);
   }
 }
 
@@ -1054,25 +1126,21 @@ textarea:focus, input:focus {
 
   &.active {
     display: flex !important;
-    //position: absolute;
-    top: 90px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 86% !important;
-    max-width: 1200px !important;
-    height: 75vh;
-    background: #fff;
-
     position: fixed;
     z-index: 1050;
-    overflow: hidden;
-    outline: 0;
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     opacity: 1;
+    outline: 0;
 
     .modal-dialog {
-      height: 100%;
+      width: 86% !important;
+      max-width: 1200px !important;
+      height: 75vh;
+      margin: 1.75rem auto;
+      background: #fff;
     }
 
     button.close {
@@ -1090,6 +1158,7 @@ textarea:focus, input:focus {
     }
 
     .modal-content {
+      position: relative;
       height: 100%;
     }
 
@@ -1104,6 +1173,8 @@ textarea:focus, input:focus {
       flex-direction: row;
       align-items: stretch;
       height: 100%;
+      z-index: 2;
+      background-color: #fff;
     }
 
     .left-side {

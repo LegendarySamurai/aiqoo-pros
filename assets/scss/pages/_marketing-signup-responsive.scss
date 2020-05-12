@@ -17,22 +17,13 @@
   .footer-outer {
     .footer-col {
       position: relative;
-      //padding-right: 100px;
     }
-
-    //.read-more {
-    //  position: absolute;
-    //  top: 0;
-    //  right: 0;
-    //}
   }
 }
 
-@media(max-width: 1599px) {
-  .special-offers {
-    .special-offer-text {
-      //font-size: 1.75vh !important;
-    }
+@media(max-width: 1590px) {
+  .input-group-text {
+    padding: 1vh 1.25vw;
   }
 }
 
@@ -40,7 +31,6 @@
   // Head section
   .head-section-body {
     .aiqoo-logo-outer {
-      //padding-left: 9vw !important;
       width: 23vw !important;
     }
   }
@@ -82,14 +72,9 @@
 }
 
 @media(max-width: 1299px) {
-  .sticky-logo-container {
-    //width: 18vw !important;
-  }
-
   .sign-up-form {
     .error-message {
       span {
-        //font-size: 1.5vh !important;
         white-space: normal;
       }
     }
@@ -127,18 +112,12 @@
   }
 
   .special-offers {
-    .special-offer-text {
-      //font-size: 1.4vw !important;
-    }
-
     .offer {
       font-size: 1.5vh !important;
     }
   }
 
   .side-block {
-    //min-width: 350px !important;
-
     h4 {
       font-size: 1.875vh;
     }
@@ -146,23 +125,11 @@
     .special-offer-text {
       font-size: 1.75vh !important;
     }
-
-    .sign-up-form {
-      .error-message {
-        span {
-          //font-size: 1.25vh !important;
-        }
-      }
-    }
   }
 
   // Quality cards
   .quality-card {
     margin: 0 5px;
-
-    .quality-card-content {
-      //padding: 20px 10px 10px 10px;
-    }
   }
 
   // Slick
@@ -202,10 +169,6 @@
 
     .sticky-logo-wrapper {
       padding: 1vh 1vw 1.5vh !important;
-    }
-
-    .footer-col {
-      //padding-right: 80px;
     }
 
     h4 {
@@ -350,12 +313,6 @@
 
   // Footer
   footer {
-    .scroll-container {
-      .footer-outer {
-        //width: 60% !important;
-      }
-    }
-
     .links-container {
       flex-direction: column !important;
       align-items: flex-start !important;
@@ -373,6 +330,15 @@
   .sticky-logo-container-inner {
     width: 23vw !important;
     right: 2.5vw !important;
+  }
+
+  // Modal
+  .terms-and-conditions-info {
+    &.active {
+      .image-container {
+        width: 12vh !important;
+      }
+    }
   }
 }
 
@@ -396,10 +362,7 @@
 }
 
 @media(max-width: 767px) {
-  .modal-content {
-    position: relative;
-  }
-  
+  // Modal
   .left-side {
     display: none;
   }
@@ -417,6 +380,8 @@
     border-radius: 20px;
     background-color: #585077;
   }
+
+  // EOL: modal
 
   // Quality cards
   .cards-container {
@@ -601,7 +566,8 @@
     margin: 0 auto;
 
     &.is-active {
-      z-index: 9000;
+      //z-index: 9000;
+      z-index: 20;
       position: fixed;
       top: 0;
       left: 0;
@@ -638,6 +604,10 @@
         .btn {
           top: 0 !important;
           padding: 0;
+
+          img {
+            right: 5vw;
+          }
         }
       }
 
@@ -658,10 +628,31 @@
   }
 
   // Lets go btn
-  .lets-go-btn {
+  .lets-go-container {
+    position: relative;
     display: block !important;
     margin-left: 16vw;
     margin-top: 10px !important;
+    
+    img {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .lets-go-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40vw !important;
+    height: 40px !important;
+    margin: 0 auto;
+    margin-top: auto !important;
+    margin-bottom: 2vh !important;
+    font-size: 15pt !important;
+    padding: 0 !important;
   }
 
   // Head section
@@ -690,7 +681,6 @@
       width: 100% !important;
       height: 100% !important;
       padding-left: 0 !important;
-      //padding: 0 0 0 1vh;
 
       h2 {
         display: block !important;
@@ -703,19 +693,6 @@
         border-radius: 10px;
         font-size: 4vw !important;
         text-align: center !important;
-      }
-
-      .lets-go-btn {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 40vw !important;
-        height: 40px !important;
-        margin: 0 auto;
-        margin-top: auto !important;
-        margin-bottom: 2vh !important;
-        font-size: 15pt !important;
-        padding: 0 !important;
       }
     }
 
@@ -778,7 +755,6 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    //background-color: #fff;
   }
 
   .image-container {
@@ -849,16 +825,10 @@
 
     .sign-up-form {
       padding: 0 15px 15px !important;
-
-      .error-message {
-        span {
-          //font-size: 1.5vh !important;
-        }
-      }
     }
 
     .input-group-text {
-      padding: 10px 15px !important;
+      padding: 0 !important;
     }
 
     .form-control {
@@ -871,8 +841,6 @@
     &.is-active {
       width: 100% !important;
       max-width: 96% !important;
-      //height: 65vh !important;
-      //margin: 2vh auto 0;
       box-shadow: none;
       justify-content: flex-start;
       height: 100% !important;

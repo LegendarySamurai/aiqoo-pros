@@ -47,13 +47,17 @@
             </div>
             <input type="password" class="form-control" id="sign-in-password" placeholder="Password">
           </div>
+
           <!--<div class="options pb-4">-->
-          <!--  <div class="custom-control custom-checkbox">-->
-          <!--    <label class="custom-control-label">-->
-          <!--      <input id="terms" type="checkbox" class="custom-control-input">-->
-          <!--      <span class="custom-checkbox-ui"></span>-->
-          <!--      <span class="input-label">Remember me</span>-->
-          <!--    </label>-->
+          <!--  <div class="form-check">-->
+          <!--    <div class="custom-checkbox position-relative">-->
+          <!--      <input id="remember-me" type="checkbox" class="custom-control-input">-->
+          <!--      <label class="custom-control-label" for="remember-me">-->
+          <!--        <span class="custom-control-label-text input-label">-->
+          <!--            Remember me-->
+          <!--        </span>-->
+          <!--      </label>-->
+          <!--    </div>-->
           <!--  </div>-->
           <!--  <a class="forgot-password" href="#">Forgot your password?</a>-->
           <!--</div>-->
@@ -61,27 +65,37 @@
           <div class="options pb-4">
             <div class="form-check">
               <div class="custom-checkbox position-relative">
-                <input id="remember-me" type="checkbox" class="custom-control-input">
+                <input type="checkbox" class="custom-control-input" id="remember-me" name="postCustomerTerms" data-val="true"
+                       value="1" checked="">
                 <label class="custom-control-label" for="remember-me">
                   <span class="custom-control-label-text input-label">
                       Remember me
                   </span>
                 </label>
               </div>
+              <a class="forgot-password" href="#">Forgot your password?</a>
             </div>
-
-            <a class="forgot-password" href="#">Forgot your password?</a>
           </div>
+
+          <div class="position-relative">
+            <input type="submit" id="sign-in-btn" class="submit-input">
+          </div>
+          <div class="bottom-decoration-element"></div>
         </form>
       </div>
-      <div class="submit-button pos-r">
-        <button type="button" id="sign-in-btn" class="btn btn-primary mt-auto font-r-16 pos-r">
-          Sign In
-          <i class="fas fa-long-arrow-right"></i>
-        </button>
+
+      <div class="submit-button">
+        <label for="sign-in-btn" class="btn position-relative">
+          <span> Sign In</span>
+          <img class="default" src="assets/images/marketing/next-default.svg" alt="">
+          <img class="hovered" src="assets/images/marketing/next-hovered.svg" alt="">
+        </label>
       </div>
     </div>
   </div>
 </app>
+
+
+<script src="assets/js/auth.js"></script>
 </body>
 </html>

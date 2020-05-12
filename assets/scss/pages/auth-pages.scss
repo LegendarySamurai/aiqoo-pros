@@ -159,7 +159,7 @@
     height: 100%;
     color: #585077;
     border-left: none;
-    font-size: 1.25rem;
+    font-size: 1.75vh;
 
     &:focus {
       border: 1px solid #ced4da;
@@ -170,22 +170,22 @@
     &::-webkit-input-placeholder {
       height: 100%;
       color: #585077;
-      font-size: 1.25rem;
+      font-size: 1.75vh;
     }
     &::-moz-placeholder {
       height: 100%;
       color: #585077;
-      font-size: 1.25rem;
+      font-size: 1.75vh;
     }
     &:-ms-input-placeholder {
       height: 100%;
       color: #585077;
-      font-size: 1.25rem;
+      font-size: 1.75vh;
     }
     &:-moz-placeholder {
       height: 100%;
       color: #585077;
-      font-size: 1.25rem;
+      font-size: 1.75vh;
     }
   }
 
@@ -239,7 +239,8 @@
   .forgot-password {
       margin-left: auto;
       font-size: .75rem;
-      padding-top: 0.25rem;
+      white-space: nowrap;
+      //font-size: 1.15rem;
   }
   // EOL: form
 
@@ -280,6 +281,10 @@
 
   // Custom checkbox
   .form-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
     padding-left: 0;
   }
 
@@ -315,6 +320,17 @@
     }
   }
 
+  .custom-control-label-link {
+    margin-left: .2em;
+    padding: 0 !important;
+    text-decoration: underline;
+    color: #585077 !important;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
   .custom-control-input:checked ~ .custom-control-label:before {
     border-color: #d6d6d6;
     background-color: #ffffff;
@@ -326,7 +342,7 @@
     //height: 24px;
     border-radius: 1px;
     background-color: #585077;
-    background-image: none;
+    //background-image: none;
   }
 
   .custom-control-input:checked ~ .custom-control-label:after {
@@ -548,13 +564,28 @@
       width: 30px;
       height: 20px;
       display: block;
+
+      &.default {
+        display: block;
+      }
+
+      &.hovered {
+        display: none;
+      }
     }
 
-    .fa-long-arrow-right {
-      position: absolute;
-      right: 32px;
-      top: 38%;
-      font-size: 2.25rem;
+    &:hover {
+      color: #d8cdba;
+
+      img {
+        &.default {
+          display: none;
+        }
+
+        &.hovered {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -608,26 +639,22 @@ h5 {
   cursor: pointer;
 }
 
-// Media
-@media(max-width: 1899px) {}
-
-@media(max-width: 1599px) {}
-
-@media(max-width: 1399px) {}
-
-@media(max-width: 1199px) {
-  // Fonts
-  .font-r-14 {
-    font-size: 1.26rem !important;
-  }
-  .font-r-16 {
-    font-size: 1.44rem !important;
-  }
+// Fonts
+.font-r-14 {
+  font-size: 1.26rem !important;
+}
+.font-r-16 {
+  font-size: 1.44rem !important;
 }
 
+// Media
 @media(max-width: 991px) {
   .head-section {
     height: 40vh;
+
+    &:after {
+      height: 40vh;
+    }
   }
 }
 
@@ -640,9 +667,24 @@ h5 {
   .verification {
     min-height: 520px;
   }
-}
 
-@media(max-width: 767px) {}
+  .form-control {
+    font-size: 12pt !important;
+
+    &::-webkit-input-placeholder {
+      font-size: 12pt !important;
+    }
+    &::-moz-placeholder {
+      font-size: 12pt !important;
+    }
+    &:-ms-input-placeholder {
+      font-size: 12pt !important;
+    }
+    &:-moz-placeholder {
+      font-size: 12pt !important;
+    }
+  }
+}
 
 @media(max-width: 599px) {
   .logo2 {
@@ -691,8 +733,8 @@ h5 {
   }
 
   .sign-in-and-sign-up {
-    width: 96%;
-    max-width: 450px;
+    width: 96% !important;
+    max-width: 450px !important;
   }
 
   .submit-button {
@@ -706,12 +748,6 @@ h5 {
 
   .options {
     flex-direction: column;
-  }
-
-  .forgot-password {
-    margin-left: inherit;
-    margin-top: 10px;
-    font-size: 1.15rem;
   }
 
   .custom-control-label {
@@ -737,4 +773,168 @@ h5 {
   .custom-control-label {
     font-size: .975rem;
   }
+
+  .sign-in-and-sign-up {
+    width: 96% !important;
+    max-width: 320px !important;
+  }
+}
+
+
+// MODAL Terms and conditions
+.modal-backdrop {
+  display: none;
+
+  &.active {
+    display: block;
+    z-index: 1040;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparentize(#000, .5);
+  }
+}
+
+.terms-and-conditions-info {
+  display: none;
+
+  &.active {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    outline: 0;
+
+    .modal-dialog {
+      width: 86% !important;
+      max-width: 1200px !important;
+      height: 75vh;
+      margin: 1.75rem auto;
+      background: #fff;
+    }
+
+    button.close {
+      z-index: 3;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 22px;
+      height: 22px;
+      line-height: 1;
+      padding: 0;
+      margin: 0;
+      font-size: 1rem !important;
+      background-color: #b3b3b3;
+      color: #fff;
+      border: none;
+    }
+
+    .modal-content {
+      position: relative;
+      height: 100%;
+    }
+
+    .decoration-element-mobile {
+      display: none;
+    }
+
+    .modal-body {
+      position: relative;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      height: 100%;
+      padding: 0 !important;
+      z-index: 2;
+      background-color: #fff;
+    }
+
+    .left-side {
+      width: 25%;
+      background-color: #585077;
+    }
+
+    .modal-body-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 30px 3vw;
+    }
+
+    .text-content {
+      width: 100%;
+      padding: 20px;
+      border-radius: 2.5px;
+      background-color: #fffaf0;
+      text-align: left;
+    }
+
+    .heading {
+      margin-bottom: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .text {
+      font-size: .875rem;
+    }
+
+    .image-container {
+      width: 13vh;
+      margin: 2vh auto 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .right-side {
+      width: 75%;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  // Modal
+  .terms-and-conditions-info {
+    &.active {
+      .image-container {
+        width: 9vh !important;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  // Modal
+  .left-side {
+    display: none;
+  }
+
+  // decoration element
+  .decoration-element-mobile {
+    z-index: 1;
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    transform: translate(0, -50%);
+    width: 12px;
+    height: 95%;
+    border-radius: 20px;
+    background-color: #585077;
+  }
+
+  // EOL: modal
 }
