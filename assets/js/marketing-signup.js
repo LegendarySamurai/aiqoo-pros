@@ -1,7 +1,7 @@
 //--  slick INIT
 //--------------------------------
 
-const isDesktop = window.innerWidth >= 768;
+const isDesktop = window.innerWidth >= 992;
 if (isDesktop) {
 	$('#slick-container').slick({
 		rows: 1,
@@ -26,7 +26,7 @@ if (isDesktop) {
 
 //--  ?
 //--------------------------------
-const isMobile = window.innerWidth < 768;
+const isMobile = window.innerWidth < 992;
 
 // Button LETS GO on click shows form
 const letsGoBtn = document.querySelector('.lets-go-btn');
@@ -34,7 +34,6 @@ const formWrapper = document.querySelector('.back-layer');
 const inner = document.querySelector('.inner');
 const body = document.querySelector('body');
 let popupVisible = false;
-
 
 letsGoBtn.addEventListener('click', function() {
 	// console.log('IS MOBILE');
@@ -78,7 +77,7 @@ const qualityCardsUnderlay = document.querySelector('.quality-cards-underlay');
 
 qualityCards.forEach(card => {
 	// for desktop
-	if (!isMobile) {
+	if (isDesktop) {
 		card.addEventListener('mouseover', function () {
 			this.classList.add('show');
 			this.classList.remove('hide');
@@ -98,8 +97,10 @@ qualityCards.forEach(card => {
 	}
 });
 
+
+
 // for desktop
-if (!isMobile) {
+if (isDesktop) {
 	qualityCardsContainer.addEventListener('mouseover', function() {
 		this.classList.add('show-underlay');
 		this.classList.remove('hide-underlay');
@@ -114,25 +115,22 @@ if (!isMobile) {
 if (isMobile) {
 	qualityCardsContainer.addEventListener('click', function() {
 		if (!qualityCardsContainer.classList.contains('show-underlay')) {
-			console.log('click 1');
+			// console.log('click 1');
 			qualityCardsContainer.classList.add('show-underlay');
 		}
 		else if (qualityCardsContainer.classList.contains('hide-underlay')) {
-			console.log('click 3');
+			// console.log('click 3');
 			qualityCardsContainer.classList.remove('hide-underlay');
 		}
 		else {
 			return;
 		}
-
-		// 'hide-underlay'
-		// 'show-underlay'
 	});
 
 	qualityCardsUnderlay.addEventListener('click', function(e) {
 		e.stopPropagation();
 		if (qualityCardsContainer.classList.contains('show-underlay') && !qualityCardsContainer.classList.contains('hide-underlay')) {
-			console.log('click 2');
+			// console.log('click 2');
 			qualityCardsContainer.classList.add('hide-underlay');
 		}
 

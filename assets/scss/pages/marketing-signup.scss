@@ -23,7 +23,7 @@
 
   width: 100%;
 
-  @media(min-width: 768px) {
+  @media(min-width: 992px) {
     position: fixed;
     height: $page-height;
     overflow: hidden;
@@ -99,7 +99,7 @@
       color: #fff;
       border-radius: 5px;
       font-family: "Raleway", sans-serif;
-      font-weight: 300;
+      font-weight: 500;
 
       &:hover, &:focus {
         background-color: #585077;
@@ -152,11 +152,10 @@
     position: relative;
     width: 100%;
 
-    @media(min-width: 768px) {
+    @media(min-width: 992px) {
       height: 62vh;
       padding: 2vh 5vw 3vh;
     }
-    //background-color: grey; // !!!!!!!!!
   }
 
   .content-inner {
@@ -167,7 +166,7 @@
     align-items: flex-end;
     pointer-events: none;
 
-    @media(min-width: 768px) {
+    @media(min-width: 992px) {
       margin-top: -21vh;
     }
   }
@@ -185,7 +184,7 @@
       display: none;
     }
 
-    @media(min-width: 768px) {
+    @media(min-width: 992px) {
       width: 25vw;
       height: 78vh;
     }
@@ -219,7 +218,7 @@
     //background-color: #fff;
     pointer-events: auto;
 
-    @media(min-width: 768px) {
+    @media(min-width: 992px) {
       width: 60vw;
     }
 
@@ -246,7 +245,7 @@
       font-size: 2.5vh;
       //background-color: chartreuse; // !!!!!!!!!
 
-      @media(min-width: 768px) {
+      @media(min-width: 992px) {
         height: 19vh;
       }
     }
@@ -264,7 +263,7 @@
           display: block;
         }
       }
-      @media(min-width: 768px) {
+      @media(min-width: 992px) {
         &.reviews-desktop {
           display: block;
         }
@@ -652,7 +651,7 @@
       background-image: url('../images/confirm-white.svg');
       background-repeat:  no-repeat;
       background-position: center;
-      background-size: 50% auto;
+      background-size: 70% auto;
       height: 1.875vh;
     }
   }
@@ -662,13 +661,20 @@
     display: flex;
     align-items: center;
     width: 100%;
-    //min-height: 3vh;
     margin-bottom: 0;
     padding-top: 0 !important;
-    padding-left: 14% !important;
+    padding-left: 10% !important;
     vertical-align: top;
     cursor: pointer;
     font-size: 1.65vh;
+
+    @media(max-width: 1199px) {
+      padding-left: 12% !important;
+    }
+
+    @media(max-width: 991px) {
+      padding-left: 14% !important;
+    }
 
     &:before {
       display: block;
@@ -692,7 +698,7 @@
     margin-left: .2em;
     padding: 0 !important;
     text-decoration: underline;
-    font-size: 1.65vh !important;
+    font-size: 1.35vh !important;
     color: #585077 !important;
   }
 
@@ -787,6 +793,7 @@ img {
 
     &:hover {
       color: #d8cdba;
+      font-weight: 600;
 
       img {
         &.default {
@@ -938,7 +945,7 @@ footer {
   pointer-events: none;
   background-color: transparent;
 
-  @media(min-width: 768px) {
+  @media(min-width: 992px) {
     padding-top: calc(100vh - #{$height});
   }
 
@@ -1023,7 +1030,7 @@ footer {
   h4 {
     font-size: 1.75vh;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       display: flex;
       align-items: center;
       height: $height;
@@ -1216,6 +1223,7 @@ textarea:focus, input:focus {
 
       img {
         width: 100%;
+        height: 100%;
       }
     }
 

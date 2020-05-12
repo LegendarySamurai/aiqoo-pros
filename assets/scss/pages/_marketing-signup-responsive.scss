@@ -82,6 +82,15 @@
 }
 
 @media(max-width: 1199px) {
+  // form
+  .input-group {
+    height: 5vh;
+
+    .input-group-text {
+      width: 45px !important;
+    }
+  }
+
   // Head section
   .head-section-body {
     .aiqoo-logo-outer {
@@ -181,7 +190,54 @@
   }
 }
 
-@media(max-width: 999px) {
+@media(max-width: 991px) {
+  //// form
+  //.input-group {
+  //  height: 5vh;
+  //
+  //  .input-group-text {
+  //    width: 45px !important;
+  //  }
+  //}
+
+  // Head section
+  h2 {
+    font-size: 2.35vh !important;
+  }
+
+  .head-section-inner {
+    padding-left: 11vw !important;
+  }
+
+  .aiqoo-logo-inner {
+    padding: 1vh 1vw 1vh 10vw !important;
+  }
+
+  // Cards
+  .cards-container {
+    width: 96% !important;
+    height: auto;
+    margin: 2vh auto !important;
+  }
+
+  // Quality cards
+  .quality-card {
+    width: 96%;
+    //height: 200px;
+    height: 130px;
+    margin-bottom: 10px;
+
+    .quality-card-content {
+      &:before {
+        top: 0;
+      }
+    }
+  }
+
+  .quality-card-text {
+    font-size: 1.5vh !important;
+  }
+
   // Head section
   .head-section-body {
     padding-left: 4vw;
@@ -199,18 +255,35 @@
   .top-text {
     max-width: 90%;
     margin: 0vh auto 0;
+    font-size: 11.25pt;
+
+    span {
+      font-size: 11.25pt;
+    }
   }
 
-  // Cards
-  .cards-container {
-    width: 96% !important;
-    margin: 2vh auto !important;
-  }
-
-  // Reviews
+  // Slick
   .reviews {
     width: 96% !important;
     margin: 2vh auto !important;
+
+    .review-card {
+      .rate {
+        width: 10vw !important;
+      }
+
+      .author-name {
+        font-size: inherit !important;
+      }
+
+      .location {
+        font-size: inherit !important;
+      }
+
+      .text {
+        font-size: inherit !important;
+      }
+    }
   }
 
   // Side block
@@ -235,6 +308,19 @@
 
   // Footer
   footer {
+    .links-container {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+
+    .decoration-element {
+      display: none !important;
+    }
+
+    .terms-and-conditions {
+      margin-top: 5px !important;
+    }
+
     .sticky-logo-container {
       z-index: 900 !important;
       background-color: transparent !important;
@@ -247,83 +333,6 @@
 
     .footer-col {
       width: 40% !important;
-    }
-  }
-}
-
-@media(max-width: 991px) {
-  // Head section
-  h2 {
-    font-size: 2.35vh !important;
-  }
-
-  .head-section-inner {
-    padding-left: 11vw !important;
-  }
-
-  .aiqoo-logo-inner {
-    padding: 1vh 1vw 1vh 10vw !important;
-  }
-
-  // Quality cards
-  .quality-card {
-    width: 96%;
-    height: 200px;
-    margin-bottom: 10px;
-
-    .quality-card-content {
-      &:before {
-        top: 0;
-      }
-    }
-  }
-
-  .quality-card-text {
-    font-size: 1.5vh !important;
-  }
-
-  .top-text {
-    font-size: 11.25pt;
-
-    span {
-      font-size: 11.25pt;
-    }
-  }
-
-  // Slick
-  .reviews {
-    .review-card {
-      .rate {
-        width: 10vw !important;
-      }
-
-      .author-name {
-        font-size: inherit !important;
-      }
-
-      .location {
-        font-size: inherit !important;
-      }
-
-      .text {
-        font-size: inherit !important;
-      }
-    }
-  }
-
-  // Footer
-  footer {
-    .links-container {
-      flex-direction: column !important;
-      align-items: flex-start !important;
-    }
-
-    .decoration-element {
-      display: none !important;
-    }
-
-    .terms-and-conditions {
-      margin-top: 5px !important;
     }
   }
 
@@ -416,7 +425,7 @@
       }
 
       .quality-card-text {
-        font-size: 1.75vh !important;
+        //font-size: 1.75vh !important;
       }
     }
   }
@@ -464,15 +473,6 @@
 
   .aiqoo-logo {
     width: 40% !important;
-  }
-
-  // form
-  .input-group {
-    height: 5vh;
-
-    .input-group-text {
-      width: 45px !important;
-    }
   }
 
   .form-control {

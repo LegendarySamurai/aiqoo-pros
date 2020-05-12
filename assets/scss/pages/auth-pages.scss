@@ -329,6 +329,7 @@
     background-color: transparent;
     border: 1px solid transparent;
     cursor: pointer;
+    font-size: 1.35vh !important;
   }
 
   .custom-control-input:checked ~ .custom-control-label:before {
@@ -337,12 +338,19 @@
   }
 
   .custom-control-input:checked ~ .custom-control-label:after {
-    //left: -16px;
-    //width: 24px;
-    //height: 24px;
-    border-radius: 1px;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 2.75px !important;
+    left: 3px !important;
+    width: 1.875vh;
+    height: 1.875vh;
+    background-image: url('../images/confirm-white.svg');
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: 70% auto;
     background-color: #585077;
-    //background-image: none;
+    border-radius: 1px;
   }
 
   .custom-control-input:checked ~ .custom-control-label:after {
@@ -498,13 +506,6 @@
       &:focus {
         box-shadow: none !important;
       }
-
-      .fa-long-arrow-right {
-        position: absolute;
-        right: 32px;
-        top: 38%;
-        font-size: 2.25rem;
-      }
     }
   }
 }
@@ -576,6 +577,7 @@
 
     &:hover {
       color: #d8cdba;
+      font-weight: 600;
 
       img {
         &.default {
