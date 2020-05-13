@@ -288,8 +288,6 @@
     }
 
     .big-card {
-      pointer-events: auto;
-
       @media(max-width: 991px) {
         position: fixed !important;
         top: 50% !important;

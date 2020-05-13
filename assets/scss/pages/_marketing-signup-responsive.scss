@@ -225,6 +225,7 @@
   }
 }
 
+// Mobile starts here
 @media(max-width: 991px) {
   // Head section
   h2 {
@@ -249,9 +250,8 @@
   // Quality cards
   .quality-card {
     width: 96%;
-    //height: 200px;
     height: 130px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     .quality-card-content {
       &:before {
@@ -333,7 +333,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 19vw;
+    width: 12vw;
 
     img {
       width: 100%;
@@ -352,7 +352,7 @@
   .content-section {
     .content-inner {
       .side-block-wrapper {
-        width: 100% !important;
+        //width: 100% !important;
         //margin: 2vh auto 0;
       }
     }
@@ -374,6 +374,8 @@
   .account-verification {
     &.is-active {
       width: 100% !important;
+      max-width: 450px;
+      margin: 0 auto !important;
     }
   }
 
@@ -460,8 +462,29 @@
     border-radius: 20px;
     background-color: #585077;
   }
-
   // EOL: modal
+
+  // Content
+  .content-inner {
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+
+  .content {
+    width: 100% !important;
+    max-width: 96% !important;
+  }
+
+  // Side block
+  .content-section {
+    .content-inner {
+      .side-block-wrapper {
+        width: 100% !important;
+        max-width: 96% !important;
+        margin: 0 auto;
+      }
+    }
+  }
 
   // Quality cards
   .cards-container {
@@ -812,14 +835,6 @@
     padding: 1vh 2vw 3vh !important;
     margin-top: 0 !important;
     //padding: 4vh 2vw 3vh !important;
-  }
-
-  .content-inner {
-    flex-direction: column !important;
-  }
-
-  .content {
-    width: 100% !important;
   }
 
   .top-text {

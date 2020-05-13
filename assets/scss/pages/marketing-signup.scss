@@ -351,6 +351,9 @@
         //}
 
         &:hover {
+          color: #d8cdba;
+          font-weight: 600;
+
           //img {
           //  &.default {
           //    display: none;
@@ -410,11 +413,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 60vw;
+    margin-top: 21vh;
     pointer-events: auto;
 
-    @media(min-width: 992px) {
-      width: 60vw;
-      margin-top: 21vh;
+    @media(max-width: 991px) {
+      margin-top: 0;
     }
 
     h1 {
@@ -450,7 +454,7 @@
       height: 10vh;
       //background-color: chartreuse; // !!!!!!!!!
 
-      @media(max-width: 599px) {
+      @media(max-width: 991px) {
         &.reviews-desktop {
           display: none;
         }
