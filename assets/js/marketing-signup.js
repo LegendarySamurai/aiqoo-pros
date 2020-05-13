@@ -53,19 +53,19 @@ inner.addEventListener('click', () => {
 });
 
 
-// Button LETS START on click shows sms verification
-const letsStartBtns = document.querySelectorAll('.submit-sign-up-form-input');
-// const sideBlockForm = document.querySelector('.side-block');
-// const accountVerification = document.querySelector('.account-verification');
-
-letsStartBtns.forEach(btn => {
-	btn.addEventListener('click', (e) => {
-		e.preventDefault();
-		// sideBlockForm.classList.add('disabled');
-		// accountVerification.classList.add('is-active');
-		// console.log(e.target, '=> works');
-	});
-});
+// // Button LETS START on click shows sms verification
+// const letsStartBtns = document.querySelectorAll('.submit-sign-up-form-input');
+// // const sideBlockForm = document.querySelector('.side-block');
+// // const accountVerification = document.querySelector('.account-verification');
+//
+// letsStartBtns.forEach(btn => {
+// 	btn.addEventListener('click', (e) => {
+// 		e.preventDefault();
+// 		// sideBlockForm.classList.add('disabled');
+// 		// accountVerification.classList.add('is-active');
+// 		// console.log(e.target, '=> works');
+// 	});
+// });
 
 
 // QUALITY CARDS on hover adds underlay
@@ -116,7 +116,7 @@ if (isDesktop) {
 	$('.big-card').mouseleave(function() {
 		$('.quality-cards').addClass('hide-underlay');
 		$('.quality-card').addClass('hide');
-		console.log('MOUSE OUT');
+		// console.log('MOUSE OUT');
 	});
 
 	// $('.quality-cards-underlay').mouseover(function() {

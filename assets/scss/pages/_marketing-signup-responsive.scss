@@ -128,11 +128,11 @@
 
   .side-block {
     h4 {
-      font-size: 1.875vh;
+      //font-size: 1.875vh;
     }
 
     .special-offer-text {
-      font-size: 1.75vh !important;
+      //font-size: 1.75vh !important;
     }
   }
 
@@ -142,7 +142,31 @@
   }
 
   // Slick
+  //.reviews {
+  //
+  //  .review-card {
+  //    .rate {
+  //      width: 10vw !important;
+  //    }
+  //
+  //    .author-name {
+  //      font-size: inherit !important;
+  //    }
+  //
+  //    .location {
+  //      font-size: inherit !important;
+  //    }
+  //
+  //    .text {
+  //      font-size: inherit !important;
+  //    }
+  //  }
+  //}
+
+  // Slick
   .reviews {
+    width: 96% !important;
+    margin: 2vh auto !important;
     .slick-container {
       &:after {
         display: none !important;
@@ -165,6 +189,17 @@
       .text {
         font-size: 1.25vh !important;
       }
+    }
+  }
+
+  // Side block
+  .form-check {
+    .custom-control-label-text {
+      font-size: 1.5vh;
+    }
+
+    .custom-control-label-link {
+      font-size: 1.125vh !important;
     }
   }
 
@@ -191,15 +226,6 @@
 }
 
 @media(max-width: 991px) {
-  //// form
-  //.input-group {
-  //  height: 5vh;
-  //
-  //  .input-group-text {
-  //    width: 45px !important;
-  //  }
-  //}
-
   // Head section
   h2 {
     font-size: 2.35vh !important;
@@ -244,6 +270,10 @@
   }
 
   // Content
+  .content-inner {
+    align-items: flex-start !important;
+  }
+
   .content-section {
     padding: 2vh 2vw 3vh !important;
   }
@@ -262,33 +292,74 @@
     }
   }
 
-  // Slick
-  .reviews {
-    width: 96% !important;
-    margin: 2vh auto !important;
+  // Review cards
+  .review-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+  }
 
-    .review-card {
-      .rate {
-        width: 10vw !important;
-      }
+  .image-container {
+    flex-shrink: 0;
+    width: 100px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
 
-      .author-name {
-        font-size: inherit !important;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
 
-      .location {
-        font-size: inherit !important;
-      }
+  .review-container {
+    flex-grow: 1;
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 
-      .text {
-        font-size: inherit !important;
-      }
+  .rate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 19vw;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .content {
+    .text {
+      font-size: 1.35vh !important;
     }
   }
 
   // Side block
+  .content-section {
+    .content-inner {
+      .side-block-wrapper {
+        width: 100% !important;
+        //margin: 2vh auto 0;
+      }
+    }
+  }
+
   .side-block {
-    width: 38% !important;
+    width: 100% !important;
     box-shadow: none;
     background: transparent;
 
@@ -302,7 +373,7 @@
   // SMS verification
   .account-verification {
     &.is-active {
-      width: 38% !important;
+      width: 100% !important;
     }
   }
 
@@ -323,7 +394,7 @@
 
     .sticky-logo-container {
       z-index: 900 !important;
-      background-color: transparent !important;
+      //background-color: transparent !important;
     }
 
     .footer-outer {
@@ -633,12 +704,22 @@
     display: block !important;
     margin-left: 16vw;
     margin-top: 10px !important;
-    
+
     img {
       position: absolute;
-      top: 50%;
-      right: 30px;
-      transform: translate(0, -50%);
+      right: 3vw;
+      top: 1.5vh;
+      width: 30px;
+      height: 20px;
+      display: block;
+
+      &.default {
+        display: block;
+      }
+
+      &.hovered {
+        display: none;
+      }
     }
   }
 
@@ -747,67 +828,71 @@
     }
   }
 
-  // Review cards
-  .review-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%;
-  }
-
-  .image-container {
-    flex-shrink: 0;
-    width: 100px;
-    margin-right: 10px;
-    padding: 10px;
-    border-radius: 10px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-  }
-
-  .review-container {
-    flex-grow: 1;
-    position: relative;
-    width: auto;
-    height: 100%;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .rate {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 19vw;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  .content {
-    .text {
-      font-size: 1.35vh !important;
-    }
-  }
+  //// Review cards
+  //.review-card {
+  //  display: flex;
+  //  flex-direction: row;
+  //  justify-content: space-between;
+  //  align-items: flex-start;
+  //  width: 100%;
+  //  height: 100%;
+  //}
+  //
+  //.image-container {
+  //  flex-shrink: 0;
+  //  width: 100px;
+  //  margin-right: 10px;
+  //  padding: 10px;
+  //  border-radius: 10px;
+  //
+  //  img {
+  //    width: 100%;
+  //    height: 100%;
+  //    object-fit: cover;
+  //    border-radius: 10px;
+  //  }
+  //}
+  //
+  //.review-container {
+  //  flex-grow: 1;
+  //  position: relative;
+  //  width: auto;
+  //  height: 100%;
+  //  padding-top: 10px;
+  //  display: flex;
+  //  flex-direction: column;
+  //  align-items: flex-start;
+  //  justify-content: flex-start;
+  //}
+  //
+  //.rate {
+  //  position: absolute;
+  //  top: 10px;
+  //  right: 10px;
+  //  width: 19vw;
+  //
+  //  img {
+  //    width: 100%;
+  //    height: 100%;
+  //    object-fit: contain;
+  //  }
+  //}
+  //
+  //.content {
+  //  .text {
+  //    font-size: 1.35vh !important;
+  //  }
+  //}
 
   // Side block
-  .side-block {
-    width: 100% !important;
-    max-width: 96% !important;
-    margin: 2vh auto 0;
+  .content-section {
+    .content-inner {
+      .side-block-wrapper {
+        width: 100% !important;
+        max-width: 96% !important;
+        margin: 2vh auto 0;
+      }
+    }
   }
 
   .special-offers {

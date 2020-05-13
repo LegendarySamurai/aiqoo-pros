@@ -4,12 +4,9 @@
 
   .search {
     position: sticky;
-    //top: 150px;
-    //top: 90px;
     z-index: 200;
     align-items: flex-end;
     width: calc(100% + 17px);
-    //height: 100px;
     margin-left: -15px;
     padding-left: 15px;
     background-color: #fff;
@@ -17,8 +14,6 @@
     height: 60px;
     top: 100px;
     padding-top: 20px;
-    //padding-left: 0;
-    //margin-left: 0;
 
     &.big-space {
       top: 230px;
@@ -26,6 +21,7 @@
 
     .title {
       white-space: nowrap;
+
     }
 
     .input-group {
