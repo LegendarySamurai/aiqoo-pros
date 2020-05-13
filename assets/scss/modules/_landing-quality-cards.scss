@@ -288,6 +288,8 @@
     }
 
     .big-card {
+      pointer-events: auto;
+
       @media(max-width: 991px) {
         position: fixed !important;
         top: 50% !important;
@@ -432,6 +434,10 @@
 
     .small-card {
       opacity: 1;
+
+      @media(max-width: 991px) {
+        pointer-events: auto;
+      }
     }
 
     @keyframes big-card-exit-animation {
@@ -457,23 +463,12 @@
     @media(max-width: 991px) {
       @keyframes big-card-exit-animation-m {
         0% {
-          transform: scale(1) translate(0, -50%);
-          width: 90%;
-          height: 150%;
-          opacity: 1;
-        }
-
-        50% {
-          transform: scale(1) translate(0, -50%);
-          width: 90%;
-          height: 150%;
+          width: 100%;
           opacity: 1;
         }
 
         100% {
-          transform: scale(.75) translate(0, -50%);
           width: 100%;
-          height: 100%;
           opacity: 0;
         }
       }
@@ -525,6 +520,8 @@
     }
 
     .big-card {
+      pointer-events: none;
+
       &:not(.b) {
         @media(max-width: 991px) {
           animation-name: big-card-exit-animation-m;
@@ -541,7 +538,7 @@
 
       &.b {
         @media(max-width: 991px) {
-          animation-name: big-card-b-exit-animation-m;
+          animation-name: big-card-exit-animation-m;
         }
         @media(min-width: 992px) {
           animation-name: big-card-b-exit-animation;

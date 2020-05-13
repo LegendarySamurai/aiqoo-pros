@@ -164,11 +164,15 @@ body {
     padding-left: 10px;
   }
 
-  //.menu-item-icon {
-  //  display: flex;
-  //  align-items: center;
-  //  width: 20px;
-  //}
+  .menu-item-icon {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 16pt;
+      color: #fff;
+    }
+  }
   //
   //.menu-item-icon-default {
   //  display: flex;
@@ -208,6 +212,10 @@ body {
       z-index: 1;
       color: #322d48;
       font-weight: bold;
+    }
+
+    .menu-item-icon {
+      color: #322d48;
     }
 
     //.menu-item-icon-default {

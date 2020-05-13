@@ -69,104 +69,103 @@ inner.addEventListener('click', () => {
 
 
 // QUALITY CARDS on hover adds underlay
-const qualityCardsContainer = document.querySelector('.quality-cards');
-const qualityCards = document.querySelectorAll('.quality-card');
-const smallCardsContent = document.querySelectorAll('.quality-card .small-card');
-const bigCardsContent = document.querySelectorAll('.quality-card .big-card');
-const qualityCardsUnderlay = document.querySelector('.quality-cards-underlay');
+const qualityCards = $('.quality-cards');
+const qualityCard = $('.quality-card');
+const smallCard = $('.quality-card .small-card');
+const bigCard = $('.quality-card .big-card');
+const cardsUnderlay = $('.quality-cards-underlay');
+let currentCardOpen = null;
 
-qualityCards.forEach(card => {
-	// for desktop
-	if (isDesktop) {
-		card.addEventListener('mouseover', function () {
-			this.classList.add('show');
-			this.classList.remove('hide');
-
-			if (qualityCardsContainer.classList.contains('hide-underlay')) {
-				qualityCardsContainer.classList.remove('hide-underlay');
-			}
-		});
-
-		// card.addEventListener('mouseout', function () {
-		// 	this.classList.add('hide');
-		// })
-	}
-
-	// for mobile
-	if (isMobile) {
-		card.addEventListener('click', function() {
-			this.classList.add('show');
-			this.classList.remove('hide');
-		});
-	}
+// show big card on mobile
+smallCard.click(function () {
+	const currentCard = currentCardOpen = this;
+	openBigCardOnMobile(currentCard);
 });
 
-// for desktop
-if (isDesktop) {
-	qualityCardsContainer.addEventListener('mouseover', function() {
-		// this.classList.remove('hide-underlay');
-		this.classList.add('show-underlay');
+// hide big card on mobile
+bigCard.click(function (event) {
+	event.stopPropagation();
 
-		if (this.classList.contains('hide-underlay')) {
-		}
+	const currentCard = this;
+	closeBigCardOnMobile(currentCard);
+});
 
+// hide big card on mobile
+cardsUnderlay.click(function (event) {
+	event.stopPropagation();
 
-	});
+	const currentCard = this;
+	closeBigCardOnMobile(currentCardOpen);
+});
 
-	$('.big-card').mouseleave(function() {
-		$('.quality-cards').addClass('hide-underlay');
-		$('.quality-card').addClass('hide');
-		// console.log('MOUSE OUT');
-	});
+smallCard.mouseover(function () {
+	const currentCard = this;
+	openBigCardOnDesktop(currentCard);
+});
 
-	// $('.quality-cards-underlay').mouseover(function() {
-	// 	$('.quality-cards').addClass('hide-underlay');
-	// 	$('.quality-cards').removeClass('show-underlay');
-	// 	$('.quality-card').addClass('hide');
-	// });
-	//
-	// $('.quality-cards').mouseleave(function() {
-	// 	$('.quality-cards').removeClass('hide-underlay');
-	// 	$('.quality-cards').removeClass('show-underlay');
-	// });
+bigCard.mouseleave(function (event) {
+	event.stopPropagation();
 
-	// qualityCards.forEach(card => {
-	// 	// 	card.classList.add('hide');
-	// 	// });
-	// qualityCardsContainer.addEventListener('mouseout', function() {
-	// 	this.classList.add('hide-underlay');
-	// });
+	closeBigCardOnDesktop(this);
+	const currentCard = this;
+	closeBigCardOnDesktop (currentCard);
+});
+
+function showUnderlay () {
+	if (!qualityCards.hasClass('hide-underlay')) {
+		qualityCards.addClass('show-underlay');
+	}
+	else {
+		qualityCards.removeClass('hide-underlay');
+	}
 }
 
-// for mobile
-if (isMobile) {
-	qualityCardsContainer.addEventListener('click', function() {
-		if (!qualityCardsContainer.classList.contains('show-underlay')) {
-			// console.log('click 1');
-			qualityCardsContainer.classList.add('show-underlay');
-		}
-		else if (qualityCardsContainer.classList.contains('hide-underlay')) {
-			// console.log('click 3');
-			qualityCardsContainer.classList.remove('hide-underlay');
-		}
-		else {
-			return;
-		}
-	});
+function hideUnderlay () {
+	qualityCards.addClass('hide-underlay');
+}
 
-	qualityCardsUnderlay.addEventListener('click', function(e) {
-		e.stopPropagation();
-		if (qualityCardsContainer.classList.contains('show-underlay') && !qualityCardsContainer.classList.contains('hide-underlay')) {
-			// console.log('click 2');
-			qualityCardsContainer.classList.add('hide-underlay');
-		}
+function openBigCardOnMobile (currentCard) {
+	if (isDesktop) return;
 
-		qualityCards.forEach(card => {
-			card.classList.add('hide');
-		});
-	});
+	if (!$(currentCard).parents('.quality-card').hasClass('hide')) {
+		$(currentCard).parents('.quality-card').addClass('show');
+	}
+	else {
+		$(currentCard).parents('.quality-card').removeClass('hide');
+	}
 
+	showUnderlay();
+}
 
+function closeBigCardOnMobile (currentCard) {
+	if (isDesktop) return;
+
+	$(currentCard).parents('.quality-card').addClass('hide');
+
+	hideUnderlay();
+}
+
+function openBigCardOnDesktop (currentCard) {
+	if (isMobile) return;
+
+	if (!$(currentCard).parents('.quality-card').hasClass('hide')) {
+		$(currentCard).parents('.quality-card').addClass('show');
+	}
+	else {
+		$(currentCard).parents('.quality-card').removeClass('hide');
+	}
+
+	showUnderlay();
+}
+
+function closeBigCardOnDesktop (currentCard) {
+	if (isMobile) return;
+
+	// console.log(currentCard);
+
+	$(currentCard).parents('.quality-card').addClass('hide');
+
+	hideUnderlay();
 }
 
 // Footer scroll to top
