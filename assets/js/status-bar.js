@@ -25,19 +25,19 @@ if (window.innerWidth < 600) {
 }
 
 if (window.innerWidth >= 600) {
-	if (!statusBarCol.classList.contains('filter-opened') && statusBarCol.classList.contains('filter-closed')) {
-		openFilterBtn.addEventListener('click', () => {
+	// statusBarCol.classList.remove('filter-closed');
+	// statusBarCol.classList.remove('filter-opened');
+	openFilterBtn.addEventListener('click', () => {
+		if (statusBarCol.classList.contains('filter-closed')) {
 			console.log(1);
 			statusBarCol.classList.add('filter-opened');
 			statusBarCol.classList.remove('filter-closed');
-		});
-	}
-
-	if (statusBarCol.classList.contains('filter-opened')) {
-		console.log(2);
-		statusBarCol.classList.remove('filter-opened');
-		statusBarCol.classList.add('filter-closed');
-	}
+		} else {
+			console.log(2);
+			statusBarCol.classList.remove('filter-opened');
+			statusBarCol.classList.add('filter-closed');
+		}
+	});
 }
 
 
