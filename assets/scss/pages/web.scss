@@ -215,7 +215,10 @@ body {
     }
 
     .menu-item-icon {
-      color: #322d48;
+      i {
+        color: #322d48;
+      }
+
     }
 
     //.menu-item-icon-default {
