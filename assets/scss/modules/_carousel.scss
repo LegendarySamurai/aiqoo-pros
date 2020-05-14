@@ -245,4 +245,12 @@
   //}
 }
 
+@media (max-width: 460px) {
+  .carousel {
+    &.cards-container {
+      height: 116px !important;
+    }
+  }
+}
+
 

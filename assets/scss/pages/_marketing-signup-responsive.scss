@@ -248,7 +248,7 @@
     padding: 1vh 1vw 1vh 10vw !important;
   }
 
-  // Cards
+  // Quality cards Cards
   .cards-container {
     width: 96% !important;
     height: auto;
@@ -536,20 +536,123 @@
 
   // Head section
   .head-section {
+    height: 28vh !important;
+    padding: 0 !important;
+
+    &::after {
+      display: none !important;
+    }
+
+    &::before {
+      height: 1vh !important;
+    }
+
     .head-section-body {
       .head-section-inner {
-        padding-left: 11.5vw !important;
+        padding-left: 17vw !important;
       }
+    }
+
+    .head-section-inner {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      width: 100% !important;
+      height: 100% !important;
+      padding-left: 0 !important;
 
       h2 {
-        font-size: 2.35vw !important;
+        display: block !important;
+        width: auto !important;
+        line-height: 1 !important;
+        margin: 4vh auto 0 !important;
+        padding: 1.5vh 2vw 1.5vh 2vw !important;
+        background-color: transparentize(#585077, .5);
+        color: #fff !important;
+        border-radius: 10px;
+        font-size: 4vw !important;
+        text-align: center !important;
+      }
+    }
+
+    .aiqoo-logo-inner {
+      padding: 1vh 1vw 1vh 1vw !important;
+
+      img {
+        width: 100%!important;
+      }
+    }
+
+    .aiqoo-logo-outer {
+      top: 1vh;
+      //left: 8vw;
+      width: 120px !important;
+      height: 6vh !important;
+      max-height: 80px;
+      margin: 0 !important;
+      align-self: flex-start;
+      border-top-right-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+    }
+  }
+
+  .head-section-body {
+    .pro-img {
+      width: 8vh !important;
+      top: auto !important;
+      left: 3vw !important;
+      bottom: -1vh;
+    }
+    .head-section-inner {
+      padding-left: 11.5vw !important;
+    }
+
+    h2 {
+      font-size: 2.35vw !important;
+    }
+  }
+
+  // Lets go btn Head section
+  .lets-go-container {
+    position: relative;
+    display: block !important;
+    margin-left: 16vw;
+    margin-top: 10px !important;
+
+    img {
+      position: absolute;
+      right: 3vw;
+      top: 1.5vh;
+      width: 30px;
+      height: 20px;
+      display: block;
+
+      &.default {
+        display: block;
+      }
+
+      &.hovered {
+        display: none;
       }
     }
   }
 
+  .lets-go-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40vw !important;
+    height: 40px !important;
+    margin: 0 auto;
+    margin-top: auto !important;
+    margin-bottom: 2vh !important;
+    font-size: 15pt !important;
+    padding: 0 !important;
+  }
+
   // Content section
   .content-section {
-    margin-top: -4vh;
+    margin-top: 0;
 
     h1 {
       font-size: 4vh !important;
@@ -558,25 +661,6 @@
     .content-inner {
       align-items: baseline !important;
     }
-  }
-
-  // Footer
-  .sticky-logo-container-inner {
-    width: 28vw !important;
-    right: 2.5vw !important;
-  }
-
-  .sticky-logo-wrapper {
-    width: 100% !important;
-  }
-
-  .powered-by {
-    font-size: 1.5vh !important;
-    margin-right: 0 !important;
-  }
-
-  .aiqoo-logo {
-    width: 40% !important;
   }
 
   .form-control {
@@ -593,6 +677,7 @@
     }
   }
 
+  // Side block
   .side-block {
     width: 100% !important;
     max-width: 450px !important;
@@ -658,6 +743,24 @@
         width: 100% !important;
       }
     }
+  }
+
+  .sticky-logo-container-inner {
+    width: 28vw !important;
+    right: 2.5vw !important;
+  }
+
+  .sticky-logo-wrapper {
+    width: 100% !important;
+  }
+
+  .powered-by {
+    font-size: 1.5vh !important;
+    margin-right: 0 !important;
+  }
+
+  .aiqoo-logo {
+    width: 40% !important;
   }
 }
 
@@ -740,115 +843,6 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-  }
-
-  // Lets go btn
-  .lets-go-container {
-    position: relative;
-    display: block !important;
-    margin-left: 16vw;
-    margin-top: 10px !important;
-
-    img {
-      position: absolute;
-      right: 3vw;
-      top: 1.5vh;
-      width: 30px;
-      height: 20px;
-      display: block;
-
-      &.default {
-        display: block;
-      }
-
-      &.hovered {
-        display: none;
-      }
-    }
-  }
-
-  .lets-go-btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 40vw !important;
-    height: 40px !important;
-    margin: 0 auto;
-    margin-top: auto !important;
-    margin-bottom: 2vh !important;
-    font-size: 15pt !important;
-    padding: 0 !important;
-  }
-
-  // Head section
-  .head-section {
-    height: 28vh !important;
-    padding: 0 !important;
-
-    &::after {
-      display: none !important;
-    }
-
-    &::before {
-      height: 1vh !important;
-    }
-
-    .head-section-body {
-      .head-section-inner {
-        padding-left: 17vw !important;
-      }
-    }
-
-    .head-section-inner {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      width: 100% !important;
-      height: 100% !important;
-      padding-left: 0 !important;
-
-      h2 {
-        display: block !important;
-        width: auto !important;
-        line-height: 1 !important;
-        margin: 4vh auto 0 !important;
-        padding: 1.5vh 2vw 1.5vh 2vw !important;
-        background-color: transparentize(#585077, .5);
-        color: #fff !important;
-        border-radius: 10px;
-        font-size: 4vw !important;
-        text-align: center !important;
-      }
-    }
-
-    .aiqoo-logo-inner {
-      padding: 1vh 1vw 1vh 1vw !important;
-
-      img {
-        width: 100%!important;
-      }
-    }
-
-    .aiqoo-logo-outer {
-      top: 1vh;
-      //left: 8vw;
-      width: 120px !important;
-      height: 6vh !important;
-      max-height: 80px;
-      margin: 0 !important;
-      align-self: flex-start;
-      border-top-right-radius: 0 !important;
-      border-top-left-radius: 0 !important;
-    }
-  }
-
-  .head-section-body {
-    .pro-img {
-      width: 8vh !important;
-      top: auto !important;
-      left: 3vw !important;
-      bottom: -1vh;
-    }
   }
 
   // Content section
