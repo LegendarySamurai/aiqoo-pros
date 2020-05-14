@@ -36,8 +36,7 @@
             <div class="top-logo-col">
               <div class="top-logo-container">
                 <div class="top-logo-container-inner system-color-bg-22">
-                  <img src="assets/images/logo/aiqoo-logo-white-middle.png" alt="logo" class="aiqoo-white-logo">
-                  <img src="assets/images/logo/pros-white-middle.png" alt="logo" class="pros-white-logo">
+                  <img src="assets/images/logo/white-logo.png" alt="logo" class="aiqoo-white-logo">
                 </div>
               </div>
               <div class="close-button">
@@ -405,7 +404,7 @@
                                 </div>
                                 <div class="status-bar-inner-body">
                                   <!-- Search mobile -->
-                                  <div class="search mb-3 mb-lg-0">
+                                  <div class="search mb-3 mb-lg-0 d-none">
                                     <div class="input-group">
                                       <div class="input-group-prepend"><i class="far fa-search font-r-13"></i></div>
                                       <input type="text" class="form-control font-r-13" placeholder="Search">
@@ -413,10 +412,8 @@
                                   </div>
                                   <!-- EOL: Search mobile -->
 
-                                  <!-- EOL: For mobile devices -->
-
                                   <!-- status-panel -->
-                                  <div class="status-panel d-none">
+                                  <div class="status-panel">
                                     <div class="title font-r-13">Task Status</div>
                                     <div class="status-panel-inner">
                                       <div class="status-item font-r-13">
@@ -452,8 +449,8 @@
                                   <!-- EOL: date -->
 
                                   <!-- user -->
-                                  <div class="user d-none">
-                                    <div class="title font-r-13">User</div>
+                                  <div class="user">
+                                    <div class="title font-r-13 my-3">User</div>
                                     <div class="user-info">
                                       <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
                                       <span class="user-name font-r-13">George Ezra<i class="far fa-chevron-down"></i></span>
@@ -481,7 +478,7 @@
                                                  data-parent="#accordionOne">
                                               <div class="w-100 my-2 collapse-item">
 
-                                                <div class="task-type-list">
+                                                <div class="type-list">
                                                   <!-- color classes : .system-a-b-bg# in _colors.scss -->
                                                   <div class="custom-control custom-checkbox system-a-b-bg1">
                                                     <label class="custom-control-label font-weight-600 font-r-10">
@@ -570,8 +567,117 @@
                                   </div>
                                   <!-- EOL: Task Type -->
 
+                                  <!-- Category type -->
+                                  <div class="category-type">
+                                    <div class="collapse-body">
+                                      <div class="accordion-items">
+                                        <div id="accordionFive" class="accordion-item">
+                                          <div class="card-accordion-item">
+                                            <div class="card-accordion-header" id="headingFive">
+                                              <!-- this is collapse grey header -->
+                                              <div class="collapse-btn collapsed" data-toggle="collapse"
+                                                   data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                <span class="title font-r-13">Category</span>
+                                                <i class="far fa-chevron-down pt-lg-1"></i>
+                                              </div>
+                                              <!-- EOL: collapse grey header -->
+                                            </div>
+
+                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                                 data-parent="#accordionFive">
+                                              <div class="w-100 my-2 collapse-item">
+
+                                                <div class="type-list">
+                                                  <!-- color classes : .system-a-b-bg# in _colors.scss -->
+                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Roofing</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg2">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Heating & Cooling</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg3">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Garages</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg4">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">ADU</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg5">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Water damage</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg6">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Water damage</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg7">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Water damage</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg8">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Water damage</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg9">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Water damage</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg10">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Water damage</span>
+                                                    </label>
+                                                  </div>
+                                                  <div class="custom-control custom-checkbox system-a-b-bg11">
+                                                    <label class="custom-control-label font-weight-600 font-r-10">
+                                                      <input type="checkbox" class="custom-control-input">
+                                                      <span class="custom-checkbox-ui"></span>
+                                                      <span class="input-label">Water damage</span>
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- EOL: Category type -->
+
                                   <!-- Lead management -->
-                                  <div class="lead-management">
+                                  <div class="lead-management d-none">
                                     <div class="collapse-body">
                                       <div class="accordion-items">
                                         <div id="accordionTwo" class="accordion-item">
@@ -643,7 +749,7 @@
                                   <!-- EOL: Lead management -->
 
                                   <!-- Project management -->
-                                  <div class="project-management">
+                                  <div class="project-management d-none">
                                     <div class="collapse-body">
                                       <div class="accordion-items">
                                         <div id="accordionThree" class="accordion-item">
@@ -701,7 +807,7 @@
                                   <!-- EOL: Project management -->
 
                                   <!-- Other -->
-                                  <div class="other">
+                                  <div class="other d-none">
                                     <div class="collapse-body">
                                       <div class="accordion-items">
                                         <div id="accordionFour" class="accordion-item">

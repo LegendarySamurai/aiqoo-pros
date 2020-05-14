@@ -967,6 +967,12 @@ body {
 //**************** PAGES ****************//
 //**** Leads list ****//
 .leads-list {
+  height: 100%;
+
+  .container-fluid > .row {
+    height: 100%;
+  }
+
   // Reset common styles only for this page
   .custom-control {
     padding-left: 0;

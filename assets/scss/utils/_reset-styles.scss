@@ -29,6 +29,7 @@ button {
 
 button:focus {
   box-shadow: unset;
+  outline: none !important;
 }
 
 textarea:focus, input:focus {

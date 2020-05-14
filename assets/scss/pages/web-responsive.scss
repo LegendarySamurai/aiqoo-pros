@@ -207,7 +207,7 @@
 
   // Left side container
   .left-side-col {
-    z-index: 20;
+    z-index: 23;
     position: static;
     min-width: inherit;
     width: auto;
@@ -224,7 +224,7 @@
   }
 
   .mobile-menu-ope-btn {
-    z-index: 12;
+    z-index: 23;
     position: fixed;
     left: 0;
     flex: 1;
@@ -496,6 +496,7 @@
   }
 
   .fixed-top-panel-d {
+    z-index: 22;
     background-color: transparent;
     pointer-events: none;
   }
@@ -758,6 +759,14 @@
 // ******** Pages **********//
 
 .leads-list {
+  .status-bar-heading {
+    //margin-left: 15px;
+  }
+}
+
+.leads-list,
+.support-page,
+.my-tasks {
   @media(max-width: 599px) {
     // For pages which has Filter (status-bar)
     .status-bar-col {
@@ -768,11 +777,12 @@
     }
 
     .status-bar-heading {
-      //z-index: 10;
-      //top: 140px;
-      top: 70px;
-      height: 40px;
-      box-shadow: none;
+      z-index: 10;
+      top: 140px;
+      //top: 70px;
+      //height: 40px;
+      //box-shadow: none;
+      //z-index: 22;
       //background-color: transparentize(coral, .5);
     }
 
@@ -2501,9 +2511,11 @@
   @media(max-width: 599px) {
     .content {
       position: relative;
+      margin-top: 90px;
+      z-index: 2;
 
       .new-ticket {
-        z-index: 10;
+        z-index: 21;
         position: fixed;
         bottom: 10px;
         right: 10px;

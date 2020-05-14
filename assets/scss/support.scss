@@ -167,6 +167,13 @@ img {
     height: 85%;
     border-radius: 20px;
   }
+
+  .left-side-col {
+    @media(max-width: 767px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
 }
 
 .left-side-col {
