@@ -8,17 +8,20 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-          crossorigin="anonymous"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"-->
+  <!--        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
+  <!--        crossorigin="anonymous"></script>-->
+  <!--<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
           integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
           crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
-        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
-
   <link href="assets/css/web.css" rel="stylesheet"/>
   <link href="assets/css/web-responsive.css" rel="stylesheet"/>
 
@@ -932,10 +935,30 @@
                                 <div class="header-col locations-col">Locations</div>
                                 <div class="header-col meeting-col">Meeting</div>
                                 <div class="header-col atemptes-col">
-                                  Call Atemptes
-                                  <i class="far fa-chevron-down cursor-p pl-1"></i>
+                                  <div class="atempts-dropdown dropdown pos-r">
+                                    <span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Call Atemptes
+                                        <i class="far fa-chevron-down cursor-p pl-1"></i>
+                                    </span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <!--<div class="arrow" data-popper-arrow></div>-->
+                                      <a class="dropdown-item" href="#">
+                                        <span class="atempts-item">
+                                          <i class="fad fa-sort-amount-up"></i>
+                                          <span>ASC</span>
+                                        </span>
+                                      </a>
+                                      <a class="dropdown-item" href="#">
+                                        <span class="atempts-item">
+                                          <i class="fad fa-sort-amount-down-alt"></i>
+                                          <span>DESC</span>
+                                      </span>
+                                      </a>
+                                    </div>
+                                  </div>
+
                                 </div>
-                                <div class="header-col status-col">
+                                <div class="header-col status-col cursor-p">
                                   Status
                                   <i class="far fa-chevron-down cursor-p pl-1"></i>
                                 </div>
@@ -947,7 +970,7 @@
                             <div class="col col-lg-12 table-body-col">
                               <div class="leads-list">
                                 <!-- Item -->
-                                <div class="leads-item-wrap">
+                                <div class="leads-item-wrap mt-0">
                                   <div class="decoration-left-side-line system-color-bg-16"></div>
                                   <div class="leads-item">
                                     <div class="date-col item-col pl-0">
@@ -963,8 +986,8 @@
                                       <span>install new metal roof</span>
                                     </div>
                                     <div class="locations-col item-col">
-                                      <span class="">New York</span>
-                                      <span>55435</span>
+                                      <span class="city">New York</span>
+                                      <span class="code">55435</span>
                                     </div>
                                     <div class="meeting-status-col item-col system-color-6">
                                       <span class="icon system-color-14"><i class="fad fa-calendar-times"></i></span>
@@ -974,22 +997,22 @@
                                       <span class="text scheduled system-color-6 d-none">Scheduled</span>
                                       <span class="text done system-color-15 d-none">One leger</span>
                                     </div>
-                                    <div class="atemptes-col item-col system-color-14">
+                                    <div class="atemptes-col item-col">
                                       <span class="icon"><i class="fad fa-phone-slash"></i></span>
                                       <span class="text system-color-14">5</span>
                                     </div>
                                     <div class="status-col item-col">
-                                      <select class="custom-select font-r-9 system-color-6">
-                                        <option class="font-r-12" selected>Sale In Progress</option>
-                                        <option class="font-r-12" value="1">Sale In Progress</option>
-                                        <option class="font-r-12" value="2">Sale In Progress</option>
-                                        <option class="font-r-12" value="3">Sale In Progress</option>
-                                        <option class="font-r-12" value="4">Sale In Progress</option>
+                                      <select class="custom-select font-r-9 system-color-6 font-weight-bold">
+                                        <option class="font-r-9 font-weight-bold" selected>Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="1">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="2">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="3">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="4">Sale In Progress</option>
                                       </select>
                                     </div>
-                                    <div class="notification-col item-col pr-0">
+                                    <div class="notification-col item-col pr-0 font-r-10">
                                       <span class="comment system-color-6"><i class="fad fa-comment-alt-lines"></i></span>
-                                      <span class="alert-notification system-color-18 d-none"><i class="fad fa-exclamation-triangle"></i></span>
+                                      <span id="alert-button" class="alert-notification system-color-18 d-none"><i class="fad fa-exclamation-triangle"></i></span>
                                     </div>
                                   </div>
                                 </div>
@@ -1011,8 +1034,8 @@
                                       <span>install new metal roof</span>
                                     </div>
                                     <div class="locations-col item-col">
-                                      <span class="">New York</span>
-                                      <span>55435</span>
+                                      <span class="city">New York New York</span>
+                                      <span class="code">55435</span>
                                     </div>
                                     <div class="meeting-status-col item-col system-color-6">
                                       <span class="icon system-color-14"><i class="fad fa-calendar-times"></i></span>
@@ -1022,22 +1045,31 @@
                                       <span class="text scheduled system-color-6 d-none">Scheduled</span>
                                       <span class="text done system-color-15 d-none">One leger</span>
                                     </div>
-                                    <div class="atemptes-col item-col system-color-14">
+                                    <div class="atemptes-col item-col">
                                       <span class="icon"><i class="fad fa-phone-slash"></i></span>
                                       <span class="text system-color-14">5</span>
                                     </div>
                                     <div class="status-col item-col">
-                                      <select class="custom-select font-r-9 system-color-6">
-                                        <option class="font-r-12" selected>Sale In Progress</option>
-                                        <option class="font-r-12" value="1">Sale In Progress</option>
-                                        <option class="font-r-12" value="2">Sale In Progress</option>
-                                        <option class="font-r-12" value="3">Sale In Progress</option>
-                                        <option class="font-r-12" value="4">Sale In Progress</option>
+                                      <select class="custom-select font-r-9 system-color-6 font-weight-bold">
+                                        <option class="font-r-9 font-weight-bold" selected>Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="1">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="2">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="3">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="4">Sale In Progress</option>
                                       </select>
                                     </div>
-                                    <div class="notification-col item-col pr-0">
+                                    <div class="notification-col item-col pr-0 font-r-10">
                                       <span class="comment system-color-6 d-none"><i class="fad fa-comment-alt-lines"></i></span>
-                                      <span class="alert-notification system-color-18"><i class="fad fa-exclamation-triangle"></i></span>
+
+                                      <a tabindex="0"
+                                         class="alert-notification system-color-18"
+                                         data-toggle="popover"
+                                         data-trigger="focus"
+                                         title="Title"
+                                         data-content="Status not updated. For over 24 hours.">
+                                        <i class="fad fa-exclamation-triangle system-color-18"></i>
+                                      </a>
+
                                     </div>
                                   </div>
                                 </div>
@@ -1055,12 +1087,12 @@
                                       <span><i class="fad fa-phone mr-3"></i>+ 1-45666433</span>
                                     </div>
                                     <div class="services-col item-col system-color-6">
-                                      <span class="">Roofing</span>
+                                      <span class="">Roofing Roofing</span>
                                       <span>install new metal roof</span>
                                     </div>
                                     <div class="locations-col item-col">
-                                      <span class="">New York</span>
-                                      <span>55435</span>
+                                      <span class="city">New York</span>
+                                      <span class="code">55435</span>
                                     </div>
                                     <div class="meeting-status-col item-col system-color-6">
                                       <span class="icon system-color-14 d-none"><i class="fad fa-calendar-times"></i></span>
@@ -1070,20 +1102,20 @@
                                       <span class="text scheduled system-color-6 d-none">Scheduled</span>
                                       <span class="text done system-color-15">One leger</span>
                                     </div>
-                                    <div class="atemptes-col item-col system-color-14">
+                                    <div class="atemptes-col item-col">
                                       <span class="icon"><i class="fad fa-phone-slash"></i></span>
-                                      <span class="text system-color-14">5</span>
+                                      <span class="text system-color-14 system-color-14">5</span>
                                     </div>
                                     <div class="status-col item-col">
-                                      <select class="custom-select font-r-9 system-color-6">
-                                        <option class="font-r-12" selected>Sale In Progress</option>
-                                        <option class="font-r-12" value="1">Sale In Progress</option>
-                                        <option class="font-r-12" value="2">Sale In Progress</option>
-                                        <option class="font-r-12" value="3">Sale In Progress</option>
-                                        <option class="font-r-12" value="4">Sale In Progress</option>
+                                      <select class="custom-select font-r-9 system-color-6 font-weight-bold">
+                                        <option class="font-r-9 font-weight-bold" selected>Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="1">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="2">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="3">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="4">Sale In Progress</option>
                                       </select>
                                     </div>
-                                    <div class="notification-col item-col pr-0">
+                                    <div class="notification-col item-col pr-0 font-r-10">
                                       <span class="comment system-color-6"><i class="fad fa-comment-alt-lines"></i></span>
                                       <span class="alert-notification system-color-18 d-none"><i class="fad fa-exclamation-triangle"></i></span>
                                     </div>
@@ -1099,16 +1131,16 @@
                                       <span>2:30 AM</span>
                                     </div>
                                     <div class="contact-info-col item-col system-color-6">
-                                      <span class="font-weight-bold"><i class="fad fa-user mr-3"></i>Paul R.</span>
+                                      <span class="font-weight-bold"><i class="fad fa-user mr-3"></i>Sebastian R.</span>
                                       <span><i class="fad fa-phone mr-3"></i>+ 1-45666433</span>
                                     </div>
                                     <div class="services-col item-col system-color-6">
                                       <span class="">Roofing</span>
-                                      <span>install new metal roof</span>
+                                      <span>install new metal roof install new metal roof</span>
                                     </div>
                                     <div class="locations-col item-col">
-                                      <span class="">New York</span>
-                                      <span>55435</span>
+                                      <span class="city">New York New York New York</span>
+                                      <span class="code">55435</span>
                                     </div>
                                     <div class="meeting-status-col item-col system-color-6">
                                       <span class="icon system-color-14 d-none"><i class="fad fa-calendar-times"></i></span>
@@ -1118,20 +1150,20 @@
                                       <span class="text scheduled system-color-6">Scheduled</span>
                                       <span class="text done system-color-15 d-none">One leger</span>
                                     </div>
-                                    <div class="atemptes-col item-col system-color-14">
+                                    <div class="atemptes-col item-col">
                                       <span class="icon"><i class="fad fa-phone-slash"></i></span>
                                       <span class="text system-color-14">5</span>
                                     </div>
                                     <div class="status-col item-col">
-                                      <select class="custom-select font-r-9 system-color-6">
-                                        <option class="font-r-12" selected>Sale In Progress</option>
-                                        <option class="font-r-12" value="1">Sale In Progress</option>
-                                        <option class="font-r-12" value="2">Sale In Progress</option>
-                                        <option class="font-r-12" value="3">Sale In Progress</option>
-                                        <option class="font-r-12" value="4">Sale In Progress</option>
+                                      <select class="custom-select font-r-9 system-color-6 font-weight-bold">
+                                        <option class="font-r-9 font-weight-bold" selected>Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="1">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="2">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="3">Sale In Progress</option>
+                                        <option class="font-r-9 font-weight-bold" value="4">Sale In Progress</option>
                                       </select>
                                     </div>
-                                    <div class="notification-col item-col pr-0">
+                                    <div class="notification-col item-col pr-0 font-r-10">
                                       <span class="comment system-color-6"><i class="fad fa-comment-alt-lines"></i></span>
                                       <span class="alert-notification system-color-18 d-none"><i class="fad fa-exclamation-triangle"></i></span>
                                     </div>
@@ -1160,8 +1192,39 @@
 </app>
 
 
+<script src="assets/js/custom-popover.js"></script>
 <script src="assets/js/layout-page.js"></script>
 <script src="assets/js/status-bar.js"></script>
-
+<style>
+  .popover {
+    max-width: 160px !important;
+    background-color: #fff !important;
+    border: none !important;
+    border-radius: 1.5px !important;
+    box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16) !important;
+  }
+  .arrow::before,
+  .arrow::after {
+     border-left-color: #fff !important;
+  }
+  .popover-header {
+    padding: .5rem .75rem !important;
+    margin-bottom: 0 !important;
+    font-family: "Arial", sans-serif !important;
+    font-size: 9pt !important;
+    font-weight: 900 !important;
+    background-color: #fff !important;
+    color: #f20b0b !important;
+    border-bottom: none !important;
+  }
+  .popover-header:hover {
+     color: #f20b0b !important;
+  }
+  .popover-body {
+    padding: 0 .75rem .5rem !important;
+    font-size: 9pt !important;
+    color: #f20b0b !important;
+  }
+</style>
 </body>
 </html>

@@ -759,16 +759,128 @@
 // ******** Pages **********//
 
 .leads-list-page {
-  .status-bar-heading {
-    //margin-left: 15px;
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1299px) {
+    .table-header-col {
+      .table-header-wrap {
+        padding: 0 15px;
+      }
+    }
+
+    .leads-item-wrap {
+      padding: 15px 15px;
+    }
   }
+
+  @media(max-width: 1199px) {
+    .table-header-col {
+      display: none;
+    }
+
+    .leads-item-wrap {
+      height: auto;
+
+      .leads-item {
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+
+      // Item cols
+      .item-col {
+        width: 25%;
+        white-space: normal;
+        overflow: hidden;
+
+        i {
+          margin-right: 10px;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+
+      .meeting-status-col {
+        padding-left: 0;
+      }
+
+      .meeting-status-col,
+      .atemptes-col,
+      .locations-col {
+        flex-direction: row;
+      }
+
+      .code {
+        margin-left: 10px;
+      }
+
+      .status-col {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    .leads-item-wrap {
+      padding: 10px 10px 10px 15px;
+
+      .leads-item {
+        align-items: stretch;
+      }
+
+      // Item cols
+      .item-col {
+        width: 50%;
+      }
+
+      .notification-col {
+        justify-content: flex-end;
+      }
+
+      .services-col,
+      .status-col {
+        padding-left: 0;
+      }
+
+      .code {
+        margin-left: 0;
+      }
+
+
+    }
+  }
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {
+    .leads-item-wrap {
+      // Item cols
+      .item-col {
+        width: 100%;
+        padding-left: 0 !important;
+        margin-top: 5px;
+      }
+
+      .notification-col {
+        width: 30px !important;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+
+  @media(max-width: 374px) {}
 }
 
+// For pages which has Filter (status-bar)
 .leads-list-page,
 .support-page,
 .my-tasks {
   @media(max-width: 599px) {
-    // For pages which has Filter (status-bar)
     .status-bar-col {
       position: relative;
       align-self: auto;
@@ -947,7 +1059,7 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: 1px solid #ced4da;
-  border-left: none;
+  //border-left: none;
   outline: none;
   box-shadow: none;
 }
