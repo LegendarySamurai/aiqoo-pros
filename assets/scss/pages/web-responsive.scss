@@ -1,3 +1,4 @@
+// Layout
 @media(max-width: 1399px) {
   .left-side-col {
     min-width: 200px;
@@ -16,13 +17,6 @@
   .fixed-top-panel-d {
     width: calc(100% - 200px);
     max-width: calc(100% - 200px);
-  }
-}
-
-@media(max-width: 1299px) {
-  // Area-list-outer
-  .areas-list-outer {
-    padding: 1.5rem 1.5rem;
   }
 }
 
@@ -139,22 +133,6 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0 .875rem;
-  }
-}
-
-@media(max-width: 899px) {
-  .create-area-outer {
-    padding: .75rem 1.25rem;
-  }
-
-  .areas-list-outer {
-    padding: .75rem 1.25rem;
-  }
-}
-
-@media(max-width: 850px) {
-  .card {
-    padding: 0 4px;
   }
 }
 
@@ -451,33 +429,6 @@
       }
     }
   }
-
-  // Search new area
-  .search-new-area {
-    .form-control {
-      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-size: 0.88rem !important;
-      }
-      &::-moz-placeholder { /* Firefox 19+ */
-        font-size: 0.88rem !important;
-      }
-      &:-ms-input-placeholder { /* IE 10+ */
-        font-size: 0.88rem !important;
-      }
-      &:-moz-placeholder { /* Firefox 18- */
-        font-size: 0.88rem !important;
-      }
-    }
-  }
-
-  // Results
-  .results {
-    .item {
-      width: auto;
-      margin-bottom: 1rem !important;
-      padding: .25rem .875rem;
-    }
-  }
 }
 
 @media(max-width: 599px) {
@@ -509,10 +460,6 @@
     & > .row {
       pointer-events: auto;
     }
-  }
-
-  .page-title {
-    //display: none;
   }
 
   .settings-inner-d {
@@ -583,7 +530,7 @@
 }
 
 @media(max-width: 460px) {
-  // SWIPER
+  // SWIPER (for sub menu on 991px and less screens)
   ::-webkit-scrollbar {
     width:0;
     height:0;
@@ -755,8 +702,61 @@
   }
 }
 
-
 // ******** Pages **********//
+
+@media(max-width: 850px) {
+  .card {
+    padding: 0 4px;
+  }
+}
+
+.locations {
+  @media(max-width: 1299px) {
+    // Area-list-outer (Locations page)
+    .areas-list-outer {
+      padding: 1.5rem 1.5rem;
+    }
+  }
+
+  @media(max-width: 899px) {
+    .create-area-outer {
+      padding: .75rem 1.25rem;
+    }
+
+    .areas-list-outer {
+      padding: .75rem 1.25rem;
+    }
+  }
+
+  @media(max-width: 767px) {
+    // Search new area
+    .search-new-area {
+      .form-control {
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          font-size: 0.88rem !important;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          font-size: 0.88rem !important;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+          font-size: 0.88rem !important;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          font-size: 0.88rem !important;
+        }
+      }
+    }
+
+    // Results
+    .results {
+      .item {
+        width: auto;
+        margin-bottom: 1rem !important;
+        padding: .25rem .875rem;
+      }
+    }
+  }
+}
 
 .leads-list-page {
   @media(max-width: 1899px) {}
@@ -1048,7 +1048,6 @@
 .system-campaign {
   @import '../components/system-campaign-responsive';
 }
-
 
 .logo2,
 .success-icon {
@@ -1521,622 +1520,6 @@
   form {
     .input-group-title {
       font-size: 1.25rem;
-    }
-  }
-}
-
-
-//************** Wizard dialog COMMON STYLES **************//
-// Services and Area list popup
-// Details Wizard
-.wizard-new-dialog {
-  @media(max-width: 1199px) {
-    .modal-footer {
-      button {
-        width: 180px;
-      }
-    }
-  }
-
-  @media(max-width: 991px) {
-    .right-side {
-      .right-side-inner {
-        .scroll {
-          padding: 20px;
-        }
-
-        .without-scroll {
-          padding: 20px;
-        }
-      }
-
-      .modal-body {
-        width: 100% !important;
-      }
-    }
-
-    .left-side {
-      .image-container {
-        width: 13vh !important;
-        height: inherit !important;
-      }
-    }
-  }
-
-  @media(max-width: 767px) {
-    .left-side {
-      display: none;
-    }
-
-    .right-side {
-      width: 100% !important;
-    }
-
-    .modal-body-container {
-      flex-direction: column !important;
-
-      .modal-body-col {
-        width: 100% !important;
-      }
-    }
-
-    .modal-body {
-      z-index: 2;
-      background-color: #fff;
-    }
-
-    .decoration-element-wizard {
-      display: none;
-    }
-
-    .decoration-element-mobile {
-      z-index: 1;
-      display: block !important;
-      position: absolute;
-      top: 50%;
-      left: -7px;
-      transform: translate(0, -50%);
-      width: 12px;
-      height: 95%;
-      border-radius: 20px;
-      background-color: #585077;
-    }
-  }
-
-  @media(max-width: 599px) {
-    width: 90% !important;
-
-    .right-side {
-      .right-side-header {
-        padding: 20px;
-      }
-
-      .right-side-inner {
-        .without-scroll {
-          padding: 20px;
-        }
-      }
-
-      .modal-body-container {
-        padding: 20px !important;
-      }
-
-      .input-group-select {
-        padding: 0 !important;
-      }
-    }
-  }
-}
-
-//************* Services and Area list popup  *************//
-.wizard-dialog-services-and-locations {
-  @media(max-width: 1199px) {
-    .left-side {
-      .counties-list-item {
-        &.active {
-          padding: 15px 10px;
-        }
-      }
-    }
-
-    .right-side {
-      .county-item {
-        width: 46% !important;
-      }
-    }
-  }
-
-  @media(max-width: 1099px) {
-    .right-side {
-      .modal-footer {
-        button {
-          width: 160px;
-        }
-      }
-    }
-  }
-
-  @media(max-width: 991px) {
-    .right-side {
-      .county-item {
-        width: 96% !important;
-      }
-
-      .modal-title {
-        padding-left: 0;
-      }
-
-      .modal-footer {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 20px;
-
-        .buttons-container {
-          justify-content: flex-start;
-          margin-top: 20px !important;
-
-          button {
-            width: 50%;
-          }
-        }
-      }
-    }
-  }
-
-  @media(max-width: 767px) {
-    .modal-content {
-      .modal-body {
-        flex-direction: column;
-
-        .left-side {
-          display: block !important;
-          width: 100% !important;
-          padding: 0 20px 0 0;
-
-          .counties-list-item {
-            &.active {
-              border-radius: 5px;
-            }
-          }
-
-          .modal-title {
-            margin-bottom: 30px;
-            text-align: left;
-          }
-
-          .counties-list {
-            display: none;
-          }
-
-          // select
-          .select {
-            display: block !important;
-            width: 100%;
-            height: 46px;
-            padding: 0 10px;
-            border: 1px solid #b3b3b3;
-            background-color: #fff;
-            border-radius: 5px;
-            color: #342e49;
-            font-weight: 500;
-            font-family: "Lato", sans-serif;
-          }
-        }
-
-        .right-side {
-          padding: 20px 10px 20px 0px;
-          width: 100% !important;
-
-          .county-list {
-            max-height: 40vh !important;
-          }
-
-          .county-list-container {
-            padding: 20px 10px 20px 20px;
-          }
-        }
-      }
-    }
-  }
-
-  @media(max-width: 599px) {
-    button.close {
-      background-color: transparent;
-    }
-  }
-}
-
-//************* Details Wizard *******************//
-.wizard-dialog-details {
-  @media(max-width: 991px) {
-    .input-group-select {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 100%;
-      height: initial !important;
-      padding: 0 30px;
-
-      .input-group {
-        height: 50px;
-      }
-
-      span {
-        margin-bottom: 10px;
-      }
-    }
-  }
-
-  @media(max-width: 767px) {
-    .right-side {
-      .right-side-header {
-        height: 55px;
-      }
-
-      .right-side-inner {
-        &.without-scroll {
-          padding: 10px 20px 10px 20px;
-        }
-      }
-
-      .input-group {
-        height: 45px;
-      }
-
-      .modal-heading {
-        margin: 10px 0;
-        line-height: .75;
-      }
-
-      .modal-footer {
-        margin-top: 20px;
-
-        .buttons-container {
-          width: 100%;
-        }
-      }
-
-      .input-group-select {
-        margin-top: 10px;
-      }
-    }
-  }
-}
-
-//************* Success message Wizard *************//
-.wizard-dialog-success-message {
-  @media(max-width: 991px) {
-    .decoration-element-wizard {
-      .dashed-line {
-        height: 80px;
-      }
-    }
-  }
-
-  @media(max-width: 767px) {
-    .modal-body-container {
-      .modal-body-col {
-        &:not(:first-of-type) {
-          margin-top: 10px;
-        }
-      }
-    }
-
-    .decoration-element-wizard {
-      .dashed-line {
-        height: 150px;
-      }
-    }
-  }
-}
-
-//************* Wizard  *************//
-.wizard-dialog  {
-  @media(min-width: 300px) {
-    width: 98%;
-
-    // Success
-    .wizard-dialog-success {
-      .success-icon {
-        img { max-width: 100%; }
-      }
-
-      .success {
-        padding: 20px 30px;
-        margin-top: 20px;
-        color: #585077;
-      }
-
-      .submit-button {
-        margin-top: 140px;
-        margin-bottom: 50px;
-      }
-    }
-
-    .tabs-w {
-      height: 40px;
-
-      .tab {
-        height: 40px;
-        padding: 0 10px;
-      }
-    }
-
-    form {
-      .input-group-select {
-        .input-group { width: 64%; }
-      }
-
-      .input-group {
-        height: 50px;
-        margin-bottom: 10px;
-      }
-    }
-
-    .text-block {
-      h5 { text-align: center; }
-    }
-
-    .page-content {
-      padding: 40px 0 20px;
-
-      .aiqoo-collapse-checkbox-outer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 20px 6px 20px 20px;
-        background-color: #f5f5f5;
-
-        .summary {
-          align-self: flex-end;
-          margin-top: auto;
-          padding-top: 20px;
-          padding-right: 20px;
-          text-align: right;
-        }
-
-        .input-group {
-          select { border: 1px solid #ced4da; }
-        }
-      }
-
-      .aiqoo-collapse-inner {
-        padding-right: 20px;
-        max-height: 290px;
-        overflow-y: scroll;
-
-        i {
-          &.fa-times {
-            color: #c10404;
-          }
-        }
-      }
-
-      .success {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .submit-button {
-          .btn {
-            border-radius: 0;
-          }
-        }
-      }
-    }
-
-    .details {
-      width: 55%;
-    }
-
-    .services {
-      width: 90%;
-    }
-
-    .locations {
-      width: 90%;
-    }
-
-    .buttons-container {
-      margin-top: 30px;
-    }
-  }
-
-  @media(max-width: 767px) {
-    margin: 1rem auto;
-
-    .page-content {
-      padding: 40px 0 20px;
-    }
-
-    .tabs-w {
-      .tab > span {
-        margin-right: .5rem !important;
-      }
-
-      .divider {
-        width: 15px;
-      }
-    }
-
-    .details {
-      width: 80%;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      margin: 15px 0;
-    }
-    h5 {
-      font-size: 1.125rem;
-    }
-  }
-
-  @media(min-width: 768px) {
-    width: 60%;
-
-    // Success
-    &.wizard-dialog-success {
-      .success {
-        margin-top: 50px;
-      }
-    }
-
-    .tabs-w {
-      .divider {
-        width: 27px;
-      }
-    }
-  }
-  // EOL: 768
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    // Services
-    &.wizard-dialog-services {
-      width: 620px;
-      margin-top: 2rem;
-
-      .aiqoo-collapse-inner {
-        max-height: 530px;
-      }
-    }
-  }
-  // EOL: 768-1024
-
-  @media(min-width: 1200px) {
-    width: 56%;
-
-    // Success
-    &.wizard-dialog-success {
-      .success {
-        padding: 0px 40px;
-        margin-top: 20px;
-      }
-
-      .text-block {
-        h2 {
-          margin-top: 3rem;
-        }
-      }
-
-      .submit-button {
-        margin-top: 100px;
-        margin-bottom: 40px;
-      }
-    }
-
-    .tabs-w {
-      height: 50px;
-
-      .tab {
-        height: 50px;
-        padding: 0 14px;
-      }
-    }
-
-    .text-block {
-      padding-top: 20px;
-
-      h2 {
-        margin-top: .75rem;
-        margin-bottom: .75rem;
-        font-size: 1.5rem;
-      }
-    }
-
-    .page-content {
-      padding-top: 20px;
-      padding-bottom: 20px;
-
-      .aiqoo-collapse-checkbox-outer {
-        .card {
-          .fa-times {
-            cursor: pointer;
-          }
-        }
-      }
-    }
-
-    .buttons-container {
-      margin-top: 50px;
-    }
-
-    .submit-button {
-      button {
-        height: 45px;
-      }
-    }
-
-    form {
-      .input-group {
-        height: 50px;
-        margin-bottom: 1rem;
-      }
-
-      .input-group-select {
-        .input-group {
-          width: 56%;
-        }
-      }
-    }
-  } // EOL: 1200
-
-  @media(min-width: 1600px) {
-    .page-content {
-      padding-top: 50px;
-      padding-bottom: 20px;
-
-      &.locations {
-        .aiqoo-collapse-checkbox-outer {
-          height: inherit;
-        }
-
-        .aiqoo-collapse-inner {
-          height: 174px;
-        }
-
-        .buttons-container {
-          margin-top: 40px;
-        }
-      }
-    }
-
-    .details {
-      width: 45%;
-    }
-
-    .buttons-container {
-      margin-top: 80px;
-    }
-  }
-  // EOL: 1600
-
-  @media(min-width: 1920px) {
-    .tabs-w {
-      height: 66px;
-
-      .tab {
-        height: 60px;
-        padding: 0 24px;
-      }
-    }
-
-    .details {
-      padding-top: 80px;
-      padding-bottom: 40px;
-    }
-
-    .submit-button {
-      button { height: 50px; }
-    }
-
-    form {
-      .input-group {
-        height: 68px;
-        margin-bottom: 1.5rem;
-      }
     }
   }
 }
@@ -2824,8 +2207,7 @@
   }
 }
 
-
-//**************************//
+//*********** UTILS ***************//
 .mobile-only-flex {
   @media(max-width: 599px) {
     display: flex;
