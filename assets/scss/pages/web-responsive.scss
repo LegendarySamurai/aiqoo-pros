@@ -881,6 +881,7 @@
 .support-page,
 .my-tasks {
   @media(max-width: 599px) {
+    // For pages which has Filter (status-bar)
     .status-bar-col {
       position: relative;
       align-self: auto;
