@@ -380,7 +380,7 @@
 
   // SMS verification
   .account-verification {
-    &.is-active {
+    &.active {
       width: 100% !important;
       max-width: 450px;
       margin: 0 auto !important;
@@ -953,7 +953,7 @@
 
   // SMS verification
   .account-verification {
-    &.is-active {
+    &.active {
       width: 100% !important;
       max-width: 96% !important;
       box-shadow: none;
