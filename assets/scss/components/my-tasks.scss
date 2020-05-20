@@ -92,7 +92,7 @@
     left: -10px;
     display: block;
     content: '';
-    background: url('../../../images/dashed-line.png') no-repeat;
+    background: url('../../images/dashed-line.png') no-repeat;
     background-size: 10% auto;
     background-position: 0 0;
     width: 10%;
@@ -107,7 +107,7 @@
     transform: rotate(90deg);
     display: block;
     content: '';
-    background: url('../../../images/dashed-line.png') no-repeat;
+    background: url('../../images/dashed-line.png') no-repeat;
     background-size: 10% auto;
     background-position: 0 0;
     width: 10%;
@@ -127,6 +127,20 @@
   .task-card-inner {
     padding: 10px;
   }
+
+  .user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .avatar {
+      width: 28px;
+      height: 28px;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+  }
+
 
   .user {
     padding: 0 0 10px 0;
@@ -215,6 +229,7 @@
 
   .text {
     padding: 10px 0;
+    border-bottom: none;
   }
 }
 
