@@ -1216,7 +1216,7 @@
   </main>
 
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#leadsListModal">
+  <button style="position: fixed; bottom:0; right:0; z-index: 4;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#leadsListModal">
     leads list modal
   </button>
 
@@ -1428,10 +1428,10 @@
                       <div class="controls-col-inner">
 
                         <div class="meeting">
-                          <div class="card meeting-card-empty">
+                          <div class="card meeting-card-empty d-none">
                             <div class="card-header">
-                              <i class="fad fa-clock ma-r-5"></i>
-                              <span class="font-weight-500 font-10">Meeting</span>
+                              <i class="fad fa-clock font-15 ma-r-5"></i>
+                              <span class="font-weight-500 font-15">Meeting</span>
                             </div>
                             <div class="card-body">
                               <div class="empty-content-wrap">
@@ -1444,10 +1444,10 @@
                             </div>
                           </div>
 
-                          <div class="card meeting-card-filled d-none">
+                          <div class="card meeting-card-filled">
                             <div class="card-header">
-                              <i class="fad fa-clock ma-r-5"></i>
-                              <span class="font-weight-bold font-9">Meeting</span>
+                              <i class="fad fa-clock font-15 ma-r-5"></i>
+                              <span class="font-weight-bold font-15">Meeting</span>
                             </div>
                             <div class="card-body">
                               <div class="user">
@@ -1456,8 +1456,8 @@
                                 </div>
                                 <div class="user-name">Grace Kaminkli</div>
                                 <button class="btn">
-                                  <span class="font-weight-500 font-9">Sheduled</span>
-                                  <i class="fad fa-sync-alt"></i>
+                                  <span class="font-weight-500 font-12">Sheduled</span>
+                                  <i class="fad fa-sync-alt font-12"></i>
                                 </button>
                               </div>
 
@@ -1484,14 +1484,14 @@
                         </div>
 
                         <div class="tasks ma-t-10">
-                          <div class="tasks-list-empty d-none">
+                          <div class="tasks-list-empty">
                             <div class="card">
                               <div class="card-header">
                                 <div class="card-header-inner">
-                                  <i class="fad fa-clipboard-list-check ma-r-5"></i>
-                                  <span class="font-weight-500 font-10">Task List</span>
+                                  <i class="fad fa-clipboard-list-check font-15 ma-r-5"></i>
+                                  <span class="font-weight-500 font-15">Task List</span>
                                 </div>
-                                <button class="btn font-8 font-weight-500 add-task">
+                                <button class="btn font-12 font-weight-500 add-task">
                                   <i class="fad fa-plus"></i>
                                   <span class="">Add task</span>
                                 </button>
@@ -1512,25 +1512,25 @@
                             </div>
                           </div>
 
-                          <div class="tasks-list-filled">
+                          <div class="tasks-list-filled d-none">
                             <div class="card">
                               <div class="card-header">
                                 <div class="card-header-inner">
-                                  <i class="fad fa-clipboard-list-check ma-r-5"></i>
-                                  <span class="font-weight-500 font-10">Task List</span>
+                                  <i class="fad fa-clipboard-list-check font-15 ma-r-5"></i>
+                                  <span class="font-weight-500 font-15">Task List</span>
                                 </div>
-                                <button class="btn font-8 font-weight-500 add-task">
+                                <button class="btn font-12 font-weight-500 add-task">
                                   <i class="fad fa-plus"></i>
                                   <span class="">Add task</span>
                                 </button>
                               </div>
                               <div class="card-body">
-                                <div class="task-card confirm pos-r">
+                                <div class="task-card pos-r">
                                   <div class="decoration-element-wizard">
                                     <span class="square"></span>
                                     <span class="dashed-line"></span>
                                   </div>
-                                  <div class="label font-weight-500 font-r-10 system-color-bg-9">
+                                  <div class="label system-color-bg-9 font-weight-500 font-r-10 system-color-bg-9">
                                     <span>Setup financing</span>
                                   </div>
                                   <div class="task-card-inner">
@@ -1564,7 +1564,58 @@
                                         <span class="font-weight-bold font-r-10">Internal notes</span>
                                       </span>
                                       <span class="text font-r-8">
-                                        Prepare quote prior to meeting scheduling
+                                        Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting s
+cheduling scheduling scheduling scheduling
+                                      </span>
+                                      <div class="buttons-container">
+                                        <button class="red-button font-r-8" type="button">canceled</button>
+                                        <button class="green-button font-r-8" type="button">done</button>
+                                      </div>
+                                    </div>
+                                    <!-- EOL: Notes -->
+                                  </div>
+                                </div>
+                                <div class="task-card pos-r">
+                                  <div class="decoration-element-wizard">
+                                    <span class="square"></span>
+                                    <span class="dashed-line"></span>
+                                  </div>
+                                  <div class="label system-color-bg-11 font-weight-500 font-r-10 system-color-bg-9">
+                                    <span>Setup financing</span>
+                                  </div>
+                                  <div class="task-card-inner">
+                                    <div class="inner-wrap">
+                                      <!-- user -->
+                                      <div class="user">
+                                        <div class="image-wrap ma-r-10">
+                                          <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="user-info">
+                                          <span class="gray-title font-r-8">Name</span>
+                                          <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                                        </div>
+                                      </div>
+                                      <!-- EOL: user -->
+                                      <!-- todo-time -->
+                                      <div class="todo-time">
+                                        <span class="gray-title font-r-8">Time to do</span>
+                                        <span class="time">
+                                        <i class="fal fa-calendar"></i>
+                                        <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
+                                      </span>
+                                      </div>
+                                      <!-- EOL: todo-time -->
+                                    </div>
+
+                                    <!-- Notes -->
+                                    <div class="notes">
+                                      <span>
+                                        <i class="fal fa-edit"></i>
+                                        <span class="font-weight-bold font-r-10">Internal notes</span>
+                                      </span>
+                                      <span class="text font-r-8">
+                                        Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting s
+cheduling scheduling scheduling scheduling
                                       </span>
                                       <div class="buttons-container">
                                         <button class="red-button font-r-8" type="button">canceled</button>
