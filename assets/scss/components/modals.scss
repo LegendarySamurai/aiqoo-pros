@@ -99,6 +99,7 @@
   // Leads summary
   .leads-summary {
     width: 100%;
+    margin-top: 30px;
     padding-bottom: 50px;
   }
 
@@ -515,6 +516,16 @@
       .buttons-container {
         width: 50%;
         margin-left: auto;
+      }
+
+      .todo-time {
+        padding-top: 0;
+
+        .time {
+          span {
+            white-space: nowrap;
+          }
+        }
       }
     }
 
