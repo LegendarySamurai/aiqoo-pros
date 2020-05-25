@@ -1,0 +1,53 @@
+// Leads List page modal
+.leads-list-modal {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1499px) {
+    // meeting-card-filled
+    .meeting-card-filled {
+      .user {
+        button {
+          width: 130px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1299px) {
+    .modal-body {
+      padding: 0;
+    }
+
+    // meeting-card-filled
+    .meeting-card-filled {
+      .user {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .user-inner {
+          width: 100%;
+          justify-content: flex-start;
+        }
+
+        button {
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
+}
