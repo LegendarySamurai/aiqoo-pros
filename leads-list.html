@@ -1330,7 +1330,7 @@
               <div class="col-12 col-lg right-col">
                 <div class="right-col-inner">
                   <div class="row">
-                    <div class="col-12 col-lg-7 content-col">
+                    <div class="col-12 col-xl-7 content-col">
                       <div class="content-col-inner">
                         <div class="map pos-r">
                           <div class="mask">
@@ -1340,7 +1340,13 @@
                           <img src="assets/images/map.png" alt="map">
                         </div>
                         <div class="activity-log ma-t-10">
-                          <span class="heading font-weight-500 font-r-11"><i class="fad fa-clipboard mr-2"></i>Activity log</span>
+                          <div class="toggleTab" >
+                            <div class="heading d-flex justify-content-between cursor-p">
+                              <div class="el-name font-weight-500 font-r-11"><i class="fad fa-clipboard mr-2"></i>Activity log</div>
+                              <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
+                            </div>
+                          </div>
+
                           <div class="activity-list ma-t-10">
                             <div class="activity-item">
                               <div class="decoration-element-wizard">
@@ -1424,81 +1430,80 @@
                       </div>
 
                     </div>
-                    <div class="col-12 col-lg-5 controls-col">
+                    <div class="col-12 col-xl-5 controls-col">
                       <div class="controls-col-inner">
 
                         <div class="meeting">
-                          <div class="card meeting-card-empty">
+                          <div class="card">
                             <div class="card-header">
                               <i class="fad fa-clock font-r-15 ma-r-5"></i>
                               <span class="font-weight-500 font-r-15">Meeting</span>
                             </div>
                             <div class="card-body">
-                              <div class="empty-content-wrap">
-                                <p class="card-text">To create a new appointment with a customer, click here</p>
-                                <div class="image-wrap">
-                                  <img src="assets/images/calendar-big.svg" alt="calendar-big">
-                                </div>
-                              </div>
-                              <button class="btn mx-auto font-r-9 font-weight-500 ma-t-20">Create a new meeting</button>
-                            </div>
-                          </div>
-
-                          <div class="card meeting-card-filled">
-                            <div class="card-header">
-                              <i class="fad fa-clock font-r-15 ma-r-5"></i>
-                              <span class="font-weight-500 font-r-15">Meeting</span>
-                            </div>
-                            <div class="card-body">
-                              <div class="user">
-                                <div class="user-inner">
-                                  <div class="image-container ma-r-5">
-                                    <img src="assets/images/dummy-avatar.png" alt="avatar">
+                              <!-- Empty -->
+                              <div class="meeting-card-empty">
+                                <div class="empty-content-wrap">
+                                  <p class="card-text">To create a new appointment with a customer, click here</p>
+                                  <div class="image-wrap">
+                                    <img src="assets/images/calendar-big.svg" alt="calendar-big">
                                   </div>
-                                  <div class="user-name">Grace Kaminkli</div>
                                 </div>
-                                <button class="btn">
-                                  <span class="font-weight-500 font-12">Sheduled</span>
-                                  <i class="fad fa-sync-alt font-12"></i>
-                                </button>
+                                <button class="btn mx-auto font-r-9 font-weight-500 ma-t-20">Create a new meeting</button>
                               </div>
+                              <!-- Filled-->
+                              <div class="meeting-card-filled d-none">
+                                <div class="user">
+                                  <div class="user-inner">
+                                    <div class="image-container ma-r-5">
+                                      <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                    </div>
+                                    <div class="user-name">Grace Kaminkli</div>
+                                  </div>
+                                  <button class="btn">
+                                    <span class="font-weight-500 font-12">Sheduled</span>
+                                    <i class="fad fa-sync-alt font-12"></i>
+                                  </button>
+                                </div>
 
-                              <div class="date-inner ma-t-10">
-                                <div class="date">
+                                <div class="date-inner ma-t-10">
+                                  <div class="date">
                                   <span class="heading font-8 font-weight-500"><i
                                       class="fad fa-calendar"></i>Date</span>
-                                  <span class="date-body font-8 ma-t-5">17 Mar 2020 2:30 pm</span>
-                                </div>
-                                <div class="address">
+                                    <span class="date-body font-8 ma-t-5">17 Mar 2020 2:30 pm</span>
+                                  </div>
+                                  <div class="address">
                                   <span class="heading font-8 font-weight-500"><i
                                       class="fad fa-map-marker-alt ma-r-5"></i>Address</span>
-                                  <span class="address-body font-8 ma-t-5">La 54322</span>
+                                    <span class="address-body font-8 ma-t-5">La 54322</span>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="notes">
-                                <div class="notes-inner">
-                                  <span class="heading font-weight-500 font-8"><i class="fad fa-edit"></i>Notes</span>
-                                  <span class="text">Lorem ipsum fe surfeit sett. Weird </span>
+                                <div class="notes">
+                                  <div class="notes-inner">
+                                    <span class="heading font-weight-500 font-8"><i class="fad fa-edit"></i>Notes</span>
+                                    <span class="text">Lorem ipsum fe surfeit sett. Weird </span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
+
                           </div>
                         </div>
 
                         <div class="tasks ma-t-10">
-                          <div class="tasks-list-empty">
-                            <div class="card">
-                              <div class="card-header">
-                                <div class="card-header-inner">
-                                  <i class="fad fa-clipboard-list-check font-r-15 ma-r-5"></i>
-                                  <span class="font-weight-500 font-r-15">Task List</span>
-                                </div>
-                                <button class="btn font-12 font-weight-500 add-task">
-                                  <i class="fad fa-plus"></i>
-                                  <span class="">Add task</span>
-                                </button>
+                          <div class="card">
+                            <div class="card-header">
+                              <div class="card-header-inner">
+                                <i class="fad fa-clipboard-list-check font-r-15 ma-r-5"></i>
+                                <span class="font-weight-500 font-r-15">Task List</span>
                               </div>
-                              <div class="card-body">
+                              <button class="btn font-12 font-weight-500 add-task">
+                                <i class="fad fa-plus"></i>
+                                <span class="">Add task</span>
+                              </button>
+                            </div>
+                            <div class="card-body">
+                              <!-- Empty -->
+                              <div class="tasks-list-empty">
                                 <div class="empty-content-wrap">
                                   <p class="card-text">
                                     In order to start the project,
@@ -1511,22 +1516,8 @@
                                 </div>
                                 <button class="btn mx-auto font-9 font-weight-500 ma-t-20">Create a new task</button>
                               </div>
-                            </div>
-                          </div>
-
-                          <div class="tasks-list-filled">
-                            <div class="card">
-                              <div class="card-header">
-                                <div class="card-header-inner">
-                                  <i class="fad fa-clipboard-list-check font-r-15 ma-r-5"></i>
-                                  <span class="font-weight-500 font-r-15">Task List</span>
-                                </div>
-                                <button class="btn font-12 font-weight-500 add-task">
-                                  <i class="fad fa-plus"></i>
-                                  <span class="">Add task</span>
-                                </button>
-                              </div>
-                              <div class="card-body">
+                              <!--  Filled -->
+                              <div class="tasks-list-filled d-none">
                                 <div class="task-card pos-r">
                                   <div class="decoration-element-wizard">
                                     <span class="square"></span>
@@ -1566,58 +1557,7 @@
                                         <span class="font-weight-bold font-r-10">Internal notes</span>
                                       </span>
                                       <span class="text font-r-8">
-                                        Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting s
-cheduling scheduling scheduling scheduling
-                                      </span>
-                                      <div class="buttons-container">
-                                        <button class="red-button font-r-8" type="button">canceled</button>
-                                        <button class="green-button font-r-8" type="button">done</button>
-                                      </div>
-                                    </div>
-                                    <!-- EOL: Notes -->
-                                  </div>
-                                </div>
-                                <div class="task-card pos-r">
-                                  <div class="decoration-element-wizard">
-                                    <span class="square"></span>
-                                    <span class="dashed-line"></span>
-                                  </div>
-                                  <div class="label system-color-bg-11 font-weight-500 font-r-10 system-color-bg-9">
-                                    <span>Setup financing</span>
-                                  </div>
-                                  <div class="task-card-inner">
-                                    <div class="inner-wrap">
-                                      <!-- user -->
-                                      <div class="user">
-                                        <div class="image-wrap ma-r-10">
-                                          <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
-                                        </div>
-                                        <div class="user-info">
-                                          <span class="gray-title font-r-8">Name</span>
-                                          <span class="user-name font-weight-bold font-r-9">George Ezra</span>
-                                        </div>
-                                      </div>
-                                      <!-- EOL: user -->
-                                      <!-- todo-time -->
-                                      <div class="todo-time">
-                                        <span class="gray-title font-r-8">Time to do</span>
-                                        <span class="time">
-                                        <i class="fal fa-calendar"></i>
-                                        <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
-                                      </span>
-                                      </div>
-                                      <!-- EOL: todo-time -->
-                                    </div>
-
-                                    <!-- Notes -->
-                                    <div class="notes">
-                                      <span>
-                                        <i class="fal fa-edit"></i>
-                                        <span class="font-weight-bold font-r-10">Internal notes</span>
-                                      </span>
-                                      <span class="text font-r-8">
-                                        Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting s
-cheduling scheduling scheduling scheduling
+                                        Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting scheduling scheduling scheduling scheduling
                                       </span>
                                       <div class="buttons-container">
                                         <button class="red-button font-r-8" type="button">canceled</button>
@@ -1648,6 +1588,7 @@ cheduling scheduling scheduling scheduling
 <script src="assets/js/custom-popover.js"></script>
 <script src="assets/js/layout-page.js"></script>
 <script src="assets/js/status-bar.js"></script>
+<script src="assets/js/leads-list.js"></script>
 <style>
   .popover {
     max-width: 160px !important;

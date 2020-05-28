@@ -2,7 +2,12 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: stretch;
+  //align-items: stretch;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-top: 30px;
+  width: 300px;
+  //background-color: coral ;
   //margin-left: -15px;
   //padding-left: 15px;
   transition-duration: 400ms;
@@ -18,8 +23,9 @@
 .status-bar {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  padding: 0 10px;
+  //width: 270px;
+  width: 100%;
+  //padding: 0 10px;
   height: 100%;
   font-family: "Raleway", sans-serif;
   color: #585077;
@@ -246,7 +252,8 @@
 .open-filter-btn {
   position: absolute;
   top: 30%;
-  right: -15px;
+  right: -10px;
+  z-index: 2;
   transform: translate(-50%, 0);
   display: flex;
   justify-content: center;
@@ -255,8 +262,7 @@
   height: 80px;
   color: #fff;
   background-color: #585077;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-radius: 10px 0 0 10px;
   cursor: pointer;
 
   .fa-chevron-right {
@@ -267,7 +273,7 @@
 
 // Additional class for .status-bar-col, when filter opened
 .filter-opened {
-  margin-left: 0;
+  //margin-left: 0;
 
   .status-bar-panel {
     display: none;
@@ -276,20 +282,24 @@
 
 .filter-closed {
   transition-duration: 400ms;
-  margin-left: -285px;
+  //margin-left: -285px;
+  margin-left: -270px;
 
   @media(max-width: 599px) {
     margin-left: 0;
   }
 
   .status-bar-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70px;
+    width: 30px;
     height: 100%;
-    padding-top: 180px;
-    //background-color: coral; // remove !!!!
+    padding-top: 20px;
+    //background: #bebebe; // remove !!!!
   }
 
   .button {
@@ -432,21 +442,6 @@
 }
 
 @media (max-width: 599px) {
-  .right-side-col {
-    &.filter-exist {
-      .status-bar-col {
-        &.filter-closed {
-          .status-bar-heading {
-            z-index: 22;
-            top: 70px;
-            height: 40px;
-          }
-        }
-      }
-    }
-  }
-
-
   .content-col {
     .search {
       display: none;

@@ -19,15 +19,7 @@ const menuRightUnderlayThree = document.querySelector('.right-underlay-3');
 // const subMenuItems = document.querySelectorAll('.sub-menu-item');
 const menuItems = document.querySelectorAll('.menu-item-d');
 const body = document.querySelector('body');
-
-const statusBar = document.querySelector('.status-bar-col');
-const rightSideCol = document.querySelector('.right-side-col');
 let subMenuBtnClicked = false;
-
-// If we have status bar on page
-if(statusBar) {
-	rightSideCol.classList.add('filter-exist');
-}
 
 const closeMenu = function(underlay, button, dropdown, wrapper) {
 	if (underlay.classList.contains('active')) {

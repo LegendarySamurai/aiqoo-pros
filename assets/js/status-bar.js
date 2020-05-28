@@ -29,11 +29,11 @@ if (window.innerWidth >= 600) {
 	// statusBarCol.classList.remove('filter-opened');
 	openFilterBtn.addEventListener('click', () => {
 		if (statusBarCol.classList.contains('filter-closed')) {
-			console.log(1);
+			// console.log(1);
 			statusBarCol.classList.add('filter-opened');
 			statusBarCol.classList.remove('filter-closed');
 		} else {
-			console.log(2);
+			// console.log(2);
 			statusBarCol.classList.remove('filter-opened');
 			statusBarCol.classList.add('filter-closed');
 		}

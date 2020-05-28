@@ -1,259 +1,294 @@
 // Leads List page modal
 .leads-list-modal {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
-  @media(max-width: 1499px) {
-    // meeting-card-filled
-    .meeting-card-filled {
-      .user {
-        button {
-          width: 130px;
-        }
-      }
-    }
-  }
-
-  @media(max-width: 1399px) {
-    // Tasks filled
-    .tasks-list-filled {
-      .task-card {
-        .inner-wrap {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-
-        .buttons-container {
-          width: 60%;
-        }
-      }
-    }
-  }
-
   @media(max-width: 1299px) {
-    .modal-body {
-      padding: 0;
-    }
 
-    // meeting-card-filled
-    .meeting-card-filled {
-      .user {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .user-inner {
-          width: 100%;
-          justify-content: flex-start;
-        }
-
-        button {
-          margin-top: 20px;
-          margin-left: 0;
-        }
-      }
-    }
   }
 
   @media(max-width: 1199px) {
-    // Tasks filled
-    .tasks-list-filled {
-      .task-card {
-
-        .buttons-container {
-          width: 70%;
-        }
-      }
+    .toggleTab {
+      display: block;
+      padding: 15px;
+      background: #f9f9f9;
+      border-bottom: 1px solid #e8e8e8;
     }
 
-    // left-col
-    .left-col {
-      width: 30%;
-    }
-  }
-
-  @media(max-width: 991px) {
-    .left-col-inner { margin-top: 20px; }
-
-    .left-col {
-      .dashed-line {
-        height: 80%;
-      }
+    .content-col-inner {
+      display: flex;
+      flex-direction: column-reverse;
     }
 
-    .leads-summary {
-      margin-top: 0;
-      padding-top: 10px;
-      padding-bottom: 30px;
-    }
-
-    .user {
-      &::after {
-        width: 100% !important;
-      }
-    }
-
-    .card-header {
-      &::after {
-        width: 100%;
-      }
-    }
-
-    // meeting-card-filled
-    .meeting-card-filled {
-      .user {
-        flex-direction: row;
-        padding: .5rem 1.25rem .5rem !important;
-
-        button {
-          margin-top: 0;
-        }
-      }
-    }
-
-    // Tasks filled
-    .tasks-list-filled {
-      .task-card {
-
-        .buttons-container {
-          width: 50%;
-        }
-      }
+    .controls-col-inner {
+      margin-top: 10px;
     }
   }
 
-  @media(max-width: 767px) {
-    .comments-list {
-      padding-left: 0;
-    }
+  @media(max-width: 991px) {}
 
-    .task-card {
-      margin-left: 0 !important;
-    }
-
-    .info {
-      padding-left: 0;
-    }
-
-    .list {
-      padding-left: 0;
-    }
-
-    .leads-summary-col {
-      .leads-summary {
-        //padding-top: 0;
-      }
-    }
-  }
+  @media(max-width: 767px) {}
 
   @media(max-width: 599px) {
-    .left-col-inner {
-      margin-top: 0;
-    }
-
-    .info-col {
-      width: 100%;
-    }
-
-    .leads-status-col {
-      width: 100%;
-
-      .leads-status {
-        width: 100%;
-        max-width: 300px;
-
-        .heading {
-          font-size: 12pt !important;
-        }
-      }
-    }
-
-    .leads-summary-col {
-      width: 100%;
-
-      .leads-summary {
-        .heading {
-          font-size: 12pt !important;
-        }
-      }
+    .modal-dialog {
+      //position: relative;
+      margin: 1vh auto;
+      width: 98%;
+      min-height: 99vh;
+      height: auto;
+      //background: #fff;
     }
   }
 
-  @media(max-width: 474px) {
-    .right-col-inner {padding: 15px;}
+  @media(max-width: 374px) {}
 
-    .comment-item {
-      max-height: inherit;
-    }
+  //@media(max-width: 1499px) {
+  //  // meeting-card-filled
+  //  .meeting-card-filled {
+  //    .user {
+  //      button {
+  //        width: 130px;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //@media(max-width: 1399px) {
+  //  // Tasks filled
+  //  .tasks-list-filled {
+  //    .task-card {
+  //      .inner-wrap {
+  //        flex-direction: column;
+  //        align-items: flex-start;
+  //      }
+  //
+  //      .buttons-container {
+  //        width: 60%;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //@media(max-width: 1299px) {
+  //  .modal-body {
+  //    padding: 0;
+  //  }
+  //
+  //  // meeting-card-filled
+  //  .meeting-card-filled {
+  //    .user {
+  //      flex-direction: column;
+  //      align-items: flex-start;
+  //
+  //      .user-inner {
+  //        width: 100%;
+  //        justify-content: flex-start;
+  //      }
+  //
+  //      button {
+  //        margin-top: 20px;
+  //        margin-left: 0;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //@media(max-width: 1199px) {
+  //  // Tasks filled
+  //  .tasks-list-filled {
+  //    .task-card {
+  //
+  //      .buttons-container {
+  //        width: 70%;
+  //      }
+  //    }
+  //  }
+  //
+  //  // left-col
+  //  .left-col {
+  //    width: 30%;
+  //  }
+  //}
+  //
+  //@media(max-width: 991px) {
+  //  .left-col-inner { margin-top: 20px; }
+  //
+  //  .left-col {
+  //    .dashed-line {
+  //      height: 80%;
+  //    }
+  //  }
+  //
+  //  .leads-summary {
+  //    margin-top: 0;
+  //    padding-top: 10px;
+  //    padding-bottom: 30px;
+  //  }
+  //
+  //  .user {
+  //    &::after {
+  //      width: 100% !important;
+  //    }
+  //  }
+  //
+  //  .card-header {
+  //    &::after {
+  //      width: 100%;
+  //    }
+  //  }
+  //
+  //  // meeting-card-filled
+  //  .meeting-card-filled {
+  //    .user {
+  //      flex-direction: row;
+  //      padding: .5rem 1.25rem .5rem !important;
+  //
+  //      button {
+  //        margin-top: 0;
+  //      }
+  //    }
+  //  }
+  //
+  //  // Tasks filled
+  //  .tasks-list-filled {
+  //    .task-card {
+  //
+  //      .buttons-container {
+  //        width: 50%;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //@media(max-width: 767px) {
+  //  .comments-list {
+  //    padding-left: 0;
+  //  }
+  //
+  //  .task-card {
+  //    margin-left: 0 !important;
+  //  }
+  //
+  //  .info {
+  //    padding-left: 0;
+  //  }
+  //
+  //  .list {
+  //    padding-left: 0;
+  //  }
+  //
+  //  .leads-summary-col {
+  //    .leads-summary {
+  //      //padding-top: 0;
+  //    }
+  //  }
+  //}
+  //
+  //@media(max-width: 599px) {
+  //  .left-col-inner {
+  //    margin-top: 0;
+  //  }
+  //
+  //  .info-col {
+  //    width: 100%;
+  //  }
+  //
+  //  .leads-status-col {
+  //    width: 100%;
+  //
+  //    .leads-status {
+  //      width: 100%;
+  //      max-width: 300px;
+  //
+  //      .heading {
+  //        font-size: 12pt !important;
+  //      }
+  //    }
+  //  }
+  //
+  //  .leads-summary-col {
+  //    width: 100%;
+  //
+  //    .leads-summary {
+  //      .heading {
+  //        font-size: 12pt !important;
+  //      }
+  //    }
+  //  }
+  //}
 
-    .meeting-card-empty {
-      .card-text {
-        padding-right: 10px;
-      }
-    }
-
-    .tasks-list-empty {
-      .card-text {
-        padding-left: 10px;
-      }
-
-      .image-wrap {
-        width: 140px;
-      }
-    }
-
-    .controls-col {
-      // meeting card empty
-
-      // meeting card filled
-      .meeting-card-filled {
-        .user {
-          flex-direction: column;
-          //padding-left: 0 !important;
-        }
-      }
-
-      .card-header {
-        padding: .5rem 1rem !important;
-
-        .card-header-inner {
-          span {
-            font-size: 1rem !important;
-          }
-        }
-
-        .add-task {
-          width: 100px;
-          padding: 0 7px;
-
-          span {
-            font-size: 1rem !important;
-          }
-        }
-      }
-
-      .card-body {
-        padding: 1rem !important;
-
-        .user,
-        .notes {
-          padding-left: 0 !important;
-        }
-
-        .date-inner {
-          flex-direction: column;
-          padding: .5rem 0 !important;
-        }
-      }
-
-      // Task list filled
-      .tasks-list-filled {
-        .task-card {
-          .buttons-container {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
+  //@media(max-width: 474px) {
+  //  .right-col-inner {padding: 15px;}
+  //
+  //  .comment-item {
+  //    max-height: inherit;
+  //  }
+  //
+  //  .meeting-card-empty {
+  //    .card-text {
+  //      padding-right: 10px;
+  //    }
+  //  }
+  //
+  //  .tasks-list-empty {
+  //    .card-text {
+  //      padding-left: 10px;
+  //    }
+  //
+  //    .image-wrap {
+  //      width: 140px;
+  //    }
+  //  }
+  //
+  //  .controls-col {
+  //    // meeting card empty
+  //
+  //    // meeting card filled
+  //    .meeting-card-filled {
+  //      .user {
+  //        flex-direction: column;
+  //        //padding-left: 0 !important;
+  //      }
+  //    }
+  //
+  //    .card-header {
+  //      padding: .5rem 1rem !important;
+  //
+  //      .card-header-inner {
+  //        span {
+  //          font-size: 1rem !important;
+  //        }
+  //      }
+  //
+  //      .add-task {
+  //        width: 100px;
+  //        padding: 0 7px;
+  //
+  //        span {
+  //          font-size: 1rem !important;
+  //        }
+  //      }
+  //    }
+  //
+  //    .card-body {
+  //      padding: 1rem !important;
+  //
+  //      .user,
+  //      .notes {
+  //        padding-left: 0 !important;
+  //      }
+  //
+  //      .date-inner {
+  //        flex-direction: column;
+  //        padding: .5rem 0 !important;
+  //      }
+  //    }
+  //
+  //    // Task list filled
+  //    .tasks-list-filled {
+  //      .task-card {
+  //        .buttons-container {
+  //          width: 100%;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
 }
