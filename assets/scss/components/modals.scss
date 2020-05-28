@@ -96,6 +96,12 @@
     }
   }
 
+  // Leads status
+  .leads-status {
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+  }
+
   // Leads summary
   .leads-summary {
     width: 100%;
@@ -310,7 +316,7 @@
     }
 
     .image-wrap {
-      width: 68px;
+      width: 70px;
       height: 62px;
 
       img {

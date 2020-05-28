@@ -65,9 +65,22 @@
         }
       }
     }
+
+    // left-col
+    .left-col {
+      width: 30%;
+    }
   }
 
   @media(max-width: 991px) {
+    .left-col-inner { margin-top: 20px; }
+
+    .left-col {
+      .dashed-line {
+        height: 80%;
+      }
+    }
+
     .leads-summary {
       margin-top: 0;
       padding-top: 10px;
@@ -90,7 +103,7 @@
     .meeting-card-filled {
       .user {
         flex-direction: row;
-        padding: 0.5rem 1.25rem .5rem !important;
+        padding: .5rem 1.25rem .5rem !important;
 
         button {
           margin-top: 0;
@@ -117,9 +130,130 @@
     .task-card {
       margin-left: 0 !important;
     }
+
+    .info {
+      padding-left: 0;
+    }
+
+    .list {
+      padding-left: 0;
+    }
+
+    .leads-summary-col {
+      .leads-summary {
+        //padding-top: 0;
+      }
+    }
   }
 
-  @media(max-width: 599px) {}
+  @media(max-width: 599px) {
+    .left-col-inner {
+      margin-top: 0;
+    }
 
-  @media(max-width: 374px) {}
+    .info-col {
+      width: 100%;
+    }
+
+    .leads-status-col {
+      width: 100%;
+
+      .leads-status {
+        width: 100%;
+        max-width: 300px;
+
+        .heading {
+          font-size: 12pt !important;
+        }
+      }
+    }
+
+    .leads-summary-col {
+      width: 100%;
+
+      .leads-summary {
+        .heading {
+          font-size: 12pt !important;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 474px) {
+    .right-col-inner {padding: 15px;}
+
+    .comment-item {
+      max-height: inherit;
+    }
+
+    .meeting-card-empty {
+      .card-text {
+        padding-right: 10px;
+      }
+    }
+
+    .tasks-list-empty {
+      .card-text {
+        padding-left: 10px;
+      }
+
+      .image-wrap {
+        width: 140px;
+      }
+    }
+
+    .controls-col {
+      // meeting card empty
+
+      // meeting card filled
+      .meeting-card-filled {
+        .user {
+          flex-direction: column;
+          //padding-left: 0 !important;
+        }
+      }
+
+      .card-header {
+        padding: .5rem 1rem !important;
+
+        .card-header-inner {
+          span {
+            font-size: 1rem !important;
+          }
+        }
+
+        .add-task {
+          width: 100px;
+          padding: 0 7px;
+
+          span {
+            font-size: 1rem !important;
+          }
+        }
+      }
+
+      .card-body {
+        padding: 1rem !important;
+
+        .user,
+        .notes {
+          padding-left: 0 !important;
+        }
+
+        .date-inner {
+          flex-direction: column;
+          padding: .5rem 0 !important;
+        }
+      }
+
+      // Task list filled
+      .tasks-list-filled {
+        .task-card {
+          .buttons-container {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
