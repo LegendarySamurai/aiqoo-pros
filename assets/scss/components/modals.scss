@@ -1,3 +1,11 @@
+body ::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}
+
+body ::-webkit-scrollbar {
+  width: 0px !important;
+}
+
 // Leads List page modal
 .leads-list-modal {
   .modal-dialog {
@@ -8,25 +16,34 @@
   }
 
   .modal-body {
-    padding: 1rem;
-  }
-
-  .container-fluid {
-    padding-right: 0;
-    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 100%;
+    //padding: 1rem;
+    //overflow-y: auto;
   }
 
   .modal-content {
-    max-height: calc(100vh - 3rem);
+    height: 100%;
   }
 
   // Left col
   .left-col {
-    width: 20%;
+    //overflow: hidden;
+    //overflow-y: auto;
+    width: 300px;
+    height: 100%;
 
     .dashed-line {
       height: 70%;
     }
+  }
+
+  .left-col-inner {
+    padding: 1rem;
   }
 
   .info-outer {
@@ -36,7 +53,7 @@
 
   // decoration element
   .decoration-element-wizard {
-    left: 0px;
+    left: 0;
     height: 100%;
   }
 
@@ -142,12 +159,19 @@
 
   // Right col
   .right-col {
+    overflow: hidden;
+    overflow-y: auto;
     flex-grow: 1;
     width: auto;
+    height: 100%;
   }
 
   .right-col-inner {
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 1rem;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
   }
@@ -179,6 +203,17 @@
     background-color: transparentize(#ffffff, .44);
   }
 
+  // right-col-inner
+  .activity-log-wrap {
+    width: 60%;
+    padding: 0 1rem;
+  }
+
+  .controls-col-wrap {
+    width: 40%;
+    padding: 0 1rem;
+  }
+
   // activity-log
   .activity-log {
     color: #585077;
@@ -188,9 +223,9 @@
     width: 100%;
   }
 
-  .activity-list {
-    display: none;
-  }
+  //.activity-list {
+  //  display: none;
+  //}
 
   .activity-item {
     position: relative;
@@ -319,24 +354,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
+
+    .meeting-card {
+      padding: 10px 20px;
+    }
 
     // Empty
-    .meeting-card-empty {
-      .card-text {
-        padding-right: 50px;
-        margin-bottom: 0;
-      }
+    .card-text {
+      padding-right: 50px;
+      margin-bottom: 0;
+    }
 
-      .image-wrap {
-        width: 70px;
-        height: 62px;
+    .image-wrap {
+      width: 70px;
+      height: 62px;
 
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-        }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
 
@@ -480,24 +516,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 10px 15px;
 
-      // Tasks list empty
-      .tasks-list-empty {
-        .card-text {
-          padding-right: 10px;
-          margin-bottom: 0;
-        }
-
-        .image-wrap {
-          width: 156px;
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
-        }
+      .tasks-list {
+        padding: 1rem;
       }
 
       // Tasks filled

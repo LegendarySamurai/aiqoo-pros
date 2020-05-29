@@ -245,16 +245,19 @@
     height: auto;
     margin-top: 20px;
   }
-
   // EOL: services-panel page
 }
 
 .open-filter-btn {
-  position: absolute;
+  z-index: 9;
+  position: fixed;
   top: 30%;
-  right: -10px;
-  z-index: 2;
   transform: translate(-50%, 0);
+  transition: position 200ms ease;
+  //position: absolute;
+  //top: 30%;
+  //right: -10px;
+  // z-index: 9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,30 +278,43 @@
 .filter-opened {
   //margin-left: 0;
 
+  .open-filter-btn {
+    left: 490px;
+  }
+
   .status-bar-panel {
     display: none;
   }
 }
 
+// Additional class for .status-bar-col, when filter closed
 .filter-closed {
   transition-duration: 400ms;
   //margin-left: -285px;
   margin-left: -270px;
+
+  .open-filter-btn {
+    left: 220px;
+  }
 
   @media(max-width: 599px) {
     margin-left: 0;
   }
 
   .status-bar-panel {
-    position: absolute;
-    top: 0;
-    right: 0;
+    //position: absolute;
+    //top: 0;
+    //right: 0;
+    z-index: 8;
+    position: fixed;
+    left: 200px;
+    top: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30px;
     height: 100%;
-    padding-top: 20px;
+    //padding-top: 20px;
     //background: #bebebe; // remove !!!!
   }
 
