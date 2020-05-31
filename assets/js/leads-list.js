@@ -1,5 +1,5 @@
 window.toggleList = (e) => {
-	// var width = $(window).width();
+	var width = $(window).width();
 	if ($(e).hasClass("active")) {
 		$(e).hide().removeClass("active");
 		return;
@@ -23,5 +23,11 @@ function myFunction() {
 		$(".toggle-panel").show();
 	} else {
 		$(".activity-list").addClass("active");
+	}
+
+	if (width <= 600) {
+		$(".list-outer").addClass("tab-panel");
+	} else {
+		$(".list-outer").removeClass("tab-panel");
 	}
 }

@@ -8,6 +8,7 @@
   }
 
   .left-side-container {
+    width: 200px;
     min-width: 200px;
     max-width: inherit;
   }
@@ -761,10 +762,6 @@
 }
 
 .leads-list-page {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
   @media(max-width: 1299px) {
     .table-header-col {
       .table-header-wrap {
@@ -855,9 +852,9 @@
     }
   }
 
-  @media(max-width: 767px) {}
-
   @media(max-width: 599px) {
+    padding-top: 90px;
+
     .leads-item-wrap {
       // Item cols
       .item-col {

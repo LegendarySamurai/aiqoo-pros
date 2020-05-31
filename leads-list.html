@@ -1303,7 +1303,10 @@
               </div>
               <div class="leads-summary-col">
                 <div class="leads-summary">
-                  <span class="heading font-weight-500 font-r-12">Leads Summary</span>
+                  <div class="toggleTab el-name-heading d-flex justify-content-between align-items-center cursor-p"
+                       onclick="toggleList('.list')">
+                    <div class="el-name font-weight-500 font-r-12">Leads Summary</div><i class="fad fa-chevron-down arrow-d d-sm-none"></i>
+                  </div>
                   <div class="list-outer ma-t-10">
                     <div class="decoration-element-wizard">
                       <span class="square"></span>
@@ -1324,245 +1327,239 @@
             </div>
           </div>
           <div class="right-col">
-            <div class="right-col-inner overflow-y-s">
-              <div class="activity-log-wrap">
-                <div class="activity-log-inner">
-                  <div class="map pos-r">
-                    <div class="mask">
-                      <i class="fad fa-map-marker-alt mr-2"></i>
-                      <span class="font-weight-bold font-12">LA PA 2433</span>
+            <div class="right-col-outer">
+              <div class="right-col-inner overflow-y-s">
+                <div class="activity-log-wrap">
+                  <div class="activity-log-inner">
+                    <div class="map pos-r">
+                      <div class="mask">
+                        <i class="fad fa-map-marker-alt mr-2"></i>
+                        <span class="font-weight-bold font-12">LA PA 2433</span>
+                      </div>
+                      <img src="assets/images/map.png" alt="map">
                     </div>
-                    <img src="assets/images/map.png" alt="map">
-                  </div>
-                  <div class="activity-log ma-t-10">
-                    <div class="toggleTab" >
-                      <div class="el-name-heading d-flex justify-content-between cursor-p" onclick="toggleList('.activity-list')">
-                        <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clipboard mr-2"></i>Activity log</div>
-                        <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
-                      </div>
-                    </div>
-
-                    <div class="activity-list toggle-panel ma-t-10">
-                      <div class="activity-list-wrap">
-                        <div class="activity-item">
-                          <div class="decoration-element-wizard">
-                            <span class="square"></span>
-                            <span class="dashed-line"></span>
-                          </div>
-                          <div class="activity-item-inner">
-                            <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
-                            <div class="comments-list">
-                              <div class="comment-item ma-t-10 ma-b-10">
-                                <div class="decoration-left-side-line system-color-bg-17"></div>
-                                <div class="item-inner">
-                                  <div class="text font-9">
-                                    <span>New Task Was Created</span>
-                                    <span>Lorem ipsum</span>
-                                  </div>
-                                  <div class="image-container">
-                                    <img src="assets/images/dummy-avatar.png" alt="avatar">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="comment-item ma-b-10">
-                                <div class="decoration-left-side-line system-color-bg-17"></div>
-                                <div class="item-inner">
-                                  <div class="text font-9">
-                                    <span>New Task Was Created</span>
-                                  </div>
-                                  <div class="image-container">
-                                    <img src="assets/images/dummy-avatar.png" alt="avatar">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="activity-item">
-                          <div class="decoration-element-wizard">
-                            <span class="square"></span>
-                            <span class="dashed-line"></span>
-                          </div>
-                          <div class="activity-item-inner">
-                            <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
-                            <div class="comments-list">
-                              <div class="comment-item ma-t-10 ma-b-10">
-                                <div class="decoration-left-side-line system-color-bg-17"></div>
-                                <div class="item-inner">
-                                  <div class="text font-9">
-                                    <span>New Task Was Created New Task Was</span>
-                                    <span>Lorem ipsum</span>
-                                  </div>
-                                  <div class="image-container">
-                                    <img src="assets/images/dummy-avatar.png" alt="avatar">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="comment-item ma-b-10">
-                                <div class="decoration-left-side-line system-color-bg-17"></div>
-                                <div class="item-inner">
-                                  <div class="text font-9">
-                                    <span>New Task Was Created</span>
-                                  </div>
-                                  <div class="image-container">
-                                    <img src="assets/images/dummy-avatar.png" alt="avatar">
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="add-note-wrap ma-t-30">
-                        <div class="form-group">
-                          <textarea class="form-control font-9" rows="6" placeholder="Add Note"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-lg add-note">
-                          <span class="font-weight-bold font-9 font-weight-bold">Add</span>
-                          <i class="fad fa-step-forward"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="controls-col-wrap">
-                <div class="controls-col-inner">
-
-                  <div class="meeting toggleTab">
-                    <div class="card">
-                      <div class="card-header d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.meeting-card')">
-                        <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clock font-r-15 ma-r-5"></i>Meeting</div>
-                        <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
-                      </div>
-                      <div class="card-body toggle-panel">
-                        <!-- Empty -->
-                        <div class="meeting-card meeting-card-empty">
-                          <div class="empty-content-wrap">
-                            <p class="card-text">To create a new appointment with a customer, click here</p>
-                            <div class="image-wrap">
-                              <img src="assets/images/calendar-big.svg" alt="calendar-big">
-                            </div>
-                          </div>
-                          <button class="btn mx-auto font-r-9 font-weight-500 ma-t-20">Create a new meeting</button>
-                        </div>
-                        <!-- Filled-->
-                        <div class="meeting-card meeting-card-filled d-none">
-                          <div class="user">
-                            <div class="user-inner">
-                              <div class="image-container ma-r-5">
-                                <img src="assets/images/dummy-avatar.png" alt="avatar">
-                              </div>
-                              <div class="user-name">Grace Kaminkli</div>
-                            </div>
-                            <button class="btn">
-                              <span class="font-weight-500 font-12">Sheduled</span>
-                              <i class="fad fa-sync-alt font-12"></i>
-                            </button>
-                          </div>
-
-                          <div class="date-inner ma-t-10">
-                            <div class="date">
-                                  <span class="heading font-8 font-weight-500"><i
-                                      class="fad fa-calendar"></i>Date</span>
-                              <span class="date-body font-8 ma-t-5">17 Mar 2020 2:30 pm</span>
-                            </div>
-                            <div class="address">
-                                  <span class="heading font-8 font-weight-500"><i
-                                      class="fad fa-map-marker-alt ma-r-5"></i>Address</span>
-                              <span class="address-body font-8 ma-t-5">La 54322</span>
-                            </div>
-                          </div>
-                          <div class="notes">
-                            <div class="notes-inner">
-                              <span class="heading font-weight-500 font-8"><i class="fad fa-edit"></i>Notes</span>
-                              <span class="text">Lorem ipsum fe surfeit sett. Weird </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="tasks toggleTab ma-t-10">
-                    <div class="card">
-                      <div class="card-header" onclick="toggleList('.tasks-list')">
-                        <div class="card-header-inner d-flex justify-content-between align-items-center cursor-p">
-                          <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clipboard-list-check font-r-15 ma-r-5"></i>Task List</div>
+                    <div class="activity-log ma-t-10">
+                      <div class="toggleTab" >
+                        <div class="el-name-heading d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.activity-list')">
+                          <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clipboard mr-2"></i>Activity log</div>
                           <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
                         </div>
-                        <button class="btn font-12 font-weight-500 add-task">
-                          <i class="fad fa-plus"></i>
-                          <span class="">Add task</span>
-                        </button>
                       </div>
-                      <div class="card-body toggle-panel">
-                        <!-- Empty -->
-                        <div class="tasks-list tasks-list-empty">
-                          <div class="empty-content-wrap">
-                            <p class="card-text">
-                              In order to start the project,
-                              build yourself tasksBy clicking
-                              the “Create a Task” button
-                            </p>
-                            <div class="image-wrap">
-                              <img src="assets/images/list-big.svg" alt="list-big">
-                            </div>
-                          </div>
-                          <button class="btn mx-auto font-9 font-weight-500 ma-t-20">Create a new task</button>
-                        </div>
-                        <!--  Filled -->
-                        <div class="tasks-list tasks-list-filled d-none">
-                          <div class="task-card pos-r">
+
+                      <div class="activity-list toggle-panel ma-t-10">
+                        <div class="activity-list-wrap">
+                          <div class="activity-item">
                             <div class="decoration-element-wizard">
                               <span class="square"></span>
                               <span class="dashed-line"></span>
                             </div>
-                            <div class="label system-color-bg-9 font-weight-500 font-r-10 system-color-bg-9">
-                              <span>Setup financing</span>
-                            </div>
-                            <div class="task-card-inner">
-                              <div class="inner-wrap">
-                                <!-- user -->
-                                <div class="user">
-                                  <div class="image-wrap ma-r-10">
-                                    <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
-                                  </div>
-                                  <div class="user-info">
-                                    <span class="gray-title font-r-8">Name</span>
-                                    <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                            <div class="activity-item-inner">
+                              <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
+                              <div class="comments-list">
+                                <div class="comment-item ma-t-10 ma-b-10">
+                                  <div class="decoration-left-side-line system-color-bg-17"></div>
+                                  <div class="item-inner">
+                                    <div class="text font-9">
+                                      <span>New Task Was Created</span>
+                                      <span>Lorem ipsum</span>
+                                    </div>
+                                    <div class="image-container">
+                                      <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                    </div>
                                   </div>
                                 </div>
-                                <!-- EOL: user -->
-                                <!-- todo-time -->
-                                <div class="todo-time">
-                                  <span class="gray-title font-r-8">Time to do</span>
-                                  <span class="time">
+                                <div class="comment-item ma-b-10">
+                                  <div class="decoration-left-side-line system-color-bg-17"></div>
+                                  <div class="item-inner">
+                                    <div class="text font-9">
+                                      <span>New Task Was Created</span>
+                                    </div>
+                                    <div class="image-container">
+                                      <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="activity-item">
+                            <div class="decoration-element-wizard">
+                              <span class="square"></span>
+                              <span class="dashed-line"></span>
+                            </div>
+                            <div class="activity-item-inner">
+                              <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
+                              <div class="comments-list">
+                                <div class="comment-item ma-t-10 ma-b-10">
+                                  <div class="decoration-left-side-line system-color-bg-17"></div>
+                                  <div class="item-inner">
+                                    <div class="text font-9">
+                                      <span>New Task Was Created New Task Was</span>
+                                      <span>Lorem ipsum</span>
+                                    </div>
+                                    <div class="image-container">
+                                      <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="comment-item ma-b-10">
+                                  <div class="decoration-left-side-line system-color-bg-17"></div>
+                                  <div class="item-inner">
+                                    <div class="text font-9">
+                                      <span>New Task Was Created</span>
+                                    </div>
+                                    <div class="image-container">
+                                      <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="add-note-wrap ma-t-30">
+                          <div class="form-group">
+                            <textarea class="form-control font-9" rows="6" placeholder="Add Note"></textarea>
+                          </div>
+                          <button type="button" class="btn btn-lg add-note">
+                            <span class="font-weight-bold font-9 font-weight-bold">Add</span>
+                            <i class="fad fa-step-forward"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="controls-col-wrap">
+                  <div class="meeting card">
+                    <div class="toggleTab card-header d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.card-body .meeting-card')">
+                      <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clock font-r-15 ma-r-5"></i>Meeting</div>
+                      <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
+                    </div>
+                    <div class="toggle-panel card-body">
+                      <!-- Empty -->
+                      <div class="meeting-card meeting-card-empty">
+                        <div class="empty-content-wrap">
+                          <p class="card-text">To create a new appointment with a customer, click here</p>
+                          <div class="image-wrap">
+                            <img src="assets/images/calendar-big.svg" alt="calendar-big">
+                          </div>
+                        </div>
+                        <button class="create btn mx-auto font-r-9 font-weight-500 ma-t-20">Create a new meeting</button>
+                      </div>
+                      <!-- Filled-->
+                      <div class="meeting-card meeting-card-filled d-none">
+                        <div class="user">
+                          <div class="user-inner">
+                            <div class="image-container ma-r-5">
+                              <img src="assets/images/dummy-avatar.png" alt="avatar">
+                            </div>
+                            <div class="user-name">Grace Kaminkli</div>
+                          </div>
+                          <button class="btn">
+                            <span class="font-weight-500 font-12">Sheduled</span>
+                            <i class="fad fa-sync-alt font-12"></i>
+                          </button>
+                        </div>
+
+                        <div class="date-inner ma-t-10">
+                          <div class="date">
+                                  <span class="heading font-8 font-weight-500"><i
+                                      class="fad fa-calendar"></i>Date</span>
+                            <span class="date-body font-8 ma-t-5">17 Mar 2020 2:30 pm</span>
+                          </div>
+                          <div class="address">
+                                  <span class="heading font-8 font-weight-500"><i
+                                      class="fad fa-map-marker-alt ma-r-5"></i>Address</span>
+                            <span class="address-body font-8 ma-t-5">La 54322</span>
+                          </div>
+                        </div>
+                        <div class="notes">
+                          <div class="notes-inner">
+                            <span class="heading font-weight-500 font-8"><i class="fad fa-edit"></i>Notes</span>
+                            <span class="text">Lorem ipsum fe surfeit sett. Weird </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tasks card ma-t-10">
+                    <div class="toggleTab card-header d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.card-body .tasks-list')">
+                      <div class="card-header-inner d-flex justify-content-between align-items-center cursor-p">
+                        <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clipboard-list-check font-r-15 ma-r-5"></i>Task List</div>
+                        <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
+                      </div>
+                      <button class="btn font-12 font-weight-500 add-task">
+                        <i class="fad fa-plus"></i>
+                        <span class="">Add task</span>
+                      </button>
+                    </div>
+                    <div class="toggle-panel card-body">
+                      <!-- Empty -->
+                      <div class="tasks-list tasks-list-empty d-none">
+                        <div class="empty-content-wrap">
+                          <p class="card-text">
+                            In order to start the project,
+                            build yourself tasksBy clicking
+                            the “Create a Task” button
+                          </p>
+                          <div class="image-wrap">
+                            <img src="assets/images/list-big.svg" alt="list-big">
+                          </div>
+                        </div>
+                        <button class="create btn mx-auto font-9 font-weight-500 ma-t-20">Create a new task</button>
+                      </div>
+                      <!--  Filled -->
+                      <div class="tasks-list tasks-list-filled">
+                        <div class="task-card pos-r">
+                          <div class="decoration-element-wizard">
+                            <span class="square"></span>
+                            <span class="dashed-line"></span>
+                          </div>
+                          <div class="label system-color-bg-9 font-weight-500 font-r-10 system-color-bg-9">
+                            <span>Setup financing</span>
+                          </div>
+                          <div class="task-card-inner">
+                            <div class="inner-wrap">
+                              <!-- user -->
+                              <div class="user">
+                                <div class="image-wrap ma-r-10">
+                                  <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="user-info">
+                                  <span class="gray-title font-r-8">Name</span>
+                                  <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                                </div>
+                              </div>
+                              <!-- EOL: user -->
+                              <!-- todo-time -->
+                              <div class="todo-time">
+                                <span class="gray-title font-r-8">Time to do</span>
+                                <span class="time">
                                         <i class="fal fa-calendar"></i>
                                         <span class=" font-r-9">26 MAR 2020 2:30 AM</span>
                                       </span>
-                                </div>
-                                <!-- EOL: todo-time -->
                               </div>
+                              <!-- EOL: todo-time -->
+                            </div>
 
-                              <!-- Notes -->
-                              <div class="notes">
+                            <!-- Notes -->
+                            <div class="notes">
                                       <span>
                                         <i class="fal fa-edit"></i>
                                         <span class="font-weight-bold font-r-10">Internal notes</span>
                                       </span>
-                                <span class="text font-r-8">
+                              <span class="text font-r-8">
                                         Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting scheduling scheduling scheduling scheduling
                                       </span>
-                                <div class="buttons-container">
-                                  <button class="red-button font-r-8" type="button">canceled</button>
-                                  <button class="green-button font-r-8" type="button">done</button>
-                                </div>
+                              <div class="buttons-container">
+                                <button class="red-button font-r-8" type="button">canceled</button>
+                                <button class="green-button font-r-8" type="button">done</button>
                               </div>
-                              <!-- EOL: Notes -->
                             </div>
+                            <!-- EOL: Notes -->
                           </div>
                         </div>
                       </div>

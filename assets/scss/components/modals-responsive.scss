@@ -3,17 +3,15 @@
 
   @media(max-width: 1199px) {
     .right-col-inner {
-      //height: auto;
-      //padding: 0 1rem 1rem;
-
-      & > .row {
-        //height: auto;
-      }
+      flex-wrap: wrap;
+      height: auto;
+      box-shadow: none;
     }
 
-    .left-col {
-      //width: 30%;
-      //height: auto;
+    .right-col-outer {
+      height: auto;
+      padding-top: 0;
+      box-shadow: none;
     }
 
     .el-name-heading {
@@ -29,10 +27,15 @@
 
     .meeting-card {
       width: 100%;
+      border: 1px solid #e8e8e8;
+      border-top: none;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
     }
 
     .card {
       padding-bottom: 0;
+      box-shadow: none;
     }
 
     .card-header {
@@ -59,7 +62,9 @@
     }
 
     .activity-log-wrap {
-      padding-bottom: 1rem;
+      width: 100%;
+      //padding: 0 1rem 1rem 1rem;
+      padding: 0 0 1rem 0;
     }
 
     .activity-log-inner {
@@ -68,34 +73,152 @@
     }
 
     .controls-col-wrap {
-      padding-bottom: 1rem;
+      width: 100%;
+      padding: 0 0 1rem 0;
     }
 
-    .controls-col-inner {
-      margin-top: 10px;
-    }
+    .tasks-list {
+      width: 100%;
+      border: 1px solid #e8e8e8;
+      border-top: none;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
 
-    .task-list {
       .image-wrap {
-        width: 6vw;
+        width: 10vw;
       }
+
+      .card-text {
+        padding-right: 10px;
+      }
+    }
+
+    .notes .fa-edit {
+      margin-right: 10px;
     }
   }
 
   @media(max-width: 991px) {
-    .leads-summary {
-      margin-top: 0;
+    .card {
+      padding: 0;
     }
   }
 
-  @media(max-width: 767px) {}
+  @media(max-width: 767px) {
+    .user {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      width: 100%;
+
+      .btn {
+        margin-left: 0 !important;
+      }
+    }
+
+    .right-col-outer {
+      padding: 0 0 0 1rem;
+    }
+
+    .text {
+      line-height: 1;
+    }
+
+    .comments-list {
+      padding-left: 4px;
+    }
+
+    .item-inner {
+      padding: .5rem;
+    }
+
+    .info {
+      padding-left: 0;
+    }
+
+    .leads-summary {
+      padding-bottom: 10px;
+    }
+
+    .list {
+      padding-left: 0;
+    }
+
+    .task-card {
+      margin-left: 0 !important;
+    }
+
+    .card-body {
+      .tasks-list-filled {
+        .inner-wrap {
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start;
+
+          .user {
+            flex-direction: row !important;
+          }
+        }
+
+        .buttons-container {
+          width: auto !important;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
 
   @media(max-width: 599px) {
     .modal-dialog {
+      position: relative;
       margin: 1vh auto;
       width: 98%;
-      min-height: 99vh;
+      min-height: 97vh;
       height: auto;
+      background: #fff;
+    }
+
+    .modal-body {
+      flex-wrap: wrap;
+      overflow-y: auto;
+      height: calc(100vh - 80px);
+    }
+
+    .left-col {
+      width: 100%;
+      height: auto;
+
+      .left-col-inner {
+        overflow: unset !important;
+        padding-bottom: 0 !important;
+      }
+
+      .list-outer {
+        margin-top: 0 !important;
+        padding-top: 10px;
+      }
+
+      .leads-summary {
+        margin-top: 10px;
+        padding-bottom: 0;
+
+        .el-name {
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+
+    .right-col {
+      width: 100%;
+      height: auto;
+      padding-top: 0;
+    }
+
+    .right-col-outer {
+      padding: 0;
+    }
+
+    .activity-log {
+      margin-top: 0 !important;
     }
   }
 }
