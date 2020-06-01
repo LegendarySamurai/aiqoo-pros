@@ -3,9 +3,10 @@
   flex-direction: row;
   justify-content: flex-start;
   //align-items: stretch;
-  padding-right: 30px;
-  padding-left: 20px;
-  padding-top: 30px;
+  //padding-right: 30px;
+  //padding-left: 20px;
+  //padding-top: 30px;
+  padding: 1% 2%;
   width: 300px;
   //background-color: coral ;
   //margin-left: -15px;
@@ -279,7 +280,7 @@
   //margin-left: 0;
 
   .open-filter-btn {
-    left: 490px;
+    left: 540px !important;
   }
 
   .status-bar-panel {
@@ -333,7 +334,7 @@
 
 @media(max-width: 1399px) {
   .status-bar {
-    padding: 20px 15px 20px 15px;
+    padding: 0% 4% 5%;
   }
 
   .open-filter-btn {
@@ -342,6 +343,12 @@
 
   .status-bar-panel {
     left: 200px !important;
+  }
+
+  .filter-opened {
+    .open-filter-btn {
+      left: 490px !important;
+    }
   }
 }
 
@@ -406,13 +413,6 @@
 
 @media(max-width: 767px) {
   .content-col {
-    //margin-left: 15px;
-
-    .content {
-      //padding-left: 0;
-      //margin-left: -15px;
-    }
-
     .search {
       .title {
         height: 46px;
@@ -423,9 +423,32 @@
   }
 
   .status-bar-col {
-    margin-top: 10px;
+    margin-top: 0;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
+
+    &.filter-closed {
+      margin-left: -280px;
+      padding-right: 10px;
+
+      .status-bar-panel {
+        left: 0px !important;
+        top: 160px;
+      }
+
+      .open-filter-btn {
+        left: 20px !important;
+        top: 35%;
+      }
+    }
+
+    &.filter-opened {
+      .open-filter-btn {
+        top: 60%;
+        left: 290px !important;
+      }
+    }
   }
 
   .status-bar {
@@ -445,7 +468,7 @@
       width: 100%;
 
       .title {
-        margin: 20px 0 20px;
+        //margin: 20px 0 20px;
       }
     }
 
@@ -498,6 +521,11 @@
     align-self: auto;
     margin-top: 0;
     width: 0;
+
+    &.filter-closed {
+      margin-left: 0 !important;
+      padding-right: 0 !important;
+    }
   }
 
   .status-bar {
