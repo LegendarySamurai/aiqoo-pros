@@ -854,6 +854,10 @@
 
   @media(max-width: 767px) {
     padding-top: 0;
+
+    .leads-list-col {
+      margin-left: 3%;
+    }
   }
 
   @media(max-width: 599px) {
