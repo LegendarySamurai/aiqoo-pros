@@ -6,21 +6,21 @@ const closeFilter = document.querySelector('.close-filter');
 const openFilterBtn = document.querySelector('.open-filter-btn');
 const statusBarCol = document.querySelector('.status-bar-col');
 
+let width = $(window).width();
+if (width < 600) {
+	$(".status-bar-inner").removeClass("is-active");
 
-if (window.innerWidth < 600) {
-	statusBarInner.classList.remove('is-active');
-
-	filterButton.addEventListener('click', () => {
-		statusBarInner.classList.add('is-active');
+	$(".filter-btn").addEventListener("click", () => {
+		$(".status-bar-inner").addClass("is-active");
 		// statusBarBacklayer.classList.add('is-active');
 	});
 
-	closeStatusBarInnerBtn.addEventListener('click', () => {
-		statusBarInner.classList.remove('is-active');
+	$(".close-filter-btn").addEventListener("click", () => {
+		$(".status-bar-inner").removeClass("is-active");
 	});
 
-	closeFilter.addEventListener('click', () => {
-		statusBarInner.classList.remove('is-active');
+	$(".close-filter").addEventListener("click", () => {
+		$(".status-bar-inner").removeClass("is-active");
 	});
 }
 
