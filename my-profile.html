@@ -406,105 +406,109 @@
                   <div class="right-side-content-inner">
 
                     <!-- Unique content -->
-                    <div class="content-container my-profile">
-                      <div class="content">
-                        <div class="content-inner">
-                          <a href="#" class="upload-photo">
-                            <i class="far fa-user-circle"></i>
-                            <span class="font-weight-500 font-r-14">Upload Photo</span>
-                          </a>
-                          <form>
-                            <div class="input-group-container">
-                              <h6 class="font-weight-500 input-group-title">My Details</h6>
-                              <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-user-alt"></i></div>
+                    <div class="my-profile">
+                      <div class="content-wrap">
+                        <div class="content">
+                          <div class="content-inner">
+                            <a href="#" class="upload-photo">
+                              <i class="far fa-user-circle"></i>
+                              <span class="font-weight-500 font-13">Upload Photo</span>
+                            </a>
+                            <form>
+                              <div class="input-group-container">
+                                <!--<h6 class="input-group-title">My Details</h6>-->
+                                <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-user-alt"></i></div>
+                                  </div>
+                                  <input type="text" class="form-control font-r-14" id="full-name" placeholder="Full-name">
                                 </div>
-                                <input type="text" class="form-control font-r-14" id="full-name" placeholder="Full-name">
-                              </div>
-                              <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-phone-alt"></i></div>
+                                <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-phone-alt"></i></div>
+                                  </div>
+                                  <input type="tel" class="form-control font-r-14" id="phone" placeholder="Phone number">
                                 </div>
-                                <input type="tel" class="form-control font-r-14" id="phone" placeholder="Phone number">
-                              </div>
-                              <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-envelope"></i></div>
+                                <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-envelope"></i></div>
+                                  </div>
+                                  <input type="text" class="form-control font-r-14" id="sign-up-email" placeholder="E-mail">
                                 </div>
-                                <input type="text" class="form-control font-r-14" id="sign-up-email" placeholder="E-mail">
                               </div>
+                              <div class="input-group-container">
+                                <h6 class="input-group-title ma-t-30">Change password</h6>
+                                <div class="input-group input-group-password mb-3 pos-r">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
+                                  </div>
+                                  <input type="password" class="form-control font-r-14" id="change-password" placeholder="Password">
+                                  <i class="far fa-eye cursor-p"></i>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="input-group input-group-password mb-3 pos-r">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
+                                  </div>
+                                  <input type="password" class="form-control font-r-14" id="repeat-password" placeholder="Password">
+                                  <i class="far fa-eye cursor-p"></i>
+                                </div>
+                                <div class="input-group input-group-password mb-3 pos-r">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
+                                  </div>
+                                  <input type="password" class="form-control font-r-14" id="repeat-new-password" placeholder="Password">
+                                  <i class="far fa-eye cursor-p"></i>
+                                </div>
+                              </div>
+                              <div class="options">
+                                <div class="form-check mb-3">
+                                  <div class="custom-checkbox position-relative">
+                                    <input type="checkbox" class="custom-control-input" id="sms-updates">
+                                    <label class="custom-control-label cursor-p" for="sms-updates">
+                                      <span class="custom-control-label-text input-label font-r-14">I acknowledge receiving SMS updates</span>
+                                    </label>
+                                  </div>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                  <div class="custom-checkbox position-relative">
+                                    <input type="checkbox" class="custom-control-input" id="marketing-emails">
+                                    <label class="custom-control-label cursor-p" for="marketing-emails">
+                                      <span class="custom-control-label-text input-label font-r-14">I approve of receiving marketing emails</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="form-check mb-3">
+                                  <div class="custom-checkbox position-relative">
+                                    <input type="checkbox" class="custom-control-input" id="notifications">
+                                    <label class="custom-control-label cursor-p font-r-14" for="notifications">
+                                      <span class="custom-control-label-text input-label">I approve of receiving notifications</span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="form-check mb-3">
+                                  <div class="custom-checkbox position-relative">
+                                    <input type="checkbox" class="custom-control-input" id="emails">
+                                    <label class="custom-control-label cursor-p font-r-14" for="emails">
+                                      <span class="custom-control-label-text input-label">I approve of receiving emails</span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="submit-button mt-4">
+                              <button type="button" id="sign-in-btn" class="btn mt-auto font-r-14 pos-r">
+                                Save Changes
+                              </button>
                             </div>
-                            <div class="input-group-container">
-                              <h6 class="font-weight-500 input-group-title ma-t-30">Change password</h6>
-                              <div class="input-group input-group-password mb-3 pos-r">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
-                                </div>
-                                <input type="password" class="form-control font-r-14" id="change-password" placeholder="Password">
-                                <i class="far fa-eye cursor-p"></i>
-                              </div>
-                              <div class="divider"></div>
-                              <div class="input-group input-group-password mb-3 pos-r">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
-                                </div>
-                                <input type="password" class="form-control font-r-14" id="repeat-password" placeholder="Password">
-                                <i class="far fa-eye cursor-p"></i>
-                              </div>
-                              <div class="input-group input-group-password mb-3 pos-r">
-                                <div class="input-group-prepend">
-                                  <div class="input-group-text input-group-aiqoo-text pos-r"><i class="far fa-key"></i></div>
-                                </div>
-                                <input type="password" class="form-control font-r-14" id="repeat-new-password" placeholder="Password">
-                                <i class="far fa-eye cursor-p"></i>
-                              </div>
-                            </div>
-                            <div class="options">
-                              <div class="form-check mb-2">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="sms-updates">
-                                  <label class="custom-control-label cursor-p font-r-14" for="sms-updates">
-                                    I acknowledge receiving SMS updates
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="form-check mb-2">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="marketing-emails">
-                                  <label class="custom-control-label cursor-p font-r-14" for="marketing-emails">
-                                    I approve of receiving marketing emails
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="form-check mb-2">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="notifications">
-                                  <label class="custom-control-label cursor-p font-r-14" for="notifications">
-                                    I approve of receiving notifications
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="form-check mb-2">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="emails">
-                                  <label class="custom-control-label cursor-p font-r-14" for="emails">
-                                    I approve of receiving emails
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </form>
-                          <div class="submit-button mt-4">
-                            <button type="button" id="sign-in-btn" class="btn mt-auto font-r-14 pos-r">
-                              Save Changes
-                            </button>
                           </div>
                         </div>
+                        <div class="banner">
+                          <img src="assets/images/my-profile.jpg" alt="banner">
+                        </div>
                       </div>
-                      <div class="banner">
-                        <img src="assets/images/my-profile.jpg" alt="banner">
-                      </div>
+
                     </div>
                     <!-- EOL: Unique content -->
 

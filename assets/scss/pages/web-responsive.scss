@@ -1051,6 +1051,43 @@
 
 // ******* Old pages ******* //
 
+.my-profile {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1499px) {
+    .content-wrap {
+      width: 1100px;
+    }
+
+    .banner {
+      max-width: 160px;
+    }
+  }
+
+  @media(max-width: 1399px) {
+    .content-wrap {
+      justify-content: center;
+      width: 96%;
+    }
+
+    .banner {
+      display: none;
+    }
+  }
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {
+    margin-top: 200px;
+  }
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
+}
+
 // System campaign: Services, summary, zip-code pages //
 .system-campaign {
   @import '../components/system-campaign-responsive';
@@ -1079,9 +1116,9 @@
 
 @media(min-width: 300px) {
   // My profile
-  .content-container {
+  .content-wrap {
     .content-inner {
-      padding-top: 74px;
+      padding-top: 90px;
     }
 
     .content {
@@ -1105,17 +1142,6 @@
     }
   }
   // EOL: My profile
-  //
-  //.verification {
-  //  min-height: 510px;
-  //}
-  //
-  ////.sign-in-and-sign-up,
-  //.account-verification {
-  //  width: 96%;
-  //  max-width: 450px;
-  //}
-  //// EOL: Sign-in, Sign-up, Account-verification
 
   .buttons-container {
     display: flex;
@@ -1250,9 +1276,9 @@
     }
   }
 
-  .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-    top: 0 !important;
-  }
+  //.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+  //  top: 0 !important;
+  //}
 }
 
 @media(max-width: 599px) {
@@ -1327,92 +1353,7 @@
     }
   }
 
-  // My profile
-  .my-profile {
-    flex-grow: 1;
-    align-items: flex-start;
-    padding: 0 20px 0;
-    width: 100%;
 
-    .content {
-      padding: 0 5% 5% 5%;
-      width: 100%;
-    }
-
-    .banner {
-      //display: none;
-    }
-
-    .content-inner {
-      padding-top: 74px;
-    }
-
-    .upload-photo {
-
-      span {
-        position: absolute;
-        top: 25%;
-        left: 115%;
-        width: 100%;
-        font-size: 1rem !important;
-      }
-
-      i {
-        font-size: 4.5rem;
-        width: 90px;
-        height: 90px;
-      }
-    }
-  }
-  // EOL: My profile
-}
-
-@media(min-width: 1025px) {
-  // My profile page
-  .my-profile {
-    flex-grow: 1;
-    padding: 20px 20px 0;
-
-    .content {
-      flex-grow: 1;
-      width: 46%;
-    }
-
-    .upload-photo {
-      span {
-        position: absolute;
-        top: 25%;
-        left: 115%;
-        width: 100%;
-        font-size: 1.125rem !important;
-      }
-
-      i {
-        font-size: 5.5rem;
-        width: 110px;
-        height: 110px;
-      }
-    }
-  }
-
-  .side-menu {
-    width: 20%;
-  }
-
-  .side-menu-inner {
-    & > li {
-      padding: 0 32px;
-    }
-
-    & > li > a {
-      padding: 20px 0;
-    }
-
-    & > li:not(:last-child) > a {
-      border-bottom: 1px solid #dcdcdc;
-    }
-  }
-  // EOL: My profile
 }
 
 @media(min-width: 1200px) {
@@ -1449,39 +1390,6 @@
   }
 }
 
-@media(min-width: 1366px) {
-  // My profile
-  .content-container {
-    .content-inner {
-      padding-top: 80px;
-    }
-
-    .upload-photo {
-      span {
-        font-size: 1.25rem !important;
-      }
-      i {
-        width: 125px;
-        height: 125px;
-      }
-    }
-  }
-  // EOL: My profile
-}
-
-@media(max-width: 1569px) {
-  .header {
-    .more-btn {
-      display: inline-block !important;
-      font-size: 1rem;
-      -webkit-transition: all .2s ease;
-      transition: all .2s ease;
-      padding: 0 20px 0 0;
-      color: #585077;
-    }
-  }
-}
-
 @media(min-width: 1600px) {
   /// Wizard content ///
   .page-content {
@@ -1509,7 +1417,6 @@
     }
 
     .upload-photo {
-
       i {
         font-size: 6.5rem;
         width: 138px;

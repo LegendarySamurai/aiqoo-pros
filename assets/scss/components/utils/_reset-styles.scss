@@ -32,10 +32,14 @@ button:focus {
   outline: none !important;
 }
 
-textarea:focus, input:focus {
+textarea:focus, input:focus, checkbox {
   outline: none !important;
   border-color: inherit !important;
   -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
   box-shadow: none !important;
 }
 
