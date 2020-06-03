@@ -1,4 +1,5 @@
 const filterButton = document.querySelector('.filter-btn');
+const statusBarPanel = document.querySelector('.status-bar-panel');
 const statusBarInner = document.querySelector('.status-bar-inner');
 const closeStatusBarInnerBtn = document.querySelector('.close-filter-btn');
 const closeFilter = document.querySelector('.close-filter');
@@ -33,6 +34,13 @@ if (window.innerWidth >= 600) {
 				statusBarCol.classList.remove('filter-closed');
 			}
 		});
+	});
+
+	statusBarPanel.addEventListener('click', () => {
+		if (statusBarCol.classList.contains('filter-closed')) {
+			statusBarCol.classList.add('filter-opened');
+			statusBarCol.classList.remove('filter-closed');
+		}
 	});
 
 	closeStatusBarBtn.addEventListener('click', () => {
