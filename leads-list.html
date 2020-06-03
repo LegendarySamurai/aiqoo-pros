@@ -420,8 +420,12 @@
 
                         <!-- Status bar left -->
                         <div class="status-bar-col col-auto filter-closed">
+                          <!-- Close filter button -->
+                          <div class="close-status-bar-btn">
+                            <i class="fad fa-times"></i>
+                          </div>
                           <!-- Open filter button -->
-                          <div class="open-filter-btn">
+                          <div class="open-filter-btn open-filter">
                             <i class="fas fa-chevron-right"></i>
                           </div>
                           <!-- Status bar -->
@@ -446,6 +450,7 @@
                                   <i class="fad fa-times-circle font-r-16 close-filter-btn"></i>
                                 </div>
                                 <div class="status-bar-inner-body">
+
                                   <!-- Search mobile -->
                                   <div class="search mb-3 mb-lg-0 d-none">
                                     <div class="input-group">
@@ -921,13 +926,13 @@
                           <!-- Status bar panel -->
                           <div class="status-bar-panel">
                             <div class="buttons">
-                              <div class="button button-one filter">
+                              <div class="button button-one filter open-filter">
                                 <i class="fad fa-filter"></i>
                               </div>
-                              <div class="button button-two user">
+                              <div class="button button-two user open-filter">
                                 <i class="fad fa-user"></i>
                               </div>
-                              <div class="button button-three date">
+                              <div class="button button-three date open-filter">
                                 <i class="fad fa-calendar-alt"></i>
                               </div>
                             </div>
@@ -983,7 +988,7 @@
                             <div class="col col-lg-12 table-body-col">
                               <div class="leads-list">
                                 <!-- Item -->
-                                <div class="leads-item-wrap mt-0">
+                                <div class="leads-item-wrap mt-0" data-toggle="modal" data-target="#leadsListModal">
                                   <div class="decoration-left-side-line system-color-bg-16"></div>
                                   <div class="leads-item">
                                     <div class="date-col item-col pl-0">
@@ -1034,7 +1039,7 @@
                                 </div>
                                 <!-- EOL: Item -->
                                 <!-- Item -->
-                                <div class="leads-item-wrap">
+                                <div class="leads-item-wrap" data-toggle="modal" data-target="#leadsListModal">
                                   <div class="decoration-left-side-line system-color-bg-16"></div>
                                   <div class="leads-item">
                                     <div class="date-col item-col pl-0">
@@ -1093,7 +1098,7 @@
                                 </div>
                                 <!-- EOL: Item -->
                                 <!-- Item -->
-                                <div class="leads-item-wrap">
+                                <div class="leads-item-wrap" data-toggle="modal" data-target="#leadsListModal">
                                   <div class="decoration-left-side-line system-color-bg-15"></div>
                                   <div class="leads-item">
                                     <div class="date-col item-col pl-0">
@@ -1144,7 +1149,7 @@
                                 </div>
                                 <!-- EOL: Item -->
                                 <!-- Item -->
-                                <div class="leads-item-wrap">
+                                <div class="leads-item-wrap" data-toggle="modal" data-target="#leadsListModal">
                                   <div class="decoration-left-side-line system-color-bg-6"></div>
                                   <div class="leads-item">
                                     <div class="date-col item-col pl-0">
@@ -1216,7 +1221,7 @@
   </main>
 
   <!-- Button trigger modal -->
-  <button style="position: fixed; bottom:0; right:0; z-index: 4;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#leadsListModal">
+  <button style="display: none; position: fixed; bottom:0; right:0; z-index: 4;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#leadsListModal">
     leads list modal
   </button>
 

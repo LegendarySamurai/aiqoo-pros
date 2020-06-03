@@ -988,8 +988,12 @@ body {
     height: 100%;
   }
 
-  .leads-list-col {
+  .status-bar-col.filter-closed + .leads-list-col {
     margin-left: 2%;
+  }
+
+  .status-bar-col.filter-opened + .leads-list-col {
+    margin-left: 1%;
   }
 
   // Reset common styles only for this page

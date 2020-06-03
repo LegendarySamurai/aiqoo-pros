@@ -2,15 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  //align-items: stretch;
-  //padding-right: 30px;
-  //padding-left: 20px;
-  //padding-top: 30px;
   padding: 1% 2%;
   width: 300px;
-  //background-color: coral ;
-  //margin-left: -15px;
-  //padding-left: 15px;
   transition-duration: 400ms;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
   background-color: #fafafa;
@@ -24,9 +17,7 @@
 .status-bar {
   display: flex;
   flex-direction: column;
-  //width: 270px;
   width: 100%;
-  //padding: 0 10px;
   height: 100%;
   font-family: "Raleway", sans-serif;
   color: #585077;
@@ -255,10 +246,6 @@
   top: 30%;
   transform: translate(-50%, 0);
   transition: position 200ms ease;
-  //position: absolute;
-  //top: 30%;
-  //right: -10px;
-  // z-index: 9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,10 +264,26 @@
 
 // Additional class for .status-bar-col, when filter opened
 .filter-opened {
-  //margin-left: 0;
+  position: relative;
 
   .open-filter-btn {
-    left: 540px !important;
+    display: none;
+  }
+
+  .close-status-bar-btn {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: flex;
+    align-items: center;
+    padding: .25rem 0.5rem;
+    background-color: #e2dede;
+    border-radius: 5px;
+
+    .fa-times {
+      font-size: 13pt;
+      color: #585077;
+    }
   }
 
   .status-bar-panel {
@@ -291,11 +294,14 @@
 // Additional class for .status-bar-col, when filter closed
 .filter-closed {
   transition-duration: 400ms;
-  //margin-left: -285px;
   margin-left: -270px;
 
   .open-filter-btn {
-    left: 270px;
+    left: 290px;
+  }
+
+  .close-status-bar-btn {
+    display: none;
   }
 
   @media(max-width: 599px) {
@@ -303,9 +309,6 @@
   }
 
   .status-bar-panel {
-    //position: absolute;
-    //top: 0;
-    //right: 0;
     z-index: 8;
     position: fixed;
     left: 250px;
@@ -317,8 +320,6 @@
     padding-top: 20px;
     width: 50px;
     height: 100%;
-    //padding-top: 20px;
-    //background: #bebebe; // remove !!!!
   }
 
   .button {
@@ -336,7 +337,7 @@
 
 @media(max-width: 1399px) {
   .status-bar {
-    padding: 0% 4% 5%;
+    //padding: 0% 4% 5%;
   }
 
   .open-filter-btn {
@@ -349,7 +350,7 @@
 
   .filter-opened {
     .open-filter-btn {
-      left: 490px !important;
+      //left: 490px !important;
     }
   }
 }
@@ -425,39 +426,29 @@
   }
 
   .status-bar-col {
-    margin-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-
     &.filter-closed {
       margin-left: -280px;
       padding-right: 10px;
 
       .status-bar-panel {
-        left: 0px !important;
-        top: 160px;
-        padding-top: 70px;
+        left: 0 !important;
+        top: 140px;
+        padding-top: 30px;
       }
 
       .open-filter-btn {
-        left: 20px !important;
+        left: 40px !important;
         top: 35%;
       }
     }
 
     &.filter-opened {
-      .open-filter-btn {
-        top: 60%;
-        left: 290px !important;
-      }
+      position: relative;
     }
   }
 
   .status-bar {
-    .title {
-      margin-bottom: 0;
-    }
+    padding-top: 1rem;
 
     .user {
       width: 100%;
@@ -469,10 +460,6 @@
 
     .status-panel {
       width: 100%;
-
-      .title {
-        //margin: 20px 0 20px;
-      }
     }
 
     .category-type,
@@ -525,27 +512,24 @@
     margin-top: 0;
     width: 0;
 
+    .close-status-bar-btn {
+      display: none;
+    }
+
     &.filter-closed {
       margin-left: 0 !important;
-      padding-right: 0 !important;
+      padding: 0 !important;
     }
   }
 
   .status-bar {
-    margin-top: 0;
-    padding: 0;
-
-    .type-list {
-      //margin-bottom: 20px;
-      //padding-bottom: 36px !important;
-    }
+    //margin-top: 0;
+    //padding: 0;
   }
 
   .status-bar-heading {
     position: fixed;
     z-index: 11;
-    //z-index: 1;
-    //z-index: 22;
     display: flex !important;
     flex-direction: row;
     align-items: center;
@@ -656,6 +640,11 @@
       padding: 20px 20px 0;
       overflow-y: auto;
       overflow-x: hidden;
+
+      // Close filter button
+      .close-filter-btn {
+
+      }
 
       // for filter mobile popup
       .search {
