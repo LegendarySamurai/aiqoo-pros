@@ -285,18 +285,18 @@ form {
     line-height: 1.5;
   }
 
-  &:before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2.5vh;
-    height: 2.5vh;
-    border-radius: 2px;
-    border: .5px solid #d6d6d6;
-    background-color: #fff;
-  }
+  //&:before {
+  //  display: block;
+  //  content: '';
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  width: 2.5vh;
+  //  height: 2.5vh;
+  //  border-radius: 2px;
+  //  border: .5px solid #d6d6d6;
+  //  background-color: #fff;
+  //}
 }
 
 .custom-control-label-link {

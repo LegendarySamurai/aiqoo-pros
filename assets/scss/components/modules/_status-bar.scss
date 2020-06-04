@@ -164,9 +164,9 @@
 
   .type-list {
     height: auto;
-    max-height: 410px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    //max-height: 410px;
+    //overflow-x: hidden;
+    //overflow-y: auto;
     margin-top: 20px;
     padding: 16px 30px;
 
@@ -276,9 +276,6 @@
     right: .5rem;
     display: flex;
     align-items: center;
-    padding: .25rem 0.5rem;
-    background-color: #e2dede;
-    border-radius: 5px;
 
     .fa-times {
       font-size: 13pt;
