@@ -1074,20 +1074,53 @@
 
   @media(max-width: 1399px) {}
 
-  @media(max-width: 1199px) {}
+  @media(max-width: 1199px) {
+    form {
+      margin: 0 auto !important;
+    }
+  }
 
-  @media(max-width: 991px) {}
+  @media(max-width: 991px) {
+    padding-left: 0 !important;
+
+    .content {
+      margin-right: 15px !important;
+      padding: 0 2vw 4vw !important;
+    }
+
+    .content-wrap {
+      margin-right: 0 !important;
+
+      .upload-photo {
+        left: 30px !important;
+      }
+    }
+
+    form {
+      max-width: 400px !important;
+      width: 400px;
+    }
+
+    .banner {
+      width: 160px !important;
+    }
+  }
+
+  @media(max-width: 840px) {
+    .banner {
+      display: none;
+    }
+  }
 
   @media(max-width: 767px) {
     margin-top: 200px;
-  }
-
-  @media(max-width: 599px) {
+    justify-content: center;
     padding-left: 0;
-    
+
     .content-wrap {
-      width: 100%;
+      width: 96%;
       justify-content: center;
+      margin-right: 0 !important;
     }
 
     form {
@@ -1097,9 +1130,11 @@
     .content {
       margin-right: 0 !important;
     }
+  }
 
-    .banner {
-      display: none;
+  @media(max-width: 599px) {
+    .content {
+      padding: 0 4vw 4vw !important;
     }
   }
 
