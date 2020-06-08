@@ -31,3 +31,15 @@ function myFunction() {
 		$(".list-outer").removeClass("tab-panel");
 	}
 }
+
+
+
+let windowHeight = $(window).height();
+let leadsList = document.querySelector('.leads-list');
+let leadsListHeight = leadsList.offsetHeight;
+
+if(leadsListHeight > windowHeight) {
+	console.log('=>1');
+}
+
+

@@ -1,5 +1,14 @@
+body ::-webkit-scrollbar {
+  width: 2px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: #342e4a !important;
+}
+
 .status-bar-col {
   width: 300px;
+  padding: 0;
   transition-duration: 400ms;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
   background-color: #fafafa;
@@ -39,6 +48,10 @@
   height: 100%;
   font-family: "Raleway", sans-serif;
   color: #585077;
+
+  //width: 300px;
+  //background-color: coral;
+
 
   .status-bar-inner-container {
     .status-bar-inner-header {
@@ -282,6 +295,29 @@
 // Additional class for .status-bar-col, when filter opened
 .filter-opened {
   position: relative;
+  width: 300px;
+
+  .status-bar-outer {
+    //position: fixed;
+    //top: 90px;
+    //left: 200px;
+    width: 300px;
+    z-index: 201;
+    //height: 100%;
+    //padding: 0;
+  }
+
+  .status-bar {
+    position: fixed;
+    top: 100px;
+    left: 210px;
+    width: 300px;
+    max-height: calc(100vh - 90px);
+    padding: 2%;
+    overflow: hidden;
+    overflow-y: auto;
+    //background-color: CORAL;
+  }
 
   .open-filter-btn {
     display: none;
@@ -299,14 +335,6 @@
 
   .open-filter-btn {
     left: 290px;
-  }
-
-  .close-status-bar-btn {
-    //display: none;
-  }
-
-  @media(max-width: 599px) {
-    //margin-left: 0;
   }
 
   .status-bar-panel {
