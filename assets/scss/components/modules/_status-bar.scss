@@ -362,7 +362,6 @@ body ::-webkit-scrollbar-thumb {
   .fa-chevron-right {
     transform: rotate(0deg);
   }
-
 }
 
 @media(max-width: 1399px) {
@@ -500,7 +499,6 @@ body ::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-
   .status-bar-col {
     .status-bar {
       transform: translate(-300px, 32px);
@@ -509,6 +507,7 @@ body ::-webkit-scrollbar-thumb {
     &.filter-opened {
       .status-bar {
         transform: translate(0, 32px);
+        max-height: calc(100vh - 70px - 70px - 2px);
       }
     }
     
