@@ -24,6 +24,10 @@
   .input-group {
     padding-left: 10px;
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    top: 142px;
+  }
 }
 
 // Content right

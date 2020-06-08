@@ -2,7 +2,7 @@ const filterButton = document.querySelector('.filter-btn');
 const statusBarPanel = document.querySelector('.status-bar-panel');
 const statusBarInner = document.querySelector('.status-bar-inner');
 const closeStatusBarInnerBtn = document.querySelector('.close-filter-btn');
-const closeFilter = document.querySelector('.close-filter');
+const closeFilterBtns = document.querySelectorAll('.close-filter');
 const closeStatusBarBtn = document.querySelector('.close-status-bar-btn');
 
 const openFilterBtns = document.querySelectorAll('.open-filter');
@@ -16,12 +16,15 @@ if (window.innerWidth < 600) {
 		// statusBarBacklayer.classList.add('is-active');
 	});
 
-	closeStatusBarInnerBtn.addEventListener("click", () => {
-		console.log('=> Works');
-		statusBarInner.classList.remove("is-active");
-	});
+	closeFilterBtns.forEach(button => {
+		button.addEventListener("click", () => {
+			console.log('=> Works1');
+			statusBarInner.classList.remove("is-active");
+		});
 
-	closeFilter.addEventListener("click", () => {
+	});
+	closeStatusBarInnerBtn.addEventListener("click", () => {
+		console.log(e, '=> Works2');
 		statusBarInner.classList.remove("is-active");
 	});
 }
