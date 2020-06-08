@@ -11,16 +11,25 @@ body ::-webkit-scrollbar-thumb {
   padding: 0;
   transition-duration: 400ms;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
-  background-color: #fafafa;
+  //background-color: #fafafa;
+  background-color: coral;
 }
 
 .status-bar-outer {
+  //position: absolute;
+  //top: 0;
+  //left: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
   height: 100%;
   padding: 1% 2%;
+}
+
+.make-me-sticky {
+  position: sticky;
+  top: 0;
 }
 
 .done-btn-container {
@@ -302,20 +311,20 @@ body ::-webkit-scrollbar-thumb {
     //top: 90px;
     //left: 200px;
     width: 300px;
-    z-index: 201;
+    //z-index: 201;
     //height: 100%;
     //padding: 0;
   }
 
   .status-bar {
-    position: fixed;
-    top: 100px;
-    left: 210px;
+    //position: sticky;
+    //top: 0px;
+    //left: 250px;
     width: 300px;
-    max-height: calc(100vh - 90px);
+    //max-height: calc(100vh - 90px);
     padding: 2%;
-    overflow: hidden;
-    overflow-y: auto;
+    //overflow: hidden;
+    //overflow-y: auto;
     //background-color: CORAL;
   }
 

@@ -35,11 +35,24 @@ function myFunction() {
 
 
 let windowHeight = $(window).height();
+let tableRowList = document.querySelector('.table-row-list');
 let leadsList = document.querySelector('.leads-list');
 let leadsListHeight = leadsList.offsetHeight;
+let tableRowListHeight = tableRowList.offsetHeight;
 
-if(leadsListHeight > windowHeight) {
-	console.log('=>1');
-}
+window.addEventListener('scroll', () => {
+	let pageHeight = windowHeight + 'px';
+	// console.log(pageHeight, '=>pageHeight');
+	// console.log(tableRowListHeight, '=>tableRowList');
+	// console.log(leadsListHeight, '=>leadsListHeight');
+	if(windowHeight > tableRowList.innerHeight) {
+		console.log('works');
+	}
+	else {
+		console.log('doesnt work');
+	}
+
+});
+
 
 

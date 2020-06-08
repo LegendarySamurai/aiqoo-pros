@@ -997,9 +997,11 @@ body {
     height: 100%;
   }
 
-  // table-row-list
-  .table-row-list {
-
+  // leads-list-section
+  .leads-list-col {
+    .content-section {
+      //min-height: 2000px;
+    }
   }
 
   .status-bar-col.filter-closed + .leads-list-col {
@@ -1065,8 +1067,8 @@ body {
 
   // List
   .leads-list {
-    position: sticky;
-    bottom: 0;
+    //position: sticky;
+    //bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
