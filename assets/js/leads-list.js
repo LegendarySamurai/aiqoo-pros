@@ -43,6 +43,7 @@ let tableRowList = document.querySelector('.table-row-list');
 // console.log("pageBottomPosition1", pageBottomPosition);
 // console.log("leadsListHeight", leadsListHeight);
 // const statusBarCol = document.querySelector('.status-bar-col');
+const leadsListCol = document.querySelector('.leads-list-col');
 let statusBarHeight = document.querySelector('.status-bar');
 const header = document.querySelector('.fixed-top-panel-d');
 const headerHeight = header.clientHeight;
@@ -51,6 +52,9 @@ const searchHeight = search.clientHeight;
 
 document.addEventListener('scroll', () => {
 	let scroll = $(document).scrollTop();
+	let leftContentHeight = statusBarCol.innerHeight;
+	let rightContentHeight = leadsListCol.innerHeight;
+	console.log('true or false', leftContentHeight < rightContentHeight);
 
 	const contentHeight = tableRowList.clientHeight - window.innerHeight + headerHeight + searchHeight + 40;
 
