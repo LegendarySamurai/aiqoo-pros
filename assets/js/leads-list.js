@@ -34,24 +34,48 @@ function myFunction() {
 
 
 
-let windowHeight = $(window).height();
+// let windowHeight = $(window).height();
 let tableRowList = document.querySelector('.table-row-list');
-let leadsList = document.querySelector('.leads-list');
-let leadsListHeight = leadsList.offsetHeight;
-let tableRowListHeight = tableRowList.offsetHeight;
+// let leadsList = document.querySelector('.leads-list');
+// let leadsListHeight = leadsList.offsetHeight;
+// let tableRowListHeight = tableRowList.scrollHeight;
+// let pageBottomPosition = tableRowListHeight - 92 - 60 - 30;
+// console.log("pageBottomPosition1", pageBottomPosition);
+// console.log("leadsListHeight", leadsListHeight);
+// const statusBarCol = document.querySelector('.status-bar-col');
+let statusBarHeight = document.querySelector('.status-bar');
+const header = document.querySelector('.fixed-top-panel-d');
+const headerHeight = header.clientHeight;
+const search = document.querySelector('.search');
+const searchHeight = search.clientHeight;
 
-window.addEventListener('scroll', () => {
-	let pageHeight = windowHeight + 'px';
-	// console.log(pageHeight, '=>pageHeight');
-	// console.log(tableRowListHeight, '=>tableRowList');
-	// console.log(leadsListHeight, '=>leadsListHeight');
-	if(windowHeight > tableRowList.innerHeight) {
-		console.log('works');
+document.addEventListener('scroll', () => {
+	let scroll = $(document).scrollTop();
+
+	const contentHeight = tableRowList.clientHeight - window.innerHeight + headerHeight + searchHeight + 40;
+
+	if(scroll > contentHeight) {
+		console.log(contentHeight, scroll);
+		// tableRowList.classList.add('fixed-position');
+		if(!statusBarCol.classList.contains('filter-opened')) {
+			return;
+		} else {
+			tableRowList.classList.add('fixed-position');
+		}
+
 	}
 	else {
-		console.log('doesnt work');
+		console.log(2);
+		tableRowList.classList.remove('fixed-position');
 	}
 
+	// console.log(
+	// 	"=>",
+	// 	scroll,
+	// 	tableRowList.clientHeight,
+	// 	window.innerHeight,
+	// 	tableRowList.clientHeight - window.innerHeight + headerHeight + searchHeight + 40
+	// );
 });
 
 

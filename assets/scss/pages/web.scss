@@ -997,19 +997,38 @@ body {
     height: 100%;
   }
 
+  .status-bar-col.filter-closed + .leads-list-col #content-search-input {
+    max-width: calc(100% - 250px - 50px - 15px);
+  }
+
+  .status-bar-col.filter-opened + .leads-list-col #content-search-input {
+    max-width: calc(100% - 250px - 310px - 15px);
+  }
+
   // leads-list-section
   .leads-list-col {
-    .content-section {
-      //min-height: 2000px;
+    #content-search-input {
+      position: fixed;
+      top: 92px;
+    }
+
+    .table-row-list {
+      &.fixed-position {
+        position: fixed;
+        bottom: 50px;
+        padding-right: 15px;
+      }
     }
   }
 
   .status-bar-col.filter-closed + .leads-list-col {
     margin-left: 2%;
+    padding-top: 40px;
   }
 
   .status-bar-col.filter-opened + .leads-list-col {
     margin-left: 1%;
+    margin-top: 40px;
   }
 
   // Reset common styles only for this page
