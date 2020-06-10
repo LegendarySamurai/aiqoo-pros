@@ -1016,6 +1016,7 @@ body {
       &.fixed-position {
         position: fixed;
         bottom: 50px;
+        //bottom: 0;
         padding-right: 15px;
       }
     }
