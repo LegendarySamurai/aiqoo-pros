@@ -12,19 +12,14 @@ body ::-webkit-scrollbar-thumb {
   transition-duration: 400ms;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
   background-color: #fafafa;
-  //background-color: coral;
 }
 
 .status-bar-outer {
-  //position: absolute;
-  //top: 0;
-  //left: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  //padding: 1% 2%;
 }
 
 .make-me-sticky {
@@ -57,10 +52,6 @@ body ::-webkit-scrollbar-thumb {
   height: 100%;
   font-family: "Raleway", sans-serif;
   color: #585077;
-
-  //width: 300px;
-  //background-color: coral;
-
 
   .status-bar-inner-container {
     .status-bar-inner-header {
@@ -204,9 +195,6 @@ body ::-webkit-scrollbar-thumb {
 
   .type-list {
     height: auto;
-    //max-height: 410px;
-    //overflow-x: hidden;
-    //overflow-y: auto;
     margin-top: 20px;
     padding: 16px 30px;
 

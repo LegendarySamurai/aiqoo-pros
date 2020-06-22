@@ -58,28 +58,28 @@ document.addEventListener('scroll', () => {
 	let rightContentHeight = leadsListCol.innerHeight;
 	// console.log('=>', statusBarHeight > tableRowListHeight);
 
-	console.log('SCROLL', scroll);
+	// console.log('SCROLL', scroll);
 	const contentHeight = tableRowList.clientHeight - window.innerHeight + headerHeight + searchHeight + 40;
 
 	if(statusBarCol.classList.contains('filter-opened')) {
-		console.log('Filter is open!');
+		// console.log('Filter is open!');
 		if (statusBarHeight > tableRowListHeight) {
-			tableRowList.classList.add('fixed-position');
-			console.log('1.fixed position added');
+			// tableRowList.classList.add('fixed-position');
+			// console.log('1.fixed position added');
 		} else {
-			console.log('1');
-			tableRowList.classList.remove('fixed-position');
+			// console.log('1');
+			// tableRowList.classList.remove('fixed-position');
 		}
 	} else {
-		console.log('Filter is close!');
+		// console.log('Filter is close!');
 		if (statusBarHeight > tableRowListHeight) {
 			// console.log('status bar High!');
-			console.log(statusBarHeight, tableRowListHeight);
-			tableRowList.classList.add('fixed-position');
-			console.log('2.fixed position added');
+			// console.log(statusBarHeight, tableRowListHeight);
+			// tableRowList.classList.add('fixed-position');
+			// console.log('2.fixed position added');
 		} else {
-			console.log('Status bar is NOT High!');
-			tableRowList.classList.remove('fixed-position');
+			// console.log('Status bar is NOT High!');
+			// tableRowList.classList.remove('fixed-position');
 		}
 	}
 

@@ -63,14 +63,40 @@
     }
 
     .activity-log-wrap {
+      overflow: unset;
       width: 100%;
-      //padding: 0 1rem 1rem 1rem;
       padding: 0 0 1rem 0;
     }
 
     .activity-log-inner {
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    .activity-list {
+      height: 100%;
+      overflow: unset;
+    }
+
+    .activity-list-inner {
+      height: 100%;
+      overflow: unset;
+    }
+
+    .activity-list-wrap {
+      margin-bottom: 20px;
+    }
+
+    .add-note-abs {
+      right: 0;
+      position: relative;
+      height: auto;
+      padding: 0;
+    }
+
+    .add-note-wrap {
+      position: static;
+      width: 100%;
     }
 
     .controls-col-wrap {
