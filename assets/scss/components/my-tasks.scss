@@ -10,6 +10,12 @@
   .content {
     margin-top: 20px;
   }
+
+  .buttons-container {
+    button {
+      width: 48%;
+    }
+  }
 }
 
 
@@ -48,7 +54,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
   border-radius: 6px;
   box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
   background-color: #fff;
@@ -249,7 +255,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48%;
+    //width: 48%;
     height: 30px;
     text-transform: uppercase;
     border-radius: 2px;
