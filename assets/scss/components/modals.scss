@@ -78,7 +78,13 @@ body ::-webkit-scrollbar {
 
   // Leads status
   .dropdown-menu {
+    width: calc(100% - 30px - 30px);
+    margin: 0;
     padding: 0;
+    border: none;
+    border-radius: 2.5px;
+    box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
 
     .status-title {
       color: #585077;
@@ -127,6 +133,31 @@ body ::-webkit-scrollbar {
   .leads-status {
     padding: 10px 15px;
     background-color: #f4f4f4;
+
+    .heading {
+      display: block;
+    }
+
+    .status-btn {
+      white-space: nowrap;
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+      justify-content: space-between;
+      border-radius: 2.5px;
+      box-shadow: 0 1.5px 7.5px 0 rgba(0, 0, 0, 0.16);
+      background-color: #585077;
+      border: none;
+      color: #fff;
+      u {
+        text-decoration: none;
+      }
+
+      &.attempts {
+        justify-content: space-around;
+        background-color: #b3b3b3;
+      }
+    }
   }
 
   // Leads summary
@@ -146,19 +177,48 @@ body ::-webkit-scrollbar {
 
   .list-outer {
     position: relative;
+    height: 350px;
+    overflow-y: scroll;
+    padding-bottom: 40px;
   }
 
   .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 40px;
+    height: 100%;
+    padding-left: 30px;
 
-    .divider {
-      width: 100%;
-      height: 1px;
-      margin: 10px 0;
-      background-color: #f0f0f0;
+    //.divider {
+    //  width: 100%;
+    //  height: 1px;
+    //  margin: 10px 0;
+    //  background-color: #f0f0f0;
+    //}
+
+    .list-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      //height: 100%;
+      //overflow-y: scroll;
+      //padding-bottom: 40px;
+      //background-color: dodgerblue;
+
+      span {
+        position: relative;
+        height: 20px;
+        margin-bottom: 10px;
+
+        &::before {
+          position: absolute;
+          bottom: -6px;
+          left: 0;
+          display: block;
+          content: '';
+          width: 98%;
+          height: 1px;
+          background-color: #f0f0f0;
+          //background-color: red;
+        }
+      }
     }
   }
 
