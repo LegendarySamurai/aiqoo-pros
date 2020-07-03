@@ -178,7 +178,7 @@ body ::-webkit-scrollbar {
   .list-outer {
     position: relative;
     height: 350px;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 40px;
   }
 
