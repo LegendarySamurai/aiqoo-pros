@@ -275,23 +275,8 @@ body ::-webkit-scrollbar {
     background-color: transparentize(#ffffff, .44);
   }
 
-  .activity-list {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    height: calc(100% - 20px);
-    //overflow-y: scroll;
-    //background-color: coral; // remove !!!
-  }
-
-  .activity-list-inner {
-    height: 480px;
-    padding-right: 10px;
-    overflow-y: scroll;
-  }
-
-  .activity-list-wrap {
-    margin-bottom: 150px;
+  .activity-log {
+    height: calc(100% - 154px);
   }
 
   .activity-log-wrap {
@@ -305,6 +290,26 @@ body ::-webkit-scrollbar {
 
   .activity-log-inner {
     height: 100%;
+  }
+
+  .activity-list {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    height: calc(100% - 40px);
+    //overflow-y: scroll;
+    //background-color: coral; // remove !!!
+  }
+
+  .activity-list-inner {
+    height: 100%;
+    //height: 480px;
+    padding-right: 10px;
+    overflow-y: scroll;
+  }
+
+  .activity-list-wrap {
+    margin-bottom: 120px;
   }
 
   .controls-col-wrap {
@@ -379,7 +384,7 @@ body ::-webkit-scrollbar {
   // Add note textarea
   .add-note-abs {
     position: absolute;
-    bottom: 40px;
+    bottom: -1px;
     right: 0;
     z-index: 100;
     width: 100%;
