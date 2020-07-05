@@ -1797,43 +1797,45 @@
                 <div class="leads-status">
                         <span class="heading font-weight-bold font-r-12 ma-b-10"
                               style="">Leads Status</span>
-                  <button
-                      type="button"
-                      class="btn btn-lg font-r-10 font-weight-500 w-100 status-btn"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                      style="">
-                    <u style="">Sale in progress</u>
-                    <i class="far fa-sync-alt font-10"></i>
-                  </button>
-                  <div class="dropdown-menu"
-                       style="">
-                    <a class="dropdown-item pl-2 font-10 cursor-p">
-                      <i class="fad fa-phone-slash font-10"></i>
-                      <span class="ma-l-10 status-title font-weight-bold">Call attempt</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
+                  <div class="dropdown w-100">
+                    <button
+                        type="button"
+                        class="btn btn-lg font-r-10 font-weight-500 w-100 status-btn"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        style="">
+                      <u style="">Sale in progress</u>
+                      <i class="fad fa-sync-alt font-10"></i>
+                    </button>
+                    <div class="dropdown-menu"
+                         style="">
+                      <a class="dropdown-item pl-2 font-10 cursor-p">
+                        <i class="fad fa-phone-slash font-10"></i>
+                        <span class="ma-l-10 status-title font-weight-bold">Call attempt</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
 
-                    <a class="dropdown-item pa-l-10 font-10 cursor-p"><i
-                        class="fad fa-clipboard-list-check font-10"></i><span
-                        class="ma-l-10 status-title font-weight-bold">Add task / FollowUp</span></a>
-                    <div class="ma-b-30"></div>
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p"><i
+                          class="fad fa-clipboard-list-check font-10"></i><span
+                          class="ma-l-10 status-title font-weight-bold">Add task / FollowUp</span></a>
+                      <div class="ma-b-30"></div>
 
-                    <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg9"><i
-                        class="fad fa-thumbs-up font-10"></i><span class="ma-l-10 status-title font-weight-bold">Qualified Lead</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg9"><i
+                          class="fad fa-thumbs-up font-10"></i><span class="ma-l-10 status-title font-weight-bold">Qualified Lead</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
 
-                    <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg16"><i
-                        class="fad fa-thumbs-down font-10"></i><span
-                        class="ma-l-10 status-title font-weight-bold">Not relevant</span></a>
-                    <div class="dropdown-divider"></div>
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg16"><i
+                          class="fad fa-thumbs-down font-10"></i><span
+                          class="ma-l-10 status-title font-weight-bold">Not relevant</span></a>
+                      <div class="dropdown-divider"></div>
 
-                    <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg17"><i
-                        class="fad fa-layer-plus font-10"></i><span class="ma-l-10 status-title font-weight-bold">Request refund</span></a>
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg17"><i
+                          class="fad fa-layer-plus font-10"></i><span class="ma-l-10 status-title font-weight-bold">Request refund</span></a>
 
 
+                    </div>
                   </div>
                   <button type="button"
                           class="btn btn-lg system-color-bg-17 ma-t-20 font-r-10 font-weight-500 w-100 status-btn attempts"
@@ -2073,10 +2075,54 @@
                             </div>
                             <div class="user-name">Grace Kaminkli</div>
                           </div>
-                          <button class="btn">
-                            <span class="font-weight-500 font-r-12">Sheduled</span>
-                            <i class="fad fa-sync-alt font-r-12 ml-2"></i>
-                          </button>
+                          <div class="dropdown w-100">
+                            <button
+                                type="button"
+                                class="btn btn-lg font-r-10 font-weight-500 w-100 status-btn"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                              <u class="font-weight-500 font-r-12 text-decoration-none">Sheduled</u>
+                              <i class="fad fa-sync-alt font-10 ma-l-10"></i>
+                            </button>
+                            <div class="dropdown-menu w-100"
+                                 x-placement="bottom-start"
+                                 style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-52px, 73px, 0px);"><!--!-->
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg9">
+                                <span class="">Contract Signed</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg16">
+                                <span class="">Quote Provided</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg17">
+                                <span class="">Loan Requested</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg5">
+                                <span class="">Job Completed</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg6">
+                                <span class="">Canceled</span> <i class="far fa-thumbs-down text-danger float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg7">
+                                <span class="">One Legger</span> <i class="far fa-thumbs-down text-warning float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg8">
+                                <span class="">No Show</span> <i class="far fa-thumbs-down text-warning float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg10">
+                                <span class="">Project Irrelevant</span> <i class="far fa-thumbs-down text-danger float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                            </div>
+                          </div>
                         </div>
 
                         <div class="date-inner ma-t-10">

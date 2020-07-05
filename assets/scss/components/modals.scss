@@ -78,7 +78,7 @@ body ::-webkit-scrollbar {
 
   // Leads status
   .dropdown-menu {
-    width: calc(100% - 30px - 30px);
+    width: 100%;
     margin: 0;
     padding: 0;
     border: none;
@@ -513,7 +513,18 @@ body ::-webkit-scrollbar {
         align-items: center;
         justify-content: flex-start;
         padding: .5rem 0 .5rem;
-        overflow: hidden;
+
+        .dropdown {
+          .status-btn {
+            max-width: 130px;
+          }
+
+          .dropdown-item {
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
 
         .user-inner {
           display: flex;
@@ -554,10 +565,6 @@ body ::-webkit-scrollbar {
           height: 2px;
           background-color: #e0e0e0;
         }
-      }
-
-      .user-name {
-        //white-space: nowrap;
       }
 
       .image-container {

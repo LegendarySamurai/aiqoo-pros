@@ -143,6 +143,8 @@
       width: 100%;
 
       .btn {
+        width: 100% !important;
+        max-width: unset !important;
         margin-left: 0 !important;
       }
     }
@@ -196,6 +198,12 @@
           margin-left: 0 !important;
         }
       }
+    }
+
+    .meeting-card,
+    .tasks-list {
+      margin-top: 10px !important;
+      border-top: 1px solid #e8e8e8 !important;
     }
   }
 

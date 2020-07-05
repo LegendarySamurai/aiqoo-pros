@@ -879,12 +879,18 @@
     }
 
     .leads-list-col .table-row-list {
-      margin-top: 60px !important;
+      margin-top: 30px !important;
     }
   }
 
   @media(max-width: 599px) {
     padding-top: 90px;
+
+    .leads-list-col {
+      .content-container {
+        padding: 0 !important;
+      }
+    }
 
     .leads-list-col .table-row-list {
       margin-top: 0 !important;

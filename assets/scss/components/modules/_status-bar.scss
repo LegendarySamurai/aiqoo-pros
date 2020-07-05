@@ -295,25 +295,12 @@ body ::-webkit-scrollbar-thumb {
   width: 300px;
 
   .status-bar-outer {
-    //position: fixed;
-    //top: 90px;
-    //left: 200px;
     width: 300px;
-    //z-index: 201;
-    //height: 100%;
-    //padding: 0;
   }
 
   .status-bar {
-    //position: sticky;
-    //top: 0px;
-    //left: 250px;
     width: 300px;
-    //max-height: calc(100vh - 90px);
     padding: 3% 5%;
-    //overflow: hidden;
-    //overflow-y: auto;
-    //background-color: CORAL;
   }
 
   .open-filter-btn {
@@ -362,10 +349,6 @@ body ::-webkit-scrollbar-thumb {
 }
 
 @media(max-width: 1399px) {
-  .status-bar {
-    //padding: 0% 4% 5%;
-  }
-
   .open-filter-btn {
     left: 240px !important;
   }
@@ -523,7 +506,7 @@ body ::-webkit-scrollbar-thumb {
 
       .open-filter-btn {
         left: 40px !important;
-        top: 35%;
+        top: 40%;
       }
     }
 
@@ -595,6 +578,7 @@ body ::-webkit-scrollbar-thumb {
   }
 
   .status-bar-col.filter-closed + .leads-list-col {
+    padding-top: 0 !important;
     margin-left: 0 !important;
     z-index: 1;
   }
