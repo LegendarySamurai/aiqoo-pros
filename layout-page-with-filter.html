@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Layout with filter</title>
+  <title>Layout with Filter</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -13,7 +13,10 @@
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"-->
+  <!--        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"-->
+  <!--        crossorigin="anonymous"></script>-->
+  <!--<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
           integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
           crossorigin="anonymous"></script>
@@ -412,197 +415,203 @@
                   <div class="right-side-content-inner">
 
                     <!-- Unique content -->
-                    <div class="page-content-wrap">
+                    <div class="leads-list-page">
                       <div class="row">
 
                         <!-- Status bar left -->
                         <div class="status-bar-col col-auto filter-closed">
-                          <!-- Close filter button -->
-                          <div class="close-status-bar-btn">
-                            <i class="fad fa-times"></i>
-                          </div>
-                          <!-- Open filter button -->
-                          <div class="open-filter-btn open-filter">
-                            <i class="fas fa-chevron-right"></i>
-                          </div>
-                          <!-- Status bar -->
-                          <div class="status-bar">
-                            <!-- For mobile devices -->
-
-                            <div class="status-bar-heading">
-                              <span class="title font-weight-bold font-r-18">Leads</span>
-                              <button type="button" class="filter-btn">
-                                <i class="fad fa-filter"></i>
-                                <span class="font-r-10"></span>Filter
-                              </button>
-                            </div>
-
-                            <div class="status-bar-inner">
-                              <div class="status-bar-inner-backlayer">
-                                <span class="close-filter"></span>
+                          <div class="status-bar-outer">
+                            <div class="make-me-sticky">
+                              <!-- Open filter button -->
+                              <div class="open-filter-btn open-filter">
+                                <i class="fas fa-chevron-right"></i>
                               </div>
-                              <div class="status-bar-inner-container">
-                                <div class="status-bar-inner-header">
-                                  <span class="font-r-18 font-weight-bold">Filter</span>
+                              <!-- Status bar -->
+                              <div class="status-bar">
+                                <!-- Close filter button -->
+                                <div class="close-status-bar-btn">
                                   <i class="fad fa-times-circle font-r-16 close-filter-btn"></i>
                                 </div>
-                                <div class="status-bar-inner-body">
+                                <!-- For mobile devices -->
+                                <div class="status-bar-heading">
+                                  <span class="title font-weight-bold font-r-18">Leads</span>
+                                  <button type="button" class="filter-btn">
+                                    <i class="fad fa-filter"></i>
+                                    <span class="font-r-10"></span>Filter
+                                  </button>
+                                </div>
 
-                                  <!-- Search mobile -->
-                                  <div class="search mb-3 mb-lg-0 d-none">
-                                    <div class="input-group">
-                                      <div class="input-group-prepend"><i class="far fa-search font-r-13"></i></div>
-                                      <input type="text" class="form-control font-r-13" placeholder="Search">
-                                    </div>
+                                <div class="status-bar-inner">
+                                  <div class="status-bar-inner-backlayer">
+                                    <span class="close-filter"></span>
                                   </div>
-                                  <!-- EOL: Search mobile -->
-
-                                  <!-- status-panel -->
-                                  <div class="status-panel">
-                                    <div class="title font-r-13">Task Status</div>
-                                    <div class="status-panel-inner">
-                                      <div class="status-item font-r-13">
-                                        All
-                                      </div>
-                                      <div class="status-item font-r-13">
-                                        Active
-                                      </div>
-                                      <div class="status-item font-r-13 active">
-                                        Inactive
+                                  <div class="status-bar-inner-container">
+                                    <div class="status-bar-inner-header">
+                                      <span class="font-r-18 font-weight-bold">Filter</span>
+                                      <!-- Close filter button -->
+                                      <div class=" close-filter">
+                                        <i class="fad fa-times-circle font-r-16"></i>
                                       </div>
                                     </div>
-                                  </div>
-                                  <!-- EOL: status-panel -->
+                                    <div class="status-bar-inner-body">
 
-                                  <!-- date -->
-                                  <div class="sort-by-date">
-                                    <div class="image-container">
-                                      <img src="assets/images/calendar.svg" alt="calendar">
-                                    </div>
-                                    <div class="date-container-outer">
-                                      <div class="date-heading">
-                                        <span class="title font-r-13">All time</span>
-                                        <span><i class="far fa-chevron-down"></i></span>
+                                      <!-- Search mobile -->
+                                      <div class="search mb-3 mb-lg-0 d-none">
+                                        <div class="input-group">
+                                          <div class="input-group-prepend"><i class="far fa-search font-r-13"></i></div>
+                                          <input type="text" class="form-control font-r-13" placeholder="Search">
+                                        </div>
                                       </div>
-                                      <div class="date-container">
-                                        <span class="font-r-11 date-from">Jan 1/2019</span>
-                                        <span class="date-divider">-</span>
-                                        <span class="font-r-11 date-to">Mar 20/2020</span>
+                                      <!-- EOL: Search mobile -->
+
+                                      <!-- status-panel -->
+                                      <div class="status-panel">
+                                        <div class="title font-r-13">Task Status</div>
+                                        <div class="status-panel-inner">
+                                          <div class="status-item font-r-13">
+                                            All
+                                          </div>
+                                          <div class="status-item font-r-13">
+                                            Active
+                                          </div>
+                                          <div class="status-item font-r-13 active">
+                                            Inactive
+                                          </div>
+                                        </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                  <!-- EOL: date -->
+                                      <!-- EOL: status-panel -->
 
-                                  <!-- user -->
-                                  <div class="user">
-                                    <div class="title font-r-13 my-3">User</div>
-                                    <div class="user-info">
-                                      <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
-                                      <span class="user-name font-r-13">George Ezra<i
-                                          class="far fa-chevron-down"></i></span>
-                                    </div>
-                                  </div>
-                                  <!-- EOL: user -->
+                                      <!-- date -->
+                                      <div class="sort-by-date">
+                                        <div class="image-container">
+                                          <img src="assets/images/calendar.svg" alt="calendar">
+                                        </div>
+                                        <div class="date-container-outer">
+                                          <div class="date-heading">
+                                            <span class="title font-r-13">All time</span>
+                                            <span><i class="far fa-chevron-down"></i></span>
+                                          </div>
+                                          <div class="date-container">
+                                            <span class="font-r-11 date-from">Jan 1/2019</span>
+                                            <span class="date-divider">-</span>
+                                            <span class="font-r-11 date-to">Mar 20/2020</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- EOL: date -->
 
-                                  <!-- Task Type -->
-                                  <div class="task-type">
-                                    <div class="collapse-body">
-                                      <div class="accordion-items">
-                                        <div id="accordionOne" class="accordion-item">
-                                          <div class="card-accordion-item">
-                                            <div class="card-accordion-header" id="headingOne">
-                                              <!-- this is collapse grey header -->
-                                              <div class="collapse-btn collapsed" data-toggle="collapse"
-                                                   data-target="#collapseOne" aria-expanded="true"
-                                                   aria-controls="collapseOne">
-                                                <span class="title font-r-13">Task Type</span>
-                                                <i class="far fa-chevron-down pt-lg-1"></i>
-                                              </div>
-                                              <!-- EOL: collapse grey header -->
-                                            </div>
+                                      <!-- user -->
+                                      <div class="user">
+                                        <div class="title font-r-13 my-3">User</div>
+                                        <div class="user-info">
+                                          <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                                          <span class="user-name font-r-13">George Ezra
+                                            <i class="far fa-chevron-down font-10"></i></span>
+                                        </div>
+                                      </div>
+                                      <!-- EOL: user -->
 
-                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                                 data-parent="#accordionOne">
-                                              <div class="w-100 my-2 collapse-item">
+                                      <!-- Task Type -->
+                                      <div class="task-type">
+                                        <div class="collapse-body">
+                                          <div class="accordion-items">
+                                            <div id="accordionOne" class="accordion-item">
+                                              <div class="card-accordion-item">
+                                                <div class="card-accordion-header" id="headingOne">
+                                                  <!-- this is collapse grey header -->
+                                                  <div class="collapse-btn collapsed" data-toggle="collapse"
+                                                       data-target="#collapseOne" aria-expanded="true"
+                                                       aria-controls="collapseOne">
+                                                    <span class="title font-r-13">Task Type</span>
+                                                    <i class="far fa-chevron-down pt-lg-1"></i>
+                                                  </div>
+                                                  <!-- EOL: collapse grey header -->
+                                                </div>
 
-                                                <div class="type-list">
-                                                  <!-- color classes : .system-a-b-bg# in _colors.scss -->
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg2">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg3">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg4">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg5">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg6">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg7">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg8">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg9">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg10">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg11">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Call Back</span>
-                                                    </label>
+                                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                                     data-parent="#accordionOne">
+                                                  <div class="w-100 my-2 collapse-item">
+
+                                                    <div class="type-list">
+                                                      <!-- color classes : .system-a-b-bg# in _colors.scss -->
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg2">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg3">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg4">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg5">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg6">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg7">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg8">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg9">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg10">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg11">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Call Back</span>
+                                                        </label>
+                                                      </div>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -610,109 +619,109 @@
                                           </div>
                                         </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                  <!-- EOL: Task Type -->
+                                      <!-- EOL: Task Type -->
 
-                                  <!-- Category type -->
-                                  <div class="category-type">
-                                    <div class="collapse-body">
-                                      <div class="accordion-items">
-                                        <div id="accordionFive" class="accordion-item">
-                                          <div class="card-accordion-item">
-                                            <div class="card-accordion-header" id="headingFive">
-                                              <!-- this is collapse grey header -->
-                                              <div class="collapse-btn collapsed" data-toggle="collapse"
-                                                   data-target="#collapseFive" aria-expanded="true"
-                                                   aria-controls="collapseFive">
-                                                <span class="title font-r-13">Category</span>
-                                                <i class="far fa-chevron-down pt-lg-1"></i>
-                                              </div>
-                                              <!-- EOL: collapse grey header -->
-                                            </div>
+                                      <!-- Category type -->
+                                      <div class="category-type">
+                                        <div class="collapse-body">
+                                          <div class="accordion-items">
+                                            <div id="accordionFive" class="accordion-item">
+                                              <div class="card-accordion-item">
+                                                <div class="card-accordion-header" id="headingFive">
+                                                  <!-- this is collapse grey header -->
+                                                  <div class="collapse-btn collapsed" data-toggle="collapse"
+                                                       data-target="#collapseFive" aria-expanded="true"
+                                                       aria-controls="collapseFive">
+                                                    <span class="title font-r-13">Category</span>
+                                                    <i class="far fa-chevron-down pt-lg-1"></i>
+                                                  </div>
+                                                  <!-- EOL: collapse grey header -->
+                                                </div>
 
-                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                                 data-parent="#accordionFive">
-                                              <div class="w-100 my-2 collapse-item">
+                                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                                     data-parent="#accordionFive">
+                                                  <div class="w-100 my-2 collapse-item">
 
-                                                <div class="type-list">
-                                                  <!-- color classes : .system-a-b-bg# in _colors.scss -->
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Roofing</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg2">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Heating & Cooling</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg3">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Garages</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg4">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">ADU</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg5">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Water damage</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg6">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Water damage</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg7">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Water damage</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg8">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Water damage</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg9">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Water damage</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg10">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Water damage</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg11">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Water damage</span>
-                                                    </label>
+                                                    <div class="type-list">
+                                                      <!-- color classes : .system-a-b-bg# in _colors.scss -->
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Roofing</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg2">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Heating & Cooling</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg3">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Garages</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg4">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">ADU</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg5">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Water damage</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg6">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Water damage</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg7">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Water damage</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg8">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Water damage</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg9">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Water damage</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg10">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Water damage</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg11">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Water damage</span>
+                                                        </label>
+                                                      </div>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -720,72 +729,72 @@
                                           </div>
                                         </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                  <!-- EOL: Category type -->
+                                      <!-- EOL: Category type -->
 
-                                  <!-- Lead management -->
-                                  <div class="lead-management d-none">
-                                    <div class="collapse-body">
-                                      <div class="accordion-items">
-                                        <div id="accordionTwo" class="accordion-item">
-                                          <div class="card-accordion-item">
-                                            <div class="card-accordion-header" id="headingTwo">
-                                              <!-- this is collapse grey header -->
-                                              <div class="collapse-btn collapsed" data-toggle="collapse"
-                                                   data-target="#collapseTwo" aria-expanded="true"
-                                                   aria-controls="collapseTwo">
-                                                <span class="title font-r-13">Lead Management</span>
-                                                <i class="far fa-chevron-down pt-lg-1"></i>
-                                              </div>
-                                              <!-- EOL: collapse grey header -->
-                                            </div>
+                                      <!-- Lead management -->
+                                      <div class="lead-management">
+                                        <div class="collapse-body">
+                                          <div class="accordion-items">
+                                            <div id="accordionTwo" class="accordion-item">
+                                              <div class="card-accordion-item">
+                                                <div class="card-accordion-header" id="headingTwo">
+                                                  <!-- this is collapse grey header -->
+                                                  <div class="collapse-btn collapsed" data-toggle="collapse"
+                                                       data-target="#collapseTwo" aria-expanded="true"
+                                                       aria-controls="collapseTwo">
+                                                    <span class="title font-r-13">Lead Management</span>
+                                                    <i class="far fa-chevron-down pt-lg-1"></i>
+                                                  </div>
+                                                  <!-- EOL: collapse grey header -->
+                                                </div>
 
-                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                 data-parent="#accordionTwo">
-                                              <div class="w-100 my-2 collapse-item">
-                                                <div class="lead-management-list">
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">New</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Initial contact</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Sales in progress</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Loans requested</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Loans approved</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Loans rejected</span>
-                                                    </label>
+                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                     data-parent="#accordionTwo">
+                                                  <div class="w-100 my-2 collapse-item">
+                                                    <div class="lead-management-list">
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">New</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Initial contact</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Sales in progress</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Loans requested</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Loans approved</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Loans rejected</span>
+                                                        </label>
+                                                      </div>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -793,58 +802,58 @@
                                           </div>
                                         </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                  <!-- EOL: Lead management -->
+                                      <!-- EOL: Lead management -->
 
-                                  <!-- Project management -->
-                                  <div class="project-management d-none">
-                                    <div class="collapse-body">
-                                      <div class="accordion-items">
-                                        <div id="accordionThree" class="accordion-item">
-                                          <div class="card-accordion-item">
-                                            <div class="card-accordion-header" id="headingThree">
-                                              <!-- this is collapse grey header -->
-                                              <div class="collapse-btn collapsed" data-toggle="collapse"
-                                                   data-target="#collapseThree" aria-expanded="true"
-                                                   aria-controls="collapseThree">
-                                                <span class="title font-r-13">Project Management</span>
-                                                <i class="far fa-chevron-down pt-lg-1"></i>
-                                              </div>
-                                              <!-- EOL: collapse grey header -->
-                                            </div>
+                                      <!-- Project management -->
+                                      <div class="project-management">
+                                        <div class="collapse-body">
+                                          <div class="accordion-items">
+                                            <div id="accordionThree" class="accordion-item">
+                                              <div class="card-accordion-item">
+                                                <div class="card-accordion-header" id="headingThree">
+                                                  <!-- this is collapse grey header -->
+                                                  <div class="collapse-btn collapsed" data-toggle="collapse"
+                                                       data-target="#collapseThree" aria-expanded="true"
+                                                       aria-controls="collapseThree">
+                                                    <span class="title font-r-13">Project Management</span>
+                                                    <i class="far fa-chevron-down pt-lg-1"></i>
+                                                  </div>
+                                                  <!-- EOL: collapse grey header -->
+                                                </div>
 
-                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                                 data-parent="#accordionThree">
-                                              <div class="w-100 my-2 collapse-item">
-                                                <div class="lead-management-list">
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Projects pending</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Projects in progress</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Projects completed</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Projects cancelled</span>
-                                                    </label>
+                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                                     data-parent="#accordionThree">
+                                                  <div class="w-100 my-2 collapse-item">
+                                                    <div class="lead-management-list">
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Projects pending</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Projects in progress</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Projects completed</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Projects cancelled</span>
+                                                        </label>
+                                                      </div>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -852,58 +861,58 @@
                                           </div>
                                         </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                  <!-- EOL: Project management -->
+                                      <!-- EOL: Project management -->
 
-                                  <!-- Other -->
-                                  <div class="other d-none">
-                                    <div class="collapse-body">
-                                      <div class="accordion-items">
-                                        <div id="accordionFour" class="accordion-item">
-                                          <div class="card-accordion-item">
-                                            <div class="card-accordion-header" id="headingFour">
-                                              <!-- this is collapse grey header -->
-                                              <div class="collapse-btn collapsed" data-toggle="collapse"
-                                                   data-target="#collapseFour" aria-expanded="true"
-                                                   aria-controls="collapseFour">
-                                                <span class="title font-r-13">Other</span>
-                                                <i class="far fa-chevron-down pt-lg-1"></i>
-                                              </div>
-                                              <!-- EOL: collapse grey header -->
-                                            </div>
+                                      <!-- Other -->
+                                      <div class="other">
+                                        <div class="collapse-body">
+                                          <div class="accordion-items">
+                                            <div id="accordionFour" class="accordion-item">
+                                              <div class="card-accordion-item">
+                                                <div class="card-accordion-header" id="headingFour">
+                                                  <!-- this is collapse grey header -->
+                                                  <div class="collapse-btn collapsed" data-toggle="collapse"
+                                                       data-target="#collapseFour" aria-expanded="true"
+                                                       aria-controls="collapseFour">
+                                                    <span class="title font-r-13">Other</span>
+                                                    <i class="far fa-chevron-down pt-lg-1"></i>
+                                                  </div>
+                                                  <!-- EOL: collapse grey header -->
+                                                </div>
 
-                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                                 data-parent="#accordionFour">
-                                              <div class="w-100 my-2 collapse-item">
-                                                <div class="lead-management-list">
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Other</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Other</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Other</span>
-                                                    </label>
-                                                  </div>
-                                                  <div class="custom-control custom-checkbox system-a-b-bg1">
-                                                    <label class="custom-control-label font-weight-600 font-r-10">
-                                                      <input type="checkbox" class="custom-control-input">
-                                                      <span class="custom-checkbox-ui"></span>
-                                                      <span class="input-label">Other</span>
-                                                    </label>
+                                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                                     data-parent="#accordionFour">
+                                                  <div class="w-100 my-2 collapse-item">
+                                                    <div class="lead-management-list">
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Other</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Other</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Other</span>
+                                                        </label>
+                                                      </div>
+                                                      <div class="custom-control custom-checkbox system-a-b-bg1">
+                                                        <label class="custom-control-label font-weight-600 font-r-10">
+                                                          <input type="checkbox" class="custom-control-input">
+                                                          <span class="custom-checkbox-ui"></span>
+                                                          <span class="input-label">Other</span>
+                                                        </label>
+                                                      </div>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
@@ -911,35 +920,51 @@
                                           </div>
                                         </div>
                                       </div>
+                                      <!-- EOL: Other -->
+
                                     </div>
                                   </div>
-                                  <!-- EOL: Other -->
-
                                 </div>
                               </div>
-                            </div>
-                          </div>
 
-                          <!-- Status bar panel -->
-                          <div class="status-bar-panel">
-                            <div class="buttons">
-                              <div class="button button-one filter open-filter">
-                                <i class="fad fa-filter"></i>
-                              </div>
-                              <div class="button button-two user open-filter">
-                                <i class="fad fa-user"></i>
-                              </div>
-                              <div class="button button-three date open-filter">
-                                <i class="fad fa-calendar-alt"></i>
+                              <!-- Status bar panel -->
+                              <div class="status-bar-panel">
+                                <div class="buttons">
+                                  <div class="button button-one filter open-filter">
+                                    <i class="fad fa-filter"></i>
+                                  </div>
+                                  <div class="button button-two user open-filter">
+                                    <i class="fad fa-user"></i>
+                                  </div>
+                                  <div class="button button-three date open-filter">
+                                    <i class="fad fa-calendar-alt"></i>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
                         <!-- EOL: Status bar left -->
 
-                        <!-- Uniq Content -->
-                        <div>Content</div>
-                        <!-- EOL: Uniq Content -->
+                        <!-- Services details -->
+                        <div class="leads-list-col col">
+                          <div class="content-section">
+                            <div id="content-search-input" class="search mb-3 mb-lg-0">
+                              <span class="title font-weight-500 font-r-13">Leads List</span>
+                              <div class="input-group">
+                                <div class="input-group-prepend"><i class="far fa-search"></i></div>
+                                <input type="text" class="form-control" placeholder="Search">
+                              </div>
+                            </div>
+                            <div class="content-container">
+                              <div class="row table-row-list mt-4">
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
                       </div>
                     </div>
                     <!-- EOL: Unique content -->
@@ -954,13 +979,539 @@
       </div>
     </div>
   </main>
+
+  <!-- Button trigger modal -->
+  <button style="position: fixed; bottom:0; right:0; z-index: 4;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#leadsListModal">
+    leads list modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade leads-list-modal" id="leadsListModal" tabindex="-1" role="dialog"
+       aria-labelledby="leadsListModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="leadsListModalLabel">Lead #4451 management</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="left-col">
+            <div class="left-col-inner">
+              <div class="info-col">
+                <div class="info-outer">
+                  <div class="decoration-element-wizard">
+                    <span class="square"></span>
+                    <span class="dashed-line"></span>
+                  </div>
+                  <div class="info system-color-6">
+                    <span class="font-weight-500 font-11"><i class="fad fa-user mr-2 font-9"></i>Paul R.</span>
+                    <span class="font-weight-500 font-11 mt-2"><i class="fad fa-phone mr-2 font-9"></i>+ 1-45666433</span>
+                    <span class="font-weight-300 font-9 mt-2"><i class="fad fa-calendar mr-2"></i>27 feb 20 4:234 pm </span>
+                    <span class="font-weight-300 font-9 mt-2"><i class="fad fa-flag mr-2"></i>Roofing</span>
+                    <span class="font-weight-300 font-9">install new metal roof</span>
+                  </div>
+                </div>
+              </div>
+              <div class="leads-status-col">
+                <div class="leads-status">
+                        <span class="heading font-weight-bold font-r-12 ma-b-10"
+                              style="">Leads Status</span>
+                  <div class="dropdown w-100">
+                    <button
+                        type="button"
+                        class="btn btn-lg font-r-10 font-weight-500 w-100 status-btn"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        style="">
+                      <u style="">Sale in progress</u>
+                      <i class="fad fa-sync-alt font-10"></i>
+                    </button>
+                    <div class="dropdown-menu"
+                         style="">
+                      <a class="dropdown-item pl-2 font-10 cursor-p">
+                        <i class="fad fa-phone-slash font-10"></i>
+                        <span class="ma-l-10 status-title font-weight-bold">Call attempt</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p"><i
+                          class="fad fa-clipboard-list-check font-10"></i><span
+                          class="ma-l-10 status-title font-weight-bold">Add task / FollowUp</span></a>
+                      <div class="ma-b-30"></div>
+
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg9"><i
+                          class="fad fa-thumbs-up font-10"></i><span class="ma-l-10 status-title font-weight-bold">Qualified Lead</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg16"><i
+                          class="fad fa-thumbs-down font-10"></i><span
+                          class="ma-l-10 status-title font-weight-bold">Not relevant</span></a>
+                      <div class="dropdown-divider"></div>
+
+                      <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg17"><i
+                          class="fad fa-layer-plus font-10"></i><span class="ma-l-10 status-title font-weight-bold">Request refund</span></a>
+
+
+                    </div>
+                  </div>
+                  <button type="button"
+                          class="btn btn-lg system-color-bg-17 ma-t-20 font-r-10 font-weight-500 w-100 status-btn attempts"
+                          style="">
+                    <i class="fad fa-phone-slash font-10"></i>
+                    <u style="">Call Attempts</u>
+                  </button>
+                </div>
+              </div>
+              <div class="leads-summary-col">
+                <div class="leads-summary">
+                  <div class="toggleTab el-name-heading d-flex justify-content-between align-items-center cursor-p"
+                       onclick="toggleList('.list')">
+                    <div class="el-name font-weight-500 font-r-12">Leads Summary</div><i class="fad fa-chevron-down arrow-d d-sm-none"></i>
+                  </div>
+                  <div class="list-outer ma-t-10">
+                    <div class="decoration-element-wizard">
+                      <span class="square"></span>
+                      <span class="dashed-line"></span>
+                    </div>
+                    <div class="list">
+                      <div class="list-inner">
+                        <span class="cursor-p">Roof replacement</span>
+                        <span class="cursor-p">Homeowner</span>
+                        <span class="cursor-p">Ready to hire</span>
+                        <span class="cursor-p">Financing not required</span>
+                        <span class="cursor-p">Roof replacement</span>
+                        <span class="cursor-p">Homeowner</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-col">
+            <div class="right-col-outer">
+              <div class="right-col-inner">
+                <div class="activity-log-wrap">
+                  <div class="activity-log-inner">
+                    <div class="map pos-r">
+                      <div class="mask">
+                        <i class="fad fa-map-marker-alt mr-2"></i>
+                        <span class="font-weight-bold font-12">LA PA 2433</span>
+                      </div>
+                      <img src="assets/images/map.png" alt="map">
+                    </div>
+                    <div class="activity-log ma-t-10">
+                      <div class="toggleTab" >
+                        <div class="el-name-heading d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.activity-list')">
+                          <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clipboard mr-2"></i>Activity log</div>
+                          <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
+                        </div>
+                      </div>
+
+                      <div class="activity-list toggle-panel ma-t-10">
+                        <div class="activity-list-inner">
+                          <div class="activity-list-wrap">
+                            <div class="activity-item">
+                              <div class="decoration-element-wizard">
+                                <span class="square"></span>
+                                <span class="dashed-line"></span>
+                              </div>
+                              <div class="activity-item-inner">
+                                <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
+                                <div class="comments-list">
+                                  <div class="comment-item ma-t-10 ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created</span>
+                                        <span>Lorem ipsum</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="comment-item ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="activity-item">
+                              <div class="decoration-element-wizard">
+                                <span class="square"></span>
+                                <span class="dashed-line"></span>
+                              </div>
+                              <div class="activity-item-inner">
+                                <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
+                                <div class="comments-list">
+                                  <div class="comment-item ma-t-10 ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created New Task Was</span>
+                                        <span>Lorem ipsum</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="comment-item ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="activity-item">
+                              <div class="decoration-element-wizard">
+                                <span class="square"></span>
+                                <span class="dashed-line"></span>
+                              </div>
+                              <div class="activity-item-inner">
+                                <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
+                                <div class="comments-list">
+                                  <div class="comment-item ma-t-10 ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created New Task Was</span>
+                                        <span>Lorem ipsum</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="comment-item ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="activity-item">
+                              <div class="decoration-element-wizard">
+                                <span class="square"></span>
+                                <span class="dashed-line"></span>
+                              </div>
+                              <div class="activity-item-inner">
+                                <span class="date font-8 pl-md-5">17 Mar 2020 2:30 pm</span>
+                                <div class="comments-list">
+                                  <div class="comment-item ma-t-10 ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created New Task Was</span>
+                                        <span>Lorem ipsum</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="comment-item ma-b-10">
+                                    <div class="decoration-left-side-line system-color-bg-17"></div>
+                                    <div class="item-inner">
+                                      <div class="text font-9">
+                                        <span>New Task Was Created</span>
+                                      </div>
+                                      <div class="image-container">
+                                        <img src="assets/images/dummy-avatar.png" alt="avatar">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div></div>
+                          </div>
+
+                          <div class="add-note-abs">
+                            <div class="add-note-wrap ma-t-30">
+                              <div class="form-group">
+                                <textarea class="form-control font-9" rows="4" placeholder="Add Note"></textarea>
+                              </div>
+                              <button type="button" class="btn btn-lg add-note">
+                                <span class="font-weight-bold font-9 font-weight-bold">Add</span>
+                                <i class="fad fa-step-forward"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="controls-col-wrap">
+                  <div class="meeting card">
+                    <div class="toggleTab card-header d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.card-body .meeting-card')">
+                      <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clock font-r-15 ma-r-5"></i>Meeting</div>
+                      <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
+                    </div>
+                    <div class="toggle-panel card-body">
+                      <!-- Empty -->
+                      <div class="meeting-card meeting-card-empty d-none">
+                        <div class="empty-content-wrap">
+                          <p class="card-text">To create a new appointment with a customer, click here</p>
+                          <div class="image-wrap">
+                            <img src="assets/images/calendar-big.svg" alt="calendar-big">
+                          </div>
+                        </div>
+                        <button class="create btn mx-auto font-r-9 font-weight-500 ma-t-20">Create a new meeting</button>
+                      </div>
+                      <!-- Filled-->
+                      <div class="meeting-card meeting-card-filled">
+                        <div class="user">
+                          <div class="user-inner">
+                            <div class="image-container ma-r-5">
+                              <img src="assets/images/dummy-avatar.png" alt="avatar">
+                            </div>
+                            <div class="user-name">Grace Kaminkli</div>
+                          </div>
+                          <div class="dropdown w-100">
+                            <button
+                                type="button"
+                                class="btn btn-lg font-r-10 font-weight-500 w-100 status-btn"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                              <u class="font-weight-500 font-r-12 text-decoration-none">Project Irrelevant</u>
+                              <i class="fad fa-sync-alt font-10 ma-l-10"></i>
+                            </button>
+                            <div class="dropdown-menu w-100"
+                                 x-placement="bottom-start"
+                                 style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-52px, 73px, 0px);"><!--!-->
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg9">
+                                <span class="">Contract Signed</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg16">
+                                <span class="">Quote Provided</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg17">
+                                <span class="">Loan Requested</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg5">
+                                <span class="">Job Completed</span> <i class="far fa-thumbs-up text-success float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg6">
+                                <span class="">Canceled</span> <i class="far fa-thumbs-down text-danger float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg7">
+                                <span class="">One Legger</span> <i class="far fa-thumbs-down text-warning float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg8">
+                                <span class="">No Show</span> <i class="far fa-thumbs-down text-warning float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                              <a class="dropdown-item pa-l-10 font-10 cursor-p system-a-b-bg10">
+                                <span class="">Project Irrelevant</span> <i class="far fa-thumbs-down text-danger float-right font-10"></i></a><!--!-->
+                              <div class="dropdown-divider"></div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="date-inner ma-t-10">
+                          <div class="date">
+                                  <span class="heading font-8 font-weight-500"><i
+                                      class="fad fa-calendar"></i>Date</span>
+                            <span class="date-body font-8 ma-t-5">17 Mar 2020 2:30 pm</span>
+                          </div>
+                          <div class="address">
+                                  <span class="heading font-8 font-weight-500"><i
+                                      class="fad fa-map-marker-alt ma-r-5"></i>Address</span>
+                            <span class="address-body font-8 ma-t-5">La 54322</span>
+                          </div>
+                        </div>
+                        <div class="notes">
+                          <div class="notes-inner">
+                            <span class="heading font-weight-500 font-8"><i class="fad fa-edit"></i>Notes</span>
+                            <span class="text">Lorem ipsum fe surfeit sett. Weird </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tasks card ma-t-10">
+                    <div class="toggleTab card-header d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.card-body .tasks-list')">
+                      <div class="card-header-inner d-flex justify-content-between align-items-center cursor-p">
+                        <div class="el-name font-weight-500 font-r-15"><i class="fad fa-clipboard-list-check font-r-15 ma-r-5"></i>Task List</div>
+                        <i class="fad fa-chevron-down arrow-d d-xl-none"></i>
+                      </div>
+                      <button class="btn font-12 font-weight-500 add-task">
+                        <i class="fad fa-plus"></i>
+                        <span class="">Add task</span>
+                      </button>
+                    </div>
+                    <div class="toggle-panel card-body">
+                      <!-- Empty -->
+                      <div class="tasks-list tasks-list-empty mt-3 d-none">
+                        <div class="empty-content-wrap">
+                          <p class="card-text">
+                            In order to start the project,
+                            build yourself tasksBy clicking
+                            the “Create a Task” button
+                          </p>
+                          <div class="image-wrap">
+                            <img src="assets/images/list-big.svg" alt="list-big">
+                          </div>
+                        </div>
+                        <button class="create btn mx-auto font-9 font-weight-500 ma-t-20">Create a new task</button>
+                      </div>
+                      <!--  Filled -->
+                      <div class="tasks-list tasks-list-filled mt-3">
+                        <div class="task-card pos-r">
+                          <div class="decoration-element-wizard">
+                            <span class="square"></span>
+                            <span class="dashed-line"></span>
+                          </div>
+                          <div class="label system-color-bg-9 font-weight-500 font-r-10 system-color-bg-9">
+                            <span>Setup financing</span>
+                          </div>
+                          <div class="task-card-inner">
+                            <div class="inner-wrap">
+                              <!-- user -->
+                              <div class="user">
+                                <div class="image-wrap ma-r-10">
+                                  <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="user-info">
+                                  <span class="gray-title font-r-8">Name</span>
+                                  <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                                </div>
+                              </div>
+                              <!-- EOL: user -->
+                              <!-- todo-time -->
+                              <div class="todo-time">
+                                <span class="gray-title font-r-8">Time to do</span>
+                                <span class="time">
+                                        <i class="fal fa-calendar"></i>
+                                        <span class=" font-r-8">26 MAR 2020 2:30 AM</span>
+                                      </span>
+                              </div>
+                              <!-- EOL: todo-time -->
+                            </div>
+
+                            <!-- Notes -->
+                            <div class="notes">
+                                      <span>
+                                        <i class="fal fa-edit"></i>
+                                        <span class="font-weight-bold font-r-10">Internal notes</span>
+                                      </span>
+                              <span class="text font-r-8">
+                                        Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting scheduling scheduling scheduling scheduling
+                                      </span>
+                              <div class="buttons-container">
+                                <button class="red-button mr-2 font-r-8" type="button">canceled</button>
+                                <button class="green-button font-r-8" type="button">done</button>
+                              </div>
+                            </div>
+                            <!-- EOL: Notes -->
+                          </div>
+                        </div>
+                        <div class="task-card pos-r">
+                          <div class="decoration-element-wizard">
+                            <span class="square"></span>
+                            <span class="dashed-line"></span>
+                          </div>
+                          <div class="label system-color-bg-9 font-weight-500 font-r-10 system-color-bg-9">
+                            <span>Setup financing</span>
+                          </div>
+                          <div class="task-card-inner">
+                            <div class="inner-wrap">
+                              <!-- user -->
+                              <div class="user">
+                                <div class="image-wrap ma-r-10">
+                                  <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="user-info">
+                                  <span class="gray-title font-r-8">Name</span>
+                                  <span class="user-name font-weight-bold font-r-9">George Ezra</span>
+                                </div>
+                              </div>
+                              <!-- EOL: user -->
+                              <!-- todo-time -->
+                              <div class="todo-time">
+                                <span class="gray-title font-r-8">Time to do</span>
+                                <span class="time">
+                                        <i class="fal fa-calendar"></i>
+                                        <span class=" font-r-8">26 MAR 2020 2:30 AM</span>
+                                      </span>
+                              </div>
+                              <!-- EOL: todo-time -->
+                            </div>
+
+                            <!-- Notes -->
+                            <div class="notes">
+                                      <span>
+                                        <i class="fal fa-edit"></i>
+                                        <span class="font-weight-bold font-r-10">Internal notes</span>
+                                      </span>
+                              <span class="text font-r-8">
+                                        Prepare quote prior to meeting schedul schedulingPrepare quote prior to meeting scheduling scheduling scheduling scheduling
+                                      </span>
+                              <div class="buttons-container">
+                                <button class="red-button mr-2 font-r-8" type="button">canceled</button>
+                                <button class="green-button font-r-8" type="button">done</button>
+                              </div>
+                            </div>
+                            <!-- EOL: Notes -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </app>
 
 
-<script src="assets/js/custom-popover.js"></script>
 <script src="assets/js/layout-page.js"></script>
 <script src="assets/js/status-bar.js"></script>
-<script src="assets/js/leads-list.js"></script>
+
 
 </body>
 </html>

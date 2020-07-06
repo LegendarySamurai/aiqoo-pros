@@ -707,60 +707,47 @@
 
 // ******** Pages **********//
 
-@media(max-width: 850px) {
-  .card {
-    padding: 0 4px;
+// Search
+#content-search-input {
+  display: none;
+  margin-left: 0px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-color: #d3d3d3;
+
+  .input-group {
+    width: 100%;
+  }
+
+  .title {
+    height: 46px;
+    display: flex;
+    align-items: center;
   }
 }
 
-.locations {
-  @media(max-width: 1299px) {
-    // Area-list-outer (Locations page)
-    .areas-list-outer {
-      padding: 1.5rem 1.5rem;
-    }
-  }
+// Dashboard-page
+.dashboard-page {
+  @media(max-width: 1899px) {}
 
-  @media(max-width: 899px) {
-    .create-area-outer {
-      padding: .75rem 1.25rem;
-    }
+  @media(max-width: 1599px) {}
 
-    .areas-list-outer {
-      padding: .75rem 1.25rem;
-    }
-  }
+  @media(max-width: 1399px) {}
 
-  @media(max-width: 767px) {
-    // Search new area
-    .search-new-area {
-      .form-control {
-        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-          font-size: 0.88rem !important;
-        }
-        &::-moz-placeholder { /* Firefox 19+ */
-          font-size: 0.88rem !important;
-        }
-        &:-ms-input-placeholder { /* IE 10+ */
-          font-size: 0.88rem !important;
-        }
-        &:-moz-placeholder { /* Firefox 18- */
-          font-size: 0.88rem !important;
-        }
-      }
-    }
+  @media(max-width: 1199px) {}
 
-    // Results
-    .results {
-      .item {
-        width: auto;
-        margin-bottom: 1rem !important;
-        padding: .25rem .875rem;
-      }
-    }
-  }
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
 }
 
+// Leads list page
 .leads-list-page {
   @media(max-width: 1399px) {
     .status-bar-col.filter-closed + .leads-list-col #content-search-input {
@@ -935,42 +922,7 @@
   }
 }
 
-// For pages which has Filter (status-bar)
-.leads-list-page,
-.support-page,
-.my-tasks {
-  @media(max-width: 599px) {
-    // For pages which has Filter (status-bar)
-    .status-bar-col {
-      position: relative;
-      align-self: auto;
-      margin-top: 0;
-      width: 0;
-    }
-
-    .status-bar-heading {
-      z-index: 10;
-      top: 140px;
-      //top: 70px;
-      //height: 40px;
-      //box-shadow: none;
-      //z-index: 22;
-      //background-color: transparentize(coral, .5);
-    }
-
-    .fixed-top-panel-d {
-      .sub-menu-col {
-        padding-top: 90px;
-        height: 30px;
-      }
-
-      .page-title {
-        display: none;
-      }
-    }
-  }
-}
-
+// Services
 .services {
   @media(max-width: 1199px) {
     // Reset common styles
@@ -979,7 +931,6 @@
         font-size: inherit !important;
       }
     }
-
     // EOL: reset common styles
   }
 
@@ -997,7 +948,6 @@
     // EOL: reset common styles
   }
 
-
   @media(max-width: 899px) {
     .services-wrapper {
       padding: 20px !important;
@@ -1006,10 +956,6 @@
     .content {
       padding-left: 15px;
     }
-
-    //.service-item {
-    //  height: 40px;
-    //}
 
     .service-name {
       white-space: normal;
@@ -1028,10 +974,6 @@
     }
   }
 
-  @media(max-width: 599px) {
-
-  }
-
   @media(max-width: 576px) {
     .left-part {
       order: 2;
@@ -1043,6 +985,7 @@
   }
 }
 
+// Locations
 .locations {
   @media(max-width: 1499px) {
     .list {
@@ -1060,6 +1003,13 @@
     }
   }
 
+  @media(max-width: 1299px) {
+    // Area-list-outer (Locations page)
+    .areas-list-outer {
+      padding: 1.5rem 1.5rem;
+    }
+  }
+
   @media(max-width: 1199px) {
     .list {
       .item {
@@ -1074,9 +1024,43 @@
         width: calc(100% / 3);
       }
     }
+
+    .create-area-outer {
+      padding: .75rem 1.25rem;
+    }
+
+    .areas-list-outer {
+      padding: .75rem 1.25rem;
+    }
   }
 
   @media(max-width: 767px) {
+    // Search new area
+    .search-new-area {
+      .form-control {
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          font-size: 0.88rem !important;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          font-size: 0.88rem !important;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+          font-size: 0.88rem !important;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          font-size: 0.88rem !important;
+        }
+      }
+    }
+
+    // Results
+    .results {
+      .item {
+        width: auto;
+        margin-bottom: 1rem !important;
+        padding: .25rem .875rem;
+      }
+    }
     .map {
       display: none;
     }
@@ -1101,8 +1085,7 @@
   }
 }
 
-// ******* Old pages ******* //
-
+// My profile
 .my-profile {
   @media(max-width: 1499px) {}
 
@@ -1194,7 +1177,6 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: 1px solid #ced4da;
-  //border-left: none;
   outline: none;
   box-shadow: none;
 }
@@ -1377,53 +1359,14 @@
   }
 }
 
-@media(max-width: 992px) {}
-
 @media(max-width: 1024px) {
   .main-wrapper-inner {
     flex-direction: row;
     align-items: stretch;
-
-    .side-menu {
-      width: 28%;
-    }
-  }
-
-  .side-menu-inner {
-    & > li {
-      padding: 0 10px;
-    }
-
-    & > li > a {
-      padding: 16px 0;
-      font-size: 0.75rem;
-    }
-
-    & > li:not(:last-child) > a {
-      border-bottom: 1px solid #dcdcdc;
-    }
-
-    & > li > a > i {
-      font-size: 1.25rem;
-    }
   }
 }
 
 @media(min-width: 1200px) {
-  .side-menu-inner {
-    & > li {
-      padding: 0 32px;
-    }
-
-    & > li > a {
-      padding: 20px 0;
-    }
-
-    & > li:not(:last-child) > a {
-      border-bottom: 1px solid #dcdcdc;
-    }
-  }
-
   /// Wizard content ///
   .page-content {
     padding-top: 20px;
@@ -1475,12 +1418,6 @@
         width: 138px;
         height: 138px;
       }
-    }
-  }
-
-  .side-menu-inner {
-    & > li > a {
-      font-size: 1.25rem;
     }
   }
 
