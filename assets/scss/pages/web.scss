@@ -984,7 +984,6 @@ body {
 
 
 
-
 //**************** PAGES ****************//
 //**** Leads list ****//
 .leads-list-page {
@@ -998,7 +997,7 @@ body {
   }
 
   .status-bar-col.filter-closed + .leads-list-col #content-search-input {
-    max-width: calc(100% - 250px - 50px - 15px);
+    max-width: calc(100% - 250px - 50px - 15px - 10px);
   }
 
   .status-bar-col.filter-opened + .leads-list-col #content-search-input {
@@ -1014,17 +1013,7 @@ body {
     
     .content-container {
       position: sticky;
-      //top: 150px;
       bottom: 50px;
-    }
-
-    .table-row-list {
-      &.fixed-position {
-        //position: fixed;
-        //bottom: 50px;
-        //bottom: 0;
-        //padding-right: 15px;
-      }
     }
   }
 
