@@ -1,6 +1,5 @@
 // Leads List page modal
 .leads-list-modal {
-
   @media(max-width: 1199px) {
     .right-col-inner {
       flex-wrap: wrap;
@@ -30,9 +29,15 @@
     .meeting-card {
       width: 100%;
       border: 1px solid #e8e8e8;
-      border-top: none;
+      //border-top: none;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
+    }
+
+    .meeting-card,
+    .tasks-list {
+      margin-top: 10px !important;
+      border-top: 1px solid #e8e8e8 !important;
     }
 
     .card {
@@ -77,6 +82,14 @@
     .activity-list {
       height: 100%;
       overflow: unset;
+
+      .decoration-element-wizard { display: none; }
+
+      .activity-item-inner {
+        .date {
+          padding-left: 0 !important;
+        }
+      }
     }
 
     .activity-list-inner {
@@ -87,6 +100,10 @@
 
     .activity-list-wrap {
       margin-bottom: 20px;
+    }
+
+    .comments-list {
+      padding-left: 0;
     }
 
     .add-note-abs {
@@ -110,7 +127,7 @@
     .tasks-list {
       width: 100%;
       padding: 1rem 1rem 0 !important;
-      margin-top: 0 !important;
+      //margin-top: 0 !important;
       border: 1px solid #e8e8e8;
       border-top: none;
       border-bottom-left-radius: 6px;
@@ -137,6 +154,21 @@
   }
 
   @media(max-width: 767px) {
+    .modal-dialog {
+      position: relative;
+      margin: 1vh auto;
+      width: 98%;
+      min-height: 97vh;
+      height: auto;
+      background: #fff;
+    }
+
+    .modal-body {
+      flex-wrap: wrap;
+      overflow-y: auto;
+      height: calc(100vh - 80px);
+    }
+
     .user {
       flex-direction: column !important;
       align-items: flex-start !important;
@@ -147,10 +179,6 @@
         max-width: unset !important;
         margin-left: 0 !important;
       }
-    }
-
-    .right-col-outer {
-      padding: 0 0 0 1rem;
     }
 
     .text {
@@ -177,8 +205,25 @@
       padding-left: 0;
     }
 
+    .tasks-list {
+      padding: 0 !important;
+      border: none;
+    }
+
+    .tasks {
+      .card-body {
+        overflow: unset;
+      }
+    }
+
     .task-card {
       margin-left: 0 !important;
+      box-shadow: none;
+      border: 1px solid #e8e8e8;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     .card-body {
@@ -198,29 +243,6 @@
           margin-left: 0 !important;
         }
       }
-    }
-
-    .meeting-card,
-    .tasks-list {
-      margin-top: 10px !important;
-      border-top: 1px solid #e8e8e8 !important;
-    }
-  }
-
-  @media(max-width: 599px) {
-    .modal-dialog {
-      position: relative;
-      margin: 1vh auto;
-      width: 98%;
-      min-height: 97vh;
-      height: auto;
-      background: #fff;
-    }
-
-    .modal-body {
-      flex-wrap: wrap;
-      overflow-y: auto;
-      height: calc(100vh - 80px);
     }
 
     .left-col {
@@ -280,21 +302,12 @@
     }
 
     .right-col-outer {
+      //padding: 0 0 0 1rem;
       padding: 0;
     }
 
     .right-col-inner {
-      padding-right: 0;
-    }
-
-    .tasks-list {
-      padding: 0 !important;
-      border: none;
-      
-      .task-card {
-        box-shadow: none;
-        border: 1px solid #e8e8e8;
-      }
+      padding-right: 1px;
     }
 
     .activity-log {
@@ -305,5 +318,7 @@
       padding-right: 0;
     }
   }
+
+  @media(max-width: 599px) {  }
 }
 

@@ -105,7 +105,6 @@ body ::-webkit-scrollbar {
   .leads-status {
     .dropdown-menu {
       top: 32px !important;
-
     }
   }
 
@@ -319,7 +318,7 @@ body ::-webkit-scrollbar {
     height: 100%;
     //height: 480px;
     padding-right: 10px;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   .activity-list-wrap {
@@ -401,7 +400,7 @@ body ::-webkit-scrollbar {
     bottom: -1px;
     right: 0;
     z-index: 100;
-    width: 100%;
+    width: calc(100% + 1px);
     height: 100px;
     padding-top: 15px;
     background: linear-gradient(to bottom,#fff 0%,#fff 30%,#fff 61%,#fff 1000%);
@@ -413,7 +412,7 @@ body ::-webkit-scrollbar {
     position: absolute;
     right: 10px;
     bottom: 0;
-    width: 90%;
+    width: calc(100% - 40px - 4px - 2px);
 
     textarea {
       padding-right: 100px;
