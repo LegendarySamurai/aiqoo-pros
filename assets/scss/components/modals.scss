@@ -534,7 +534,8 @@ body ::-webkit-scrollbar {
 
         .dropdown {
           .status-btn {
-            max-width: 130px;
+            max-width: 200px;
+            white-space: nowrap;
           }
 
           .dropdown-item {
