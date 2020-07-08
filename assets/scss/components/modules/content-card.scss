@@ -1,15 +1,20 @@
 .content-card-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  margin-bottom: 20px;
 }
 
 .content-card {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0.5px 15px 0 rgba(52, 46, 73, 0.11);
   background-color: #ffffff;
+
+  .content-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
 
   &.promotions-card {
     .image-container {
@@ -61,10 +66,13 @@
   }
 
   &.contractors-card {
-    width: 40%;
+    margin-bottom: 0;
+
+    .counter {
+      font-size: 35pt;
+    }
 
     .b-btn {
-      //min-width: 60%;
       max-width: 150px;
     }
 
@@ -73,14 +81,26 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
+      padding: 20px 0;
 
       span {
+        line-height: 1.2;
         font-size: 15pt;
       }
     }
   }
 
   &.index-card {
+    height: 100%;
+    margin-bottom: 0;
+    //width: auto;
+    //flex-grow: 1;
+    //margin-left: 30px;
+
+    .counter {
+      font-size: 35pt;
+    }
+
     // wrap
     .wrap {
       display: flex;
@@ -111,7 +131,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      margin-left: 60px;
+      //margin-left: 60px;
     }
 
     .left-inner,
@@ -137,16 +157,18 @@
         flex-direction: row;
         font-size: 12pt;
 
-        &::after {
-          position: absolute;
-          top: 50%;
-          right: -20px;
-          transform: translate(0, -50%);
-          width: 1px;
-          height: 90%;
-          background-color: #eaeaea;
-          display: block;
-          content: '';
+        &:first-of-type {
+          &::after {
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translate(0, -50%);
+            width: 1px;
+            height: 90%;
+            background-color: #eaeaea;
+            display: block;
+            content: '';
+          }
         }
       }
     }
@@ -158,10 +180,11 @@
       justify-content: space-between;
       align-items: flex-start;
       padding: 15px;
-      border-bottom-right-radius: 6px;
-      border-bottom-left-radius: 6px;
-      box-shadow: 0 0.5px 4px 0 rgba(20,46,110,0.1);
-      background-color: #fff;
+      box-shadow: none;
+      //border-bottom-right-radius: 6px;
+      //border-bottom-left-radius: 6px;
+      //box-shadow: 0 0.5px 4px 0 rgba(20,46,110,0.1);
+      //background-color: #fff;
 
       .left-content {
         width: 40%;
@@ -199,6 +222,10 @@
         }
 
         .last-replied-by {
+          &::before {
+            display: none;
+          }
+
           .info {
             display: flex;
             flex-direction: row;
@@ -233,6 +260,56 @@
 
       .content-heading {
         border-bottom: 1px solid rgba(20,46,110,0.1);
+      }
+    }
+  }
+
+  &.loans-card {
+    .content-card-body {
+      .loans {
+        &::after {
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          display: block;
+          content: '';
+          width: 90%;
+          height: 1px;
+          background-color: #eaeaea;
+        }
+      }
+
+      .loans,
+      .pending-requests {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+
+  &.projects-card {
+    .content-card-body {
+      .projects-in-process {
+        &::after {
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          display: block;
+          content: '';
+          width: 90%;
+          height: 1px;
+          background-color: #eaeaea;
+        }
+      }
+
+      .projects-in-process,
+      .pending-projects {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
     }
   }
@@ -580,7 +657,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
 
     .calendar {
       display: flex;
