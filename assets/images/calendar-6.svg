@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.98" height="19.981" viewBox="0 0 19.98 19.981">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#585077}
+        </style>
+    </defs>
+    <g id="prefix__calendar-6" transform="translate(-.01)">
+        <g id="prefix__Group_2998" data-name="Group 2998" transform="translate(6.224 2.03)">
+            <g id="prefix__Group_2997" data-name="Group 2997">
+                <path id="prefix__Rectangle_1382" d="M0 0H7.551V1.171H0z" class="prefix__cls-1" data-name="Rectangle 1382"/>
+            </g>
+        </g>
+        <g id="prefix__Group_3000" data-name="Group 3000" transform="translate(3.896 2.615)">
+            <g id="prefix__Group_2999" data-name="Group 2999">
+                <path id="prefix__Rectangle_1383" d="M0 0H1.157V0.455H0z" class="prefix__cls-1" data-name="Rectangle 1383"/>
+            </g>
+        </g>
+        <g id="prefix__Group_3002" data-name="Group 3002" transform="translate(14.946 2.615)">
+            <g id="prefix__Group_3001" data-name="Group 3001">
+                <path id="prefix__Rectangle_1384" d="M0 0H1.157V0.455H0z" class="prefix__cls-1" data-name="Rectangle 1384"/>
+            </g>
+        </g>
+        <g id="prefix__Group_3004" data-name="Group 3004" transform="translate(.01 2.03)">
+            <g id="prefix__Group_3003" data-name="Group 3003">
+                <path id="prefix__Path_18015" d="M17.274 52.018v2.211h-3.5V52.6h-7.55v1.626h-3.5v-2.208H.01v3.629h19.98v-3.629z" class="prefix__cls-1" data-name="Path 18015" transform="translate(-.01 -52.018)"/>
+            </g>
+        </g>
+        <g id="prefix__Group_3006" data-name="Group 3006" transform="translate(.01 6.83)">
+            <g id="prefix__Group_3005" data-name="Group 3005">
+                <path id="prefix__Path_18016" d="M.01 175.013v13.151h19.98v-13.151zm4.367 10.966H2.442v-1.171h1.935v1.171zm0-2.536H2.442v-1.171h1.935v1.171zm0-2.537H2.442v-1.171h1.935v1.171zm3.3 5.073H5.738v-1.171h1.934zm0-2.536H5.738v-1.171h1.934zm0-2.537H5.738v-1.171h1.934zm3.3 5.073H9.033v-1.171h1.934zm0-2.536H9.033v-1.171h1.934zm0-2.537H9.033v-1.171h1.934zm0-2.536H9.033v-1.17h1.934zm3.3 7.61h-1.949v-1.171h1.934zm0-2.536h-1.949v-1.171h1.934zm0-2.537h-1.949v-1.171h1.934zm0-2.536h-1.949V177.2h1.934zm3.3 5.073h-1.954v-1.171h1.934zm0-2.537h-1.954v-1.171h1.934zm0-2.536h-1.954V177.2h1.934z" class="prefix__cls-1" data-name="Path 18016" transform="translate(-.01 -175.013)"/>
+            </g>
+        </g>
+        <g id="prefix__Group_3008" data-name="Group 3008" transform="translate(3.896)">
+            <g id="prefix__Group_3007" data-name="Group 3007">
+                <path id="prefix__Rectangle_1385" d="M0 0H1.157V3.071H0z" class="prefix__cls-1" data-name="Rectangle 1385"/>
+            </g>
+        </g>
+        <g id="prefix__Group_3010" data-name="Group 3010" transform="translate(14.946)">
+            <g id="prefix__Group_3009" data-name="Group 3009">
+                <path id="prefix__Rectangle_1386" d="M0 0H1.157V3.071H0z" class="prefix__cls-1" data-name="Rectangle 1386"/>
+            </g>
+        </g>
+    </g>
+</svg>

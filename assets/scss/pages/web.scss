@@ -975,6 +975,7 @@ body {
 // Dashboard-page
 .dashboard-page {
   padding: 20px 0;
+  font-family: "Poppins", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   .col-left {
     width: 20%;
@@ -983,6 +984,7 @@ body {
   .col-center {
     flex-grow: 1;
     width: auto;
+    max-width: 912px;
   }
   .col-right {
     width: 20%;
