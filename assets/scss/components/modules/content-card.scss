@@ -28,18 +28,18 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
-      padding-right: 150px;
+      padding: 0 20px 20px 20px;
     }
 
     .content-card-body-left {
-      position: relative;
-      width: 40%;
-      margin-right: 60px;
+      //position: relative;
+      //width: 40%;
+      //margin-right: 60px;
 
       &::after {
         position: absolute;
         top: 50%;
-        right: -30px;
+        right: 0;
         transform: translate(0, -50%);
         display: block;
         content: '';
@@ -55,6 +55,7 @@
       justify-content: flex-start;
       width: auto;
       flex-grow: 1;
+      padding-right: 120px;
 
       .wrap {
         display: flex;
@@ -66,7 +67,12 @@
   }
 
   &.contractors-card {
+    height: 100%;
     margin-bottom: 0;
+
+    .content-card-body {
+      padding: 0 20px 20px;
+    }
 
     .counter {
       font-size: 35pt;
@@ -93,9 +99,6 @@
   &.index-card {
     height: 100%;
     margin-bottom: 0;
-    //width: auto;
-    //flex-grow: 1;
-    //margin-left: 30px;
 
     .counter {
       font-size: 35pt;
@@ -110,14 +113,10 @@
     }
 
     .left {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
       &::after {
         position: absolute;
         top: 50%;
-        right: -30px;
+        right: 2vw;
         transform: translate(0, -50%);
         width: 1px;
         height: 90%;
@@ -125,13 +124,6 @@
         display: block;
         content: '';
       }
-    }
-
-    .right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      //margin-left: 60px;
     }
 
     .left-inner,
@@ -369,10 +361,6 @@
     padding: 20px;
   }
 
-  .content-card-body-left {
-
-  }
-
   .content-card-title {
     font-size: 18pt;
     font-weight: 900;
@@ -425,6 +413,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 200px;
     height: 40px;
     padding: 0 15px;
     font-weight: 400;
@@ -471,10 +460,17 @@
   // Pro
   .pro-thumb-up {
     position: absolute;
-    right: -30px;
-    bottom: 0;
+    right: -20px;
+    bottom: -20px;
     height: 100%;
     padding: 30px 0 0 0;
+
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 
   // Tasks list
@@ -652,12 +648,6 @@
   // EOL: Meetings
 
   .content-card-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
     .calendar {
       display: flex;
       flex-direction: row;
@@ -675,20 +665,201 @@
 }
 
 .content-card {
-  @media(max-width: 1899px) {}
+  @media(max-width: 1799px) {
+    .counter {
+      font-size: 40pt;
+    }
+  }
 
-  @media(max-width: 1599px) {}
+  @media(max-width: 1699px) {
+    .counter {
+      font-size: 35pt;
+    }
+  }
 
-  @media(max-width: 1399px) {}
+  @media(max-width: 1599px) {
+    .content-card-header {
+      .content-card-header-title {
+        font-size: 15pt;
+      }
+    }
 
-  @media(max-width: 1199px) {}
+    .content-card-title {
+      font-size: 15pt;
+    }
+  }
 
-  @media(max-width: 991px) {}
+  @media(max-width: 1499px) {
+    &.lead-performance-card {
+      .content-card-body-left {
+        &::after {
+          right: -10px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1399px) {
+    .counter {
+      font-size: 30pt;
+    }
+
+    &.tickets-card {
+      .ticket-content {
+        flex-direction: column;
+
+        .left-content {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .wrap {
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: none;
+          }
+        }
+
+        .right-content {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+
+        .card-opening-date {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.index-card {
+      .counter {
+        font-size: 30pt;
+      }
+    }
+
+    &.contractors-card {
+      .contractor {
+        span {
+          font-size: 13pt;
+        }
+      }
+    }
+
+    &.index-card {
+      .left-inner,
+      .right-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  @media(max-width: 1199px) {
+    .pro-thumb-up {
+      display: none;
+      //height: auto;
+      //width: auto;
+      //max-width: 120px;
+      //right: 0;
+    }
+
+    &.lead-performance-card {
+      .content-card-body-right {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    &.quality-score-card {
+      .image-container {
+        width: auto !important;
+        height: auto !important;
+      }
+    }
+
+    .content-card-header {
+      .content-card-header-title {
+        font-size: 13pt;
+      }
+    }
+
+    .title-1 {
+      font-size: 13pt;
+    }
+
+    &.tickets-card {
+      .calls-stats {
+        .stats-item {
+          font-size: 10pt;
+        }
+      }
+    }
+  }
 
   @media(max-width: 767px) {}
 
-  @media(max-width: 599px) {}
+  @media(max-width: 599px) {
+    &.tickets-card {
+      .content-card-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 60px;
+      }
 
-  @media(max-width: 374px) {}
+      .calls-stats {
+        margin-left: 0 !important;
+        margin-top: 5px;
+      }
+
+      .status {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+      }
+    }
+
+    &.lead-performance-card {
+      .content-card-body {
+        padding-top: 50px;
+      }
+
+      .dropdown-outer {
+        position: absolute;
+        top: 100%;
+        left: 10px;
+      }
+    }
+
+    &.meeting-card,
+    &.tasks-card {
+      .content-card-body {
+        padding-top: 50px;
+      }
+
+      .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 10px;
+      }
+    }
+
+  }
+
+  @media(max-width: 499px) {
+    &.tickets-card {
+      .status {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        font-size: 0;
+      }
+    }
+  }
 }
 

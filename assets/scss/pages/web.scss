@@ -978,27 +978,29 @@ body {
   font-family: "Poppins", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   .col-left {
+    flex-shrink: 0;
     width: 20%;
     max-width: 330px;
+    min-width: 330px;
   }
+
   .col-center {
     flex-grow: 1;
     width: auto;
-    max-width: 912px;
+    //max-width: 912px;
+    max-width: 60%;
   }
+
   .col-right {
+    flex-shrink: 0;
     width: 20%;
-    max-width: 300px;
+    max-width: 330px;
+    min-width: 330px;
   }
 
   img {
     width: 100%;
     height: 100%;
-  }
-
-  .col-left {
-    // Content
-
   }
 }
 

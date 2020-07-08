@@ -730,19 +730,82 @@
 
 // Dashboard-page
 .dashboard-page {
-  @media(max-width: 1899px) {}
+  @media(max-width: 1799px) {
+    .col-left {
+      min-width: 300px;
+    }
 
-  @media(max-width: 1599px) {}
+    .col-right {
+      min-width: 300px;
+    }
+  }
 
-  @media(max-width: 1399px) {}
+  @media(max-width: 1699px) {
+    .col-left {
+      width: 30%;
+      min-width: 300px;
+    }
 
-  @media(max-width: 1199px) {}
+    .col-center {
+      max-width: unset;
+    }
+
+    .col-right {
+      min-width: unset;
+      width: 100% !important;
+      max-width: 100%;
+    }
+  }
+
+  @media(max-width: 1399px) {
+    .contractors-card-col {
+      order: 2;
+      width: 100%;
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .index-card-col {
+      order: 1;
+      width: 100%;
+      max-width: 100%;
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media(max-width: 1199px) {
+    .col-left {
+      min-width: unset;
+      width: 100% !important;
+      max-width: 90%;
+      margin: 0 auto 20px;
+    }
+
+    .col-center {
+      max-width: 90%;
+      margin: 0 auto 20px;
+    }
+
+    .col-right {
+      max-width: 90%;
+      margin: 0 auto 20px;
+
+      .col {
+        width: 100%;
+      }
+    }
+  }
 
   @media(max-width: 991px) {}
 
   @media(max-width: 767px) {}
 
-  @media(max-width: 599px) {}
+  @media(max-width: 599px) {
+    .col-left {
+      margin-bottom: 0;
+    }
+  }
 
   @media(max-width: 374px) {}
 }
