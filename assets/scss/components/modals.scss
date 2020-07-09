@@ -749,3 +749,44 @@ body ::-webkit-scrollbar {
     align-items: center;
   }
 }
+
+// New ticket modal - Support page
+.new-ticket-modal {
+  .modal-body {
+    padding: 20px;
+  }
+
+  .form-control-file {
+    width: 50%;
+    pointer-events: auto;
+    opacity: 0;
+  }
+
+  .add-attachment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 38px;
+
+    .form-group {
+      height: 100%;
+    }
+  }
+
+  .send-btn {
+    width: auto;
+    height: 100%;
+    padding: 0 40px;
+    border-radius: 3px;
+  }
+}

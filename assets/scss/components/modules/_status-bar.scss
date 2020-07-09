@@ -44,6 +44,10 @@ body ::-webkit-scrollbar-thumb {
   }
 }
 
+.status-bar-heading {
+  display: none;
+}
+
 // When filter closed
 .status-bar {
   display: flex;
@@ -88,10 +92,6 @@ body ::-webkit-scrollbar-thumb {
       }
     }
     // EOL: user
-  }
-
-  .status-bar-heading {
-    display: none;
   }
 
   .title {
@@ -570,6 +570,7 @@ body ::-webkit-scrollbar-thumb {
     z-index: 10;
     position: fixed;
     top: 140px;
+    left: 0;
     display: flex !important;
     flex-direction: row;
     align-items: center;

@@ -408,6 +408,15 @@
               <div class="row">
                 <div class="col right-side-content-col">
                   <div class="right-side-content-inner">
+                    <!-- For mobile devices -->
+                    <div class="status-bar-heading">
+                      <span class="title font-weight-bold font-r-18">Leads</span>
+                      <button type="button" class="filter-btn">
+                        <i class="fad fa-filter"></i>
+                        <span class="font-r-10"></span>Filter
+                      </button>
+                    </div>
+
 
                     <!-- Unique content -->
                     <div class="support-page">
@@ -426,14 +435,6 @@
                                 <!-- Close filter button -->
                                 <div class="close-status-bar-btn">
                                   <i class="fad fa-times-circle font-r-16 close-filter-btn"></i>
-                                </div>
-                                <!-- For mobile devices -->
-                                <div class="status-bar-heading">
-                                  <span class="title font-weight-bold font-r-18">Leads</span>
-                                  <button type="button" class="filter-btn">
-                                    <i class="fad fa-filter"></i>
-                                    <span class="font-r-10"></span>Filter
-                                  </button>
                                 </div>
 
                                 <div class="status-bar-inner">
@@ -948,10 +949,12 @@
                           <div id="content-search-input"  class="search mb-3 mb-lg-0">
                             <span class="title font-weight-500 font-r-13">Support</span>
                             <div class="controls">
-                              <button class="new-ticket font-r-9">
+                              <!-- Button trigger modal -->
+                              <button type="button" class="new-ticket font-r-9" data-toggle="modal" data-target="#newTicketModal">
                                 <i class="fal fa-plus-square"></i>
                                 <span>New Ticket</span>
                               </button>
+
                               <span class="controls-title title font-weight-500 font-r-13">Support</span>
                               <div class="input-group">
                                 <div class="input-group-prepend"><i class="far fa-search"></i></div>
@@ -963,10 +966,13 @@
 
                           <!-- Content -->
                           <div class="content">
-                            <button class="new-ticket font-r-9 d-600-flex">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="new-ticket font-r-9 d-600-flex" data-toggle="modal" data-target="#newTicketModal">
                               <i class="fal fa-plus-square"></i>
                               <span>New Ticket</span>
                             </button>
+
+
                             <div class="tickets-list">
                               <div class="row">
                                 <div class="col-12 tickets-col">
@@ -1345,6 +1351,56 @@
       </div>
     </div>
   </main>
+
+  <!-- Modal -->
+  <div class="modal fade new-ticket-modal" id="newTicketModal" tabindex="-1" role="dialog" aria-labelledby="newTicketModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newTicketModalLabel">New Ticket</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fad fa-times-circle font-r-16"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="dropdown">
+              <label class="font-weight-bold system-color-7 font-12">Choose Type</label>
+              <button class="dropdown-toggle" id="dropdownMenuButton5" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Call Back
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                <a class="dropdown-item" href="#">Call Back</a>
+                <a class="dropdown-item" href="#">Follow up</a>
+                <a class="dropdown-item" href="#">Send company info</a>
+                <a class="dropdown-item" href="#">Schedule meeting</a>
+                <a class="dropdown-item" href="#">Confirm meeting</a>
+                <a class="dropdown-item" href="#">Reschedule meeting</a>
+                <a class="dropdown-item" href="#">Send quote / proposal</a>
+                <a class="dropdown-item" href="#">Setup financing</a>
+                <a class="dropdown-item" href="#">other</a>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="bottom">
+              <div class="form-group position-relative">
+                <label for="exampleFormControlFile1"></label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <span class="add-attachment system-color-6 font-10"><i class="fad fa-paperclip ma-r-10 font-10"></i>Add Attachment</span>
+              </div>
+
+              <button class="send-btn system-color-bg-6 system-color-23 font-12" type="button">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </app>
 
