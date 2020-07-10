@@ -993,7 +993,7 @@
                                       <div class="col-12 ticket-content-col">
                                         <div class="ticket-content is-active">
                                           <div class="row">
-                                            <div class="col-12 col-lg-auto left-side-col">
+                                            <div class="col-12 col-lg-6 left-side-ticket-col">
                                               <div class="left-side">
                                                 <!-- Heading -->
                                                 <div class="content-heading">
@@ -1051,14 +1051,14 @@
                                                 </div>
                                               </div>
                                             </div>
-                                            <div class="col-12 col-lg right-side-col">
+                                            <div class="col-12 col-lg-6 right-side-ticket-col">
                                               <div class="right-side">
                                                 <!-- User message -->
                                                 <div class="last-message user-message">
                                                   <div class="image-container">
                                                     <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
                                                   </div>
-                                                  <div class="message-card">
+                                                  <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                                                     <div class="message-card-heading">
                                                       <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
                                                       <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
@@ -1074,7 +1074,7 @@
 
                                                 <!-- Admin message -->
                                                 <div class="last-message admin-message">
-                                                  <div class="message-card">
+                                                  <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                                                     <div class="message-card-heading">
                                                       <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
                                                       <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
@@ -1111,7 +1111,7 @@
                                       <div class="col-12 ticket-content-col">
                                         <div class="ticket-content is-active">
                                           <div class="row">
-                                            <div class="col-12 col-lg-auto left-side-col">
+                                            <div class="col-12 col-lg-6 left-side-ticket-col">
                                               <div class="left-side">
                                                 <!-- Heading -->
                                                 <div class="content-heading">
@@ -1169,14 +1169,14 @@
                                                 </div>
                                               </div>
                                             </div>
-                                            <div class="col-12 col-lg right-side-col ">
+                                            <div class="col-12 col-lg-6 right-side-ticket-col ">
                                               <div class="right-side">
                                                 <!-- User message -->
                                                 <div class="last-message user-message">
                                                   <div class="image-container">
                                                     <img class="" src="assets/images/avatar.jpg" alt="avatar">
                                                   </div>
-                                                  <div class="message-card">
+                                                  <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                                                     <div class="message-card-heading">
                                                       <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
                                                       <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
@@ -1192,7 +1192,7 @@
 
                                                 <!-- Admin message -->
                                                 <div class="last-message admin-message d-none">
-                                                  <div class="message-card">
+                                                  <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                                                     <div class="message-card-heading">
                                                       <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
                                                       <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
@@ -1229,7 +1229,7 @@
                                       <div class="col-12 ticket-content-col">
                                         <div class="ticket-content is-active">
                                           <div class="row">
-                                            <div class="col-12 col-lg-auto left-side-col">
+                                            <div class="col-12 col-lg-6 left-side-ticket-col">
                                               <div class="left-side">
                                                 <!-- Heading -->
                                                 <div class="content-heading">
@@ -1287,14 +1287,14 @@
                                                 </div>
                                               </div>
                                             </div>
-                                            <div class="col-12 col-lg right-side-col">
+                                            <div class="col-12 col-lg-6 right-side-ticket-col">
                                               <div class="right-side">
                                                 <!-- User message -->
                                                 <div class="last-message user-message">
                                                   <div class="image-container">
                                                     <img class="" src="assets/images/avatar.jpg" alt="avatar">
                                                   </div>
-                                                  <div class="message-card">
+                                                  <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                                                     <div class="message-card-heading">
                                                       <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
                                                       <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
@@ -1310,7 +1310,7 @@
 
                                                 <!-- Admin message -->
                                                 <div class="last-message admin-message d-none">
-                                                  <div class="message-card">
+                                                  <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                                                     <div class="message-card-heading">
                                                       <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
                                                       <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
@@ -1352,7 +1352,7 @@
     </div>
   </main>
 
-  <!-- Modal -->
+  <!-- New ticket Modal -->
   <div class="modal fade new-ticket-modal" id="newTicketModal" tabindex="-1" role="dialog" aria-labelledby="newTicketModalLabel"
        aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -1382,8 +1382,9 @@
                 <a class="dropdown-item system-color-7 font-11 font-weight-300" href="#">other</a>
               </div>
             </div>
+
             <div class="form-group position-relative">
-              <span class="textarea-placeholder system-color-7 font-weight-300 font-9"><i class="fad fa-pencil-alt ma-r-5"></i>Enter Reply</span>
+              <label class="textarea-label" for="textarea"><span class="textarea-placeholder system-color-7 font-weight-300 font-9"><i class="fad fa-pencil-alt ma-r-5"></i>Enter Reply</span></label>
 
               <textarea id="textarea" class="textarea font-weight-300 font-9 system-color-7" rows="6"></textarea>
             </div>
@@ -1401,6 +1402,131 @@
             </div>
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade new-message-modal" id="newMessageModal" tabindex="-1" role="dialog" aria-labelledby="newMessageModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <span class="close-modal" data-dismiss="modal" aria-label="Close" aria-hidden="true"></span>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newMessageModalLabel">New Ticket</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fad fa-times-circle font-16"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-content">
+            <div class="ticket orange">
+              <div class="row">
+
+                <div class="col-12 ticket-header-col">
+                  <div class="ticket-header">
+                    <span class="type font-weight-300 font-12"><i class="indicator"></i>Problem receiving inquiries</span>
+                  </div>
+                </div>
+
+                <div class="col-12 ticket-content-col">
+                  <div class="ticket-content is-active">
+                    <div class="row">
+                      <div class="col-12 col-lg-4 left-side-ticket-col">
+                        <div class="left-side">
+                          <!-- Body -->
+                          <div class="content-body">
+                            <div class="message-info">
+                              <div class="created-by">
+                                <span class="gray-title font-8">Created By</span>
+                                <div class="info pb-0 mb-3">
+                                  <div class="image-container">
+                                    <img class="" src="assets/images/avatar.jpg" alt="avatar">
+                                  </div>
+                                  <div class="info-content">
+                                    <span class="user-name font-weight-500 font-9">George Ezra</span>
+                                    <span class=" font-8">26 MAR 2020 2:30 AM</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <span class="ticket-status-btn font-weight-500 font-11 system-color-7">Resolved</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-8 right-side-ticket-col">
+                        <div class="right-side">
+                          <!-- User message -->
+                          <div class="last-message user-message">
+                            <div class="image-container">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="updated font-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                <span class="author-name font-11 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                              </div>
+                              <div class="message font-9">
+                                Hi Dave,
+                                As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
+                                regards,
+                                Sureshkumer P
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Admin message -->
+                          <div class="last-message admin-message">
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="updated font-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                                <span class="author-name font-11 font-weight-bold">Dave AIQ</span>
+                              </div>
+                              <div class="message font-9">
+                                What's up with that?
+                              </div>
+                            </div>
+                            <div class="logo-image-container">
+                              <img class="" src="assets/images/brand-logo.svg" alt="logo">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form action="">
+            <div class="form-group position-relative">
+              <label class="textarea-label" for="textareaOne">
+                <span class="textarea-placeholder system-color-7 font-weight-300 font-9">
+                  <i class="fad fa-pencil-alt ma-r-5"></i>
+                  Enter Reply
+                </span>
+              </label>
+
+              <textarea id="textareaOne" class="textarea font-weight-300 font-9 system-color-7" rows="6"></textarea>
+            </div>
+
+            <div class="bottom">
+              <div class="form-group mb-0 position-relative">
+                <label class="mb-0" for="exampleFormControlFile1">
+                  <span class="add-attachment system-color-6 font-11"><i class="fad fa-paperclip ma-r-10 font-11"></i>Add Attachment</span>
+                </label>
+                <input type="file" class="form-control-file">
+
+              </div>
+
+              <button class="send-btn system-color-bg-6 system-color-23 font-12" type="button">Send</button>
+            </div>
+          </form>
+
+
+        </div>
+
       </div>
     </div>
   </div>

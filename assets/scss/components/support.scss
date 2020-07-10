@@ -187,7 +187,7 @@ img {
     border-radius: 20px;
   }
 
-  .left-side-col {
+  .left-side-ticket-col {
     @media(max-width: 767px) {
       padding-right: 15px;
       padding-left: 15px;
@@ -195,10 +195,10 @@ img {
   }
 }
 
-.left-side-col {
-  width: 50%;
-  max-width: 50%;
-  min-width: 550px;
+.left-side-ticket-col {
+  //width: 50%;
+  //max-width: 50%;
+  //min-width: 550px;
 }
 
 .status {

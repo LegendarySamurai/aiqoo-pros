@@ -1864,7 +1864,7 @@
 //************* Support page (Dashboard)  *************//
 .support-page {
   @media(max-width: 1499px) {
-    .right-side-col {
+    .right-side-ticket-col {
       .message-card-heading {
         flex-direction: column;
         justify-content: flex-start;
@@ -1888,14 +1888,16 @@
       margin-left: 3% !important;
     }
 
-    .right-side-col {
-      display: none;
+    .right-side-ticket-col {
+      //width: 100%;
+      //max-width: 100%;
+      //min-width: inherit;
     }
 
-    .left-side-col {
-      width: 100%;
-      max-width: 100%;
-      min-width: inherit;
+    .left-side-ticket-col {
+      //width: 100%;
+      //max-width: 100%;
+      //min-width: inherit;
     }
   }
 

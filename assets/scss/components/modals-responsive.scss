@@ -317,8 +317,6 @@
       padding-right: 0;
     }
   }
-
-  @media(max-width: 599px) {  }
 }
 
 
@@ -332,6 +330,65 @@
 
       .send-btn {
         margin-top: 20px;
+      }
+    }
+  }
+}
+
+// New message modal - Support page
+.new-message-modal {
+  @media(max-width: 991px) {
+    .ticket {
+      .ticket-content {
+        padding: 0 15px 15px 15px;
+      }
+    }
+
+    .ticket-status-btn {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .message-info {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  @media(max-width: 599px) {
+    .modal-dialog {
+      position: relative;
+      z-index: 100;
+      width: 97%;
+      height: 100%;
+      margin: 30px auto 0;
+    }
+
+    .close-modal {
+      z-index: 10;
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 3px;
+      border-radius: 15px;
+      background-color: #d8cdba;
+    }
+
+    .message-card {
+      .message-card-heading {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+
+    .ticket {
+      .right-side-ticket-col {
+        padding-right: 0;
+        padding-left: 0;
       }
     }
   }
