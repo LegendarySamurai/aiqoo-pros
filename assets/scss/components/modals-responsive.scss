@@ -302,7 +302,6 @@
     }
 
     .right-col-outer {
-      //padding: 0 0 0 1rem;
       padding: 0;
     }
 
@@ -320,5 +319,21 @@
   }
 
   @media(max-width: 599px) {  }
+}
+
+
+// New ticket modal - Support page
+.new-ticket-modal {
+  @media(max-width: 400px) {
+    .bottom {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: auto;
+
+      .send-btn {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
