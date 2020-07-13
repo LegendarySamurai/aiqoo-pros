@@ -28,16 +28,13 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    //width: calc(600px + 60px + 200px + 30px);
     width: 100%;
     margin-right: 30px;
 
     .content {
       position: relative;
       width: 100%;
-      //max-width: 500px;
       height: auto;
-      //max-height: 600px;
       margin-right: 30px;
       padding: 0 4vw 4vw 4vw;
       background-color: #f1f1f1;
@@ -79,11 +76,25 @@
     form {
       max-width: 500px;
       margin-left: 10%;
-      //margin: 0 auto;
 
-      .input-group {
+
+      .custom-control-label {
+        padding-left: 20px;
+
+        &::before {
+          display: block !important;
+        }
+      }
+
+      .custom-control-input:checked ~ .custom-control-label {
+        &::after {
+          display: block !important;
+        }
+      }
+
+
+        .input-group {
         width: 100%;
-        //height: 52px;
         height: 47px;
 
         .input-group-text:after {
@@ -135,7 +146,6 @@
     .banner {
       flex-shrink: 0;
       width: 300px;
-      //min-width: 160px;
 
       img {
         width: 100%;

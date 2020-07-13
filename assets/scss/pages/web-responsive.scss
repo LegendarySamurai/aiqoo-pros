@@ -658,18 +658,11 @@
   .user-outer {
     &.show {
       .user {
-        //width: 135px !important;
         padding-right: 5px !important;
-
-        &.active {
-          //width: 135px !important;
-        }
       }
 
       .dropdown-info {
         &.visible {
-          //width: 135px !important;
-
           .dropdown-item {
             font-size: 8.5pt;
           }
@@ -697,6 +690,11 @@
 
 // ******** Pages **********//
 
+// System campaign: Services, summary, zip-code pages //
+.system-campaign {
+  @import '../components/system-campaign-responsive';
+}
+
 @media(max-width: 599px) {
   // Search
   #content-search-input {
@@ -720,7 +718,7 @@
   }
 }
 
-// Dashboard-page
+// Dashboard-page //
 .dashboard-page {
   @media(max-width: 1799px) {
     .col-left {
@@ -1213,13 +1211,6 @@
       padding: 0 4vw 4vw !important;
     }
   }
-
-  @media(max-width: 374px) {}
-}
-
-// System campaign: Services, summary, zip-code pages //
-.system-campaign {
-  @import '../components/system-campaign-responsive';
 }
 
 .logo2,
@@ -1485,28 +1476,7 @@
 
 //************* Dashboard  *************//
 .dashboard-outer {
-  @mixin contentStyles {
-    @media(min-width: 300px) {
-      width: 100%;
-      padding: 20px 20px;
-    }
-
-    @media(min-width: 1200px) {
-      width: 100%;
-      padding: 20px 0 0 45px;
-    }
-  }
-
-  .content {
-    @include contentStyles;
-  }
-
-  // Here starts media
-
   @media(min-width: 300px) {
-    margin-top: 50px;
-    padding-bottom: 40px;
-
     .content {
       .text {
         margin-bottom: 10px;
@@ -1528,7 +1498,8 @@
       color: #585077;
 
       .content {
-        @include contentStyles;
+        width: 100%;
+        padding: 20px 20px;
 
         .text {
           margin-bottom: 20px;
@@ -1569,7 +1540,6 @@
       }
     }
   }
-  // EOL: 300px
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .services-list {
@@ -1580,7 +1550,6 @@
       }
     }
   }
-  // EOL: 768px - 1024px
 
   @media(min-width: 992px) {
     // add-portfolio
@@ -1609,7 +1578,6 @@
       }
     }
   }
-  // EOL: 992px
 
   @media(min-width: 1200px) {
     padding-bottom: 80px;
@@ -1660,17 +1628,11 @@
       }
     }
   }
-  // EOL: 1200px
 
-  @media(min-width: 1600px) {
-    margin-top: 60px;
+  @media(max-width: 599px) {
+    margin-top: 160px;
   }
-  // EOL: 1600px
 
-  @media(min-width: 1920px) {
-    margin-top: 80px;
-  }
-  // EOL: 1920px
 }
 
 //************* My tasks page (Dashboard)  *************//
@@ -1886,18 +1848,6 @@
   @media(max-width: 1299px) {
     & .status-bar-col.filter-closed + .f-content-col {
       margin-left: 3% !important;
-    }
-
-    .right-side-ticket-col {
-      //width: 100%;
-      //max-width: 100%;
-      //min-width: inherit;
-    }
-
-    .left-side-ticket-col {
-      //width: 100%;
-      //max-width: 100%;
-      //min-width: inherit;
     }
   }
 

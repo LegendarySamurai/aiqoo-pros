@@ -9,10 +9,6 @@
   height: 50px;
   background-color: #e0e0e0;
 
-  @media(max-width: 1199px) {
-    //height: 50px;
-  }
-
   @media(max-width: 991px) {
     height: 40px;
   }
@@ -26,12 +22,16 @@
     font-size: 1rem;
     color: #585077;
 
+    @media(min-width: 600px) {
+      cursor: pointer;
+    }
+
     &:first-child {
       padding-left: 45px;
     }
 
     @media(max-width: 1199px) {
-      padding: 0 10px;
+      padding: 0 2%;
 
       &:first-child {
         padding-left: 35px;
@@ -39,11 +39,21 @@
     }
 
     @media(max-width: 991px) {
-      padding: 0 10px;
-
       &:first-child {
         padding-left: 25px;
       }
+    }
+
+    @media(max-width: 599px) {
+      font-size: 10pt !important;
+
+      &:first-child {
+        padding-left: 2%;
+      }
+    }
+
+    @media(max-width: 399px) {
+      font-size: 9pt !important;
     }
 
     &:not(:first-child) {
@@ -67,6 +77,13 @@
       border-radius: 2px;
       background-color: #b3b3b3;
       color: #d6d6d6;
+
+      @media(max-width: 599px) {
+        flex-shrink: 0;
+        width: 22px;
+        height: 22px;
+        margin-right: 6px !important;
+      }
     }
 
     &.active {

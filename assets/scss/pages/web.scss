@@ -195,7 +195,6 @@ body {
   // active menu item state
   &:hover, &.active {
     position: relative;
-    //margin-left: -10px;
     border-bottom: none;
 
     &::before {
@@ -312,8 +311,8 @@ body {
 
 .right-side-content-inner {
   width: 100%;
-  height: 100%;
-  margin-top: 90px;
+  //height: 100%;
+  margin-top: 110px;
   pointer-events: auto;
 }
 

@@ -6,7 +6,13 @@
 
 // Dashboard
 .dashboard-outer {
+  margin-top: 110px;
   padding-bottom: 80px;
+
+  .content {
+    width: 100%;
+    padding: 20px 20px;
+  }
 
   .text {
     color: #342e49;
@@ -17,14 +23,6 @@
     color: #342e49;
   }
 
-  @mixin contentContainerStyles {
-    width: 100%;
-    padding-bottom: 30px;
-    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
-    font-family: "Raleway",sans-serif;
-  }
-
   .content {
     .text {
       border-bottom: 1px solid rgba(0, 0, 0, 0.16);
@@ -33,7 +31,11 @@
 
   // Add company profile
   .add-company-profile {
-    @include contentContainerStyles;
+    width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    font-family: "Raleway",sans-serif;
 
     .content {
       .finances {
@@ -87,7 +89,11 @@
 
   // Services and location
   .services-and-location {
-    @include contentContainerStyles;
+    width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    font-family: "Raleway",sans-serif;
 
     .county-list-wrapper {
       display: flex;
@@ -140,7 +146,11 @@
 
   // Add portfolio
   .add-portfolio {
-    @include contentContainerStyles;
+    width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    font-family: "Raleway",sans-serif;
 
     .content-col-container {
       display: flex;
@@ -174,6 +184,7 @@
     }
 
     .content-col-header {
+      height: 70px;
       margin-bottom: 20px;
     }
 
@@ -192,8 +203,6 @@
       @media(max-width: 991px) {
         width: 100%;
       }
-      //@media() {}
-      //@media() {}
 
       .form-group {
         i {
@@ -333,6 +342,17 @@
         width: 100%;
       }
 
+      .content-col-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          margin-bottom: 0;
+        }
+      }
+
       .content-col-main {
         background-color: #f5f5f5;
       }
@@ -407,102 +427,13 @@
 }
 
 
-// Modal pop-up styles
-
-.add-portfolio-modal {
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-
-  #add-portfolio-title {
-    margin: 0 auto;
-  }
-
-  .modal-content {
-    border-radius: 0;
-  }
-
-  .modal-header {
-    padding: 30px 16px 10px;
-    border: none;
-  }
-
-  .upload-header {
-    padding-left: 32px;
-  }
-
-  .upload-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 8px 32px;
-    background-color: #f5f5f5;
-  }
-
-  .upload-body-image {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-
-    span {
-      color: #585077;
-      font-weight: 300;
-    }
-  }
-
-  .fa-plus-square {
-    background-color: #fff;
-    color: #585077;
-  }
-
-  .add-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50px;
-    padding: 0 10px;
-    background-color: #585077;
-    color: #fff;
-
-    .btn-name {
-      margin: 0 auto;
-    }
-  }
-
-  .upload-form-group {
-    padding: 25px 0;
-  }
-
-  .form-group {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-
-    label, .form-control-container {
-      width: 50%;
-    }
-  }
-
-  .form-control {
-    padding-left: 30px;
-  }
-
-  .form-control-container {
-    .popover-two,
-    .popover-three,
-    .fa-map-marker-alt {
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      transform: translateY(-50%);
-    }
-  }
+// Modal pop-up styles (Add portfolio page)
+.add-portfolio-modal-btn {
+  display: block;
+  border: 1px solid #585077;
+  border-radius: 3px;
+  width: auto;
+  z-index: 1060;
 }
 
 // Uploads common styles for reuseble blocks of code

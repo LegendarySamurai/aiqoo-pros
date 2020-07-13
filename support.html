@@ -1383,10 +1383,11 @@
               </div>
             </div>
 
-            <div class="form-group position-relative">
-              <label class="textarea-label" for="textarea"><span class="textarea-placeholder system-color-7 font-weight-300 font-9"><i class="fad fa-pencil-alt ma-r-5"></i>Enter Reply</span></label>
+            <div class="form-group textarea-form-group position-relative">
+              <label class="textarea-label" for="textarea">
+                <span class="textarea-placeholder system-color-7 font-weight-300 font-9"><i class="fad fa-pencil-alt ma-r-5"></i>Ticket text</span></label>
 
-              <textarea id="textarea" class="textarea font-weight-300 font-9 system-color-7" rows="6"></textarea>
+              <textarea id="textarea" class="textarea font-weight-300 font-9 system-color-7"></textarea>
             </div>
 
             <div class="bottom">
@@ -1406,56 +1407,96 @@
     </div>
   </div>
 
-  <!-- Modal -->
+  <!-- Ticket details Modal -->
   <div class="modal fade new-message-modal" id="newMessageModal" tabindex="-1" role="dialog" aria-labelledby="newMessageModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <span class="close-modal" data-dismiss="modal" aria-label="Close" aria-hidden="true"></span>
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="newMessageModalLabel">New Ticket</h5>
+          <!--<h5 class="modal-title" id="newMessageModalLabel">Ticket details</h5>-->
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><i class="fad fa-times-circle font-16"></i></span>
           </button>
         </div>
         <div class="modal-body">
           <div class="modal-body-content">
-            <div class="ticket orange">
+            <div class="ticket">
               <div class="row">
 
                 <div class="col-12 ticket-header-col">
-                  <div class="ticket-header">
-                    <span class="type font-weight-300 font-12"><i class="indicator"></i>Problem receiving inquiries</span>
-                  </div>
-                </div>
+                  <div class="ticket-header-inner position-relative">
+                    <div class="decoration-element system-color-bg-7"></div>
+                    <div class="ticket-header label">
+                      <span class="type font-weight-bold font-r-10"><i class="indicator system-color-bg-7"></i>Problem receiving inquiries</span>
+                      <!-- Resolved, unresolved -->
+                      <span class="status system-color-7 font-weight-500 font-r-10 d-600-none">Resolved</span>
+                    </div>
 
-                <div class="col-12 ticket-content-col">
-                  <div class="ticket-content is-active">
-                    <div class="row">
-                      <div class="col-12 col-lg-4 left-side-ticket-col">
-                        <div class="left-side">
-                          <!-- Body -->
-                          <div class="content-body">
-                            <div class="message-info">
-                              <div class="created-by">
-                                <span class="gray-title font-8">Created By</span>
-                                <div class="info pb-0 mb-3">
-                                  <div class="image-container">
-                                    <img class="" src="assets/images/avatar.jpg" alt="avatar">
-                                  </div>
-                                  <div class="info-content">
-                                    <span class="user-name font-weight-500 font-9">George Ezra</span>
-                                    <span class=" font-8">26 MAR 2020 2:30 AM</span>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <span class="ticket-status-btn font-weight-500 font-11 system-color-7">Resolved</span>
+                    <div class="ticket-description">
+                      <!-- Heading -->
+                      <div class="content-heading">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="id">
+                              <span class="font-weight-500 font-r-9">ID <span>342535354345</span></span>
+                              <span class="status resolved font-weight-500 font-r-10 d-600-flex">Resolved</span>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-8">
+                            <div class="card-opening-date">
+                              <span class="gray-title font-r-8">Card opening date</span>
+                              <span class="date font-r-9">
+                                    <i class="fal fa-calendar"></i>
+                                    <span class="">26 MAR 2020 2:30 AM</span>
+                                  </span>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-12 col-lg-8 right-side-ticket-col">
-                        <div class="right-side">
+
+                      <!-- Body -->
+                      <div class="content-body">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                            <div class="created-by">
+                              <span class="gray-title font-r-8">Created By</span>
+                              <div class="info">
+                                <div class="image-container">
+                                  <img class="" src="assets/images/avatar.jpg" alt="avatar">
+                                </div>
+                                <div class="info-content">
+                                  <span class="user-name font-weight-500 font-r-9">George Ezra</span>
+                                  <span class=" font-r-8">26 MAR 2020 2:30 AM</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-8">
+                            <div class="last-replied-by">
+                              <span class="gray-title font-r-8">Last Replied by</span>
+                              <div class="info">
+                                <div class="logo-image-container">
+                                  <img src="assets/images/brand-logo.svg" alt="logo">
+                                </div>
+                                <div class="info-content">
+                                  <span class="user-name font-weight-500 font-r-9">George Ezra</span>
+                                  <span class=" font-r-8">26 MAR 2020 2:30 AM</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-12 ticket-content-col">
+                  <div class="ticket-content">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="conversation-details">
                           <!-- User message -->
                           <div class="last-message user-message">
                             <div class="image-container">
@@ -1463,10 +1504,10 @@
                             </div>
                             <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                               <div class="message-card-heading">
-                                <span class="updated font-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
-                                <span class="author-name font-11 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                                <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                               </div>
-                              <div class="message font-9">
+                              <div class="message font-r-6">
                                 Hi Dave,
                                 As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
                                 regards,
@@ -1479,10 +1520,180 @@
                           <div class="last-message admin-message">
                             <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
                               <div class="message-card-heading">
-                                <span class="updated font-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
-                                <span class="author-name font-11 font-weight-bold">Dave AIQ</span>
+                                <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
                               </div>
-                              <div class="message font-9">
+                              <div class="message font-r-6">
+                                What's up with that?
+                              </div>
+                            </div>
+                            <div class="logo-image-container">
+                              <img class="" src="assets/images/brand-logo.svg" alt="logo">
+                            </div>
+                          </div>
+                          <!-- User message -->
+                          <div class="last-message user-message">
+                            <div class="image-container">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                Hi Dave,
+                                As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
+                                regards,
+                                Sureshkumer P
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Admin message -->
+                          <div class="last-message admin-message">
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                What's up with that?
+                              </div>
+                            </div>
+                            <div class="logo-image-container">
+                              <img class="" src="assets/images/brand-logo.svg" alt="logo">
+                            </div>
+                          </div>
+                          <!-- User message -->
+                          <div class="last-message user-message">
+                            <div class="image-container">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                Hi Dave,
+                                As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
+                                regards,
+                                Sureshkumer P
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Admin message -->
+                          <div class="last-message admin-message">
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                What's up with that?
+                              </div>
+                            </div>
+                            <div class="logo-image-container">
+                              <img class="" src="assets/images/brand-logo.svg" alt="logo">
+                            </div>
+                          </div>
+                          <!-- User message -->
+                          <div class="last-message user-message">
+                            <div class="image-container">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                Hi Dave,
+                                As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
+                                regards,
+                                Sureshkumer P
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Admin message -->
+                          <div class="last-message admin-message">
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                What's up with that?
+                              </div>
+                            </div>
+                            <div class="logo-image-container">
+                              <img class="" src="assets/images/brand-logo.svg" alt="logo">
+                            </div>
+                          </div>
+                          <!-- User message -->
+                          <div class="last-message user-message">
+                            <div class="image-container">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                Hi Dave,
+                                As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
+                                regards,
+                                Sureshkumer P
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Admin message -->
+                          <div class="last-message admin-message">
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                What's up with that?
+                              </div>
+                            </div>
+                            <div class="logo-image-container">
+                              <img class="" src="assets/images/brand-logo.svg" alt="logo">
+                            </div>
+                          </div>
+                          <!-- User message -->
+                          <div class="last-message user-message">
+                            <div class="image-container">
+                              <img class="avatar" src="assets/images/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Sureshkumer P [Syncfusion]</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
+                                Hi Dave,
+                                As we said earlier' we include this feature as out Volume - 1 2020 release. We aappreciate your patience until then.
+                                regards,
+                                Sureshkumer P
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Admin message -->
+                          <div class="last-message admin-message">
+                            <div class="message-card" data-toggle="modal" data-target="#newMessageModal">
+                              <div class="message-card-heading">
+                                <span class="author-name font-r-8 font-weight-bold">Dave AIQ</span>
+                                <span class="updated font-r-7">Updated on Jan 29, 2020 07:31 AM UTC</span>
+                              </div>
+                              <div class="message font-r-6">
                                 What's up with that?
                               </div>
                             </div>
@@ -1500,7 +1711,7 @@
           </div>
 
           <form action="">
-            <div class="form-group position-relative">
+            <div class="form-group  position-relative">
               <label class="textarea-label" for="textareaOne">
                 <span class="textarea-placeholder system-color-7 font-weight-300 font-9">
                   <i class="fad fa-pencil-alt ma-r-5"></i>
@@ -1508,7 +1719,7 @@
                 </span>
               </label>
 
-              <textarea id="textareaOne" class="textarea font-weight-300 font-9 system-color-7" rows="6"></textarea>
+              <textarea id="textareaOne" class="textarea font-weight-300 font-9 system-color-7"></textarea>
             </div>
 
             <div class="bottom">

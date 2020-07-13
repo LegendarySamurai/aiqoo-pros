@@ -3,7 +3,7 @@ body ::-webkit-scrollbar-thumb {
 }
 
 body ::-webkit-scrollbar {
-  width: 0px !important;
+  width: 0 !important;
 }
 
 // Leads List page modal
@@ -756,7 +756,11 @@ body ::-webkit-scrollbar {
     width: 90%;
     max-width: 1600px;
     margin: 9vh auto;
-    height: 82vh;
+    height: 70vh;
+  }
+
+  .modal-content {
+    height: 100%;
   }
 
   .modal-header {
@@ -767,8 +771,27 @@ body ::-webkit-scrollbar {
     padding: 20px;
   }
 
+  // dropdown
+  .dropdown {
+    margin-bottom: 20px;
+  }
+
+  .dropdown-toggle {
+    border: 1px solid #585077;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  
+  .dropdown-menu {
+    border-color: #585077;
+  }
+
+  // form
   form {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
   }
 
   .bottom {
@@ -778,6 +801,8 @@ body ::-webkit-scrollbar {
     align-items: flex-start;
     width: 100%;
     height: 38px;
+    /* margin: auto 0 300px 0; */
+    margin-top: auto;
 
     .form-group {
       padding: 8px 10px;
@@ -812,11 +837,14 @@ body ::-webkit-scrollbar {
     left: 15px;
   }
 
+  .textarea-form-group {
+    height: 70%;
+  }
 
   textarea {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     line-height: 1.5;
     padding: 40px 15px 15px 15px;
     color: #342e49;
@@ -851,11 +879,12 @@ body ::-webkit-scrollbar {
   .modal-dialog {
     width: 90%;
     max-width: 1600px;
-    margin: 9vh auto;
-    height: 82vh;
+    margin: 10vh auto;
+    height: 80vh;
   }
 
   .modal-header {
+    height: 160px;
     background-color: #ededed;
   }
 
@@ -944,15 +973,61 @@ body ::-webkit-scrollbar {
     }
   }
 
+  .ticket {
+    top: -13vh;
+  }
+
+  .ticket-header-inner {
+    border-radius: 5px;
+    box-shadow: 0 1.5px 7.5px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+  }
+
+  .ticket-description {
+    position: relative;
+    z-index: 2;
+    padding: 15px 15px 0 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+  }
+
+  .ticket-header {
+    .status {
+      border: 1px solid #585077;
+    }
+  }
+
+  .ticket-content {
+    position: relative;
+    padding-bottom: 40px;
+    overflow: hidden;
+    overflow-y: auto;
+    border: solid 1px #d6d6d6;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+    }
+  }
+
   .ticket-status-btn {
     width: auto;
     max-width: 120px;
     height: 26px;
     line-height: 24px;
     padding: 0 20px;
-    margin-top: 20px;
     border-radius: 2px;
     border: solid 1px #585077;
+
+    @media(max-width: 599px) {
+      margin-top: 20px;
+    }
   }
 
   .message-info {
@@ -968,8 +1043,10 @@ body ::-webkit-scrollbar {
     box-shadow: none;
 
     .ticket-header {
-      background-color: transparent;
-      border-bottom: 1px solid #707070;
+      @media(max-width: 599px) {
+        background-color: transparent;
+        border-bottom: 1px solid #707070;
+      }
     }
 
     .ticket-content {
@@ -999,10 +1076,6 @@ body ::-webkit-scrollbar {
             margin-right: 0;
             margin-bottom: 15px;
           }
-
-          .message-card {
-            background-color: transparent;
-          }
         }
 
         &.admin-message {
@@ -1015,6 +1088,107 @@ body ::-webkit-scrollbar {
           }
         }
       }
+    }
+  }
+}
+
+// Add portfolio modal
+.add-portfolio-modal {
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  #add-portfolio-title {
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
+
+  .modal-header {
+    padding: 30px 16px 10px;
+    border: none;
+  }
+
+  .modal-body {
+    padding-bottom: 30px;
+  }
+
+  .upload-header {
+    padding-left: 32px;
+  }
+
+  .upload-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px 32px;
+    background-color: #f5f5f5;
+  }
+
+  .upload-body-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      color: #585077;
+      font-weight: 300;
+    }
+  }
+
+  .fa-plus-square {
+    background-color: #fff;
+    color: #585077;
+  }
+
+  .add-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+    background-color: #585077;
+    color: #fff;
+
+    .btn-name {
+      margin: 0 auto;
+    }
+  }
+
+  .upload-form-group {
+    padding: 25px 0;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    label, .form-control-container {
+      width: 50%;
+    }
+  }
+
+  .form-control {
+    padding-left: 30px;
+  }
+
+  .form-control-container {
+    .popover-two,
+    .popover-three,
+    .fa-map-marker-alt {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
     }
   }
 }
