@@ -22,8 +22,6 @@ body ::-webkit-scrollbar {
     align-items: flex-start;
     overflow: hidden;
     height: 100%;
-    //padding: 1rem;
-    //overflow-y: auto;
   }
 
   .modal-content {
@@ -83,7 +81,9 @@ body ::-webkit-scrollbar {
     padding: 0;
     border: none;
     border-radius: 2.5px;
-    box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
+    //box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
+    //box-shadow: -6px 33.5px 30px 0 #ccc;
+    box-shadow: -6px 33.5px 30px 0 #b3b3b3;
     background-color: #ffffff;
     transform: none !important;
 
@@ -167,8 +167,12 @@ body ::-webkit-scrollbar {
       }
 
       &.attempts {
-        justify-content: space-around;
+        justify-content: flex-start;
         background-color: #b3b3b3;
+
+        .fa-phone-slash {
+          margin: 0 3%;
+        }
       }
     }
   }
