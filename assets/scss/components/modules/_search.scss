@@ -2,9 +2,9 @@
 .search {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  padding-bottom: 10px;
+  align-items: center !important;
+  padding: 10px 0 !important;
   border-bottom: 1px solid #707070;
   font-family: "Raleway", sans-serif;
 
@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 36px;
   }
 
   .controls-title {
@@ -25,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     width: auto;
-    height: 46px;
+    height: 100%;
     padding: 0 10px;
     background-color: #585077;
     color: #fff;
@@ -50,7 +51,7 @@
     flex-direction: row;
     align-items: center;
     width: 380px;
-    height: 46px;
+    height: 100%;
   }
 
   .input-group-prepend {
