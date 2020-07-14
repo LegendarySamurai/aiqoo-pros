@@ -1,6 +1,7 @@
 // Search on the top of each page with title of page
 #content-search-input {
-  z-index: 200;
+  //z-index: 200;
+  z-index: 6;
   position: sticky;
   top: 92px;
   align-items: flex-end;

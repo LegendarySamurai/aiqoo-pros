@@ -20,6 +20,9 @@
   & .f-content-col #content-search-input {
     position: fixed;
     top: 92px;
+    right: 15px;
+    flex-shrink: 0;
+    width: 100%;
   }
 
   & .status-bar-col.filter-opened + .f-content-col #content-search-input {
