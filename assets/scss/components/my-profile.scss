@@ -30,128 +30,139 @@
     justify-content: space-between;
     width: 100%;
     margin-right: 30px;
+  }
 
-    .content {
-      position: relative;
-      width: 100%;
-      height: auto;
-      margin-right: 30px;
-      padding: 0 4vw 4vw 4vw;
-      background-color: #f1f1f1;
+  .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-right: 30px;
+    padding: 0 4vw 4vw 4vw;
+    background-color: #f1f1f1;
 
-      h6 {
-        font-weight: 600;
-        font-size: 13pt;
-      }
-
-      .content-inner {
-        position: relative;
-        padding-top: 70px;
-      }
-
-      .upload-photo {
-        transform: translate(0, -50%);
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        top: 0;
-        left: -30px;
-
-        span {
-          color: #585077;
-        }
-
-        i {
-          color: #fff;
-          border-radius: 50%;
-          border: 6px solid #fff;
-          background: #f1f1f1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
+    h6 {
+      font-weight: 600;
+      font-size: 13pt;
     }
 
-    form {
-      max-width: 500px;
-      margin-left: 10%;
+    .content-inner {
+      position: relative;
+      padding-top: 70px;
+    }
 
+    .upload-photo {
+      transform: translate(0, -50%);
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: 0;
+      left: -30px;
 
-      .custom-control-label {
-        padding-left: 20px;
-
-        &::before {
-          display: block !important;
-        }
-      }
-
-      .custom-control-input:checked ~ .custom-control-label {
-        &::after {
-          display: block !important;
-        }
-      }
-
-
-        .input-group {
-        width: 100%;
-        height: 47px;
-
-        .input-group-text:after {
-          display: none;
-        }
-      }
-
-      .form-control {
-        height: 100%;
-        font-family: "Raleway", sans-serif;
-
-        &::-webkit-input-placeholder {
-          font-size: 1.4rem;
-        }
-      }
-
-      .input-group-container {
-        .divider {
-          width: 100%;
-          max-width: calc(400px * .95);
-          height: 1px;
-          margin: 15px auto;
-          background-color: #dcdcdc;
-        }
-      }
-
-      .input-group-title {
-        margin-bottom: 26px;
+      span {
         color: #585077;
       }
-    }
 
-    .submit-button {
-      display: flex;
-      justify-content: flex-end;
-
-      .btn {
-        width: 176px;
-        height: 50px;
-        background-color: #585077;
+      i {
         color: #fff;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        background: #f1f1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 
-        &:hover {
-          color: #fff;
-        }
+  form {
+    max-width: 500px;
+    margin-left: 10%;
+
+    .input-remark {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(170px, 0);
+      width: 160px;
+      line-height: 1.5;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgba(216, 205, 186, 0.22);
+      //background-color: #d8cdba;
+    }
+
+    .custom-control-label {
+      padding-left: 20px;
+
+      &::before {
+        display: block !important;
       }
     }
 
-    .banner {
-      flex-shrink: 0;
-      width: 300px;
+    .custom-control-input:checked ~ .custom-control-label {
+      &::after {
+        display: block !important;
+      }
+    }
 
-      img {
+
+    .input-group {
+      width: 100%;
+      height: 47px;
+
+      .input-group-text:after {
+        display: none;
+      }
+    }
+
+    .form-control {
+      height: 100%;
+      font-family: "Raleway", sans-serif;
+
+      &::-webkit-input-placeholder {
+        font-size: 1.4rem;
+      }
+    }
+
+    .input-group-container {
+      .divider {
         width: 100%;
-        height: 100%;
+        max-width: calc(400px * .95);
+        height: 1px;
+        margin: 15px auto;
+        background-color: #dcdcdc;
       }
     }
 
+    .input-group-title {
+      margin-bottom: 26px;
+      color: #585077;
+    }
+  }
+
+  .submit-button {
+    display: flex;
+    justify-content: flex-end;
+
+    .btn {
+      width: 176px;
+      height: 50px;
+      background-color: #585077;
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .banner {
+    flex-shrink: 0;
+    width: 300px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
