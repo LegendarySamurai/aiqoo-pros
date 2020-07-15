@@ -1231,25 +1231,6 @@
 
 // Company-profile
 .company-profile {
-  @media(max-width: 1499px) {
-    .activity-hours-col {
-      //padding-right: 1%;
-      //padding-left: 1%;
-
-      .decoration-element-wizard {
-        //left: 20px;
-      }
-    }
-
-    .finances-col {
-      //padding-left: 1%;
-
-      .decoration-element-wizard {
-        //left: 20px;
-      }
-    }
-  }
-
   @media(max-width: 991px) {
     margin-top: 20vh;
 
@@ -1298,6 +1279,7 @@
     .activity-hours,
     .finances {
       padding-left: 0 !important;
+      padding-right: 0 !important;
     }
 
     .content {
@@ -1319,6 +1301,23 @@
         span {
           width: auto;
         }
+      }
+    }
+
+    .input-remark {
+      transform: translate(0%, 100%);
+    }
+
+    form {
+      .form-control-container {
+        width: 100%;
+      }
+
+      .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+
+        label {margin-bottom: 10px;}
       }
     }
   }
