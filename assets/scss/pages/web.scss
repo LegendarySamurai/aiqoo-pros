@@ -1700,10 +1700,6 @@ body {
       }
 
       span {
-        //position: absolute;
-        //top: 35%;
-        //left: 120%;
-        //transform: translate(0, -50%);
         width: 100%;
         margin-left: 10px;
         white-space: nowrap;
@@ -1803,7 +1799,6 @@ body {
   }
 
   .input-remark {
-    display: none; // remove !!!!!!!!!!
     z-index: 10;
     position: absolute;
     right: 0;
