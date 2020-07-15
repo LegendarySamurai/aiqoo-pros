@@ -1649,6 +1649,13 @@ body {
   width: 100%;
   padding-left: 15px;
 
+  .company-info,
+  .activity-hours,
+  .finances {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
   .decoration-element-wizard {
     left: 15px;
     height: 100%;
@@ -1722,9 +1729,10 @@ body {
       align-items: center;
 
       .form-control-container {
+        flex-grow: 1;
         position: relative;
         width: auto;
-        flex-grow: 1;
+        max-width: 350px;
       }
 
       .form-control {
