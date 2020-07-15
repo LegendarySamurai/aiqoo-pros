@@ -1231,6 +1231,25 @@
 
 // Company-profile
 .company-profile {
+  @media(max-width: 1499px) {
+    .activity-hours-col {
+      //padding-right: 1%;
+      //padding-left: 1%;
+
+      .decoration-element-wizard {
+        //left: 20px;
+      }
+    }
+
+    .finances-col {
+      //padding-left: 1%;
+
+      .decoration-element-wizard {
+        //left: 20px;
+      }
+    }
+  }
+
   @media(max-width: 991px) {
     margin-top: 20vh;
 
