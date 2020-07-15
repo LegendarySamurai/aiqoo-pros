@@ -18,6 +18,7 @@
 @import '../components/modules/carousel';
 @import '../components/modules/content-col';
 @import '../components/modules/county-list';
+@import '../components/modules/custom-checkbox';
 @import '../components/modules/custom-checkbox-ui';
 @import '../components/modules/decoration-elements';
 @import '../components/modules/form';
@@ -971,7 +972,7 @@ body {
 
 // EOL: Common styles for LAYOUT only
 
-// Dashboard-page
+// **** Dashboard-page **** //
 .dashboard-page {
   padding: 20px 0;
   font-family: "Poppins", 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1654,7 +1655,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    margin-right: 30px;
+    padding-right: 30px;
   }
 
   .content {
@@ -1662,7 +1663,7 @@ body {
     width: 100%;
     height: auto;
     margin-right: 30px;
-    padding: 0 4vw 4vw 4vw;
+    padding: 0 0 4vw 4vw;
     background-color: #f1f1f1;
 
     .upload-photo {
@@ -1709,6 +1710,7 @@ body {
 
   form {
     .form-group {
+      position: relative;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -1738,6 +1740,51 @@ body {
         margin-bottom: 0;
       }
     }
+  }
+
+  .activity-hours-group {
+    .input-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .day-of-the-week {
+        width: 35px;
+      }
+    }
+
+    .select-group-outer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .select-group {
+      position: relative;
+      width: 100%;
+
+      .fa-clock {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+
+  .input-remark {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(170px, 0);
+    width: 160px;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d8cdba;
+    //background-color: rgba(216,205,186,0.22);
   }
 }
 

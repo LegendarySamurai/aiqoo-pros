@@ -1140,7 +1140,6 @@
 
 // My profile
 .my-profile {
-
   @media(max-width: 1499px) {
     form {
       margin-left: 0;
@@ -1228,6 +1227,71 @@
       padding: 0 4vw 4vw !important;
     }
   }
+}
+
+// Company-profile
+.company-profile {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {
+    .content-wrap {
+      padding-right: 0;
+    }
+
+    .content {
+      margin-right: 0;
+      padding: 0 2vw 2vw 2vw;
+    }
+
+    .activity-hours-group {
+      .input-group {
+        //justify-content: center;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    padding-left: 0;
+    margin-top: 20vh;
+
+    .content {
+      padding: 0 4vw 4vw 4vw;
+    }
+
+    .input-remark {
+      transform: translate(0%, 110%);
+      top: auto;
+      bottom: 0;
+    }
+  }
+
+  @media(max-width: 599px) {
+    .content {
+      padding: 0 4vw 6vw 4vw;
+
+      .upload-photo {
+        left: 0;
+
+        .fa-user-circle {
+          width: 90px;
+          height: 90px;
+          font-size: 4.5rem;
+        }
+
+        span {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 374px) {}
 }
 
 .logo2,
