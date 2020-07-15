@@ -1275,6 +1275,14 @@
       display: none !important;
     }
 
+
+    .company-info-col,
+    .activity-hours-col,
+    .finances-col {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
     .company-info,
     .activity-hours,
     .finances {
