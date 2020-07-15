@@ -1642,12 +1642,21 @@ body {
 
 //**** Company profile ****//
 .company-profile {
-  margin-top: 150px;
+  margin-top: 170px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
   padding-left: 15px;
+
+  .decoration-element-wizard {
+    left: 15px;
+    height: 100%;
+
+    .dashed-line {
+      height: 90%;
+    }
+  }
 
   .content-wrap {
     display: flex;
@@ -1655,24 +1664,26 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    padding-right: 30px;
   }
 
   .content {
     position: relative;
     width: 100%;
     height: auto;
-    margin-right: 30px;
-    padding: 0 0 4vw 4vw;
+    padding: 2vw;
     background-color: #f1f1f1;
 
-    .upload-photo {
-      transform: translate(0, -50%);
-      display: flex;
-      flex-direction: row;
+    .upload-photo-wrap {
       position: absolute;
       top: 0;
-      left: -30px;
+      left: 0;
+      transform: translate(0, -90%);
+    }
+
+    .upload-photo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
       i {
         display: flex;
@@ -1680,6 +1691,7 @@ body {
         justify-content: center;
         width: 110px;
         height: 110px;
+        padding: 30px;
         color: #fff;
         border-radius: 50%;
         border: 6px solid #fff;
@@ -1688,10 +1700,12 @@ body {
       }
 
       span {
-        position: absolute;
-        top: 25%;
-        left: 115%;
+        //position: absolute;
+        //top: 35%;
+        //left: 120%;
+        //transform: translate(0, -50%);
         width: 100%;
+        margin-left: 10px;
         white-space: nowrap;
         color: #585077;
       }
@@ -1701,11 +1715,6 @@ body {
   .content-inner {
     position: relative;
     padding-top: 70px;
-  }
-
-  .banner {
-    flex-shrink: 0;
-    width: 300px;
   }
 
   form {
@@ -1718,7 +1727,8 @@ body {
 
       .form-control-container {
         position: relative;
-        width: 60%;
+        width: auto;
+        flex-grow: 1;
       }
 
       .form-control {
@@ -1736,19 +1746,30 @@ body {
       }
 
       label {
-        width: 40%;
+        width: 130px;
         margin-bottom: 0;
+        white-space: nowrap;
+        flex-shrink: 0;
+        margin-right: 5px;
       }
+    }
+  }
+
+  .custom-checkbox {
+    .custom-control-label-text {
+      white-space: nowrap;
     }
   }
 
   .activity-hours-group {
     .input-group {
       display: flex;
+      flex-wrap: nowrap;
       flex-direction: row;
       align-items: center;
 
       .day-of-the-week {
+        margin-right: 2%;
         width: 35px;
       }
     }
@@ -1771,14 +1792,23 @@ body {
         transform: translate(0, -50%);
       }
     }
+
+    .custom-select {
+      padding: 0 2rem !important;
+
+      option {
+        padding: 10px !important;
+      }
+    }
   }
 
   .input-remark {
+    display: none; // remove !!!!!!!!!!
     z-index: 10;
     position: absolute;
-    top: 0;
     right: 0;
-    transform: translate(170px, 0);
+    bottom: 0;
+    transform: translate(0%, 110%);
     width: 160px;
     line-height: 1.5;
     padding: 10px;

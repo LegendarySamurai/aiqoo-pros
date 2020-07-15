@@ -1231,15 +1231,13 @@
 
 // Company-profile
 .company-profile {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
-  @media(max-width: 1399px) {}
-
-  @media(max-width: 1199px) {}
-
   @media(max-width: 991px) {
+    margin-top: 20vh;
+
+    .decoration-element-wizard {
+      left: 5px;
+    }
+
     .content-wrap {
       padding-right: 0;
     }
@@ -1248,32 +1246,37 @@
       margin-right: 0;
       padding: 0 2vw 2vw 2vw;
     }
-
-    .activity-hours-group {
-      .input-group {
-        //justify-content: center;
-      }
-    }
   }
 
   @media(max-width: 767px) {
     padding-left: 0;
-    margin-top: 20vh;
+    margin-top: 25vh;
+
+    .decoration-element-wizard {
+      left: 10px;
+      display: block !important;
+    }
 
     .content {
       padding: 0 4vw 4vw 4vw;
     }
 
-    .input-remark {
-      transform: translate(0%, 110%);
-      top: auto;
-      bottom: 0;
+    .company-info,
+    .activity-hours,
+    .finances {
+      padding-left: 20px !important;
     }
   }
 
   @media(max-width: 599px) {
+    margin-top: 23vh;
+
     .content {
       padding: 0 4vw 6vw 4vw;
+
+      .upload-photo-wrap {
+        transform: translate(0, -70%);
+      }
 
       .upload-photo {
         left: 0;
