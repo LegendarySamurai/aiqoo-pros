@@ -441,6 +441,16 @@
     font-size: 9pt;
   }
 
+  .b-btn-purple {
+    width: auto;
+    height: 24px;
+    line-height: 22px;
+    background-color: #585077;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 9pt;
+  }
+
   // Counter
   .counter {
     line-height: 1;
@@ -455,6 +465,11 @@
   // Text
   .text-1 {
     font-size: 12pt;
+  }
+
+
+  .text-2 {
+    font-size: 10pt;
   }
   
   // Pro
@@ -665,9 +680,19 @@
 }
 
 .content-card {
-  @media(max-width: 1799px) {
+  @media(max-width: 1899px) {
+    .title-1 {
+      font-size: 13pt;
+    }
+
     .counter {
       font-size: 40pt;
+    }
+  }
+
+  @media(max-width: 1799px) {
+    .counter {
+      font-size: 38pt;
     }
   }
 

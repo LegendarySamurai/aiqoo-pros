@@ -718,6 +718,41 @@
   }
 }
 
+
+// **** Index summary page **** //
+.index-page {
+  @media(max-width: 1899px) {
+    .left-col {
+      //width: 1000px;
+    }
+  }
+
+  @media(max-width: 1699px) {
+    .left-col {
+      //width: 100%;
+      //min-width: unset;
+    }
+
+    .right-col {
+      //width: 100%;
+    }
+  }
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
+}
+
 // Dashboard-page //
 .dashboard-page {
   @media(max-width: 1799px) {

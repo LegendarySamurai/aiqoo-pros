@@ -1,0 +1,56 @@
+// Collapse
+.collapse-container {
+  padding: 8px;
+  max-height: 440px;
+  overflow-y: scroll;
+}
+
+.collapse-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  background-color: #ebebeb;
+}
+
+.collapse-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+}
+
+.card-accordion-body {
+  .portfolio-img {
+    width: 40px;
+    height: 26px;
+  }
+
+  .collapse-col-1 {
+    width: 60%;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 1px;
+      height: 60%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: #ccc;
+    }
+  }
+
+  .collapse-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 10px;
+  }
+
+  .collapse-col-2 {
+    width: 40%;
+  }
+}
