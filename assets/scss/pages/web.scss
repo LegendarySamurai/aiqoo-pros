@@ -1005,6 +1005,7 @@ body {
   }
 
   .content-card-one {
+    height: 100%;
     padding: 20px 0;
 
     .col-one {
@@ -1089,6 +1090,10 @@ body {
     }
 
     .col-four {
+      .text-2 {
+        text-align: right;
+      }
+
       .wrap {
         position: relative;
         display: flex;
@@ -1180,6 +1185,10 @@ body {
     .col-two {
       width: auto;
       min-width: 35%;
+      max-width: 35%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     .col-three {
@@ -1244,13 +1253,57 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
 
+  .my-projects-info {
+    width: 80%;
+    padding: 20px 0;
+  }
+
+  .add-new-project-btn {
+    width: auto;
+    height: 24px;
+    line-height: 22px;
+    padding: 0 15px;
+    background-color: #585077;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 10pt;
+    cursor: pointer;
   }
 
   .collapse-btn {
     border-radius: 5px;
     border: solid 1px #e6e6e6;
     background-color: #ffffff;
+  }
+
+  // my-project-info-wrap-empty
+  .my-projects-info-wrap-empty {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+
+    .empty-message {
+      width: 70%;
+      line-height: 1.04;
+      font-size: 1.35rem;
+    }
+
+    .add-new-project-btn {
+      width: auto;
+      max-width: 150px;
+      line-height: 24px;
+      margin-top: 30px;
+      white-space: nowrap;
+    }
+
+    .empty-project-image-container {
+      width: 60px;
+    }
   }
 }
 
