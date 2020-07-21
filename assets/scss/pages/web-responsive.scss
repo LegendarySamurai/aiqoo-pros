@@ -772,6 +772,7 @@
       }
 
       .col-four {
+        order: 3;
         width: 50%;
         max-width: 50%;
         height: 50%;
@@ -803,6 +804,7 @@
       }
 
       .col-five {
+        order: 2;
         width: 50%;
         max-width: 50%;
         height: 50%;
@@ -815,12 +817,14 @@
       }
 
       .col-six {
+        order: 1;
         width: 50%;
         max-width: 50%;
         height: 50%;
       }
 
       .col-seven {
+        order: 4;
         width: 50%;
         max-width: 50%;
         height: 50%;
@@ -1012,27 +1016,65 @@
         }
       }
 
-      .col-four,
+      .col-six,
       .col-five,
-      .col-six {
+      .col-seven {
         .wrap {
-          position: relative;
-          padding: 20px 0;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding: 0 8%;
 
-          &::before {
-            position: absolute;
-            bottom: 5px;
-            left: 50%;
-            top: auto;
-            right: auto;
-            transform: translate(-50%, 0);
-            display: block;
-            content: '';
-            width: 20%;
-            height: 1px;
-            background-color: rgba(201, 201, 201, 0.81);
+          i {
+            font-size: 30pt;
+          }
+
+          .title-1 {
+            font-size: 16pt;
+          }
+
+          .counter {
+            font-size: 26pt;
+          }
+
+          //&::before {
+          //  position: absolute;
+          //  bottom: 5px;
+          //  left: 50%;
+          //  top: auto;
+          //  right: auto;
+          //  transform: translate(-50%, 0);
+          //  display: block;
+          //  content: '';
+          //  width: 20%;
+          //  height: 1px;
+          //  background-color: rgba(201, 201, 201, 0.81);
+          //}
+        }
+      }
+
+      .col-four {
+        order: 4;
+
+        .image-container {
+
+
+          img {
+
           }
         }
+
+      }
+
+      .col-five {
+        order: 2;
+      }
+
+      .col-six {
+        order: 1;
+      }
+
+      .col-seven {
+        order: 3;
       }
     }
 
