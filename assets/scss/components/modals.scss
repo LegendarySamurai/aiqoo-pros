@@ -1240,6 +1240,7 @@ body ::-webkit-scrollbar {
       }
 
       textarea.form-control {
+        height: calc(82vh - (2rem * 3) - 3px - 60px - 3rem - 60px - 50px);
         padding-left: 40px;
       }
     }
@@ -1281,20 +1282,25 @@ body ::-webkit-scrollbar {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-bottom: 1rem;
     }
 
     .img-with-description {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
       width: 80px;
 
       img {
-        width: 100%;
+        width: 80%;
         height: 56px;
       }
       
       .fa-trash-undo {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+        //position: absolute;
+        //top: 10px;
+        //left: 10px;
         cursor: pointer;
       }
     }
@@ -1302,6 +1308,7 @@ body ::-webkit-scrollbar {
     .form-group-text {
       flex-grow: 1;
       margin-left: 20px;
+      margin-bottom: 0;
 
       .fa-info-circle {
         position: absolute;

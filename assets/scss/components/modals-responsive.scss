@@ -472,7 +472,7 @@
   @media(min-width: 1200px) {
     .left-col {
       flex-shrink: 0;
-      width: 30%;
+      width: 40%;
     }
   }
 
@@ -507,6 +507,15 @@
       width: 97%;
       height: 90vh;
       margin: 30px auto 0;
+    }
+
+    .left-col {
+      .form-group-text {
+        textarea.form-control {
+          height: auto;
+          min-height: 100px;
+        }
+      }
     }
 
     .right-col {
