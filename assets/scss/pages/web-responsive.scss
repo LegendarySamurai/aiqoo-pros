@@ -948,21 +948,8 @@
   }
 
   @media(max-width: 767px) {
-    .list-of-services {
-      .list-header {
-        display: none;
-      }
-
-      .col-four {
-        min-width: 25%;
-      }
-    }
-  }
-
-  @media(max-width: 599px) {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 160px;
 
     .row-two {
       margin-top: 0;
@@ -976,6 +963,20 @@
         margin-top: 30px;
       }
     }
+
+    .list-of-services {
+      .list-header {
+        display: none;
+      }
+
+      .col-four {
+        min-width: 25%;
+      }
+    }
+  }
+
+  @media(max-width: 599px) {
+    margin-top: 160px;
 
     .content-card-one {
       .col-one,

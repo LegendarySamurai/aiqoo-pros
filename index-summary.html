@@ -760,9 +760,10 @@
                             <div class="my-projects-header system-color-7 font-weight-500 font-12">
                               <div class="my-projects-header-text">My Projects <span class="ml-1">(12)</span></div>
 
-                              <div class="add-new-project-btn system-color-23">
+                              <!-- Button trigger modal -->
+                              <button type="button" class="add-new-project-btn system-color-23" data-toggle="modal" data-target="#exampleModal">
                                 Add New
-                              </div>
+                              </button>
                             </div>
                             <!-- Have projects -->
                             <div class="my-project-info-wrap-outer">
@@ -786,7 +787,10 @@
                                             <span class="font-weight-bold font-11">Northside Roofing project</span>
                                           </div>
                                           <div class="collapse-col-2">
-                                            <span class="font-weight-300 system-color-6 font-12"><i class="fad fa-pencil mr-2 font-10"></i>Edit</span>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="font-weight-300 system-color-6 font-12" data-toggle="modal" data-target="#exampleModal">
+                                              <i class="fad fa-pencil mr-2 font-10"></i>Edit
+                                            </button>
                                           </div>
                                         </div>
                                         <!-- EOL: collapse grey header -->
@@ -832,7 +836,11 @@
                                             <span class="font-weight-bold font-12">Northside Roofing project</span>
                                           </div>
                                           <div class="collapse-col-2">
-                                            <span class="font-weight-300 system-color-6 font-12"><i class="fad fa-pencil mr-2 font-10"></i>Edit</span>
+
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="font-weight-300 system-color-6 font-12" data-toggle="modal" data-target="#exampleModal">
+                                              <i class="fad fa-pencil mr-2 font-10"></i>Edit
+                                            </button>
                                           </div>
                                         </div>
                                         <!-- EOL: collapse grey header -->
@@ -902,6 +910,156 @@
       </div>
     </div>
   </main>
+
+  <!-- Modal -->
+  <div class="modal fade add-new-project-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Project</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times-square"></i></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row w-100">
+            <!-- Left col -->
+            <div class="col-md-4 col-xl-auto left-col">
+              <form>
+                <div class="form-group position-relative font-r-12">
+                  <label for="formGroupExampleInput">Project name</label>
+                  <div class="form-control-container">
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                    <i class="fal fa-info-circle dark"></i>
+                  </div>
+                </div>
+                <div class="form-group position-relative font-r-12">
+                  <label for="formGroupExampleInput2">Project location</label>
+                  <div class="form-control-container">
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                    <i class="fal fa-map-marker-alt"></i>
+                  </div>
+                </div>
+                <div class="form-group position-relative font-r-12">
+                  <label for="formGroupExampleInput3">Services provided</label>
+                  <div class="form-control-container">
+                    <input type="text" class="form-control" id="formGroupExampleInput3">
+                    <i class="fal fa-info-circle dark"></i>
+                  </div>
+                </div>
+                <div class="form-group form-group-text position-relative font-r-12 w-100">
+                  <i class="fas fa-pencil font-10"></i>
+                  <label for="text" class="mr-0 w-100">
+                    <textarea class="form-control" id="text" placeholder="Enter reply"></textarea>
+                  </label>
+                </div>
+              </form>
+            </div>
+
+            <!-- Right col -->
+            <div class="col-md right-col">
+              <div class="right-col-container">
+                <div class="upload-header">
+                  <i class="fal fa-flag dark font-r-9 mr-2"></i>
+                  <span class="font-r-8 pl-lg-2">Company Main Image</span>
+                  <label class="file-input-label pos-r">
+                    <input class="file-input font-r-8 cursor-p" type="file">
+                    <i class="fal fa-upload dark font-r-9"></i>
+                    <span class="text font-r-8 mb-0 pt-1 pt-md-0">Choose file</span>
+                  </label>
+                </div>
+
+                <div class="img-container">
+                  <div class="img-with-description-item">
+                    <div class="img-with-description position-relative">
+                      <img src="assets/images/Image.png" alt="">
+                      <i class="system-color-18 fad fa-trash-undo"></i>
+                    </div>
+
+                    <div class="form-group form-group-text position-relative font-r-12">
+                      <i class="fal fa-info-circle dark"></i>
+                      <label class="w-100">
+                        <textarea class="form-control"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="img-with-description-item">
+                    <div class="img-with-description position-relative">
+                      <img src="assets/images/Image.png" alt="">
+                      <i class="system-color-18 fad fa-trash-undo"></i>
+                    </div>
+
+                    <div class="form-group form-group-text position-relative font-r-12">
+                      <i class="fal fa-info-circle dark"></i>
+                      <label class="w-100">
+                        <textarea class="form-control"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="img-with-description-item">
+                    <div class="img-with-description position-relative">
+                      <img src="assets/images/Image.png" alt="">
+                      <i class="system-color-18 fad fa-trash-undo"></i>
+                    </div>
+
+                    <div class="form-group form-group-text position-relative font-r-12">
+                      <i class="fal fa-info-circle dark"></i>
+                      <label class="w-100">
+                        <textarea class="form-control"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="img-with-description-item">
+                    <div class="img-with-description position-relative">
+                      <img src="assets/images/Image.png" alt="">
+                      <i class="system-color-18 fad fa-trash-undo"></i>
+                    </div>
+
+                    <div class="form-group form-group-text position-relative font-r-12">
+                      <i class="fal fa-info-circle dark"></i>
+                      <label class="w-100">
+                        <textarea class="form-control"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="img-with-description-item">
+                    <div class="img-with-description position-relative">
+                      <img src="assets/images/Image.png" alt="">
+                      <i class="system-color-18 fad fa-trash-undo"></i>
+                    </div>
+
+                    <div class="form-group form-group-text position-relative font-r-12">
+                      <i class="fal fa-info-circle dark"></i>
+                      <label class="w-100">
+                        <textarea class="form-control"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="img-with-description-item">
+                    <div class="img-with-description position-relative">
+                      <img src="assets/images/Image.png" alt="">
+                      <i class="system-color-18 fad fa-trash-undo"></i>
+                    </div>
+
+                    <div class="form-group form-group-text position-relative font-r-12">
+                      <i class="fal fa-info-circle dark"></i>
+                      <label class="w-100">
+                        <textarea class="form-control"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="b-btn-purple">Send</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </app>
 
 

@@ -1188,3 +1188,126 @@ body ::-webkit-scrollbar {
     }
   }
 }
+
+// Add New Project modal - Index summary page
+.add-new-project-modal {
+  .modal-dialog {
+    width: 90%;
+    max-width: 1600px;
+    margin: 9vh auto;
+    height: 82vh;
+  }
+
+  .modal-header {
+    background-color: #f5f5f5;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  // Left-col
+  .left-col {
+    min-width: 410px;
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      label {
+        margin-bottom: 0;
+        margin-right: 20px;
+        white-space: nowrap;
+      }
+
+      .form-control {
+        padding-left: 30px;
+        color: #342e49;
+
+        &::placeholder {
+          color: #342e49;
+        }
+      }
+    }
+
+    .form-group-text {
+      .fa-pencil {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+      }
+
+      textarea.form-control {
+        padding-left: 40px;
+      }
+    }
+
+    .form-control-container {
+      position: relative;
+      width: 60%;
+
+      i {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+      }
+    }
+  }
+
+  // Right-col
+  .right-col {
+    button.b-btn-purple {
+      margin-left: auto;
+      margin-top: 20px;
+      display: block;
+      padding: .375rem 1.75rem;
+    }
+
+    .img-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+      padding: 30px;
+      background-color: #f5f5f5;
+    }
+
+    .img-with-description-item {
+      width: 48%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .img-with-description {
+      width: 80px;
+
+      img {
+        width: 100%;
+        height: 56px;
+      }
+      
+      .fa-trash-undo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+      }
+    }
+
+    .form-group-text {
+      flex-grow: 1;
+      margin-left: 20px;
+
+      .fa-info-circle {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  }
+}

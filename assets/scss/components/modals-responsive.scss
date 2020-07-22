@@ -319,7 +319,6 @@
   }
 }
 
-
 // New ticket modal - Support page
 .new-ticket-modal {
   @media(max-width: 400px) {
@@ -467,4 +466,68 @@
     }
   }
 }
+
+// Add New Project modal - Index summary page
+.add-new-project-modal {
+  @media(min-width: 1200px) {
+    .left-col {
+      flex-shrink: 0;
+      width: 30%;
+    }
+  }
+
+  @media(max-width: 1299px) {
+    .right-col {
+      .img-with-description-item {
+        width: 100%;
+      }
+    }
+  }
+
+  @media(max-width: 1199px) {
+    .modal-body {
+      padding: 20px 0;
+    }
+  }
+
+  @media(max-width: 991px) {
+    .left-col {
+      min-width: 350px;
+
+      .form-control-container {
+        width: 50%;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .modal-dialog {
+      position: relative;
+      z-index: 100;
+      width: 97%;
+      height: 90vh;
+      margin: 30px auto 0;
+    }
+
+    .right-col {
+      .img-container {
+        height: 50vh;
+        overflow-y: auto;
+        padding: 10px;
+      }
+    }
+  }
+
+  @media(max-width: 599px) {
+    .left-col {
+      min-width: 310px;
+      padding: 0 10px;
+    }
+
+    .right-col {
+      padding: 0 10px;
+    }
+  }
+}
+
 
