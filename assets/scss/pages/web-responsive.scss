@@ -604,6 +604,7 @@
       .info {
         display: inline-block;
         height: auto !important;
+        //background-color: coral; // Remove
 
         .name-wrap {
           font-weight: 500 !important;
@@ -631,6 +632,8 @@
             .dropdown-info-wrapper {
               &.active {
                 position: absolute;
+                //background-color: coral;
+                /* padding-top: 60px; */
                 height: 100%;
                 top: 0;
                 left: 0;
@@ -900,6 +903,10 @@
       .counter {
         font-size: 26pt;
       }
+
+      .text-2 {
+        font-size: 16pt;
+      }
     }
 
     .content-card-one {
@@ -912,8 +919,7 @@
           padding: 10px 10%;
 
           .b-btn-square {
-            align-self: center !important;
-            margin-top: 0 !important;
+            display: none;
           }
         }
       }
@@ -945,7 +951,6 @@
 
     .content-card-two {
       margin-top: 30px;
-
       .col-four,
       .col-five,
       .col-six,
@@ -1166,51 +1171,6 @@
         .row {
           justify-content: space-between;
         }
-      }
-    }
-
-    .content-card {
-      .counter {
-        font-size: 19pt;
-      }
-
-      .text-2 {
-        font-size: 9pt;
-      }
-    }
-
-    .content-card-one {
-      .col-one,.col-two {
-        .wrap {
-          .b-btn-square {
-            padding: 0 10px !important;
-            font-size: 8pt;
-          }
-        }
-      }
-    }
-
-    .content-card-two  {
-      .col-five,
-      .col-seven,
-      .col-six {
-        .wrap {
-          .title-1 {
-            font-size: 13pt;
-          }
-
-          i {
-            font-size: 22pt;
-          }
-        }
-      }
-    }
-  }
-
-  @media(max-width: 374px) {
-    .content-card {
-      .counter {
-        font-size: 16pt;
       }
     }
   }
