@@ -1,0 +1,13 @@
+.input-remark {
+  z-index: 10;
+  position: absolute;
+  //left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(0%, 100%);
+  width: 160px;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparentize(#d8cdba, .1);
+}

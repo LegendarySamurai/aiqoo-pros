@@ -139,6 +139,16 @@
   }
 }
 
+@media(max-width: 800px) and (min-width: 768px) {
+  .right-side-col {
+    .user-outer {
+      .user-inner-wrapper {
+        padding-right: 15%;
+      }
+    }
+  }
+}
+
 @media(max-width: 767px) {
   .top-logo-col {
     .close-button {
@@ -1625,10 +1635,6 @@
   }
 
   @media(max-width: 1199px) {
-    form {
-      //margin: 0 auto;
-    }
-
     .banner {
       width: 200px;
     }
@@ -1648,11 +1654,6 @@
       .upload-photo {
         left: 30px;
       }
-    }
-
-    form {
-      //max-width: 400px;
-      //width: 400px;
     }
 
     .banner {
@@ -1685,13 +1686,11 @@
       max-width: 100%;
 
       .input-remark {
-        transform: translate(0%, 110%);
+        transform: translate(0%, 100%);
+        background-color: transparentize(#d8cdba, .1);
         top: auto;
         bottom: 0;
-        //right: auto;
-        //left: 0;
         z-index: 10;
-        background-color: #d8cdba;
       }
     }
 
@@ -1784,9 +1783,9 @@
       }
     }
 
-    .input-remark {
-      transform: translate(0%, 100%);
-    }
+    //.input-remark {
+    //  transform: translate(0%, 100%);
+    //}
 
     form {
       .form-control-container {
@@ -2239,11 +2238,13 @@
 
   @media(max-width: 1399px) {
     & .status-bar-col.filter-opened + .f-content-col #content-search-input {
-      max-width: calc(100% - 200px - 310px - 15px);
+      max-width: calc(100% - 200px - 310px - 3px);
+      padding-left: 15px !important;
     }
 
     & .status-bar-col.filter-closed + .f-content-col #content-search-input {
-      max-width: calc(100% - 200px - 60px - 15px);
+      max-width: calc(100% - 200px - 60px - 4px);
+      padding-left: 15px !important;
     }
 
     .colored-circle {
@@ -2373,6 +2374,16 @@
   }
 
   @media(max-width: 599px) {
+    .content-col {
+      .content {
+        margin-top: 30px !important;
+      }
+    }
+
+    .list-heading {
+      margin-top: 0 !important;
+    }
+
     & .status-bar-col.filter-closed + .f-content-col {
       padding-top: 0 !important;
       margin-left: 0 !important;

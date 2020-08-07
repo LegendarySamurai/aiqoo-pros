@@ -7,7 +7,11 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .status-bar-col {
+  position: sticky;
+  bottom: 0;
   width: 300px;
+  height: auto;
+  align-self: flex-start;
   padding: 0;
   transition-duration: 400ms;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.06);
@@ -24,7 +28,7 @@ body ::-webkit-scrollbar-thumb {
 
 .make-me-sticky {
   position: sticky;
-  top: 0;
+  bottom: 0;
 }
 
 .done-btn-container {
@@ -53,7 +57,7 @@ body ::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  //height: 100%;
   font-family: "Raleway", sans-serif;
   color: #585077;
 
@@ -61,6 +65,12 @@ body ::-webkit-scrollbar-thumb {
     .status-bar-inner-header {
       display: none;
     }
+  }
+
+  .status-bar-inner {
+    //position: sticky;
+    //bottom: 0;
+    //background-color: transparentize(coral, .5); // temp
   }
 
   .status-bar-inner-body {
@@ -291,7 +301,12 @@ body ::-webkit-scrollbar-thumb {
 
 // Additional class for .status-bar-col, when filter opened
 .filter-opened {
-  position: relative;
+  //position: relative;
+  height: auto;
+  align-self: flex-start;
+  position: sticky;
+  top: 100px;
+  //background-color: red;
   width: 300px;
 
   .status-bar-outer {
