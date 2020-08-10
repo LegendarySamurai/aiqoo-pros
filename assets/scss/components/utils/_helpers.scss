@@ -358,6 +358,13 @@ $hSizes: (1, 2, 3, 4, 5, 6);
   line-height: 2;
 }
 
+// flex custom
+.flex-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 // Hide on
 .hide-in-1570 {
   display: block;

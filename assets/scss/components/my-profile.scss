@@ -89,23 +89,7 @@
       padding: 10px;
       border-radius: 5px;
       background-color: rgba(216, 205, 186, 0.22);
-      //background-color: #d8cdba;
     }
-
-    .custom-control-label {
-      padding-left: 20px;
-
-      &::before {
-        display: block !important;
-      }
-    }
-
-    .custom-control-input:checked ~ .custom-control-label {
-      &::after {
-        display: block !important;
-      }
-    }
-
 
     .input-group {
       width: 100%;
