@@ -1717,7 +1717,8 @@
 
 .logo2,
 .success-icon {
-  @media(min-width: 300px) { width: 138px; }
+  margin-bottom: 12%;
+  @media(max-width: 599px) { width: 138px; }
   @media(min-width: 600px) { width: 168px; }
 }
 

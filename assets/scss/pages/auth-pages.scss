@@ -33,14 +33,6 @@
     outline: none !important;
   }
 
-  //.custom-control-input:focus ~ .custom-control-label::before {
-  //  box-shadow: none !important;
-  //}
-  //
-  //.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  //  border-color: #d6d6d6 !important;
-  //}
-
   .sign-in-and-sign-up {
     position: absolute;
     top: 50%;
@@ -339,21 +331,8 @@
     align-items: center;
     cursor: pointer;
     padding-top: 0;
-    //padding-left: 1.5rem;
     font-size: .9rem;
-  //
-  //  &:before {
-  //    display: block;
-  //    content: '';
-  //    position: absolute;
-  //    top: 0;
-  //    left: 0;
-  //    width: 2.5vh;
-  //    height: 2.5vh;
-  //    border-radius: 2px;
-  //    border: .5px solid #d6d6d6;
-  //    background-color: #fff;
-  //  }
+
   }
 
   .custom-control-label-link {
@@ -367,70 +346,6 @@
     cursor: pointer;
     font-size: 1.35vh !important;
   }
-
-  //.custom-control-input:checked ~ .custom-control-label:before {
-  //  border-color: #d6d6d6;
-  //  background-color: #fff;
-  //}
-
-  //.custom-control-input:checked ~ .custom-control-label:after {
-  //  display: block;
-  //  content: "";
-  //  position: absolute;
-  //  top: 2.75px !important;
-  //  left: 3px !important;
-  //  width: 1.875vh;
-  //  height: 1.875vh;
-  //  background-image: url('../images/confirm-white.svg');
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  background-size: 70% auto;
-  //  background-color: #585077;
-  //  border-radius: 1px;
-  //}
-
-  //.custom-control-input:checked ~ .custom-control-label:after {
-  //  position: absolute;
-  //  top: 2.75px !important;
-  //  left: 3px !important;
-  //  width: 1.875vh;
-  //  height: 1.875vh;
-  //  display: block;
-  //  content: "";
-  //  border-radius: 1px;
-  //  background-color: #585077;
-  //}
-
-  // EOL: Custom checkbox
-
-  // Checkbox ui
-  //.custom-checkbox-ui {
-  //  position: relative;
-  //  display: flex;
-  //  justify-content: center;
-  //  align-items: center;
-  //  width: 1.5rem;
-  //  height: 1.5rem;
-  //  background-color: white;
-  //  border: 1px solid #585077;
-  //  border-radius: 5px;
-  //}
-
-  //.custom-control-input:checked ~ .custom-checkbox-ui::before {
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  display: block;
-  //  content: '';
-  //  width: 100%;
-  //  height: 100%;
-  //  background: url(../../images/confirm-7.svg) no-repeat center;
-  //  background-size: 50% auto;
-  //}
-
-  // EOL: Checkbox ui
-
-
 }
 
 // Account-verification
