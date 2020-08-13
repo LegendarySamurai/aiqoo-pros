@@ -1,4 +1,5 @@
 .input-remark {
+  opacity: 0;
   z-index: 10;
   position: absolute;
   //left: 0;
@@ -10,4 +11,11 @@
   padding: 10px;
   border-radius: 5px;
   background-color: transparentize(#d8cdba, .1);
+}
+
+.input-group:focus,
+.input-group:hover {
+  .input-remark {
+    opacity: 1;
+  }
 }
