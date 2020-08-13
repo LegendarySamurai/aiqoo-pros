@@ -561,7 +561,7 @@ body ::-webkit-scrollbar-thumb {
 
 @media (max-width: 599px) {
   .status-bar-col {
-    z-index: 202;
+    //z-index: 202;
     position: relative;
     align-self: auto;
     margin-top: 0;
@@ -574,6 +574,10 @@ body ::-webkit-scrollbar-thumb {
     &.filter-closed {
       margin-left: 0 !important;
       padding: 0 !important;
+    }
+
+    &.filter-opened {
+      z-index: 202;
     }
   }
 

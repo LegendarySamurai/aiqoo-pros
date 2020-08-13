@@ -13,6 +13,7 @@ if (window.innerWidth < 600) {
 
 	filterButton.addEventListener("click", () => {
 		statusBarInner.classList.add("is-active");
+		statusBarCol.classList.add("filter-opened");
 		// statusBarBacklayer.classList.add('is-active');
 	});
 
@@ -20,6 +21,8 @@ if (window.innerWidth < 600) {
 		button.addEventListener("click", () => {
 			console.log('=> Works1');
 			statusBarInner.classList.remove("is-active");
+
+			statusBarCol.classList.remove("filter-opened");
 		});
 
 	});
