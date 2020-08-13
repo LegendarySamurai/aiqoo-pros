@@ -138,7 +138,6 @@
 
       .uploaded {
         .upload-body {
-          //display: none; // temp !!!!!!!!!!!!!!
           flex-direction: row;
           max-width: initial;
           background-color: transparent;
@@ -149,8 +148,6 @@
         }
 
         @media(max-width: 991px) {
-          //padding-right: 10px;
-          //padding-left: 10px;
 
           .upload-header {
             .fa-flag {
@@ -163,7 +160,7 @@
             }
 
             .file-input-label {
-              max-width: 90px !important;
+              //max-width: 90px !important;
             }
           }
 
@@ -179,13 +176,6 @@
               object-fit: cover;
             }
           }
-        }
-      }
-
-      .company-logo {
-        @media(max-width: 991px) {
-          //padding-right: 10px;
-          //padding-left: 10px;
         }
       }
     }
@@ -243,6 +233,10 @@
         justify-content: space-between;
         font-family: "Raleway", sans-serif;
 
+        @media(max-width: 599px) {
+          flex-direction: column;
+        }
+
         // only for collapse item
         .collapse-row {
           margin: 10px;
@@ -264,6 +258,14 @@
             margin-right: 10px;
           }
         }
+
+        @media(max-width: 599px) {
+          width: 100%;
+
+          &::after {
+            display: none;
+          }
+        }
       }
       // images
       .collapse-col-2 {
@@ -275,7 +277,20 @@
           img {
             margin-right: 10px;
             border-radius: 0;
+
+            @media(max-width: 599px) {
+              flex-shrink: 0;
+              max-width: 150px;
+            }
+
+            @media(max-width: 399px) {
+              flex-shrink: 1;
+            }
           }
+        }
+
+        @media(max-width: 599px) {
+          width: 100%;
         }
       }
     }
