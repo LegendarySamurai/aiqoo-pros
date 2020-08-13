@@ -1933,33 +1933,20 @@ body {
   }
 }
 
-//.company-profile-btns-wrap {
-//  width: 100%;
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: space-between;
-//  align-items: center;
-//  padding-left: 15px;
-//
-//  @media(max-width: 767px) {
-//    padding-left: 0;
-//  }
-//
-//  button {
-//    width: 176px;
-//    height: 50px;
-//    background-color: #585077;
-//    color: #fff;
-//    cursor: pointer;
-//    font-weight: 500;
-//    font-size: 14pt;
-//
-//    @media(max-width: 599px) {
-//      width: 130px;
-//      font-size: 12pt;
-//    }
-//  }
-//}
+.company-profile-submit-btn {
+  .btn {
+    display: block;
+    width: 176px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #585077;
+    color: #fff;
+
+    @media(max-width: 599px) {
+      width: 100%;
+    }
+  }
+}
 
 // Spinner
 .spinner-border {
