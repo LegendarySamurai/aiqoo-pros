@@ -220,6 +220,14 @@
     }
   }
 
+  .submit-button {
+    .btn {
+      @media(max-width: 599px) {
+        margin: 0 auto !important;
+      }
+    }
+  }
+
   // Add portfolio
   @import './add-portfolio';
 }
