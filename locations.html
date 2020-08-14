@@ -1162,10 +1162,9 @@
     </div>
   </main>
 
-  <button style="position: fixed; bottom:0; right:0; z-index: 200;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#wizardModalLocations">
+  <button style="position: fixed; top:85vh; right:0; z-index: 200;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#wizardModalLocations">
     Locations
   </button>
-
 
   <!-- Modal -->
   <div class="modal fade" id="wizardModalLocations" tabindex="-1" role="dialog" aria-labelledby="wizard-modal-title" aria-hidden="true">
@@ -1193,38 +1192,38 @@
                 below and add them to “Selected Location”
               </h5>
             </div>
-            <div class="container">
+            <div class="location-container">
               <div class="row">
-                <div class="col-12 col-md-6 px-2">
+                <div class="col-12 col-md-6">
                   <div class="aiqoo-collapse-checkbox-outer">
                     <span class="aiqoo-collapse-title font-r-12 font-weight-bold">Please select location</span>
 
                     <div class="input-group pr-3">
-                      <select class="custom-select font-r-11 mt-3 mb-2" id="inputGroupSelect01">
-                        <option class="font-r-11" selected>New York</option>
-                        <option class="font-r-11" value="1">Los Angeles</option>
-                        <option class="font-r-11" value="2">Chicago</option>
-                        <option class="font-r-11" value="3">Philadelphia</option>
+                      <select class="custom-select mt-3 mb-2" id="inputGroupSelect01">
+                        <option class="" selected>New York</option>
+                        <option class="" value="1">Los Angeles</option>
+                        <option class="" value="2">Chicago</option>
+                        <option class="" value="3">Philadelphia</option>
                       </select>
 
                     </div>
                     <div class="aiqoo-collapse-inner pt-3 pb-1">
                       <div class="custom-control custom-checkbox system-a-b-bg1 ma-b-10">
-                        <label class="custom-control-label font-r-10">
+                        <label class="custom-control-label">
                           <input type="checkbox" class="custom-control-input">
                           <span class="custom-checkbox-ui"></span>
                           <span class="input-label">New York</span>
                         </label>
                       </div>
                       <div class="custom-control custom-checkbox system-a-b-bg1 ma-b-10">
-                        <label class="custom-control-label font-r-10">
+                        <label class="custom-control-label">
                           <input type="checkbox" class="custom-control-input">
                           <span class="custom-checkbox-ui"></span>
                           <span class="input-label">Los Angeles</span>
                         </label>
                       </div>
                       <div class="custom-control custom-checkbox system-a-b-bg1 ma-b-10">
-                        <label class="custom-control-label font-r-10">
+                        <label class="custom-control-label">
                           <input type="checkbox" class="custom-control-input">
                           <span class="custom-checkbox-ui"></span>
                           <span class="input-label">New Location</span>
@@ -1234,7 +1233,7 @@
                   </div>
                 </div>
 
-                <div class="col-12 col-md-6 mt-4 mt-md-0 px-2">
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
                   <div class="aiqoo-collapse-checkbox-outer">
                     <span class="aiqoo-collapse-title font-r-12 font-weight-bold pl-3">Selected Locations</span>
 
@@ -1242,15 +1241,15 @@
 
                       <div class="locations-list">
                         <div class="w-100 my-2 flex-left">
-                          <i class="fal fa-times"></i>
+                          <i class="fal fa-times cursor-p"></i>
                           <span class="pl-3">New York</span>
                         </div>
                         <div class="w-100 my-2 flex-left">
-                          <i class="fal fa-times"></i>
+                          <i class="fal fa-times cursor-p"></i>
                           <span class="pl-3">New York</span>
                         </div>
                         <div class="w-100 my-2 flex-left">
-                          <i class="fal fa-times"></i>
+                          <i class="fal fa-times cursor-p"></i>
                           <span class="pl-3">New York</span>
                         </div>
                       </div>
@@ -1267,24 +1266,21 @@
             </div>
 
             <div class="buttons-container">
-              <div class="submit-button pos-r">
-                <button type="button" id="back" class="btn mt-auto font-r-14 pos-r">
-                  <i class="fas fa-long-arrow-left mr-3"></i>
-                  Back
-                </button>
-              </div>
-              <div class="submit-button pos-r">
-                <button type="button" id="next" class="btn active mt-auto font-r-14 pos-r">
-                  Next
-                  <i class="fas fa-long-arrow-right ml-3"></i>
-                </button>
-              </div>
+              <button type="button" id="back" class="btn">
+                <i class="fas fa-long-arrow-left mr-3"></i>
+                Back
+              </button>
+              <button type="button" id="next" class="btn">
+                Next
+                <i class="fas fa-long-arrow-right ml-3"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </app>
 
 

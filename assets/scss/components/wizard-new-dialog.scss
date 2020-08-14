@@ -1148,5 +1148,28 @@
     .text-block {
       padding: 20px 0;
     }
+
+    h5 {
+      margin-right: 0;
+      white-space: normal;
+    }
+
+    .buttons-container {
+      width: 100%;
+
+      .btn {
+        width: 176px;
+        height: 50px;
+        background-color: #585077;
+        color: #fff;
+        font-size: 14pt;
+
+        @media(max-width: 599px) {
+          width: auto;
+          padding: 0 20px;
+          font-size: 12pt;
+        }
+      }
+    }
   }
 }
