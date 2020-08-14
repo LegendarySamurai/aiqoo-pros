@@ -268,10 +268,6 @@
     }
   }
 
-  //.quality-card-text {
-  //  font-size: 1.5vh !important;
-  //}
-
   // Head section
   .head-section-body {
     padding-left: 4vw;
@@ -357,15 +353,6 @@
   }
 
   // Side block
-  .content-section {
-    .content-inner {
-      .side-block-wrapper {
-        //width: 100% !important;
-        //margin: 2vh auto 0;
-      }
-    }
-  }
-
   .side-block {
     width: 100% !important;
     box-shadow: none;
@@ -849,7 +836,6 @@
   .content-section {
     padding: 1vh 2vw 3vh !important;
     margin-top: 0 !important;
-    //padding: 4vh 2vw 3vh !important;
   }
 
   .top-text {
@@ -858,63 +844,7 @@
     }
   }
 
-  //// Review cards
-  //.review-card {
-  //  display: flex;
-  //  flex-direction: row;
-  //  justify-content: space-between;
-  //  align-items: flex-start;
-  //  width: 100%;
-  //  height: 100%;
-  //}
-  //
-  //.image-container {
-  //  flex-shrink: 0;
-  //  width: 100px;
-  //  margin-right: 10px;
-  //  padding: 10px;
-  //  border-radius: 10px;
-  //
-  //  img {
-  //    width: 100%;
-  //    height: 100%;
-  //    object-fit: cover;
-  //    border-radius: 10px;
-  //  }
-  //}
-  //
-  //.review-container {
-  //  flex-grow: 1;
-  //  position: relative;
-  //  width: auto;
-  //  height: 100%;
-  //  padding-top: 10px;
-  //  display: flex;
-  //  flex-direction: column;
-  //  align-items: flex-start;
-  //  justify-content: flex-start;
-  //}
-  //
-  //.rate {
-  //  position: absolute;
-  //  top: 10px;
-  //  right: 10px;
-  //  width: 19vw;
-  //
-  //  img {
-  //    width: 100%;
-  //    height: 100%;
-  //    object-fit: contain;
-  //  }
-  //}
-  //
-  //.content {
-  //  .text {
-  //    font-size: 1.35vh !important;
-  //  }
-  //}
-
-  // Side block
+    // Side block
   .content-section {
     .content-inner {
       .side-block-wrapper {
@@ -961,5 +891,10 @@
       height: 100% !important;
       margin: 2vh auto 0 !important;
     }
+  }
+
+  .quality-card {
+    height: auto !important;
+    min-height: 170px !important;
   }
 }
