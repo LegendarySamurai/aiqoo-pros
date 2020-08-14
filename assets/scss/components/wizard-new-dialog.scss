@@ -842,6 +842,18 @@
 
 //************* Wizard  *************//
 .wizard-dialog  {
+  .details {
+    width: 80%;
+
+    @media(max-width: 599px) {
+      .submit-button {
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   @media(min-width: 300px) {
     width: 98%;
 
@@ -874,7 +886,7 @@
 
     form {
       .input-group-select {
-        .input-group { width: 64%; }
+
       }
 
       .input-group {
@@ -936,10 +948,6 @@
       }
     }
 
-    .details {
-      width: 55%;
-    }
-
     .services {
       width: 90%;
     }
@@ -970,10 +978,6 @@
       }
     }
 
-    .details {
-      width: 80%;
-    }
-
     h2 {
       font-size: 1.25rem;
       margin: 15px 0;
@@ -999,7 +1003,6 @@
       }
     }
   }
-  // EOL: 768
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     // Services
@@ -1012,7 +1015,6 @@
       }
     }
   }
-  // EOL: 768-1024
 
   @media(min-width: 1200px) {
     width: 56%;
@@ -1090,7 +1092,7 @@
         }
       }
     }
-  } // EOL: 1200
+  }
 
   @media(min-width: 1600px) {
     .page-content {
@@ -1112,15 +1114,10 @@
       }
     }
 
-    .details {
-      width: 45%;
-    }
-
     .buttons-container {
       margin-top: 80px;
     }
   }
-  // EOL: 1600
 
   @media(min-width: 1920px) {
     .tabs-w {
@@ -1130,11 +1127,6 @@
         height: 60px;
         padding: 0 24px;
       }
-    }
-
-    .details {
-      padding-top: 80px;
-      padding-bottom: 40px;
     }
 
     .submit-button {
