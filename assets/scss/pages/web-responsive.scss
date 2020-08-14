@@ -1419,24 +1419,26 @@
   @media(max-width: 599px) {
     padding-top: 90px;
 
-    .status-bar-col.filter-opened + .leads-list-col {
-      margin-left: 0;
-    }
+    .status-bar-col {
+      &.filter-opened + .leads-list-col {
+        margin-left: 0;
+      }
 
-    .status-bar-col.filter-closed + .leads-list-col {
-      padding-top: 0 !important;
-      margin-left: 0 !important;
-      z-index: 1;
+      &.filter-closed + .leads-list-col {
+        padding-top: 0 !important;
+        margin-left: 0 !important;
+        z-index: 1;
+      }
     }
 
     .leads-list-col {
       .content-container {
         padding: 0 !important;
       }
-    }
 
-    .leads-list-col .table-row-list {
-      margin-top: 0 !important;
+      .table-row-list {
+        margin-top: 0 !important;
+      }
     }
 
     .leads-item-wrap {

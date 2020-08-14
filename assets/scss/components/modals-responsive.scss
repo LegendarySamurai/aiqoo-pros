@@ -317,6 +317,20 @@
       padding-right: 0;
     }
   }
+
+  @media(max-width: 599px) {
+    .info-outer {
+      .info {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .info-item {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 // New ticket modal - Support page
