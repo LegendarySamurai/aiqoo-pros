@@ -164,8 +164,10 @@
     }
 
     .modal-body {
-      flex-wrap: wrap;
-      overflow-y: auto;
+      flex-direction: column;
+      overflow: auto;
+      flex-wrap: nowrap;
+      align-items: stretch;
       height: calc(100vh - 80px);
     }
 
@@ -252,7 +254,7 @@
     }
 
     .left-col {
-      width: 100%;
+      width: auto;
       height: auto;
 
       .left-col-inner {
@@ -302,7 +304,7 @@
     }
 
     .right-col {
-      width: 100%;
+      width: auto;
       height: auto;
       padding-top: 0;
     }
