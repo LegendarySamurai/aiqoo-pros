@@ -194,7 +194,13 @@
     }
 
     .info {
+      flex-direction: row;
+      justify-content: space-between;
       padding-left: 0;
+
+      .info-item {
+        width: 100%;
+      }
     }
 
     .leads-summary {
@@ -321,13 +327,14 @@
   @media(max-width: 599px) {
     .info-outer {
       .info {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+      }
+    }
+  }
 
-        .info-item {
-          width: 100%;
-        }
+  @media(max-width: 399px) {
+    .info-outer {
+      .info {
+        flex-wrap: wrap;
       }
     }
   }
