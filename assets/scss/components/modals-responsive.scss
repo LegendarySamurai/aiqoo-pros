@@ -408,7 +408,13 @@
       }
 
       .status {
-        border: 1px solid #585077;
+        //border: 1px solid #585077;
+
+        .custom-select {
+          width: 100%;
+          padding: 0 10px;
+          min-width: 130px;
+        }
       }
     }
 
