@@ -63,6 +63,13 @@ body {
     height: 50px;
     background-color: #585077;
     color: #fff;
+
+    // for all purple submit buttons like in services popup view
+    @media(max-width: 599px) {
+      width: auto;
+      padding: 0 20px;
+      font-size: 12pt;
+    }
   }
 }
 
