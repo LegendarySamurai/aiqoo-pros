@@ -426,7 +426,7 @@
       position: relative;
       z-index: 100;
       width: 97%;
-      height: 90vh;
+      height: 94vh;
       margin: 30px auto 0;
     }
 
@@ -436,6 +436,7 @@
 
     .modal-content {
       height: 100%;
+      overflow-y: auto;
     }
 
     .modal-body {

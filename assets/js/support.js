@@ -1,16 +1,24 @@
-const ticketHeader = document.querySelector('.ticket-header');
-const ticketContent = document.querySelector('.ticket-content');
-let ticketContentDetailedShown = false;
+const ticketHeader = $('.ticket-header');
+const ticketContent = $('.ticket-content');
 
+$(document).ready(function () {
+	if (window.innerWidth < 600) {
+		ticketContent.addClass('is-active');
+		ticketHeader.addClass('is-active');
 
-ticketHeader.addEventListener('click', () => {
-	if (ticketHeader.classList.contains('is-active')) {
-		ticketHeader.classList.remove('is-active');
-		ticketContent.classList.remove('is-active');
-		ticketContentDetailedShown = true;
-	} else {
-		ticketHeader.classList.add('is-active');
-		ticketContent.classList.add('is-active');
-		ticketContentDetailedShown = false;
+		ticketHeader.click(function () {
+			const currentTicketHeader = $(this);
+			const currentTicket = currentTicketHeader.parents('.ticket');
+			const currentTicketContent = currentTicket.find('.ticket-content');
+
+			ticketContent.addClass('is-active');
+			ticketHeader.addClass('is-active');
+
+			currentTicketHeader.removeClass('is-active');
+			currentTicketContent.removeClass('is-active');
+		});
 	}
 });
+
+/* ======================================================= */
+

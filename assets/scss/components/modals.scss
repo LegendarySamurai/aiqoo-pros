@@ -963,6 +963,8 @@ body ::-webkit-scrollbar {
   }
 
   .ticket-header {
+    cursor: pointer;
+
     .status {
       //border: 1px solid #585077;
       border-radius: 2px;
