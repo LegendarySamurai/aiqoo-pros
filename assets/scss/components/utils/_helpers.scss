@@ -49,7 +49,7 @@ app {
   position: relative;
   flex-direction: column;
   box-sizing: border-box;
-  min-height: 100vh; // Created by Igor Feb 13th, 2020
+  min-height: 100vh;
 }
 
 .text-shadow {
@@ -99,14 +99,6 @@ app {
 }
 
 // ******************************//
-
-//$break-mobile: "600px";
-//$break-tablet: "768px";
-//$break-pc: "1200px";
-//$break-large-screen: "1600px";
-
-//********************************//
-
 
 $fontSizes: (6,7,8,9,10,11,12,13,14, 15, 16, 18, 20, 24, 30, 32, 34, 40, 50);
 $hSizes: (1, 2, 3, 4, 5, 6);
@@ -160,6 +152,11 @@ $hSizes: (1, 2, 3, 4, 5, 6);
 
 .p-t-80 {
   padding-top: 80px;
+}
+
+.p-y-20 {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
 }
 
 .pa-l-4p {
