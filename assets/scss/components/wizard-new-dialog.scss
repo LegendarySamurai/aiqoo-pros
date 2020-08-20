@@ -195,7 +195,7 @@
 
   // Modal Footer Buttons Container
   .buttons-container {
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0 !important;
 
     button {
@@ -206,7 +206,7 @@
       border-radius: 0;
 
       &.active {
-        margin-left: 20px;
+        //margin-left: 20px;
         background-color: #585077;
       }
     }
@@ -645,6 +645,20 @@
 
       .input-group-select {
         padding: 0 !important;
+      }
+    }
+  }
+
+  @media(max-width: 450px) {
+    .right-side-inner {
+      &.without-scroll {
+        padding: 10px;
+      }
+    }
+
+    .right-side {
+      .modal-body-container {
+        padding: 10px !important;
       }
     }
   }
