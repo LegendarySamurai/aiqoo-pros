@@ -784,6 +784,16 @@
             height: 55px;
           }
 
+          .modal-footer {
+            .buttons-container {
+              justify-content: space-between;
+              width: 100%;
+
+              button {
+                width: 48%;
+              }
+            }
+          }
           .county-list {
             max-height: 40vh !important;
           }
