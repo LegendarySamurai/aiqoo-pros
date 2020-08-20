@@ -5255,13 +5255,18 @@
                   </button>
                 </div>
               </div>
-              <div class="leads-summary-col">
+              <div class="leads-summary-col d-none d-above-768-flex">
                 <div class="leads-summary">
-                  <div class="toggleTab el-name-heading d-flex justify-content-between align-items-center cursor-p"
-                       onclick="toggleList('.list')">
-                    <div class="el-name font-weight-500 font-r-12">Leads Summary</div><i class="fad fa-chevron-down arrow-d d-sm-none"></i>
+                  <div class="toggleTab" >
+                    <div class="el-name-heading d-flex justify-content-between align-items-center cursor-p"
+                         onclick="toggleList('.list')">
+                      <div class="el-name font-weight-500 font-r-15">Leads Summary</div>
+                      <i class="fad fa-chevron-down arrow-d d-md-none"></i>
+                    </div>
                   </div>
-                  <div class="list-outer ma-t-10">
+
+
+                  <div class="list-outer">
                     <div class="decoration-element-wizard">
                       <span class="square"></span>
                       <span class="dashed-line"></span>
@@ -5275,6 +5280,13 @@
                         <span class="cursor-p">Roof replacement</span>
                         <span class="cursor-p">Homeowner</span>
                       </div>
+                      <div class="map pos-r d-above-768-none">
+                        <div class="mask">
+                          <i class="fad fa-map-marker-alt mr-2"></i>
+                          <span class="font-weight-bold font-12">LA PA 2433</span>
+                        </div>
+                        <img src="assets/images/map.png" alt="map">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -5284,9 +5296,46 @@
           <div class="right-col">
             <div class="right-col-outer">
               <div class="right-col-inner">
+                <div class="leads-summary-col d-above-768-none w-100">
+                  <div class="leads-summary">
+                    <div class="toggleTab" >
+                      <div class="el-name-heading d-flex justify-content-between align-items-center cursor-p"
+                           onclick="toggleList('.list')">
+                        <div class="el-name font-weight-500 font-r-15">Leads Summary</div>
+                        <i class="fad fa-chevron-down arrow-d d-md-none"></i>
+                      </div>
+                    </div>
+
+
+                    <div class="list-outer">
+                      <div class="decoration-element-wizard">
+                        <span class="square"></span>
+                        <span class="dashed-line"></span>
+                      </div>
+                      <div class="list">
+                        <div class="list-inner">
+                          <span class="cursor-p">Roof replacement</span>
+                          <span class="cursor-p">Homeowner</span>
+                          <span class="cursor-p">Ready to hire</span>
+                          <span class="cursor-p">Financing not required</span>
+                          <span class="cursor-p">Roof replacement</span>
+                          <span class="cursor-p">Homeowner</span>
+                        </div>
+                        <div class="map pos-r d-above-768-none">
+                          <div class="mask">
+                            <i class="fad fa-map-marker-alt mr-2"></i>
+                            <span class="font-weight-bold font-12">LA PA 2433</span>
+                          </div>
+                          <img src="assets/images/map.png" alt="map">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="activity-log-wrap">
                   <div class="activity-log-inner">
-                    <div class="map pos-r">
+                    <div class="map pos-r d-none d-above-768-flex">
                       <div class="mask">
                         <i class="fad fa-map-marker-alt mr-2"></i>
                         <span class="font-weight-bold font-12">LA PA 2433</span>
@@ -5460,6 +5509,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="controls-col-wrap">
                   <div class="meeting card">
                     <div class="toggleTab card-header d-flex justify-content-between align-items-center cursor-p" onclick="toggleList('.card-body .meeting-card')">

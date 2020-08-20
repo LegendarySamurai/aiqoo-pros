@@ -81,8 +81,6 @@ body ::-webkit-scrollbar {
     padding: 0;
     border: none;
     border-radius: 2.5px;
-    //box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
-    //box-shadow: -6px 33.5px 30px 0 #ccc;
     box-shadow: -6px 33.5px 30px 0 #b3b3b3;
     background-color: #ffffff;
     transform: none !important;
@@ -184,10 +182,16 @@ body ::-webkit-scrollbar {
     padding-bottom: 50px;
 
     .el-name-heading {
-      @media(min-width: 600px) {
+      @media(min-width: 768px) {
         padding: 0;
         background-color: transparent;
         border-bottom: none;
+      }
+
+      .el-name {
+        @media(min-width: 768px) {
+          font-size: 12pt !important;
+        }
       }
     }
   }
@@ -196,28 +200,23 @@ body ::-webkit-scrollbar {
     position: relative;
     height: 350px;
     overflow-y: auto;
-    padding-bottom: 40px;
+    margin-top: 15px;
+    //padding-bottom: 40px;
   }
 
   .list {
     height: 100%;
     padding-left: 30px;
 
-    //.divider {
-    //  width: 100%;
-    //  height: 1px;
-    //  margin: 10px 0;
-    //  background-color: #f0f0f0;
-    //}
+    &.active {
+      //padding-top: 10px;
+      //padding-bottom: 20px;
+    }
 
     .list-inner {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      //height: 100%;
-      //overflow-y: scroll;
-      //padding-bottom: 40px;
-      //background-color: dodgerblue;
 
       span {
         position: relative;
@@ -233,7 +232,6 @@ body ::-webkit-scrollbar {
           width: 98%;
           height: 1px;
           background-color: #f0f0f0;
-          //background-color: red;
         }
       }
     }
@@ -244,7 +242,6 @@ body ::-webkit-scrollbar {
   // Right col
   .right-col {
     overflow: hidden;
-    //overflow-y: auto;
     flex-grow: 1;
     width: auto;
     height: 100%;
@@ -253,7 +250,6 @@ body ::-webkit-scrollbar {
 
   .right-col-outer {
     height: 100%;
-    //padding: 1rem;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
   }
@@ -297,12 +293,10 @@ body ::-webkit-scrollbar {
   }
 
   .activity-log-wrap {
-    //z-index: 3000;
     overflow: hidden;
     width: 60%;
     height: 100%;
     padding: 1rem;
-    //margin-bottom: 100px;
   }
 
   .activity-log-inner {
@@ -314,13 +308,10 @@ body ::-webkit-scrollbar {
     width: 100%;
     padding: 0;
     height: calc(100% - 40px);
-    //overflow-y: scroll;
-    //background-color: coral; // remove !!!
   }
 
   .activity-list-inner {
     height: 100%;
-    //height: 480px;
     padding-right: 10px;
     overflow-y: auto;
   }
@@ -411,7 +402,6 @@ body ::-webkit-scrollbar {
   }
 
   .add-note-wrap {
-    //position: relative;
     z-index: 2;
     position: absolute;
     right: 10px;
