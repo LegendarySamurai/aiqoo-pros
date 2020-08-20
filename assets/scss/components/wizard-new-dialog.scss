@@ -231,26 +231,39 @@
     }
 
     // checkboxes list
+
+    .county-list-container {
+      padding: 10px 0 10px 2vw;
+    }
+
     .county-list-wrapper {
       padding: 0;
       background-color: transparent;
     }
 
     .county-list {
-      justify-content: space-between;
+      justify-content: flex-start;
       max-height: 480px;
-      overflow-y: scroll;
+      overflow-y: auto;
       padding-right: 20px;
     }
 
     .county-item {
-      width: 30%;
+      width: 33%;
       padding: 0;
       border-bottom: none !important;
 
       .custom-control {
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         padding-left: 0;
+        white-space: nowrap;
+
+        .custom-control-stats {
+          margin-left: 2%;
+        }
       }
     }
 
@@ -667,8 +680,12 @@
 
   @media(max-width: 991px) {
     .right-side {
+      .county-list {
+        justify-content: space-between;
+      }
+
       .county-item {
-        width: 96% !important;
+        //width: 96% !important;
       }
 
       .modal-title {
@@ -694,6 +711,10 @@
   }
 
   @media(max-width: 767px) {
+    max-height: 90vh;
+    margin: 5vh auto !important;
+    //overflow: auto;
+
     .modal-content {
       .modal-body {
         flex-direction: column;
@@ -701,7 +722,17 @@
         .left-side {
           display: block !important;
           width: 100% !important;
-          padding: 0 20px 0 0;
+          //height: auto;
+          padding: 20px;
+          //background-color: coral;
+
+          .modal-body-content {
+            padding: 10px 0 15px 0 !important;
+          }
+
+          .list-of-counties {
+            margin-top: 2vh;
+          }
 
           .counties-list-item {
             &.active {
@@ -710,7 +741,7 @@
           }
 
           .modal-title {
-            margin-bottom: 30px;
+            margin-bottom: 0;
             text-align: left;
           }
 
@@ -722,8 +753,8 @@
           .select {
             display: block !important;
             width: 100%;
-            height: 46px;
-            padding: 0 10px;
+            height: 40px;
+            padding: 0 15px 0 10px;
             border: 1px solid #b3b3b3;
             background-color: #fff;
             border-radius: 5px;
@@ -742,16 +773,91 @@
           }
 
           .county-list-container {
-            padding: 20px 10px 20px 20px;
+            padding: 10px 0 10px 2vw !important;
           }
         }
       }
+    }
+
+    button.close {
+      top: 10px;
+      right: 10px;
     }
   }
 
   @media(max-width: 599px) {
     button.close {
       background-color: transparent;
+    }
+
+    .modal-content {
+      .modal-body {
+        .left-side {
+          padding: 0 20px 0 20px;
+
+          .modal-body-content {
+            padding-left: 0;
+          }
+        }
+
+        .right-side {
+          padding: 0 !important;
+
+          .county-list-container {
+            padding: 10px 2vw 10px 2vw !important;
+          }
+
+          .county-list {
+            .county-item {
+              width: 96% !important;
+            }
+          }
+
+          .modal-footer {
+            margin-top: 10px;
+
+            .buttons-container {
+              margin-top: 10px !important;
+
+              button {
+                height: 40px;
+              }
+            }
+          }
+        }
+
+        .right-side-inner {
+          &.scroll {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 360px) {
+    .right-side {
+      .modal-title {
+        margin-bottom: 0;
+      }
+    }
+
+    .modal-body-container {
+      margin-top: 10px;
+    }
+
+    .modal-content {
+      .modal-body {
+        .right-side {
+          .county-list-container {
+            padding: 5px 2vw 5px 4vw !important;
+          }
+
+          .county-list {
+            max-height: 41vh !important;
+          }
+        }
+      }
     }
   }
 }
