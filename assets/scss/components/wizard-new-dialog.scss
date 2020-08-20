@@ -736,9 +736,7 @@
         .left-side {
           display: block !important;
           width: 100% !important;
-          //height: auto;
           padding: 20px;
-          //background-color: coral;
 
           .modal-body-content {
             padding: 10px 0 15px 0 !important;
@@ -781,6 +779,10 @@
         .right-side {
           padding: 20px 10px 20px 0px;
           width: 100% !important;
+
+          .search {
+            height: 55px;
+          }
 
           .county-list {
             max-height: 40vh !important;
