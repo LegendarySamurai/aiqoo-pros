@@ -1008,10 +1008,15 @@
     }
 
     .headings-inner {
-      justify-content: center;
+      flex-direction: column;
 
       .headings-container {
         text-align: center;
+      }
+
+      .image-container {
+        width: 60px !important;
+        height: 60px !important;
       }
     }
   }
