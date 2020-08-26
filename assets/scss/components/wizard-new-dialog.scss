@@ -195,7 +195,8 @@
 
   // Modal Footer Buttons Container
   .buttons-container {
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
     margin: 0 !important;
 
     button {
@@ -219,6 +220,28 @@
 .wizard-dialog-services-and-locations {
   .select {
     display: none;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .form-control {
+      height: 32px;
+    }
+
+    @media(max-width: 599px) {
+      flex-direction: column-reverse;
+      height: auto !important;
+
+      .input-group {
+        align-self: flex-start;
+        width: 100%;
+        min-height: 32px;
+      }
+    }
   }
 
   // Right side
@@ -380,7 +403,14 @@
   }
 
   .selected-services {
+    margin-right: 20px;
+    margin-left: 16px;
     white-space: nowrap;
+
+    @media(max-width: 599px) {
+      align-self: flex-end;
+      margin: 0 0 10px 0;
+    }
   }
 }
 
