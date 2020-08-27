@@ -140,8 +140,13 @@ body {
     justify-content: center;
     width: 80%;
     padding: 6% 10% 4% 10%;
+
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+
+    .top-logo-wrap {
+      width: 130px;
+    }
   }
 }
 

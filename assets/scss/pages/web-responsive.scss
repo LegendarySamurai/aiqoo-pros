@@ -186,11 +186,19 @@
     }
   }
 
+  .dropdown-list-wrapper-one {
+    .dropdown-list {
+      &.visible {
+        bottom: -5px;
+      }
+    }
+  }
+
   .dropdown-list-wrapper {
     &.active {
       &:before {
-        bottom: -23px;
-        left: -15px;
+        bottom: -26px;
+        left: -23px;
         top: auto;
         border-bottom: 10px solid #fff;
       }
@@ -200,6 +208,7 @@
   // Left side container
   .left-side-col {
     z-index: 24;
+    z-index: 221;
     position: static;
     min-width: inherit;
     width: auto;
@@ -217,6 +226,7 @@
 
   .mobile-menu-ope-btn {
     z-index: 23;
+    z-index: 220;
     position: fixed;
     left: 0;
     flex: 1;
@@ -431,7 +441,7 @@
   .settings-inner-d {
     .image-container {
       display: block;
-      width: 80px !important;
+      width: 110px !important;
       height: 40px !important;
       margin-left: 30px;
       margin-right: auto;
@@ -454,6 +464,9 @@
   }
 
   .top-logo-container-inner {
+    width: 50% !important;
+    padding: 3% 6% 3% 6% !important;
+
     img {
       height: inherit;
       width: inherit;
