@@ -877,6 +877,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: end;
   line-height: 1.25;
   padding-right: 20px;
   color: #585077;
@@ -1384,7 +1385,7 @@ body {
   }
 
   .status-bar-col.filter-closed + .leads-list-col #content-search-input {
-    max-width: calc(100% - 250px - 50px - 15px - 10px);
+    max-width: calc(100% - 250px - 50px - 15px - 6px);
   }
 
   .status-bar-col.filter-opened + .leads-list-col #content-search-input {
@@ -1420,21 +1421,57 @@ body {
   }
 
   .table-header-col {
+    padding: 0 1%;
+    position: sticky;
+    top: 150px;
+    z-index: 100;
+    background: white;
+
     .table-header-wrap {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      //justify-content: space-between;
       align-items: center;
       width: 100%;
-      padding: 0 30px;
+      //padding: 0 30px;
+      padding: 0 1%;
+
+      &.add-underline {
+        border-bottom: 1px solid #707070;
+      }
     }
 
     .header-col {
-      padding: 10px;
+      display: flex;
+      align-items: center;
+      height: 38px;
+      line-height: 1;
+      //padding: 0 1%;
+      padding: 0 10px;
       white-space: nowrap;
       font-size: 9pt;
       color: #b3b3b3;
       font-weight: 500;
+      //background-color: transparentize(coral, .5);
+
+      &.date-col { width: 9%;}
+
+      &.contact-info-col { width: 17%; }
+
+      &.services-col { width: 17%; }
+
+      &.locations-col { width: 17%; }
+
+      &.meeting-status-col { width: 7%; }
+
+      &.atemptes-col { width: 11%; min-width: 100px; }
+
+      &.status-col {
+        justify-content: flex-start;
+        width: 15%;
+      }
+
+      &.notification-col { width: 7%; }
     }
   }
 
@@ -1447,9 +1484,12 @@ body {
 
   .locations-col { width: 17%; }
 
-  .meeting-status-col { width: 9%; }
+  .meeting-status-col { width: 7%; }
 
-  .atempts-col { width: 12%; }
+  .atemptes-col {
+    width: 11%;
+    min-width: 100px;
+  }
 
   .status-col {
     width: 15%;
@@ -1457,9 +1497,34 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    .status-col-dropdown {
+      .status-btn {
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        padding: 0;
+        border-radius: 2.5px;
+        //box-shadow: 0 1.5px 7.5px 0 rgba(0,0,0,0.16);
+        border: solid 0.5px #585077;
+        background-color: transparent;
+        color: #585077;
+
+        u {
+          text-decoration: none;
+        }
+
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
   }
 
-  .notification-col { width: 4%; }
+  .notification-col { width: 7%; }
 
   .custom-select {
     border-radius: 2.5px;
@@ -1491,6 +1556,10 @@ body {
     z-index: 2;
     position: relative;
 
+    &.dropdown-active {
+      z-index: 3;
+    }
+
     &:nth-child(odd) {
       background-color: #f1f1f1;
     }
@@ -1512,11 +1581,22 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      min-height: 38px;
       padding: 0 10px;
       font-size: 9pt;
 
       &.date-col {
         font-size: 8pt;
+      }
+
+      &.atemptes-col {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .text {
+          margin-left: 5px;
+        }
       }
 
       &:after {
@@ -1539,17 +1619,17 @@ body {
     }
 
     .notification-col {
-      align-items: flex-end;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
 
       span {
         text-align: right;
         cursor: pointer;
-      }
 
-      .popover-header,
-      .popover-body,
-      .popover-content {
-        color: #f20b0b !important;
+        &:not(:last-child) {
+          margin: 0 2px 0 0;
+        }
       }
     }
   }
@@ -1985,4 +2065,15 @@ body ::-webkit-scrollbar {
 
 body ::-webkit-scrollbar-thumb {
   background-color: #342e4a !important;
+}
+
+// Modal backdrop
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparentize(#000, .5);
 }

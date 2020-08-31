@@ -12,13 +12,15 @@ function initAutocompleteList() {
         autocompletes.push(autocomplete);
     }
 }
-
+/*
 function fillIn() {
     console.log(this.inputId);
     var place = this.getPlace();
     document.getElementById(this.inputId + '_Lng').value = place.geometry.location.lng();
     document.getElementById(this.inputId + '_Lat').value = place.geometry.location.lat();
+
 }
+*/
 
 //-- One google.maps.places AutoComplete
 var isInitAutocomplete = false;
@@ -52,39 +54,27 @@ function fillInAddress() {
         });
     });
 
-    for (var component in componentForm) {
-        document.getElementById(component).value = '';
-    }
+    /*for (var component in componentForm) {
+        document.getElementById(component).value = ''
+    }*/
 
     if (place.formatted_address != null) {
         document.getElementById('LocationBaseAutoComplete').value = place.formatted_address;
     }
 
-    if (components.administrative_area_level_1 != null) {
-        document.getElementById('CompanyCountry').value = components.administrative_area_level_1;
-    }
-    if (components.political != null) {
-        document.getElementById('CompanyState').value = components.political;
-    }
-    if (components.locality != null) {
-        document.getElementById('CompanyCity').value = components.locality;
-    }
-    if (components.route != null) {
-        document.getElementById('CompanyStreet').value = components.route;
-    }
-    if (components.street_number != null) {
-        document.getElementById('CompanyHouseNumber').value = components.street_number;
-    }
-    if (components.postal_code != null) {
-        document.getElementById('CompanyZipCode').value = components.postal_code;
-    }
-
-    if (place.geometry.location.lng() != null) {
-        document.getElementById('CompanyLng').value = place.geometry.location.lng();
-    }
-    if (place.geometry.location.lat() != null) {
-        document.getElementById('CompanyLat').value = place.geometry.location.lat();
-    }
+    dotNetReference.invokeMethodAsync('adressHasChanged', components, place.formatted_address, String(place.geometry.location.lng()), String(place.geometry.location.lat())).then(function (message) {
+        //console.log(message);
+    });
+    /*
+    if (components.administrative_area_level_1 != null) { document.getElementById('CompanyCountry').value = components.administrative_area_level_1; }
+    if (components.political != null) { document.getElementById('CompanyState').value = components.political; }
+    if (components.locality != null) { document.getElementById('CompanyCity').value = components.locality; }
+    if (components.route != null) { document.getElementById('CompanyStreet').value = components.route; }
+    if (components.street_number != null) { document.getElementById('CompanyHouseNumber').value = components.street_number; }
+    if (components.postal_code != null) { document.getElementById('CompanyZipCode').value = components.postal_code; }
+    if (place.geometry.location.lng() != null) { document.getElementById('CompanyLng').value = place.geometry.location.lng(); }
+    if (place.geometry.location.lat() != null) { document.getElementById('CompanyLat').value = place.geometry.location.lat(); }
+    */
 }
 
 // Bias the autocomplete object to the user's geographical location,

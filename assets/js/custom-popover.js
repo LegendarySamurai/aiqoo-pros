@@ -15,10 +15,7 @@ $('#popover-three').popover({
 });
 
 
-// Alert popover (Leads list page)
-$('.alert-notification').popover({
-	trigger: 'hover'
-});
+
 // EOL: Alert popover (Leads list page)
 
 // // Atempt dropdown (Leads list page)

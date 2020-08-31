@@ -110,27 +110,6 @@ window.AttachLayoutHandlers = (title) => {
 		});
 	});
 
-
-	// Adds class "active" to the clicked sub-menu item in top fixed panel
-
-	// subMenuItems.forEach(item => {
-	// 	item.addEventListener('click', () => {
-	// 		subMenuItems.forEach(item => {
-	// 			item.classList.remove('active');
-	// 		});
-	//
-	// 		if (!item.classList.contains('active')) {
-	// 			item.classList.add('active');
-	// 			subMenuBtnClicked = true;
-	// 		} else {
-	// 			item.classList.remove('active');
-	// 			subMenuBtnClicked = false;
-	// 		}
-	// 	});
-	// });
-
-
-
 	// Open hamburger menu btn on mobile
 	openMenuMobileBtn.addEventListener('click', () => {
 		if (!body.classList.contains('blocked')) {
@@ -167,4 +146,10 @@ window.AttachLayoutHandlers = (title) => {
 	return true;
 };
 
-// this.AttachLayoutHandlers();
+
+
+// Invokes popover (Leads list page)
+$('.notification-popover').popover({
+	trigger: 'hover'
+});
+
