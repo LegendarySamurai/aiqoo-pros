@@ -74,13 +74,8 @@ $('.status-btn').click(function() {
 // When scroll page added class to the $('table-header-col') element to make table header sticky
 $(window).scroll(function() {
 	var scrollTop = $(window).scrollTop();
-
-	console.log('=>', scrollTop);
 	let fixedTopPanelHeight = $('.fixed-top-panel-d').height();
 	let contentSearchInputHeight = $('#content-search-input').height();
-	console.log('=>', fixedTopPanelHeight);
-	console.log('=>', contentSearchInputHeight);
-	// console.log('true or false', scrollTop > $(fixedTopPanelHeight + contentSearchInputHeight).offset().top);
 
 	if ( scrollTop > (fixedTopPanelHeight + contentSearchInputHeight) ) {
 		// display add
@@ -93,6 +88,11 @@ $(window).scroll(function() {
 });
 
 
+
+// Invokes popover (Leads list page)
+$('.notification-popover').popover({
+	trigger: 'hover'
+});
 
 
 

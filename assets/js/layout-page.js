@@ -74,6 +74,7 @@ window.AttachLayoutHandlers = (title) => {
 	});
 
 	userInfoTop.addEventListener('click', function () {
+		console.log('HHHHHHHHHHHHHHHHHHHHHHHH');
 		if (!userInfoTop.classList.contains('active')) {
 			userInfoTop.classList.add('active');
 			userInfoTopOuter.classList.add('show');
@@ -147,9 +148,4 @@ window.AttachLayoutHandlers = (title) => {
 };
 
 
-
-// Invokes popover (Leads list page)
-$('.notification-popover').popover({
-	trigger: 'hover'
-});
 
