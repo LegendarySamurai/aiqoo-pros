@@ -74,7 +74,6 @@ window.AttachLayoutHandlers = (title) => {
 	});
 
 	userInfoTop.addEventListener('click', function () {
-		console.log('HHHHHHHHHHHHHHHHHHHHHHHH');
 		if (!userInfoTop.classList.contains('active')) {
 			userInfoTop.classList.add('active');
 			userInfoTopOuter.classList.add('show');
@@ -144,8 +143,4 @@ window.AttachLayoutHandlers = (title) => {
 		menuLeftUnderlay.classList.remove('active');
 	});
 
-	return true;
 };
-
-
-

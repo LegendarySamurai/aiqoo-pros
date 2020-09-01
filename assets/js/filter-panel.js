@@ -19,7 +19,7 @@ if (window.innerWidth < 600) {
 
 	closeFilterBtns.forEach(button => {
 		button.addEventListener("click", () => {
-			console.log('=> Works1');
+			//console.log('=> Works1');
 			statusBarInner.classList.remove("is-active");
 
 			statusBarCol.classList.remove("filter-opened");
@@ -27,7 +27,7 @@ if (window.innerWidth < 600) {
 
 	});
 	closeStatusBarInnerBtn.addEventListener("click", () => {
-		console.log(e, '=> Works2');
+		//console.log(e, '=> Works2');
 		statusBarInner.classList.remove("is-active");
 	});
 }
