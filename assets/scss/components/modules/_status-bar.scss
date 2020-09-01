@@ -48,9 +48,9 @@ body ::-webkit-scrollbar-thumb {
   }
 }
 
-.status-bar-heading {
-  display: none;
-}
+//.status-bar-heading {
+//  display: none;
+//}
 
 // When filter closed
 .status-bar {
@@ -586,38 +586,21 @@ body ::-webkit-scrollbar-thumb {
     margin-left: 0;
   }
 
-  .status-bar-heading {
-    z-index: 10;
-    position: fixed;
-    top: 140px;
-    left: 0;
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    padding: 0 20px;
-    box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.16);
-    background-color: #fff;
-
-    .filter-btn {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 74px;
-      height: 30px;
-      background-color: #585077;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-
-      .fa-filter {
-        margin-right: 10px;
-      }
-    }
-  }
+  //.status-bar-heading {
+  //  z-index: 10;
+  //  position: fixed;
+  //  top: 140px;
+  //  left: 0;
+  //  display: flex !important;
+  //  flex-direction: row;
+  //  align-items: center;
+  //  justify-content: space-between;
+  //  width: 100%;
+  //  height: 70px;
+  //  padding: 0 20px;
+  //  box-shadow: 0 1.5px 10px 0 rgba(0, 0, 0, 0.16);
+  //  background-color: #fff;
+  //}
 
   .status-bar-inner {
     display: none;

@@ -96,8 +96,17 @@ $(window).scroll(function() {
 window.AttachPopOverHandlers = () => {
 
 	// Invokes popover (Leads list page)
-	$('.notification-popover').popover({
-		trigger: 'hover'
-	});
+	if(window.innerWidth >= 768) {
+		// for desktop
+		$('.notification-popover').popover({
+			trigger: 'hover'
+		});
+	} else {
+		// for mobile
+		$('.notification-popover').popover({
+			trigger: 'click'
+		});
+	}
+
 	return true;
 };

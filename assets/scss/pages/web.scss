@@ -339,6 +339,10 @@ body {
 }
 
 // Submenu
+.sub-menu-lists-col {
+  padding-left: 50px;
+}
+
 .sub-menu-items {
   display: flex;
   flex-direction: row;
@@ -1648,9 +1652,9 @@ body {
       }
 
       &.services-col {
-        span {
-          line-height: 1;
-        }
+        //span {
+        //  line-height: 1;
+        //}
       }
 
       &.date-col {
@@ -1669,6 +1673,13 @@ body {
 
       &.notification-col {
         flex-wrap: wrap;
+
+        .notification-popover {
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
       }
 
       &:after {
